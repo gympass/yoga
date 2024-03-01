@@ -3,15 +3,6 @@
 exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityState={
-    {
-      "busy": undefined,
-      "checked": undefined,
-      "disabled": undefined,
-      "expanded": undefined,
-      "selected": undefined,
-    }
-  }
   accessible={true}
   borderColor="rgba(35, 27, 34, 0.4)"
   disabled={false}
@@ -25,8 +16,8 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
   onStartShouldSetResponder={[Function]}
   selected={false}
   style={
-    [
-      {
+    Array [
+      Object {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
         "borderRadius": 9999,
@@ -54,15 +45,15 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
     numberOfLines={1}
     selected={false}
     style={
-      [
-        {
+      Array [
+        Object {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "400",
           "lineHeight": 24,
         },
-        {
+        Object {
           "flexShrink": 1,
           "fontSize": 12,
           "lineHeight": 16,
@@ -76,18 +67,9 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
 `;
 
 exports[`<Chips /> Snapshots counter should match snapshot with more than one Chip 1`] = `
-[
+Array [
   <View
     accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
@@ -101,8 +83,8 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      [
-        {
+      Array [
+        Object {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
@@ -130,15 +112,15 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
       numberOfLines={1}
       selected={false}
       style={
-        [
-          {
+        Array [
+          Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          {
+          Object {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 16,
@@ -151,15 +133,6 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
   </View>,
   <View
     accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
@@ -173,8 +146,8 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
     onStartShouldSetResponder={[Function]}
     selected={true}
     style={
-      [
-        {
+      Array [
+        Object {
           "alignItems": "center",
           "backgroundColor": "#231B22",
           "borderRadius": 9999,
@@ -199,14 +172,14 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
       numberOfLines={1}
       selected={true}
       style={
-        [
-          {
+        Array [
+          Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "700",
           },
-          {
+          Object {
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
@@ -219,8 +192,8 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
     </Text>
     <Text
       style={
-        [
-          {
+        Array [
+          Object {
             "alignItems": "center",
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
@@ -247,15 +220,6 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
   </View>,
   <View
     accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
@@ -269,8 +233,8 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
     onStartShouldSetResponder={[Function]}
     selected={true}
     style={
-      [
-        {
+      Array [
+        Object {
           "alignItems": "center",
           "backgroundColor": "#231B22",
           "borderRadius": 9999,
@@ -295,14 +259,14 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
       numberOfLines={1}
       selected={true}
       style={
-        [
-          {
+        Array [
+          Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "700",
           },
-          {
+          Object {
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
@@ -315,8 +279,8 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
     </Text>
     <Text
       style={
-        [
-          {
+        Array [
+          Object {
             "alignItems": "center",
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
@@ -345,18 +309,9 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
 `;
 
 exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
-[
+Array [
   <View
     accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
@@ -370,8 +325,8 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      [
-        {
+      Array [
+        Object {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
@@ -399,15 +354,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
       numberOfLines={1}
       selected={false}
       style={
-        [
-          {
+        Array [
+          Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          {
+          Object {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 16,
@@ -420,15 +375,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </View>,
   <View
     accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
@@ -442,8 +388,8 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      [
-        {
+      Array [
+        Object {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
@@ -471,15 +417,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
       numberOfLines={1}
       selected={false}
       style={
-        [
-          {
+        Array [
+          Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          {
+          Object {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 16,
@@ -492,15 +438,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </View>,
   <View
     accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
@@ -514,8 +451,8 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      [
-        {
+      Array [
+        Object {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
@@ -543,15 +480,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
       numberOfLines={1}
       selected={false}
       style={
-        [
-          {
+        Array [
+          Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          {
+          Object {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 16,
@@ -564,15 +501,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </View>,
   <View
     accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
@@ -586,8 +514,8 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      [
-        {
+      Array [
+        Object {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
@@ -615,15 +543,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
       numberOfLines={1}
       selected={false}
       style={
-        [
-          {
+        Array [
+          Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          {
+          Object {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 16,
@@ -636,15 +564,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </View>,
   <View
     accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
@@ -658,8 +577,8 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     onStartShouldSetResponder={[Function]}
     selected={true}
     style={
-      [
-        {
+      Array [
+        Object {
           "alignItems": "center",
           "backgroundColor": "#231B22",
           "borderRadius": 9999,
@@ -684,14 +603,14 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
       numberOfLines={1}
       selected={true}
       style={
-        [
-          {
+        Array [
+          Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "700",
           },
-          {
+          Object {
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
@@ -704,8 +623,8 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     </Text>
     <Text
       style={
-        [
-          {
+        Array [
+          Object {
             "alignItems": "center",
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
@@ -732,15 +651,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </View>,
   <View
     accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
@@ -754,8 +664,8 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     onStartShouldSetResponder={[Function]}
     selected={true}
     style={
-      [
-        {
+      Array [
+        Object {
           "alignItems": "center",
           "backgroundColor": "#231B22",
           "borderRadius": 9999,
@@ -780,14 +690,14 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
       numberOfLines={1}
       selected={true}
       style={
-        [
-          {
+        Array [
+          Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "700",
           },
-          {
+          Object {
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
@@ -800,8 +710,8 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     </Text>
     <Text
       style={
-        [
-          {
+        Array [
+          Object {
             "alignItems": "center",
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
@@ -828,15 +738,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </View>,
   <View
     accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
@@ -850,8 +751,8 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     onStartShouldSetResponder={[Function]}
     selected={true}
     style={
-      [
-        {
+      Array [
+        Object {
           "alignItems": "center",
           "backgroundColor": "#231B22",
           "borderRadius": 9999,
@@ -876,14 +777,14 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
       numberOfLines={1}
       selected={true}
       style={
-        [
-          {
+        Array [
+          Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "700",
           },
-          {
+          Object {
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
@@ -897,15 +798,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </View>,
   <View
     accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
@@ -919,8 +811,8 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     onStartShouldSetResponder={[Function]}
     selected={true}
     style={
-      [
-        {
+      Array [
+        Object {
           "alignItems": "center",
           "backgroundColor": "#231B22",
           "borderRadius": 9999,
@@ -945,14 +837,14 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
       numberOfLines={1}
       selected={true}
       style={
-        [
-          {
+        Array [
+          Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "700",
           },
-          {
+          Object {
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
@@ -970,15 +862,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
 exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityState={
-    {
-      "busy": undefined,
-      "checked": undefined,
-      "disabled": undefined,
-      "expanded": undefined,
-      "selected": undefined,
-    }
-  }
   accessible={true}
   borderColor="rgba(35, 27, 34, 0.4)"
   disabled={false}
@@ -992,8 +875,8 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
   onStartShouldSetResponder={[Function]}
   selected={true}
   style={
-    [
-      {
+    Array [
+      Object {
         "alignItems": "center",
         "backgroundColor": "#231B22",
         "borderRadius": 9999,
@@ -1018,14 +901,14 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
     numberOfLines={1}
     selected={true}
     style={
-      [
-        {
+      Array [
+        Object {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "700",
         },
-        {
+        Object {
           "color": "#FFFFFF",
           "flexShrink": 1,
           "fontSize": 12,
@@ -1040,18 +923,9 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
 `;
 
 exports[`<Chips /> Snapshots selected should match snapshot with more than one Chip 1`] = `
-[
+Array [
   <View
     accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
@@ -1065,8 +939,8 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      [
-        {
+      Array [
+        Object {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
@@ -1094,15 +968,15 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
       numberOfLines={1}
       selected={false}
       style={
-        [
-          {
+        Array [
+          Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          {
+          Object {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 16,
@@ -1115,15 +989,6 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
   </View>,
   <View
     accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
@@ -1137,8 +1002,8 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
     onStartShouldSetResponder={[Function]}
     selected={true}
     style={
-      [
-        {
+      Array [
+        Object {
           "alignItems": "center",
           "backgroundColor": "#231B22",
           "borderRadius": 9999,
@@ -1163,14 +1028,14 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
       numberOfLines={1}
       selected={true}
       style={
-        [
-          {
+        Array [
+          Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "700",
           },
-          {
+          Object {
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
@@ -1184,15 +1049,6 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
   </View>,
   <View
     accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
@@ -1206,8 +1062,8 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
     onStartShouldSetResponder={[Function]}
     selected={true}
     style={
-      [
-        {
+      Array [
+        Object {
           "alignItems": "center",
           "backgroundColor": "#231B22",
           "borderRadius": 9999,
@@ -1232,14 +1088,14 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
       numberOfLines={1}
       selected={true}
       style={
-        [
-          {
+        Array [
+          Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "700",
           },
-          {
+          Object {
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
@@ -1257,15 +1113,6 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
 exports[`<Chips /> Snapshots should match snapshot 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityState={
-    {
-      "busy": undefined,
-      "checked": undefined,
-      "disabled": undefined,
-      "expanded": undefined,
-      "selected": undefined,
-    }
-  }
   accessible={true}
   borderColor="rgba(35, 27, 34, 0.4)"
   disabled={false}
@@ -1279,8 +1126,8 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
   onStartShouldSetResponder={[Function]}
   selected={false}
   style={
-    [
-      {
+    Array [
+      Object {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
         "borderRadius": 9999,
@@ -1308,15 +1155,15 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
     numberOfLines={1}
     selected={false}
     style={
-      [
-        {
+      Array [
+        Object {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "400",
           "lineHeight": 24,
         },
-        {
+        Object {
           "flexShrink": 1,
           "fontSize": 12,
           "lineHeight": 16,
@@ -1332,15 +1179,6 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
 exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityState={
-    {
-      "busy": undefined,
-      "checked": undefined,
-      "disabled": undefined,
-      "expanded": undefined,
-      "selected": undefined,
-    }
-  }
   accessible={true}
   borderColor="rgba(35, 27, 34, 0.4)"
   disabled={false}
@@ -1354,8 +1192,8 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
   onStartShouldSetResponder={[Function]}
   selected={false}
   style={
-    [
-      {
+    Array [
+      Object {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
         "borderRadius": 9999,
@@ -1383,15 +1221,15 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
     numberOfLines={1}
     selected={false}
     style={
-      [
-        {
+      Array [
+        Object {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "400",
           "lineHeight": 24,
         },
-        {
+        Object {
           "flexShrink": 1,
           "fontSize": 12,
           "lineHeight": 16,
@@ -1407,15 +1245,6 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
 exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
 <View
   accessibilityRole="button"
-  accessibilityState={
-    {
-      "busy": undefined,
-      "checked": undefined,
-      "disabled": undefined,
-      "expanded": undefined,
-      "selected": undefined,
-    }
-  }
   accessible={true}
   borderColor="rgba(35, 27, 34, 0.4)"
   disabled={true}
@@ -1429,8 +1258,8 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
   onStartShouldSetResponder={[Function]}
   selected={false}
   style={
-    [
-      {
+    Array [
+      Object {
         "alignItems": "center",
         "backgroundColor": "#F5F5FA",
         "borderColor": "#F5F5FA",
@@ -1459,15 +1288,15 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
     numberOfLines={1}
     selected={false}
     style={
-      [
-        {
+      Array [
+        Object {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "400",
           "lineHeight": 24,
         },
-        {
+        Object {
           "color": "#D7D7E0",
           "flexShrink": 1,
           "fontSize": 12,
@@ -1482,18 +1311,9 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
 `;
 
 exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] = `
-[
+Array [
   <View
     accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
@@ -1507,8 +1327,8 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      [
-        {
+      Array [
+        Object {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
@@ -1536,15 +1356,15 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
       numberOfLines={1}
       selected={false}
       style={
-        [
-          {
+        Array [
+          Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          {
+          Object {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 16,
@@ -1557,15 +1377,6 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
   </View>,
   <View
     accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
@@ -1579,8 +1390,8 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      [
-        {
+      Array [
+        Object {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
@@ -1608,15 +1419,15 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
       numberOfLines={1}
       selected={false}
       style={
-        [
-          {
+        Array [
+          Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          {
+          Object {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 16,
@@ -1629,15 +1440,6 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
   </View>,
   <View
     accessibilityRole="button"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
@@ -1651,8 +1453,8 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      [
-        {
+      Array [
+        Object {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
@@ -1680,15 +1482,15 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
       numberOfLines={1}
       selected={false}
       style={
-        [
-          {
+        Array [
+          Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          {
+          Object {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 16,

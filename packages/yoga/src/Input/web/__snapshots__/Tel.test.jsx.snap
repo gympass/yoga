@@ -206,6 +206,7 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
           Label
         </span>
       </legend>
+      
     </fieldset>
   </div>
 </div>

@@ -241,6 +241,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
             Label
           </span>
         </legend>
+        
         <div
           class="c7"
           height="20"
@@ -499,6 +500,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
             Label
           </span>
         </legend>
+        
         <div
           class="c7"
           height="20"
@@ -903,6 +905,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
         id="downshift-3-item-0"
         role="option"
       >
+        
         <mark
           class="c11"
         >
@@ -1316,6 +1319,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
         id="downshift-2-item-0"
         role="option"
       >
+        
         <mark
           class="c11"
         >

@@ -3,8 +3,8 @@
 exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] = `
 <View
   style={
-    [
-      {
+    Array [
+      Object {
         "width": "100%",
       },
     ]
@@ -12,8 +12,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
 >
   <View
     style={
-      [
-        {
+      Array [
+        Object {
           "paddingBottom": 0,
           "paddingLeft": 40,
           "paddingRight": 40,
@@ -25,8 +25,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
   >
     <View
       style={
-        [
-          {
+        Array [
+          Object {
             "position": "relative",
           },
         ]
@@ -34,8 +34,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
     >
       <View
         style={
-          [
-            {
+          Array [
+            Object {
               "backgroundColor": "#F5F5FA",
               "height": 4,
               "position": "absolute",
@@ -48,8 +48,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
       <View
         secondary={false}
         style={
-          [
-            {
+          Array [
+            Object {
               "backgroundColor": "#D8385E",
               "height": 4,
               "position": "absolute",
@@ -63,8 +63,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
     </View>
     <View
       style={
-        [
-          {
+        Array [
+          Object {
             "flexDirection": "row",
             "justifyContent": "space-between",
           },
@@ -73,8 +73,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
     >
       <View
         style={
-          [
-            {
+          Array [
+            Object {
               "width": 15,
             },
           ]
@@ -84,8 +84,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
           active={true}
           secondary={false}
           style={
-            [
-              {
+            Array [
+              Object {
                 "backgroundColor": "#D8385E",
                 "borderRadius": 9999,
                 "height": 15,
@@ -99,8 +99,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
           active={true}
           secondary={false}
           style={
-            [
-              {
+            Array [
+              Object {
                 "color": "#D8385E",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -118,8 +118,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
       </View>
       <View
         style={
-          [
-            {
+          Array [
+            Object {
               "width": 15,
             },
           ]
@@ -129,8 +129,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
           active={false}
           secondary={false}
           style={
-            [
-              {
+            Array [
+              Object {
                 "backgroundColor": "#F5F5FA",
                 "borderRadius": 9999,
                 "height": 15,
@@ -144,8 +144,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
           active={false}
           secondary={false}
           style={
-            [
-              {
+            Array [
+              Object {
                 "color": "#9898A6",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -163,8 +163,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
       </View>
       <View
         style={
-          [
-            {
+          Array [
+            Object {
               "width": 15,
             },
           ]
@@ -174,8 +174,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
           active={false}
           secondary={false}
           style={
-            [
-              {
+            Array [
+              Object {
                 "backgroundColor": "#F5F5FA",
                 "borderRadius": 9999,
                 "height": 15,
@@ -189,8 +189,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
           active={false}
           secondary={false}
           style={
-            [
-              {
+            Array [
+              Object {
                 "color": "#9898A6",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -211,8 +211,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
   <View
     label="step one"
     style={
-      [
-        {
+      Array [
+        Object {
           "width": "100%",
         },
       ]
@@ -228,8 +228,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
 exports[`<Stepper /> Snapshots should match snapshot with first step active and secondary color 1`] = `
 <View
   style={
-    [
-      {
+    Array [
+      Object {
         "width": "100%",
       },
     ]
@@ -237,8 +237,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
 >
   <View
     style={
-      [
-        {
+      Array [
+        Object {
           "paddingBottom": 0,
           "paddingLeft": 40,
           "paddingRight": 40,
@@ -250,8 +250,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
   >
     <View
       style={
-        [
-          {
+        Array [
+          Object {
             "position": "relative",
           },
         ]
@@ -259,8 +259,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
     >
       <View
         style={
-          [
-            {
+          Array [
+            Object {
               "backgroundColor": "#F5F5FA",
               "height": 4,
               "position": "absolute",
@@ -273,8 +273,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
       <View
         secondary={true}
         style={
-          [
-            {
+          Array [
+            Object {
               "backgroundColor": "#9898A6",
               "height": 4,
               "position": "absolute",
@@ -288,8 +288,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
     </View>
     <View
       style={
-        [
-          {
+        Array [
+          Object {
             "flexDirection": "row",
             "justifyContent": "space-between",
           },
@@ -298,8 +298,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
     >
       <View
         style={
-          [
-            {
+          Array [
+            Object {
               "width": 15,
             },
           ]
@@ -309,8 +309,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
           active={true}
           secondary={true}
           style={
-            [
-              {
+            Array [
+              Object {
                 "backgroundColor": "#9898A6",
                 "borderRadius": 9999,
                 "height": 15,
@@ -324,8 +324,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
           active={true}
           secondary={true}
           style={
-            [
-              {
+            Array [
+              Object {
                 "color": "#9898A6",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -343,8 +343,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
       </View>
       <View
         style={
-          [
-            {
+          Array [
+            Object {
               "width": 15,
             },
           ]
@@ -354,8 +354,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
           active={false}
           secondary={true}
           style={
-            [
-              {
+            Array [
+              Object {
                 "backgroundColor": "#F5F5FA",
                 "borderRadius": 9999,
                 "height": 15,
@@ -369,8 +369,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
           active={false}
           secondary={true}
           style={
-            [
-              {
+            Array [
+              Object {
                 "color": "#9898A6",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -388,8 +388,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
       </View>
       <View
         style={
-          [
-            {
+          Array [
+            Object {
               "width": 15,
             },
           ]
@@ -399,8 +399,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
           active={false}
           secondary={true}
           style={
-            [
-              {
+            Array [
+              Object {
                 "backgroundColor": "#F5F5FA",
                 "borderRadius": 9999,
                 "height": 15,
@@ -414,8 +414,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
           active={false}
           secondary={true}
           style={
-            [
-              {
+            Array [
+              Object {
                 "color": "#9898A6",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -436,8 +436,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
   <View
     label="step one"
     style={
-      [
-        {
+      Array [
+        Object {
           "width": "100%",
         },
       ]
@@ -453,8 +453,8 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
 exports[`<Stepper /> Snapshots should match snapshot with second step active 1`] = `
 <View
   style={
-    [
-      {
+    Array [
+      Object {
         "width": "100%",
       },
     ]
@@ -462,8 +462,8 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
 >
   <View
     style={
-      [
-        {
+      Array [
+        Object {
           "paddingBottom": 0,
           "paddingLeft": 40,
           "paddingRight": 40,
@@ -475,8 +475,8 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
   >
     <View
       style={
-        [
-          {
+        Array [
+          Object {
             "position": "relative",
           },
         ]
@@ -484,8 +484,8 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
     >
       <View
         style={
-          [
-            {
+          Array [
+            Object {
               "backgroundColor": "#F5F5FA",
               "height": 4,
               "position": "absolute",
@@ -498,8 +498,8 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
       <View
         secondary={false}
         style={
-          [
-            {
+          Array [
+            Object {
               "backgroundColor": "#D8385E",
               "height": 4,
               "position": "absolute",
@@ -513,8 +513,8 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
     </View>
     <View
       style={
-        [
-          {
+        Array [
+          Object {
             "flexDirection": "row",
             "justifyContent": "space-between",
           },
@@ -523,8 +523,8 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
     >
       <View
         style={
-          [
-            {
+          Array [
+            Object {
               "width": 15,
             },
           ]
@@ -534,8 +534,8 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
           active={true}
           secondary={false}
           style={
-            [
-              {
+            Array [
+              Object {
                 "backgroundColor": "#D8385E",
                 "borderRadius": 9999,
                 "height": 15,
@@ -549,8 +549,8 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
           active={true}
           secondary={false}
           style={
-            [
-              {
+            Array [
+              Object {
                 "color": "#D8385E",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -568,8 +568,8 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
       </View>
       <View
         style={
-          [
-            {
+          Array [
+            Object {
               "width": 15,
             },
           ]
@@ -579,8 +579,8 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
           active={true}
           secondary={false}
           style={
-            [
-              {
+            Array [
+              Object {
                 "backgroundColor": "#D8385E",
                 "borderRadius": 9999,
                 "height": 15,
@@ -594,8 +594,8 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
           active={true}
           secondary={false}
           style={
-            [
-              {
+            Array [
+              Object {
                 "color": "#D8385E",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -613,8 +613,8 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
       </View>
       <View
         style={
-          [
-            {
+          Array [
+            Object {
               "width": 15,
             },
           ]
@@ -624,8 +624,8 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
           active={false}
           secondary={false}
           style={
-            [
-              {
+            Array [
+              Object {
                 "backgroundColor": "#F5F5FA",
                 "borderRadius": 9999,
                 "height": 15,
@@ -639,8 +639,8 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
           active={false}
           secondary={false}
           style={
-            [
-              {
+            Array [
+              Object {
                 "color": "#9898A6",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -661,8 +661,8 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
   <View
     label="step two"
     style={
-      [
-        {
+      Array [
+        Object {
           "width": "100%",
         },
       ]

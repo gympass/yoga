@@ -184,6 +184,7 @@ exports[`<TextArea /> should match snapshot 1`] = `
       <label
         class="c3"
       />
+      
     </fieldset>
     <div
       class="c4"

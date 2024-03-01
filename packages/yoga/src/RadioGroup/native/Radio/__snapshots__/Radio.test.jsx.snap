@@ -3,12 +3,8 @@
 exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot with default radio 1`] = `
 <View
   accessibilityState={
-    {
-      "busy": undefined,
-      "checked": undefined,
+    Object {
       "disabled": false,
-      "expanded": undefined,
-      "selected": undefined,
     }
   }
   accessible={true}
@@ -24,8 +20,8 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
   onStartShouldSetResponder={[Function]}
   pressed={false}
   style={
-    [
-      {
+    Array [
+      Object {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
         "borderColor": "#9898A6",
@@ -44,12 +40,8 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
 exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot with default radio 2`] = `
 <View
   accessibilityState={
-    {
-      "busy": undefined,
-      "checked": undefined,
+    Object {
       "disabled": false,
-      "expanded": undefined,
-      "selected": undefined,
     }
   }
   accessible={true}
@@ -65,8 +57,8 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
   onStartShouldSetResponder={[Function]}
   pressed={false}
   style={
-    [
-      {
+    Array [
+      Object {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
         "borderColor": "#9898A6",
@@ -85,12 +77,8 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
 exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot with default radio pressed 1`] = `
 <View
   accessibilityState={
-    {
-      "busy": undefined,
-      "checked": undefined,
+    Object {
       "disabled": false,
-      "expanded": undefined,
-      "selected": undefined,
     }
   }
   accessible={true}
@@ -106,8 +94,8 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
   onStartShouldSetResponder={[Function]}
   pressed={false}
   style={
-    [
-      {
+    Array [
+      Object {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
         "borderColor": "#9898A6",
@@ -127,12 +115,8 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
 exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot with disabled radio 1`] = `
 <View
   accessibilityState={
-    {
-      "busy": undefined,
-      "checked": undefined,
+    Object {
       "disabled": true,
-      "expanded": undefined,
-      "selected": undefined,
     }
   }
   accessible={true}
@@ -148,8 +132,8 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
   onStartShouldSetResponder={[Function]}
   pressed={false}
   style={
-    [
-      {
+    Array [
+      Object {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
         "borderColor": "#F5F5FA",

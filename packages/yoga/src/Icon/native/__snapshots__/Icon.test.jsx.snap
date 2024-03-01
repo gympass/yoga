@@ -6,8 +6,8 @@ exports[`Snapshots should match snapshot 1`] = `
   fill="#231B22"
   height={16}
   style={
-    [
-      {
+    Array [
+      Object {
         "height": 16,
         "width": 16,
       },
@@ -30,8 +30,8 @@ exports[`Snapshots should match snapshot with accessible props 1`] = `
   height={16}
   role="img"
   style={
-    [
-      {
+    Array [
+      Object {
         "height": 16,
         "width": 16,
       },
@@ -63,8 +63,8 @@ exports[`Snapshots should match snapshot with size prop 1`] = `
   fill="#231B22"
   height={16}
   style={
-    [
-      {
+    Array [
+      Object {
         "height": 16,
         "width": 16,
       },
@@ -88,15 +88,15 @@ exports[`Snapshots should match snapshot with system props 1`] = `
   height={16}
   margin="medium"
   style={
-    [
-      {
+    Array [
+      Object {
         "height": 16,
         "marginBottom": 20,
         "marginLeft": 20,
         "marginRight": 20,
         "marginTop": 20,
         "shadowColor": "rgba(152, 152, 166, 0.2)",
-        "shadowOffset": {
+        "shadowOffset": Object {
           "height": 5,
           "width": 0,
         },

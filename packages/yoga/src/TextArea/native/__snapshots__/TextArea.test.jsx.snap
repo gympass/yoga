@@ -4,12 +4,12 @@ exports[`<TextArea /> should match snapshot 1`] = `
 <View
   full={false}
   style={
-    [
-      {
+    Array [
+      Object {
         "position": "relative",
         "width": 320,
       },
-      {},
+      Object {},
     ]
   }
 >
@@ -24,8 +24,8 @@ exports[`<TextArea /> should match snapshot 1`] = `
     onChangeText={[Function]}
     onFocus={[Function]}
     style={
-      [
-        {
+      Array [
+        Object {
           "borderColor": "#D7D7E0",
           "borderRadius": 8,
           "borderStyle": "solid",
@@ -39,7 +39,7 @@ exports[`<TextArea /> should match snapshot 1`] = `
           "paddingTop": 16,
           "width": 320,
         },
-        {
+        Object {
           "height": 88,
         },
       ]

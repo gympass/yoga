@@ -10,8 +10,8 @@ exports[`<Avatar /> should match snapshot in avatar with children prop 1`] = `
   justifyContent="center"
   overflow="hidden"
   style={
-    [
-      {
+    Array [
+      Object {
         "alignItems": "center",
         "backgroundColor": "#9898A6",
         "borderRadius": 8,
@@ -30,8 +30,8 @@ exports[`<Avatar /> should match snapshot in avatar with children prop 1`] = `
     inverted={false}
     light={false}
     style={
-      [
-        {
+      Array [
+        Object {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
@@ -49,8 +49,8 @@ exports[`<Avatar /> should match snapshot in avatar with children prop 1`] = `
     borderWidth={1}
     height="100%"
     style={
-      [
-        {
+      Array [
+        Object {
           "borderColor": "rgba(35, 27, 34, 0.1)",
           "borderRadius": 8,
           "borderWidth": 1,
@@ -75,8 +75,8 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
   justifyContent="center"
   overflow="hidden"
   style={
-    [
-      {
+    Array [
+      Object {
         "alignItems": "center",
         "backgroundColor": "#9898A6",
         "borderRadius": 9999,
@@ -98,21 +98,21 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
     focusable={false}
     height="50%"
     style={
-      [
-        {
+      Array [
+        Object {
           "backgroundColor": "transparent",
           "borderWidth": 0,
         },
-        [
-          {
+        Array [
+          Object {
             "height": "50%",
             "width": "50%",
           },
         ],
-        {
+        Object {
           "opacity": 1,
         },
-        {
+        Object {
           "flex": 0,
           "height": "50%",
           "width": "50%",
@@ -123,16 +123,16 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
   >
     <RNSVGGroup
       fill={
-        [
+        Array [
           0,
           4294967295,
         ]
       }
       fillOpacity={1}
       fillRule={1}
-      font={{}}
+      font={Object {}}
       matrix={
-        [
+        Array [
           1,
           0,
           0,
@@ -145,7 +145,7 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
       originX={0}
       originY={0}
       propList={
-        [
+        Array [
           "fill",
         ]
       }
@@ -173,8 +173,8 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
     borderWidth={1}
     height="100%"
     style={
-      [
-        {
+      Array [
+        Object {
           "borderColor": "rgba(35, 27, 34, 0.1)",
           "borderRadius": 9999,
           "borderWidth": 1,
@@ -200,8 +200,8 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
   overflow="hidden"
   placeholder={[Function]}
   style={
-    [
-      {
+    Array [
+      Object {
         "alignItems": "center",
         "backgroundColor": "#9898A6",
         "borderRadius": 9999,
@@ -223,21 +223,21 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
     focusable={false}
     height="50%"
     style={
-      [
-        {
+      Array [
+        Object {
           "backgroundColor": "transparent",
           "borderWidth": 0,
         },
-        [
-          {
+        Array [
+          Object {
             "height": "50%",
             "width": "50%",
           },
         ],
-        {
+        Object {
           "opacity": 1,
         },
-        {
+        Object {
           "flex": 0,
           "height": "50%",
           "width": "50%",
@@ -248,16 +248,16 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
   >
     <RNSVGGroup
       fill={
-        [
+        Array [
           0,
           4294967295,
         ]
       }
       fillOpacity={1}
       fillRule={1}
-      font={{}}
+      font={Object {}}
       matrix={
-        [
+        Array [
           1,
           0,
           0,
@@ -270,7 +270,7 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
       originX={0}
       originY={0}
       propList={
-        [
+        Array [
           "fill",
         ]
       }
@@ -298,8 +298,8 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
     borderWidth={1}
     height="100%"
     style={
-      [
-        {
+      Array [
+        Object {
           "borderColor": "rgba(35, 27, 34, 0.1)",
           "borderRadius": 9999,
           "borderWidth": 1,
@@ -324,8 +324,8 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
   justifyContent="center"
   overflow="hidden"
   style={
-    [
-      {
+    Array [
+      Object {
         "alignItems": "center",
         "backgroundColor": "#9898A6",
         "borderRadius": 8,
@@ -347,21 +347,21 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
     focusable={false}
     height="50%"
     style={
-      [
-        {
+      Array [
+        Object {
           "backgroundColor": "transparent",
           "borderWidth": 0,
         },
-        [
-          {
+        Array [
+          Object {
             "height": "50%",
             "width": "50%",
           },
         ],
-        {
+        Object {
           "opacity": 1,
         },
-        {
+        Object {
           "flex": 0,
           "height": "50%",
           "width": "50%",
@@ -372,16 +372,16 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
   >
     <RNSVGGroup
       fill={
-        [
+        Array [
           0,
           4278190080,
         ]
       }
       fillOpacity={1}
       fillRule={1}
-      font={{}}
+      font={Object {}}
       matrix={
-        [
+        Array [
           1,
           0,
           0,
@@ -394,7 +394,7 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
       originX={0}
       originY={0}
       propList={
-        [
+        Array [
           "fill",
         ]
       }
@@ -422,8 +422,8 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
     borderWidth={1}
     height="100%"
     style={
-      [
-        {
+      Array [
+        Object {
           "borderColor": "rgba(35, 27, 34, 0.1)",
           "borderRadius": 8,
           "borderWidth": 1,
@@ -449,8 +449,8 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
   overflow="hidden"
   placeholder={[Function]}
   style={
-    [
-      {
+    Array [
+      Object {
         "alignItems": "center",
         "backgroundColor": "#9898A6",
         "borderRadius": 8,
@@ -472,21 +472,21 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
     focusable={false}
     height="50%"
     style={
-      [
-        {
+      Array [
+        Object {
           "backgroundColor": "transparent",
           "borderWidth": 0,
         },
-        [
-          {
+        Array [
+          Object {
             "height": "50%",
             "width": "50%",
           },
         ],
-        {
+        Object {
           "opacity": 1,
         },
-        {
+        Object {
           "flex": 0,
           "height": "50%",
           "width": "50%",
@@ -497,16 +497,16 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
   >
     <RNSVGGroup
       fill={
-        [
+        Array [
           0,
           4294967295,
         ]
       }
       fillOpacity={1}
       fillRule={1}
-      font={{}}
+      font={Object {}}
       matrix={
-        [
+        Array [
           1,
           0,
           0,
@@ -519,7 +519,7 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
       originX={0}
       originY={0}
       propList={
-        [
+        Array [
           "fill",
         ]
       }
@@ -547,8 +547,8 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
     borderWidth={1}
     height="100%"
     style={
-      [
-        {
+      Array [
+        Object {
           "borderColor": "rgba(35, 27, 34, 0.1)",
           "borderRadius": 8,
           "borderWidth": 1,

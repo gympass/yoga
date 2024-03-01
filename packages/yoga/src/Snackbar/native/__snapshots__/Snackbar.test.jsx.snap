@@ -1,17 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
-[
+Array [
   <View
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -22,7 +13,7 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      {
+      Object {
         "flexDirection": "row",
       }
     }
@@ -35,8 +26,8 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
       secondary={false}
       small={true}
       style={
-        [
-          {
+        Array [
+          Object {
             "alignItems": "center",
             "backgroundColor": "#D8385E",
             "borderRadius": 9999,
@@ -57,8 +48,8 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
         pressed={false}
         small={true}
         style={
-          [
-            {
+          Array [
+            Object {
               "color": "#FFFFFF",
               "fontFamily": "Rubik",
               "fontSize": 14,
@@ -75,11 +66,11 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
   <View
     collapsable={false}
     style={
-      {
+      Object {
         "bottom": 0,
         "position": "absolute",
-        "transform": [
-          {
+        "transform": Array [
+          Object {
             "translateY": 1334,
           },
         ],
@@ -107,8 +98,8 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
         onStartShouldSetResponder={[Function]}
         onStartShouldSetResponderCapture={[Function]}
         style={
-          [
-            {
+          Array [
+            Object {
               "alignItems": "center",
               "backgroundColor": "#C1EEDB",
               "borderRadius": 8,
@@ -133,22 +124,22 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
           height={24}
           marginRight="xxsmall"
           style={
-            [
-              {
+            Array [
+              Object {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              [
-                {
+              Array [
+                Object {
                   "height": 24,
                   "marginRight": 8,
                   "width": 24,
                 },
               ],
-              {
+              Object {
                 "opacity": 1,
               },
-              {
+              Object {
                 "flex": 0,
                 "height": 24,
                 "width": 24,
@@ -159,16 +150,16 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
         >
           <RNSVGGroup
             fill={
-              [
+              Array [
                 0,
                 4280490786,
               ]
             }
             fillOpacity={1}
             fillRule={1}
-            font={{}}
+            font={Object {}}
             matrix={
-              [
+              Array [
                 1,
                 0,
                 0,
@@ -181,7 +172,7 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
             originX={0}
             originY={0}
             propList={
-              [
+              Array [
                 "fill",
               ]
             }
@@ -212,8 +203,8 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
           marginTop="xxxsmall"
           numberOfLines={2}
           style={
-            [
-              {
+            Array [
+              Object {
                 "color": "#231B22",
                 "flexBasis": 0,
                 "flexGrow": 1,
@@ -231,15 +222,6 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
           Lorem Ipsum is simply dummy text of the printing and types.
         </Text>
         <View
-          accessibilityState={
-            {
-              "busy": undefined,
-              "checked": undefined,
-              "disabled": undefined,
-              "expanded": undefined,
-              "selected": undefined,
-            }
-          }
           accessible={true}
           focusable={true}
           onClick={[Function]}
@@ -250,7 +232,7 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           style={
-            {
+            Object {
               "flexDirection": "row",
             }
           }
@@ -260,8 +242,8 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
             pressed={false}
             small={true}
             style={
-              [
-                {
+              Array [
+                Object {
                   "alignItems": "center",
                   "backgroundColor": "transparent",
                   "borderRadius": 9999,
@@ -271,7 +253,7 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
                   "paddingLeft": 16,
                   "paddingRight": 16,
                 },
-                {
+                Object {
                   "marginLeft": 8,
                 },
               ]
@@ -283,8 +265,8 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
               secondary={true}
               small={true}
               style={
-                [
-                  {
+                Array [
+                  Object {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
                     "fontSize": 14,
@@ -308,17 +290,8 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
 `;
 
 exports[`<Snackbar /> should match snapshot when have a variant informative or attention prop 1`] = `
-[
+Array [
   <View
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -329,7 +302,7 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      {
+      Object {
         "flexDirection": "row",
       }
     }
@@ -342,8 +315,8 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
       secondary={false}
       small={true}
       style={
-        [
-          {
+        Array [
+          Object {
             "alignItems": "center",
             "backgroundColor": "#D8385E",
             "borderRadius": 9999,
@@ -364,8 +337,8 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
         pressed={false}
         small={true}
         style={
-          [
-            {
+          Array [
+            Object {
               "color": "#FFFFFF",
               "fontFamily": "Rubik",
               "fontSize": 14,
@@ -382,11 +355,11 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
   <View
     collapsable={false}
     style={
-      {
+      Object {
         "bottom": 0,
         "position": "absolute",
-        "transform": [
-          {
+        "transform": Array [
+          Object {
             "translateY": 1334,
           },
         ],
@@ -414,8 +387,8 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
         onStartShouldSetResponder={[Function]}
         onStartShouldSetResponderCapture={[Function]}
         style={
-          [
-            {
+          Array [
+            Object {
               "alignItems": "center",
               "backgroundColor": "#E0DFFF",
               "borderRadius": 8,
@@ -440,8 +413,8 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
           marginTop="xxxsmall"
           numberOfLines={2}
           style={
-            [
-              {
+            Array [
+              Object {
                 "color": "#231B22",
                 "flexBasis": 0,
                 "flexGrow": 1,
@@ -465,17 +438,8 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
 `;
 
 exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
-[
+Array [
   <View
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -486,7 +450,7 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      {
+      Object {
         "flexDirection": "row",
       }
     }
@@ -499,8 +463,8 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
       secondary={false}
       small={true}
       style={
-        [
-          {
+        Array [
+          Object {
             "alignItems": "center",
             "backgroundColor": "#D8385E",
             "borderRadius": 9999,
@@ -521,8 +485,8 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
         pressed={false}
         small={true}
         style={
-          [
-            {
+          Array [
+            Object {
               "color": "#FFFFFF",
               "fontFamily": "Rubik",
               "fontSize": 14,
@@ -539,11 +503,11 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
   <View
     collapsable={false}
     style={
-      {
+      Object {
         "bottom": 0,
         "position": "absolute",
-        "transform": [
-          {
+        "transform": Array [
+          Object {
             "translateY": 1334,
           },
         ],
@@ -571,8 +535,8 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
         onStartShouldSetResponder={[Function]}
         onStartShouldSetResponderCapture={[Function]}
         style={
-          [
-            {
+          Array [
+            Object {
               "alignItems": "center",
               "backgroundColor": "#C1EEDB",
               "borderRadius": 8,
@@ -597,22 +561,22 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
           height={24}
           marginRight="xxsmall"
           style={
-            [
-              {
+            Array [
+              Object {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              [
-                {
+              Array [
+                Object {
                   "height": 24,
                   "marginRight": 8,
                   "width": 24,
                 },
               ],
-              {
+              Object {
                 "opacity": 1,
               },
-              {
+              Object {
                 "flex": 0,
                 "height": 24,
                 "width": 24,
@@ -623,16 +587,16 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
         >
           <RNSVGGroup
             fill={
-              [
+              Array [
                 0,
                 4280490786,
               ]
             }
             fillOpacity={1}
             fillRule={1}
-            font={{}}
+            font={Object {}}
             matrix={
-              [
+              Array [
                 1,
                 0,
                 0,
@@ -645,7 +609,7 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
             originX={0}
             originY={0}
             propList={
-              [
+              Array [
                 "fill",
               ]
             }
@@ -676,8 +640,8 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
           marginTop="xxxsmall"
           numberOfLines={2}
           style={
-            [
-              {
+            Array [
+              Object {
                 "color": "#231B22",
                 "flexBasis": 0,
                 "flexGrow": 1,
@@ -695,15 +659,6 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
           Feedback Message
         </Text>
         <View
-          accessibilityState={
-            {
-              "busy": undefined,
-              "checked": undefined,
-              "disabled": undefined,
-              "expanded": undefined,
-              "selected": undefined,
-            }
-          }
           accessible={true}
           focusable={true}
           onClick={[Function]}
@@ -714,7 +669,7 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           style={
-            {
+            Object {
               "flexDirection": "row",
             }
           }
@@ -724,8 +679,8 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
             pressed={false}
             small={true}
             style={
-              [
-                {
+              Array [
+                Object {
                   "alignItems": "center",
                   "backgroundColor": "transparent",
                   "borderRadius": 9999,
@@ -735,7 +690,7 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
                   "paddingLeft": 16,
                   "paddingRight": 16,
                 },
-                {
+                Object {
                   "marginLeft": 8,
                 },
               ]
@@ -747,8 +702,8 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
               secondary={true}
               small={true}
               style={
-                [
-                  {
+                Array [
+                  Object {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
                     "fontSize": 14,
@@ -772,17 +727,8 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
 `;
 
 exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
-[
+Array [
   <View
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": undefined,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -793,7 +739,7 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      {
+      Object {
         "flexDirection": "row",
       }
     }
@@ -806,8 +752,8 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
       secondary={false}
       small={true}
       style={
-        [
-          {
+        Array [
+          Object {
             "alignItems": "center",
             "backgroundColor": "#D8385E",
             "borderRadius": 9999,
@@ -828,8 +774,8 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
         pressed={false}
         small={true}
         style={
-          [
-            {
+          Array [
+            Object {
               "color": "#FFFFFF",
               "fontFamily": "Rubik",
               "fontSize": 14,
@@ -846,11 +792,11 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
   <View
     collapsable={false}
     style={
-      {
+      Object {
         "bottom": 0,
         "position": "absolute",
-        "transform": [
-          {
+        "transform": Array [
+          Object {
             "translateY": 1334,
           },
         ],
@@ -878,8 +824,8 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
         onStartShouldSetResponder={[Function]}
         onStartShouldSetResponderCapture={[Function]}
         style={
-          [
-            {
+          Array [
+            Object {
               "alignItems": "center",
               "backgroundColor": "#C1EEDB",
               "borderRadius": 8,
@@ -904,8 +850,8 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
           marginTop="xxxsmall"
           numberOfLines={2}
           style={
-            [
-              {
+            Array [
+              Object {
                 "color": "#231B22",
                 "flexBasis": 0,
                 "flexGrow": 1,

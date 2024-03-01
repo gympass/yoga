@@ -56,16 +56,16 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
     </React.Fragment>
   }
   style={
-    [
-      {},
+    Array [
+      Object {},
     ]
   }
   title="Welcome to the world of feeling good!"
 >
   <View
     style={
-      [
-        {},
+      Array [
+        Object {},
       ]
     }
   >
@@ -75,16 +75,16 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
       focusable={false}
       height={375}
       style={
-        [
-          {
+        Array [
+          Object {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
           undefined,
-          {
+          Object {
             "opacity": 1,
           },
-          {
+          Object {
             "flex": 0,
             "height": 375,
             "width": 375,
@@ -95,16 +95,16 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
     >
       <RNSVGGroup
         fill={
-          [
+          Array [
             0,
             4278190080,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={{}}
+        font={Object {}}
         matrix={
-          [
+          Array [
             1,
             0,
             0,
@@ -116,7 +116,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
         opacity={1}
         originX={0}
         originY={0}
-        propList={[]}
+        propList={Array []}
         rotation={0}
         scaleX={1}
         scaleY={1}
@@ -138,8 +138,8 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
   </View>
   <Text
     style={
-      [
-        {
+      Array [
+        Object {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 24,
@@ -158,8 +158,8 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
     light={false}
     mt="small"
     style={
-      [
-        {
+      Array [
+        Object {
           "color": "#6B6B78",
           "fontFamily": "Rubik",
           "fontSize": 16,
@@ -179,8 +179,8 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
     light={false}
     mt="small"
     style={
-      [
-        {
+      Array [
+        Object {
           "color": "#6B6B78",
           "fontFamily": "Rubik",
           "fontSize": 16,
@@ -194,8 +194,8 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
     <View
       mt="xxxlarge"
       style={
-        [
-          {
+        Array [
+          Object {
             "marginTop": 56,
           },
         ]
@@ -206,8 +206,8 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
         inverted={false}
         light={false}
         style={
-          [
-            {
+          Array [
+            Object {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
@@ -220,13 +220,13 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
         <RNSVGSvgView
           focusable={false}
           style={
-            [
-              {
+            Array [
+              Object {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
               undefined,
-              {
+              Object {
                 "opacity": 1,
               },
               null,
@@ -235,16 +235,16 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
         >
           <RNSVGGroup
             fill={
-              [
+              Array [
                 0,
                 4278190080,
               ]
             }
             fillOpacity={1}
             fillRule={1}
-            font={{}}
+            font={Object {}}
             matrix={
-              [
+              Array [
                 1,
                 0,
                 0,
@@ -256,7 +256,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
             opacity={1}
             originX={0}
             originY={0}
-            propList={[]}
+            propList={Array []}
             rotation={0}
             scaleX={1}
             scaleY={1}
@@ -283,8 +283,8 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
         light={false}
         mt="small"
         style={
-          [
-            {
+          Array [
+            Object {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
@@ -298,13 +298,13 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
         <RNSVGSvgView
           focusable={false}
           style={
-            [
-              {
+            Array [
+              Object {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
               undefined,
-              {
+              Object {
                 "opacity": 1,
               },
               null,
@@ -313,16 +313,16 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
         >
           <RNSVGGroup
             fill={
-              [
+              Array [
                 0,
                 4278190080,
               ]
             }
             fillOpacity={1}
             fillRule={1}
-            font={{}}
+            font={Object {}}
             matrix={
-              [
+              Array [
                 1,
                 0,
                 0,
@@ -334,7 +334,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
             opacity={1}
             originX={0}
             originY={0}
-            propList={[]}
+            propList={Array []}
             rotation={0}
             scaleX={1}
             scaleY={1}
@@ -361,8 +361,8 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
         light={false}
         mt="small"
         style={
-          [
-            {
+          Array [
+            Object {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
@@ -376,13 +376,13 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
         <RNSVGSvgView
           focusable={false}
           style={
-            [
-              {
+            Array [
+              Object {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
               undefined,
-              {
+              Object {
                 "opacity": 1,
               },
               null,
@@ -391,16 +391,16 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
         >
           <RNSVGGroup
             fill={
-              [
+              Array [
                 0,
                 4278190080,
               ]
             }
             fillOpacity={1}
             fillRule={1}
-            font={{}}
+            font={Object {}}
             matrix={
-              [
+              Array [
                 1,
                 0,
                 0,
@@ -412,7 +412,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
             opacity={1}
             originX={0}
             originY={0}
-            propList={[]}
+            propList={Array []}
             rotation={0}
             scaleX={1}
             scaleY={1}
@@ -438,8 +438,8 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
   <View
     mt="xxxlarge"
     style={
-      [
-        {
+      Array [
+        Object {
           "marginTop": 56,
         },
       ]
@@ -450,8 +450,8 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
       display="flex"
       flexDirection="row"
       style={
-        [
-          {
+        Array [
+          Object {
             "alignItems": "center",
             "display": "flex",
             "flexDirection": "row",
@@ -462,12 +462,8 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
       <View>
         <View
           accessibilityState={
-            {
-              "busy": undefined,
-              "checked": undefined,
+            Object {
               "disabled": false,
-              "expanded": undefined,
-              "selected": undefined,
             }
           }
           accessible={true}
@@ -480,19 +476,19 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           style={
-            [
-              {
+            Array [
+              Object {
                 "alignItems": "center",
                 "flexDirection": "row",
               },
-              {},
+              Object {},
             ]
           }
         >
           <View
             style={
-              [
-                {
+              Array [
+                Object {
                   "alignItems": "center",
                   "height": 24,
                   "justifyContent": "center",
@@ -507,8 +503,8 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
               inverted={false}
               pressed={false}
               style={
-                [
-                  {
+                Array [
+                  Object {
                     "backgroundColor": "transparent",
                     "borderColor": "#D8385E",
                     "borderRadius": 4,
@@ -529,8 +525,8 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
         inverted={false}
         light={false}
         style={
-          [
-            {
+          Array [
+            Object {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
