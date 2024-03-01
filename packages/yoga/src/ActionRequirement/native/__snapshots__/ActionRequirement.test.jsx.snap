@@ -55,6 +55,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
       </Text>
     </React.Fragment>
   }
+  renderTextDisplay={false}
   style={
     [
       {},
@@ -544,6 +545,57 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
       </Text>
     </View>
   </View>
+  <View />
+</View>
+`;
+
+exports[`<ActionRequirement /> should match snapshot with text display 1`] = `
+<View
+  description="Lets make it a good day!"
+  renderTextDisplay={true}
+  style={
+    [
+      {},
+    ]
+  }
+  title="Welcome to the world of feeling good!"
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "NaN Holo Condensed",
+          "fontSize": 40,
+          "fontWeight": "700",
+          "lineHeight": 40,
+        },
+      ]
+    }
+  >
+    Welcome to the world of feeling good!
+  </Text>
+  <Text
+    color="deep"
+    fontSize="medium"
+    inverted={false}
+    light={false}
+    mt="small"
+    style={
+      [
+        {
+          "color": "#6B6B78",
+          "fontFamily": "Rubik",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 24,
+          "marginTop": 16,
+        },
+      ]
+    }
+  >
+    Lets make it a good day!
+  </Text>
   <View />
 </View>
 `;

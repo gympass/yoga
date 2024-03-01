@@ -51,4 +51,18 @@ describe('<ActionRequirement />', () => {
 
     expect(toJSON()).toMatchSnapshot();
   });
+
+  it('should match snapshot with text display', () => {
+    const { toJSON } = render(
+      <ThemeProvider>
+        <ActionRequirement
+          title="Welcome to the world of feeling good!"
+          description="Lets make it a good day!"
+          renderTextDisplay
+        />
+      </ThemeProvider>,
+    );
+
+    expect(toJSON()).toMatchSnapshot();
+  });
 });

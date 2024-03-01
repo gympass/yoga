@@ -44,4 +44,18 @@ describe('<ActionRequirement />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should match snapshot with text display', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <ActionRequirement
+          title="title"
+          description="description"
+          renderTextDisplay
+        />
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });

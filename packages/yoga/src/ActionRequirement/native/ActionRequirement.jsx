@@ -1,5 +1,5 @@
 import React from 'react';
-import { arrayOf, node, oneOfType, string } from 'prop-types';
+import { arrayOf, bool, node, oneOfType, string } from 'prop-types';
 import styled from 'styled-components/native';
 import { View } from 'react-native';
 import Box from '../../Box';
@@ -9,12 +9,24 @@ import Text from '../../Text';
 const StyledActionRequirement = styled.View``;
 
 function ActionRequirement(props) {
-  const { title, description, children, checkable, illustration, list } = props;
+  const {
+    title,
+    description,
+    children,
+    checkable,
+    illustration,
+    list,
+    renderTextDisplay,
+  } = props;
 
   return (
     <StyledActionRequirement {...props}>
       {illustration && <Box>{illustration}</Box>}
-      <Title>{title}</Title>
+      {renderTextDisplay ? (
+        <Text.Display2>{title}</Text.Display2>
+      ) : (
+        <Title>{title}</Title>
+      )}
       <Text mt="small" color="deep">
         {description}
       </Text>
@@ -30,12 +42,13 @@ function ActionRequirement(props) {
 }
 
 ActionRequirement.propTypes = {
-  title: string.isRequired,
+  title: oneOfType([arrayOf(node), node]).isRequired,
   children: oneOfType([arrayOf(node), node]),
   description: string.isRequired,
   checkable: oneOfType([arrayOf(node), node]),
   illustration: oneOfType([arrayOf(node), node]),
   list: oneOfType([arrayOf(node), node]),
+  renderTextDisplay: bool,
 };
 
 ActionRequirement.defaultProps = {
@@ -43,6 +56,7 @@ ActionRequirement.defaultProps = {
   checkable: undefined,
   illustration: undefined,
   list: undefined,
+  renderTextDisplay: false,
 };
 
 export default ActionRequirement;
