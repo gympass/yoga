@@ -844,15 +844,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c1:disabled {
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -972,12 +972,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -1137,12 +1137,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -1298,12 +1298,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -1466,12 +1466,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -1646,15 +1646,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -1790,15 +1790,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -2361,12 +2361,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -2524,12 +2524,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -2676,12 +2676,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -2842,12 +2842,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -3013,15 +3013,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -3147,15 +3147,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -3954,12 +3954,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -4117,12 +4117,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -4269,12 +4269,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -4435,12 +4435,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -4606,15 +4606,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -4740,15 +4740,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -5689,12 +5689,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 svg {
@@ -5723,12 +5723,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1:disabled {
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -5908,12 +5908,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 svg {
@@ -5942,12 +5942,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1:disabled {
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -6116,12 +6116,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 svg {
@@ -6150,12 +6150,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1:disabled {
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -6338,12 +6338,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 svg {
@@ -6372,12 +6372,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1:disabled {
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -6592,15 +6592,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -7270,15 +7270,15 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c1:disabled {
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -7388,12 +7388,12 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -7551,12 +7551,12 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -7703,12 +7703,12 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -7989,15 +7989,15 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -8123,15 +8123,15 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -8633,15 +8633,15 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Lin
 }
 
 .c1:disabled {
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -8753,12 +8753,12 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -8918,12 +8918,12 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -9088,15 +9088,15 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Tex
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -9954,15 +9954,15 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c1:disabled {
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -10082,12 +10082,12 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -10247,12 +10247,12 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -10408,12 +10408,12 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -10576,12 +10576,12 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -10756,15 +10756,15 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -10900,15 +10900,15 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -11471,12 +11471,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -11634,12 +11634,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -11786,12 +11786,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -11952,12 +11952,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -12123,15 +12123,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -12257,15 +12257,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -13206,12 +13206,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 svg {
@@ -13240,12 +13240,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c1:disabled {
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -13425,12 +13425,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 svg {
@@ -13459,12 +13459,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c1:disabled {
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -13633,12 +13633,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 svg {
@@ -13667,12 +13667,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c1:disabled {
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -13855,12 +13855,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 svg {
@@ -13889,12 +13889,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c1:disabled {
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -14109,15 +14109,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -14292,15 +14292,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -14478,15 +14478,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -15285,12 +15285,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -15448,12 +15448,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -15600,12 +15600,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -15766,12 +15766,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -15937,15 +15937,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -16071,15 +16071,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -16897,15 +16897,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c1:disabled {
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -17034,15 +17034,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c1:disabled {
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -17155,12 +17155,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -17318,12 +17318,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -17470,12 +17470,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -17636,12 +17636,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -17807,15 +17807,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -17941,15 +17941,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>

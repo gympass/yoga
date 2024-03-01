@@ -196,15 +196,15 @@ exports[`<Banner /> should match snapshot with button 1`] = `
 .c4:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c4:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c2 {
@@ -610,15 +610,15 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
 .c5:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c5:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c2 {
