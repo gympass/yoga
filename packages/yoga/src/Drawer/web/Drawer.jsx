@@ -19,11 +19,11 @@ const StyledDrawer = styled(Dialog)`
   align-self: flex-end;
   position: absolute;
   right: 0;
-  animation: content;
+  animation: leftright;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
   transition: 0.25s ease-in-out;
-  @keyframes content {
+  @keyframes leftright {
     0% {
       transform: translate3d(100%, 0, 0);
     }

@@ -16,10 +16,10 @@ const StyledBottomSheet = styled(Dialog)`
   border-radius: ${bottomsheet.border.radius}px ${bottomsheet.border.radius}px 0 0;
   `}
   align-self: flex-end;
-  animation: content;
+  animation: updown;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
-  @keyframes content {
+  @keyframes updown {
     0% {
       transform: translateY(100vh);
     }
