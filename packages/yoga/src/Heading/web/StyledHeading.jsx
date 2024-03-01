@@ -1,6 +1,11 @@
 import styled, { css } from 'styled-components';
+import Box from '../../Box';
 
-const StyledHeading = styled.header`
+const StyledHeading = styled(Box).attrs(props => ({
+  as: 'header',
+  bg: props.theme.yoga.components.heading,
+  ...props,
+}))`
   ${({
     noPadding,
     theme: {
@@ -10,7 +15,6 @@ const StyledHeading = styled.header`
     },
   }) => {
     return css`
-      background: ${heading.background};
       padding: ${heading.padding.vertical}px ${heading.padding.horizontal}px;
       min-height: ${heading.height}px;
       width: 100%;

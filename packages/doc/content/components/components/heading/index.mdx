@@ -4,7 +4,6 @@ metaTitle: 'Heading'
 metaDescription: 'Heading Component'
 ---
 
-
 # Heading
 
 ### Reference
@@ -16,86 +15,111 @@ The Heading defines the top of a page, and displays information and actions rela
 #### Default
 
 ```javascript
-  <Heading>
-    <Heading.Title>Gympass</Heading.Title>
-  </Heading>
+<Heading>
+  <Heading.Title>Gympass</Heading.Title>
+</Heading>
 ```
 
 #### With back button
 
 ```javascript
-  <Heading>
-    <Heading.BackButton onClick={() => alert('back button')} />
-    <Heading.Title>Gympass</Heading.Title>
-  </Heading>
+<Heading>
+  <Heading.BackButton onClick={() => alert('back button')} />
+  <Heading.Title>Gympass</Heading.Title>
+</Heading>
 ```
-
 
 #### Just back button
 
 ```javascript
-  <Heading>
-    <Heading.BackButton onClick={() => alert('back button')} />
-  </Heading>
+<Heading>
+  <Heading.BackButton onClick={() => alert('back button')} />
+</Heading>
 ```
 
 #### Just right button
 
 ```javascript
-  <Heading>
-    <Heading.RightButton onClick={() => alert('close button')} icon={Close} />
-  </Heading>
+<Heading>
+  <Heading.RightButton onClick={() => alert('close button')} icon={Close} />
+</Heading>
 ```
 
 #### Just right button with background
 
 ```javascript
-  <Heading>
-    <Heading.RightButton onClick={() => alert('close button')} icon={Close} secondary={false} />
-  </Heading>
+<Heading>
+  <Heading.RightButton
+    onClick={() => alert('close button')}
+    icon={Close}
+    secondary={false}
+  />
+</Heading>
 ```
 
 #### With back and right button components
 
 ```javascript
-  <Heading>
-    <Heading.BackButton onClick={() => alert('back button')} />
-    <Heading.Title>Gympass</Heading.Title>
-    <Heading.RightButton onClick={() => alert('right button 1')} icon={Upload2} />
-  </Heading>
+<Heading>
+  <Heading.BackButton onClick={() => alert('back button')} />
+  <Heading.Title>Gympass</Heading.Title>
+  <Heading.RightButton onClick={() => alert('right button 1')} icon={Upload2} />
+</Heading>
 ```
 
 #### With all components
 
 ```javascript
-  <Heading>
-    <Heading.BackButton onClick={() => alert('back button')} />
-    <Heading.Title>Gympass</Heading.Title>
-    <Heading.RightButton onClick={() => alert('right button 1')} icon={Upload2} />
-    <Heading.RightButton onClick={() => alert('right button 2')} icon={Whatsapp} />
-  </Heading>
+<Heading>
+  <Heading.BackButton onClick={() => alert('back button')} />
+  <Heading.Title>Gympass</Heading.Title>
+  <Heading.RightButton onClick={() => alert('right button 1')} icon={Upload2} />
+  <Heading.RightButton
+    onClick={() => alert('right button 2')}
+    icon={Whatsapp}
+  />
+</Heading>
 ```
 
 #### With all components with background
 
 ```javascript
-  <Heading>
-    <Heading.BackButton onClick={() => alert('back button')} />
-    <Heading.Title>Gympass</Heading.Title>
-    <Heading.RightButton onClick={() => alert('right button 1')} icon={Upload2} secondary={false}/>
-    <Heading.RightButton onClick={() => alert('right button 2')} icon={Whatsapp} secondary={false}/>
-  </Heading>
+<Heading>
+  <Heading.BackButton onClick={() => alert('back button')} />
+  <Heading.Title>Gympass</Heading.Title>
+  <Heading.RightButton
+    onClick={() => alert('right button 1')}
+    icon={Upload2}
+    secondary={false}
+  />
+  <Heading.RightButton
+    onClick={() => alert('right button 2')}
+    icon={Whatsapp}
+    secondary={false}
+  />
+</Heading>
 ```
 
 #### Without padding
 
 ```javascript
-  <Heading noPadding={true}>
-    <Heading.BackButton onClick={() => alert('back button')} />
-    <Heading.Title>Gympass</Heading.Title>
-    <Heading.RightButton onClick={() => alert('right button 1')} icon={Upload2} />
-    <Heading.RightButton onClick={() => alert('right button 2')} icon={Whatsapp} />
-  </Heading>
+<Heading noPadding={true}>
+  <Heading.BackButton onClick={() => alert('back button')} />
+  <Heading.Title>Gympass</Heading.Title>
+  <Heading.RightButton onClick={() => alert('right button 1')} icon={Upload2} />
+  <Heading.RightButton
+    onClick={() => alert('right button 2')}
+    icon={Whatsapp}
+  />
+</Heading>
+```
+
+#### With a custom background color
+
+```javascript
+<Heading bg="yoga">
+  <Heading.Title>Gympass</Heading.Title>
+</Heading>
 ```
 
 ### Props
