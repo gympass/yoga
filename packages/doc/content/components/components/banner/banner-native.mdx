@@ -78,6 +78,36 @@ import { Link as GatsbyLink } from 'gatsby';
             fontSize: '20px',
             textAlign: 'center',
           }}>
+            Banner with customized icon component
+          </Text>
+
+          <Banner
+            m="xsmall"
+            iconComponent={() => (
+              <Icon as={AlertTriangle}
+                size="medium"
+                fill="verve"
+                marginRight="xxsmall"
+              />
+            )}
+            variant="attention"
+            message="Attention banner"
+          />
+        </View>
+
+        <View style={{
+          flex: '1',
+          padding: '20px',
+          marginBottom: '10px',
+          alignItems: 'center',
+          flexDirection: 'column',
+        }}>
+          <Text style={{
+            marginTop: '20px',
+            marginBottom: '10px',
+            fontSize: '20px',
+            textAlign: 'center',
+          }}>
             Banner with action button
           </Text>
           <Banner

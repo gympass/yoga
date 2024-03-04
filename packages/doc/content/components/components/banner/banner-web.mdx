@@ -59,6 +59,30 @@ import { Link as GatsbyLink } from 'gatsby';
 </Box>
 ```
 
+### Banner with custom icon component
+
+```javascript
+<Box
+  display="flex"
+  flexDirection="column"
+  flex={1}
+  justifyContent="space-between"
+>
+  <Banner
+    iconComponent={() => (
+      <Icon as={AlertTriangle}
+        size="medium"
+        fill="verve"
+        marginRight="xxsmall"
+      />
+    )}
+    margin="small"
+    variant='attention'
+    message='Attention Banner'
+  />
+</Box>
+```
+
 ### Banner with action button
 
 ```javascript state
