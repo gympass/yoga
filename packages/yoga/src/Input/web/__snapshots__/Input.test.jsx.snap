@@ -206,7 +206,6 @@ exports[`<Input /> Snapshots should match with a11yId 1`] = `
           Label
         </span>
       </legend>
-      
     </fieldset>
   </div>
 </div>
@@ -444,7 +443,6 @@ exports[`<Input /> Snapshots should match with a11yId and error 1`] = `
           Label
         </span>
       </legend>
-      
     </fieldset>
     <div
       class="c6"
@@ -666,7 +664,6 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
           Label
         </span>
       </legend>
-      
     </fieldset>
   </div>
 </div>
@@ -882,7 +879,6 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
           Label
         </span>
       </legend>
-      
     </fieldset>
   </div>
 </div>
@@ -1118,7 +1114,6 @@ exports[`<Input /> Snapshots should match with error 1`] = `
           Label
         </span>
       </legend>
-      
     </fieldset>
     <div
       class="c6"
@@ -1339,7 +1334,6 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
           Label
         </span>
       </legend>
-      
     </fieldset>
   </div>
 </div>
@@ -1576,7 +1570,6 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
           Label
         </span>
       </legend>
-      
     </fieldset>
     <div
       class="c6"
@@ -1830,7 +1823,6 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
           Label
         </span>
       </legend>
-      
     </fieldset>
     <div
       class="c6"
@@ -2049,7 +2041,6 @@ exports[`<Input /> Snapshots should match with includeAriaAttributes set to fals
           Label
         </span>
       </legend>
-      
     </fieldset>
   </div>
 </div>
@@ -2260,7 +2251,6 @@ exports[`<Input /> Snapshots should match with label 1`] = `
           Input
         </span>
       </legend>
-      
     </fieldset>
   </div>
 </div>

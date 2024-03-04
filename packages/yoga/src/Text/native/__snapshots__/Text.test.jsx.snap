@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
-Array [
+[
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "NaN Holo Condensed",
           "fontSize": 60,
@@ -19,8 +19,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "NaN Holo Condensed",
           "fontSize": 40,
@@ -34,8 +34,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "NaN Holo Condensed",
           "fontSize": 32,
@@ -49,8 +49,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "NaN Holo Condensed",
           "fontSize": 24,
@@ -64,8 +64,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "NaN Holo Condensed",
           "fontSize": 40,
@@ -79,8 +79,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 48,
@@ -94,8 +94,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 40,
@@ -109,8 +109,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 32,
@@ -124,8 +124,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 24,
@@ -142,8 +142,8 @@ Array [
     inverted={false}
     light={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
@@ -157,8 +157,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 14,
@@ -172,8 +172,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 12,
@@ -187,8 +187,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
@@ -201,8 +201,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
@@ -215,8 +215,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
@@ -229,8 +229,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
@@ -243,8 +243,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 12,
@@ -260,8 +260,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 10,
@@ -277,12 +277,12 @@ Array [
 `;
 
 exports[`<Text /> Snapshots should match snapshot with Text fontSize 1`] = `
-Array [
+[
   <Text
     fontSize="xsmall"
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 12,
@@ -297,8 +297,8 @@ Array [
   <Text
     fontSize="medium"
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
@@ -313,8 +313,8 @@ Array [
   <Text
     fontSize="xlarge"
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 24,
@@ -328,8 +328,8 @@ Array [
   <Text
     fontSize="xxxlarge"
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 40,
@@ -344,12 +344,12 @@ Array [
 `;
 
 exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
-Array [
+[
   <Text
     light={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 48,
@@ -364,8 +364,8 @@ Array [
   <Text
     light={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 40,
@@ -380,8 +380,8 @@ Array [
   <Text
     light={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 32,
@@ -397,12 +397,12 @@ Array [
 `;
 
 exports[`<Text /> Snapshots should match snapshot with Text size 1`] = `
-Array [
+[
   <Text
     size="xsmall"
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 14,
@@ -417,8 +417,8 @@ Array [
   <Text
     size="medium"
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 12,
@@ -433,8 +433,8 @@ Array [
   <Text
     size="xlarge"
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 24,
@@ -448,8 +448,8 @@ Array [
   <Text
     size="xxxlarge"
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 40,
@@ -464,11 +464,11 @@ Array [
 `;
 
 exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
-Array [
+[
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#D8385E",
           "fontFamily": "Rubik",
           "fontSize": 48,
@@ -483,8 +483,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 40,
@@ -499,8 +499,8 @@ Array [
   </Text>,
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": undefined,
           "fontFamily": "Rubik",
           "fontSize": 32,
@@ -523,8 +523,8 @@ exports[`<Text /> Snapshots should match snapshot with background color prop sys
   inverted={false}
   light={false}
   style={
-    Array [
-      Object {
+    [
+      {
         "backgroundColor": "#D8385E",
         "color": "#231B22",
         "fontFamily": "Rubik",
@@ -547,8 +547,8 @@ exports[`<Text /> Snapshots should match snapshot with border prop system 1`] = 
   inverted={false}
   light={false}
   style={
-    Array [
-      Object {
+    [
+      {
         "borderColor": "black",
         "borderRadius": 8,
         "borderStyle": "solid",
@@ -573,8 +573,8 @@ exports[`<Text /> Snapshots should match snapshot with display prop system 1`] =
   inverted={false}
   light={false}
   style={
-    Array [
-      Object {
+    [
+      {
         "color": "#231B22",
         "display": "flex",
         "fontFamily": "Rubik",
@@ -596,15 +596,15 @@ exports[`<Text /> Snapshots should match snapshot with elevation prop system 1`]
   inverted={false}
   light={false}
   style={
-    Array [
-      Object {
+    [
+      {
         "color": "#231B22",
         "fontFamily": "Rubik",
         "fontSize": 16,
         "fontWeight": "400",
         "lineHeight": 24,
         "shadowColor": "rgba(152, 152, 166, 0.2)",
-        "shadowOffset": Object {
+        "shadowOffset": {
           "height": 5,
           "width": 0,
         },
@@ -626,8 +626,8 @@ exports[`<Text /> Snapshots should match snapshot with flexes prop system 1`] = 
   inverted={false}
   light={false}
   style={
-    Array [
-      Object {
+    [
+      {
         "color": "#231B22",
         "display": "flex",
         "flexGrow": 1,
@@ -649,8 +649,8 @@ exports[`<Text /> Snapshots should match snapshot with inverted Text 1`] = `
   inverted={true}
   light={false}
   style={
-    Array [
-      Object {
+    [
+      {
         "color": "#FFFFFF",
         "fontFamily": "Rubik",
         "fontSize": 16,
@@ -671,8 +671,8 @@ exports[`<Text /> Snapshots should match snapshot with overflows prop system 1`]
   light={false}
   overflow="scroll"
   style={
-    Array [
-      Object {
+    [
+      {
         "color": "#231B22",
         "fontFamily": "Rubik",
         "fontSize": 16,
@@ -695,8 +695,8 @@ exports[`<Text /> Snapshots should match snapshot with position prop system 1`] 
   light={false}
   position="absolute"
   style={
-    Array [
-      Object {
+    [
+      {
         "color": "#231B22",
         "fontFamily": "Rubik",
         "fontSize": 16,
@@ -723,8 +723,8 @@ exports[`<Text /> Snapshots should match snapshot with spacing prop system 1`] =
   paddingHorizontal="small"
   paddingVertical="large"
   style={
-    Array [
-      Object {
+    [
+      {
         "color": "#231B22",
         "fontFamily": "Rubik",
         "fontSize": 16,
@@ -753,8 +753,8 @@ exports[`<Text /> Snapshots should match snapshot with truncated lines Text 1`] 
   light={false}
   numberOfLines={1}
   style={
-    Array [
-      Object {
+    [
+      {
         "color": "#231B22",
         "fontFamily": "Rubik",
         "fontSize": 16,
@@ -779,8 +779,8 @@ exports[`<Text /> Snapshots should match snapshot with typography prop system 1`
   light={false}
   lineHeight="small"
   style={
-    Array [
-      Object {
+    [
+      {
         "color": "#231B22",
         "fontFamily": "Rubik",
         "fontSize": 14,

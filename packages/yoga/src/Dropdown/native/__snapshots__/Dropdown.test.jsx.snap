@@ -3,6 +3,15 @@
 exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -17,8 +26,8 @@ exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
     disabled={false}
     full={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderColor": "#D7D7E0",
@@ -43,15 +52,15 @@ exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
       inverted={false}
       light={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          Object {
+          {
             "color": "#6B6B78",
           },
         ]
@@ -66,16 +75,16 @@ exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
       focusable={false}
       height={20}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
           undefined,
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 20,
             "width": 20,
@@ -86,16 +95,16 @@ exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4285229944,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -108,7 +117,7 @@ exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -137,6 +146,15 @@ exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
 exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -151,8 +169,8 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
     disabled={true}
     full={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderColor": "#F5F5FA",
@@ -177,15 +195,15 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
       inverted={false}
       light={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          Object {
+          {
             "color": "#D7D7E0",
           },
         ]
@@ -200,16 +218,16 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
       focusable={false}
       height={20}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
           undefined,
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 20,
             "width": 20,
@@ -220,16 +238,16 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4292335584,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -242,7 +260,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -271,6 +289,15 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
 exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -285,8 +312,8 @@ exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
     disabled={false}
     full={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderColor": "#D7D7E0",
@@ -311,15 +338,15 @@ exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
       inverted={false}
       light={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          Object {
+          {
             "color": "#6B6B78",
           },
         ]
@@ -334,16 +361,16 @@ exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
       focusable={false}
       height={20}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
           undefined,
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 20,
             "width": 20,
@@ -354,16 +381,16 @@ exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4285229944,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -376,7 +403,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -405,6 +432,15 @@ exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
 exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -419,15 +455,15 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
     disabled={true}
     full={false}
     selected={
-      Object {
+      {
         "label": "Swimming",
         "selected": true,
         "value": "swimming",
       }
     }
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderColor": "#231B22",
@@ -452,22 +488,22 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
       inverted={false}
       light={false}
       selected={
-        Object {
+        {
           "label": "Swimming",
           "selected": true,
           "value": "swimming",
         }
       }
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          Object {
+          {
             "color": "#231B22",
           },
         ]
@@ -482,16 +518,16 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
       focusable={false}
       height={20}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
           undefined,
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 20,
             "width": 20,
@@ -502,16 +538,16 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4292335584,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -524,7 +560,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -553,6 +589,15 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
 exports[`<Dropdown /> Snapshots should match snapshot with error 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -568,15 +613,15 @@ exports[`<Dropdown /> Snapshots should match snapshot with error 1`] = `
     error="Please, select one activity"
     full={false}
     selected={
-      Object {
+      {
         "label": "Swimming",
         "selected": true,
         "value": "swimming",
       }
     }
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderColor": "#231B22",
@@ -601,22 +646,22 @@ exports[`<Dropdown /> Snapshots should match snapshot with error 1`] = `
       inverted={false}
       light={false}
       selected={
-        Object {
+        {
           "label": "Swimming",
           "selected": true,
           "value": "swimming",
         }
       }
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          Object {
+          {
             "color": "#231B22",
           },
         ]
@@ -631,16 +676,16 @@ exports[`<Dropdown /> Snapshots should match snapshot with error 1`] = `
       focusable={false}
       height={20}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
           undefined,
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 20,
             "width": 20,
@@ -651,16 +696,16 @@ exports[`<Dropdown /> Snapshots should match snapshot with error 1`] = `
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4280490786,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -673,7 +718,7 @@ exports[`<Dropdown /> Snapshots should match snapshot with error 1`] = `
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }

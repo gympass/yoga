@@ -6,8 +6,8 @@ exports[`<Result /> should match snapshot 1`] = `
   divided={true}
   flexDirection="row"
   style={
-    Array [
-      Object {
+    [
+      {
         "borderBottomColor": "#D7D7E0",
         "borderBottomWidth": 1,
         "display": "flex",
@@ -26,8 +26,8 @@ exports[`<Result /> should match snapshot 1`] = `
     justifyContent="center"
     overflow="hidden"
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#9898A6",
           "borderRadius": 9999,
@@ -49,21 +49,21 @@ exports[`<Result /> should match snapshot 1`] = `
       focusable={false}
       height="50%"
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Array [
-            Object {
+          [
+            {
               "height": "50%",
               "width": "50%",
             },
           ],
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": "50%",
             "width": "50%",
@@ -74,16 +74,16 @@ exports[`<Result /> should match snapshot 1`] = `
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4294967295,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -96,7 +96,7 @@ exports[`<Result /> should match snapshot 1`] = `
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -124,8 +124,8 @@ exports[`<Result /> should match snapshot 1`] = `
       borderWidth={1}
       height="100%"
       style={
-        Array [
-          Object {
+        [
+          {
             "borderColor": "rgba(35, 27, 34, 0.1)",
             "borderRadius": 9999,
             "borderWidth": 1,
@@ -140,8 +140,8 @@ exports[`<Result /> should match snapshot 1`] = `
   </View>
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "flexBasis": 0,
           "flexGrow": 1,
           "flexShrink": 1,
@@ -158,8 +158,8 @@ exports[`<Result /> should match snapshot 1`] = `
       justifyContent="center"
       mb="xxxsmall"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "display": "flex",
             "flexDirection": "row",
@@ -174,8 +174,8 @@ exports[`<Result /> should match snapshot 1`] = `
       <Text
         numberOfLines={1}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#6B6B78",
               "flexBasis": 0,
               "flexGrow": 1,
@@ -192,8 +192,8 @@ exports[`<Result /> should match snapshot 1`] = `
         <View
           height="xsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 12,
                 "width": 12,
               },
@@ -210,22 +210,22 @@ exports[`<Result /> should match snapshot 1`] = `
             height={12}
             mt="2px"
             style={
-              Array [
-                Object {
+              [
+                {
                   "backgroundColor": "transparent",
                   "borderWidth": 0,
                 },
-                Array [
-                  Object {
+                [
+                  {
                     "height": 12,
                     "marginTop": 2,
                     "width": 12,
                   },
                 ],
-                Object {
+                {
                   "opacity": 1,
                 },
-                Object {
+                {
                   "flex": 0,
                   "height": 12,
                   "width": 12,
@@ -236,16 +236,16 @@ exports[`<Result /> should match snapshot 1`] = `
           >
             <RNSVGGroup
               fill={
-                Array [
+                [
                   0,
                   4285229944,
                 ]
               }
               fillOpacity={1}
               fillRule={1}
-              font={Object {}}
+              font={{}}
               matrix={
-                Array [
+                [
                   1,
                   0,
                   0,
@@ -258,7 +258,7 @@ exports[`<Result /> should match snapshot 1`] = `
               originX={0}
               originY={0}
               propList={
-                Array [
+                [
                   "fill",
                 ]
               }
@@ -284,8 +284,8 @@ exports[`<Result /> should match snapshot 1`] = `
         <View
           height="zero"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 0,
                 "width": 4,
               },
@@ -297,8 +297,8 @@ exports[`<Result /> should match snapshot 1`] = `
         <View
           height="zero"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 0,
                 "width": 4,
               },
@@ -309,8 +309,8 @@ exports[`<Result /> should match snapshot 1`] = `
         <View
           height="xsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 12,
                 "width": 12,
               },
@@ -327,22 +327,22 @@ exports[`<Result /> should match snapshot 1`] = `
             height={12}
             mt="2px"
             style={
-              Array [
-                Object {
+              [
+                {
                   "backgroundColor": "transparent",
                   "borderWidth": 0,
                 },
-                Array [
-                  Object {
+                [
+                  {
                     "height": 12,
                     "marginTop": 2,
                     "width": 12,
                   },
                 ],
-                Object {
+                {
                   "opacity": 1,
                 },
-                Object {
+                {
                   "flex": 0,
                   "height": 12,
                   "width": 12,
@@ -353,16 +353,16 @@ exports[`<Result /> should match snapshot 1`] = `
           >
             <RNSVGGroup
               fill={
-                Array [
+                [
                   0,
                   4285229944,
                 ]
               }
               fillOpacity={1}
               fillRule={1}
-              font={Object {}}
+              font={{}}
               matrix={
-                Array [
+                [
                   1,
                   0,
                   0,
@@ -375,7 +375,7 @@ exports[`<Result /> should match snapshot 1`] = `
               originX={0}
               originY={0}
               propList={
-                Array [
+                [
                   "fill",
                 ]
               }
@@ -401,8 +401,8 @@ exports[`<Result /> should match snapshot 1`] = `
         <View
           height="zero"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 0,
                 "width": 4,
               },
@@ -414,8 +414,8 @@ exports[`<Result /> should match snapshot 1`] = `
         <View
           height="zero"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 0,
                 "width": 4,
               },
@@ -426,8 +426,8 @@ exports[`<Result /> should match snapshot 1`] = `
       </Text>
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "display": "flex",
               "flexDirection": "row",
@@ -444,21 +444,21 @@ exports[`<Result /> should match snapshot 1`] = `
           focusable={false}
           height={12}
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Array [
-                Object {
+              [
+                {
                   "height": 12,
                   "width": 12,
                 },
               ],
-              Object {
+              {
                 "opacity": 1,
               },
-              Object {
+              {
                 "flex": 0,
                 "height": 12,
                 "width": 12,
@@ -469,16 +469,16 @@ exports[`<Result /> should match snapshot 1`] = `
         >
           <RNSVGGroup
             fill={
-              Array [
+              [
                 0,
                 4285229944,
               ]
             }
             fillOpacity={1}
             fillRule={1}
-            font={Object {}}
+            font={{}}
             matrix={
-              Array [
+              [
                 1,
                 0,
                 0,
@@ -491,7 +491,7 @@ exports[`<Result /> should match snapshot 1`] = `
             originX={0}
             originY={0}
             propList={
-              Array [
+              [
                 "fill",
               ]
             }
@@ -516,8 +516,8 @@ exports[`<Result /> should match snapshot 1`] = `
         <Text
           size="xsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -536,8 +536,8 @@ exports[`<Result /> should match snapshot 1`] = `
     <Text
       numberOfLines={1}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -552,8 +552,8 @@ exports[`<Result /> should match snapshot 1`] = `
     <Text
       numberOfLines={1}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -571,8 +571,8 @@ exports[`<Result /> should match snapshot 1`] = `
       flexDirection="row"
       mt="xxxsmall"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "marginTop": 4,
@@ -583,8 +583,8 @@ exports[`<Result /> should match snapshot 1`] = `
       <Text
         numberOfLines={1}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "flexBasis": 0,
               "flexGrow": 1,
@@ -600,8 +600,8 @@ exports[`<Result /> should match snapshot 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
@@ -621,8 +621,8 @@ exports[`<Result /> should match snapshot 1`] = `
       flexDirection="row"
       mt="xxxsmall"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "marginTop": 4,
@@ -633,8 +633,8 @@ exports[`<Result /> should match snapshot 1`] = `
       <Text
         numberOfLines={1}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "flexBasis": 0,
               "flexGrow": 1,
@@ -650,8 +650,8 @@ exports[`<Result /> should match snapshot 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
@@ -667,8 +667,8 @@ exports[`<Result /> should match snapshot 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -678,8 +678,8 @@ exports[`<Result /> should match snapshot 1`] = `
         />
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -697,8 +697,8 @@ exports[`<Result /> should match snapshot 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -708,8 +708,8 @@ exports[`<Result /> should match snapshot 1`] = `
         />
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
@@ -725,8 +725,8 @@ exports[`<Result /> should match snapshot 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -736,8 +736,8 @@ exports[`<Result /> should match snapshot 1`] = `
         />
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -755,8 +755,8 @@ exports[`<Result /> should match snapshot 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -766,8 +766,8 @@ exports[`<Result /> should match snapshot 1`] = `
         />
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
@@ -783,8 +783,8 @@ exports[`<Result /> should match snapshot 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -794,8 +794,8 @@ exports[`<Result /> should match snapshot 1`] = `
         />
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -815,8 +815,8 @@ exports[`<Result /> should match snapshot 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -830,8 +830,8 @@ exports[`<Result /> should match snapshot 1`] = `
       horizontal={true}
       showsHorizontalScrollIndicator={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "display": "flex",
             "flexDirection": "row",
             "marginTop": 8,
@@ -843,8 +843,8 @@ exports[`<Result /> should match snapshot 1`] = `
         <View
           small={true}
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignItems": "center",
                 "backgroundColor": "#E0DFFF",
                 "borderColor": "#E0DFFF",
@@ -857,7 +857,7 @@ exports[`<Result /> should match snapshot 1`] = `
                 "paddingTop": 0,
                 "width": "auto",
               },
-              Object {
+              {
                 "marginRight": 4,
               },
             ]
@@ -866,8 +866,8 @@ exports[`<Result /> should match snapshot 1`] = `
         >
           <View
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "flexDirection": "row",
                   "justifyContent": "center",
@@ -877,14 +877,14 @@ exports[`<Result /> should match snapshot 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
                     "fontSize": 16,
                     "fontWeight": "500",
                   },
-                  Object {
+                  {
                     "color": "#231B22",
                     "fontSize": 12,
                     "fontWeight": "500",
@@ -900,8 +900,8 @@ exports[`<Result /> should match snapshot 1`] = `
         <View
           small={true}
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignItems": "center",
                 "backgroundColor": "#FCD6C3",
                 "borderColor": "#FCD6C3",
@@ -914,7 +914,7 @@ exports[`<Result /> should match snapshot 1`] = `
                 "paddingTop": 0,
                 "width": "auto",
               },
-              Object {
+              {
                 "marginRight": 4,
               },
             ]
@@ -923,8 +923,8 @@ exports[`<Result /> should match snapshot 1`] = `
         >
           <View
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "flexDirection": "row",
                   "justifyContent": "center",
@@ -934,14 +934,14 @@ exports[`<Result /> should match snapshot 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
                     "fontSize": 16,
                     "fontWeight": "500",
                   },
-                  Object {
+                  {
                     "color": "#231B22",
                     "fontSize": 12,
                     "fontWeight": "500",
@@ -957,6 +957,15 @@ exports[`<Result /> should match snapshot 1`] = `
       </View>
     </RCTScrollView>
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
       accessible={true}
       focusable={false}
       onClick={[Function]}
@@ -967,7 +976,7 @@ exports[`<Result /> should match snapshot 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "flexDirection": "row",
         }
       }
@@ -977,8 +986,8 @@ exports[`<Result /> should match snapshot 1`] = `
         pressed={false}
         secondary={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#D8385E",
               "fontFamily": "Rubik",
               "fontSize": 16,
@@ -988,7 +997,7 @@ exports[`<Result /> should match snapshot 1`] = `
               "textDecorationLine": "underline",
               "textDecorationStyle": "solid",
             },
-            Object {
+            {
               "marginRight": 32,
               "marginTop": 8,
             },
@@ -1008,8 +1017,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
   divided={false}
   flexDirection="row"
   style={
-    Array [
-      Object {
+    [
+      {
         "display": "flex",
         "flexDirection": "row",
         "width": "100%",
@@ -1026,8 +1035,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
     justifyContent="center"
     overflow="hidden"
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#9898A6",
           "borderRadius": 8,
@@ -1049,21 +1058,21 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
       focusable={false}
       height="50%"
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Array [
-            Object {
+          [
+            {
               "height": "50%",
               "width": "50%",
             },
           ],
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": "50%",
             "width": "50%",
@@ -1074,16 +1083,16 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4294967295,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -1096,7 +1105,7 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -1124,8 +1133,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
       borderWidth={1}
       height="100%"
       style={
-        Array [
-          Object {
+        [
+          {
             "borderColor": "rgba(35, 27, 34, 0.1)",
             "borderRadius": 8,
             "borderWidth": 1,
@@ -1140,8 +1149,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
   </View>
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "flexBasis": 0,
           "flexGrow": 1,
           "flexShrink": 1,
@@ -1154,8 +1163,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
     <Text
       numberOfLines={1}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -1172,8 +1181,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
       flexDirection="row"
       mt="xxxsmall"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "marginTop": 4,
@@ -1184,8 +1193,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
       <Text
         numberOfLines={1}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "flexBasis": 0,
               "flexGrow": 1,
@@ -1201,8 +1210,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -1222,8 +1231,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
       flexDirection="row"
       mt="xxxsmall"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "marginTop": 4,
@@ -1234,8 +1243,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
       <Text
         numberOfLines={1}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "flexBasis": 0,
               "flexGrow": 1,
@@ -1251,8 +1260,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -1268,8 +1277,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -1279,8 +1288,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         />
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -1298,8 +1307,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -1309,8 +1318,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         />
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -1326,8 +1335,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -1337,8 +1346,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         />
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -1356,8 +1365,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -1367,8 +1376,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         />
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -1384,8 +1393,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -1395,8 +1404,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         />
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -1414,8 +1423,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -1425,8 +1434,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         />
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -1442,8 +1451,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -1453,8 +1462,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         />
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -1472,8 +1481,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -1483,8 +1492,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         />
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -1509,8 +1518,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
   divided={true}
   flexDirection="row"
   style={
-    Array [
-      Object {
+    [
+      {
         "borderBottomColor": "#D7D7E0",
         "borderBottomWidth": 1,
         "display": "flex",
@@ -1529,8 +1538,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
     justifyContent="center"
     overflow="hidden"
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#9898A6",
           "borderRadius": 9999,
@@ -1552,21 +1561,21 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       focusable={false}
       height="50%"
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Array [
-            Object {
+          [
+            {
               "height": "50%",
               "width": "50%",
             },
           ],
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": "50%",
             "width": "50%",
@@ -1577,16 +1586,16 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4294967295,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -1599,7 +1608,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -1627,8 +1636,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       borderWidth={1}
       height="100%"
       style={
-        Array [
-          Object {
+        [
+          {
             "borderColor": "rgba(35, 27, 34, 0.1)",
             "borderRadius": 9999,
             "borderWidth": 1,
@@ -1643,8 +1652,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
   </View>
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "flexBasis": 0,
           "flexGrow": 1,
           "flexShrink": 1,
@@ -1661,8 +1670,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       justifyContent="center"
       mb="xxxsmall"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "display": "flex",
             "flexDirection": "row",
@@ -1677,8 +1686,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       <Text
         numberOfLines={1}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#6B6B78",
               "flexBasis": 0,
               "flexGrow": 1,
@@ -1695,8 +1704,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         <View
           height="xsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 12,
                 "width": 12,
               },
@@ -1713,22 +1722,22 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
             height={12}
             mt="2px"
             style={
-              Array [
-                Object {
+              [
+                {
                   "backgroundColor": "transparent",
                   "borderWidth": 0,
                 },
-                Array [
-                  Object {
+                [
+                  {
                     "height": 12,
                     "marginTop": 2,
                     "width": 12,
                   },
                 ],
-                Object {
+                {
                   "opacity": 1,
                 },
-                Object {
+                {
                   "flex": 0,
                   "height": 12,
                   "width": 12,
@@ -1739,16 +1748,16 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
           >
             <RNSVGGroup
               fill={
-                Array [
+                [
                   0,
                   4285229944,
                 ]
               }
               fillOpacity={1}
               fillRule={1}
-              font={Object {}}
+              font={{}}
               matrix={
-                Array [
+                [
                   1,
                   0,
                   0,
@@ -1761,7 +1770,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
               originX={0}
               originY={0}
               propList={
-                Array [
+                [
                   "fill",
                 ]
               }
@@ -1787,8 +1796,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         <View
           height="zero"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 0,
                 "width": 4,
               },
@@ -1800,8 +1809,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         <View
           height="zero"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 0,
                 "width": 4,
               },
@@ -1812,8 +1821,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         <View
           height="xsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 12,
                 "width": 12,
               },
@@ -1830,22 +1839,22 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
             height={12}
             mt="2px"
             style={
-              Array [
-                Object {
+              [
+                {
                   "backgroundColor": "transparent",
                   "borderWidth": 0,
                 },
-                Array [
-                  Object {
+                [
+                  {
                     "height": 12,
                     "marginTop": 2,
                     "width": 12,
                   },
                 ],
-                Object {
+                {
                   "opacity": 1,
                 },
-                Object {
+                {
                   "flex": 0,
                   "height": 12,
                   "width": 12,
@@ -1856,16 +1865,16 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
           >
             <RNSVGGroup
               fill={
-                Array [
+                [
                   0,
                   4285229944,
                 ]
               }
               fillOpacity={1}
               fillRule={1}
-              font={Object {}}
+              font={{}}
               matrix={
-                Array [
+                [
                   1,
                   0,
                   0,
@@ -1878,7 +1887,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
               originX={0}
               originY={0}
               propList={
-                Array [
+                [
                   "fill",
                 ]
               }
@@ -1904,8 +1913,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         <View
           height="zero"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 0,
                 "width": 4,
               },
@@ -1917,8 +1926,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         <View
           height="zero"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 0,
                 "width": 4,
               },
@@ -1929,8 +1938,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       </Text>
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "display": "flex",
               "flexDirection": "row",
@@ -1947,21 +1956,21 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
           focusable={false}
           height={12}
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Array [
-                Object {
+              [
+                {
                   "height": 12,
                   "width": 12,
                 },
               ],
-              Object {
+              {
                 "opacity": 1,
               },
-              Object {
+              {
                 "flex": 0,
                 "height": 12,
                 "width": 12,
@@ -1972,16 +1981,16 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         >
           <RNSVGGroup
             fill={
-              Array [
+              [
                 0,
                 4285229944,
               ]
             }
             fillOpacity={1}
             fillRule={1}
-            font={Object {}}
+            font={{}}
             matrix={
-              Array [
+              [
                 1,
                 0,
                 0,
@@ -1994,7 +2003,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
             originX={0}
             originY={0}
             propList={
-              Array [
+              [
                 "fill",
               ]
             }
@@ -2019,8 +2028,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         <Text
           size="xsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -2039,8 +2048,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
     <Text
       numberOfLines={1}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -2055,8 +2064,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
     <Text
       numberOfLines={1}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -2074,8 +2083,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       flexDirection="row"
       mt="xxxsmall"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "marginTop": 4,
@@ -2086,8 +2095,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       <Text
         numberOfLines={1}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "flexBasis": 0,
               "flexGrow": 1,
@@ -2103,8 +2112,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
@@ -2124,8 +2133,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       flexDirection="row"
       mt="xxxsmall"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "marginTop": 4,
@@ -2136,8 +2145,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       <Text
         numberOfLines={1}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "flexBasis": 0,
               "flexGrow": 1,
@@ -2153,8 +2162,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
@@ -2170,8 +2179,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -2181,8 +2190,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         />
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -2200,8 +2209,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -2211,8 +2220,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         />
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
@@ -2228,8 +2237,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -2239,8 +2248,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         />
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -2259,8 +2268,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         <View
           height="xxxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "height": 4,
                 "width": 4,
               },
@@ -2274,8 +2283,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       horizontal={true}
       showsHorizontalScrollIndicator={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "display": "flex",
             "flexDirection": "row",
             "marginTop": 8,
@@ -2287,8 +2296,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         <View
           small={true}
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignItems": "center",
                 "backgroundColor": "#E0DFFF",
                 "borderColor": "#E0DFFF",
@@ -2301,7 +2310,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
                 "paddingTop": 0,
                 "width": "auto",
               },
-              Object {
+              {
                 "marginRight": 4,
               },
             ]
@@ -2310,8 +2319,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         >
           <View
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "flexDirection": "row",
                   "justifyContent": "center",
@@ -2321,14 +2330,14 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
                     "fontSize": 16,
                     "fontWeight": "500",
                   },
-                  Object {
+                  {
                     "color": "#231B22",
                     "fontSize": 12,
                     "fontWeight": "500",
@@ -2344,8 +2353,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         <View
           small={true}
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignItems": "center",
                 "backgroundColor": "#FCD6C3",
                 "borderColor": "#FCD6C3",
@@ -2358,7 +2367,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
                 "paddingTop": 0,
                 "width": "auto",
               },
-              Object {
+              {
                 "marginRight": 4,
               },
             ]
@@ -2367,8 +2376,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         >
           <View
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "flexDirection": "row",
                   "justifyContent": "center",
@@ -2378,14 +2387,14 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
                     "fontSize": 16,
                     "fontWeight": "500",
                   },
-                  Object {
+                  {
                     "color": "#231B22",
                     "fontSize": 12,
                     "fontWeight": "500",
@@ -2401,6 +2410,15 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       </View>
     </RCTScrollView>
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
       accessible={true}
       focusable={false}
       onClick={[Function]}
@@ -2411,7 +2429,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "flexDirection": "row",
         }
       }
@@ -2421,8 +2439,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         pressed={false}
         secondary={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#D8385E",
               "fontFamily": "Rubik",
               "fontSize": 16,
@@ -2432,7 +2450,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
               "textDecorationLine": "underline",
               "textDecorationStyle": "solid",
             },
-            Object {
+            {
               "marginRight": 32,
               "marginTop": 8,
             },

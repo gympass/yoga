@@ -1,19 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Skeleton /> should render all text skeleton variants correctly 1`] = `
-Array [
+[
   <View
     collapsable={false}
     style={
-      Object {
+      {
         "opacity": 0.4,
       }
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#F5F5FA",
             "display": "flex",
@@ -30,15 +30,15 @@ Array [
   <View
     collapsable={false}
     style={
-      Object {
+      {
         "opacity": 0.4,
       }
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#F5F5FA",
             "display": "flex",
@@ -55,15 +55,15 @@ Array [
   <View
     collapsable={false}
     style={
-      Object {
+      {
         "opacity": 0.4,
       }
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#F5F5FA",
             "display": "flex",
@@ -80,15 +80,15 @@ Array [
   <View
     collapsable={false}
     style={
-      Object {
+      {
         "opacity": 0.4,
       }
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#F5F5FA",
             "display": "flex",
@@ -105,15 +105,15 @@ Array [
   <View
     collapsable={false}
     style={
-      Object {
+      {
         "opacity": 0.4,
       }
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#F5F5FA",
             "display": "flex",
@@ -130,15 +130,15 @@ Array [
   <View
     collapsable={false}
     style={
-      Object {
+      {
         "opacity": 0.4,
       }
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#F5F5FA",
             "display": "flex",
@@ -155,15 +155,15 @@ Array [
   <View
     collapsable={false}
     style={
-      Object {
+      {
         "opacity": 0.4,
       }
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#F5F5FA",
             "display": "flex",
@@ -180,15 +180,15 @@ Array [
   <View
     collapsable={false}
     style={
-      Object {
+      {
         "opacity": 0.4,
       }
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#F5F5FA",
             "display": "flex",
@@ -205,15 +205,15 @@ Array [
   <View
     collapsable={false}
     style={
-      Object {
+      {
         "opacity": 0.4,
       }
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#F5F5FA",
             "display": "flex",
@@ -234,7 +234,7 @@ exports[`<Skeleton /> should render the circular skeleton 1`] = `
 <View
   collapsable={false}
   style={
-    Object {
+    {
       "opacity": 0.4,
     }
   }
@@ -242,8 +242,8 @@ exports[`<Skeleton /> should render the circular skeleton 1`] = `
   <View
     height={64}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#F5F5FA",
           "borderRadius": 9999,
@@ -263,7 +263,7 @@ exports[`<Skeleton /> should render the rectangular skeleton 1`] = `
 <View
   collapsable={false}
   style={
-    Object {
+    {
       "opacity": 0.4,
     }
   }
@@ -271,8 +271,8 @@ exports[`<Skeleton /> should render the rectangular skeleton 1`] = `
   <View
     height={200}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#F5F5FA",
           "display": "flex",
@@ -291,7 +291,7 @@ exports[`<Skeleton /> should render the text skeleton 1`] = `
 <View
   collapsable={false}
   style={
-    Object {
+    {
       "opacity": 0.4,
     }
   }
@@ -299,8 +299,8 @@ exports[`<Skeleton /> should render the text skeleton 1`] = `
   <View
     height={32}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#F5F5FA",
           "display": "flex",

@@ -370,7 +370,6 @@ exports[`<Input.Phone /> Snapshots should match with default input 1`] = `
         <div
           class=" react-tel-input "
         >
-          
           <input
             class="form-control "
             placeholder="+55 (11) 999999999"
@@ -401,8 +400,6 @@ exports[`<Input.Phone /> Snapshots should match with default input 1`] = `
       <label
         class="c3"
       />
-      
-      
     </fieldset>
   </div>
 </div>
@@ -903,7 +900,6 @@ exports[`<Input.Phone /> Snapshots should match with error 1`] = `
           Label
         </span>
       </legend>
-      
     </fieldset>
     <div
       class="c6"

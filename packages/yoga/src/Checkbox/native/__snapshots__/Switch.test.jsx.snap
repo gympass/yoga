@@ -2,6 +2,15 @@
 
 exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with checked switch 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -12,7 +21,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -22,7 +31,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
     collapsable={false}
     disabled={false}
     style={
-      Object {
+      {
         "backgroundColor": "rgba(152, 152, 166, 1)",
         "borderRadius": 9999,
         "display": "flex",
@@ -41,19 +50,19 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
       elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
       height={20}
       style={
-        Object {
+        {
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
           "height": 20,
           "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 2,
             "width": 0,
           },
           "shadowOpacity": 1,
           "shadowRadius": 4,
-          "transform": Array [
-            Object {
+          "transform": [
+            {
               "translateX": 2,
             },
           ],
@@ -68,6 +77,15 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
 
 exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with default switch 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -78,7 +96,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -88,7 +106,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
     collapsable={false}
     disabled={false}
     style={
-      Object {
+      {
         "backgroundColor": "rgba(216, 56, 94, 1)",
         "borderRadius": 9999,
         "display": "flex",
@@ -107,19 +125,19 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
       elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
       height={20}
       style={
-        Object {
+        {
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
           "height": 20,
           "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 2,
             "width": 0,
           },
           "shadowOpacity": 1,
           "shadowRadius": 4,
-          "transform": Array [
-            Object {
+          "transform": [
+            {
               "translateX": 26,
             },
           ],
@@ -135,8 +153,12 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with disabled and checked switch 1`] = `
 <View
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
     }
   }
   accessible={true}
@@ -149,7 +171,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -159,7 +181,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
     collapsable={false}
     disabled={true}
     style={
-      Object {
+      {
         "backgroundColor": "#F5F5FA",
         "borderRadius": 9999,
         "display": "flex",
@@ -178,19 +200,19 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
       elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
       height={20}
       style={
-        Object {
+        {
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
           "height": 20,
           "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 2,
             "width": 0,
           },
           "shadowOpacity": 1,
           "shadowRadius": 4,
-          "transform": Array [
-            Object {
+          "transform": [
+            {
               "translateX": 2,
             },
           ],
@@ -206,8 +228,12 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with disabled switch 1`] = `
 <View
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
     }
   }
   accessible={true}
@@ -220,7 +246,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -230,7 +256,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
     collapsable={false}
     disabled={true}
     style={
-      Object {
+      {
         "backgroundColor": "#F5F5FA",
         "borderRadius": 9999,
         "display": "flex",
@@ -249,19 +275,19 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
       elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
       height={20}
       style={
-        Object {
+        {
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
           "height": 20,
           "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 2,
             "width": 0,
           },
           "shadowOpacity": 1,
           "shadowRadius": 4,
-          "transform": Array [
-            Object {
+          "transform": [
+            {
               "translateX": 26,
             },
           ],

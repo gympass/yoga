@@ -1428,7 +1428,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
           aria-haspopup="menu"
           class="c8"
           data-state="closed"
-          id="radix-0"
+          id="radix-:r0:"
           type="button"
         >
           <svg

@@ -3,8 +3,12 @@
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with default Button 1`] = `
 <View
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
     }
   }
   accessible={true}
@@ -17,7 +21,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -30,8 +34,8 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     secondary={false}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#F5F5FA",
           "borderRadius": 9999,
@@ -51,8 +55,8 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       pressed={false}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#D7D7E0",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -71,8 +75,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with default Button with Icon 1`] = `
 <View
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
     }
   }
   accessible={true}
@@ -85,7 +93,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -98,8 +106,8 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     secondary={false}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#F5F5FA",
           "borderRadius": 9999,
@@ -119,18 +127,18 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -141,16 +149,16 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4292335584,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -163,7 +171,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -192,8 +200,8 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       pressed={false}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#D7D7E0",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -212,8 +220,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with icon Button with Icon 1`] = `
 <View
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
     }
   }
   accessible={true}
@@ -226,7 +238,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -240,8 +252,8 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     secondary={false}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#F5F5FA",
           "borderRadius": 9999,
@@ -261,21 +273,21 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Array [
-            Object {
+          [
+            {
               "height": 24,
               "width": 24,
             },
           ],
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -286,16 +298,16 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4292335584,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -308,7 +320,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -337,8 +349,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with link Button 1`] = `
 <View
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
     }
   }
   accessible={true}
@@ -351,7 +367,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -361,8 +377,8 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     pressed={false}
     secondary={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#6B6B78",
           "fontFamily": "Rubik",
           "fontSize": 16,
@@ -381,8 +397,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with text Button 1`] = `
 <View
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
     }
   }
   accessible={true}
@@ -395,7 +415,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -404,8 +424,8 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     disabled={true}
     pressed={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -423,8 +443,8 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       disabled={true}
       pressed={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -444,8 +464,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with text Button with Icon 1`] = `
 <View
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
     }
   }
   accessible={true}
@@ -458,7 +482,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -467,8 +491,8 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     disabled={true}
     pressed={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -488,18 +512,18 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -510,16 +534,16 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4285229944,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -532,7 +556,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -559,8 +583,8 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       disabled={true}
       pressed={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -579,6 +603,15 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 
 exports[`<Button /> Snapshots primary buttons With full prop should match snapshot with default Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -589,7 +622,7 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -602,8 +635,8 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
     secondary={false}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#D8385E",
           "borderRadius": 9999,
@@ -624,8 +657,8 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
       pressed={false}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -643,6 +676,15 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
 
 exports[`<Button /> Snapshots primary buttons With full prop should match snapshot with default Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -653,7 +695,7 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -666,8 +708,8 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
     secondary={false}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#D8385E",
           "borderRadius": 9999,
@@ -688,18 +730,18 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -710,16 +752,16 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4294967295,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -732,7 +774,7 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -761,8 +803,8 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
       pressed={false}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -780,6 +822,15 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
 
 exports[`<Button /> Snapshots primary buttons With full prop should match snapshot with text Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -790,7 +841,7 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -799,8 +850,8 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
     full={true}
     pressed={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -818,8 +869,8 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
       color="#D8385E"
       pressed={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -838,6 +889,15 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
 
 exports[`<Button /> Snapshots primary buttons With full prop should match snapshot with text Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -848,7 +908,7 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -857,8 +917,8 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
     full={true}
     pressed={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -879,18 +939,18 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -901,16 +961,16 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4292360286,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -923,7 +983,7 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -949,8 +1009,8 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
       color="#D8385E"
       pressed={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -969,6 +1029,15 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
 
 exports[`<Button /> Snapshots primary buttons With inverted prop should match snapshot with default Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -979,7 +1048,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -992,8 +1061,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
     secondary={false}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
@@ -1013,8 +1082,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
       pressed={false}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -1032,6 +1101,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 exports[`<Button /> Snapshots primary buttons With inverted prop should match snapshot with default Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -1042,7 +1120,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -1055,8 +1133,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
     secondary={false}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
@@ -1076,18 +1154,18 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -1098,16 +1176,16 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4292360286,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -1120,7 +1198,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -1149,8 +1227,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
       pressed={false}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -1168,6 +1246,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 exports[`<Button /> Snapshots primary buttons With inverted prop should match snapshot with icon Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -1178,7 +1265,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -1192,8 +1279,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
     secondary={false}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
@@ -1213,21 +1300,21 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Array [
-            Object {
+          [
+            {
               "height": 24,
               "width": 24,
             },
           ],
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -1238,16 +1325,16 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4292360286,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -1260,7 +1347,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -1288,6 +1375,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 exports[`<Button /> Snapshots primary buttons With inverted prop should match snapshot with text Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -1298,7 +1394,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -1306,8 +1402,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   <View
     pressed={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -1324,8 +1420,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
       color="#FFFFFF"
       pressed={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -1344,6 +1440,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 exports[`<Button /> Snapshots primary buttons With inverted prop should match snapshot with text Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -1354,7 +1459,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -1362,8 +1467,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   <View
     pressed={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -1383,18 +1488,18 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -1405,16 +1510,16 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4294967295,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -1427,7 +1532,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -1453,8 +1558,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
       color="#FFFFFF"
       pressed={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -1473,6 +1578,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 exports[`<Button /> Snapshots primary buttons With large prop should match snapshot icon Button with large prop 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -1483,7 +1597,7 @@ exports[`<Button /> Snapshots primary buttons With large prop should match snaps
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -1498,8 +1612,8 @@ exports[`<Button /> Snapshots primary buttons With large prop should match snaps
     secondary={false}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#D8385E",
           "borderRadius": 9999,
@@ -1519,21 +1633,21 @@ exports[`<Button /> Snapshots primary buttons With large prop should match snaps
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Array [
-            Object {
+          [
+            {
               "height": 24,
               "width": 24,
             },
           ],
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -1544,16 +1658,16 @@ exports[`<Button /> Snapshots primary buttons With large prop should match snaps
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4294967295,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -1566,7 +1680,7 @@ exports[`<Button /> Snapshots primary buttons With large prop should match snaps
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -1594,6 +1708,15 @@ exports[`<Button /> Snapshots primary buttons With large prop should match snaps
 
 exports[`<Button /> Snapshots primary buttons With small prop should match snapshot with default Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -1604,7 +1727,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -1617,8 +1740,8 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
     secondary={false}
     small={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#D8385E",
           "borderRadius": 9999,
@@ -1638,8 +1761,8 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
       pressed={false}
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -1657,6 +1780,15 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 
 exports[`<Button /> Snapshots primary buttons With small prop should match snapshot with default Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -1667,7 +1799,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -1680,8 +1812,8 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
     secondary={false}
     small={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#D8385E",
           "borderRadius": 9999,
@@ -1701,18 +1833,18 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
       focusable={false}
       height={16}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 16,
             "width": 16,
@@ -1723,16 +1855,16 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4294967295,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -1745,7 +1877,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -1774,8 +1906,8 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
       pressed={false}
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -1793,6 +1925,15 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 
 exports[`<Button /> Snapshots primary buttons With small prop should match snapshot with text Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -1803,7 +1944,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -1812,8 +1953,8 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
     pressed={false}
     small={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -1831,8 +1972,8 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
       pressed={false}
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -1851,6 +1992,15 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 
 exports[`<Button /> Snapshots primary buttons With small prop should match snapshot with text Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -1861,7 +2011,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -1870,8 +2020,8 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
     pressed={false}
     small={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -1891,18 +2041,18 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
       focusable={false}
       height={16}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 16,
             "width": 16,
@@ -1913,16 +2063,16 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4292360286,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -1935,7 +2085,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -1962,8 +2112,8 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
       pressed={false}
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -1982,6 +2132,15 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 
 exports[`<Button /> Snapshots primary buttons Without props should match snapshot with default Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -1992,7 +2151,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -2005,8 +2164,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
     secondary={false}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#D8385E",
           "borderRadius": 9999,
@@ -2026,8 +2185,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
       pressed={false}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -2045,6 +2204,15 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 exports[`<Button /> Snapshots primary buttons Without props should match snapshot with default Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -2055,7 +2223,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -2068,8 +2236,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
     secondary={false}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#D8385E",
           "borderRadius": 9999,
@@ -2089,18 +2257,18 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -2111,16 +2279,16 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4294967295,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -2133,7 +2301,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -2162,8 +2330,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
       pressed={false}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -2181,6 +2349,15 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 exports[`<Button /> Snapshots primary buttons Without props should match snapshot with link Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -2191,7 +2368,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -2201,8 +2378,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
     pressed={false}
     secondary={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#D8385E",
           "fontFamily": "Rubik",
           "fontSize": 16,
@@ -2220,6 +2397,15 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 exports[`<Button /> Snapshots primary buttons Without props should match snapshot with text Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -2230,7 +2416,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -2238,8 +2424,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   <View
     pressed={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -2256,8 +2442,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
       color="#D8385E"
       pressed={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -2276,6 +2462,15 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 exports[`<Button /> Snapshots primary buttons Without props should match snapshot with text Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -2286,7 +2481,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -2294,8 +2489,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   <View
     pressed={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -2315,18 +2510,18 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -2337,16 +2532,16 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4292360286,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -2359,7 +2554,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -2385,8 +2580,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
       color="#D8385E"
       pressed={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -2405,6 +2600,15 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 exports[`<Button /> Snapshots secondary buttons With full prop should match snapshot with default Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -2415,7 +2619,7 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -2428,8 +2632,8 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
     secondary={true}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#231B22",
           "borderRadius": 9999,
@@ -2450,8 +2654,8 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
       pressed={false}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -2469,6 +2673,15 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
 
 exports[`<Button /> Snapshots secondary buttons With full prop should match snapshot with default Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -2479,7 +2692,7 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -2492,8 +2705,8 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
     secondary={true}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#231B22",
           "borderRadius": 9999,
@@ -2514,18 +2727,18 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -2536,16 +2749,16 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4294967295,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -2558,7 +2771,7 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -2587,8 +2800,8 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
       pressed={false}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -2606,6 +2819,15 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
 
 exports[`<Button /> Snapshots secondary buttons With full prop should match snapshot with text Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -2616,7 +2838,7 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -2625,8 +2847,8 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
     full={true}
     pressed={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -2645,8 +2867,8 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
       pressed={false}
       secondary={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -2665,6 +2887,15 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
 
 exports[`<Button /> Snapshots secondary buttons With full prop should match snapshot with text Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -2675,7 +2906,7 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -2684,8 +2915,8 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
     full={true}
     pressed={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -2706,18 +2937,18 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -2728,16 +2959,16 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4280490786,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -2750,7 +2981,7 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -2777,8 +3008,8 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
       pressed={false}
       secondary={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -2797,6 +3028,15 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
 
 exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with default Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -2807,7 +3047,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -2820,8 +3060,8 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
     secondary={true}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
@@ -2841,8 +3081,8 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
       pressed={false}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -2860,6 +3100,15 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 
 exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with default Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -2870,7 +3119,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -2883,8 +3132,8 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
     secondary={true}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
@@ -2904,18 +3153,18 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -2926,16 +3175,16 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4280490786,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -2948,7 +3197,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -2977,8 +3226,8 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
       pressed={false}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -2996,6 +3245,15 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 
 exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with icon Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -3006,7 +3264,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -3020,8 +3278,8 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
     secondary={true}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderRadius": 9999,
@@ -3041,21 +3299,21 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Array [
-            Object {
+          [
+            {
               "height": 24,
               "width": 24,
             },
           ],
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -3066,16 +3324,16 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4280490786,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -3088,7 +3346,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -3116,6 +3374,15 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 
 exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with text Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -3126,7 +3393,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -3134,8 +3401,8 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
   <View
     pressed={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -3153,8 +3420,8 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
       pressed={false}
       secondary={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -3173,6 +3440,15 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 
 exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with text Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -3183,7 +3459,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -3191,8 +3467,8 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
   <View
     pressed={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -3212,18 +3488,18 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -3234,16 +3510,16 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4294967295,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -3256,7 +3532,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -3283,8 +3559,8 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
       pressed={false}
       secondary={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -3303,6 +3579,15 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 
 exports[`<Button /> Snapshots secondary buttons With large prop should match snapshot icon Button with large prop 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -3313,7 +3598,7 @@ exports[`<Button /> Snapshots secondary buttons With large prop should match sna
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -3328,8 +3613,8 @@ exports[`<Button /> Snapshots secondary buttons With large prop should match sna
     secondary={true}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#231B22",
           "borderRadius": 9999,
@@ -3349,21 +3634,21 @@ exports[`<Button /> Snapshots secondary buttons With large prop should match sna
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Array [
-            Object {
+          [
+            {
               "height": 24,
               "width": 24,
             },
           ],
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -3374,16 +3659,16 @@ exports[`<Button /> Snapshots secondary buttons With large prop should match sna
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4294967295,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -3396,7 +3681,7 @@ exports[`<Button /> Snapshots secondary buttons With large prop should match sna
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -3424,6 +3709,15 @@ exports[`<Button /> Snapshots secondary buttons With large prop should match sna
 
 exports[`<Button /> Snapshots secondary buttons With small prop should match snapshot with default Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -3434,7 +3728,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -3447,8 +3741,8 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
     secondary={true}
     small={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#231B22",
           "borderRadius": 9999,
@@ -3468,8 +3762,8 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
       pressed={false}
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -3487,6 +3781,15 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 
 exports[`<Button /> Snapshots secondary buttons With small prop should match snapshot with default Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -3497,7 +3800,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -3510,8 +3813,8 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
     secondary={true}
     small={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#231B22",
           "borderRadius": 9999,
@@ -3531,18 +3834,18 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
       focusable={false}
       height={16}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 16,
             "width": 16,
@@ -3553,16 +3856,16 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4294967295,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -3575,7 +3878,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -3604,8 +3907,8 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
       pressed={false}
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -3623,6 +3926,15 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 
 exports[`<Button /> Snapshots secondary buttons With small prop should match snapshot with text Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -3633,7 +3945,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -3642,8 +3954,8 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
     pressed={false}
     small={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -3662,8 +3974,8 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
       secondary={true}
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -3682,6 +3994,15 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 
 exports[`<Button /> Snapshots secondary buttons With small prop should match snapshot with text Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -3692,7 +4013,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -3701,8 +4022,8 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
     pressed={false}
     small={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -3722,18 +4043,18 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
       focusable={false}
       height={16}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 16,
             "width": 16,
@@ -3744,16 +4065,16 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4280490786,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -3766,7 +4087,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -3794,8 +4115,8 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
       secondary={true}
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -3814,6 +4135,15 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 
 exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with default Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -3824,7 +4154,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -3837,8 +4167,8 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
     secondary={true}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#231B22",
           "borderRadius": 9999,
@@ -3858,8 +4188,8 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
       pressed={false}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -3877,6 +4207,15 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 
 exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with default Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -3887,7 +4226,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -3900,8 +4239,8 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
     secondary={true}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#231B22",
           "borderRadius": 9999,
@@ -3921,18 +4260,18 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -3943,16 +4282,16 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4294967295,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -3965,7 +4304,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -3994,8 +4333,8 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
       pressed={false}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -4013,6 +4352,15 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 
 exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with icon Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -4023,7 +4371,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -4037,8 +4385,8 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
     secondary={true}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#231B22",
           "borderRadius": 9999,
@@ -4058,21 +4406,21 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Array [
-            Object {
+          [
+            {
               "height": 24,
               "width": 24,
             },
           ],
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -4083,16 +4431,16 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4294967295,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -4105,7 +4453,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -4133,6 +4481,15 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 
 exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with link Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -4143,7 +4500,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -4153,8 +4510,8 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
     pressed={false}
     secondary={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
@@ -4172,6 +4529,15 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 
 exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with text Button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -4182,7 +4548,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -4190,8 +4556,8 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
   <View
     pressed={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -4209,8 +4575,8 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
       pressed={false}
       secondary={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -4229,6 +4595,15 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 
 exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with text Button with Icon 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -4239,7 +4614,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "flexDirection": "row",
     }
   }
@@ -4247,8 +4622,8 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
   <View
     pressed={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "transparent",
           "borderRadius": 9999,
@@ -4268,18 +4643,18 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
       focusable={false}
       height={24}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
+          {
             "marginRight": 8,
           },
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 24,
             "width": 24,
@@ -4290,16 +4665,16 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4280490786,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -4312,7 +4687,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -4339,8 +4714,8 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
       pressed={false}
       secondary={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
