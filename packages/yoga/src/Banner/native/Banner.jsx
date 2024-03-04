@@ -64,8 +64,15 @@ BannerActionButton.propTypes = {
 
 /** A banner is a component that displays a prominent message. It can have related action buttons on it or not. */
 const Banner = forwardRef((props, ref) => {
-  const { icon, variant, message, primaryButton, secondaryButton, ...rest } =
-    props;
+  const {
+    icon,
+    iconComponent,
+    variant,
+    message,
+    primaryButton,
+    secondaryButton,
+    ...rest
+  } = props;
 
   return (
     <StyledBanner ref={ref} variant={variant} {...rest}>
@@ -78,6 +85,7 @@ const Banner = forwardRef((props, ref) => {
             marginRight="xxsmall"
           />
         )}
+        {iconComponent && iconComponent()}
         <Text.Small flex={1} marginTop="xxsmall" marginBottom="xxsmall">
           {message}
         </Text.Small>
@@ -109,6 +117,8 @@ const BannerActionButtonType = shape({
 Banner.propTypes = {
   /** SVG to be rendered. */
   icon: elementType,
+  /** Customized Icon component. */
+  iconComponent: elementType,
   /** style the banner following the theme (success, informative, attention) */
   variant: oneOf(['success', 'informative', 'attention']),
   /** the message to be displayed */
@@ -136,6 +146,7 @@ Banner.propTypes = {
 
 Banner.defaultProps = {
   icon: undefined,
+  iconComponent: undefined,
   variant: 'informative',
   primaryButton: undefined,
   secondaryButton: undefined,
