@@ -55,10 +55,4 @@ export const v3theme = createTheme(tokens => ({
   },
 
   baseFont: tokens.fonts.inter,
-
-  fontWeights: {
-    regular: tokens.fontWeights.regular,
-    medium: tokens.fontWeights.medium,
-    bold: tokens.fontWeights.bold,
-  },
 }));
