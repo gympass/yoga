@@ -1,11 +1,7 @@
 import styled, { css } from 'styled-components';
-import Box from '../../Box';
+import { backgroundColor } from '@gympass/yoga-system';
 
-const StyledHeading = styled(Box).attrs(props => ({
-  as: 'header',
-  bg: props.theme.yoga.components.heading,
-  ...props,
-}))`
+const StyledHeading = styled.header`
   ${({
     noPadding,
     theme: {
@@ -15,6 +11,8 @@ const StyledHeading = styled(Box).attrs(props => ({
     },
   }) => {
     return css`
+      background-color: ${heading.background};
+      ${backgroundColor}
       padding: ${heading.padding.vertical}px ${heading.padding.horizontal}px;
       min-height: ${heading.height}px;
       width: 100%;

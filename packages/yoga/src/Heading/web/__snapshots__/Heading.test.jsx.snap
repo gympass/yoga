@@ -178,6 +178,7 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
 }
 
 .c0 {
+  background-color: #FFFFFF;
   padding: 4px 16px;
   min-height: 56px;
   width: 100%;
@@ -194,25 +195,6 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 0;
-}
-
-.c0 backgroundColor {
-  background: #FFFFFF;
-  height: 56px;
-}
-
-.c0 backgroundColor padding {
-  vertical: 4px;
-  horizontal: 16px;
-}
-
-.c0 backgroundColor button {
-  color: #231B22;
-  width: 48px;
-  height: 48px;
-  background-width: 40px;
-  background-height: 40px;
-  background: #D7D7E0;
 }
 
 .c2 {
@@ -536,6 +518,7 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
 }
 
 .c0 {
+  background-color: #FFFFFF;
   padding: 4px 16px;
   min-height: 56px;
   width: 100%;
@@ -551,25 +534,6 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c0 backgroundColor {
-  background: #FFFFFF;
-  height: 56px;
-}
-
-.c0 backgroundColor padding {
-  vertical: 4px;
-  horizontal: 16px;
-}
-
-.c0 backgroundColor button {
-  color: #231B22;
-  width: 48px;
-  height: 48px;
-  background-width: 40px;
-  background-height: 40px;
-  background: #D7D7E0;
 }
 
 .c2 {
@@ -826,6 +790,7 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
 }
 
 .c0 {
+  background-color: #FFFFFF;
   padding: 4px 16px;
   min-height: 56px;
   width: 100%;
@@ -841,25 +806,6 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c0 backgroundColor {
-  background: #FFFFFF;
-  height: 56px;
-}
-
-.c0 backgroundColor padding {
-  vertical: 4px;
-  horizontal: 16px;
-}
-
-.c0 backgroundColor button {
-  color: #231B22;
-  width: 48px;
-  height: 48px;
-  background-width: 40px;
-  background-height: 40px;
-  background: #D7D7E0;
 }
 
 .c7 {
@@ -980,6 +926,7 @@ exports[`<Heading /> should match snapshot with title 1`] = `
 }
 
 .c0 {
+  background-color: #FFFFFF;
   padding: 4px 16px;
   min-height: 56px;
   width: 100%;
@@ -995,25 +942,6 @@ exports[`<Heading /> should match snapshot with title 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c0 backgroundColor {
-  background: #FFFFFF;
-  height: 56px;
-}
-
-.c0 backgroundColor padding {
-  vertical: 4px;
-  horizontal: 16px;
-}
-
-.c0 backgroundColor button {
-  color: #231B22;
-  width: 48px;
-  height: 48px;
-  background-width: 40px;
-  background-height: 40px;
-  background: #D7D7E0;
 }
 
 .c1 {
@@ -1172,6 +1100,7 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
 }
 
 .c0 {
+  background-color: #FFFFFF;
   padding: 4px 16px;
   min-height: 56px;
   width: 100%;
@@ -1187,25 +1116,6 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c0 backgroundColor {
-  background: #FFFFFF;
-  height: 56px;
-}
-
-.c0 backgroundColor padding {
-  vertical: 4px;
-  horizontal: 16px;
-}
-
-.c0 backgroundColor button {
-  color: #231B22;
-  width: 48px;
-  height: 48px;
-  background-width: 40px;
-  background-height: 40px;
-  background: #D7D7E0;
 }
 
 .c8 {
@@ -1333,6 +1243,7 @@ exports[`<Heading /> should override the background color 1`] = `
 }
 
 .c0 {
+  background-color: #FFFFFF;
   background-color: #FFEEF2;
   padding: 4px 16px;
   min-height: 56px;
