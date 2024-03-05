@@ -43,11 +43,13 @@ Heading.propTypes = {
     PropTypes.node,
   ]),
   noPadding: bool,
+  bg: PropTypes.string,
 };
 
 Heading.defaultProps = {
   children: undefined,
   noPadding: false,
+  bg: undefined,
 };
 
 export default Heading;

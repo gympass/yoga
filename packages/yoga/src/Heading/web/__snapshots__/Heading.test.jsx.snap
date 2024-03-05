@@ -178,7 +178,7 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
 }
 
 .c0 {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   padding: 4px 16px;
   min-height: 56px;
   width: 100%;
@@ -518,7 +518,7 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
 }
 
 .c0 {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   padding: 4px 16px;
   min-height: 56px;
   width: 100%;
@@ -790,7 +790,7 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
 }
 
 .c0 {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   padding: 4px 16px;
   min-height: 56px;
   width: 100%;
@@ -926,7 +926,7 @@ exports[`<Heading /> should match snapshot with title 1`] = `
 }
 
 .c0 {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   padding: 4px 16px;
   min-height: 56px;
   width: 100%;
@@ -1100,7 +1100,7 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
 }
 
 .c0 {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   padding: 4px 16px;
   min-height: 56px;
   width: 100%;
@@ -1209,6 +1209,93 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
     >
       <div
         class="c8"
+      />
+    </div>
+  </header>
+</div>
+`;
+
+exports[`<Heading /> should override the background color 1`] = `
+.c2 {
+  width: 100%;
+  text-align: center;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.c0 {
+  background-color: #FFFFFF;
+  background-color: #FFEEF2;
+  padding: 4px 16px;
+  min-height: 56px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  width: 48px;
+  height: 48px;
+}
+
+@media (min-width:769px) {
+  .c0 {
+    padding: 4px 16px;
+  }
+}
+
+<div>
+  <header
+    class="c0"
+  >
+    <div
+      class="c1"
+    />
+    <div
+      class="c2"
+    >
+      <h1
+        class="c3"
+        font-size="small"
+      >
+        Gympass
+      </h1>
+    </div>
+    <div
+      class="c4"
+      display="flex"
+    >
+      <div
+        class="c1"
       />
     </div>
   </header>

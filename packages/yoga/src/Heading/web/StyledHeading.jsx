@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { backgroundColor } from '@gympass/yoga-system';
 
 const StyledHeading = styled.header`
   ${({
@@ -10,7 +11,8 @@ const StyledHeading = styled.header`
     },
   }) => {
     return css`
-      background: ${heading.background};
+      background-color: ${heading.background};
+      ${backgroundColor}
       padding: ${heading.padding.vertical}px ${heading.padding.horizontal}px;
       min-height: ${heading.height}px;
       width: 100%;

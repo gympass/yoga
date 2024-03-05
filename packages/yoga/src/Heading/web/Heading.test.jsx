@@ -74,4 +74,16 @@ describe('<Heading />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should override the background color', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Heading bg="yoga">
+          <Title>Gympass</Title>
+        </Heading>
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });
