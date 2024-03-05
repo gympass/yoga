@@ -16,13 +16,13 @@ function ActionRequirement(props) {
     checkable,
     illustration,
     list,
-    renderTextDisplay,
+    titleAsTextDisplay,
   } = props;
 
   return (
     <StyledActionRequirement {...props}>
       {illustration && <Box>{illustration}</Box>}
-      {renderTextDisplay ? (
+      {titleAsTextDisplay ? (
         <Text.Display2>{title}</Text.Display2>
       ) : (
         <Title>{title}</Title>
@@ -48,7 +48,7 @@ ActionRequirement.propTypes = {
   checkable: oneOfType([arrayOf(node), node]),
   illustration: oneOfType([arrayOf(node), node]),
   list: oneOfType([arrayOf(node), node]),
-  renderTextDisplay: bool,
+  titleAsTextDisplay: bool,
 };
 
 ActionRequirement.defaultProps = {
@@ -56,7 +56,7 @@ ActionRequirement.defaultProps = {
   checkable: undefined,
   illustration: undefined,
   list: undefined,
-  renderTextDisplay: false,
+  titleAsTextDisplay: false,
 };
 
 export default ActionRequirement;

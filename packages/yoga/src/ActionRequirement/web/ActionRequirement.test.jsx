@@ -51,7 +51,7 @@ describe('<ActionRequirement />', () => {
         <ActionRequirement
           title="title"
           description="description"
-          renderTextDisplay
+          titleAsTextDisplay
         />
       </ThemeProvider>,
     );

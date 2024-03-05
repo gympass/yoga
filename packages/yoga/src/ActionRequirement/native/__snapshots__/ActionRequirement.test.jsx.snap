@@ -55,13 +55,13 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
       </Text>
     </React.Fragment>
   }
-  renderTextDisplay={false}
   style={
     [
       {},
     ]
   }
   title="Welcome to the world of feeling good!"
+  titleAsTextDisplay={false}
 >
   <View
     style={
@@ -552,13 +552,13 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
 exports[`<ActionRequirement /> should match snapshot with text display 1`] = `
 <View
   description="Lets make it a good day!"
-  renderTextDisplay={true}
   style={
     [
       {},
     ]
   }
   title="Welcome to the world of feeling good!"
+  titleAsTextDisplay={true}
 >
   <Text
     style={

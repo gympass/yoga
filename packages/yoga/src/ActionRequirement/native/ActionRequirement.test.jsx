@@ -58,7 +58,7 @@ describe('<ActionRequirement />', () => {
         <ActionRequirement
           title="Welcome to the world of feeling good!"
           description="Lets make it a good day!"
-          renderTextDisplay
+          titleAsTextDisplay
         />
       </ThemeProvider>,
     );
