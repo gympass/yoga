@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.102.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.102.0...@gympass/yoga@7.102.1) (2024-03-05)
+
+
+### Bug Fixes
+
+* **button:** adjust button disabled token ([7614dfe](https://github.com/Gympass/yoga/commit/7614dfebd8dba650cc78faccd3e4a786bac2c24a))
+
+
+
+
+
 # [7.102.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.101.1...@gympass/yoga@7.102.0) (2024-03-05)
 
 
