@@ -10,6 +10,8 @@ const GlobalStyle = createGlobalStyle`
   }) => `
     body {
       font-family: "${family}";
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
   `}
 `;

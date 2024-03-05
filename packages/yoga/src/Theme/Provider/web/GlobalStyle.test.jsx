@@ -20,6 +20,8 @@ describe('GlobalStyle component', () => {
     expectCSSMatches(
       `body {
         font-family: "${baseFont.family}";
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }`,
     );
   });

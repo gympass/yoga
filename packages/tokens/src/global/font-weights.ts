@@ -4,9 +4,6 @@ export const weights = {
   medium: 500,
   bold: 700,
   black: 900,
-  regularNew: 500,
-  mediumNew: 700,
-  boldNew: 800,
 } as const;
 
 const fontWeights = { ...weights, ...Object.values(weights) };
