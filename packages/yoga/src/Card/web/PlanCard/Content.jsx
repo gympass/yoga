@@ -29,7 +29,7 @@ const Title = styled(Text.Medium)`
           content: '';
           height: 24px;
           width: 4px;
-          background-color: ${colors[props.badgeColor]};
+          background-color: ${colors[badgeColor] || badgeColor};
           border-top-right-radius: ${radii.xsmall}px;
           border-bottom-right-radius: ${radii.xsmall}px;
         }

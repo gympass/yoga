@@ -19,9 +19,9 @@ exports[`<Divider /> should create a divider component 1`] = `
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
 }
 
 .c2 {
@@ -73,9 +73,9 @@ exports[`<Divider /> should create a vertical divider component 1`] = `
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
 }
 
 .c2 {

@@ -11,10 +11,9 @@ const StyledHeading = styled.header`
   }) => {
     return css`
       background: ${heading.background};
-      padding: ${heading.padding.vertical}px
-        ${heading.padding.horizontalMobile}px;
-      width: 100%;
+      padding: ${heading.padding.vertical}px ${heading.padding.horizontal}px;
       min-height: ${heading.height}px;
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;

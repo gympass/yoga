@@ -3,6 +3,100 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.48.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.47.0...@gympass/yoga-doc@2.48.0) (2024-02-27)
+
+
+### Features
+
+* create new text components ([be94f27](https://github.com/gympass/yoga/commit/be94f273e876925be6f7c18d5b26f613bce78a99))
+
+
+
+
+
+# [2.47.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.46.7...@gympass/yoga-doc@2.47.0) (2024-02-27)
+
+
+### Features
+
+* update flag icons and add new ones ([a930ded](https://github.com/gympass/yoga/commit/a930ded2d76c6634d67faa982c26c00904009640))
+
+
+
+
+
+## [2.46.7](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.46.6...@gympass/yoga-doc@2.46.7) (2024-02-26)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.46.6](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.46.5...@gympass/yoga-doc@2.46.6) (2024-02-23)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.46.5](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.46.4...@gympass/yoga-doc@2.46.5) (2024-02-23)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.46.4](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.46.3...@gympass/yoga-doc@2.46.4) (2024-02-23)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.46.3](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.46.2...@gympass/yoga-doc@2.46.3) (2024-02-23)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.46.2](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.46.1...@gympass/yoga-doc@2.46.2) (2024-02-22)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.46.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.46.0...@gympass/yoga-doc@2.46.1) (2024-02-21)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+# [2.46.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.45.5...@gympass/yoga-doc@2.46.0) (2024-02-21)
+
+
+### Bug Fixes
+
+* add prop fill ([cd6faa2](https://github.com/gympass/yoga/commit/cd6faa23305168b357d5c119b63966155907eb8a))
+
+
+### Features
+
+* remove fill prop ([72d35f2](https://github.com/gympass/yoga/commit/72d35f223036f828ce29ee37edcf540876a274d3))
+
+
+
+
+
 ## [2.45.5](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.45.4...@gympass/yoga-doc@2.45.5) (2024-02-14)
 
 **Note:** Version bump only for package @gympass/yoga-doc

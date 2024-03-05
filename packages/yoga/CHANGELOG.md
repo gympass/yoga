@@ -3,6 +3,135 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.100.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.99.1...@gympass/yoga@7.100.0) (2024-02-27)
+
+
+### Bug Fixes
+
+* apply the text light prop correctly ([217cb26](https://github.com/Gympass/yoga/commit/217cb2665ddd619fd948c23bcf5d5306eb812f6a))
+* remove test component ([b5c0e90](https://github.com/Gympass/yoga/commit/b5c0e907ff6c355300cb4a2d88193e8ab686a885))
+
+
+### Features
+
+* create new text components ([be94f27](https://github.com/Gympass/yoga/commit/be94f273e876925be6f7c18d5b26f613bce78a99))
+
+
+
+
+
+## [7.99.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.99.0...@gympass/yoga@7.99.1) (2024-02-27)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+# [7.99.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.98.0...@gympass/yoga@7.99.0) (2024-02-26)
+
+
+### Features
+
+* **Button:** change disabled text color ([c30a154](https://github.com/Gympass/yoga/commit/c30a154ee08592b0c726653f2ea0379377adff7a))
+
+
+
+
+
+# [7.98.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.97.0...@gympass/yoga@7.98.0) (2024-02-23)
+
+
+### Features
+
+* **PlanCard:** allow usage of colors not included in theme ([73fb71d](https://github.com/Gympass/yoga/commit/73fb71d2672cb9a43cb7aa3d0a96c987cf06bac6))
+
+
+
+
+
+# [7.97.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.96.3...@gympass/yoga@7.97.0) (2024-02-23)
+
+
+### Features
+
+* **Dialog:** update close button style ([7adea35](https://github.com/Gympass/yoga/commit/7adea355e46560fded4d63274ae8b5cd170e9053))
+
+
+
+
+
+## [7.96.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.96.2...@gympass/yoga@7.96.3) (2024-02-23)
+
+
+### Bug Fixes
+
+* update width and height ([99b5a1f](https://github.com/Gympass/yoga/commit/99b5a1f97f93833c38ea61a7a754b27aaf20dd4a))
+
+
+
+
+
+## [7.96.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.96.1...@gympass/yoga@7.96.2) (2024-02-23)
+
+
+### Bug Fixes
+
+* **chips:** adjust lineHeights ([3a9645e](https://github.com/Gympass/yoga/commit/3a9645e5ab280eeab01c532d40776ddee72f51ac))
+
+
+
+
+
+## [7.96.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.96.0...@gympass/yoga@7.96.1) (2024-02-22)
+
+
+### Bug Fixes
+
+* back the min height header size ([b0882e2](https://github.com/Gympass/yoga/commit/b0882e2c46d7fb4a1e914de4a164c8bb51523999))
+
+
+
+
+
+# [7.96.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.95.0...@gympass/yoga@7.96.0) (2024-02-21)
+
+
+### Bug Fixes
+
+* codacy identation suggestions ([84e0daf](https://github.com/Gympass/yoga/commit/84e0dafb56508fad0a465df0026439abd0d6ef7b))
+
+
+### Features
+
+* add box wrapping the button to attend design needs ([7120847](https://github.com/Gympass/yoga/commit/71208473b68ee4d9fc463d2b77343295d09dfee3))
+* add secondary props ([1e652d8](https://github.com/Gympass/yoga/commit/1e652d892674feaf2997a035160f3739815a0126))
+* add secondary props ([7e1cd54](https://github.com/Gympass/yoga/commit/7e1cd5435f640acb86ba39dd6dd58ef847372dfb))
+
+
+
+
+
+# [7.95.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.94.0...@gympass/yoga@7.95.0) (2024-02-21)
+
+
+### Bug Fixes
+
+* add prop fill ([cd6faa2](https://github.com/Gympass/yoga/commit/cd6faa23305168b357d5c119b63966155907eb8a))
+* hidden menu on 1024 resolution ([5a16c3f](https://github.com/Gympass/yoga/commit/5a16c3f387da1254f4dd50a052857ccec6918ca2))
+* navigation menu container ([353ec78](https://github.com/Gympass/yoga/commit/353ec780a205d65ea176a1f5884ecc7d03f0e2a9))
+* update css ([5b7ee51](https://github.com/Gympass/yoga/commit/5b7ee51e74aa4d18f09cc8437cc42a33b22b9888))
+
+
+### Features
+
+* fix buttom items ([5d567c5](https://github.com/Gympass/yoga/commit/5d567c53ca79f7c72de805f61736b00f6511a3d8))
+* remove fill prop ([72d35f2](https://github.com/Gympass/yoga/commit/72d35f223036f828ce29ee37edcf540876a274d3))
+
+
+
+
+
 # [7.94.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.93.2...@gympass/yoga@7.94.0) (2024-02-14)
 
 

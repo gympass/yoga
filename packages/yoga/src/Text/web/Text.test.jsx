@@ -8,6 +8,11 @@ describe('<Text />', () => {
     it('should match snapshot with Text', () => {
       const { container } = render(
         <ThemeProvider>
+          <Text.Display1>Live the mission</Text.Display1>
+          <Text.Display2>Live the mission</Text.Display2>
+          <Text.Display3>Live the mission</Text.Display3>
+          <Text.Display4>Live the mission</Text.Display4>
+          <Text.DisplayNumber>Live the mission</Text.DisplayNumber>
           <Text.H1>Live the mission</Text.H1>
           <Text.H2>Live the mission</Text.H2>
           <Text.H3>Live the mission</Text.H3>

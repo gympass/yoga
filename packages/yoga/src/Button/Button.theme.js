@@ -59,7 +59,7 @@ const Button = ({
           color: colors.white,
         },
         disabled: {
-          color: colors.deep,
+          color: colors.text.disabled,
         },
         pressed: {
           color: colors.white,

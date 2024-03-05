@@ -1,4 +1,34 @@
 const Text = ({ fontSizes, lineHeights, fontWeights }) => ({
+  display1: {
+    fontFamily: 'NaN Holo Condensed',
+    fontsize: fontSizes.xhuge,
+    lineHeight: lineHeights.xhuge,
+    fontWeight: fontWeights.bold,
+  },
+  display2: {
+    fontFamily: 'NaN Holo Condensed',
+    fontsize: fontSizes.xxxlarge,
+    lineHeight: lineHeights.xxlarge,
+    fontWeight: fontWeights.bold,
+  },
+  display3: {
+    fontFamily: 'NaN Holo Condensed',
+    fontsize: fontSizes.xxlarge,
+    lineHeight: lineHeights.xlarge,
+    fontWeight: fontWeights.bold,
+  },
+  display4: {
+    fontFamily: 'NaN Holo Condensed',
+    fontsize: fontSizes.xlarge,
+    lineHeight: lineHeights.medium,
+    fontWeight: fontWeights.bold,
+  },
+  displayNumber: {
+    fontFamily: 'NaN Holo Condensed',
+    fontsize: fontSizes.xxxlarge,
+    lineHeight: lineHeights.xxlarge,
+    fontWeight: fontWeights.bold,
+  },
   h1: {
     fontsize: fontSizes.huge,
     lineHeight: lineHeights.huge,

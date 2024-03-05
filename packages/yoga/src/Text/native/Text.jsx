@@ -66,6 +66,26 @@ const SmallestException = styledText('smallestException');
 
 SmallestException.displayName = 'Text.SmallestException';
 
+const Display1 = styledText('display1');
+
+Display1.displayName = 'Text.Display1';
+
+const Display2 = styledText('display2');
+
+Display2.displayName = 'Text.Display2';
+
+const Display3 = styledText('display3');
+
+Display3.displayName = 'Text.Display3';
+
+const Display4 = styledText('display4');
+
+Display4.displayName = 'Text.Display4';
+
+const DisplayNumber = styledText('displayNumber');
+
+DisplayNumber.displayName = 'Text.DisplayNumber';
+
 const TextRenderer = styledText('p');
 
 const Text = props => <TextRenderer {...props} />;
@@ -86,6 +106,11 @@ Text.Bold = Bold;
 Text.Black = Black;
 Text.SectionTitle = SectionTitle;
 Text.SmallestException = SmallestException;
+Text.Display1 = Display1;
+Text.Display2 = Display2;
+Text.Display3 = Display3;
+Text.Display4 = Display4;
+Text.DisplayNumber = DisplayNumber;
 
 const fontSizes = oneOf([
   'xxsmall',
@@ -154,4 +179,9 @@ export {
   Black,
   SectionTitle,
   SmallestException,
+  Display1,
+  Display2,
+  Display3,
+  Display4,
+  DisplayNumber,
 };

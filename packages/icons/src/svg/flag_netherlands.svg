@@ -1,12 +1,18 @@
 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_32168_262847)">
-<path d="M5.99976 12C9.31346 12 11.9998 9.31371 11.9998 6C11.9998 2.68629 9.31346 0 5.99976 0C2.68605 0 -0.000244141 2.68629 -0.000244141 6C-0.000244141 9.31371 2.68605 12 5.99976 12Z" fill="#F0F0F0"/>
-<path d="M6.00009 0C3.42031 0 1.22105 1.62825 0.373291 3.91305H11.6269C10.7791 1.62825 8.57988 0 6.00009 0V0Z" fill="#A2001D"/>
-<path d="M6.00009 12C8.57988 12 10.7791 10.3718 11.6269 8.08698H0.373291C1.22105 10.3718 3.42031 12 6.00009 12Z" fill="#0052B4"/>
+<g clip-path="url(#clip0_14_1521)">
+<mask id="mask0_14_1521" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+<circle cx="6" cy="6" r="6" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_14_1521)">
+<path d="M14.9824 0H-3.01758V12H14.9824V0Z" fill="white"/>
+<path d="M14.9824 0H-3.01758V4H14.9824V0Z" fill="#CD1F2A"/>
+<path d="M14.9824 7.94737H-3.01758V11.9474H14.9824V7.94737Z" fill="#1D4185"/>
+<circle cx="6" cy="6" r="6" stroke="#E1DED7"/>
+</g>
 </g>
 <defs>
-<clipPath id="clip0_32168_262847">
-<rect width="12" height="12" fill="white"/>
+<clipPath id="clip0_14_1521">
+<rect width="12" height="12" rx="1.12281" fill="white"/>
 </clipPath>
 </defs>
 </svg>

@@ -42,9 +42,9 @@ exports[`<Datepicker /> Snapshots should match with custom placeholder single Da
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -149,9 +149,9 @@ exports[`<Datepicker /> Snapshots should match with default selected date single
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   width: 100%;
   padding: 0;
   border: none;
@@ -263,9 +263,9 @@ exports[`<Datepicker /> Snapshots should match with default selected dates range
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   width: 100%;
   padding: 0;
   border: none;
@@ -378,9 +378,9 @@ exports[`<Datepicker /> Snapshots should match with disabled Datepicker 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #D7D7E0;
 }
 
@@ -488,9 +488,9 @@ exports[`<Datepicker /> Snapshots should match with disabled future dates Datepi
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -595,9 +595,9 @@ exports[`<Datepicker /> Snapshots should match with disabled past dates Datepick
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -702,9 +702,9 @@ exports[`<Datepicker /> Snapshots should match with error Datepicker 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -745,9 +745,9 @@ exports[`<Datepicker /> Snapshots should match with error Datepicker 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   margin-top: 4px;
   font-size: 12px;
   color: #CA4808;
@@ -828,9 +828,9 @@ exports[`<Datepicker /> Snapshots should match with range Datepicker 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -935,9 +935,9 @@ exports[`<Datepicker /> Snapshots should match with single Datepicker 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 

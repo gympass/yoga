@@ -8,9 +8,10 @@ const sizes = {
   xxlarge: 32,
   xxxlarge: 40,
   huge: 48,
+  xhuge: 60,
 } as const;
 
-const fontSizes = {...Object.values(sizes), ...sizes};
+const fontSizes = { ...Object.values(sizes), ...sizes };
 
 export type FontSizes = Partial<typeof fontSizes>;
 

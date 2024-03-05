@@ -17,6 +17,21 @@ const TextWrapper = styled.View`
 const TextPage = () => (
   <ScrollView>
     <TextWrapper>
+      <Text.Display1>Display1</Text.Display1>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.Display2>Display2</Text.Display2>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.Display3>Display3</Text.Display3>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.Display4>Display4</Text.Display4>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.DisplayNumber>DisplayNumber</Text.DisplayNumber>
+    </TextWrapper>
+    <TextWrapper>
       <Text.H1 variant="primary">Heading H1</Text.H1>
     </TextWrapper>
     <TextWrapper>

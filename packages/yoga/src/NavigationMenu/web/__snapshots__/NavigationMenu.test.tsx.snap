@@ -37,9 +37,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -48,9 +48,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   padding: 0;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -59,9 +59,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -129,9 +129,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-weight: 500;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -177,9 +177,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-weight: 500;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -251,6 +251,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   border-radius: 8px;
   list-style-type: none;
   cursor: pointer;
+  margin-right: 8px;
 }
 
 .c10 svg {
@@ -276,6 +277,27 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 .c10 a {
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c10 a:hover,
+.c10 a:focus {
+  outline: none;
+}
+
+.c10 a:hover .c11,
+.c10 a:focus .c11 {
+  background-color: #D7D7E0;
+  color: #231B22;
+}
+
+.c10 a:hover .c15,
+.c10 a:focus .c15 {
+  color: #231B22;
+}
+
+.c10 a:hover svg,
+.c10 a:focus svg {
+  fill: #231B22;
 }
 
 .c10 a.active {
@@ -305,6 +327,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   border-radius: 8px;
   list-style-type: none;
   cursor: pointer;
+  margin-right: 8px;
 }
 
 .c20 svg {
@@ -330,6 +353,27 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 .c20 a {
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c20 a:hover,
+.c20 a:focus {
+  outline: none;
+}
+
+.c20 a:hover .c11,
+.c20 a:focus .c11 {
+  background-color: #D7D7E0;
+  color: #231B22;
+}
+
+.c20 a:hover .c15,
+.c20 a:focus .c15 {
+  color: #231B22;
+}
+
+.c20 a:hover svg,
+.c20 a:focus svg {
+  fill: #231B22;
 }
 
 .c20 a.active {
@@ -361,6 +405,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   border-radius: 8px;
   list-style-type: none;
   cursor: pointer;
+  margin-right: 8px;
 }
 
 .c22 svg {
@@ -372,6 +417,27 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: auto;
+}
+
+.c22 a:hover,
+.c22 a:focus {
+  outline: none;
+}
+
+.c22 a:hover .c11,
+.c22 a:focus .c11 {
+  background-color: #D7D7E0;
+  color: #231B22;
+}
+
+.c22 a:hover .c15,
+.c22 a:focus .c15 {
+  color: #231B22;
+}
+
+.c22 a:hover svg,
+.c22 a:focus svg {
+  fill: #231B22;
 }
 
 .c22 a.active {
@@ -410,7 +476,13 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   background-color: #231B22;
 }
 
+.c28 {
+  position: relative;
+}
+
 .c29 {
+  position: absolute;
+  bottom: 0;
   display: grid;
   grid-auto-columns: minmax(0,1fr);
   grid-auto-flow: column;
@@ -419,15 +491,23 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  height: 74px;
-  background-color: #F5F5FA;
+  height: 56px;
+  background-color: #FFFFFF;
   margin: 0;
-  padding: 4px;
+  padding: 0;
   border: 1px solid #D7D7E0;
   gap: 4px;
+  z-index: 15;
 }
 
 .c33 {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  line-height: 12px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
   max-width: 100%;
   white-space: nowrap;
@@ -438,7 +518,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 .c30 {
   -webkit-transition: background-color 300ms ease-in-out;
   transition: background-color 300ms ease-in-out;
-  background-color: transparent;
   border-radius: 8px;
   list-style-type: none;
   cursor: pointer;
@@ -448,11 +527,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   height: 20px;
   width: 20px;
   fill: #6B6B78;
-}
-
-.c30:hover,
-.c30:focus {
-  background-color: #D7D7E0;
 }
 
 .c30:hover .c32,
@@ -478,10 +552,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   pointer-events: none;
 }
 
-.c30 a.active div {
-  background-color: #F5F5FA;
-}
-
 .c30 a.active div .c32 {
   color: #D8385E;
 }
@@ -493,7 +563,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 .c34 {
   -webkit-transition: background-color 300ms ease-in-out;
   transition: background-color 300ms ease-in-out;
-  background-color: transparent;
   border-radius: 8px;
   list-style-type: none;
   cursor: pointer;
@@ -518,10 +587,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   pointer-events: none;
 }
 
-.c34 a.active div {
-  background-color: #F5F5FA;
-}
-
 .c34 a.active div .c32 {
   color: #D8385E;
 }
@@ -532,10 +597,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 
 .c34:not(:last-child) {
   pointer-events: none;
-}
-
-.c34 div {
-  background-color: #F5F5FA;
 }
 
 .c34 div .c32 {
@@ -563,11 +624,12 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   gap: 4px;
-  padding: 8px 4px;
+  padding: 4px;
   border-radius: 8px;
 }
 
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -575,6 +637,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   gap: 20px;
   padding: 16px 12px;
   background-color: #F5F5FA;
@@ -583,6 +648,14 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   right: 0;
   -webkit-transition: width 300ms ease-in-out;
   transition: width 300ms ease-in-out;
+  position: fixed;
+  width: 100%;
+  height: calc(100% - 56px);
+  z-index: 10;
+  top: 0;
+  right: -100%;
+  -webkit-transition: right 300ms ease-in-out;
+  transition: right 300ms ease-in-out;
 }
 
 .c1 {
@@ -677,16 +750,27 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   }
 }
 
-@media (max-width:1024px) {
+@media (min-width:1024px) {
   .c0 {
-    position: absolute;
-    width: 100%;
-    height: calc(100% - 74px);
-    z-index: 10;
-    Top: 0;
-    right: -100%;
-    -webkit-transition: right 300ms ease-in-out;
-    transition: right 300ms ease-in-out;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    gap: 20px;
+    padding: 16px 12px;
+    background-color: #F5F5FA;
+    width: 280px;
+    height: 100%;
+    right: 0;
+    -webkit-transition: width 300ms ease-in-out;
+    transition: width 300ms ease-in-out;
   }
 }
 
@@ -903,8 +987,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
               width="12"
             />
             <p
-              class="c14 c32 c33"
-              font-size="medium"
+              class="c32 c33"
             >
               Subscription
             </p>
@@ -927,8 +1010,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
               width="12"
             />
             <p
-              class="c14 c32 c33"
-              font-size="medium"
+              class="c32 c33"
             >
               Billing
             </p>
@@ -949,8 +1031,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
               width="12"
             />
             <p
-              class="c14 c32 c33"
-              font-size="medium"
+              class="c32 c33"
             >
               More
             </p>
@@ -999,9 +1080,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an a
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -1051,9 +1132,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an a
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-weight: 500;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1064,6 +1145,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an a
 }
 
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1071,6 +1153,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an a
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   gap: 20px;
   padding: 16px 12px;
   background-color: #F5F5FA;
@@ -1183,9 +1268,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
   padding: 0;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -1251,9 +1336,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-weight: 500;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1264,6 +1349,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
 }
 
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1271,6 +1357,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   gap: 20px;
   padding: 16px 12px;
   background-color: #F5F5FA;

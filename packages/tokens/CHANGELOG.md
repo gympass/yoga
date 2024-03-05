@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.3.2...@gympass/yoga-tokens@3.4.0) (2024-02-27)
+
+
+### Features
+
+* create new text components ([be94f27](https://github.com/Gympass/yoga/commit/be94f273e876925be6f7c18d5b26f613bce78a99))
+
+
+
+
+
 ## [3.3.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.3.1...@gympass/yoga-tokens@3.3.2) (2024-02-14)
 
 
