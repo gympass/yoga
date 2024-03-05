@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.102.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.101.1...@gympass/yoga@7.102.0) (2024-03-05)
+
+
+### Features
+
+* **v3theme:** use lightNew as lineAndBorders value ([02c7ee7](https://github.com/Gympass/yoga/commit/02c7ee7f7e27b2160b78696463db14502a38cad2))
+
+
+
+
+
 ## [7.101.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.101.0...@gympass/yoga@7.101.1) (2024-03-05)
 
 **Note:** Version bump only for package @gympass/yoga
