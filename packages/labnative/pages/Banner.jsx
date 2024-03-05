@@ -2,10 +2,10 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { Banner, Icon } from '@gympass/yoga';
+import { Banner } from '@gympass/yoga';
 
 import { AlertCircle, AlertTriangle, CheckedFull } from '@gympass/yoga-icons';
-import { DocTitle } from '../components';
+import { DocTitle, CustomizedIcon } from '../components';
 
 const ScrollView = styled.ScrollView`
   margin-bottom: 50px;
@@ -20,10 +20,6 @@ const BannerWrapper = styled.View`
   align-items: center;
   flex-direction: column;
 `;
-
-const CustomizedIcon = () => (
-  <Icon as={AlertTriangle} size="medium" fill="verve" marginRight="xxsmall" />
-);
 
 const BannerPage = () => (
   <ScrollView>
