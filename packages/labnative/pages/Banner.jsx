@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { Banner } from '@gympass/yoga';
+import { Banner, Icon } from '@gympass/yoga';
 
 import { AlertCircle, AlertTriangle, CheckedFull } from '@gympass/yoga-icons';
 import { DocTitle } from '../components';
@@ -49,6 +49,24 @@ const BannerPage = () => (
       <Banner
         m="xsmall"
         icon={AlertTriangle}
+        variant="attention"
+        message="Attention banner"
+      />
+    </BannerWrapper>
+
+    <BannerWrapper>
+      <DocTitle>Banner with customized icon component</DocTitle>
+
+      <Banner
+        m="xsmall"
+        iconComponent={() => (
+          <Icon
+            as={AlertTriangle}
+            size="medium"
+            fill="verve"
+            marginRight="xxsmall"
+          />
+        )}
         variant="attention"
         message="Attention banner"
       />
