@@ -163,7 +163,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -181,7 +181,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -206,7 +206,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -398,7 +398,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -416,7 +416,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -444,7 +444,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -844,15 +844,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c1:disabled {
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -972,12 +972,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -1072,7 +1072,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -1090,7 +1090,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -1137,12 +1137,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -1166,7 +1166,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -1298,12 +1298,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -1401,7 +1401,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -1419,7 +1419,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -1466,12 +1466,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -1498,7 +1498,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -1646,15 +1646,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -1790,15 +1790,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -1968,7 +1968,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -1986,7 +1986,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -2010,7 +2010,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -2192,7 +2192,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -2210,7 +2210,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -2237,7 +2237,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -2361,12 +2361,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -2459,7 +2459,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -2477,7 +2477,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -2524,12 +2524,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -2552,7 +2552,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -2676,12 +2676,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -2777,7 +2777,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -2795,7 +2795,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -2842,12 +2842,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -2873,7 +2873,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -3013,15 +3013,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -3147,15 +3147,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -3323,7 +3323,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   display: inline-block;
   width: 16px;
   height: 16px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -3341,7 +3341,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -3365,7 +3365,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="16"
       >
         <span
@@ -3547,7 +3547,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   display: inline-block;
   width: 16px;
   height: 16px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -3565,7 +3565,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -3592,7 +3592,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="16"
       >
         <span
@@ -3954,12 +3954,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -4052,7 +4052,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   display: inline-block;
   width: 16px;
   height: 16px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -4070,7 +4070,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -4117,12 +4117,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -4145,7 +4145,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="16"
       >
         <span
@@ -4269,12 +4269,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -4370,7 +4370,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   display: inline-block;
   width: 16px;
   height: 16px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -4388,7 +4388,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -4435,12 +4435,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -4466,7 +4466,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="16"
       >
         <span
@@ -4606,15 +4606,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -4740,15 +4740,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -4956,7 +4956,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -4974,7 +4974,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -4998,7 +4998,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -5220,7 +5220,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -5238,7 +5238,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -5265,7 +5265,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -5689,12 +5689,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 svg {
@@ -5723,12 +5723,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1:disabled {
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -5841,7 +5841,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -5859,7 +5859,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -5908,12 +5908,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 svg {
@@ -5942,12 +5942,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1:disabled {
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -5970,7 +5970,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -6116,12 +6116,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 svg {
@@ -6150,12 +6150,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1:disabled {
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -6271,7 +6271,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -6289,7 +6289,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -6338,12 +6338,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 svg {
@@ -6372,12 +6372,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1:disabled {
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -6403,7 +6403,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -6592,15 +6592,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -6765,7 +6765,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -6783,7 +6783,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -6807,7 +6807,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -6989,7 +6989,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -7007,7 +7007,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -7034,7 +7034,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -7270,15 +7270,15 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c1:disabled {
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -7388,12 +7388,12 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -7486,7 +7486,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -7504,7 +7504,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -7551,12 +7551,12 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -7579,7 +7579,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -7703,12 +7703,12 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -7804,7 +7804,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -7822,7 +7822,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -7849,7 +7849,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -7989,15 +7989,15 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -8123,15 +8123,15 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -8446,7 +8446,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Def
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -8464,7 +8464,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Def
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -8490,7 +8490,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Def
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -8633,15 +8633,15 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Lin
 }
 
 .c1:disabled {
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -8753,12 +8753,12 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -8853,7 +8853,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -8871,7 +8871,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -8918,12 +8918,12 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -8948,7 +8948,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -9088,15 +9088,15 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Tex
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -9273,7 +9273,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -9291,7 +9291,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -9316,7 +9316,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -9508,7 +9508,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -9526,7 +9526,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -9554,7 +9554,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -9954,15 +9954,15 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c1:disabled {
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -10082,12 +10082,12 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -10182,7 +10182,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -10200,7 +10200,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -10247,12 +10247,12 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -10276,7 +10276,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -10408,12 +10408,12 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -10511,7 +10511,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -10529,7 +10529,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -10576,12 +10576,12 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -10608,7 +10608,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -10756,15 +10756,15 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -10900,15 +10900,15 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -11078,7 +11078,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -11096,7 +11096,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -11120,7 +11120,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -11302,7 +11302,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -11320,7 +11320,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -11347,7 +11347,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -11471,12 +11471,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -11569,7 +11569,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -11587,7 +11587,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -11634,12 +11634,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -11662,7 +11662,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -11786,12 +11786,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -11887,7 +11887,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -11905,7 +11905,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -11952,12 +11952,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -11983,7 +11983,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -12123,15 +12123,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -12257,15 +12257,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -12473,7 +12473,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -12491,7 +12491,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -12515,7 +12515,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -12737,7 +12737,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -12755,7 +12755,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -12782,7 +12782,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -13206,12 +13206,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 svg {
@@ -13240,12 +13240,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c1:disabled {
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -13358,7 +13358,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -13376,7 +13376,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -13425,12 +13425,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 svg {
@@ -13459,12 +13459,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c1:disabled {
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -13487,7 +13487,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -13633,12 +13633,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 svg {
@@ -13667,12 +13667,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c1:disabled {
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -13788,7 +13788,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -13806,7 +13806,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -13855,12 +13855,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 svg {
@@ -13889,12 +13889,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c1:disabled {
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -13920,7 +13920,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -14109,15 +14109,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -14292,15 +14292,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -14478,15 +14478,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -14654,7 +14654,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   display: inline-block;
   width: 16px;
   height: 16px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -14672,7 +14672,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -14696,7 +14696,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="16"
       >
         <span
@@ -14878,7 +14878,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   display: inline-block;
   width: 16px;
   height: 16px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -14896,7 +14896,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -14923,7 +14923,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="16"
       >
         <span
@@ -15285,12 +15285,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -15383,7 +15383,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   display: inline-block;
   width: 16px;
   height: 16px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -15401,7 +15401,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -15448,12 +15448,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -15476,7 +15476,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="16"
       >
         <span
@@ -15600,12 +15600,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -15701,7 +15701,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   display: inline-block;
   width: 16px;
   height: 16px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -15719,7 +15719,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -15766,12 +15766,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -15797,7 +15797,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="16"
       >
         <span
@@ -15937,15 +15937,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -16071,15 +16071,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -16247,7 +16247,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -16265,7 +16265,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -16289,7 +16289,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -16471,7 +16471,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -16489,7 +16489,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c1 {
@@ -16516,7 +16516,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
       <span
         aria-label="loading-icon"
         class="c2"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -16897,15 +16897,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c1:disabled {
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -17034,15 +17034,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c1:disabled {
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -17155,12 +17155,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -17253,7 +17253,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -17271,7 +17271,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -17318,12 +17318,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -17346,7 +17346,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -17470,12 +17470,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -17571,7 +17571,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   display: inline-block;
   width: 20px;
   height: 20px;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
@@ -17589,7 +17589,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
   animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
-  stroke: #6B6B78;
+  stroke: #D7D7E0;
 }
 
 .c2 {
@@ -17636,12 +17636,12 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #6B6B78;
-  color: #6B6B78;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1:disabled {
@@ -17667,7 +17667,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
       <span
         aria-label="loading-icon"
         class="c3"
-        color="#6B6B78"
+        color="#D7D7E0"
         size="20"
       >
         <span
@@ -17807,15 +17807,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -17941,15 +17941,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #6B6B78;
+  color: #D7D7E0;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  -webkit-text-decoration-color: #6B6B78;
-  text-decoration-color: #6B6B78;
+  -webkit-text-decoration-color: #D7D7E0;
+  text-decoration-color: #D7D7E0;
 }
 
 .c1:disabled svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>

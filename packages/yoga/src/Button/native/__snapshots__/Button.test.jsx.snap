@@ -379,12 +379,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     style={
       [
         {
-          "color": "#6B6B78",
+          "color": "#D7D7E0",
           "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "500",
           "textAlign": "center",
-          "textDecorationColor": "#6B6B78",
+          "textDecorationColor": "#D7D7E0",
           "textDecorationLine": "underline",
           "textDecorationStyle": "solid",
         },
@@ -439,18 +439,18 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     }
   >
     <Text
-      color="#6B6B78"
+      color="#D7D7E0"
       disabled={true}
       pressed={false}
       style={
         [
           {
-            "color": "#6B6B78",
+            "color": "#D7D7E0",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
             "textAlign": "center",
-            "textDecorationColor": "#6B6B78",
+            "textDecorationColor": "#D7D7E0",
             "textDecorationLine": "underline",
             "textDecorationStyle": "solid",
           },
@@ -508,7 +508,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     <RNSVGSvgView
       bbHeight={24}
       bbWidth={24}
-      fill="#6B6B78"
+      fill="#D7D7E0"
       focusable={false}
       height={24}
       style={
@@ -536,7 +536,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
         fill={
           [
             0,
-            4285229944,
+            4292335584,
           ]
         }
         fillOpacity={1}
@@ -579,18 +579,18 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       />
     </RNSVGSvgView>
     <Text
-      color="#6B6B78"
+      color="#D7D7E0"
       disabled={true}
       pressed={false}
       style={
         [
           {
-            "color": "#6B6B78",
+            "color": "#D7D7E0",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
             "textAlign": "center",
-            "textDecorationColor": "#6B6B78",
+            "textDecorationColor": "#D7D7E0",
             "textDecorationLine": "underline",
             "textDecorationStyle": "solid",
           },

@@ -54,7 +54,7 @@ const Button = forwardRef(
 
         {isLoading && (
           <SpinnerContainer>
-            <Spinner color="deep" size={small ? 'small' : 'medium'} />
+            <Spinner color="text.disabled" size={small ? 'small' : 'medium'} />
           </SpinnerContainer>
         )}
       </StyledButton>

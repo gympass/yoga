@@ -89,7 +89,7 @@ const Button = ({
           },
         },
         disabled: {
-          color: colors.deep,
+          color: colors.text.disabled,
         },
         hover: {
           color: colors.white,
@@ -106,7 +106,7 @@ const Button = ({
     },
     text: {
       backgroundColor: 'transparent',
-      disabled: colors.deep,
+      disabled: colors.text.disabled,
     },
     link: {
       font: {
@@ -117,7 +117,7 @@ const Button = ({
           color: colors.secondary,
         },
         disabled: {
-          color: colors.deep,
+          color: colors.text.disabled,
         },
       },
       margin: {
