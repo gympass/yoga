@@ -21,11 +21,9 @@ const BannerWrapper = styled.View`
   flex-direction: column;
 `;
 
-const CustomizedIcon = () => {
-  return (
-    <Icon as={AlertTriangle} size="medium" fill="verve" marginRight="xxsmall" />
-  );
-};
+const CustomizedIcon = () => (
+  <Icon as={AlertTriangle} size="medium" fill="verve" marginRight="xxsmall" />
+);
 
 const BannerPage = () => (
   <ScrollView>
