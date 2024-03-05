@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.101.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.100.1...@gympass/yoga@7.101.0) (2024-03-05)
+
+
+### Features
+
+* **Heading:** allow to override the background color ([d319535](https://github.com/Gympass/yoga/commit/d319535fe11fb6b17b39f77082183c9037b97b40))
+* **Heading:** use styled system to define background ([8a5f416](https://github.com/Gympass/yoga/commit/8a5f416663c0d687f699fec631260fab1bf6da82))
+
+
+
+
+
 ## [7.100.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.100.0...@gympass/yoga@7.100.1) (2024-03-05)
 
 **Note:** Version bump only for package @gympass/yoga

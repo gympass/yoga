@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.49.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.48.1...@gympass/yoga-doc@2.49.0) (2024-03-05)
+
+
+### Features
+
+* **Heading:** allow to override the background color ([d319535](https://github.com/gympass/yoga/commit/d319535fe11fb6b17b39f77082183c9037b97b40))
+
+
+
+
+
 ## [2.48.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.48.0...@gympass/yoga-doc@2.48.1) (2024-03-05)
 
 **Note:** Version bump only for package @gympass/yoga-doc
