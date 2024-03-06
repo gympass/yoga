@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.102.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.102.1...@gympass/yoga@7.102.2) (2024-03-06)
+
+
+### Bug Fixes
+
+* phone input vertical center ([952b8df](https://github.com/Gympass/yoga/commit/952b8df53a446791aa57686c5e4cc4f74a26eae8))
+
+
+
+
+
 ## [7.102.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.102.0...@gympass/yoga@7.102.1) (2024-03-05)
 
 
