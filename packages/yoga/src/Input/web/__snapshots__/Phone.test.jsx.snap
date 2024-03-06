@@ -136,6 +136,7 @@ exports[`<Input.Phone /> Snapshots should match with default input 1`] = `
 .c2 .react-tel-input .flag-dropdown {
   border: none;
   width: inherit;
+  height: inherit;
   grid-area: dropdown;
 }
 

@@ -153,6 +153,7 @@ export const Container = styled.div`
       .flag-dropdown {
         border: none;
         width: inherit;
+        height: inherit;
         grid-area: dropdown;
 
         &.open {
