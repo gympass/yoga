@@ -1019,6 +1019,8 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
   style={
     [
       {
+        "borderBottomColor": "#D7D7E0",
+        "borderBottomWidth": 0,
         "display": "flex",
         "flexDirection": "row",
         "width": "100%",
