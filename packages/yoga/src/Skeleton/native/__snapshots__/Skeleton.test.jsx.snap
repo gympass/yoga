@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Skeleton /> should render all text skeleton variants correctly 1`] = `
+exports[`<Skeleton /> should render all background color variants correctly 1`] = `
 [
   <View
     collapsable={false}
@@ -11,131 +11,7 @@ exports[`<Skeleton /> should render all text skeleton variants correctly 1`] = `
     }
   >
     <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "backgroundColor": "#F5F5FA",
-            "display": "flex",
-            "height": 56,
-            "width": 100,
-          },
-        ]
-      }
-      type="text"
-      variant="h1"
-      width="100"
-    />
-  </View>,
-  <View
-    collapsable={false}
-    style={
-      {
-        "opacity": 0.4,
-      }
-    }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "backgroundColor": "#F5F5FA",
-            "display": "flex",
-            "height": 48,
-            "width": 100,
-          },
-        ]
-      }
-      type="text"
-      variant="h2"
-      width="100"
-    />
-  </View>,
-  <View
-    collapsable={false}
-    style={
-      {
-        "opacity": 0.4,
-      }
-    }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "backgroundColor": "#F5F5FA",
-            "display": "flex",
-            "height": 40,
-            "width": 100,
-          },
-        ]
-      }
-      type="text"
-      variant="h3"
-      width="100"
-    />
-  </View>,
-  <View
-    collapsable={false}
-    style={
-      {
-        "opacity": 0.4,
-      }
-    }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "backgroundColor": "#F5F5FA",
-            "display": "flex",
-            "height": 32,
-            "width": 100,
-          },
-        ]
-      }
-      type="text"
-      variant="h4"
-      width="100"
-    />
-  </View>,
-  <View
-    collapsable={false}
-    style={
-      {
-        "opacity": 0.4,
-      }
-    }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "backgroundColor": "#F5F5FA",
-            "display": "flex",
-            "height": 28,
-            "width": 100,
-          },
-        ]
-      }
-      type="text"
-      variant="h5"
-      width="100"
-    />
-  </View>,
-  <View
-    collapsable={false}
-    style={
-      {
-        "opacity": 0.4,
-      }
-    }
-  >
-    <View
+      color="primary"
       style={
         [
           {
@@ -161,6 +37,194 @@ exports[`<Skeleton /> should render all text skeleton variants correctly 1`] = `
     }
   >
     <View
+      color="secondary"
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "#FAF9F5",
+            "display": "flex",
+            "height": 24,
+            "width": 100,
+          },
+        ]
+      }
+      type="text"
+      variant="body1"
+      width="100"
+    />
+  </View>,
+]
+`;
+
+exports[`<Skeleton /> should render all text skeleton variants correctly 1`] = `
+[
+  <View
+    collapsable={false}
+    style={
+      {
+        "opacity": 0.4,
+      }
+    }
+  >
+    <View
+      color="primary"
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "#F5F5FA",
+            "display": "flex",
+            "height": 56,
+            "width": 100,
+          },
+        ]
+      }
+      type="text"
+      variant="h1"
+      width="100"
+    />
+  </View>,
+  <View
+    collapsable={false}
+    style={
+      {
+        "opacity": 0.4,
+      }
+    }
+  >
+    <View
+      color="primary"
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "#F5F5FA",
+            "display": "flex",
+            "height": 48,
+            "width": 100,
+          },
+        ]
+      }
+      type="text"
+      variant="h2"
+      width="100"
+    />
+  </View>,
+  <View
+    collapsable={false}
+    style={
+      {
+        "opacity": 0.4,
+      }
+    }
+  >
+    <View
+      color="primary"
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "#F5F5FA",
+            "display": "flex",
+            "height": 40,
+            "width": 100,
+          },
+        ]
+      }
+      type="text"
+      variant="h3"
+      width="100"
+    />
+  </View>,
+  <View
+    collapsable={false}
+    style={
+      {
+        "opacity": 0.4,
+      }
+    }
+  >
+    <View
+      color="primary"
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "#F5F5FA",
+            "display": "flex",
+            "height": 32,
+            "width": 100,
+          },
+        ]
+      }
+      type="text"
+      variant="h4"
+      width="100"
+    />
+  </View>,
+  <View
+    collapsable={false}
+    style={
+      {
+        "opacity": 0.4,
+      }
+    }
+  >
+    <View
+      color="primary"
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "#F5F5FA",
+            "display": "flex",
+            "height": 28,
+            "width": 100,
+          },
+        ]
+      }
+      type="text"
+      variant="h5"
+      width="100"
+    />
+  </View>,
+  <View
+    collapsable={false}
+    style={
+      {
+        "opacity": 0.4,
+      }
+    }
+  >
+    <View
+      color="primary"
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "#F5F5FA",
+            "display": "flex",
+            "height": 24,
+            "width": 100,
+          },
+        ]
+      }
+      type="text"
+      variant="body1"
+      width="100"
+    />
+  </View>,
+  <View
+    collapsable={false}
+    style={
+      {
+        "opacity": 0.4,
+      }
+    }
+  >
+    <View
+      color="primary"
       style={
         [
           {
@@ -186,6 +250,7 @@ exports[`<Skeleton /> should render all text skeleton variants correctly 1`] = `
     }
   >
     <View
+      color="primary"
       style={
         [
           {
@@ -211,6 +276,7 @@ exports[`<Skeleton /> should render all text skeleton variants correctly 1`] = `
     }
   >
     <View
+      color="primary"
       style={
         [
           {
@@ -240,6 +306,7 @@ exports[`<Skeleton /> should render the circular skeleton 1`] = `
   }
 >
   <View
+    color="primary"
     height={64}
     style={
       [
@@ -269,6 +336,7 @@ exports[`<Skeleton /> should render the rectangular skeleton 1`] = `
   }
 >
   <View
+    color="primary"
     height={200}
     style={
       [
@@ -297,6 +365,7 @@ exports[`<Skeleton /> should render the text skeleton 1`] = `
   }
 >
   <View
+    color="primary"
     height={32}
     style={
       [
