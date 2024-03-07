@@ -6,6 +6,7 @@ const textStyle = type => () =>
     ${defaultStyle(type)};
     ${({
       light,
+      bold,
       theme: {
         yoga: {
           baseFont,
@@ -26,6 +27,7 @@ const textStyle = type => () =>
         font-family: ${finalFontFamily};
         ${fontWeight ? `font-weight: ${fontWeight};` : ''}
         ${light ? `font-weight: ${fontWeights.light};` : ''}
+        ${bold ? `font-weight: ${fontWeights.bold};` : ''}
       `;
     }}
   `;

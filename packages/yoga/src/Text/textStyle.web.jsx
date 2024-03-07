@@ -7,6 +7,7 @@ const textStyle = type => () =>
 
     ${({
       light,
+      bold,
       numberOfLines,
       theme: {
         yoga: {
@@ -34,6 +35,7 @@ const textStyle = type => () =>
         font-family: ${fontFamily ? `${fontFamily}, ` : ''}${baseFont.family};
         ${fontWeight ? `font-weight: ${fontWeight};` : ''}
         ${light ? `font-weight: ${fontWeights.light};` : ''}
+        ${bold ? `font-weight: ${fontWeights.bold};` : ''}
       `;
     }}
   `;
