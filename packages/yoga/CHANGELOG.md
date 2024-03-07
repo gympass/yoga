@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.102.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.102.2...@gympass/yoga@7.102.3) (2024-03-07)
+
+
+### Bug Fixes
+
+* multiple onChange being triggered on Checkbox ([8f4538e](https://github.com/Gympass/yoga/commit/8f4538e64aff259e9bc35d0891e64bae63c0c29b))
+
+
+
+
+
 ## [7.102.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.102.1...@gympass/yoga@7.102.2) (2024-03-06)
 
 
