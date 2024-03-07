@@ -41,7 +41,7 @@ const light = '#D7D7E0';
 const lightNew = '#E1DED7';
 const lightest = '#EFEDE7';
 const clear = '#F5F5FA';
-const clearNew = '#FAF9F5';
+const clearNew = '#F6EDDF';
 const white = '#FFFFFF';
 
 const colors = {
