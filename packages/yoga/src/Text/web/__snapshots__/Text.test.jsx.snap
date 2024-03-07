@@ -1,137 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
-.c5 {
-  margin: 0;
-  padding: 0;
-  font-size: 48px;
-  line-height: 56px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 500;
-}
-
-.c6 {
-  margin: 0;
-  padding: 0;
-  font-size: 40px;
-  line-height: 48px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 500;
-}
-
-.c7 {
-  margin: 0;
-  padding: 0;
-  font-size: 32px;
-  line-height: 40px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 500;
-}
-
-.c8 {
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-  line-height: 32px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 500;
-}
-
-.c9 {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  line-height: 28px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 500;
-}
-
-.c11 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 400;
-}
-
-.c12 {
-  margin: 0;
-  padding: 0;
-  font-size: 12px;
-  line-height: 16px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 400;
-}
-
-.c13 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 400;
-}
-
-.c14 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 500;
-}
-
-.c15 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 700;
-}
-
-.c16 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 900;
-}
-
-.c17 {
-  margin: 0;
-  padding: 0;
-  font-size: 12px;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
-  letter-spacing: 1px;
-  line-height: 16px;
-  color: #231B22;
-  text-transform: uppercase;
-  font-family: Rubik;
-  font-weight: 500;
-}
-
-.c18 {
-  margin: 0;
-  padding: 0;
-  font-size: 10px;
-  line-height: 12px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 400;
-}
-
 .c0 {
   margin: 0;
   padding: 0;
@@ -182,7 +51,178 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   font-weight: 700;
 }
 
+.c5 {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  line-height: 56px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  line-height: 48px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+}
+
+.c7 {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  line-height: 40px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+}
+
+.c8 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 32px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 28px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+}
+
 .c10 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+}
+
+.c12 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+}
+
+.c13 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+}
+
+.c14 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+}
+
+.c15 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+}
+
+.c16 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 700;
+}
+
+.c21 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  color: #231B22;
+  text-transform: uppercase;
+  font-family: Rubik;
+  font-weight: 500;
+}
+
+.c22 {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  line-height: 12px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+}
+
+.c17 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+}
+
+.c18 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+}
+
+.c19 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 700;
+}
+
+.c20 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 900;
+}
+
+.c11 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -246,12 +286,12 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   </h5>
   <p
     class="c10"
-    font-size="medium"
   >
     Live the mission
   </p>
   <p
     class="c11"
+    font-size="medium"
   >
     Live the mission
   </p>
@@ -290,6 +330,47 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   >
     Live the mission
   </p>
+  <p
+    class="c19"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c20"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c21"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c22"
+  >
+    Live the mission
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with Text bold 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  line-height: 56px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  font-weight: 700;
+}
+
+<div>
+  <h1
+    class="c0"
+  >
+    Live the mission
+  </h1>
 </div>
 `;
 

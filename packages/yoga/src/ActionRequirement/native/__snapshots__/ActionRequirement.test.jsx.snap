@@ -10,6 +10,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
     >
       <WithTheme(Checkbox) />
       <Text
+        bold={false}
         fontSize="medium"
         inverted={false}
         light={false}
@@ -28,6 +29,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
   list={
     <React.Fragment>
       <Text
+        bold={false}
         fontSize="medium"
         inverted={false}
         light={false}
@@ -36,6 +38,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
          1x/day standard access
       </Text>
       <Text
+        bold={false}
         fontSize="medium"
         inverted={false}
         light={false}
@@ -45,6 +48,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
          4x/month 1-on-1 sessions
       </Text>
       <Text
+        bold={false}
         fontSize="medium"
         inverted={false}
         light={false}
@@ -153,6 +157,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
     Welcome to the world of feeling good!
   </Text>
   <Text
+    bold={false}
     color="deep"
     fontSize="medium"
     inverted={false}
@@ -174,6 +179,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
     Lets make it a good day!
   </Text>
   <Text
+    bold={false}
     color="deep"
     fontSize="medium"
     inverted={false}
@@ -203,6 +209,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
       }
     >
       <Text
+        bold={false}
         fontSize="medium"
         inverted={false}
         light={false}
@@ -279,6 +286,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
          1x/day standard access
       </Text>
       <Text
+        bold={false}
         fontSize="medium"
         inverted={false}
         light={false}
@@ -357,6 +365,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
          4x/month 1-on-1 sessions
       </Text>
       <Text
+        bold={false}
         fontSize="medium"
         inverted={false}
         light={false}
@@ -526,6 +535,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
         </View>
       </View>
       <Text
+        bold={false}
         fontSize="medium"
         inverted={false}
         light={false}
@@ -576,6 +586,7 @@ exports[`<ActionRequirement /> should match snapshot with text display 1`] = `
     Welcome to the world of feeling good!
   </Text>
   <Text
+    bold={false}
     color="deep"
     fontSize="medium"
     inverted={false}

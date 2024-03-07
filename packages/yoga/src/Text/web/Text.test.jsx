@@ -18,9 +18,13 @@ describe('<Text />', () => {
           <Text.H3>Live the mission</Text.H3>
           <Text.H4>Live the mission</Text.H4>
           <Text.H5>Live the mission</Text.H5>
+          <Text.Body1>Live the mission</Text.Body1>
           <Text>Live the mission</Text>
+          <Text.Body2>Live the mission</Text.Body2>
           <Text.Small>Live the mission</Text.Small>
+          <Text.Caption>Live the mission</Text.Caption>
           <Text.Tiny>Live the mission</Text.Tiny>
+          <Text.Overline>Live the mission</Text.Overline>
           <Text.Regular>Live the mission</Text.Regular>
           <Text.Medium>Live the mission</Text.Medium>
           <Text.Bold>Live the mission</Text.Bold>
@@ -208,6 +212,16 @@ describe('<Text />', () => {
       const { container } = render(
         <ThemeProvider>
           <Text overflow="scroll">Live the mission</Text>
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with Text bold', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Text.H1 bold>Live the mission</Text.H1>
         </ThemeProvider>,
       );
 
