@@ -497,7 +497,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   padding: 0;
   border: 1px solid #D7D7E0;
   gap: 4px;
-  z-index: 15;
+  z-index: 2;
 }
 
 .c33 {
@@ -651,7 +651,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   position: fixed;
   width: 100%;
   height: calc(100% - 56px);
-  z-index: 10;
+  z-index: 1;
   top: 0;
   right: -100%;
   -webkit-transition: right 300ms ease-in-out;
