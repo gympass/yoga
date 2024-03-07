@@ -1,70 +1,52 @@
 import { Link as GatsbyLink } from 'gatsby';
 
-### Simple Usage
-
-```javascript reactLive=true
-<Text.H1>Live the mission</Text.H1>
-```
-
-### All Usage
-
-```javascript reactLive=true
-<Box width={500}>
-  <Text.Display1>Live the mission</Text.Display1>
-  <Text.Display2>Live the mission</Text.Display2>
-  <Text.Display3>Live the mission</Text.Display3>
-  <Text.Display4>Live the mission</Text.Display4>
-  <Text.DisplayNumber>123</Text.DisplayNumber>
-
-  <Text.H1 color="primary">Live the mission</Text.H1>
-  <Text.H2 color="secondary">Live the mission</Text.H2>
-  <Text.H3>Live the mission</Text.H3>
-  <Text.H4>Live the mission</Text.H4>
-  <Text>Live the mission</Text>
-  <br />
-  <Text.Small>Live the mission</Text.Small>
-  <Text.Tiny>Live the mission</Text.Tiny>
-  <Text.Regular>Live the mission</Text.Regular>
-  <Text.Medium>Live the mission</Text.Medium>
-  <Text.Bold>Live the mission</Text.Bold>
-  <Text.Black>Live the mission</Text.Black>
-  <Text.SectionTitle>Live the mission</Text.SectionTitle>
-  <Text.SmallestException>Live the mission</Text.SmallestException>
-  <br />
-  <Text.Small fontSize="xsmall">Live the small mission</Text.Small>
-  <Text.Tiny fontSize="medium">Live the medium mission</Text.Tiny>
-  <Text.Regular fontSize="xlarge">Live the xlarge mission</Text.Regular>
-  <Text.Medium fontSize="xxxlarge">Live the xxxlarge mission</Text.Medium>
-  <br />
-  <Text.Medium numberOfLines={2} fontSize="xxxlarge">
-    Live the truncated mission
-    <br />
-    After two lines
-  </Text.Medium>
-  <Text color="vibin">Live the mission</Text>
-  <Text color="hope">Live the mission</Text>
-  <Text color="energy">Live the mission</Text>
-  <Text color="relax">Live the mission</Text>
-  <Text color="peace">Live the mission</Text>
-  <Text color="verve">Live the mission</Text>
-  <Text color="uplift">Live the mission</Text>
-  <Text color="deepPurple">Live the mission</Text>
-  <Text color="stamina">Live the mission</Text>
-  <Text color="dark">Live the mission</Text>
-  <Text color="medium">Live the mission</Text>
-  <Text color="deep">Live the mission</Text>
-  <Text color="light">Live the mission</Text>
-  <Text color="clear">Live the mission</Text>
-  <Text color="white">Live the mission</Text>
-</Box>
-```
-
 ### Gympass fonts
 
 All Yoga components uses its own font family based on
 [font design token](https://gympass.github.io/yoga/guidelines/tokens/fonts)
 provided by the `<ThemeProvider />`, if you are using Server Side Rendening
 (SSR) you need to import the `<FontLoader />` in your `<Head>`.
+
+### Simple Usage
+
+```javascript reactLive=true
+<Text>Live the mission</Text>
+```
+
+### All Usage
+
+```javascript reactLive=true
+<Box width={500}>
+  <Text.Display1>Display1</Text.Display1>
+  <Text.Display2>Display2</Text.Display2>
+  <Text.Display3>Display3</Text.Display3>
+  <Text.Display4>Display4</Text.Display4>
+  <Text.DisplayNumber>123</Text.DisplayNumber>
+  <Text.H1>H1</Text.H1>
+  <Text.H2>H2</Text.H2>
+  <Text.H3>H3</Text.H3>
+  <Text.H4>H4</Text.H4>
+  <Text.H5>H5</Text.H5>
+  <Text.Body1>Body1</Text.Body1>
+  <Text.Body2>Body2</Text.Body2>
+  <Text.Caption>Caption</Text.Caption>
+  <Text.Overline>Overline</Text.Overline>
+  <Text.SectionTitle>SectionTitle</Text.SectionTitle>
+  <Text.SmallestException>SectionTitle</Text.SmallestException>
+</Box>
+```
+
+### Props Usage
+
+```javascript reactLive=true
+<Box width={500}>
+  <Text.H2 color="primary">Primary color</Text.H2>
+  <Text.H2 color="secondary">Secondary color</Text.H2>
+  <Text.H2 bold>Bold</Text.H2>
+  <Text.H2 light>Light</Text.H2>
+  <Text.H2 numberOfLines={2}>Yoga is a scientific system of practices made to help each one of us achieve our highest potential and experience.</Text.H2>
+</Box>
+```
 
 ### Props
 
