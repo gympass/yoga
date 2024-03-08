@@ -28,12 +28,14 @@ const Active = css`
     theme: {
       yoga: {
         components: {
-          navigationmenu: { icon, font },
+          navigationmenu: { backgroundColor, icon, font },
         },
       },
     },
   }) =>
     css`
+      background-color: ${backgroundColor.active};
+
       :not(:last-child) {
         pointer-events: none;
       }
@@ -41,6 +43,7 @@ const Active = css`
       div {
         ${StyledText} {
           color: ${font.color.active};
+          font-weight: ${font.weight.bold};
         }
 
         svg {
@@ -56,7 +59,7 @@ const StyledItem = styled.li<{ isActive: boolean; children: React.ReactNode }>`
     theme: {
       yoga: {
         components: {
-          navigationmenu: { border, icon, font },
+          navigationmenu: { backgroundColor, border, icon, font },
         },
       },
     },
@@ -78,6 +81,8 @@ const StyledItem = styled.li<{ isActive: boolean; children: React.ReactNode }>`
       &:focus {
         ${!isActive &&
         css`
+          background-color: ${backgroundColor.hover};
+
           ${StyledText} {
             color: ${font.color.hover};
           }

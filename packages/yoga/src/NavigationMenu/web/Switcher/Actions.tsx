@@ -10,7 +10,7 @@ const StyledAction = styled.div<React.PropsWithChildren>`
     theme: {
       yoga: {
         components: {
-          navigationmenu: { backgroundColor, border, height, width },
+          navigationmenu: { backgroundColor, border, height, width, icon },
         },
       },
     },
@@ -23,7 +23,11 @@ const StyledAction = styled.div<React.PropsWithChildren>`
       justify-content: center;
       width: ${width.xxlarge}px;
       height: ${height.xxlarge}px;
-      border-radius: ${border.radius.circle}px;
+      border-radius: ${border.radius.action}px;
+
+      svg {
+        fill: ${icon.fill.actions};
+      }
 
       :hover,
       &:focus {
@@ -54,7 +58,7 @@ function Actions({ actions, sideOffset, $zIndex }: ActionsProps) {
     <YogaMenu onMouseHover={false}>
       <YogaMenu.Action>
         <StyledAction>
-          <Icon as={MenuMore} size="medium" fill="vibin" />
+          <Icon as={MenuMore} size="medium" />
         </StyledAction>
       </YogaMenu.Action>
 
