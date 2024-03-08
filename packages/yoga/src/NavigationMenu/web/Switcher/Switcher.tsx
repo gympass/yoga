@@ -57,18 +57,10 @@ const StyledTitle = styled(Text.Small)`
     `}
 `;
 
-export type SwitcherActionsProps = {
-  id: string;
-  label: string;
-  onClick: () => void;
-};
-
-type SwitcherProps = {
-  actions?: SwitcherActionsProps[];
+type SwitcherProps = React.ComponentProps<typeof Actions> & {
   avatar: React.ReactElement;
   fill?: string;
   isLoading?: boolean;
-  sideOffset?: number;
   subtitle?: string;
   title?: string;
 };
@@ -78,9 +70,9 @@ const Switcher = ({
   avatar: Avatar,
   fill = 'transparent',
   isLoading = false,
-  sideOffset = 36,
   subtitle,
   title,
+  ...actionsProps
 }: SwitcherProps) => {
   const hasActions = actions?.length;
 
@@ -107,7 +99,7 @@ const Switcher = ({
         )}
       </StyledTextContainer>
 
-      {hasActions && <Actions actions={actions} sideOffset={sideOffset} />}
+      {hasActions && <Actions actions={actions} {...actionsProps} />}
     </StyledSwitcher>
   );
 };

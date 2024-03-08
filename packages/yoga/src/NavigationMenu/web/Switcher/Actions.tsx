@@ -1,12 +1,12 @@
+import { Menu as YogaMenu } from '@gympass/yoga';
+import { MenuMore } from '@gympass/yoga-icons';
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { MenuMore } from '@gympass/yoga-icons';
-import { Menu as YogaMenu } from '@gympass/yoga';
-import { SwitcherActionsProps } from './Switcher';
-import Icon from '../../../Icon';
-import Box from '../../../Box';
 
-const StyledAction = styled(Box)`
+import Icon from '../../../Icon';
+import { SwitcherActionsProps } from './Switcher';
+
+const StyledAction = styled.div`
   ${({
     theme: {
       yoga: {
@@ -34,12 +34,23 @@ const StyledAction = styled(Box)`
     `}
 `;
 
-type ActionsProps = {
-  actions: SwitcherActionsProps[];
-  sideOffset: number;
+type SwitcherActionsProps = {
+  id: string;
+  label: string;
+  onClick: () => void;
 };
 
-const Actions = ({ actions, sideOffset }: ActionsProps) => {
+export type ActionsProps = {
+  actions?: SwitcherActionsProps[];
+  sideOffset: number;
+  $zIndex?: number;
+};
+
+function Actions({ actions, sideOffset, $zIndex }: ActionsProps) {
+  if (!actions?.length) {
+    return null;
+  }
+
   return (
     <YogaMenu onMouseHover={false}>
       <YogaMenu.Action>
@@ -48,7 +59,11 @@ const Actions = ({ actions, sideOffset }: ActionsProps) => {
         </StyledAction>
       </YogaMenu.Action>
 
-      <YogaMenu.List side="right" sideOffset={sideOffset} zIndex="10">
+      <YogaMenu.List
+        side="right"
+        sideOffset={sideOffset}
+        zIndex={`${$zIndex ?? 2}`}
+      >
         {actions.map(({ id, label, onClick }) => (
           <YogaMenu.Item key={id} onClick={onClick}>
             {label}
@@ -57,6 +72,6 @@ const Actions = ({ actions, sideOffset }: ActionsProps) => {
       </YogaMenu.List>
     </YogaMenu>
   );
-};
+}
 
 export default Actions;

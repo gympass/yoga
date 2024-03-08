@@ -7,6 +7,10 @@ const StyledItemsContainer = styled.nav`
   ${media.lg`display: none`}
 `;
 
+type BottomItemsStyledProps = React.HTMLAttributes<HTMLUListElement> & {
+  $zIndex?: number;
+}
+
 const StyledItems = styled.ul`
   ${({
     theme: {
@@ -25,22 +29,22 @@ const StyledItems = styled.ul`
     align-items: center;
     width: 100%;
     height: 56px;
-    background-color: ${backgroundColor.white};;
+    background-color: ${backgroundColor.white};
     margin: 0;
     padding: 0;
     border: 1px solid ${border.color.default};
     gap: ${gap.xxxsmall}px;
-    z-index: 15;
+    z-index: ${({ $zIndex }) => $zIndex ?? 2};
   `}
 `;
 
-type BottomItemsProps = {
+type BottomItemsProps = BottomItemsStyledProps & {
   children: React.ReactNode;
 };
 
-const BottomItems = ({ children }: BottomItemsProps) => {
+const BottomItems = ({ children, ...containerProps }: BottomItemsProps) => {
   return (
-    <StyledItemsContainer>
+    <StyledItemsContainer {...containerProps}>
       <StyledItems>{children}</StyledItems>
     </StyledItemsContainer>
   );

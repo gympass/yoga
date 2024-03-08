@@ -33,12 +33,14 @@ const DeskTopContainer = css`
   `}
 `;
 
-const StyledNavigationMenu = styled(Box)<{
+type NavigationMenuStyledProps = {
   isOpenOnMobile: boolean;
   isResponsive: boolean;
-  children: React.ReactNode;
-}>`
-  ${({ isOpenOnMobile, isResponsive }) => css`
+  $zIndex?: number;
+}
+
+const StyledNavigationMenu = styled.div<NavigationMenuStyledProps>`
+  ${({ isOpenOnMobile, isResponsive, $zIndex }) => css`
     ${DeskTopContainer};
 
     ${isResponsive &&
@@ -46,7 +48,7 @@ const StyledNavigationMenu = styled(Box)<{
       position: fixed;
       width: 100%;
       height: calc(100% - 56px);
-      z-index: 10;
+      z-index: ${$zIndex ?? 1};
       top: 0;
       right: ${isOpenOnMobile ? '0' : '-100%'};
 
@@ -115,19 +117,20 @@ const StyledFooter = styled(Box)`
   `}
 `;
 
-type NavigationMenuProps = {
-  children: React.ReactNode;
-  openOnMobile?: boolean;
-  responsive?: boolean;
-};
+type NavigationMenuProps = React.HTMLAttributes<HTMLDivElement> &
+  NavigationMenuStyledProps & {
+    children: React.ReactNode;
+  };
 
 const NavigationMenu = ({
   children,
   openOnMobile = false,
   responsive = true,
+  ...htmlAttributes
 }: NavigationMenuProps) => {
   return (
     <StyledNavigationMenu
+      {...htmlAttributes}
       isOpenOnMobile={openOnMobile}
       isResponsive={responsive}
     >
