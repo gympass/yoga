@@ -23,6 +23,7 @@ exports[`<Box /> should match snapshot 1`] = `
   }
 >
   <Text
+    bold={false}
     fontSize="medium"
     inverted={false}
     light={false}

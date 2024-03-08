@@ -10,6 +10,26 @@ const styledText = type => styled.Text`
   ${system}
 `;
 
+const Display1 = styledText('display1');
+
+Display1.displayName = 'Text.Display1';
+
+const Display2 = styledText('display2');
+
+Display2.displayName = 'Text.Display2';
+
+const Display3 = styledText('display3');
+
+Display3.displayName = 'Text.Display3';
+
+const Display4 = styledText('display4');
+
+Display4.displayName = 'Text.Display4';
+
+const DisplayNumber = styledText('displayNumber');
+
+DisplayNumber.displayName = 'Text.DisplayNumber';
+
 const H1 = styledText('h1');
 
 H1.displayName = 'Text.H1';
@@ -29,6 +49,32 @@ H4.displayName = 'Text.H4';
 const H5 = styledText('h5');
 
 H5.displayName = 'Text.H5';
+
+const Body1 = styledText('body1');
+
+Body1.displayName = 'Text.Body1';
+
+const Body2 = styledText('body2');
+
+Body2.displayName = 'Text.Body2';
+
+const Caption = styledText('caption');
+
+Caption.displayName = 'Text.caption';
+
+const Overline = styledText('overline');
+
+Overline.overline = 'Text.DisplayNumber';
+
+const SectionTitle = styledText('sectionTitle');
+
+SectionTitle.displayName = 'Text.SectionTitle';
+
+const SmallestException = styledText('smallestException');
+
+SmallestException.displayName = 'Text.SmallestException';
+
+// deprecated, please don't use
 
 const Small = styledText('small');
 
@@ -58,45 +104,30 @@ const Black = styledText('black');
 
 Black.displayName = 'Text.Black';
 
-const SectionTitle = styledText('sectionTitle');
-
-SectionTitle.displayName = 'Text.SectionTitle';
-
-const SmallestException = styledText('smallestException');
-
-SmallestException.displayName = 'Text.SmallestException';
-
-const Display1 = styledText('display1');
-
-Display1.displayName = 'Text.Display1';
-
-const Display2 = styledText('display2');
-
-Display2.displayName = 'Text.Display2';
-
-const Display3 = styledText('display3');
-
-Display3.displayName = 'Text.Display3';
-
-const Display4 = styledText('display4');
-
-Display4.displayName = 'Text.Display4';
-
-const DisplayNumber = styledText('displayNumber');
-
-DisplayNumber.displayName = 'Text.DisplayNumber';
-
 const TextRenderer = styledText('p');
 
 const Text = props => <TextRenderer {...props} />;
 
 Text.displayName = 'Text';
 
+Text.Display1 = Display1;
+Text.Display2 = Display2;
+Text.Display3 = Display3;
+Text.Display4 = Display4;
+Text.DisplayNumber = DisplayNumber;
 Text.H1 = H1;
 Text.H2 = H2;
 Text.H3 = H3;
 Text.H4 = H4;
 Text.H5 = H5;
+Text.Body1 = Body1;
+Text.Body2 = Body2;
+Text.Caption = Caption;
+Text.Overline = Overline;
+Text.SectionTitle = SectionTitle;
+Text.SmallestException = SmallestException;
+
+// deprecated, please don't use
 Text.Small = Small;
 Text.Tiny = Tiny;
 Text.Light = Light;
@@ -104,13 +135,6 @@ Text.Regular = Regular;
 Text.Medium = Medium;
 Text.Bold = Bold;
 Text.Black = Black;
-Text.SectionTitle = SectionTitle;
-Text.SmallestException = SmallestException;
-Text.Display1 = Display1;
-Text.Display2 = Display2;
-Text.Display3 = Display3;
-Text.Display4 = Display4;
-Text.DisplayNumber = DisplayNumber;
 
 const fontSizes = oneOf([
   'xxsmall',
@@ -152,6 +176,7 @@ Text.propTypes = {
   size: deprecated(fontSizes, 'Use `fontSize` system prop instead'),
   /** set the font-weight to regular */
   light: bool,
+  bold: bool,
   fontSize: fontSizes,
 };
 
@@ -161,15 +186,28 @@ Text.defaultProps = {
   size: undefined,
   fontSize: 'medium',
   light: false,
+  bold: false,
 };
 
 export {
-  Text,
+  Display1,
+  Display2,
+  Display3,
+  Display4,
+  DisplayNumber,
   H1,
   H2,
   H3,
   H4,
   H5,
+  Body1,
+  Body2,
+  Caption,
+  Overline,
+  SectionTitle,
+  SmallestException,
+  // deprecated, please don't use
+  Text,
   Small,
   Tiny,
   Light,
@@ -177,11 +215,4 @@ export {
   Medium,
   Bold,
   Black,
-  SectionTitle,
-  SmallestException,
-  Display1,
-  Display2,
-  Display3,
-  Display4,
-  DisplayNumber,
 };

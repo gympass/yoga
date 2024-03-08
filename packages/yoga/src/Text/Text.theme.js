@@ -54,6 +54,40 @@ const Text = ({ fontSizes, lineHeights, fontWeights }) => ({
     lineHeight: lineHeights.large,
     fontWeight: fontWeights.medium,
   },
+  body1: {
+    fontsize: fontSizes.medium,
+    lineHeight: lineHeights.medium,
+    fontWeight: fontWeights.medium,
+  },
+  body2: {
+    fontsize: fontSizes.small,
+    lineHeight: lineHeights.small,
+    fontWeight: fontWeights.medium,
+  },
+  caption: {
+    fontsize: fontSizes.xsmall,
+    lineHeight: lineHeights.xsmall,
+    fontWeight: fontWeights.regular,
+  },
+  overline: {
+    fontsize: fontSizes.xsmall,
+    lineHeight: lineHeights.xsmall,
+    fontWeight: fontWeights.bold,
+  },
+  sectionTitle: {
+    fontsize: fontSizes.xsmall,
+    lineHeight: lineHeights.xsmall,
+    fontWeight: fontWeights.medium,
+    letterSpacing: 1,
+    textTransform: 'uppercase',
+  },
+  smallestException: {
+    fontsize: fontSizes.xxsmall,
+    lineHeight: lineHeights.xxsmall,
+    fontWeight: fontWeights.regular,
+  },
+
+  // deprecated, please don't use
   p: {
     fontsize: fontSizes.medium,
     lineHeight: lineHeights.medium,
@@ -83,18 +117,6 @@ const Text = ({ fontSizes, lineHeights, fontWeights }) => ({
   },
   black: {
     fontWeight: fontWeights.black,
-  },
-  sectionTitle: {
-    fontsize: fontSizes.xsmall,
-    lineHeight: lineHeights.xsmall,
-    fontWeight: fontWeights.medium,
-    letterSpacing: 1,
-    textTransform: 'uppercase',
-  },
-  smallestException: {
-    fontsize: fontSizes.xxsmall,
-    lineHeight: lineHeights.xxsmall,
-    fontWeight: fontWeights.regular,
   },
 });
 

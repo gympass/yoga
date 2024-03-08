@@ -29,16 +29,16 @@ const TextPage = () => (
       <Text.Display4>Display4</Text.Display4>
     </TextWrapper>
     <TextWrapper>
-      <Text.DisplayNumber>DisplayNumber</Text.DisplayNumber>
+      <Text.DisplayNumber>12345</Text.DisplayNumber>
     </TextWrapper>
     <TextWrapper>
-      <Text.H1 variant="primary">Heading H1</Text.H1>
+      <Text.H1>Heading H1</Text.H1>
     </TextWrapper>
     <TextWrapper>
-      <Text.H2 variant="secondary">Heading H2</Text.H2>
+      <Text.H2>Heading H2</Text.H2>
     </TextWrapper>
     <TextWrapper>
-      <Text.H3 variant="tertiary">Heading H3</Text.H3>
+      <Text.H3>Heading H3</Text.H3>
     </TextWrapper>
     <TextWrapper>
       <Text.H4>Heading H4</Text.H4>
@@ -47,55 +47,41 @@ const TextPage = () => (
       <Text.H5>Heading H5</Text.H5>
     </TextWrapper>
     <TextWrapper>
-      <Text.H1 variant="primary" light>
-        Heading H1
-      </Text.H1>
+      <Text.Body1>Body1</Text.Body1>
     </TextWrapper>
     <TextWrapper>
-      <Text.H2 variant="secondary" light>
-        Heading H2
-      </Text.H2>
+      <Text.Body2>Body2</Text.Body2>
     </TextWrapper>
     <TextWrapper>
-      <Text.H3 variant="tertiary" light>
-        Heading H3
-      </Text.H3>
+      <Text.Caption>Caption</Text.Caption>
     </TextWrapper>
     <TextWrapper>
-      <Text>Text Paragraph</Text>
+      <Text.Overline>Overline</Text.Overline>
     </TextWrapper>
     <TextWrapper>
-      <Text.Small>Text Small</Text.Small>
+      <Text.SectionTitle>SectionTitle</Text.SectionTitle>
     </TextWrapper>
     <TextWrapper>
-      <Text.Light>Text Light</Text.Light>
+      <Text.SmallestException>SmallestException</Text.SmallestException>
+    </TextWrapper>
+
+    <TextWrapper>
+      <Text.Body1 bold>Bold</Text.Body1>
     </TextWrapper>
     <TextWrapper>
-      <Text.Regular>Text Regular</Text.Regular>
+      <Text.Body1 light>Light</Text.Body1>
     </TextWrapper>
     <TextWrapper>
-      <Text.Medium>Text Medium</Text.Medium>
+      <Text.H4 variant="primary">Primary</Text.H4>
     </TextWrapper>
     <TextWrapper>
-      <Text.Bold>Text Bold</Text.Bold>
+      <Text.H4 variant="secondary">Secondary</Text.H4>
     </TextWrapper>
     <TextWrapper>
-      <Text.Black>Text Black</Text.Black>
-    </TextWrapper>
-    <TextWrapper>
-      <Text.SectionTitle>Text SectionTitle</Text.SectionTitle>
-    </TextWrapper>
-    <TextWrapper>
-      <Text.SmallestException>Text SmallestException</Text.SmallestException>
-    </TextWrapper>
-    <TextWrapper>
-      <Text.Medium fontSize="xsmall">XSmall Text.Medium</Text.Medium>
-    </TextWrapper>
-    <TextWrapper>
-      <Text.Medium fontSize="medium">Medium Text.Medium</Text.Medium>
-    </TextWrapper>
-    <TextWrapper>
-      <Text.Medium fontSize="xlarge">XLarge Text.Medium</Text.Medium>
+      <Text.Body1 numberOfLines={2}>
+        Yoga is a scientific system of practices made to help each one of us
+        achieve our highest potential and experience.
+      </Text.Body1>
     </TextWrapper>
   </ScrollView>
 );

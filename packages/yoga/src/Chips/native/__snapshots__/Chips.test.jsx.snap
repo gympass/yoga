@@ -47,6 +47,7 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
   }
 >
   <Text
+    bold={false}
     disabled={false}
     fontSize="medium"
     inverted={false}
@@ -123,6 +124,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
     }
   >
     <Text
+      bold={false}
       disabled={false}
       fontSize="medium"
       inverted={false}
@@ -392,6 +394,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     }
   >
     <Text
+      bold={false}
       disabled={false}
       fontSize="medium"
       inverted={false}
@@ -464,6 +467,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     }
   >
     <Text
+      bold={false}
       disabled={false}
       fontSize="medium"
       inverted={false}
@@ -536,6 +540,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     }
   >
     <Text
+      bold={false}
       disabled={false}
       fontSize="medium"
       inverted={false}
@@ -608,6 +613,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     }
   >
     <Text
+      bold={false}
       disabled={false}
       fontSize="medium"
       inverted={false}
@@ -1087,6 +1093,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
     }
   >
     <Text
+      bold={false}
       disabled={false}
       fontSize="medium"
       inverted={false}
@@ -1301,6 +1308,7 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
   }
 >
   <Text
+    bold={false}
     disabled={false}
     fontSize="medium"
     inverted={false}
@@ -1376,6 +1384,7 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
   }
 >
   <Text
+    bold={false}
     disabled={false}
     fontSize="medium"
     inverted={false}
@@ -1452,6 +1461,7 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
   }
 >
   <Text
+    bold={false}
     disabled={true}
     fontSize="medium"
     inverted={false}
@@ -1529,6 +1539,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
     }
   >
     <Text
+      bold={false}
       disabled={false}
       fontSize="medium"
       inverted={false}
@@ -1601,6 +1612,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
     }
   >
     <Text
+      bold={false}
       disabled={false}
       fontSize="medium"
       inverted={false}
@@ -1673,6 +1685,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
     }
   >
     <Text
+      bold={false}
       disabled={false}
       fontSize="medium"
       inverted={false}
