@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.102.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.102.3...@gympass/yoga@7.102.4) (2024-03-08)
+
+
+### Bug Fixes
+
+* set Result border-bottom to correct color ([df3f919](https://github.com/Gympass/yoga/commit/df3f91994406313e49e32d2513870be830792a83))
+
+
+
+
+
 ## [7.102.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.102.2...@gympass/yoga@7.102.3) (2024-03-07)
 
 
