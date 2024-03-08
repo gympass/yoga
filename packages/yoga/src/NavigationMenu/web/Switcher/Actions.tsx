@@ -1,12 +1,11 @@
+import React from 'react';
 import { Menu as YogaMenu } from '@gympass/yoga';
 import { MenuMore } from '@gympass/yoga-icons';
-import React from 'react';
 import styled, { css } from 'styled-components';
 
 import Icon from '../../../Icon';
-import { SwitcherActionsProps } from './Switcher';
 
-const StyledAction = styled.div`
+const StyledAction = styled.div<React.PropsWithChildren>`
   ${({
     theme: {
       yoga: {
@@ -42,7 +41,7 @@ type SwitcherActionsProps = {
 
 export type ActionsProps = {
   actions?: SwitcherActionsProps[];
-  sideOffset: number;
+  sideOffset?: number;
   $zIndex?: number;
 };
 
