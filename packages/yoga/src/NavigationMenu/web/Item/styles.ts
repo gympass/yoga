@@ -1,10 +1,8 @@
 import styled, { css } from 'styled-components';
-import { media } from '@gympass/yoga-helpers';
-import Box from '../../../Box';
 import Tag from '../../../Tag';
 import Text from '../../../Text';
 
-export const StyledTextContainer = styled(Box)<{
+export const StyledTextContainer = styled.div<{
   isSubItem?: boolean;
   children: React.ReactNode;
 }>`
@@ -41,7 +39,7 @@ export const StyledTag = styled(Tag)`
     text-transform: uppercase;
     background-color: ${backgroundColor.stamina};
     color: ${tag.color.default};
-    border-radius: ${border.radius.circle}px;
+    border-radius: ${border.radius.tag}px;
   `}
 `;
 
@@ -63,9 +61,8 @@ export const StyledText = styled(Text)`
   `}
 `;
 
-const Active = css<{ isResponsive?: boolean }>`
+const Active = css`
   ${({
-    isResponsive,
     theme: {
       yoga: {
         components: {
@@ -77,22 +74,11 @@ const Active = css<{ isResponsive?: boolean }>`
     cursor: auto;
 
     > ${StyledTextContainer} {
-      background-color: ${backgroundColor.default};
-
-      ${isResponsive
-        ? media.lg`background-color: ${backgroundColor.yoga}`
-        : css`
-            background-color: ${backgroundColor.yoga};
-          `}
+      background-color: ${backgroundColor.active};
 
       ${StyledText} {
         color: ${font.color.active};
-
-        ${isResponsive
-          ? media.lg`font-weight: ${font.weight.medium}`
-          : css`
-              font-weight: ${font.weight.medium};
-            `}
+        font-weight: ${font.weight.bold};
       }
 
       svg {

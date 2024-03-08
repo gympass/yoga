@@ -41,6 +41,7 @@ const Active = css`
       div {
         ${StyledText} {
           color: ${font.color.active};
+          font-weight: ${font.weight.bold};
         }
 
         svg {
@@ -80,6 +81,7 @@ const StyledItem = styled.li<{ isActive: boolean; children: React.ReactNode }>`
         css`
           ${StyledText} {
             color: ${font.color.hover};
+            font-weight: ${font.weight.regular};
           }
 
           svg {

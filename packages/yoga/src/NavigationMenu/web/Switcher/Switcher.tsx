@@ -33,7 +33,7 @@ const StyledSwitcher = styled(Box)<{ fill: string; children: React.ReactNode }>`
     `}
 `;
 
-const StyledTextContainer = styled(Box)`
+const StyledTextContainer = styled.div`
   flex: 1;
   overflow: hidden;
 `;
@@ -49,7 +49,7 @@ const StyledTitle = styled(Text.Small)`
     },
   }) =>
     css`
-      font-weight: ${font.weight.medium};
+      font-weight: ${font.weight.bold};
       flex: 1;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -74,7 +74,7 @@ const Switcher = ({
   title,
   ...actionsProps
 }: SwitcherProps) => {
-  const hasActions = actions?.length;
+  const hasActions = !!actions?.length;
 
   return (
     <StyledSwitcher fill={fill}>

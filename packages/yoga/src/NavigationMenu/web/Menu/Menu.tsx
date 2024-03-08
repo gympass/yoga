@@ -1,11 +1,10 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { ArrowRight } from '@gympass/yoga-icons';
+import { ChevronDown } from '@gympass/yoga-icons';
 import { Text } from '@gympass/yoga';
-import Box from '../../../Box';
 import Icon from '../../../Icon';
 
-const StyledMenu = styled(Box)<{
+const StyledMenu = styled.div<{
   hasAction: boolean;
   children: React.ReactNode;
   onClick?: (() => void) | undefined;
@@ -15,7 +14,7 @@ const StyledMenu = styled(Box)<{
     theme: {
       yoga: {
         components: {
-          navigationmenu: { avatar, backgroundColor, border, gap, padding },
+          navigationmenu: { backgroundColor, border, gap, padding, menu },
         },
       },
     },
@@ -23,38 +22,46 @@ const StyledMenu = styled(Box)<{
     css`
       transition: background-color 300ms ease-in-out;
 
-      display: flex;
+      display: grid;
       align-items: center;
-      justify-content: space-between;
       width: 100%;
+      grid-template-columns: max-content 1fr max-content;
       gap: ${gap.xxsmall}px;
       padding: ${padding.xsmall}px;
-      background-color: ${backgroundColor.white};
-      border-radius: ${border.radius.circle}px;
-      border: 1px solid ${border.color.white};
-
-      > div:first-child {
-        height: ${avatar.height}px;
-        width: ${avatar.width}px;
-      }
+      background-color: ${backgroundColor.contextMenu};
+      border-radius: ${border.radius.contextMenu}px;
+      min-height: ${menu.height}px;
 
       ${hasAction &&
       css`
+        cursor: pointer;
         :hover,
         &:focus {
-          cursor: pointer;
-          border: 1px solid ${border.color.default};
+          background-color: ${backgroundColor.hover};
         }
       `}
     `}
 `;
 
-const StyledTextContainer = styled(Box)`
-  flex: 1;
-  overflow: hidden;
+const StyledTextContainer = styled.div`
+  ${({
+      theme: {
+        yoga: {
+          components: {
+            navigationmenu: { gap },
+          },
+        },
+      },
+    }) =>
+      css`
+    display: flex;
+    flex-direction: column;
+    gap: ${gap.xxxsmall}px;
+    overflow: hidden;
+  `}
 `;
 
-const StyledText = styled(Text.Small)`
+const StyledTitle = styled(Text.H4)`
   ${({
     theme: {
       yoga: {
@@ -65,12 +72,60 @@ const StyledText = styled(Text.Small)`
     },
   }) =>
     css`
-      font-weight: ${font.weight.medium};
+      font-weight: ${font.weight.bold};
       flex: 1;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
     `}
+`;
+
+const StyledSubtitle = styled(Text.Small)`
+  ${({
+    theme: {
+      yoga: {
+        components: {
+          navigationmenu: { font },
+        },
+      },
+    },
+  }) =>
+    css`
+      color: ${font.color.default};
+    `}
+`;
+
+const StyledActionIconContainer = styled.div`
+  ${({
+    theme: {
+      yoga: {
+        components: {
+          navigationmenu: { icon },
+        },
+      },
+    },
+  }) => css`
+      svg {
+        fill: ${icon.fill.default}px;
+      }
+    `}
+`;
+
+const StyledAvatarContainer = styled.div`
+  ${({
+    theme: {
+      yoga: {
+        components: {
+          navigationmenu: { avatar },
+        },
+      },
+    },
+  }) => css`
+    > div:first-child {
+      height: ${avatar.height}px;
+      width: ${avatar.width}px;
+    }
+  `}
 `;
 
 type MenuProps = {
@@ -85,15 +140,23 @@ const Menu = ({ avatar: Avatar, subtitle, title, onClick }: MenuProps) => {
 
   return (
     <StyledMenu hasAction={hasAction} onClick={onClick}>
-      {Avatar}
+      {!!Avatar && (
+        <StyledAvatarContainer>
+          {Avatar}
+        </StyledAvatarContainer>
+      )}
 
       <StyledTextContainer>
-        {title && <StyledText>{title}</StyledText>}
+        {title && <StyledTitle>{title}</StyledTitle>}
 
-        {subtitle && <Text.Small color="deep">{subtitle}</Text.Small>}
+        {subtitle && <StyledSubtitle>{subtitle}</StyledSubtitle>}
       </StyledTextContainer>
 
-      {hasAction && <Icon as={ArrowRight} size="large" fill="vibin" />}
+      {hasAction && (
+        <StyledActionIconContainer>
+          <Icon as={ChevronDown} size="large"  />
+        </StyledActionIconContainer>
+      )}
     </StyledMenu>
   );
 };
