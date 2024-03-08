@@ -16,8 +16,8 @@ const Skeleton = ({ colors, lineHeights, radii }) => ({
     },
   },
   background: {
-    primary: colors.clear,
-    secondary: colors.clearNew,
+    primary: colors.elements.backgroundAndDisabled,
+    secondary: colors.elements.lineAndBorders,
   },
 });
 
