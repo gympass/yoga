@@ -67,6 +67,7 @@ const theme = tokens => {
     colors,
     baseFont,
     baseFontSize,
+    v3theme: false,
   };
 };
 
