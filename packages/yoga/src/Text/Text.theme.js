@@ -59,27 +59,12 @@ const Text = ({ fontSizes, lineHeights, fontWeights }) => ({
     lineHeight: lineHeights.medium,
     fontWeight: fontWeights.medium,
   },
-  p: {
-    fontsize: fontSizes.medium,
-    lineHeight: lineHeights.medium,
-    fontWeight: fontWeights.regular,
-  },
   body2: {
     fontsize: fontSizes.small,
     lineHeight: lineHeights.small,
     fontWeight: fontWeights.medium,
   },
-  small: {
-    fontsize: fontSizes.small,
-    lineHeight: lineHeights.small,
-    fontWeight: fontWeights.regular,
-  },
   caption: {
-    fontsize: fontSizes.xsmall,
-    lineHeight: lineHeights.xsmall,
-    fontWeight: fontWeights.regular,
-  },
-  tiny: {
     fontsize: fontSizes.xsmall,
     lineHeight: lineHeights.xsmall,
     fontWeight: fontWeights.regular,
@@ -99,6 +84,23 @@ const Text = ({ fontSizes, lineHeights, fontWeights }) => ({
   smallestException: {
     fontsize: fontSizes.xxsmall,
     lineHeight: lineHeights.xxsmall,
+    fontWeight: fontWeights.regular,
+  },
+
+  // deprecated, please don't use
+  p: {
+    fontsize: fontSizes.medium,
+    lineHeight: lineHeights.medium,
+    fontWeight: fontWeights.regular,
+  },
+  small: {
+    fontsize: fontSizes.small,
+    lineHeight: lineHeights.small,
+    fontWeight: fontWeights.regular,
+  },
+  tiny: {
+    fontsize: fontSizes.xsmall,
+    lineHeight: lineHeights.xsmall,
     fontWeight: fontWeights.regular,
   },
   light: {

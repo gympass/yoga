@@ -62,17 +62,9 @@ const Body2 = styledText('body2');
 
 Body2.displayName = 'Text.Body2';
 
-const Small = styledText('small');
-
-Small.displayName = 'Text.Small';
-
 const Caption = styledText('caption');
 
 Caption.displayName = 'Text.caption';
-
-const Tiny = styledText('tiny');
-
-Tiny.displayName = 'Text.Tiny';
 
 const Overline = styledText('overline');
 
@@ -85,6 +77,16 @@ SectionTitle.displayName = 'Text.SectionTitle';
 const SmallestException = styledText('smallestException');
 
 SmallestException.displayName = 'Text.SmallestException';
+
+// deprecated, please don't use
+
+const Small = styledText('small');
+
+Small.displayName = 'Text.Small';
+
+const Tiny = styledText('tiny');
+
+Tiny.displayName = 'Text.Tiny';
 
 const Light = styledText('light');
 
@@ -124,12 +126,13 @@ Text.H4 = H4;
 Text.H5 = H5;
 Text.Body1 = Body1;
 Text.Body2 = Body2;
-Text.Small = Small;
 Text.Caption = Caption;
-Text.Tiny = Tiny;
 Text.Overline = Overline;
 Text.SectionTitle = SectionTitle;
 Text.SmallestException = SmallestException;
+// deprecated, please don't use
+Text.Small = Small;
+Text.Tiny = Tiny;
 Text.Light = Light;
 Text.Regular = Regular;
 Text.Medium = Medium;
@@ -204,14 +207,15 @@ export {
   H4,
   H5,
   Body1,
-  Text,
   Body2,
-  Small,
   Caption,
-  Tiny,
   Overline,
   SectionTitle,
   SmallestException,
+  // deprecated, please don't use
+  Text,
+  Small,
+  Tiny,
   Light,
   Regular,
   Medium,

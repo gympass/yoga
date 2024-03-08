@@ -18,18 +18,19 @@ describe('<Text />', () => {
           <Text.H3>Live the mission</Text.H3>
           <Text.H4>Live the mission</Text.H4>
           <Text.Body1>Live the mission</Text.Body1>
-          <Text>Live the mission</Text>
           <Text.Body2>Live the mission</Text.Body2>
-          <Text.Small>Live the mission</Text.Small>
           <Text.Caption>Live the mission</Text.Caption>
-          <Text.Tiny>Live the mission</Text.Tiny>
           <Text.Overline>Live the mission</Text.Overline>
+          <Text.SectionTitle>Live the mission</Text.SectionTitle>
+          <Text.SmallestException>Live the mission</Text.SmallestException>
+          {/* deprecated, please don't use */}
+          <Text>Live the mission</Text>
+          <Text.Small>Live the mission</Text.Small>
+          <Text.Tiny>Live the mission</Text.Tiny>
           <Text.Regular>Live the mission</Text.Regular>
           <Text.Medium>Live the mission</Text.Medium>
           <Text.Bold>Live the mission</Text.Bold>
           <Text.Black>Live the mission</Text.Black>
-          <Text.SectionTitle>Live the mission</Text.SectionTitle>
-          <Text.SmallestException>Live the mission</Text.SmallestException>
         </ThemeProvider>,
       );
 
