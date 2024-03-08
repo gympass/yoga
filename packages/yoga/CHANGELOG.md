@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.103.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.102.4...@gympass/yoga@7.103.0) (2024-03-08)
+
+
+### Bug Fixes
+
+* add value to the default theme ([fbc4822](https://github.com/Gympass/yoga/commit/fbc4822c02a63f9b75412b4607b42cc4461ae203))
+* navigation menu types ([2ce9262](https://github.com/Gympass/yoga/commit/2ce92620f3cd5fcc435485b7f407f046336271ab))
+* remove example change ([8f43046](https://github.com/Gympass/yoga/commit/8f430466def5b296b587cbf59e6dc0775290bd17))
+
+
+### Features
+
+* downsize zIndex values and add zIndex prop ([772134e](https://github.com/Gympass/yoga/commit/772134e12d7dfbc184d05e2abce82760899ddcd8))
+* update theme merging order ([1b0176a](https://github.com/Gympass/yoga/commit/1b0176a2d59c8e76ad2aa7e5faafb9c3ff8cf45c))
+
+
+
+
+
 ## [7.102.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.102.3...@gympass/yoga@7.102.4) (2024-03-08)
 
 
