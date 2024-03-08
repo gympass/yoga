@@ -75,7 +75,7 @@ const composeTheme = (tokens, customTheming = {}) => {
   const customTheme = merge(baseTheme, customTheming);
   const componentTheming = getComponentThemes(customTheme);
 
-  return merge(customTheme, componentTheming);
+  return merge(componentTheming, customTheme);
 };
 
 export default composeTheme;

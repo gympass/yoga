@@ -1,6 +1,8 @@
 import createTheme from '../helpers/themeGenerator';
 
 export const v3theme = createTheme(tokens => ({
+  v3theme: true,
+
   colors: {
     secondary: tokens.colors.staminaNew,
 
@@ -55,4 +57,12 @@ export const v3theme = createTheme(tokens => ({
   },
 
   baseFont: tokens.fonts.inter,
+
+  components: {
+    navigationmenu: {
+      backgroundColor: {
+        default: tokens.colors.sand,
+      },
+    },
+  },
 }));
