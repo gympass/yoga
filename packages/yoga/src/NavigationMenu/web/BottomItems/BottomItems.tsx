@@ -34,7 +34,7 @@ const StyledItems = styled.ul`
     padding: 0;
     border: 1px solid ${border.color.default};
     gap: ${gap.xxxsmall}px;
-    z-index: ${({ $zIndex }) => $zIndex ?? 2};
+    z-index: ${({ $zIndex }: BottomItemsStyledProps) => $zIndex ?? 2};
   `}
 `;
 

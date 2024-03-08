@@ -33,11 +33,11 @@ const DeskTopContainer = css`
   `}
 `;
 
-type NavigationMenuStyledProps = {
+type NavigationMenuStyledProps = React.HTMLAttributes<HTMLDivElement> & {
   isOpenOnMobile: boolean;
   isResponsive: boolean;
   $zIndex?: number;
-}
+};
 
 const StyledNavigationMenu = styled.div<NavigationMenuStyledProps>`
   ${({ isOpenOnMobile, isResponsive, $zIndex }) => css`
@@ -83,7 +83,7 @@ const StyledItems = styled.nav`
   overflow-y: auto;
 `;
 
-const StyledItemsGroup = styled.ul`
+const StyledItemsGroup = styled.ul<React.PropsWithChildren>`
   ${({
     theme: {
       yoga: {
@@ -117,27 +117,26 @@ const StyledFooter = styled(Box)`
   `}
 `;
 
-type NavigationMenuProps = React.HTMLAttributes<HTMLDivElement> &
-  NavigationMenuStyledProps & {
-    children: React.ReactNode;
-  };
+type NavigationMenuProps = Pick<NavigationMenuStyledProps, '$zIndex'> & {
+  children: React.ReactNode;
+  openOnMobile?: boolean;
+  responsive?: boolean;
+};
 
 const NavigationMenu = ({
   children,
   openOnMobile = false,
   responsive = true,
   ...htmlAttributes
-}: NavigationMenuProps) => {
-  return (
-    <StyledNavigationMenu
-      {...htmlAttributes}
-      isOpenOnMobile={openOnMobile}
-      isResponsive={responsive}
-    >
-      {children}
-    </StyledNavigationMenu>
-  );
-};
+}: NavigationMenuProps) => (
+  <StyledNavigationMenu
+    {...htmlAttributes}
+    isOpenOnMobile={openOnMobile}
+    isResponsive={responsive}
+  >
+    {children}
+  </StyledNavigationMenu>
+);
 
 NavigationMenu.Header = StyledHeader;
 NavigationMenu.Menu = Menu;
