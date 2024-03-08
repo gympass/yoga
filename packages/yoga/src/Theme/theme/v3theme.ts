@@ -57,12 +57,4 @@ export const v3theme = createTheme(tokens => ({
   },
 
   baseFont: tokens.fonts.inter,
-
-  components: {
-    navigationmenu: {
-      backgroundColor: {
-        default: tokens.colors.sand,
-      },
-    },
-  },
 }));
