@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.104.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.103.0...@gympass/yoga@7.104.0) (2024-03-08)
+
+
+### Features
+
+* create new text components ([1e09e86](https://github.com/Gympass/yoga/commit/1e09e861404211aaac209e03dbaf44b5573f864b))
+
+
+
+
+
 # [7.103.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.102.4...@gympass/yoga@7.103.0) (2024-03-08)
 
 
