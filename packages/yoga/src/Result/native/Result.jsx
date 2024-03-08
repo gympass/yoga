@@ -8,20 +8,16 @@ import Box from '../../Box';
 
 const StyledBox = styled(Box)`
   width: 100%;
-  ${({
-    divided,
+  border-bottom-width: ${({ divided }) => (divided ? 1 : 0)}px;
+  border-bottom-color: ${({
     theme: {
       yoga: {
-        colors: { light },
+        colors: {
+          elements: { lineAndBorders },
+        },
       },
     },
-  }) =>
-    divided
-      ? `
-          border-bottom-width: 1px;
-          border-bottom-color: ${light};
-        `
-      : ''}
+  }) => lineAndBorders};
 `;
 
 const Content = styled.View`
