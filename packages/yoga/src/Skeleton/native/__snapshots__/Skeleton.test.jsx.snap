@@ -42,7 +42,7 @@ exports[`<Skeleton /> should render all background color variants correctly 1`] 
         [
           {
             "alignItems": "center",
-            "backgroundColor": "#FAF9F5",
+            "backgroundColor": "#D7D7E0",
             "display": "flex",
             "height": 24,
             "width": 100,

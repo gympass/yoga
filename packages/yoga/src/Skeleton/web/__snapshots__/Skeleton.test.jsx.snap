@@ -27,7 +27,7 @@ exports[`<Skeleton /> should render all background color variants correctly 1`] 
   -ms-flex-align: center;
   align-items: center;
   width: 100px;
-  background-color: #FAF9F5;
+  background-color: #D7D7E0;
   height: 24px;
   -webkit-animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
   animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
