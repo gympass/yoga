@@ -19,6 +19,13 @@ export const NavigationMenuProps = [
     required: false,
     defaultValue: { value: 'true' },
   },
+  {
+    name: '$zIndex',
+    description: { text: `Value of z-index of the menu` },
+    type: { name: 'number' },
+    required: false,
+    defaultValue: { value: "2" },
+  },
 ];
 
 export const MenuProps = [
@@ -76,6 +83,13 @@ export const SwitcherActionProps = [
     },
     type: { name: 'func' },
     required: true,
+  },
+  {
+    name: '$zIndex',
+    description: { text: `Value of z-index of the switcher actions menu` },
+    type: { name: 'number' },
+    required: false,
+    defaultValue: { value: "1" },
   },
 ];
 
@@ -223,6 +237,13 @@ export const BottomItemsProps = [
     description: { text: 'Items to be displayed in the mobile bottom bar' },
     type: { name: 'node' },
     required: true,
+  },
+  {
+    name: '$zIndex',
+    description: { text: `Value of z-index of the bottom items menu` },
+    type: { name: 'number' },
+    required: false,
+    defaultValue: { value: "2" },
   },
 ];
 
