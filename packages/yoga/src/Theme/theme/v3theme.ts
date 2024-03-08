@@ -1,6 +1,8 @@
 import createTheme from '../helpers/themeGenerator';
 
 export const v3theme = createTheme(tokens => ({
+  v3theme: true,
+
   colors: {
     secondary: tokens.colors.staminaNew,
 
