@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.104.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.104.0...@gympass/yoga@7.104.1) (2024-03-11)
+
+
+### Bug Fixes
+
+* **bottomsheet and drawer:** change the name of the animation in both components ([d1a0788](https://github.com/Gympass/yoga/commit/d1a0788da92c773219193e24d2304d119e0352b7))
+
+
+
+
+
 # [7.104.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.103.0...@gympass/yoga@7.104.0) (2024-03-08)
 
 
