@@ -57,6 +57,14 @@ export const MenuProps = [
     type: { name: 'func' },
     required: false,
   },
+  {
+    name: 'icon',
+    description: {
+      text: 'Custom action icon',
+    },
+    type: { name: 'node' },
+    required: false,
+  },
 ];
 
 export const SwitcherActionProps = [
