@@ -4,11 +4,13 @@ import { ChevronDown } from '@gympass/yoga-icons';
 import { Text } from '@gympass/yoga';
 import Icon from '../../../Icon';
 
-const StyledMenu = styled.div<{
+type MenuStyleProps = {
   hasAction: boolean;
   children: React.ReactNode;
-  onClick?: (() => void) | undefined;
-}>`
+  onClick?: (() => void) | (() => Promise<void>);
+};
+
+const StyledMenu = styled.div<MenuStyleProps>`
   ${({
     hasAction,
     theme: {
@@ -142,9 +144,16 @@ type MenuProps = {
   subtitle?: string;
   title?: string;
   onClick?: () => void;
+  icon?: React.ComponentProps<typeof Icon>['as'];
 };
 
-const Menu = ({ avatar: Avatar, subtitle, title, onClick }: MenuProps) => {
+const Menu = ({
+  avatar: Avatar,
+  icon,
+  subtitle,
+  title,
+  onClick,
+}: MenuProps) => {
   const hasAction = Boolean(onClick);
 
   return (
@@ -159,7 +168,7 @@ const Menu = ({ avatar: Avatar, subtitle, title, onClick }: MenuProps) => {
 
       {hasAction && (
         <StyledActionIconContainer>
-          <Icon as={ChevronDown} size="large" />
+          <Icon as={icon ?? ChevronDown} size="large" />
         </StyledActionIconContainer>
       )}
     </StyledMenu>
