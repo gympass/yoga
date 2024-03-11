@@ -141,8 +141,8 @@ exports[`<Drawer /> should match snapshot 1`] = `
   align-self: flex-end;
   position: absolute;
   right: 0;
-  -webkit-animation: content;
-  animation: content;
+  -webkit-animation: drawer-slide-left;
+  animation: drawer-slide-left;
   -webkit-animation-duration: 400ms;
   animation-duration: 400ms;
   -webkit-animation-fill-mode: forwards;
