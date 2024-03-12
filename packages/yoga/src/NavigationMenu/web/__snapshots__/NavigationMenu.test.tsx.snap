@@ -404,6 +404,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 
 .c28 {
   position: relative;
+  z-index: 2;
 }
 
 .c29 {
@@ -423,7 +424,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   padding: 0;
   border: 1px solid #D7D7E0;
   gap: 4px;
-  z-index: 2;
 }
 
 .c33 {
@@ -679,7 +679,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   <div
     class="c0"
   >
-    <div
+    <header
       class="c1"
     >
       <div
@@ -720,7 +720,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
           </p>
         </div>
       </div>
-    </div>
+    </header>
     <nav
       class="c9"
     >
@@ -828,7 +828,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
         </li>
       </ul>
     </nav>
-    <div
+    <footer
       class="c23"
     >
       <div
@@ -867,7 +867,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
           </p>
         </div>
       </div>
-    </div>
+    </footer>
   </div>
   <nav
     class="c28"
@@ -1090,7 +1090,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an a
   <div
     class="c0"
   >
-    <div
+    <header
       class="c1"
     >
       <div
@@ -1141,7 +1141,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an a
           />
         </div>
       </div>
-    </div>
+    </header>
   </div>
 </div>
 `;
@@ -1304,7 +1304,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
   <div
     class="c0"
   >
-    <div
+    <footer
       class="c1"
     >
       <div
@@ -1358,7 +1358,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
           />
         </div>
       </div>
-    </div>
+    </footer>
   </div>
 </div>
 `;

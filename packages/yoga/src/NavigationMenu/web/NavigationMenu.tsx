@@ -5,7 +5,6 @@ import Menu from './Menu';
 import Switcher from './Switcher';
 import { Item, Subitem } from './Item';
 import { BottomItems, BottomItem } from './BottomItems';
-import Box from '../../Box';
 
 const DeskTopContainer = css`
   ${({
@@ -59,7 +58,7 @@ const StyledNavigationMenu = styled.div<NavigationMenuStyledProps>`
   `}
 `;
 
-const StyledHeader = styled(Box)`
+const StyledHeader = styled.header`
   ${({
     theme: {
       yoga: {
@@ -101,7 +100,7 @@ const StyledItemsGroup = styled.ul<React.PropsWithChildren>`
   `}
 `;
 
-const StyledFooter = styled(Box)`
+const StyledFooter = styled.footer`
   ${({
     theme: {
       yoga: {
@@ -117,22 +116,25 @@ const StyledFooter = styled(Box)`
   `}
 `;
 
-type NavigationMenuProps = Pick<NavigationMenuStyledProps, '$zIndex'> & {
+type NavigationMenuProps = {
   children: React.ReactNode;
   openOnMobile?: boolean;
   responsive?: boolean;
+  zIndex: number;
 };
 
 const NavigationMenu = ({
   children,
   openOnMobile = false,
   responsive = true,
+  zIndex,
   ...htmlAttributes
 }: NavigationMenuProps) => (
   <StyledNavigationMenu
     {...htmlAttributes}
     isOpenOnMobile={openOnMobile}
     isResponsive={responsive}
+    $zIndex={zIndex}
   >
     {children}
   </StyledNavigationMenu>

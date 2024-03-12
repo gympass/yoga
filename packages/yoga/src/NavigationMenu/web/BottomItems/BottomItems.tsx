@@ -39,8 +39,9 @@ const StyledItems = styled.ul`
   `}
 `;
 
-type BottomItemsProps = BottomItemsStyledProps & {
+type BottomItemsProps = Omit<BottomItemsStyledProps, '$zIndex'> & {
   children: React.ReactNode;
+  zIndex: number;
 };
 
 const BottomItems = ({ children, ...containerProps }: BottomItemsProps) => {

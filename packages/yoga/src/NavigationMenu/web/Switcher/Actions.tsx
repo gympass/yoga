@@ -46,10 +46,10 @@ type SwitcherActionsProps = {
 export type ActionsProps = {
   actions?: SwitcherActionsProps[];
   sideOffset?: number;
-  $zIndex?: number;
+  zIndex?: number;
 };
 
-function Actions({ actions, sideOffset, $zIndex }: ActionsProps) {
+function Actions({ actions, sideOffset, zIndex }: ActionsProps) {
   if (!actions?.length) {
     return null;
   }
@@ -65,7 +65,7 @@ function Actions({ actions, sideOffset, $zIndex }: ActionsProps) {
       <YogaMenu.List
         side="right"
         sideOffset={sideOffset}
-        zIndex={`${$zIndex ?? 2}`}
+        zIndex={`${zIndex ?? 2}`}
       >
         {actions.map(({ id, label, onClick }) => (
           <YogaMenu.Item key={id} onClick={onClick}>
