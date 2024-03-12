@@ -295,6 +295,7 @@ const Checkbox = ({
             checked={checked}
             disabled={disabled}
             {...(value ? { value } : {})}
+            {...restWithoutEvents}
             onChange={onChange}
             onClick={onClick}
           />
