@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.105.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.104.1...@gympass/yoga@7.105.0) (2024-03-13)
+
+
+### Bug Fixes
+
+* pass checkbox attributes to input ([60d79fb](https://github.com/Gympass/yoga/commit/60d79fb2293a95a42384384af3b2f271f78fd738))
+
+
+### Features
+
+* allow context menu to receive custom icon ([8b2a7ec](https://github.com/Gympass/yoga/commit/8b2a7ec5177cccba54d8292293a647a6cf68d781))
+* update NavigationMenu styles ([4f67d03](https://github.com/Gympass/yoga/commit/4f67d0392211f2dc262e70838901d9b41929ddfc))
+
+
+
+
+
 ## [7.104.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.104.0...@gympass/yoga@7.104.1) (2024-03-11)
 
 
