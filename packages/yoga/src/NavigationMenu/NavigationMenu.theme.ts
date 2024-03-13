@@ -1,58 +1,147 @@
-const NavigationMenu = ({ colors, fontWeights, radii, spacing }) => ({
-  avatar: {
-    height: spacing.xlarge,
-    width: spacing.xlarge,
-  },
+import { css } from 'styled-components';
+import { merge } from '@gympass/yoga-common';
+
+const sandy = '#F6EDDF';
+
+const navigationMenuV3 = ({ colors, fontWeights, fontSizes, radii }) => ({
   backgroundColor: {
-    default: colors.clear,
-    hover: colors.light,
-    stamina: colors.stamina,
-    yoga: colors.yoga,
-    white: colors.white,
+    contextMenu: colors.sand,
+    default: colors.sand,
+    hover: sandy,
+    active: sandy,
   },
   border: {
-    color: {
-      default: colors.light,
-      white: colors.white,
-    },
     radius: {
-      default: radii.small,
-      circle: radii.circle,
+      tag: radii.small,
+      contextMenu: radii.small,
     },
   },
   font: {
     color: {
-      default: colors.deep,
-      active: colors.vibin,
-      hover: colors.stamina,
+      default: colors.text.secondary,
+      active: colors.text.primary,
+      hover: colors.text.secondary,
     },
-    weight: { medium: fontWeights.medium },
+    weight: {
+      bold: fontWeights.bold,
+      medium: fontWeights.regular,
+    },
+    size: {
+      contextMenu: {
+        title: fontSizes.xlarge,
+      },
+    },
   },
-  gap: {
-    xxxsmall: spacing.xxxsmall,
-    xxsmall: spacing.xxsmall,
-    medium: spacing.medium,
+  hover: {
+    contextMenu: css`
+      background-color: ${sandy};
+    `,
   },
-  height: { xxlarge: spacing.xxlarge, xlarge: spacing.xlarge },
   icon: {
-    height: spacing.medium,
-    width: spacing.medium,
     fill: {
-      default: colors.deep,
-      active: colors.vibin,
-      hover: colors.stamina,
+      default: colors.text.secondary,
+      actions: colors.text.secondary,
+      active: colors.text.primary,
+      hover: colors.text.secondary,
     },
   },
-  padding: {
-    xxxsmall: spacing.xxxsmall,
-    xxsmall: spacing.xxsmall,
-    xsmall: spacing.xsmall,
-    small: spacing.small,
-  },
-  tag: {
-    color: { default: colors.white },
-  },
-  width: { xxlarge: spacing.xxlarge, xlarge: spacing.xlarge },
 });
+
+const NavigationMenu = theme => {
+  const {
+    colors,
+    elevations,
+    fontWeights,
+    fontSizes,
+    radii,
+    spacing,
+    v3theme,
+  } = theme;
+
+  const baseTheme = {
+    avatar: {
+      height: spacing.xlarge,
+      width: spacing.xlarge,
+    },
+    backgroundColor: {
+      contextMenu: colors.white,
+      default: colors.clear,
+      hover: colors.light,
+      active: colors.yoga,
+      tag: colors.stamina,
+      bottomMenu: colors.white,
+    },
+    border: {
+      color: {
+        default: colors.light,
+      },
+      radius: {
+        default: radii.small,
+        circle: radii.circle,
+        tag: v3theme ? radii.small : radii.circle,
+        action: radii.circle,
+        contextMenu: v3theme ? radii.small : radii.circle,
+      },
+    },
+    font: {
+      color: {
+        default: colors.deep,
+        active: colors.vibin,
+        hover: colors.stamina,
+      },
+      weight: {
+        bold: fontWeights.medium,
+        medium: fontWeights.regular,
+      },
+      size: {
+        contextMenu: {
+          title: fontSizes.small,
+        },
+      },
+    },
+    gap: {
+      xxxsmall: spacing.xxxsmall,
+      xxsmall: spacing.xxsmall,
+      medium: spacing.medium,
+    },
+    height: {
+      xxlarge: spacing.xxlarge,
+      xlarge: spacing.xlarge,
+      contextMenu: spacing.xlarge * 2,
+      bottomMenu: spacing.xxxlarge,
+    },
+    hover: {
+      contextMenu: css`
+        box-shadow: ${elevations.small};
+      `,
+    },
+    icon: {
+      height: spacing.medium,
+      width: spacing.medium,
+      fill: {
+        default: colors.deep,
+        actions: colors.primary,
+        active: colors.vibin,
+        hover: colors.stamina,
+      },
+    },
+    padding: {
+      xxxsmall: spacing.xxxsmall,
+      xxsmall: spacing.xxsmall,
+      xsmall: spacing.xsmall,
+      small: spacing.small,
+    },
+    tag: {
+      color: { default: colors.white },
+    },
+    width: { xxlarge: spacing.xxlarge, xlarge: spacing.xlarge },
+  };
+
+  if (!v3theme) {
+    return baseTheme;
+  }
+
+  return merge(baseTheme, navigationMenuV3(theme));
+};
 
 export default NavigationMenu;

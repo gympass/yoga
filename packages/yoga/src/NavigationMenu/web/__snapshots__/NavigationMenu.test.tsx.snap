@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
-.c3 {
+.c4 {
   border-radius: 9999px;
   background-color: #9898A6;
   box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
@@ -22,25 +22,14 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   overflow: hidden;
 }
 
-.c4 {
+.c5 {
   width: 50%;
   height: 50%;
 }
 
-.c13 {
+.c14 {
   width: 12px;
   height: 12px;
-}
-
-.c7 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 400;
-  color: #6B6B78;
 }
 
 .c27 {
@@ -54,7 +43,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   color: #6B6B78;
 }
 
-.c14 {
+.c15 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -65,7 +54,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   font-size: 16px;
 }
 
-.c17 {
+.c18 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -92,46 +81,42 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 .c2 {
   -webkit-transition: background-color 300ms ease-in-out;
   transition: background-color 300ms ease-in-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   width: 100%;
+  grid-template-columns: max-content 1fr max-content;
   gap: 8px;
   padding: 12px;
   background-color: #FFFFFF;
   border-radius: 9999px;
-  border: 1px solid #FFFFFF;
-}
-
-.c2 > div:first-child {
-  height: 32px;
-  width: 32px;
-}
-
-.c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: hidden;
+  min-height: 64px;
 }
 
 .c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
+  overflow: hidden;
+}
+
+.c7 {
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 32px;
   color: #231B22;
   font-family: Rubik;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
   font-weight: 500;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -139,6 +124,22 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.c8 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+  color: #6B6B78;
+}
+
+.c3 > div:first-child {
+  height: 32px;
+  width: 32px;
 }
 
 .c24 {
@@ -189,7 +190,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   overflow: hidden;
 }
 
-.c12 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -227,14 +228,14 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   border-radius: 8px;
 }
 
-.c19 {
+.c20 {
   text-transform: uppercase;
   background-color: #231B22;
   color: #FFFFFF;
   border-radius: 9999px;
 }
 
-.c16 {
+.c17 {
   color: #6B6B78;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -244,7 +245,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   overflow: hidden;
 }
 
-.c10 {
+.c11 {
   -webkit-transition: background-color 300ms ease-in-out;
   transition: background-color 300ms ease-in-out;
   background-color: transparent;
@@ -254,147 +255,70 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   margin-right: 8px;
 }
 
-.c10 svg {
+.c11 svg {
   height: 20px;
   width: 20px;
 }
 
-.c10:hover,
-.c10:focus {
+.c11:hover,
+.c11:focus {
   background-color: #D7D7E0;
 }
 
-.c10:hover .c15,
-.c10:focus .c15 {
+.c11:hover .c16,
+.c11:focus .c16 {
   color: #231B22;
 }
 
-.c10:hover svg,
-.c10:focus svg {
+.c11:hover svg,
+.c11:focus svg {
   fill: #231B22;
 }
 
-.c10 a {
+.c11 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c10 a:hover,
-.c10 a:focus {
+.c11 a:hover,
+.c11 a:focus {
   outline: none;
 }
 
-.c10 a:hover .c11,
-.c10 a:focus .c11 {
+.c11 a:hover .c12,
+.c11 a:focus .c12 {
   background-color: #D7D7E0;
   color: #231B22;
 }
 
-.c10 a:hover .c15,
-.c10 a:focus .c15 {
+.c11 a:hover .c16,
+.c11 a:focus .c16 {
   color: #231B22;
 }
 
-.c10 a:hover svg,
-.c10 a:focus svg {
+.c11 a:hover svg,
+.c11 a:focus svg {
   fill: #231B22;
 }
 
-.c10 a.active {
+.c11 a.active {
   cursor: auto;
 }
 
-.c10 a.active > .c11 {
-  background-color: #F5F5FA;
-}
-
-.c10 a.active > .c11 .c15 {
-  color: #D8385E;
-}
-
-.c10 a.active > .c11 svg {
-  fill: #D8385E;
-}
-
-.c10 a.active > .c11 > .c18 {
-  background-color: #231B22;
-}
-
-.c20 {
-  -webkit-transition: background-color 300ms ease-in-out;
-  transition: background-color 300ms ease-in-out;
-  background-color: transparent;
-  border-radius: 8px;
-  list-style-type: none;
-  cursor: pointer;
-  margin-right: 8px;
-}
-
-.c20 svg {
-  height: 20px;
-  width: 20px;
-}
-
-.c20:hover,
-.c20:focus {
-  background-color: #D7D7E0;
-}
-
-.c20:hover .c15,
-.c20:focus .c15 {
-  color: #231B22;
-}
-
-.c20:hover svg,
-.c20:focus svg {
-  fill: #231B22;
-}
-
-.c20 a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c20 a:hover,
-.c20 a:focus {
-  outline: none;
-}
-
-.c20 a:hover .c11,
-.c20 a:focus .c11 {
-  background-color: #D7D7E0;
-  color: #231B22;
-}
-
-.c20 a:hover .c15,
-.c20 a:focus .c15 {
-  color: #231B22;
-}
-
-.c20 a:hover svg,
-.c20 a:focus svg {
-  fill: #231B22;
-}
-
-.c20 a.active {
-  cursor: auto;
-}
-
-.c20 a.active > .c11 {
-  background-color: #F5F5FA;
+.c11 a.active > .c12 {
   background-color: #FFEEF2;
 }
 
-.c20 a.active > .c11 .c15 {
+.c11 a.active > .c12 .c16 {
   color: #D8385E;
   font-weight: 500;
 }
 
-.c20 a.active > .c11 svg {
+.c11 a.active > .c12 svg {
   fill: #D8385E;
 }
 
-.c20 a.active > .c11 > .c18 {
+.c11 a.active > .c12 > .c19 {
   background-color: #231B22;
 }
 
@@ -424,14 +348,14 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   outline: none;
 }
 
-.c22 a:hover .c11,
-.c22 a:focus .c11 {
+.c22 a:hover .c12,
+.c22 a:focus .c12 {
   background-color: #D7D7E0;
   color: #231B22;
 }
 
-.c22 a:hover .c15,
-.c22 a:focus .c15 {
+.c22 a:hover .c16,
+.c22 a:focus .c16 {
   color: #231B22;
 }
 
@@ -444,40 +368,43 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   cursor: auto;
 }
 
-.c22 a.active > .c11 {
-  background-color: #F5F5FA;
+.c22 a.active > .c12 {
+  background-color: #FFEEF2;
 }
 
-.c22 a.active > .c11 .c15 {
+.c22 a.active > .c12 .c16 {
   color: #D8385E;
+  font-weight: 500;
 }
 
-.c22 a.active > .c11 svg {
+.c22 a.active > .c12 svg {
   fill: #D8385E;
 }
 
-.c22 a.active > .c11 > .c18 {
+.c22 a.active > .c12 > .c19 {
   background-color: #231B22;
 }
 
-.c22 a > .c11 {
-  background-color: #F5F5FA;
+.c22 a > .c12 {
+  background-color: #FFEEF2;
 }
 
-.c22 a > .c11 .c15 {
+.c22 a > .c12 .c16 {
   color: #D8385E;
+  font-weight: 500;
 }
 
-.c22 a > .c11 svg {
+.c22 a > .c12 svg {
   fill: #D8385E;
 }
 
-.c22 a > .c11 > .c18 {
+.c22 a > .c12 > .c19 {
   background-color: #231B22;
 }
 
 .c28 {
   position: relative;
+  z-index: 2;
 }
 
 .c29 {
@@ -497,7 +424,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   padding: 0;
   border: 1px solid #D7D7E0;
   gap: 4px;
-  z-index: 2;
 }
 
 .c33 {
@@ -529,6 +455,11 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   fill: #6B6B78;
 }
 
+.c30:hover,
+.c30:focus {
+  background-color: #D7D7E0;
+}
+
 .c30:hover .c32,
 .c30:focus .c32 {
   color: #231B22;
@@ -546,6 +477,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 
 .c30 a.active {
   cursor: auto;
+  background-color: #FFEEF2;
 }
 
 .c30 a.active:not(:last-child) {
@@ -554,6 +486,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 
 .c30 a.active div .c32 {
   color: #D8385E;
+  font-weight: 500;
 }
 
 .c30 a.active div svg {
@@ -566,6 +499,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   border-radius: 8px;
   list-style-type: none;
   cursor: pointer;
+  background-color: #FFEEF2;
 }
 
 .c34 svg {
@@ -581,6 +515,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 
 .c34 a.active {
   cursor: auto;
+  background-color: #FFEEF2;
 }
 
 .c34 a.active:not(:last-child) {
@@ -589,6 +524,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 
 .c34 a.active div .c32 {
   color: #D8385E;
+  font-weight: 500;
 }
 
 .c34 a.active div svg {
@@ -601,6 +537,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 
 .c34 div .c32 {
   color: #D8385E;
+  font-weight: 500;
 }
 
 .c34 div svg {
@@ -669,7 +606,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   gap: 4px;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -684,7 +621,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   overflow-y: auto;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -706,42 +643,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 4px;
-}
-
-@media (min-width:1024px) {
-  .c10 a.active > .c11 {
-    background-color: #FFEEF2;
-  }
-}
-
-@media (min-width:1024px) {
-  .c10 a.active > .c11 .c15 {
-    font-weight: 500;
-  }
-}
-
-@media (min-width:1024px) {
-  .c22 a.active > .c11 {
-    background-color: #FFEEF2;
-  }
-}
-
-@media (min-width:1024px) {
-  .c22 a.active > .c11 .c15 {
-    font-weight: 500;
-  }
-}
-
-@media (min-width:1024px) {
-  .c22 a > .c11 {
-    background-color: #FFEEF2;
-  }
-}
-
-@media (min-width:1024px) {
-  .c22 a > .c11 .c15 {
-    font-weight: 500;
-  }
 }
 
 @media (min-width:1024px) {
@@ -778,7 +679,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   <div
     class="c0"
   >
-    <div
+    <header
       class="c1"
     >
       <div
@@ -786,66 +687,69 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
       >
         <div
           class="c3"
-          display="flex"
-          elevation="small"
-          height="48"
-          overflow="hidden"
-          width="48"
         >
-          <svg
-            aria-hidden="true"
+          <div
             class="c4"
-            fill="#FFFFFF"
-            height="50%"
-            width="50%"
-          />
+            display="flex"
+            elevation="small"
+            height="48"
+            overflow="hidden"
+            width="48"
+          >
+            <svg
+              aria-hidden="true"
+              class="c5"
+              fill="#FFFFFF"
+              height="50%"
+              width="50%"
+            />
+          </div>
         </div>
         <div
-          class="c5"
+          class="c6"
         >
-          <p
-            class="c6"
+          <h4
+            class="c7"
           >
             Company
-          </p>
+          </h4>
           <p
-            class="c7"
-            color="deep"
+            class="c8"
           >
             Reseller
           </p>
         </div>
       </div>
-    </div>
+    </header>
     <nav
-      class="c8"
+      class="c9"
     >
       <ul
-        class="c9"
+        class="c10"
       >
         <li
-          class="c10"
+          class="c11"
         >
           <a
             href="https://www.gympass.com"
           >
             <div
-              class="c11 c12"
+              class="c12 c13"
             >
               <svg
                 aria-hidden="true"
-                class="c13"
+                class="c14"
                 height="12"
                 width="12"
               />
               <p
-                class="c14 c15 c16"
+                class="c15 c16 c17"
                 font-size="medium"
               >
                 Subscription
               </p>
               <div
-                class="c17 c18 c19"
+                class="c18 c19 c20"
               >
                 new
               </div>
@@ -853,16 +757,16 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
           </a>
         </li>
         <li
-          class="c20"
+          class="c11"
         >
           <a
             href="https://www.gympass.com"
           >
             <div
-              class="c11 c21"
+              class="c12 c21"
             >
               <p
-                class="c14 c15 c16"
+                class="c15 c16 c17"
                 font-size="medium"
               >
                 Details
@@ -877,16 +781,16 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
             href="https://www.gympass.com"
           >
             <div
-              class="c11 c12"
+              class="c12 c13"
             >
               <svg
                 aria-hidden="true"
-                class="c13"
+                class="c14"
                 height="12"
                 width="12"
               />
               <p
-                class="c14 c15 c16"
+                class="c15 c16 c17"
                 font-size="medium"
               >
                 Billing
@@ -896,25 +800,25 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
         </li>
       </ul>
       <ul
-        class="c9"
+        class="c10"
       >
         <li
-          class="c10"
+          class="c11"
         >
           <a
             href="https://www.gympass.com"
           >
             <div
-              class="c11 c12"
+              class="c12 c13"
             >
               <svg
                 aria-hidden="true"
-                class="c13"
+                class="c14"
                 height="12"
                 width="12"
               />
               <p
-                class="c14 c15 c16"
+                class="c15 c16 c17"
                 font-size="medium"
               >
                 Help
@@ -924,7 +828,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
         </li>
       </ul>
     </nav>
-    <div
+    <footer
       class="c23"
     >
       <div
@@ -932,7 +836,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
         fill="transparent"
       >
         <div
-          class="c3"
+          class="c4"
           display="flex"
           elevation="small"
           height="48"
@@ -941,7 +845,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="c4"
+            class="c5"
             fill="#FFFFFF"
             height="50%"
             width="50%"
@@ -963,7 +867,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
           </p>
         </div>
       </div>
-    </div>
+    </footer>
   </div>
   <nav
     class="c28"
@@ -982,7 +886,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="c13"
+              class="c14"
               height="12"
               width="12"
             />
@@ -1005,7 +909,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="c13"
+              class="c14"
               height="12"
               width="12"
             />
@@ -1026,7 +930,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="c13"
+              class="c14"
               height="12"
               width="12"
             />
@@ -1044,7 +948,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 `;
 
 exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an action 1`] = `
-.c3 {
+.c4 {
   border-radius: 9999px;
   background-color: #9898A6;
   box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
@@ -1065,17 +969,71 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an a
   overflow: hidden;
 }
 
-.c4 {
+.c5 {
   width: 50%;
   height: 50%;
 }
 
-.c8 {
+.c10 {
   width: 24px;
   height: 24px;
 }
 
+.c2 {
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  grid-template-columns: max-content 1fr max-content;
+  gap: 8px;
+  padding: 12px;
+  background-color: #FFFFFF;
+  border-radius: 9999px;
+  min-height: 64px;
+  cursor: pointer;
+}
+
+.c2:hover,
+.c2:focus {
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
+  overflow: hidden;
+}
+
 .c7 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 32px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.c8 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -1086,62 +1044,13 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an a
   color: #6B6B78;
 }
 
-.c2 {
-  -webkit-transition: background-color 300ms ease-in-out;
-  transition: background-color 300ms ease-in-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 100%;
-  gap: 8px;
-  padding: 12px;
-  background-color: #FFFFFF;
-  border-radius: 9999px;
-  border: 1px solid #FFFFFF;
+.c9 svg {
+  fill: #D8385E;
 }
 
-.c2 > div:first-child {
+.c3 > div:first-child {
   height: 32px;
   width: 32px;
-}
-
-.c2:hover,
-.c2:focus {
-  cursor: pointer;
-  border: 1px solid #D7D7E0;
-}
-
-.c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: hidden;
-}
-
-.c6 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 400;
-  font-weight: 500;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .c0 {
@@ -1181,7 +1090,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an a
   <div
     class="c0"
   >
-    <div
+    <header
       class="c1"
     >
       <div
@@ -1189,44 +1098,50 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an a
       >
         <div
           class="c3"
-          display="flex"
-          elevation="small"
-          height="48"
-          overflow="hidden"
-          width="48"
         >
-          <svg
-            aria-hidden="true"
+          <div
             class="c4"
-            fill="#FFFFFF"
-            height="50%"
-            width="50%"
-          />
+            display="flex"
+            elevation="small"
+            height="48"
+            overflow="hidden"
+            width="48"
+          >
+            <svg
+              aria-hidden="true"
+              class="c5"
+              fill="#FFFFFF"
+              height="50%"
+              width="50%"
+            />
+          </div>
         </div>
         <div
-          class="c5"
+          class="c6"
         >
-          <p
-            class="c6"
+          <h4
+            class="c7"
           >
             Company
-          </p>
+          </h4>
           <p
-            class="c7"
-            color="deep"
+            class="c8"
           >
             Reseller
           </p>
         </div>
-        <svg
-          aria-hidden="true"
-          class="c8"
-          fill="#D8385E"
-          height="24"
-          width="24"
-        />
+        <div
+          class="c9"
+        >
+          <svg
+            aria-hidden="true"
+            class="c10"
+            height="24"
+            width="24"
+          />
+        </div>
       </div>
-    </div>
+    </header>
   </div>
 </div>
 `;
@@ -1292,6 +1207,10 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
   width: 40px;
   height: 40px;
   border-radius: 9999px;
+}
+
+.c8 svg {
+  fill: #D8385E;
 }
 
 .c8:hover,
@@ -1385,7 +1304,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
   <div
     class="c0"
   >
-    <div
+    <footer
       class="c1"
     >
       <div
@@ -1434,13 +1353,12 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
           <svg
             aria-hidden="true"
             class="c9"
-            fill="#D8385E"
             height="20"
             width="20"
           />
         </div>
       </div>
-    </div>
+    </footer>
   </div>
 </div>
 `;

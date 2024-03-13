@@ -20,7 +20,7 @@ export const NavigationMenuProps = [
     defaultValue: { value: 'true' },
   },
   {
-    name: '$zIndex',
+    name: 'zIndex',
     description: { text: `Value of z-index of the menu` },
     type: { name: 'number' },
     required: false,
@@ -57,6 +57,14 @@ export const MenuProps = [
     type: { name: 'func' },
     required: false,
   },
+  {
+    name: 'icon',
+    description: {
+      text: 'Custom action icon',
+    },
+    type: { name: 'node' },
+    required: false,
+  },
 ];
 
 export const SwitcherActionProps = [
@@ -85,7 +93,7 @@ export const SwitcherActionProps = [
     required: true,
   },
   {
-    name: '$zIndex',
+    name: 'zIndex',
     description: { text: `Value of z-index of the switcher actions menu` },
     type: { name: 'number' },
     required: false,
@@ -239,7 +247,7 @@ export const BottomItemsProps = [
     required: true,
   },
   {
-    name: '$zIndex',
+    name: 'zIndex',
     description: { text: `Value of z-index of the bottom items menu` },
     type: { name: 'number' },
     required: false,
