@@ -56,6 +56,32 @@ import FlagThailand from './svg/flag_thailand.svg';
 import FlagTaiwan from './svg/flag_taiwan.svg';
 import FlagTunisia from './svg/flag_tunisia.svg';
 import FlagMalasya from './svg/flag_malasya.svg';
+import flagAlgeria from './svg/flag_algeria.svg';
+import flagBarbados from './svg/flag_barbados.svg';
+import flagBelarus from './svg/flag_belarus.svg';
+import flagBosnia from './svg/flag_bosnia.svg';
+import flagBritishVirginIslands from './svg/flag_britishvirginislands.svg';
+import flagEgypt from './svg/flag_egypt.svg';
+import flagEstonia from './svg/flag_estonia.svg';
+import flagGeorgia from './svg/flag_georgia.svg';
+import flagGibraltar from './svg/flag_gibraltar.svg';
+import flagGrenada from './svg/flag_grenada.svg';
+import flagJordan from './svg/flag_jordan.svg';
+import flagLatvia from './svg/flag_latvia.svg';
+import flagNorthMacedonia from './svg/flag_northmacedonia.svg';
+import flagMoldova from './svg/flag_moldova.svg';
+import flagMorocco from './svg/flag_morocco.svg';
+import flagNigeria from './svg/flag_nigeria.svg';
+import flagPakistan from './svg/flag_pakistan.svg';
+import flagPhilippines from './svg/flag_philippines.svg';
+import flagSerbia from './svg/flag_serbia.svg';
+import flagRussia from './svg/flag_russia.svg';
+import flagSaudiArabia from './svg/flag_saudiarabia.svg';
+import flagSlovakia from './svg/flag_slovakia.svg';
+import flagSlovenia from './svg/flag_slovenia.svg';
+import flagUkraine from './svg/flag_ukraine.svg';
+import flagVenezuela from './svg/flag_venezuela.svg';
+import flagVietnam from './svg/flag_vietnam.svg';
 
 export {
   FlagArgentina,
@@ -116,4 +142,30 @@ export {
   FlagTaiwan,
   FlagTunisia,
   FlagMalasya,
+  flagAlgeria,
+  flagBarbados,
+  flagBelarus,
+  flagBosnia,
+  flagBritishVirginIslands,
+  flagEgypt,
+  flagEstonia,
+  flagGeorgia,
+  flagGibraltar,
+  flagGrenada,
+  flagJordan,
+  flagLatvia,
+  flagNorthMacedonia,
+  flagMoldova,
+  flagMorocco,
+  flagNigeria,
+  flagPakistan,
+  flagPhilippines,
+  flagSerbia,
+  flagRussia,
+  flagSaudiArabia,
+  flagSlovakia,
+  flagSlovenia,
+  flagUkraine,
+  flagVenezuela,
+  flagVietnam,
 };
