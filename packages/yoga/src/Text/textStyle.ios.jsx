@@ -10,24 +10,25 @@ const textStyle = type => () =>
       theme: {
         yoga: {
           baseFont,
-          fontWeights,
-
-          components: {
-            text: {
-              [type]: { fontFamily, fontWeight },
-            },
-          },
+          components: { text },
         },
       },
     }) => {
       // Defaults to System Font if `fontFamily` is not loaded.
-      const finalFontFamily = fontFamily || baseFont.family;
+      const fontFamily = text[type].fontFamily || baseFont.family;
+
+      let finalFontWeight = text[type].fontWeight;
+
+      if (light && text[`${type}-light`]) {
+        finalFontWeight = text[`${type}-light`].fontWeight;
+      }
+      if (bold && text[`${type}-bold`]) {
+        finalFontWeight = text[`${type}-bold`].fontWeight;
+      }
 
       return css`
-        font-family: ${finalFontFamily};
-        ${fontWeight ? `font-weight: ${fontWeight};` : ''}
-        ${light ? `font-weight: ${fontWeights.light};` : ''}
-        ${bold ? `font-weight: ${fontWeights.bold};` : ''}
+        font-family: ${fontFamily};
+        ${finalFontWeight ? `font-weight: ${finalFontWeight};` : ''}
       `;
     }}
   `;

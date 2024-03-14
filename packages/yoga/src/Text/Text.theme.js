@@ -122,8 +122,8 @@ const Text = ({ fontSizes, lineHeights, fontWeights }) => ({
   },
   small: {
     fontsize: fontSizes.small,
-    lineHeight: lineHeights.small,
     fontWeight: fontWeights.regular,
+    lineHeight: lineHeights.small,
   },
   'small-light': {
     fontWeight: fontWeights.light,
