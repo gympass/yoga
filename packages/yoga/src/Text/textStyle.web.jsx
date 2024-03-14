@@ -12,16 +12,23 @@ const textStyle = type => () =>
       theme: {
         yoga: {
           baseFont,
-          fontWeights,
-
-          components: {
-            text: {
-              [type]: { fontFamily, fontWeight },
-            },
-          },
+          components: { text },
         },
       },
     }) => {
+      const themeFontFamily = text[type].fontFamily
+        ? `${text[type].fontFamily}, `
+        : '';
+
+      let finalFontWeight = text[type].fontWeight;
+
+      if (light && text[`${type}-light`]) {
+        finalFontWeight = text[`${type}-light`].fontWeight;
+      }
+      if (bold && text[`${type}-bold`]) {
+        finalFontWeight = text[`${type}-bold`].fontWeight;
+      }
+
       return css`
         ${numberOfLines
           ? `
@@ -32,10 +39,8 @@ const textStyle = type => () =>
           `
           : ''}
 
-        font-family: ${fontFamily ? `${fontFamily}, ` : ''}${baseFont.family};
-        ${fontWeight ? `font-weight: ${fontWeight};` : ''}
-        ${light ? `font-weight: ${fontWeights.light};` : ''}
-        ${bold ? `font-weight: ${fontWeights.bold};` : ''}
+        font-family: ${`${themeFontFamily}${baseFont.family}`};
+        ${finalFontWeight ? `font-weight: ${finalFontWeight};` : ''}
       `;
     }}
   `;
