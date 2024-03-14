@@ -92,7 +92,7 @@ const Text = ({ fontSizes, lineHeights, fontWeights }) => ({
   },
   overline: {
     fontsize: fontSizes.xsmall,
-    fontWeight: fontWeights.bold,
+    fontWeight: fontWeights.medium,
     lineHeight: lineHeights.xsmall,
   },
   sectionTitle: {

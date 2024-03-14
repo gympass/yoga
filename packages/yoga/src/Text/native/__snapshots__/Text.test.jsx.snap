@@ -189,7 +189,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 12,
-          "fontWeight": "700",
+          "fontWeight": "500",
           "lineHeight": 16,
         },
       ]

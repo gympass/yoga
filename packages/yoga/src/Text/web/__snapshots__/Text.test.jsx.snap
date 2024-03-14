@@ -138,7 +138,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   line-height: 16px;
   color: #231B22;
   font-family: Rubik;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .c14 {
