@@ -7,6 +7,7 @@ const Button = ({
   radii,
   colors,
   fontWeights,
+  lineHeights,
 }) => ({
   padding: {
     default: {
@@ -28,6 +29,10 @@ const Button = ({
       small: fontSizes.small,
     },
     weight: fontWeights.medium,
+    lineHeight: {
+      default: lineHeights.medium,
+      small: lineHeights.xsmall,
+    },
   },
   border: {
     radius: radii.circle,

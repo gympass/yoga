@@ -6,7 +6,7 @@ import withTouchable from './withTouchable';
 
 import Text from '../../Text';
 
-const Label = styled(Text.Medium)`
+const Label = styled(Text)`
   text-align: center;
   ${({
     small,
@@ -18,6 +18,10 @@ const Label = styled(Text.Medium)`
     },
   }) => `
       font-size: ${small ? button.font.size.small : button.font.size.default}px;
+      line-height: ${
+        small ? button.font.lineHeight.small : button.font.lineHeight.default
+      }px;
+      font-weight: ${button.font.weight};
       color: ${color};
     `}
 `;
