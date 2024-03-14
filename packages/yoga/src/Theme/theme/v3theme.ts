@@ -94,6 +94,7 @@ export const v3theme = createTheme(tokens => ({
         fontWeight: tokens.fontWeights.medium,
         lineHeight: tokens.lineHeights.huge,
       },
+      'h1-light': null,
       'h1-bold': {
         fontWeight: tokens.fontWeights.bold,
       },
@@ -102,6 +103,7 @@ export const v3theme = createTheme(tokens => ({
         fontWeight: tokens.fontWeights.medium,
         lineHeight: tokens.lineHeights.xxxlarge,
       },
+      'h2-light': null,
       'h2-bold': {
         fontWeight: tokens.fontWeights.bold,
       },
@@ -110,6 +112,7 @@ export const v3theme = createTheme(tokens => ({
         lineHeight: tokens.lineHeights.xxlarge,
         fontWeight: tokens.fontWeights.medium,
       },
+      'h3-light': null,
       'h3-bold': {
         fontWeight: tokens.fontWeights.bold,
       },
@@ -118,6 +121,7 @@ export const v3theme = createTheme(tokens => ({
         fontWeight: tokens.fontWeights.medium,
         lineHeight: tokens.lineHeights.xlarge,
       },
+      'h4-light': null,
       'h4-bold': {
         fontWeight: tokens.fontWeights.bold,
       },
@@ -126,6 +130,7 @@ export const v3theme = createTheme(tokens => ({
         fontWeight: tokens.fontWeights.medium,
         lineHeight: tokens.lineHeights.large,
       },
+      'h5-light': null,
       'h5-bold': {
         fontWeight: tokens.fontWeights.bold,
       },
@@ -174,6 +179,7 @@ export const v3theme = createTheme(tokens => ({
         fontWeight: tokens.fontWeights.medium,
         lineHeight: tokens.lineHeights.medium,
       },
+      'p-light': null,
       'p-bold': {
         fontWeight: tokens.fontWeights.bold,
       },
@@ -182,6 +188,7 @@ export const v3theme = createTheme(tokens => ({
         fontWeight: tokens.fontWeights.medium,
         lineHeight: tokens.lineHeights.small,
       },
+      'small-light': null,
       'small-bold': {
         fontWeight: tokens.fontWeights.bold,
       },
@@ -190,6 +197,7 @@ export const v3theme = createTheme(tokens => ({
         fontWeight: tokens.fontWeights.regular,
         lineHeight: tokens.lineHeights.xsmall,
       },
+      'tiny-light': null,
       light: {
         fontWeight: tokens.fontWeights.light,
       },
@@ -206,5 +214,5 @@ export const v3theme = createTheme(tokens => ({
         fontWeight: tokens.fontWeights.black,
       },
     },
-  }
+  },
 }));
