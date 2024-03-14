@@ -49,9 +49,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     }
   >
     <Text
+      bold={false}
       color="#D7D7E0"
       disabled={true}
+      fontSize="medium"
       inverted={false}
+      light={false}
       pressed={false}
       small={false}
       style={
@@ -60,7 +63,14 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
             "color": "#D7D7E0",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#D7D7E0",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
           },
         ]
@@ -194,9 +204,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#D7D7E0"
       disabled={true}
+      fontSize="medium"
       inverted={false}
+      light={false}
       pressed={false}
       small={false}
       style={
@@ -205,7 +218,14 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
             "color": "#D7D7E0",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#D7D7E0",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
           },
         ]
@@ -373,16 +393,27 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   }
 >
   <Text
+    bold={false}
     disabled={true}
+    fontSize="medium"
+    inverted={false}
+    light={false}
     pressed={false}
     secondary={false}
     style={
       [
         {
-          "color": "#D7D7E0",
+          "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 24,
+        },
+        {
+          "color": "#D7D7E0",
+          "fontSize": 16,
           "fontWeight": "500",
+          "lineHeight": 24,
           "textAlign": "center",
           "textDecorationColor": "#D7D7E0",
           "textDecorationLine": "underline",
@@ -439,8 +470,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     }
   >
     <Text
+      bold={false}
       color="#D7D7E0"
       disabled={true}
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       style={
         [
@@ -448,7 +483,14 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
             "color": "#D7D7E0",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#D7D7E0",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#D7D7E0",
             "textDecorationLine": "underline",
@@ -579,8 +621,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#D7D7E0"
       disabled={true}
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       style={
         [
@@ -588,7 +634,14 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
             "color": "#D7D7E0",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#D7D7E0",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#D7D7E0",
             "textDecorationLine": "underline",
@@ -651,9 +704,12 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
     }
   >
     <Text
+      bold={false}
       color="#FFFFFF"
       disabled={false}
+      fontSize="medium"
       inverted={false}
+      light={false}
       pressed={false}
       small={false}
       style={
@@ -662,7 +718,14 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
           },
         ]
@@ -797,9 +860,12 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#FFFFFF"
       disabled={false}
+      fontSize="medium"
       inverted={false}
+      light={false}
       pressed={false}
       small={false}
       style={
@@ -808,7 +874,14 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
           },
         ]
@@ -866,7 +939,11 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
     }
   >
     <Text
+      bold={false}
       color="#D8385E"
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       style={
         [
@@ -874,7 +951,14 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#D8385E",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#D8385E",
             "textDecorationLine": "underline",
@@ -1006,7 +1090,11 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#D8385E"
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       style={
         [
@@ -1014,7 +1102,14 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#D8385E",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#D8385E",
             "textDecorationLine": "underline",
@@ -1076,9 +1171,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
     }
   >
     <Text
+      bold={false}
       color="#D8385E"
       disabled={false}
+      fontSize="medium"
       inverted={true}
+      light={false}
       pressed={false}
       small={false}
       style={
@@ -1087,7 +1185,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#D8385E",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
           },
         ]
@@ -1221,9 +1326,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#D8385E"
       disabled={false}
+      fontSize="medium"
       inverted={true}
+      light={false}
       pressed={false}
       small={false}
       style={
@@ -1232,7 +1340,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#D8385E",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
           },
         ]
@@ -1417,7 +1532,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
     }
   >
     <Text
+      bold={false}
       color="#FFFFFF"
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       style={
         [
@@ -1425,7 +1544,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#FFFFFF",
             "textDecorationLine": "underline",
@@ -1555,7 +1681,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#FFFFFF"
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       style={
         [
@@ -1563,7 +1693,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#FFFFFF",
             "textDecorationLine": "underline",
@@ -1755,9 +1892,12 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
     }
   >
     <Text
+      bold={false}
       color="#FFFFFF"
       disabled={false}
+      fontSize="medium"
       inverted={false}
+      light={false}
       pressed={false}
       small={true}
       style={
@@ -1765,8 +1905,15 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
           {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
             "fontSize": 14,
             "fontWeight": "500",
+            "lineHeight": 16,
             "textAlign": "center",
           },
         ]
@@ -1900,9 +2047,12 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#FFFFFF"
       disabled={false}
+      fontSize="medium"
       inverted={false}
+      light={false}
       pressed={false}
       small={true}
       style={
@@ -1910,8 +2060,15 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
           {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
             "fontSize": 14,
             "fontWeight": "500",
+            "lineHeight": 16,
             "textAlign": "center",
           },
         ]
@@ -1968,7 +2125,11 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
     }
   >
     <Text
+      bold={false}
       color="#D8385E"
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       small={true}
       style={
@@ -1976,8 +2137,15 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
           {
             "color": "#D8385E",
             "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#D8385E",
             "fontSize": 14,
             "fontWeight": "500",
+            "lineHeight": 16,
             "textAlign": "center",
             "textDecorationColor": "#D8385E",
             "textDecorationLine": "underline",
@@ -2108,7 +2276,11 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#D8385E"
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       small={true}
       style={
@@ -2116,8 +2288,15 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
           {
             "color": "#D8385E",
             "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#D8385E",
             "fontSize": 14,
             "fontWeight": "500",
+            "lineHeight": 16,
             "textAlign": "center",
             "textDecorationColor": "#D8385E",
             "textDecorationLine": "underline",
@@ -2179,9 +2358,12 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
     }
   >
     <Text
+      bold={false}
       color="#FFFFFF"
       disabled={false}
+      fontSize="medium"
       inverted={false}
+      light={false}
       pressed={false}
       small={false}
       style={
@@ -2190,7 +2372,14 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
           },
         ]
@@ -2324,9 +2513,12 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#FFFFFF"
       disabled={false}
+      fontSize="medium"
       inverted={false}
+      light={false}
       pressed={false}
       small={false}
       style={
@@ -2335,7 +2527,14 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
           },
         ]
@@ -2374,16 +2573,27 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   }
 >
   <Text
+    bold={false}
     disabled={false}
+    fontSize="medium"
+    inverted={false}
+    light={false}
     pressed={false}
     secondary={false}
     style={
       [
         {
-          "color": "#D8385E",
+          "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 24,
+        },
+        {
+          "color": "#D8385E",
+          "fontSize": 16,
           "fontWeight": "500",
+          "lineHeight": 24,
           "textAlign": "center",
           "textDecorationColor": "#D8385E",
           "textDecorationLine": "underline",
@@ -2439,7 +2649,11 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
     }
   >
     <Text
+      bold={false}
       color="#D8385E"
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       style={
         [
@@ -2447,7 +2661,14 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#D8385E",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#D8385E",
             "textDecorationLine": "underline",
@@ -2577,7 +2798,11 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#D8385E"
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       style={
         [
@@ -2585,7 +2810,14 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#D8385E",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#D8385E",
             "textDecorationLine": "underline",
@@ -2594,6 +2826,88 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
         ]
       }
     />
+  </View>
+</View>
+`;
+
+exports[`<Button /> Snapshots primary buttons with v3theme should match snapshot with v3theme Button 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    disabled={false}
+    full={false}
+    inverted={false}
+    pressed={false}
+    secondary={false}
+    small={false}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#D8385E",
+          "borderRadius": 9999,
+          "flexDirection": "row",
+          "height": 48,
+          "justifyContent": "center",
+          "paddingLeft": 24,
+          "paddingRight": 24,
+        },
+      ]
+    }
+  >
+    <Text
+      bold={false}
+      color="#FFFFFF"
+      disabled={false}
+      fontSize="medium"
+      inverted={false}
+      light={false}
+      pressed={false}
+      small={false}
+      style={
+        [
+          {
+            "color": "#FFFFFF",
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": "500",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 16,
+            "fontWeight": "600",
+            "lineHeight": 24,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Button
+    </Text>
   </View>
 </View>
 `;
@@ -2648,9 +2962,12 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
     }
   >
     <Text
+      bold={false}
       color="#FFFFFF"
       disabled={false}
+      fontSize="medium"
       inverted={false}
+      light={false}
       pressed={false}
       small={false}
       style={
@@ -2659,7 +2976,14 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
           },
         ]
@@ -2794,9 +3118,12 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#FFFFFF"
       disabled={false}
+      fontSize="medium"
       inverted={false}
+      light={false}
       pressed={false}
       small={false}
       style={
@@ -2805,7 +3132,14 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
           },
         ]
@@ -2863,7 +3197,11 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
     }
   >
     <Text
+      bold={false}
       color="#231B22"
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       secondary={true}
       style={
@@ -2872,7 +3210,14 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#231B22",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#231B22",
             "textDecorationLine": "underline",
@@ -3004,7 +3349,11 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#231B22"
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       secondary={true}
       style={
@@ -3013,7 +3362,14 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#231B22",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#231B22",
             "textDecorationLine": "underline",
@@ -3075,9 +3431,12 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
     }
   >
     <Text
+      bold={false}
       color="#231B22"
       disabled={false}
+      fontSize="medium"
       inverted={true}
+      light={false}
       pressed={false}
       small={false}
       style={
@@ -3086,7 +3445,14 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#231B22",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
           },
         ]
@@ -3220,9 +3586,12 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#231B22"
       disabled={false}
+      fontSize="medium"
       inverted={true}
+      light={false}
       pressed={false}
       small={false}
       style={
@@ -3231,7 +3600,14 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#231B22",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
           },
         ]
@@ -3416,7 +3792,11 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
     }
   >
     <Text
+      bold={false}
       color="#FFFFFF"
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       secondary={true}
       style={
@@ -3425,7 +3805,14 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#FFFFFF",
             "textDecorationLine": "underline",
@@ -3555,7 +3942,11 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#FFFFFF"
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       secondary={true}
       style={
@@ -3564,7 +3955,14 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#FFFFFF",
             "textDecorationLine": "underline",
@@ -3756,9 +4154,12 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
     }
   >
     <Text
+      bold={false}
       color="#FFFFFF"
       disabled={false}
+      fontSize="medium"
       inverted={false}
+      light={false}
       pressed={false}
       small={true}
       style={
@@ -3766,8 +4167,15 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
           {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
             "fontSize": 14,
             "fontWeight": "500",
+            "lineHeight": 16,
             "textAlign": "center",
           },
         ]
@@ -3901,9 +4309,12 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#FFFFFF"
       disabled={false}
+      fontSize="medium"
       inverted={false}
+      light={false}
       pressed={false}
       small={true}
       style={
@@ -3911,8 +4322,15 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
           {
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
             "fontSize": 14,
             "fontWeight": "500",
+            "lineHeight": 16,
             "textAlign": "center",
           },
         ]
@@ -3969,7 +4387,11 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
     }
   >
     <Text
+      bold={false}
       color="#231B22"
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       secondary={true}
       small={true}
@@ -3978,8 +4400,15 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#231B22",
             "fontSize": 14,
             "fontWeight": "500",
+            "lineHeight": 16,
             "textAlign": "center",
             "textDecorationColor": "#231B22",
             "textDecorationLine": "underline",
@@ -4110,7 +4539,11 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#231B22"
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       secondary={true}
       small={true}
@@ -4119,8 +4552,15 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#231B22",
             "fontSize": 14,
             "fontWeight": "500",
+            "lineHeight": 16,
             "textAlign": "center",
             "textDecorationColor": "#231B22",
             "textDecorationLine": "underline",
@@ -4182,9 +4622,12 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
     }
   >
     <Text
+      bold={false}
       color="#FFFFFF"
       disabled={false}
+      fontSize="medium"
       inverted={false}
+      light={false}
       pressed={false}
       small={false}
       style={
@@ -4193,7 +4636,14 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
           },
         ]
@@ -4327,9 +4777,12 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#FFFFFF"
       disabled={false}
+      fontSize="medium"
       inverted={false}
+      light={false}
       pressed={false}
       small={false}
       style={
@@ -4338,7 +4791,14 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
           },
         ]
@@ -4506,7 +4966,11 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
   }
 >
   <Text
+    bold={false}
     disabled={false}
+    fontSize="medium"
+    inverted={false}
+    light={false}
     pressed={false}
     secondary={true}
     style={
@@ -4515,7 +4979,14 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 24,
+        },
+        {
+          "color": "#231B22",
+          "fontSize": 16,
           "fontWeight": "500",
+          "lineHeight": 24,
           "textAlign": "center",
           "textDecorationColor": "#231B22",
           "textDecorationLine": "underline",
@@ -4571,7 +5042,11 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
     }
   >
     <Text
+      bold={false}
       color="#231B22"
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       secondary={true}
       style={
@@ -4580,7 +5055,14 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#231B22",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#231B22",
             "textDecorationLine": "underline",
@@ -4710,7 +5192,11 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
       />
     </RNSVGSvgView>
     <Text
+      bold={false}
       color="#231B22"
+      fontSize="medium"
+      inverted={false}
+      light={false}
       pressed={false}
       secondary={true}
       style={
@@ -4719,7 +5205,14 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#231B22",
+            "fontSize": 16,
             "fontWeight": "500",
+            "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#231B22",
             "textDecorationLine": "underline",

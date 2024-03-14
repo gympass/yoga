@@ -2,12 +2,24 @@ import React from 'react';
 import { render, fireEvent, screen, within } from '@testing-library/react';
 import { Booking, Close } from '@gympass/yoga-icons';
 
-import ThemeProvider from '../../Theme';
+import ThemeProvider, { v3theme } from '../../Theme';
 import Button from '..';
 
 describe('<Button />', () => {
   describe('Snapshots', () => {
     describe('primary buttons', () => {
+      describe('with v3theme', () => {
+        it('should match snapshot with v3theme Button', () => {
+          const { container } = render(
+            <ThemeProvider theme={v3theme}>
+              <Button />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+      });
+
       describe('Without props', () => {
         it('should match snapshot with default Button', () => {
           const { container } = render(
