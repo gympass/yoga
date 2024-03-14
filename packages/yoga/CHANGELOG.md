@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.106.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.105.0...@gympass/yoga@7.106.0) (2024-03-14)
+
+
+### Bug Fixes
+
+* **text:** update default theme to use the correct font weight tokens ([15fb89a](https://github.com/Gympass/yoga/commit/15fb89afc79cf13231949ce65bb48c7e430b87fd))
+
+
+### Features
+
+* **text:** add support to new theming definition patterns in the native context ([980919d](https://github.com/Gympass/yoga/commit/980919d920e2387bc221f61e91fb59761fdfba11))
+* **text:** add support to new theming definition patterns on the web context ([474a248](https://github.com/Gympass/yoga/commit/474a248e6f1543fe7e1a7b426900716146453933))
+* **theme:** update v3 theme to avoid light from default text theming ([bf8a476](https://github.com/Gympass/yoga/commit/bf8a4765b096f44213e2d3e7b864d0fc7ebcfccc))
+* **theme:** update v3theme to override default text components styling ([461642b](https://github.com/Gympass/yoga/commit/461642b3b83dc8de8b35450992c694b483d2434c))
+
+
+
+
+
 # [7.105.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.104.1...@gympass/yoga@7.105.0) (2024-03-13)
 
 
