@@ -57,4 +57,154 @@ export const v3theme = createTheme(tokens => ({
   },
 
   baseFont: tokens.fonts.inter,
+  components: {
+    text: {
+      display1: {
+        fontFamily: 'NaN Holo Condensed',
+        fontsize: tokens.fontSizes.xhuge,
+        fontWeight: tokens.fontWeights.bold,
+        lineHeight: tokens.lineHeights.xhuge,
+      },
+      display2: {
+        fontFamily: 'NaN Holo Condensed',
+        fontsize: tokens.fontSizes.xxxlarge,
+        fontWeight: tokens.fontWeights.bold,
+        lineHeight: tokens.lineHeights.xxlarge,
+      },
+      display3: {
+        fontFamily: 'NaN Holo Condensed',
+        fontsize: tokens.fontSizes.xxlarge,
+        fontWeight: tokens.fontWeights.bold,
+        lineHeight: tokens.lineHeights.xlarge,
+      },
+      display4: {
+        fontFamily: 'NaN Holo Condensed',
+        fontsize: tokens.fontSizes.xlarge,
+        fontWeight: tokens.fontWeights.bold,
+        lineHeight: tokens.lineHeights.medium,
+      },
+      displayNumber: {
+        fontFamily: 'NaN Holo Condensed',
+        fontsize: tokens.fontSizes.xxxlarge,
+        fontWeight: tokens.fontWeights.bold,
+        lineHeight: tokens.lineHeights.xxlarge,
+      },
+      h1: {
+        fontsize: tokens.fontSizes.huge,
+        fontWeight: tokens.fontWeights.medium,
+        lineHeight: tokens.lineHeights.huge,
+      },
+      'h1-bold': {
+        fontWeight: tokens.fontWeights.bold,
+      },
+      h2: {
+        fontsize: tokens.fontSizes.xxxlarge,
+        fontWeight: tokens.fontWeights.medium,
+        lineHeight: tokens.lineHeights.xxxlarge,
+      },
+      'h2-bold': {
+        fontWeight: tokens.fontWeights.bold,
+      },
+      h3: {
+        fontsize: tokens.fontSizes.xxlarge,
+        lineHeight: tokens.lineHeights.xxlarge,
+        fontWeight: tokens.fontWeights.medium,
+      },
+      'h3-bold': {
+        fontWeight: tokens.fontWeights.bold,
+      },
+      h4: {
+        fontsize: tokens.fontSizes.xlarge,
+        fontWeight: tokens.fontWeights.medium,
+        lineHeight: tokens.lineHeights.xlarge,
+      },
+      'h4-bold': {
+        fontWeight: tokens.fontWeights.bold,
+      },
+      h5: {
+        fontsize: tokens.fontSizes.large,
+        fontWeight: tokens.fontWeights.medium,
+        lineHeight: tokens.lineHeights.large,
+      },
+      'h5-bold': {
+        fontWeight: tokens.fontWeights.bold,
+      },
+      body1: {
+        fontsize: tokens.fontSizes.medium,
+        fontWeight: tokens.fontWeights.medium,
+        lineHeight: tokens.lineHeights.medium,
+      },
+      'body1-bold': {
+        fontWeight: tokens.fontWeights.bold,
+      },
+      body2: {
+        fontsize: tokens.fontSizes.small,
+        fontWeight: tokens.fontWeights.medium,
+        lineHeight: tokens.lineHeights.small,
+      },
+      'body2-bold': {
+        fontWeight: tokens.fontWeights.bold,
+      },
+      caption: {
+        fontsize: tokens.fontSizes.xsmall,
+        fontWeight: tokens.fontWeights.regular,
+        lineHeight: tokens.lineHeights.xsmall,
+      },
+      overline: {
+        fontsize: tokens.fontSizes.xsmall,
+        fontWeight: tokens.fontWeights.bold,
+        lineHeight: tokens.lineHeights.xsmall,
+      },
+      sectionTitle: {
+        fontsize: tokens.fontSizes.xsmall,
+        fontWeight: tokens.fontWeights.medium,
+        lineHeight: tokens.lineHeights.xsmall,
+        letterSpacing: 1,
+        textTransform: 'uppercase',
+      },
+      smallestException: {
+        fontsize: tokens.fontSizes.xxsmall,
+        fontWeight: tokens.fontWeights.regular,
+        lineHeight: tokens.lineHeights.xxsmall,
+      },
+
+      // deprecated, please don't use
+      p: {
+        fontsize: tokens.fontSizes.medium,
+        fontWeight: tokens.fontWeights.medium,
+        lineHeight: tokens.lineHeights.medium,
+      },
+      'p-bold': {
+        fontWeight: tokens.fontWeights.bold,
+      },
+      small: {
+        fontsize: tokens.fontSizes.small,
+        fontWeight: tokens.fontWeights.medium,
+        lineHeight: tokens.lineHeights.small,
+      },
+      'small-bold': {
+        fontWeight: tokens.fontWeights.bold,
+      },
+      tiny: {
+        fontsize: tokens.fontSizes.xsmall,
+        fontWeight: tokens.fontWeights.regular,
+        lineHeight: tokens.lineHeights.xsmall,
+      },
+      light: {
+        fontWeight: tokens.fontWeights.light,
+      },
+      regular: {
+        fontWeight: tokens.fontWeights.regular,
+      },
+      medium: {
+        fontWeight: tokens.fontWeights.medium,
+      },
+      bold: {
+        fontWeight: tokens.fontWeights.bold,
+      },
+      black: {
+        fontWeight: tokens.fontWeights.black,
+      },
+    },
+  }
 }));
