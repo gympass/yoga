@@ -46,6 +46,16 @@ import FlagTurkey from './svg/flag_turkey.svg';
 import FlagUK from './svg/flag_uk.svg';
 import FlagUruguay from './svg/flag_uruguay.svg';
 import FlagUS from './svg/flag_us.svg';
+import FlagBoliva from './svg/flag_boliva.svg';
+import FlagGreece from './svg/flag_greece.svg';
+import FlagHongKong from './svg/flag_hongkong.svg';
+import FlagNewZealeand from './svg/flag_newzealand.svg';
+import FlagNorway from './svg/flag_norway.svg';
+import FlagRomania from './svg/flag_romania.svg';
+import FlagThailand from './svg/flag_thailand.svg';
+import FlagTaiwan from './svg/flag_taiwan.svg';
+import FlagTunisia from './svg/flag_tunisia.svg';
+import FlagMalasya from './svg/flag_malasya.svg';
 
 export {
   FlagArgentina,
@@ -96,4 +106,14 @@ export {
   FlagUK,
   FlagUruguay,
   FlagUS,
+  FlagBoliva,
+  FlagGreece,
+  FlagHongKong,
+  FlagNewZealeand,
+  FlagNorway,
+  FlagRomania,
+  FlagThailand,
+  FlagTaiwan,
+  FlagTunisia,
+  FlagMalasya,
 };
