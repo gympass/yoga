@@ -144,7 +144,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
-          "fontWeight": "500",
+          "fontWeight": "400",
           "lineHeight": 24,
         },
       ]
@@ -159,7 +159,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 14,
-          "fontWeight": "500",
+          "fontWeight": "400",
           "lineHeight": 20,
         },
       ]
@@ -189,7 +189,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 12,
-          "fontWeight": "700",
+          "fontWeight": "500",
           "lineHeight": 16,
         },
       ]
@@ -347,7 +347,7 @@ exports[`<Text /> Snapshots should match snapshot with Text bold 1`] = `
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 48,
-          "fontWeight": "700",
+          "fontWeight": "500",
           "lineHeight": 56,
         },
       ]
@@ -363,7 +363,7 @@ exports[`<Text /> Snapshots should match snapshot with Text bold 1`] = `
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 40,
-          "fontWeight": "700",
+          "fontWeight": "500",
           "lineHeight": 48,
         },
       ]
@@ -379,7 +379,7 @@ exports[`<Text /> Snapshots should match snapshot with Text bold 1`] = `
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 32,
-          "fontWeight": "700",
+          "fontWeight": "500",
           "lineHeight": 40,
         },
       ]
@@ -626,6 +626,343 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
     variant="tertiary"
   >
     Live the mission
+  </Text>,
+]
+`;
+
+exports[`<Text /> Snapshots should match snapshot with Text when v3Theme is settled 1`] = `
+[
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "NaN Holo Condensed",
+          "fontSize": 60,
+          "fontWeight": "700",
+          "lineHeight": 60,
+        },
+      ]
+    }
+  >
+    Text Display1
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "NaN Holo Condensed",
+          "fontSize": 40,
+          "fontWeight": "700",
+          "lineHeight": 40,
+        },
+      ]
+    }
+  >
+    Text Display2
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "NaN Holo Condensed",
+          "fontSize": 32,
+          "fontWeight": "700",
+          "lineHeight": 32,
+        },
+      ]
+    }
+  >
+    Text Display3
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "NaN Holo Condensed",
+          "fontSize": 24,
+          "fontWeight": "700",
+          "lineHeight": 24,
+        },
+      ]
+    }
+  >
+    Text Display4
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "NaN Holo Condensed",
+          "fontSize": 40,
+          "fontWeight": "700",
+          "lineHeight": 40,
+        },
+      ]
+    }
+  >
+    Text DisplayNumber
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 48,
+          "fontWeight": "500",
+          "lineHeight": 56,
+        },
+      ]
+    }
+  >
+    Text H1
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 40,
+          "fontWeight": "500",
+          "lineHeight": 48,
+        },
+      ]
+    }
+  >
+    Text H2
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 32,
+          "fontWeight": "500",
+          "lineHeight": 40,
+        },
+      ]
+    }
+  >
+    Text H3
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 24,
+          "fontWeight": "500",
+          "lineHeight": 32,
+        },
+      ]
+    }
+  >
+    Text H4
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 24,
+        },
+      ]
+    }
+  >
+    Text Body1
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "lineHeight": 20,
+        },
+      ]
+    }
+  >
+    Text Body2
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "lineHeight": 16,
+        },
+      ]
+    }
+  >
+    Text Caption
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 12,
+          "fontWeight": "500",
+          "lineHeight": 16,
+        },
+      ]
+    }
+  >
+    Text Overline
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 12,
+          "fontWeight": "500",
+          "letterSpacing": 1,
+          "lineHeight": 16,
+          "textTransform": "uppercase",
+        },
+      ]
+    }
+  >
+    Text SectionTitle
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 10,
+          "fontWeight": "400",
+          "lineHeight": 12,
+        },
+      ]
+    }
+  >
+    Text SmallestException
+  </Text>,
+  <Text
+    bold={false}
+    fontSize="medium"
+    inverted={false}
+    light={false}
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 24,
+        },
+      ]
+    }
+  >
+    Text
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "lineHeight": 20,
+        },
+      ]
+    }
+  >
+    Text Small
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "lineHeight": 16,
+        },
+      ]
+    }
+  >
+    Text Tiny
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 16,
+          "fontWeight": "400",
+        },
+      ]
+    }
+  >
+    Text Regular
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 16,
+          "fontWeight": "500",
+        },
+      ]
+    }
+  >
+    Text Medium
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 16,
+          "fontWeight": "700",
+        },
+      ]
+    }
+  >
+    Text Bold
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 16,
+          "fontWeight": "900",
+        },
+      ]
+    }
+  >
+    Text Black
   </Text>,
 ]
 `;

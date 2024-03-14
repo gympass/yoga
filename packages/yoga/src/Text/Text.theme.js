@@ -2,106 +2,145 @@ const Text = ({ fontSizes, lineHeights, fontWeights }) => ({
   display1: {
     fontFamily: 'NaN Holo Condensed',
     fontsize: fontSizes.xhuge,
-    lineHeight: lineHeights.xhuge,
     fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.xhuge,
   },
   display2: {
     fontFamily: 'NaN Holo Condensed',
     fontsize: fontSizes.xxxlarge,
-    lineHeight: lineHeights.xxlarge,
     fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.xxlarge,
   },
   display3: {
     fontFamily: 'NaN Holo Condensed',
     fontsize: fontSizes.xxlarge,
-    lineHeight: lineHeights.xlarge,
     fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.xlarge,
   },
   display4: {
     fontFamily: 'NaN Holo Condensed',
     fontsize: fontSizes.xlarge,
-    lineHeight: lineHeights.medium,
     fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.medium,
   },
   displayNumber: {
     fontFamily: 'NaN Holo Condensed',
     fontsize: fontSizes.xxxlarge,
-    lineHeight: lineHeights.xxlarge,
     fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.xxlarge,
   },
   h1: {
     fontsize: fontSizes.huge,
-    lineHeight: lineHeights.huge,
     fontWeight: fontWeights.medium,
+    lineHeight: lineHeights.huge,
+  },
+  'h1-light': {
+    fontWeight: fontWeights.light,
   },
   h2: {
     fontsize: fontSizes.xxxlarge,
-    lineHeight: lineHeights.xxxlarge,
     fontWeight: fontWeights.medium,
+    lineHeight: lineHeights.xxxlarge,
+  },
+  'h2-light': {
+    fontWeight: fontWeights.light,
   },
   h3: {
     fontsize: fontSizes.xxlarge,
-    lineHeight: lineHeights.xxlarge,
     fontWeight: fontWeights.medium,
+    lineHeight: lineHeights.xxlarge,
+  },
+  'h3-light': {
+    fontWeight: fontWeights.light,
   },
   h4: {
     fontsize: fontSizes.xlarge,
-    lineHeight: lineHeights.xlarge,
     fontWeight: fontWeights.medium,
+    lineHeight: lineHeights.xlarge,
+  },
+  'h4-light': {
+    fontWeight: fontWeights.light,
   },
   h5: {
     fontsize: fontSizes.large,
-    lineHeight: lineHeights.large,
     fontWeight: fontWeights.medium,
+    lineHeight: lineHeights.large,
+  },
+  'h5-light': {
+    fontWeight: fontWeights.light,
   },
   body1: {
     fontsize: fontSizes.medium,
+    fontWeight: fontWeights.regular,
     lineHeight: lineHeights.medium,
+  },
+  'body1-bold': {
     fontWeight: fontWeights.medium,
   },
   body2: {
     fontsize: fontSizes.small,
+    fontWeight: fontWeights.regular,
     lineHeight: lineHeights.small,
+  },
+  'body2-bold': {
     fontWeight: fontWeights.medium,
   },
   caption: {
     fontsize: fontSizes.xsmall,
-    lineHeight: lineHeights.xsmall,
     fontWeight: fontWeights.regular,
+    lineHeight: lineHeights.xsmall,
   },
   overline: {
     fontsize: fontSizes.xsmall,
+    fontWeight: fontWeights.medium,
     lineHeight: lineHeights.xsmall,
-    fontWeight: fontWeights.bold,
   },
   sectionTitle: {
     fontsize: fontSizes.xsmall,
-    lineHeight: lineHeights.xsmall,
     fontWeight: fontWeights.medium,
+    lineHeight: lineHeights.xsmall,
     letterSpacing: 1,
     textTransform: 'uppercase',
   },
   smallestException: {
     fontsize: fontSizes.xxsmall,
-    lineHeight: lineHeights.xxsmall,
     fontWeight: fontWeights.regular,
+    lineHeight: lineHeights.xxsmall,
   },
 
   // deprecated, please don't use
   p: {
     fontsize: fontSizes.medium,
-    lineHeight: lineHeights.medium,
     fontWeight: fontWeights.regular,
+    lineHeight: lineHeights.medium,
+  },
+  'p-light': {
+    fontWeight: fontWeights.light,
+  },
+  'p-bold': {
+    fontWeight: fontWeights.medium,
   },
   small: {
     fontsize: fontSizes.small,
-    lineHeight: lineHeights.small,
     fontWeight: fontWeights.regular,
+    lineHeight: lineHeights.small,
+  },
+  'small-light': {
+    fontWeight: fontWeights.light,
+  },
+  'small-bold': {
+    fontWeight: fontWeights.medium,
   },
   tiny: {
     fontsize: fontSizes.xsmall,
-    lineHeight: lineHeights.xsmall,
     fontWeight: fontWeights.regular,
+    lineHeight: lineHeights.xsmall,
+  },
+  'tiny-light': {
+    fontWeight: fontWeights.light,
+  },
+  'tiny-bold': {
+    fontWeight: fontWeights.medium,
   },
   light: {
     fontWeight: fontWeights.light,

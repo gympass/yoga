@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
-import { ThemeProvider } from '../..';
 import { Text } from '.';
+import { ThemeProvider } from '../..';
 
 describe('<Text />', () => {
   describe('Snapshots', () => {
@@ -31,6 +31,40 @@ describe('<Text />', () => {
           <Text.Medium>Live the mission</Text.Medium>
           <Text.Bold>Live the mission</Text.Bold>
           <Text.Black>Live the mission</Text.Black>
+        </ThemeProvider>,
+      );
+
+      expect(toJSON()).toMatchSnapshot();
+    });
+
+    it('should match snapshot with Text when v3Theme is settled', () => {
+      const { toJSON } = render(
+        <ThemeProvider>
+          <Text.Display1>Text Display1</Text.Display1>
+          <Text.Display2>Text Display2</Text.Display2>
+          <Text.Display3>Text Display3</Text.Display3>
+          <Text.Display4>Text Display4</Text.Display4>
+          <Text.DisplayNumber>Text DisplayNumber</Text.DisplayNumber>
+          <Text.H1>Text H1</Text.H1>
+          <Text.H2>Text H2</Text.H2>
+          <Text.H3>Text H3</Text.H3>
+          <Text.H4>Text H4</Text.H4>
+          <Text.Body1>Text Body1</Text.Body1>
+          <Text.Body2>Text Body2</Text.Body2>
+          <Text.Caption>Text Caption</Text.Caption>
+          <Text.Overline>Text Overline</Text.Overline>
+          <Text.SectionTitle>Text SectionTitle</Text.SectionTitle>
+          <Text.SmallestException>
+            Text SmallestException
+          </Text.SmallestException>
+          {/* deprecated, please don't use */}
+          <Text>Text</Text>
+          <Text.Small>Text Small</Text.Small>
+          <Text.Tiny>Text Tiny</Text.Tiny>
+          <Text.Regular>Text Regular</Text.Regular>
+          <Text.Medium>Text Medium</Text.Medium>
+          <Text.Bold>Text Bold</Text.Bold>
+          <Text.Black>Text Black</Text.Black>
         </ThemeProvider>,
       );
 

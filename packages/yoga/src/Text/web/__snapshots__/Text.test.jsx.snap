@@ -108,7 +108,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   line-height: 24px;
   color: #231B22;
   font-family: Rubik;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c11 {
@@ -118,7 +118,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   line-height: 20px;
   color: #231B22;
   font-family: Rubik;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c12 {
@@ -138,7 +138,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   line-height: 16px;
   color: #231B22;
   font-family: Rubik;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .c14 {
@@ -362,7 +362,6 @@ exports[`<Text /> Snapshots should match snapshot with Text bold 1`] = `
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
-  font-weight: 700;
 }
 
 <div>
@@ -453,7 +452,6 @@ exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
   line-height: 56px;
   color: #231B22;
   font-family: Rubik;
-  font-weight: 500;
   font-weight: 300;
 }
 
@@ -464,7 +462,6 @@ exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
   line-height: 48px;
   color: #231B22;
   font-family: Rubik;
-  font-weight: 500;
   font-weight: 300;
 }
 
@@ -475,7 +472,6 @@ exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
   line-height: 40px;
   color: #231B22;
   font-family: Rubik;
-  font-weight: 500;
   font-weight: 300;
 }
 
@@ -608,6 +604,359 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
   >
     Live the mission
   </h3>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with Text when v3theme is settled 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+  line-height: 60px;
+  color: #1D1D1F;
+  font-family: NaN Holo Condensed,Inter;
+  font-weight: 700;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  line-height: 40px;
+  color: #1D1D1F;
+  font-family: NaN Holo Condensed,Inter;
+  font-weight: 700;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  line-height: 32px;
+  color: #1D1D1F;
+  font-family: NaN Holo Condensed,Inter;
+  font-weight: 700;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+  color: #1D1D1F;
+  font-family: NaN Holo Condensed,Inter;
+  font-weight: 700;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  line-height: 40px;
+  color: #1D1D1F;
+  font-family: NaN Holo Condensed,Inter;
+  font-weight: 700;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  line-height: 56px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 500;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  line-height: 48px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 500;
+}
+
+.c7 {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  line-height: 40px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 500;
+}
+
+.c8 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 500;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 500;
+}
+
+.c10 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 500;
+}
+
+.c11 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 500;
+}
+
+.c12 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 400;
+}
+
+.c13 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 700;
+}
+
+.c14 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  color: #1D1D1F;
+  text-transform: uppercase;
+  font-family: Inter;
+  font-weight: 500;
+}
+
+.c15 {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  line-height: 12px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 400;
+}
+
+.c17 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 500;
+}
+
+.c18 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 400;
+}
+
+.c19 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 400;
+}
+
+.c20 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 500;
+}
+
+.c21 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 700;
+}
+
+.c22 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 900;
+}
+
+.c16 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+<div>
+  <p
+    class="c0"
+  >
+    Text Display1
+  </p>
+  <p
+    class="c1"
+  >
+    Text Display2
+  </p>
+  <p
+    class="c2"
+  >
+    Text Display3
+  </p>
+  <p
+    class="c3"
+  >
+    Text Display4
+  </p>
+  <p
+    class="c4"
+  >
+    Text DisplayNumber
+  </p>
+  <h1
+    class="c5"
+  >
+    Text H1
+  </h1>
+  <h2
+    class="c6"
+  >
+    Text H2
+  </h2>
+  <h3
+    class="c7"
+  >
+    Text H3
+  </h3>
+  <h4
+    class="c8"
+  >
+    Text H4
+  </h4>
+  <h5
+    class="c9"
+  >
+    Text H5
+  </h5>
+  <p
+    class="c10"
+  >
+    Text Body1
+  </p>
+  <p
+    class="c11"
+  >
+    Text Body2
+  </p>
+  <p
+    class="c12"
+  >
+    Text Caption
+  </p>
+  <p
+    class="c13"
+  >
+    Text Overline
+  </p>
+  <p
+    class="c14"
+  >
+    Text SectionTitle
+  </p>
+  <p
+    class="c15"
+  >
+    Text SmallestException
+  </p>
+  <p
+    class="c16"
+    font-size="medium"
+  >
+    Text
+  </p>
+  <p
+    class="c17"
+  >
+    Text Small
+  </p>
+  <p
+    class="c18"
+  >
+    Text Tiny
+  </p>
+  <p
+    class="c19"
+  >
+    Text Regular
+  </p>
+  <p
+    class="c20"
+  >
+    Text Medium
+  </p>
+  <p
+    class="c21"
+  >
+    Text Bold
+  </p>
+  <p
+    class="c22"
+  >
+    Text Black
+  </p>
 </div>
 `;
 
