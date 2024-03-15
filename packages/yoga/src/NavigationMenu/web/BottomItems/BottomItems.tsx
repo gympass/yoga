@@ -23,7 +23,6 @@ const StyledItems = styled.ul`
       },
     },
   }) => css`
-    position: absolute;
     bottom: 0;
     display: grid;
     grid-auto-columns: minmax(0, 1fr);
