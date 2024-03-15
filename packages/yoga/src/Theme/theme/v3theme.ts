@@ -227,5 +227,12 @@ export const v3theme = createTheme(tokens => ({
         }
       },
     },
+    tag: {
+      font: {
+        size: tokens.fontSizes.xsmall,
+        lineHeight: tokens.fontSizes.xsmall,
+        weight: tokens.fontWeights.bold,
+      },
+    },
   },
 }));

@@ -69,6 +69,7 @@ export const StyledText = styled(({ variant, ...rest }) => (
 
     font-size: ${tag.font.size}px;
     line-height: ${tag.font.lineHeight}px;
+    font-weight: ${tag.font.weight};
   `}
 `;
 

@@ -28,6 +28,7 @@ const Informative = styled(Tag)`
     border-color: ${color.light};
 
     font-size: ${tag.font.size}px;
+    line-height: ${tag.font.lineHeight}px;
     font-weight: ${tag.font.weight};
   `}
 
