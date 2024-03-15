@@ -33,12 +33,57 @@ exports[`<Tag /> should match snapshot 1`] = `
         {
           "color": "#6B6B78",
           "fontSize": 12,
+          "fontWeight": "500",
           "lineHeight": 16,
         },
       ]
     }
   >
     default
+  </Text>
+</View>
+`;
+
+exports[`<Tag /> should match snapshot when v3Theme is settled 1`] = `
+<View
+  small={false}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "borderColor": "#A6A298",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "justifyContent": "center",
+        "paddingBottom": 4,
+        "paddingLeft": 8,
+        "paddingRight": 8,
+        "paddingTop": 4,
+        "width": "auto",
+      },
+    ]
+  }
+  variant=""
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#1D1D1F",
+          "fontFamily": "Inter",
+          "fontSize": 16,
+          "fontWeight": "500",
+        },
+        {
+          "color": "#57544D",
+          "fontSize": 12,
+          "fontWeight": "700",
+          "lineHeight": 12,
+        },
+      ]
+    }
+  >
+    v3Theme
   </Text>
 </View>
 `;
@@ -348,6 +393,7 @@ exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
           {
             "color": "#1D856C",
             "fontSize": 12,
+            "fontWeight": "500",
             "lineHeight": 16,
           },
         ]
@@ -391,6 +437,7 @@ exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
           {
             "color": "#5340C9",
             "fontSize": 12,
+            "fontWeight": "500",
             "lineHeight": 16,
           },
         ]
@@ -431,6 +478,7 @@ exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
           {
             "color": "#CA4808",
             "fontSize": 12,
+            "fontWeight": "500",
             "lineHeight": 16,
           },
         ]
@@ -476,6 +524,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
           {
             "color": "#1D856C",
             "fontSize": 12,
+            "fontWeight": "500",
             "lineHeight": 16,
           },
         ]
@@ -516,6 +565,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
           {
             "color": "#5340C9",
             "fontSize": 12,
+            "fontWeight": "500",
             "lineHeight": 16,
           },
         ]
@@ -556,6 +606,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
           {
             "color": "#CA4808",
             "fontSize": 12,
+            "fontWeight": "500",
             "lineHeight": 16,
           },
         ]
@@ -596,6 +647,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
           {
             "color": "#CA4808",
             "fontSize": 12,
+            "fontWeight": "500",
             "lineHeight": 16,
           },
         ]
