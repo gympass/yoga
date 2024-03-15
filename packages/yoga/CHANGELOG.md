@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.106.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.106.0...@gympass/yoga@7.106.1) (2024-03-15)
+
+
+### Bug Fixes
+
+* remove absolute position ([a245677](https://github.com/Gympass/yoga/commit/a24567782abf686f15dc695c0fa9815d332e33e6))
+
+
+
+
+
 # [7.106.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.105.0...@gympass/yoga@7.106.0) (2024-03-14)
 
 
