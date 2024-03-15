@@ -77,7 +77,7 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -139,7 +139,7 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -417,7 +417,7 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -479,7 +479,7 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -761,7 +761,7 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -1061,7 +1061,7 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }

@@ -40,7 +40,7 @@ exports[`<Menu /> should match snapshot Menu with a onMouseHover props false 1`]
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
@@ -138,7 +138,7 @@ exports[`<Menu /> should match snapshot Menu with an align props end 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
@@ -238,7 +238,7 @@ exports[`<Menu /> should match snapshot Menu with an align props start 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
@@ -338,7 +338,7 @@ exports[`<Menu /> should match snapshot Menu.Item with active 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
@@ -438,7 +438,7 @@ exports[`<Menu /> should match snapshot Menu.Item with disabled 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
@@ -538,7 +538,7 @@ exports[`<Menu /> should match snapshot Menu.Item with disabled and icon 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
@@ -638,7 +638,7 @@ exports[`<Menu /> should match snapshot Menu.Item with icon 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
@@ -738,7 +738,7 @@ exports[`<Menu /> should match snapshot Menu.Item with link 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
@@ -838,7 +838,7 @@ exports[`<Menu /> should match snapshot in default Menu 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;

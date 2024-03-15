@@ -51,9 +51,12 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
       }
     >
       <Text
+        bold={false}
         color="#FFFFFF"
         disabled={false}
+        fontSize="medium"
         inverted={false}
+        light={false}
         pressed={false}
         small={true}
         style={
@@ -61,8 +64,15 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
             {
               "color": "#FFFFFF",
               "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            {
+              "color": "#FFFFFF",
               "fontSize": 14,
               "fontWeight": "500",
+              "lineHeight": 16,
               "textAlign": "center",
             },
           ]
@@ -279,7 +289,11 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
             }
           >
             <Text
+              bold={false}
               color="#231B22"
+              fontSize="medium"
+              inverted={false}
+              light={false}
               pressed={false}
               secondary={true}
               small={true}
@@ -288,8 +302,15 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
                   {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
+                    "fontSize": 16,
+                    "fontWeight": "400",
+                    "lineHeight": 24,
+                  },
+                  {
+                    "color": "#231B22",
                     "fontSize": 14,
                     "fontWeight": "500",
+                    "lineHeight": 16,
                     "textAlign": "center",
                     "textDecorationColor": "#231B22",
                     "textDecorationLine": "underline",
@@ -359,9 +380,12 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
       }
     >
       <Text
+        bold={false}
         color="#FFFFFF"
         disabled={false}
+        fontSize="medium"
         inverted={false}
+        light={false}
         pressed={false}
         small={true}
         style={
@@ -369,8 +393,15 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
             {
               "color": "#FFFFFF",
               "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            {
+              "color": "#FFFFFF",
               "fontSize": 14,
               "fontWeight": "500",
+              "lineHeight": 16,
               "textAlign": "center",
             },
           ]
@@ -517,9 +548,12 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
       }
     >
       <Text
+        bold={false}
         color="#FFFFFF"
         disabled={false}
+        fontSize="medium"
         inverted={false}
+        light={false}
         pressed={false}
         small={true}
         style={
@@ -527,8 +561,15 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
             {
               "color": "#FFFFFF",
               "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            {
+              "color": "#FFFFFF",
               "fontSize": 14,
               "fontWeight": "500",
+              "lineHeight": 16,
               "textAlign": "center",
             },
           ]
@@ -745,7 +786,11 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
             }
           >
             <Text
+              bold={false}
               color="#231B22"
+              fontSize="medium"
+              inverted={false}
+              light={false}
               pressed={false}
               secondary={true}
               small={true}
@@ -754,8 +799,15 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
                   {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
+                    "fontSize": 16,
+                    "fontWeight": "400",
+                    "lineHeight": 24,
+                  },
+                  {
+                    "color": "#231B22",
                     "fontSize": 14,
                     "fontWeight": "500",
+                    "lineHeight": 16,
                     "textAlign": "center",
                     "textDecorationColor": "#231B22",
                     "textDecorationLine": "underline",
@@ -825,9 +877,12 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
       }
     >
       <Text
+        bold={false}
         color="#FFFFFF"
         disabled={false}
+        fontSize="medium"
         inverted={false}
+        light={false}
         pressed={false}
         small={true}
         style={
@@ -835,8 +890,15 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
             {
               "color": "#FFFFFF",
               "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            {
+              "color": "#FFFFFF",
               "fontSize": 14,
               "fontWeight": "500",
+              "lineHeight": 16,
               "textAlign": "center",
             },
           ]

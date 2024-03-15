@@ -172,7 +172,11 @@ exports[`<Banner /> should match snapshot with button 1`] = `
         }
       >
         <Text
+          bold={false}
           color="#231B22"
+          fontSize="medium"
+          inverted={false}
+          light={false}
           pressed={false}
           secondary={true}
           small={true}
@@ -181,8 +185,15 @@ exports[`<Banner /> should match snapshot with button 1`] = `
               {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 24,
+              },
+              {
+                "color": "#231B22",
                 "fontSize": 14,
                 "fontWeight": "500",
+                "lineHeight": 16,
                 "textAlign": "center",
                 "textDecorationColor": "#231B22",
                 "textDecorationLine": "underline",
@@ -659,7 +670,11 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
         }
       >
         <Text
+          bold={false}
           color="#231B22"
+          fontSize="medium"
+          inverted={false}
+          light={false}
           pressed={false}
           secondary={true}
           small={true}
@@ -668,8 +683,15 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
               {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 24,
+              },
+              {
+                "color": "#231B22",
                 "fontSize": 14,
                 "fontWeight": "500",
+                "lineHeight": 16,
                 "textAlign": "center",
                 "textDecorationColor": "#231B22",
                 "textDecorationLine": "underline",
@@ -727,7 +749,11 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
         }
       >
         <Text
+          bold={false}
           color="#231B22"
+          fontSize="medium"
+          inverted={false}
+          light={false}
           pressed={false}
           secondary={true}
           small={true}
@@ -736,8 +762,15 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
               {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 24,
+              },
+              {
+                "color": "#231B22",
                 "fontSize": 14,
                 "fontWeight": "500",
+                "lineHeight": 16,
                 "textAlign": "center",
                 "textDecorationColor": "#231B22",
                 "textDecorationLine": "underline",

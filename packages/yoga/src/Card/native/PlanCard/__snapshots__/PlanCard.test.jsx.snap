@@ -599,9 +599,12 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           }
         >
           <Text
+            bold={false}
             color="#FFFFFF"
             disabled={false}
+            fontSize="medium"
             inverted={false}
+            light={false}
             pressed={false}
             small={false}
             style={
@@ -610,7 +613,14 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                   "color": "#FFFFFF",
                   "fontFamily": "Rubik",
                   "fontSize": 16,
+                  "fontWeight": "400",
+                  "lineHeight": 24,
+                },
+                {
+                  "color": "#FFFFFF",
+                  "fontSize": 16,
                   "fontWeight": "500",
+                  "lineHeight": 24,
                   "textAlign": "center",
                 },
               ]

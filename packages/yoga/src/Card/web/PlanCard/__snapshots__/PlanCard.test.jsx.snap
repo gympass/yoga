@@ -52,7 +52,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -232,6 +232,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   border-radius: 4px;
   border-color: #E0DFFF;
   font-size: 12px;
+  line-height: 16px;
   font-weight: 500;
 }
 
@@ -841,7 +842,7 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -1021,6 +1022,7 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   border-radius: 4px;
   border-color: #E0DFFF;
   font-size: 12px;
+  line-height: 16px;
   font-weight: 500;
 }
 
