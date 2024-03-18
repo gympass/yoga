@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Result, Avatar, ThemeProvider, v3theme } from '@gympass/yoga';
+import { Result, Avatar } from '@gympass/yoga';
 import {
   BuildingFilled,
   Youtube,
@@ -150,74 +150,72 @@ const ResultWrapper = styled.View`
 `;
 
 const ResultPage = () => (
-  <ThemeProvider theme={v3theme}>
-    <ScrollView>
-      <ResultWrapper>
-        <DocTitle>Default Result</DocTitle>
-        <Result
-          rate="5.0"
-          avatar={<Avatar src={avatar} />}
-          attendances={attendancesExample1}
-          title="Ariel Malik"
-          subTitle="Personal"
-          divided
-        >
-          <Result.Details items={entrancesExample1} dots />
-          <Result.Details
-            items={activitiesExample1}
-            dots
-            limit={3}
-            limitLabel="activities"
-          />
-          <Result.Tags items={tagsList} />
-          <Result.Button>Select</Result.Button>
-        </Result>
-      </ResultWrapper>
+  <ScrollView>
+    <ResultWrapper>
+      <DocTitle>Default Result</DocTitle>
+      <Result
+        rate="5.0"
+        avatar={<Avatar src={avatar} />}
+        attendances={attendancesExample1}
+        title="Ariel Malik"
+        subTitle="Personal"
+        divided
+      >
+        <Result.Details items={entrancesExample1} dots />
+        <Result.Details
+          items={activitiesExample1}
+          dots
+          limit={3}
+          limitLabel="activities"
+        />
+        <Result.Tags items={tagsList} />
+        <Result.Button>Select</Result.Button>
+      </Result>
+    </ResultWrapper>
 
-      <ResultWrapper>
-        <DocTitle>Default Result With Circle Avatar</DocTitle>
-        <Result
-          rate="5.0"
-          avatar={<Avatar.Circle src={avatar} />}
-          attendances={attendancesExample2}
-          title="Zenklub"
-        >
-          <Result.Details items={entrancesExample2} dots />
-          <Result.Details items={activitieExample2} dots />
-          <Result.Tags items={tagsList} />
-          <Result.Button>Select</Result.Button>
-        </Result>
-      </ResultWrapper>
-      <ResultWrapper>
-        <DocTitle>Default Result With Circle Avatar Without button</DocTitle>
-        <Result
-          avatar={<Avatar.Circle />}
-          attendances={attendancesExample3}
-          title="John"
-        >
-          <Result.Details items={entrancesExample3} dots />
-          <Result.Details items={activitiesExample3} dots />
-        </Result>
-      </ResultWrapper>
-      <ResultWrapper>
-        <DocTitle>Result With Circle Avatar with button</DocTitle>
-        <Result
-          avatar={<Avatar.Circle src={classAvatar} />}
-          attendances={attendancesExample3}
-          title="John"
-        >
-          <Result.Button>See Details</Result.Button>
-        </Result>
-      </ResultWrapper>
-      <ResultWrapper>
-        <DocTitle>Result without attendances</DocTitle>
-        <Result avatar={<Avatar src={classAvatar} />} title="Gym">
-          <Result.Details items={entrancesExample3} dots />
-          <Result.Details items={activitiesExample3} dots />
-        </Result>
-      </ResultWrapper>
-    </ScrollView>
-  </ThemeProvider>
+    <ResultWrapper>
+      <DocTitle>Default Result With Circle Avatar</DocTitle>
+      <Result
+        rate="5.0"
+        avatar={<Avatar.Circle src={avatar} />}
+        attendances={attendancesExample2}
+        title="Zenklub"
+      >
+        <Result.Details items={entrancesExample2} dots />
+        <Result.Details items={activitieExample2} dots />
+        <Result.Tags items={tagsList} />
+        <Result.Button>Select</Result.Button>
+      </Result>
+    </ResultWrapper>
+    <ResultWrapper>
+      <DocTitle>Default Result With Circle Avatar Without button</DocTitle>
+      <Result
+        avatar={<Avatar.Circle />}
+        attendances={attendancesExample3}
+        title="John"
+      >
+        <Result.Details items={entrancesExample3} dots />
+        <Result.Details items={activitiesExample3} dots />
+      </Result>
+    </ResultWrapper>
+    <ResultWrapper>
+      <DocTitle>Result With Circle Avatar with button</DocTitle>
+      <Result
+        avatar={<Avatar.Circle src={classAvatar} />}
+        attendances={attendancesExample3}
+        title="John"
+      >
+        <Result.Button>See Details</Result.Button>
+      </Result>
+    </ResultWrapper>
+    <ResultWrapper>
+      <DocTitle>Result without attendances</DocTitle>
+      <Result avatar={<Avatar src={classAvatar} />} title="Gym">
+        <Result.Details items={entrancesExample3} dots />
+        <Result.Details items={activitiesExample3} dots />
+      </Result>
+    </ResultWrapper>
+  </ScrollView>
 );
 
 export default ResultPage;
