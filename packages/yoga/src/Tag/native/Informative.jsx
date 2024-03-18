@@ -38,15 +38,10 @@ const StyledTextInformative = styled(StyledText)`
     theme: {
       yoga: {
         colors: { text },
-        components: { tag },
       },
     },
   }) => `
     color: ${text.primary};
-
-    font-size: ${tag.font.size}px;
-    line-height: ${tag.font.lineHeight}px;
-    font-weight: ${tag.font.weight};
   `}
 `;
 

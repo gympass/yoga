@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { oneOf, node, bool } from 'prop-types';
 import { margins, maxWidth } from '@gympass/yoga-system';
+import Text from '../../Text';
 
-const StyledTag = styled.div`
+export const StyledTag = styled.div`
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +14,6 @@ const StyledTag = styled.div`
   ${({
     variant,
     small,
-    ellipsis,
     theme: {
       yoga: {
         colors: {
@@ -46,33 +46,34 @@ const StyledTag = styled.div`
           `
     }
 
-    ${
-      ellipsis
-        ? `
-      display: block;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    `
-        : ``
-    }
-
     color: ${color.dark};
     border-radius: ${tag.border.radius}px;
     border-width: ${tag.border.width}px;
     border-color: ${borderColor.dark};
-
-    font-size: ${tag.font.size}px;
-    line-height: ${tag.font.lineHeight}px;
-    font-weight: ${tag.font.weight};
   `}
 
   ${margins}
   ${maxWidth}
 `;
 
+export const StyledText = styled(Text.Overline)`
+  ${({
+    theme: {
+      yoga: {
+        colors: { text },
+      },
+    },
+  }) => `
+    color: ${text.primary};
+  `}
+`;
+
 /** Tags should be keywords to categorize or organize an item. */
-const Tag = props => <StyledTag {...props} />;
+const Tag = ({ children, variant, small, ellipsis, ...rest }) => (
+  <StyledTag variant={variant} small={small} {...rest}>
+    <StyledText numberOfLines={ellipsis ? 1 : undefined}>{children}</StyledText>
+  </StyledTag>
+);
 
 Tag.propTypes = {
   /** style the tag following the theme (success, informative, attention) */

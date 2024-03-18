@@ -1,15 +1,11 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { func, oneOf, node, bool } from 'prop-types';
-import { margins } from '@gympass/yoga-system';
 
-import Tag from './Tag';
+import { StyledTag, StyledText } from './Tag';
 import Icon from '../../Icon';
 
-const Informative = styled(Tag)`
-  justify-content: center;
-  align-items: center;
-
+const Informative = styled(StyledTag)`
   ${({
     variant,
     theme: {
@@ -26,19 +22,14 @@ const Informative = styled(Tag)`
     color: ${text.primary};
     border-radius: ${tag.border.radius}px;
     border-color: ${color.light};
-
-    font-size: ${tag.font.size}px;
-    line-height: ${tag.font.lineHeight}px;
-    font-weight: ${tag.font.weight};
   `}
-
-  ${margins}
 `;
 
 /** Tags should be keywords to categorize or organize an item. */
 const TagInformative = ({
   children,
   icon,
+  variant,
   theme: {
     yoga: {
       colors: { text },
@@ -47,9 +38,9 @@ const TagInformative = ({
   },
   small,
   ellipsis,
-  ...props
+  ...rest
 }) => (
-  <Informative small={small} ellipsis={ellipsis} {...props}>
+  <Informative variant={variant} small={small} {...rest}>
     {icon && (
       <Icon
         as={icon}
@@ -58,7 +49,7 @@ const TagInformative = ({
         marginRight={tag.icon.margin.right}
       />
     )}
-    {children}
+    <StyledText numberOfLines={ellipsis ? 1 : undefined}>{children}</StyledText>
   </Informative>
 );
 
