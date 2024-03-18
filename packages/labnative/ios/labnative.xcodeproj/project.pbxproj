@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* labnativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* labnativeTests.m */; };
+		062A1DFB7CAC4A3099865966 /* Inter-600.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D55BF133FC04536BD887F44 /* Inter-600.ttf */; };
 		0B1A7C07B71448BA8354D161 /* Rubik-900-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D28BCB1007644299BE8E79A9 /* Rubik-900-italic.ttf */; };
 		1251CB04BB5F4A67A17BB04E /* Rubik-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53B7F739796943F5AD63E19F /* Rubik-900.ttf */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
@@ -58,6 +59,7 @@
 		33F58296D36345399CBC36B3 /* Rubik.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Rubik.ttf; path = ../../yoga/src/Fonts/Rubik.ttf; sourceTree = "<group>"; };
 		53B7F739796943F5AD63E19F /* Rubik-900.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-900.ttf"; path = "../../yoga/src/Fonts/Rubik-900.ttf"; sourceTree = "<group>"; };
 		55DDE15917774C6AB5A11765 /* Rubik-500-italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-500-italic.ttf"; path = "../../yoga/src/Fonts/Rubik-500-italic.ttf"; sourceTree = "<group>"; };
+		5D55BF133FC04536BD887F44 /* Inter-600.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-600.ttf"; path = "../../yoga/src/Fonts/Inter-600.ttf"; sourceTree = "<group>"; };
 		6AA843BE336E44886F15181E /* libPods-labnative-labnativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-labnative-labnativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C094E8AB30445E57B0BF26D /* Pods-labnative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labnative.release.xcconfig"; path = "Target Support Files/Pods-labnative/Pods-labnative.release.xcconfig"; sourceTree = "<group>"; };
 		8C5C1F762A554EADBBCACBD1 /* Rubik-700-italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-700-italic.ttf"; path = "../../yoga/src/Fonts/Rubik-700-italic.ttf"; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				C6C91200DE044F5695E3C07B /* Inter-800.ttf */,
 				E96AA66128D242B09DD38E14 /* Inter-900.ttf */,
 				DEDB45AC00BA45BB9AF5B167 /* Inter.ttf */,
+				5D55BF133FC04536BD887F44 /* Inter-600.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				7F730649CB494993969CCFCE /* Inter-800.ttf in Resources */,
 				D66B574DAD2D485D9BB12FA5 /* Inter-900.ttf in Resources */,
 				748931469D5D48638537FBF5 /* Inter.ttf in Resources */,
+				062A1DFB7CAC4A3099865966 /* Inter-600.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
