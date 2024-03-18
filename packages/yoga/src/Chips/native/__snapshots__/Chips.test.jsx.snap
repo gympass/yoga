@@ -47,11 +47,7 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
   }
 >
   <Text
-    bold={false}
     disabled={false}
-    fontSize="medium"
-    inverted={false}
-    light={false}
     numberOfLines={1}
     selected={false}
     style={
@@ -59,14 +55,12 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
         {
           "color": "#231B22",
           "fontFamily": "Rubik",
-          "fontSize": 16,
+          "fontSize": 12,
           "fontWeight": "400",
-          "lineHeight": 24,
+          "lineHeight": 16,
         },
         {
           "flexShrink": 1,
-          "fontSize": 12,
-          "lineHeight": 16,
         },
       ]
     }
@@ -124,11 +118,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
     }
   >
     <Text
-      bold={false}
       disabled={false}
-      fontSize="medium"
-      inverted={false}
-      light={false}
       numberOfLines={1}
       selected={false}
       style={
@@ -136,14 +126,12 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
-            "fontSize": 16,
+            "fontSize": 12,
             "fontWeight": "400",
-            "lineHeight": 24,
+            "lineHeight": 16,
           },
           {
             "flexShrink": 1,
-            "fontSize": 12,
-            "lineHeight": 16,
           },
         ]
       }
@@ -205,14 +193,13 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
-            "fontSize": 16,
-            "fontWeight": "700",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "lineHeight": 16,
           },
           {
             "color": "#FFFFFF",
             "flexShrink": 1,
-            "fontSize": 12,
-            "lineHeight": 16,
           },
         ]
       }
@@ -301,14 +288,13 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
-            "fontSize": 16,
-            "fontWeight": "700",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "lineHeight": 16,
           },
           {
             "color": "#FFFFFF",
             "flexShrink": 1,
-            "fontSize": 12,
-            "lineHeight": 16,
           },
         ]
       }
@@ -394,11 +380,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     }
   >
     <Text
-      bold={false}
       disabled={false}
-      fontSize="medium"
-      inverted={false}
-      light={false}
       numberOfLines={1}
       selected={false}
       style={
@@ -406,14 +388,12 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
-            "fontSize": 16,
+            "fontSize": 12,
             "fontWeight": "400",
-            "lineHeight": 24,
+            "lineHeight": 16,
           },
           {
             "flexShrink": 1,
-            "fontSize": 12,
-            "lineHeight": 16,
           },
         ]
       }
@@ -467,11 +447,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     }
   >
     <Text
-      bold={false}
       disabled={false}
-      fontSize="medium"
-      inverted={false}
-      light={false}
       numberOfLines={1}
       selected={false}
       style={
@@ -479,14 +455,12 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
-            "fontSize": 16,
+            "fontSize": 12,
             "fontWeight": "400",
-            "lineHeight": 24,
+            "lineHeight": 16,
           },
           {
             "flexShrink": 1,
-            "fontSize": 12,
-            "lineHeight": 16,
           },
         ]
       }
@@ -540,11 +514,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     }
   >
     <Text
-      bold={false}
       disabled={false}
-      fontSize="medium"
-      inverted={false}
-      light={false}
       numberOfLines={1}
       selected={false}
       style={
@@ -552,14 +522,12 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
-            "fontSize": 16,
+            "fontSize": 12,
             "fontWeight": "400",
-            "lineHeight": 24,
+            "lineHeight": 16,
           },
           {
             "flexShrink": 1,
-            "fontSize": 12,
-            "lineHeight": 16,
           },
         ]
       }
@@ -613,11 +581,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     }
   >
     <Text
-      bold={false}
       disabled={false}
-      fontSize="medium"
-      inverted={false}
-      light={false}
       numberOfLines={1}
       selected={false}
       style={
@@ -625,14 +589,12 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
-            "fontSize": 16,
+            "fontSize": 12,
             "fontWeight": "400",
-            "lineHeight": 24,
+            "lineHeight": 16,
           },
           {
             "flexShrink": 1,
-            "fontSize": 12,
-            "lineHeight": 16,
           },
         ]
       }
@@ -694,14 +656,13 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
-            "fontSize": 16,
-            "fontWeight": "700",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "lineHeight": 16,
           },
           {
             "color": "#FFFFFF",
             "flexShrink": 1,
-            "fontSize": 12,
-            "lineHeight": 16,
           },
         ]
       }
@@ -790,14 +751,13 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
-            "fontSize": 16,
-            "fontWeight": "700",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "lineHeight": 16,
           },
           {
             "color": "#FFFFFF",
             "flexShrink": 1,
-            "fontSize": 12,
-            "lineHeight": 16,
           },
         ]
       }
@@ -886,14 +846,13 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
-            "fontSize": 16,
-            "fontWeight": "700",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "lineHeight": 16,
           },
           {
             "color": "#FFFFFF",
             "flexShrink": 1,
-            "fontSize": 12,
-            "lineHeight": 16,
           },
         ]
       }
@@ -955,14 +914,13 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
-            "fontSize": 16,
-            "fontWeight": "700",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "lineHeight": 16,
           },
           {
             "color": "#FFFFFF",
             "flexShrink": 1,
-            "fontSize": 12,
-            "lineHeight": 16,
           },
         ]
       }
@@ -1028,14 +986,13 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
         {
           "color": "#231B22",
           "fontFamily": "Rubik",
-          "fontSize": 16,
-          "fontWeight": "700",
+          "fontSize": 12,
+          "fontWeight": "500",
+          "lineHeight": 16,
         },
         {
           "color": "#FFFFFF",
           "flexShrink": 1,
-          "fontSize": 12,
-          "lineHeight": 16,
         },
       ]
     }
@@ -1093,11 +1050,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
     }
   >
     <Text
-      bold={false}
       disabled={false}
-      fontSize="medium"
-      inverted={false}
-      light={false}
       numberOfLines={1}
       selected={false}
       style={
@@ -1105,14 +1058,12 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
-            "fontSize": 16,
+            "fontSize": 12,
             "fontWeight": "400",
-            "lineHeight": 24,
+            "lineHeight": 16,
           },
           {
             "flexShrink": 1,
-            "fontSize": 12,
-            "lineHeight": 16,
           },
         ]
       }
@@ -1174,14 +1125,13 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
-            "fontSize": 16,
-            "fontWeight": "700",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "lineHeight": 16,
           },
           {
             "color": "#FFFFFF",
             "flexShrink": 1,
-            "fontSize": 12,
-            "lineHeight": 16,
           },
         ]
       }
@@ -1243,14 +1193,13 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
-            "fontSize": 16,
-            "fontWeight": "700",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "lineHeight": 16,
           },
           {
             "color": "#FFFFFF",
             "flexShrink": 1,
-            "fontSize": 12,
-            "lineHeight": 16,
           },
         ]
       }
@@ -1308,11 +1257,7 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
   }
 >
   <Text
-    bold={false}
     disabled={false}
-    fontSize="medium"
-    inverted={false}
-    light={false}
     numberOfLines={1}
     selected={false}
     style={
@@ -1320,14 +1265,12 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
         {
           "color": "#231B22",
           "fontFamily": "Rubik",
-          "fontSize": 16,
+          "fontSize": 12,
           "fontWeight": "400",
-          "lineHeight": 24,
+          "lineHeight": 16,
         },
         {
           "flexShrink": 1,
-          "fontSize": 12,
-          "lineHeight": 16,
         },
       ]
     }
@@ -1384,11 +1327,7 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
   }
 >
   <Text
-    bold={false}
     disabled={false}
-    fontSize="medium"
-    inverted={false}
-    light={false}
     numberOfLines={1}
     selected={false}
     style={
@@ -1396,14 +1335,12 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
         {
           "color": "#231B22",
           "fontFamily": "Rubik",
-          "fontSize": 16,
+          "fontSize": 12,
           "fontWeight": "400",
-          "lineHeight": 24,
+          "lineHeight": 16,
         },
         {
           "flexShrink": 1,
-          "fontSize": 12,
-          "lineHeight": 16,
         },
       ]
     }
@@ -1461,11 +1398,7 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
   }
 >
   <Text
-    bold={false}
     disabled={true}
-    fontSize="medium"
-    inverted={false}
-    light={false}
     numberOfLines={1}
     selected={false}
     style={
@@ -1473,15 +1406,13 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
         {
           "color": "#231B22",
           "fontFamily": "Rubik",
-          "fontSize": 16,
-          "fontWeight": "400",
-          "lineHeight": 24,
+          "fontSize": 12,
+          "fontWeight": "500",
+          "lineHeight": 16,
         },
         {
           "color": "#D7D7E0",
           "flexShrink": 1,
-          "fontSize": 12,
-          "lineHeight": 16,
         },
       ]
     }
@@ -1539,11 +1470,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
     }
   >
     <Text
-      bold={false}
       disabled={false}
-      fontSize="medium"
-      inverted={false}
-      light={false}
       numberOfLines={1}
       selected={false}
       style={
@@ -1551,14 +1478,12 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
-            "fontSize": 16,
+            "fontSize": 12,
             "fontWeight": "400",
-            "lineHeight": 24,
+            "lineHeight": 16,
           },
           {
             "flexShrink": 1,
-            "fontSize": 12,
-            "lineHeight": 16,
           },
         ]
       }
@@ -1612,11 +1537,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
     }
   >
     <Text
-      bold={false}
       disabled={false}
-      fontSize="medium"
-      inverted={false}
-      light={false}
       numberOfLines={1}
       selected={false}
       style={
@@ -1624,14 +1545,12 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
-            "fontSize": 16,
+            "fontSize": 12,
             "fontWeight": "400",
-            "lineHeight": 24,
+            "lineHeight": 16,
           },
           {
             "flexShrink": 1,
-            "fontSize": 12,
-            "lineHeight": 16,
           },
         ]
       }
@@ -1685,11 +1604,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
     }
   >
     <Text
-      bold={false}
       disabled={false}
-      fontSize="medium"
-      inverted={false}
-      light={false}
       numberOfLines={1}
       selected={false}
       style={
@@ -1697,14 +1612,12 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
           {
             "color": "#231B22",
             "fontFamily": "Rubik",
-            "fontSize": 16,
+            "fontSize": 12,
             "fontWeight": "400",
-            "lineHeight": 24,
+            "lineHeight": 16,
           },
           {
             "flexShrink": 1,
-            "fontSize": 12,
-            "lineHeight": 16,
           },
         ]
       }

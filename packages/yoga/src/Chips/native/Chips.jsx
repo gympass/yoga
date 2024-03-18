@@ -121,7 +121,7 @@ const Chips = React.forwardRef(
           )}
           <StyledChips
             disabled={disabled}
-            as={selected ? Text.Overline : Text.Caption}
+            as={selected || disabled ? Text.Overline : Text.Caption}
             selected={selected}
             numberOfLines={1}
           >
