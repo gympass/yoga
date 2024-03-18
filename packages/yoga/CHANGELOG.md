@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.107.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.106.1...@gympass/yoga@7.107.0) (2024-03-18)
+
+
+### Features
+
+* adds theme tokens ([1ac90db](https://github.com/Gympass/yoga/commit/1ac90db268c74614097e16f0e015feff57fcc1a2))
+* fix Skeleton background ([f5c957e](https://github.com/Gympass/yoga/commit/f5c957ea3c2603fe5a8398c6f485648f28c6adb4))
+
+
+
+
+
 ## [7.106.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.106.0...@gympass/yoga@7.106.1) (2024-03-15)
 
 
