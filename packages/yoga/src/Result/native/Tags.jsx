@@ -1,5 +1,5 @@
 import React from 'react';
-import { arrayOf, shape } from 'prop-types';
+import { arrayOf, shape, bool } from 'prop-types';
 import styled from 'styled-components';
 
 import Tag from '../../Tag';
@@ -22,8 +22,12 @@ const Wrapper = styled.ScrollView`
   `}
 `;
 
-const ResultTags = ({ items }) => (
-  <Wrapper horizontal showsHorizontalScrollIndicator={false}>
+const ResultTags = ({ items, disableScroll }) => (
+  <Wrapper
+    horizontal
+    scrollEnabled={!disableScroll}
+    showsHorizontalScrollIndicator={false}
+  >
     {items.map(({ ...props }, index) => (
       // eslint-disable-next-line react/no-array-index-key
       <TagStyled small key={index} {...props} />
@@ -36,6 +40,11 @@ ResultTags.displayName = 'Result.Tags';
 ResultTags.propTypes = {
   /** Props to generate each Tag. See Tag for details */
   items: arrayOf(shape({})).isRequired,
+  disableScroll: bool,
+};
+
+ResultTags.defaultProps = {
+  disableScroll: false,
 };
 
 export default ResultTags;

@@ -8,7 +8,7 @@ import TinyTextIcon from './TinyTextIcon';
 
 const List = styled(Text.Caption).attrs({
   numberOfLines: 1,
-  variant: 'deep',
+  color: ({ color }) => color || 'deep',
 })`
   flex: 1;
 `;
@@ -18,7 +18,7 @@ const ItemSeparator = styled(Box).attrs({
   height: 'zero',
 })``;
 
-const Attendances = ({ attendances, rate }) => (
+const Attendances = ({ attendances, rate, color }) => (
   <Box
     display="flex"
     width="100%"
@@ -27,10 +27,10 @@ const Attendances = ({ attendances, rate }) => (
     flexDirection="row"
     mb="xxxsmall"
   >
-    <List>
+    <List color={color}>
       {attendances.map(({ description, icon }) => (
         <React.Fragment key={description}>
-          <TinyTextIcon as={icon} fill="deep" />
+          <TinyTextIcon as={icon} fill={color || 'deep'} />
           <ItemSeparator />
           {description}
           <ItemSeparator />
@@ -49,10 +49,12 @@ Attendances.propTypes = {
     }),
   ).isRequired,
   rate: string,
+  color: string,
 };
 
 Attendances.defaultProps = {
   rate: undefined,
+  color: 'deep',
 };
 
 export default Attendances;

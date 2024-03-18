@@ -180,10 +180,11 @@ const ResultPage = () => (
         avatar={<Avatar.Circle src={avatar} />}
         attendances={attendancesExample2}
         title="Zenklub"
+        attendancesColor="light"
       >
         <Result.Details items={entrancesExample2} dots />
         <Result.Details items={activitieExample2} dots />
-        <Result.Tags items={tagsList} />
+        <Result.Tags items={tagsList} disableScroll />
         <Result.Button>Select</Result.Button>
       </Result>
     </ResultWrapper>

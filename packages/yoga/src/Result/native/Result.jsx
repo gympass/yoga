@@ -48,18 +48,23 @@ const Result = ({
   subTitle,
   divided,
   children,
+  attendancesColor,
 }) => (
   <StyledBox divided={divided} display="flex" flexDirection="row">
     {Avatar && <>{isValidElement(Avatar) ? Avatar : <Avatar />}</>}
     <Content>
       {!!attendances?.length && (
-        <Attendances attendances={attendances} rate={rate} />
+        <Attendances
+          attendances={attendances}
+          rate={rate}
+          color={attendancesColor}
+        />
       )}
       <Text.Body1 numberOfLines={1} bold>
         {title}
       </Text.Body1>
       {subTitle && subTitle !== '' && (
-        <Text.Body2 numberOfLines={1} variant="stamina">
+        <Text.Body2 numberOfLines={1} color="deep">
           {subTitle}
         </Text.Body2>
       )}
@@ -88,6 +93,8 @@ Result.propTypes = {
   divided: bool,
   /** The chidren necessary */
   children: node,
+  /** The color of attendences icon and description */
+  attendancesColor: string,
 };
 
 Result.defaultProps = {
@@ -96,6 +103,7 @@ Result.defaultProps = {
   subTitle: undefined,
   children: undefined,
   attendances: undefined,
+  attendancesColor: undefined,
 };
 
 export default Result;
