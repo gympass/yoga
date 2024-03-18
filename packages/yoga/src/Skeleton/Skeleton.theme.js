@@ -1,4 +1,4 @@
-const Skeleton = ({ lineHeights, radii }) => ({
+const Skeleton = ({ colors, lineHeights, radii }) => ({
   border: {
     circular: radii.circle,
   },
@@ -14,6 +14,10 @@ const Skeleton = ({ lineHeights, radii }) => ({
       overline: lineHeights.xsmall,
       exception: lineHeights.xxsmall,
     },
+  },
+  background: {
+    primary: colors.elements.backgroundAndDisabled,
+    secondary: colors.elements.lineAndBorders,
   },
 });
 

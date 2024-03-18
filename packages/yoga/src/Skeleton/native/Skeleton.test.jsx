@@ -51,4 +51,15 @@ describe('<Skeleton />', () => {
 
     expect(toJSON()).toMatchSnapshot();
   });
+
+  it('should render all background color variants correctly', () => {
+    const { toJSON } = render(
+      <ThemeProvider>
+        <Skeleton type="text" variant="body1" width="100" />
+        <Skeleton type="text" variant="body1" width="100" color="secondary" />
+      </ThemeProvider>,
+    );
+
+    expect(toJSON()).toMatchSnapshot();
+  });
 });

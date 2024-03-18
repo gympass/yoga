@@ -16,22 +16,23 @@ const StyledSkeleton = styled.div`
   ${heights}
 
   ${({
+    color,
     type,
     variant,
     animation = 'pulse',
     theme: {
       yoga: {
-        colors,
         components: {
           skeleton: {
             border: { [type]: borderRadius },
             height: { [type]: { [variant]: height } = {} },
+            background: { [color]: backgroundColor },
           },
         },
       },
     },
   }) => css`
-    background-color: ${colors.elements.backgroundAndDisabled};
+    background-color: ${backgroundColor};
     ${borderRadius ? `border-radius: ${borderRadius}px;` : ''}
     ${height ? `height: ${height}px;` : ''}
 
@@ -57,6 +58,11 @@ function Skeleton(props) {
 }
 
 Skeleton.propTypes = {
+  /**
+   * Determines which color will be rendered. It can be
+   * 'primary' or 'secondary'.
+   */
+  color: oneOf(['primary', 'secondary']),
   /**
    * Determines which type will be rendered. It can be
    * 'circular', 'rectangular' or 'text'.
@@ -107,6 +113,7 @@ Skeleton.propTypes = {
 Skeleton.defaultProps = {
   variant: undefined,
   animation: 'pulse',
+  color: 'primary',
 };
 
 export default Skeleton;
