@@ -514,7 +514,6 @@ exports[`<Result /> should match snapshot 1`] = `
           />
         </RNSVGSvgView>
         <Text
-          size="xsmall"
           style={
             [
               {
@@ -534,6 +533,7 @@ exports[`<Result /> should match snapshot 1`] = `
       </View>
     </View>
     <Text
+      bold={true}
       numberOfLines={1}
       style={
         [
@@ -1163,6 +1163,7 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
     }
   >
     <Text
+      bold={true}
       numberOfLines={1}
       style={
         [
@@ -2028,7 +2029,6 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
           />
         </RNSVGSvgView>
         <Text
-          size="xsmall"
           style={
             [
               {
@@ -2048,6 +2048,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       </View>
     </View>
     <Text
+      bold={true}
       numberOfLines={1}
       style={
         [

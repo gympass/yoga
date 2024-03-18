@@ -6,7 +6,7 @@ import Text from '../../Text';
 import Rate from './Rate';
 import TinyTextIcon from './TinyTextIcon';
 
-const List = styled(Text.Tiny).attrs({
+const List = styled(Text.Caption).attrs({
   numberOfLines: 1,
   variant: 'deep',
 })`

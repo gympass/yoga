@@ -36,20 +36,6 @@ const Content = styled.View`
   }}
 `;
 
-const Title = styled(Text.Medium)`
-  ${({
-    theme: {
-      yoga: {
-        lineHeights: { medium },
-      },
-    },
-  }) => {
-    return `
-      line-height: ${medium}px;
-    `;
-  }}
-`;
-
 /**
  * The Result component is used when you have a list to show. It is applied to
  * the item individually, and has the option of being applied to different
@@ -69,11 +55,13 @@ const Result = ({
       {!!attendances?.length && (
         <Attendances attendances={attendances} rate={rate} />
       )}
-      <Title numberOfLines={1}>{title}</Title>
+      <Text.Body1 numberOfLines={1} bold>
+        {title}
+      </Text.Body1>
       {subTitle && subTitle !== '' && (
-        <Text.Small numberOfLines={1} variant="stamina">
+        <Text.Body2 numberOfLines={1} variant="stamina">
           {subTitle}
-        </Text.Small>
+        </Text.Body2>
       )}
       {children}
     </Content>
