@@ -89,14 +89,12 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "500",
-              },
-              {
-                "color": "#231B22",
                 "fontSize": 12,
                 "fontWeight": "500",
                 "lineHeight": 16,
+              },
+              {
+                "color": "#231B22",
               },
             ]
           }

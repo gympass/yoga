@@ -881,14 +881,12 @@ exports[`<Result /> should match snapshot 1`] = `
                   {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  },
-                  {
-                    "color": "#231B22",
                     "fontSize": 12,
                     "fontWeight": "500",
                     "lineHeight": 16,
+                  },
+                  {
+                    "color": "#231B22",
                   },
                 ]
               }
@@ -938,14 +936,12 @@ exports[`<Result /> should match snapshot 1`] = `
                   {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  },
-                  {
-                    "color": "#231B22",
                     "fontSize": 12,
                     "fontWeight": "500",
                     "lineHeight": 16,
+                  },
+                  {
+                    "color": "#231B22",
                   },
                 ]
               }
@@ -2347,14 +2343,12 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
                   {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  },
-                  {
-                    "color": "#231B22",
                     "fontSize": 12,
                     "fontWeight": "500",
                     "lineHeight": 16,
+                  },
+                  {
+                    "color": "#231B22",
                   },
                 ]
               }
@@ -2404,14 +2398,12 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
                   {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  },
-                  {
-                    "color": "#231B22",
                     "fontSize": 12,
                     "fontWeight": "500",
                     "lineHeight": 16,
+                  },
+                  {
+                    "color": "#231B22",
                   },
                 ]
               }
