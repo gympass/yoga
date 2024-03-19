@@ -6,7 +6,7 @@ import withTouchable from './withTouchable';
 
 import Text from '../../Text';
 
-const Label = styled(Text).attrs(
+export const Label = styled(Text).attrs(
   ({
     theme: {
       yoga: {
@@ -35,7 +35,7 @@ const Label = styled(Text).attrs(
     `}
 `;
 
-const ButtonContainer = styled.View`
+export const ButtonContainer = styled.View`
   ${({
     pressed,
     disabled,
@@ -194,4 +194,4 @@ Button.defaultProps = {
 
 const ButtonWithTouchable = withTouchable(withTheme(Button));
 
-export { ButtonContainer, Label, ButtonWithTouchable as default };
+export default ButtonWithTouchable;
