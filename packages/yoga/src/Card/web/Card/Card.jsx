@@ -1,4 +1,4 @@
-import { node, oneOf, shape, string } from 'prop-types';
+import { node, oneOf, shape, string, bool } from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -109,11 +109,14 @@ Card.propTypes = {
     ]),
   }),
   children: node,
+  /** applies a shadow to the card (enabled by default) */
+  hasShadow: bool,
 };
 
 Card.defaultProps = {
   ribbon: {},
   children: null,
+  hasShadow: true,
 };
 
 Card.displayName = 'Card';

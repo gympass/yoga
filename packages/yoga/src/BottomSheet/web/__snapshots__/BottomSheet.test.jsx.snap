@@ -92,10 +92,10 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
 }
 
 .c1 {
-  padding: 16px  16px  16px  16px;
+  padding: 16px  16px 16px  16px;
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
   border-radius: 8px;
   background-color: #FFFFFF;
-  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
 }
 
 .c2 {
