@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string, shape, oneOf, node } from 'prop-types';
+import { string, shape, oneOf, node, bool } from 'prop-types';
 
 import Text from '../../../Text';
 import Box from '../../../Box';
@@ -83,18 +83,24 @@ const RibbonText = styled(Text.Tiny)`
   `}
 `;
 
-const Card = React.forwardRef(({ ribbon, children, ...rest }, ref) => (
-  <CardShadow>
-    <CardStyled ref={ref} {...rest}>
-      {Object.keys(ribbon).length > 0 && (
-        <Ribbon variant={ribbon.variant}>
-          <RibbonText variant={ribbon.variant}>{ribbon.text}</RibbonText>
-        </Ribbon>
-      )}
-      {children}
-    </CardStyled>
-  </CardShadow>
-));
+const Card = React.forwardRef(
+  ({ ribbon, children, hasShadow, ...rest }, ref) => {
+    const CardWrapper = hasShadow ? CardShadow : Box;
+
+    return (
+      <CardWrapper>
+        <CardStyled ref={ref} {...rest}>
+          {Object.keys(ribbon).length > 0 && (
+            <Ribbon variant={ribbon.variant}>
+              <RibbonText variant={ribbon.variant}>{ribbon.text}</RibbonText>
+            </Ribbon>
+          )}
+          {children}
+        </CardStyled>
+      </CardWrapper>
+    );
+  },
+);
 
 Card.propTypes = {
   /** text: the content inside the Card Ribbon
@@ -148,12 +154,15 @@ Card.propTypes = {
     'clear',
     'white',
   ]),
+  /** applies a shadow to the card (enabled by default) */
+  hasShadow: bool,
 };
 
 Card.defaultProps = {
   ribbon: {},
   children: null,
   variant: '',
+  hasShadow: true,
 };
 
 Card.displayName = 'Card';

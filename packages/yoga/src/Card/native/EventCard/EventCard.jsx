@@ -9,15 +9,17 @@ import Text from '../../../Text';
 import Box from '../../../Box';
 import Button from '../../../Button';
 
-const { spacing, radii, lineHeights } = theme;
+const { spacing, radii, lineHeights, colors, borders } = theme;
 
-const Event = styled(Card)`
+const Event = styled(Card).attrs({ hasShadow: false })`
   flex-direction: row;
   height: 104px;
   border-radius: ${radii.regular}px;
   padding: ${spacing.zero};
   width: 280px;
   margin-right: ${spacing.xxsmall};
+  border: ${borders.small}px solid ${colors.elements.lineAndBorders};
+
   ${({ small }) =>
     small
       ? css`
@@ -78,7 +80,7 @@ const EventTime = styled(Box)`
   align-items: center;
 `;
 
-const ButtonLink = styled(Button.Link)`
+const ButtonLink = styled(Button.Link).attrs({ secondary: true })`
   align-self: flex-end;
 `;
 
