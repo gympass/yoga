@@ -170,8 +170,8 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
 .c6 {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
@@ -511,8 +511,8 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
 .c6 {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
@@ -920,8 +920,8 @@ exports[`<Heading /> should match snapshot with title 1`] = `
 .c3 {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
@@ -1095,8 +1095,8 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
 .c6 {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
@@ -1239,8 +1239,8 @@ exports[`<Heading /> should override the background color 1`] = `
 .c3 {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
