@@ -17,28 +17,30 @@ const ItemSeparator = styled(Box).attrs({
   height: 'zero',
 })``;
 
-const Attendances = ({ attendances, rate, color }) => (
-  <Box
-    display="flex"
-    width="100%"
-    alignItems="center"
-    justifyContent="center"
-    flexDirection="row"
-    mb="xxxsmall"
-  >
-    <List color={color}>
-      {attendances.map(({ description, icon }) => (
-        <React.Fragment key={description}>
-          <TinyTextIcon as={icon} marginTop="2px" fill={color || 'deep'} />
-          <ItemSeparator w="xxxsmall" />
-          {description}
-          <ItemSeparator w="xxsmall" />
-        </React.Fragment>
-      ))}
-    </List>
-    {rate && <Rate rate={rate} />}
-  </Box>
-);
+const Attendances = ({ attendances, rate, color }) => {
+  return (
+    <Box
+      display="flex"
+      width="100%"
+      alignItems="center"
+      justifyContent="center"
+      flexDirection="row"
+      mb="xxxsmall"
+    >
+      <List color={color}>
+        {attendances.map(({ description, icon }) => (
+          <React.Fragment key={description}>
+            <TinyTextIcon as={icon} marginTop="2px" fill={color || 'deep'} />
+            <ItemSeparator w="xxxsmall" />
+            {description}
+            <ItemSeparator w="xxsmall" />
+          </React.Fragment>
+        ))}
+      </List>
+      {rate && <Rate rate={rate} />}
+    </Box>
+  );
+};
 
 Attendances.propTypes = {
   attendances: arrayOf(
