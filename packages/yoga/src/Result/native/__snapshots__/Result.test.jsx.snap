@@ -291,7 +291,7 @@ exports[`<Result /> should match snapshot 1`] = `
               },
             ]
           }
-          width="xxxsmall"
+          w="xxxsmall"
         />
         Attendance 01
         <View
@@ -300,11 +300,11 @@ exports[`<Result /> should match snapshot 1`] = `
             [
               {
                 "height": 0,
-                "width": 4,
+                "width": 8,
               },
             ]
           }
-          width="xxxsmall"
+          w="xxsmall"
         />
         <View
           height="xsmall"
@@ -408,7 +408,7 @@ exports[`<Result /> should match snapshot 1`] = `
               },
             ]
           }
-          width="xxxsmall"
+          w="xxxsmall"
         />
         Attendance 02
         <View
@@ -417,11 +417,11 @@ exports[`<Result /> should match snapshot 1`] = `
             [
               {
                 "height": 0,
-                "width": 4,
+                "width": 8,
               },
             ]
           }
-          width="xxxsmall"
+          w="xxsmall"
         />
       </Text>
       <View
@@ -590,10 +590,9 @@ exports[`<Result /> should match snapshot 1`] = `
               "flexGrow": 1,
               "flexShrink": 1,
               "fontFamily": "Rubik",
-              "fontSize": 12,
+              "fontSize": 14,
               "fontWeight": "400",
-              "height": 16,
-              "lineHeight": 16,
+              "lineHeight": 20,
             },
           ]
         }
@@ -640,10 +639,9 @@ exports[`<Result /> should match snapshot 1`] = `
               "flexGrow": 1,
               "flexShrink": 1,
               "fontFamily": "Rubik",
-              "fontSize": 12,
+              "fontSize": 14,
               "fontWeight": "400",
-              "height": 16,
-              "lineHeight": 16,
+              "lineHeight": 20,
             },
           ]
         }
@@ -682,9 +680,9 @@ exports[`<Result /> should match snapshot 1`] = `
               {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 16,
+                "lineHeight": 20,
                 "marginLeft": 4,
                 "marginRight": 4,
               },
@@ -740,9 +738,9 @@ exports[`<Result /> should match snapshot 1`] = `
               {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 16,
+                "lineHeight": 20,
                 "marginLeft": 4,
                 "marginRight": 4,
               },
@@ -798,9 +796,9 @@ exports[`<Result /> should match snapshot 1`] = `
               {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 16,
+                "lineHeight": 20,
                 "marginLeft": 4,
                 "marginRight": 4,
               },
@@ -1204,10 +1202,9 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
               "flexGrow": 1,
               "flexShrink": 1,
               "fontFamily": "Rubik",
-              "fontSize": 12,
+              "fontSize": 14,
               "fontWeight": "400",
-              "height": 16,
-              "lineHeight": 16,
+              "lineHeight": 20,
             },
           ]
         }
@@ -1218,9 +1215,9 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
               {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 16,
+                "lineHeight": 20,
               },
             ]
           }
@@ -1254,10 +1251,9 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
               "flexGrow": 1,
               "flexShrink": 1,
               "fontFamily": "Rubik",
-              "fontSize": 12,
+              "fontSize": 14,
               "fontWeight": "400",
-              "height": 16,
-              "lineHeight": 16,
+              "lineHeight": 20,
             },
           ]
         }
@@ -1268,9 +1264,9 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
               {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 16,
+                "lineHeight": 20,
               },
             ]
           }
@@ -1296,9 +1292,9 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
               {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 16,
+                "lineHeight": 20,
                 "marginLeft": 4,
                 "marginRight": 4,
               },
@@ -1326,9 +1322,9 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
               {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 16,
+                "lineHeight": 20,
               },
             ]
           }
@@ -1354,9 +1350,9 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
               {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 16,
+                "lineHeight": 20,
                 "marginLeft": 4,
                 "marginRight": 4,
               },
@@ -1384,9 +1380,9 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
               {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 16,
+                "lineHeight": 20,
               },
             ]
           }
@@ -1412,9 +1408,9 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
               {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 16,
+                "lineHeight": 20,
                 "marginLeft": 4,
                 "marginRight": 4,
               },
@@ -1442,9 +1438,9 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
               {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 16,
+                "lineHeight": 20,
               },
             ]
           }
@@ -1470,9 +1466,9 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
               {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 16,
+                "lineHeight": 20,
                 "marginLeft": 4,
                 "marginRight": 4,
               },
@@ -1500,9 +1496,9 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
               {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 16,
+                "lineHeight": 20,
               },
             ]
           }
@@ -1807,7 +1803,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
               },
             ]
           }
-          width="xxxsmall"
+          w="xxxsmall"
         />
         Attendance 01
         <View
@@ -1816,11 +1812,11 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
             [
               {
                 "height": 0,
-                "width": 4,
+                "width": 8,
               },
             ]
           }
-          width="xxxsmall"
+          w="xxsmall"
         />
         <View
           height="xsmall"
@@ -1924,7 +1920,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
               },
             ]
           }
-          width="xxxsmall"
+          w="xxxsmall"
         />
         Attendance 02
         <View
@@ -1933,11 +1929,11 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
             [
               {
                 "height": 0,
-                "width": 4,
+                "width": 8,
               },
             ]
           }
-          width="xxxsmall"
+          w="xxsmall"
         />
       </Text>
       <View
@@ -2106,10 +2102,9 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
               "flexGrow": 1,
               "flexShrink": 1,
               "fontFamily": "Rubik",
-              "fontSize": 12,
+              "fontSize": 14,
               "fontWeight": "400",
-              "height": 16,
-              "lineHeight": 16,
+              "lineHeight": 20,
             },
           ]
         }
@@ -2156,10 +2151,9 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
               "flexGrow": 1,
               "flexShrink": 1,
               "fontFamily": "Rubik",
-              "fontSize": 12,
+              "fontSize": 14,
               "fontWeight": "400",
-              "height": 16,
-              "lineHeight": 16,
+              "lineHeight": 20,
             },
           ]
         }
@@ -2198,9 +2192,9 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
               {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 16,
+                "lineHeight": 20,
                 "marginLeft": 4,
                 "marginRight": 4,
               },
@@ -2256,9 +2250,9 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
               {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 16,
+                "lineHeight": 20,
                 "marginLeft": 4,
                 "marginRight": 4,
               },

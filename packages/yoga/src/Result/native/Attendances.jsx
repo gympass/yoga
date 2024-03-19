@@ -14,7 +14,6 @@ const List = styled(Text.Caption).attrs({
 `;
 
 const ItemSeparator = styled(Box).attrs({
-  width: 'xxxsmall',
   height: 'zero',
 })``;
 
@@ -30,10 +29,10 @@ const Attendances = ({ attendances, rate, color }) => (
     <List color={color}>
       {attendances.map(({ description, icon }) => (
         <React.Fragment key={description}>
-          <TinyTextIcon as={icon} fill={color || 'deep'} />
-          <ItemSeparator />
+          <TinyTextIcon as={icon} marginTop="2px" fill={color || 'deep'} />
+          <ItemSeparator w="xxxsmall" />
           {description}
-          <ItemSeparator />
+          <ItemSeparator w="xxsmall" />
         </React.Fragment>
       ))}
     </List>
