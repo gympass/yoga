@@ -49,6 +49,7 @@ const StyledTextInformative = styled(StyledText)`
 const TagInformative = ({
   children,
   icon,
+  ellipsis,
   theme: {
     yoga: {
       colors: { text },
@@ -56,9 +57,10 @@ const TagInformative = ({
     },
   },
   small,
-  ...props
+  variant,
+  ...rest
 }) => (
-  <Informative small={small} {...props}>
+  <Informative variant={variant} small={small} {...rest}>
     <Wrapper>
       {icon && (
         <Icon
@@ -68,7 +70,9 @@ const TagInformative = ({
           marginRight={tag.icon.margin.right}
         />
       )}
-      <StyledTextInformative>{children}</StyledTextInformative>
+      <StyledTextInformative numberOfLines={ellipsis ? 1 : undefined}>
+        {children}
+      </StyledTextInformative>
     </Wrapper>
   </Informative>
 );
@@ -80,12 +84,14 @@ TagInformative.propTypes = {
   children: node.isRequired,
   /** Can send small to use this variant */
   small: bool,
+  ellipsis: bool,
 };
 
 TagInformative.defaultProps = {
   variant: 'neutral',
   icon: undefined,
   small: false,
+  ellipsis: false,
 };
 
 TagInformative.displayName = 'Tag.Informative';
