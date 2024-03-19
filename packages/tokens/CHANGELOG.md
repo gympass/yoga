@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.4.1...@gympass/yoga-tokens@3.5.0) (2024-03-19)
+
+
+### Features
+
+* update v3theme to override defaults buttons components ([8a71703](https://github.com/Gympass/yoga/commit/8a7170333b3118c8030f99e8df8e76daaa74fc30))
+
+
+
+
+
 ## [3.4.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.4.0...@gympass/yoga-tokens@3.4.1) (2024-03-05)
 
 **Note:** Version bump only for package @gympass/yoga-tokens

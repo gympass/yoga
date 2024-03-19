@@ -214,5 +214,18 @@ export const v3theme = createTheme(tokens => ({
         fontWeight: tokens.fontWeights.black,
       },
     },
+    button: {
+      font: {
+        size: {
+          default: tokens.fontSizes.medium,
+          small: tokens.fontSizes.small,
+        },
+        weight: tokens.fontWeights.semiBold,
+        height: {
+          default: tokens.lineHeights.medium,
+          small: tokens.lineHeights.xsmall,
+        }
+      },
+    },
   },
 }));

@@ -10,6 +10,10 @@
       "sha1": "e76f580811e031813e7150131a0724811cdd737a"
     },
     {
+      "path": "../yoga/src/Fonts/Inter-600.ttf",
+      "sha1": "5e0c44e57e7e090252d79f622899e67585bb892c"
+    },
+    {
       "path": "../yoga/src/Fonts/Inter-700.ttf",
       "sha1": "47ff07c75746682133b81e7ac0537ce50a4c9916"
     },

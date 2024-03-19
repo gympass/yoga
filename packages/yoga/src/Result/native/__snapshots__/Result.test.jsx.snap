@@ -880,14 +880,12 @@ exports[`<Result /> should match snapshot 1`] = `
                   {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  },
-                  {
-                    "color": "#231B22",
                     "fontSize": 12,
                     "fontWeight": "500",
                     "lineHeight": 16,
+                  },
+                  {
+                    "color": "#231B22",
                   },
                 ]
               }
@@ -937,14 +935,12 @@ exports[`<Result /> should match snapshot 1`] = `
                   {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  },
-                  {
-                    "color": "#231B22",
                     "fontSize": 12,
                     "fontWeight": "500",
                     "lineHeight": 16,
+                  },
+                  {
+                    "color": "#231B22",
                   },
                 ]
               }
@@ -981,16 +977,27 @@ exports[`<Result /> should match snapshot 1`] = `
       }
     >
       <Text
+        bold={false}
         disabled={false}
+        fontSize="medium"
+        fontWeight={500}
+        inverted={false}
+        light={false}
         pressed={false}
         secondary={false}
         style={
           [
             {
-              "color": "#D8385E",
+              "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "500",
+              "lineHeight": 24,
+            },
+            {
+              "color": "#D8385E",
+              "fontSize": 16,
+              "lineHeight": 24,
               "textAlign": "center",
               "textDecorationColor": "#D8385E",
               "textDecorationLine": "underline",
@@ -2333,14 +2340,12 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
                   {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  },
-                  {
-                    "color": "#231B22",
                     "fontSize": 12,
                     "fontWeight": "500",
                     "lineHeight": 16,
+                  },
+                  {
+                    "color": "#231B22",
                   },
                 ]
               }
@@ -2390,14 +2395,12 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
                   {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
-                    "fontSize": 16,
-                    "fontWeight": "500",
-                  },
-                  {
-                    "color": "#231B22",
                     "fontSize": 12,
                     "fontWeight": "500",
                     "lineHeight": 16,
+                  },
+                  {
+                    "color": "#231B22",
                   },
                 ]
               }
@@ -2434,16 +2437,27 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       }
     >
       <Text
+        bold={false}
         disabled={false}
+        fontSize="medium"
+        fontWeight={500}
+        inverted={false}
+        light={false}
         pressed={false}
         secondary={false}
         style={
           [
             {
-              "color": "#D8385E",
+              "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "500",
+              "lineHeight": 24,
+            },
+            {
+              "color": "#D8385E",
+              "fontSize": 16,
+              "lineHeight": 24,
               "textAlign": "center",
               "textDecorationColor": "#D8385E",
               "textDecorationLine": "underline",

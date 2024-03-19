@@ -35,7 +35,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -117,7 +117,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -267,7 +267,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -352,7 +352,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -510,7 +510,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -633,7 +633,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -754,7 +754,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -901,7 +901,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -1026,7 +1026,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -1227,7 +1227,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -1355,7 +1355,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -1559,7 +1559,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -1703,7 +1703,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -1850,7 +1850,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -1922,7 +1922,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -2071,7 +2071,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -2146,7 +2146,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -2298,7 +2298,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -2413,7 +2413,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -2613,7 +2613,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -2731,7 +2731,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -2934,7 +2934,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -3068,7 +3068,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -3205,7 +3205,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -3277,7 +3277,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -3426,7 +3426,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -3501,7 +3501,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -3658,7 +3658,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
@@ -3771,7 +3771,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -3891,7 +3891,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -4006,7 +4006,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -4206,7 +4206,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -4324,7 +4324,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -4527,7 +4527,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -4661,7 +4661,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -4798,7 +4798,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
@@ -4890,7 +4890,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -5059,7 +5059,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
@@ -5154,7 +5154,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -5331,7 +5331,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
@@ -5464,7 +5464,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -5604,7 +5604,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
@@ -5775,7 +5775,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -6031,7 +6031,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
@@ -6205,7 +6205,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -6464,7 +6464,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
@@ -6647,7 +6647,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -6719,7 +6719,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -6868,7 +6868,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -6943,7 +6943,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -7100,7 +7100,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
@@ -7188,7 +7188,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -7325,7 +7325,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -7440,7 +7440,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -7640,7 +7640,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -7758,7 +7758,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -7910,7 +7910,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -8044,7 +8044,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -8206,7 +8206,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -8326,7 +8326,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Def
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -8400,7 +8400,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Def
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -8551,7 +8551,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Lin
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -8690,7 +8690,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -8807,7 +8807,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -9009,7 +9009,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Tex
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -9145,7 +9145,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -9227,7 +9227,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -9377,7 +9377,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -9462,7 +9462,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -9620,7 +9620,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -9743,7 +9743,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -9864,7 +9864,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -10011,7 +10011,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -10136,7 +10136,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -10337,7 +10337,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -10465,7 +10465,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -10669,7 +10669,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -10813,7 +10813,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -10960,7 +10960,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -11032,7 +11032,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -11181,7 +11181,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -11256,7 +11256,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -11408,7 +11408,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -11523,7 +11523,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -11723,7 +11723,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -11841,7 +11841,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -12044,7 +12044,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -12178,7 +12178,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -12315,7 +12315,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
@@ -12407,7 +12407,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -12576,7 +12576,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
@@ -12671,7 +12671,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -12848,7 +12848,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
@@ -12981,7 +12981,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -13121,7 +13121,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
@@ -13292,7 +13292,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -13548,7 +13548,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
@@ -13722,7 +13722,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -13981,7 +13981,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
@@ -14164,7 +14164,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
@@ -14350,7 +14350,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
@@ -14536,7 +14536,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -14608,7 +14608,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -14757,7 +14757,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -14832,7 +14832,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -14989,7 +14989,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
@@ -15102,7 +15102,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -15222,7 +15222,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -15337,7 +15337,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -15537,7 +15537,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -15655,7 +15655,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -15858,7 +15858,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -15992,7 +15992,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -16129,7 +16129,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -16201,7 +16201,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -16350,7 +16350,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -16425,7 +16425,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -16582,7 +16582,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
@@ -16695,7 +16695,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -16815,7 +16815,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -16952,7 +16952,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -17092,7 +17092,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -17207,7 +17207,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -17407,7 +17407,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -17525,7 +17525,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
@@ -17728,7 +17728,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -17862,7 +17862,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -17959,6 +17959,78 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
     <svg
       role="img"
     />
+    Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots primary buttons with v3theme should match snapshot with v3theme Button 1`] = `
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Inter;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+<div>
+  <button
+    class="c0"
+  >
     Button
   </button>
 </div>

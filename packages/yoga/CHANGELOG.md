@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.108.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.107.1...@gympass/yoga@7.108.0) (2024-03-19)
+
+
+### Bug Fixes
+
+* **button:** update native component to use yoga system font weight to support android font weight ([3024ec6](https://github.com/Gympass/yoga/commit/3024ec6f433a2bf2e3b0e9592b259a30bc21b627))
+
+
+### Features
+
+* add inter semibold font weight ([093bc5a](https://github.com/Gympass/yoga/commit/093bc5a787d6bd74608b4de5bc9d874bf60a0d21))
+* add semibold fontWeight ([11be711](https://github.com/Gympass/yoga/commit/11be7110af46d4f095cf09b6af651514f5c128fd))
+* update v3theme to override default tag component style ([d2ebbbf](https://github.com/Gympass/yoga/commit/d2ebbbf1c8c24a97d8565500ffccdbc024162295))
+* update v3theme to override defaults buttons components ([8a71703](https://github.com/Gympass/yoga/commit/8a7170333b3118c8030f99e8df8e76daaa74fc30))
+
+
+
+
+
+## [7.107.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.107.0...@gympass/yoga@7.107.1) (2024-03-19)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
 # [7.107.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.106.1...@gympass/yoga@7.107.0) (2024-03-18)
 
 

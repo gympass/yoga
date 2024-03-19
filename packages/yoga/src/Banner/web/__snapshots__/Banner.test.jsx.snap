@@ -117,7 +117,7 @@ exports[`<Banner /> should match snapshot with button 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -531,7 +531,7 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }

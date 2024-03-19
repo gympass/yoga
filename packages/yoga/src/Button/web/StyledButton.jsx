@@ -49,7 +49,9 @@ const StyledButton = styled.button`
       font-weight: ${button.font.weight};
       font-family: ${baseFont.family};
       letter-spacing: normal;
-      line-height: 1;
+      line-height: ${
+        small ? button.font.lineHeight.small : button.font.lineHeight.default
+      }px;
       text-decoration: none;
 
       svg {
@@ -82,7 +84,7 @@ const StyledButton = styled.button`
       ${
         disabled
           ? `
-      
+
         background-color ${button.types.contained.backgroundColor.disabled};
         color: ${button.types.contained.font.disabled.color};
         pointer-events: none;
@@ -92,7 +94,7 @@ const StyledButton = styled.button`
         }
 
         cursor: not-allowed;
-      
+
       `
           : ''
       }

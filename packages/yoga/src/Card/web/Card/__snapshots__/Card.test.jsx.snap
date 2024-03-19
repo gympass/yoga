@@ -35,7 +35,7 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }

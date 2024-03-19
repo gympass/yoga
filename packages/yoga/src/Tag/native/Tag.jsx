@@ -51,7 +51,7 @@ export const StyledTag = styled.View`
 `;
 
 export const StyledText = styled(({ variant, ...rest }) => (
-  <Text.Medium {...rest} />
+  <Text.Overline {...rest} />
 ))`
   ${({
     variant,
@@ -61,21 +61,17 @@ export const StyledText = styled(({ variant, ...rest }) => (
           text,
           feedback: { [variant]: color = { dark: text.secondary } },
         },
-        components: { tag },
       },
     },
   }) => `
     color: ${color.dark};
-
-    font-size: ${tag.font.size}px;
-    line-height: ${tag.font.lineHeight}px;
   `}
 `;
 
 /** Use Tag component when you want to categorize your content */
-const Tag = ({ children, variant, small, ...props }) => (
-  <StyledTag variant={variant} small={small} {...props}>
-    <StyledText variant={variant}>{children}</StyledText>
+const Tag = ({ children, variant, small, ellipsis, ...rest }) => (
+  <StyledTag variant={variant} small={small} {...rest}>
+    <StyledText numberOfLines={ellipsis ? 1 : undefined}>{children}</StyledText>
   </StyledTag>
 );
 
@@ -85,11 +81,13 @@ Tag.propTypes = {
   /** Can send small to use this variant */
   small: bool,
   children: node.isRequired,
+  ellipsis: bool,
 };
 
 Tag.defaultProps = {
   variant: '',
   small: false,
+  ellipsis: false,
 };
 
 export default Tag;
