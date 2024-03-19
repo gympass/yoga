@@ -18,7 +18,6 @@ const Event = styled(Card).attrs({ hasShadow: false })`
   padding: ${spacing.zero};
   width: 280px;
   margin-right: ${spacing.xxsmall};
-  border: ${borders.small}px solid ${colors.elements.lineAndBorders};
 
   ${({ small }) =>
     small
@@ -32,10 +31,26 @@ const DateInfo = styled(Box)`
   justify-content: center;
   align-items: center;
   width: 56px;
+
+  ${({ small, active }) =>
+    small
+      ? css`
+          border: ${borders.small}px solid
+            ${active ? colors.primary : colors.elements.lineAndBorders};
+          border-radius: ${radii.regular}px;
+        `
+      : css`
+          border: ${borders.small}px solid ${colors.primary};
+          border-top-left-radius: ${radii.regular}px;
+          border-bottom-left-radius: ${radii.regular}px;
+        `}
 `;
 
 const EventInfo = styled(Box)`
   flex: 1;
+  border-top-right-radius: ${radii.regular}px;
+  border-bottom-right-radius: ${radii.regular}px;
+  border: ${borders.small}px solid ${colors.elements.lineAndBorders};
 `;
 
 const Top = styled(Box)`
@@ -90,7 +105,7 @@ const SmallCard = ({
   event,
   onPress,
 }) => (
-  <DateInfo small pv="medium" bg={active ? 'primary' : 'white'}>
+  <DateInfo small active={active} pv="medium" bg={active ? 'primary' : 'white'}>
     <Top>
       {onPress ? (
         <Indicator
