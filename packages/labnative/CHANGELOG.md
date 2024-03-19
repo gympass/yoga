@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.3.16...@gympass/yoga-labnative@2.4.0) (2024-03-19)
+
+
+### Features
+
+* add inter semibold font weight ([093bc5a](https://github.com/gympass/yoga/commit/093bc5a787d6bd74608b4de5bc9d874bf60a0d21))
+* add semibold fontWeight ([11be711](https://github.com/gympass/yoga/commit/11be7110af46d4f095cf09b6af651514f5c128fd))
+
+
+
+
+
 ## [2.3.16](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.3.15...@gympass/yoga-labnative@2.3.16) (2024-03-19)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
