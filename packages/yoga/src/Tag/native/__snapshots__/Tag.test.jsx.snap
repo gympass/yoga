@@ -384,7 +384,7 @@ exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
             "lineHeight": 16,
           },
           {
-            "color": "#1D856C",
+            "color": "#6B6B78",
           },
         ]
       }
@@ -426,7 +426,7 @@ exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
             "lineHeight": 16,
           },
           {
-            "color": "#5340C9",
+            "color": "#6B6B78",
           },
         ]
       }
@@ -465,7 +465,7 @@ exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
             "lineHeight": 16,
           },
           {
-            "color": "#CA4808",
+            "color": "#6B6B78",
           },
         ]
       }
@@ -509,7 +509,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
             "lineHeight": 16,
           },
           {
-            "color": "#1D856C",
+            "color": "#6B6B78",
           },
         ]
       }
@@ -548,7 +548,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
             "lineHeight": 16,
           },
           {
-            "color": "#5340C9",
+            "color": "#6B6B78",
           },
         ]
       }
@@ -587,7 +587,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
             "lineHeight": 16,
           },
           {
-            "color": "#CA4808",
+            "color": "#6B6B78",
           },
         ]
       }
@@ -626,7 +626,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
             "lineHeight": 16,
           },
           {
-            "color": "#CA4808",
+            "color": "#6B6B78",
           },
         ]
       }
