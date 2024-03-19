@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.20.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.19.0...@gympass/yoga-icons@1.20.0) (2024-03-19)
+
+
+### Features
+
+* **icons:** add most priority new country flags ([e19dbff](https://github.com/Gympass/yoga/commit/e19dbffada3d822af021f68ae5ea3b4b0a176583))
+* **icons:** add rest of new countries flags ([3ee1dc5](https://github.com/Gympass/yoga/commit/3ee1dc5dfd98e8451691f9e9246de7ec61c35caa))
+* **icons:** add second most priority wave of new countries flags ([16ad755](https://github.com/Gympass/yoga/commit/16ad755f3d262d2c4872a497e008e8ebb5f45e5e))
+* **icons:** add third wave of new countries flag, adjust imports and order by name ([f3f0eaa](https://github.com/Gympass/yoga/commit/f3f0eaa800ff79d698f446b78a48af47e0d7fa46))
+
+
+
+
+
 # [1.19.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.18.0...@gympass/yoga-icons@1.19.0) (2024-02-27)
 
 
