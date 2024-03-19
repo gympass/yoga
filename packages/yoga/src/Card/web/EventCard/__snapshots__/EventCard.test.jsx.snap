@@ -44,10 +44,10 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
 }
 
 .c0 {
-  padding: 16px  16px  16px  16px;
+  padding: 0px;
+  box-shadow: none;
   border-radius: 8px;
   background-color: #FFFFFF;
-  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
 }
 
 .c1 {
@@ -65,6 +65,9 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
 
 .c7 {
   padding: 16px 16px 16px 16px;
+  border: 1px solid #D7D7E0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .c7 .c8,
@@ -123,6 +126,9 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   flex-shrink: 0;
   width: 56px;
   background-color: #D8385E;
+  border: 1px solid #D8385E;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 .c4 {

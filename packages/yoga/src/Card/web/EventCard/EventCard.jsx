@@ -6,7 +6,7 @@ import { Time } from '@gympass/yoga-icons';
 import Card from '../Card';
 import { TextRenderer, Text } from '../../../Text/web/Text';
 
-const Event = styled(Card)`
+const Event = styled(Card).attrs({ hasShadow: false })`
   display: flex;
   flex-direction: row;
 
@@ -19,14 +19,20 @@ const EventInfo = styled.div`
   ${({
     theme: {
       yoga: {
+        borders,
+        colors,
         components: {
-          card: { event },
+          card: { event, radii },
         },
       },
     },
   }) => css`
     padding: ${event.info.padding.top}px ${event.info.padding.right}px
       ${event.info.padding.bottom}px ${event.info.padding.left}px;
+
+    border: ${borders.small}px solid ${colors.elements.lineAndBorders};
+    border-top-right-radius: ${radii}px;
+    border-bottom-right-radius: ${radii}px;
 
     ${TextRenderer}, ${Text.Small} {
       display: -webkit-inline-box;
@@ -65,8 +71,9 @@ const DateInfo = styled.div`
   ${({
     theme: {
       yoga: {
+        borders,
         components: {
-          card: { event },
+          card: { event, radii },
         },
       },
     },
@@ -79,6 +86,9 @@ const DateInfo = styled.div`
 
     width: 56px;
     background-color: ${event.date.backgroundColor};
+    border: ${borders.small}px solid ${event.date.backgroundColor};
+    border-top-left-radius: ${radii}px;
+    border-bottom-left-radius: ${radii}px;
   `}
 `;
 
