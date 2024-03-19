@@ -981,6 +981,7 @@ exports[`<Result /> should match snapshot 1`] = `
         bold={false}
         disabled={false}
         fontSize="medium"
+        fontWeight={500}
         inverted={false}
         light={false}
         pressed={false}
@@ -991,13 +992,12 @@ exports[`<Result /> should match snapshot 1`] = `
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
-              "fontWeight": "400",
+              "fontWeight": "500",
               "lineHeight": 24,
             },
             {
               "color": "#D8385E",
               "fontSize": 16,
-              "fontWeight": "500",
               "lineHeight": 24,
               "textAlign": "center",
               "textDecorationColor": "#D8385E",
@@ -2443,6 +2443,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         bold={false}
         disabled={false}
         fontSize="medium"
+        fontWeight={500}
         inverted={false}
         light={false}
         pressed={false}
@@ -2453,13 +2454,12 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
-              "fontWeight": "400",
+              "fontWeight": "500",
               "lineHeight": 24,
             },
             {
               "color": "#D8385E",
               "fontSize": 16,
-              "fontWeight": "500",
               "lineHeight": 24,
               "textAlign": "center",
               "textDecorationColor": "#D8385E",

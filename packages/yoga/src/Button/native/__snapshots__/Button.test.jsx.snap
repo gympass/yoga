@@ -53,6 +53,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       color="#D7D7E0"
       disabled={true}
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -63,13 +64,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
             "color": "#D7D7E0",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#D7D7E0",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
           },
@@ -208,6 +208,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       color="#D7D7E0"
       disabled={true}
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -218,13 +219,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
             "color": "#D7D7E0",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#D7D7E0",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
           },
@@ -396,6 +396,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     bold={false}
     disabled={true}
     fontSize="medium"
+    fontWeight={500}
     inverted={false}
     light={false}
     pressed={false}
@@ -406,13 +407,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
-          "fontWeight": "400",
+          "fontWeight": "500",
           "lineHeight": 24,
         },
         {
           "color": "#D7D7E0",
           "fontSize": 16,
-          "fontWeight": "500",
           "lineHeight": 24,
           "textAlign": "center",
           "textDecorationColor": "#D7D7E0",
@@ -474,6 +474,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       color="#D7D7E0"
       disabled={true}
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -483,13 +484,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
             "color": "#D7D7E0",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#D7D7E0",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#D7D7E0",
@@ -625,6 +625,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       color="#D7D7E0"
       disabled={true}
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -634,13 +635,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
             "color": "#D7D7E0",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#D7D7E0",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#D7D7E0",
@@ -708,6 +708,7 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
       color="#FFFFFF"
       disabled={false}
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -718,13 +719,12 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
           },
@@ -864,6 +864,7 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
       color="#FFFFFF"
       disabled={false}
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -874,13 +875,12 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
           },
@@ -942,6 +942,7 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
       bold={false}
       color="#D8385E"
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -951,13 +952,12 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#D8385E",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#D8385E",
@@ -1093,6 +1093,7 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
       bold={false}
       color="#D8385E"
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -1102,13 +1103,12 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#D8385E",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#D8385E",
@@ -1175,6 +1175,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
       color="#D8385E"
       disabled={false}
       fontSize="medium"
+      fontWeight={500}
       inverted={true}
       light={false}
       pressed={false}
@@ -1185,13 +1186,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#D8385E",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
           },
@@ -1330,6 +1330,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
       color="#D8385E"
       disabled={false}
       fontSize="medium"
+      fontWeight={500}
       inverted={true}
       light={false}
       pressed={false}
@@ -1340,13 +1341,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#D8385E",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
           },
@@ -1535,6 +1535,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
       bold={false}
       color="#FFFFFF"
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -1544,13 +1545,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#FFFFFF",
@@ -1684,6 +1684,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
       bold={false}
       color="#FFFFFF"
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -1693,13 +1694,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#FFFFFF",
@@ -1896,6 +1896,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
       color="#FFFFFF"
       disabled={false}
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -1906,13 +1907,12 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",
             "fontSize": 14,
-            "fontWeight": "500",
             "lineHeight": 16,
             "textAlign": "center",
           },
@@ -2051,6 +2051,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
       color="#FFFFFF"
       disabled={false}
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -2061,13 +2062,12 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",
             "fontSize": 14,
-            "fontWeight": "500",
             "lineHeight": 16,
             "textAlign": "center",
           },
@@ -2128,6 +2128,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
       bold={false}
       color="#D8385E"
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -2138,13 +2139,12 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#D8385E",
             "fontSize": 14,
-            "fontWeight": "500",
             "lineHeight": 16,
             "textAlign": "center",
             "textDecorationColor": "#D8385E",
@@ -2279,6 +2279,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
       bold={false}
       color="#D8385E"
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -2289,13 +2290,12 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#D8385E",
             "fontSize": 14,
-            "fontWeight": "500",
             "lineHeight": 16,
             "textAlign": "center",
             "textDecorationColor": "#D8385E",
@@ -2362,6 +2362,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
       color="#FFFFFF"
       disabled={false}
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -2372,13 +2373,12 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
           },
@@ -2517,6 +2517,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
       color="#FFFFFF"
       disabled={false}
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -2527,13 +2528,12 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
           },
@@ -2576,6 +2576,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
     bold={false}
     disabled={false}
     fontSize="medium"
+    fontWeight={500}
     inverted={false}
     light={false}
     pressed={false}
@@ -2586,13 +2587,12 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
-          "fontWeight": "400",
+          "fontWeight": "500",
           "lineHeight": 24,
         },
         {
           "color": "#D8385E",
           "fontSize": 16,
-          "fontWeight": "500",
           "lineHeight": 24,
           "textAlign": "center",
           "textDecorationColor": "#D8385E",
@@ -2652,6 +2652,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
       bold={false}
       color="#D8385E"
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -2661,13 +2662,12 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#D8385E",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#D8385E",
@@ -2801,6 +2801,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
       bold={false}
       color="#D8385E"
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -2810,13 +2811,12 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
             "color": "#D8385E",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#D8385E",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#D8385E",
@@ -2883,6 +2883,7 @@ exports[`<Button /> Snapshots primary buttons with v3theme should match snapshot
       color="#FFFFFF"
       disabled={false}
       fontSize="medium"
+      fontWeight={600}
       inverted={false}
       light={false}
       pressed={false}
@@ -2893,13 +2894,12 @@ exports[`<Button /> Snapshots primary buttons with v3theme should match snapshot
             "color": "#FFFFFF",
             "fontFamily": "Inter",
             "fontSize": 16,
-            "fontWeight": "500",
+            "fontWeight": "600",
             "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",
             "fontSize": 16,
-            "fontWeight": "600",
             "lineHeight": 24,
             "textAlign": "center",
           },
@@ -2966,6 +2966,7 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
       color="#FFFFFF"
       disabled={false}
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -2976,13 +2977,12 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
           },
@@ -3122,6 +3122,7 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
       color="#FFFFFF"
       disabled={false}
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -3132,13 +3133,12 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
           },
@@ -3200,6 +3200,7 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
       bold={false}
       color="#231B22"
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -3210,13 +3211,12 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#231B22",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#231B22",
@@ -3352,6 +3352,7 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
       bold={false}
       color="#231B22"
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -3362,13 +3363,12 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#231B22",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#231B22",
@@ -3435,6 +3435,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
       color="#231B22"
       disabled={false}
       fontSize="medium"
+      fontWeight={500}
       inverted={true}
       light={false}
       pressed={false}
@@ -3445,13 +3446,12 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#231B22",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
           },
@@ -3590,6 +3590,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
       color="#231B22"
       disabled={false}
       fontSize="medium"
+      fontWeight={500}
       inverted={true}
       light={false}
       pressed={false}
@@ -3600,13 +3601,12 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#231B22",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
           },
@@ -3795,6 +3795,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
       bold={false}
       color="#FFFFFF"
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -3805,13 +3806,12 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#FFFFFF",
@@ -3945,6 +3945,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
       bold={false}
       color="#FFFFFF"
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -3955,13 +3956,12 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#FFFFFF",
@@ -4158,6 +4158,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
       color="#FFFFFF"
       disabled={false}
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -4168,13 +4169,12 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",
             "fontSize": 14,
-            "fontWeight": "500",
             "lineHeight": 16,
             "textAlign": "center",
           },
@@ -4313,6 +4313,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
       color="#FFFFFF"
       disabled={false}
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -4323,13 +4324,12 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",
             "fontSize": 14,
-            "fontWeight": "500",
             "lineHeight": 16,
             "textAlign": "center",
           },
@@ -4390,6 +4390,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
       bold={false}
       color="#231B22"
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -4401,13 +4402,12 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#231B22",
             "fontSize": 14,
-            "fontWeight": "500",
             "lineHeight": 16,
             "textAlign": "center",
             "textDecorationColor": "#231B22",
@@ -4542,6 +4542,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
       bold={false}
       color="#231B22"
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -4553,13 +4554,12 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#231B22",
             "fontSize": 14,
-            "fontWeight": "500",
             "lineHeight": 16,
             "textAlign": "center",
             "textDecorationColor": "#231B22",
@@ -4626,6 +4626,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
       color="#FFFFFF"
       disabled={false}
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -4636,13 +4637,12 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
           },
@@ -4781,6 +4781,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
       color="#FFFFFF"
       disabled={false}
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -4791,13 +4792,12 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
             "color": "#FFFFFF",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
           },
@@ -4969,6 +4969,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
     bold={false}
     disabled={false}
     fontSize="medium"
+    fontWeight={500}
     inverted={false}
     light={false}
     pressed={false}
@@ -4979,13 +4980,12 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
-          "fontWeight": "400",
+          "fontWeight": "500",
           "lineHeight": 24,
         },
         {
           "color": "#231B22",
           "fontSize": 16,
-          "fontWeight": "500",
           "lineHeight": 24,
           "textAlign": "center",
           "textDecorationColor": "#231B22",
@@ -5045,6 +5045,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
       bold={false}
       color="#231B22"
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -5055,13 +5056,12 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#231B22",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#231B22",
@@ -5195,6 +5195,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
       bold={false}
       color="#231B22"
       fontSize="medium"
+      fontWeight={500}
       inverted={false}
       light={false}
       pressed={false}
@@ -5205,13 +5206,12 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
+            "fontWeight": "500",
             "lineHeight": 24,
           },
           {
             "color": "#231B22",
             "fontSize": 16,
-            "fontWeight": "500",
             "lineHeight": 24,
             "textAlign": "center",
             "textDecorationColor": "#231B22",
