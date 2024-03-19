@@ -1,12 +1,22 @@
 import React, { forwardRef } from 'react';
+import { bool, func, node, oneOfType } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
-import { node, oneOfType, func, bool } from 'prop-types';
 
 import withTouchable from './withTouchable';
 
 import Text from '../../Text';
 
-const Label = styled(Text)`
+const Label = styled(Text).attrs(
+  ({
+    theme: {
+      yoga: {
+        components: { button },
+      },
+    },
+  }) => ({
+    fontWeight: button.font.weight,
+  }),
+)`
   text-align: center;
   ${({
     small,
@@ -21,7 +31,6 @@ const Label = styled(Text)`
       line-height: ${
         small ? button.font.lineHeight.small : button.font.lineHeight.default
       }px;
-      font-weight: ${button.font.weight};
       color: ${color};
     `}
 `;
@@ -185,4 +194,4 @@ Button.defaultProps = {
 
 const ButtonWithTouchable = withTouchable(withTheme(Button));
 
-export { Label, ButtonContainer, ButtonWithTouchable as default };
+export { ButtonContainer, Label, ButtonWithTouchable as default };
