@@ -175,7 +175,6 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
-  font-size: 14px;
 }
 
 .c0 {
@@ -309,7 +308,6 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
     >
       <h1
         class="c6"
-        font-size="small"
       >
         Gympass
       </h1>
@@ -516,7 +514,6 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
-  font-size: 14px;
 }
 
 .c0 {
@@ -655,7 +652,6 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
     >
       <h1
         class="c6"
-        font-size="small"
       >
         Gympass
       </h1>
@@ -925,7 +921,6 @@ exports[`<Heading /> should match snapshot with title 1`] = `
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
-  font-size: 14px;
 }
 
 .c0 {
@@ -970,7 +965,6 @@ exports[`<Heading /> should match snapshot with title 1`] = `
     >
       <h1
         class="c3"
-        font-size="small"
       >
         Gympass
       </h1>
@@ -1100,7 +1094,6 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
-  font-size: 14px;
 }
 
 .c0 {
@@ -1202,7 +1195,6 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
     >
       <h1
         class="c6"
-        font-size="small"
       >
         Gympass
       </h1>
@@ -1244,7 +1236,6 @@ exports[`<Heading /> should override the background color 1`] = `
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
-  font-size: 14px;
 }
 
 .c0 {
@@ -1290,7 +1281,6 @@ exports[`<Heading /> should override the background color 1`] = `
     >
       <h1
         class="c3"
-        font-size="small"
       >
         Gympass
       </h1>
