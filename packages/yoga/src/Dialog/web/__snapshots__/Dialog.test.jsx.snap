@@ -63,7 +63,7 @@ exports[`<Dialog /> should match snapshot 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -261,7 +261,7 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -323,7 +323,7 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 24px;
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;

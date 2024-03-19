@@ -89,14 +89,12 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "500",
-              },
-              {
-                "color": "#231B22",
                 "fontSize": 12,
                 "fontWeight": "500",
                 "lineHeight": 16,
+              },
+              {
+                "color": "#231B22",
               },
             ]
           }
@@ -599,9 +597,13 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           }
         >
           <Text
+            bold={false}
             color="#FFFFFF"
             disabled={false}
+            fontSize="medium"
+            fontWeight={500}
             inverted={false}
+            light={false}
             pressed={false}
             small={false}
             style={
@@ -611,6 +613,12 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                   "fontFamily": "Rubik",
                   "fontSize": 16,
                   "fontWeight": "500",
+                  "lineHeight": 24,
+                },
+                {
+                  "color": "#FFFFFF",
+                  "fontSize": 16,
+                  "lineHeight": 24,
                   "textAlign": "center",
                 },
               ]

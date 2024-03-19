@@ -3,12 +3,23 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
 import { Booking } from '@gympass/yoga-icons';
 
-import ThemeProvider from '../../Theme';
+import ThemeProvider, { v3theme } from '../../Theme';
 import Button from '..';
 
 describe('<Button />', () => {
   describe('Snapshots', () => {
     describe('primary buttons', () => {
+      describe('with v3theme', () => {
+        it('should match snapshot with v3theme Button', () => {
+          const { toJSON } = render(
+            <ThemeProvider theme={v3theme}>
+              <Button />
+            </ThemeProvider>,
+          );
+
+          expect(toJSON()).toMatchSnapshot();
+        });
+      });
       describe('Without props', () => {
         it('should match snapshot with default Button', () => {
           const { toJSON } = render(

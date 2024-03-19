@@ -2,9 +2,19 @@ import React from 'react';
 import { render } from '@testing-library/react-native';
 import { Building } from '@gympass/yoga-icons';
 
-import { ThemeProvider, Tag } from '../..';
+import { ThemeProvider, Tag, v3theme } from '../..';
 
 describe('<Tag />', () => {
+  it('should match snapshot when v3Theme is settled', () => {
+    const { toJSON } = render(
+      <ThemeProvider theme={v3theme}>
+        <Tag>v3Theme</Tag>
+      </ThemeProvider>,
+    );
+
+    expect(toJSON()).toMatchSnapshot();
+  });
+
   it('should match snapshot', () => {
     const { toJSON } = render(
       <ThemeProvider>
