@@ -12,7 +12,7 @@ const Wrapper = styled(Content)`
   flex: 1;
 `;
 
-const Title = styled(Text.Medium)`
+const Title = styled(Text.Body1)`
   ${props => {
     const {
       components: { card, cardweb },
@@ -90,7 +90,11 @@ const PlanCardContent = ({
 }) => (
   <Wrapper {...rest}>
     {subtitle && <Subtitle>{subtitle}</Subtitle>}
-    {title && <Title badgeColor={badgeColor}>{title}</Title>}
+    {title && (
+      <Title bold badgeColor={badgeColor}>
+        {title}
+      </Title>
+    )}
     {description && <Description>{description}</Description>}
     {!!price && (
       <Price>

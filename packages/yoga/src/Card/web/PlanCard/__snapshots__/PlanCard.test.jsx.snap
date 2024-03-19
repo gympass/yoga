@@ -126,6 +126,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   margin: 0;
   padding: 0;
   font-size: 16px;
+  line-height: 24px;
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
@@ -510,6 +511,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
   margin: 0;
   padding: 0;
   font-size: 16px;
+  line-height: 24px;
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
@@ -673,6 +675,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   margin: 0;
   padding: 0;
   font-size: 16px;
+  line-height: 24px;
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
@@ -914,6 +917,7 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   margin: 0;
   padding: 0;
   font-size: 16px;
+  line-height: 24px;
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
@@ -1293,6 +1297,7 @@ exports[`<PlanCard /> Snapshots should render the discount 1`] = `
   margin: 0;
   padding: 0;
   font-size: 16px;
+  line-height: 24px;
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
@@ -1439,6 +1444,7 @@ exports[`<PlanCard /> Snapshots should render the extra content 1`] = `
   margin: 0;
   padding: 0;
   font-size: 16px;
+  line-height: 24px;
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
@@ -1518,6 +1524,7 @@ exports[`<PlanCard /> Snapshots should render the title with a colored badge 1`]
   margin: 0;
   padding: 0;
   font-size: 16px;
+  line-height: 24px;
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
@@ -1549,6 +1556,7 @@ exports[`<PlanCard /> Snapshots should render the title without a colored badge 
   margin: 0;
   padding: 0;
   font-size: 16px;
+  line-height: 24px;
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
