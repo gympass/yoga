@@ -80,7 +80,7 @@ const EventTime = styled(Box)`
   align-items: center;
 `;
 
-const ButtonLink = styled(Button.Link).attrs({ secondary: true })`
+const ButtonLink = styled(Button.Link)`
   align-self: flex-end;
 `;
 
@@ -145,7 +145,7 @@ const FullCard = withTheme(
             <Text.Tiny>{event.time}</Text.Tiny>
           </EventTime>
           {!!link && (
-            <ButtonLink onPress={onLinkPress} small>
+            <ButtonLink onPress={onLinkPress} small secondary>
               {link}
             </ButtonLink>
           )}
