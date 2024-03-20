@@ -106,6 +106,7 @@ const DayField = styled.div`
     p {
         color: ${getDayFieldColor(selected, disabled, colors, aux)};
         z-index: 1;
+        position: absolute;
     }
     width: ${datepicker.width.day}px;
     height: ${datepicker.width.day}px;
@@ -273,7 +274,7 @@ function Calendar({
           inRange={type === 'range' && val <= 7 && inRange(val)}
           aux={{ val, startDate, endDate, year, month }}
         >
-          <Text.Small>{val}</Text.Small>
+          <Text.Body2>{val}</Text.Body2>
         </DayField>
       );
     });
@@ -299,7 +300,7 @@ function Calendar({
             disabled={isDisabled(val)}
             aux={{ val, startDate, endDate, year, month }}
           >
-            <Text.Small>{val}</Text.Small>
+            <Text.Body2>{val}</Text.Body2>
           </DayField>
         );
       });
@@ -325,7 +326,7 @@ function Calendar({
           inRange={type === 'range' && val > 7 && inRange(val)}
           aux={{ val, startDate, endDate, year, month }}
         >
-          <Text.Small>{val}</Text.Small>
+          <Text.Body2>{val}</Text.Body2>
         </DayField>
       );
     });
