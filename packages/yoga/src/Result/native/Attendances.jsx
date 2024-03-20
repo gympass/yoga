@@ -6,19 +6,18 @@ import Text from '../../Text';
 import Rate from './Rate';
 import TinyTextIcon from './TinyTextIcon';
 
-const List = styled(Text.Tiny).attrs({
+const List = styled(Text.Caption).attrs({
   numberOfLines: 1,
-  variant: 'deep',
+  color: ({ color }) => color || 'deep',
 })`
   flex: 1;
 `;
 
 const ItemSeparator = styled(Box).attrs({
-  width: 'xxxsmall',
   height: 'zero',
 })``;
 
-const Attendances = ({ attendances, rate }) => (
+const Attendances = ({ attendances, rate, color }) => (
   <Box
     display="flex"
     width="100%"
@@ -27,13 +26,13 @@ const Attendances = ({ attendances, rate }) => (
     flexDirection="row"
     mb="xxxsmall"
   >
-    <List>
+    <List color={color}>
       {attendances.map(({ description, icon }) => (
         <React.Fragment key={description}>
-          <TinyTextIcon as={icon} fill="deep" />
-          <ItemSeparator />
+          <TinyTextIcon as={icon} marginTop="2px" fill={color || 'deep'} />
+          <ItemSeparator w="xxxsmall" />
           {description}
-          <ItemSeparator />
+          <ItemSeparator w="xxsmall" />
         </React.Fragment>
       ))}
     </List>
@@ -49,10 +48,12 @@ Attendances.propTypes = {
     }),
   ).isRequired,
   rate: string,
+  color: string,
 };
 
 Attendances.defaultProps = {
   rate: undefined,
+  color: 'deep',
 };
 
 export default Attendances;

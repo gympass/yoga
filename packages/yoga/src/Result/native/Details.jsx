@@ -15,9 +15,8 @@ import Text from '../../Text';
 import Box from '../../Box';
 import TinyTextIcon from './TinyTextIcon';
 
-const Container = styled(Text.Tiny)`
+const Container = styled(Text.Body2)`
   flex: 1;
-  height: ${({ theme }) => theme.yoga.spacing.small}px;
 `;
 
 const Separator = styled(Box).attrs({
@@ -25,7 +24,7 @@ const Separator = styled(Box).attrs({
   height: 'xxxsmall',
 })``;
 
-const StyledText = styled(Text.Tiny)`
+const StyledText = styled(Text.Body2)`
   ${({
     theme: {
       yoga: {
@@ -119,7 +118,7 @@ ResultDetails.defaultProps = {
   limit: undefined,
   limitLabel: '',
   dots: false,
-  renderItem: Text.Tiny,
+  renderItem: Text.Body2,
 };
 
 export default ResultDetails;

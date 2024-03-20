@@ -36,20 +36,6 @@ const Content = styled.View`
   }}
 `;
 
-const Title = styled(Text.Medium)`
-  ${({
-    theme: {
-      yoga: {
-        lineHeights: { medium },
-      },
-    },
-  }) => {
-    return `
-      line-height: ${medium}px;
-    `;
-  }}
-`;
-
 /**
  * The Result component is used when you have a list to show. It is applied to
  * the item individually, and has the option of being applied to different
@@ -62,18 +48,25 @@ const Result = ({
   subTitle,
   divided,
   children,
+  attendancesColor,
 }) => (
   <StyledBox divided={divided} display="flex" flexDirection="row">
     {Avatar && <>{isValidElement(Avatar) ? Avatar : <Avatar />}</>}
     <Content>
       {!!attendances?.length && (
-        <Attendances attendances={attendances} rate={rate} />
+        <Attendances
+          attendances={attendances}
+          rate={rate}
+          color={attendancesColor}
+        />
       )}
-      <Title numberOfLines={1}>{title}</Title>
+      <Text.Body1 numberOfLines={1} bold>
+        {title}
+      </Text.Body1>
       {subTitle && subTitle !== '' && (
-        <Text.Small numberOfLines={1} variant="stamina">
+        <Text.Body2 numberOfLines={1} color="deep">
           {subTitle}
-        </Text.Small>
+        </Text.Body2>
       )}
       {children}
     </Content>
@@ -100,6 +93,8 @@ Result.propTypes = {
   divided: bool,
   /** The chidren necessary */
   children: node,
+  /** The color of attendences icon and description */
+  attendancesColor: string,
 };
 
 Result.defaultProps = {
@@ -108,6 +103,7 @@ Result.defaultProps = {
   subTitle: undefined,
   children: undefined,
   attendances: undefined,
+  attendancesColor: undefined,
 };
 
 export default Result;

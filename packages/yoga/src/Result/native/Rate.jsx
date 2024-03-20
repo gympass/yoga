@@ -12,18 +12,16 @@ const Content = styled.View`
   align-items: center;
 `;
 
-const RateValue = styled(Text.Medium)`
+const RateValue = styled(Text.Overline)`
   ${({
     theme: {
       yoga: {
         spacing: { xxxsmall },
-        lineHeights: { xsmall },
       },
     },
   }) => {
     return `
       margin-left: ${xxxsmall}px;
-      line-height: ${xsmall}px;
     `;
   }}
 `;
@@ -31,9 +29,7 @@ const RateValue = styled(Text.Medium)`
 const Rate = ({ rate }) => (
   <Content>
     <Icon as={StarFilled} fill="deep" width="xsmall" height="xsmall" />
-    <RateValue variant="deep" size="xsmall">
-      {rate}
-    </RateValue>
+    <RateValue variant="deep">{rate}</RateValue>
   </Content>
 );
 
