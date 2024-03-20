@@ -135,6 +135,8 @@ const Chips = React.forwardRef(
     const [FirstIcon, SecondIcon] = icons;
     const justAnIcon = (icons[0] || icons[1]) && !children;
 
+    const TextComponent = selected || disabled ? Text.Overline : Text.Caption;
+
     return (
       <Wrapper
         selected={selected}
@@ -156,11 +158,7 @@ const Chips = React.forwardRef(
             }}
           />
         )}
-        {children && (selected || disabled) ? (
-          <Text.Overline>{children}</Text.Overline>
-        ) : (
-          <Text.Caption>{children}</Text.Caption>
-        )}
+        {children && <TextComponent>{children}</TextComponent>}
         {selected && counter && !disabled && <Counter value={counter} />}
         {FirstIcon && (
           <Icon
