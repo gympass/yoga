@@ -7,18 +7,10 @@ import { theme } from '../../Theme';
 import Icon from '../../Icon';
 
 import Counter from './Counter';
+import Text from '../../Text';
 
 const BORDER_OPACITY = 0.4;
 const BORDER_PRESSED_OPACITY = 0.6;
-
-const Text = styled.span`
-  display: inline-block;
-  box-sizing: border-box;
-
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-`;
 
 const Wrapper = styled.button`
   height: 32px;
@@ -33,16 +25,7 @@ const Wrapper = styled.button`
   cursor: pointer;
 
   ${({ selected, justAnIcon, ...props }) => {
-    const {
-      spacing,
-      borders,
-      colors,
-      radii,
-      baseFont,
-      fontSizes,
-      fontWeights,
-      lineHeights,
-    } = theme(props);
+    const { spacing, borders, colors, radii } = theme(props);
 
     const commonStyles = `
 
@@ -55,18 +38,15 @@ const Wrapper = styled.button`
       border-radius: ${radii.circle}px;
       border-width: ${borders.small}px;
 
-      font-family: ${baseFont.family};
-      font-size: ${fontSizes.xsmall}px;
-      line-height: ${lineHeights.xsmall}px;
-
       :not(:last-child) {
         margin-right: ${spacing.xxsmall}px;
       }
 
       &[disabled] {
         background-color: ${colors.elements.backgroundAndDisabled};
-        color: ${colors.text.disabled};
-
+        p {
+          color: ${colors.text.disabled};
+        }
         border-color: ${colors.elements.backgroundAndDisabled};
 
         cursor: not-allowed;
@@ -85,12 +65,14 @@ const Wrapper = styled.button`
       return `
         ${commonStyles}
 
+        p {
+          color: ${colors.white};
+        }
+        
         background-color: ${colors.secondary};
-        color: ${colors.white};
+        
 
         border-color: transparent;
-
-        font-weight: ${fontWeights.bold};
 
         &:hover:enabled {
           border-color: ${colors.secondary};
@@ -112,17 +94,18 @@ const Wrapper = styled.button`
       border-color: ${hexToRgb(colors.secondary, BORDER_OPACITY)};
 
       background-color: ${colors.white};
-      color: ${colors.secondary};
-
-      font-weight: ${fontWeights.regular};
-
+      p {
+        color: ${colors.secondary};
+      }
       &:hover:enabled {
         border-color: ${colors.secondary};
       }
 
       &:active:enabled {
         border-color: ${hexToRgb(colors.secondary, BORDER_PRESSED_OPACITY)};
-        color: ${hexToRgb(colors.secondary, BORDER_PRESSED_OPACITY)};
+        p {
+          color: ${hexToRgb(colors.secondary, BORDER_PRESSED_OPACITY)};
+        }
 
         svg {
           fill: ${hexToRgb(colors.secondary, BORDER_PRESSED_OPACITY)};
@@ -152,6 +135,8 @@ const Chips = React.forwardRef(
     const [FirstIcon, SecondIcon] = icons;
     const justAnIcon = (icons[0] || icons[1]) && !children;
 
+    const TextComponent = selected || disabled ? Text.Overline : Text.Caption;
+
     return (
       <Wrapper
         selected={selected}
@@ -173,7 +158,7 @@ const Chips = React.forwardRef(
             }}
           />
         )}
-        {children && <Text>{children}</Text>}
+        {children && <TextComponent>{children}</TextComponent>}
         {selected && counter && !disabled && <Counter value={counter} />}
         {FirstIcon && (
           <Icon

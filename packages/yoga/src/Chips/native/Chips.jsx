@@ -58,11 +58,7 @@ const Wrapper = styled.View.attrs(({ theme: { yoga } }) => {
 `;
 
 const StyledChips = styled(Text)`
-  font-size: ${theme.fontSizes.xsmall}px;
-  line-height: ${theme.lineHeights.xsmall}px;
-
   flex-shrink: 1;
-
   ${({ disabled }) =>
     disabled
       ? css`
@@ -125,7 +121,7 @@ const Chips = React.forwardRef(
           )}
           <StyledChips
             disabled={disabled}
-            as={selected ? Text.Bold : Text}
+            as={selected || disabled ? Text.Overline : Text.Caption}
             selected={selected}
             numberOfLines={1}
           >
