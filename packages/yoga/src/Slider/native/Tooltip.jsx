@@ -38,7 +38,7 @@ const Tip = styled.View(
   `,
 );
 
-const Title = styled(Text.Small)(
+const Title = styled(Text.Body2)(
   ({
     theme: {
       yoga: {
@@ -52,7 +52,7 @@ const Title = styled(Text.Small)(
   `,
 );
 
-const Description = styled(Text.Small)(
+const Description = styled(Text.Body2)(
   ({
     theme: {
       yoga: {
@@ -104,7 +104,9 @@ const RibbonWrapper = styled.View(
   `,
 );
 
-const RibbonText = styled(Text.Bold)(
+const RibbonText = styled(Text.Body2).attrs(() => ({
+  bold: true,
+}))(
   ({
     theme: {
       yoga: {
@@ -115,6 +117,7 @@ const RibbonText = styled(Text.Bold)(
     color: ${slider.tooltip.ribbon.font.color};
 
     font-size: ${slider.tooltip.ribbon.font.size}px;
+    line-height: undefined;
 
     text-align: center;
   `,
