@@ -84,9 +84,12 @@ const Arrow = styled.div`
   `}
 `;
 
-const Ribbon = styled(Text.Bold)`
+const Ribbon = styled(Text.Body2).attrs(() => ({
+  bold: true,
+}))`
   position: relative;
   text-align: center;
+  line-height: normal;
   display: block;
 
   ${({
@@ -106,7 +109,7 @@ const Ribbon = styled(Text.Bold)`
   `}
 `;
 
-const Title = styled(Text.Small)`
+const Title = styled(Text.Body2)`
   display: block;
   text-align: center;
   ${({
@@ -121,7 +124,7 @@ const Title = styled(Text.Small)`
   `}
 `;
 
-const Description = styled(Text.Small)`
+const Description = styled(Text.Body2)`
   display: block;
   text-align: center;
   ${({
