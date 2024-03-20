@@ -35,15 +35,15 @@ const Fieldset = styled.fieldset`
 
     ${disabled ? `border-color: ${colors.elements.lineAndBorders};` : ''}
 
-    &:hover, &:focus-within { 
+    &:hover, &:focus-within {
       &:not(:disabled) {
         border-color: ${
           error ? colors.feedback.attention[1] : input.border.color.typed
         };
-      } 
+      }
     }
 
-    
+
   `}
 `;
 

@@ -24,17 +24,15 @@ export const Wrapper = styled.div`
   `}
 `;
 
-const Info = styled(Text.Small)`
+const Info = styled(Text.Body2)`
   color: currentColor;
   ${({
     hideMaxLength,
     theme: {
-      yoga: {
-        components: { input },
-      },
+      yoga: { baseFont },
     },
   }) => `
-    font-size: ${input.helper.font.size}px;
+    font-family: ${baseFont.family};
 
     ${hideMaxLength ? 'display: none;' : ''}
     `}

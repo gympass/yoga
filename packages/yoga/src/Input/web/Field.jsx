@@ -17,6 +17,7 @@ const labelTransition = css`
     transition-timing-function: cubic-bezier(${transition.timing[0].join()});
 
     font-size: ${input.label.font.size.typed}px;
+    line-height: ${input.label.font.lineHeight.typed}px;
   `}
 `;
 
@@ -61,6 +62,7 @@ const Field = styled.input`
     font-family: ${baseFont.family}, sans-serif;
     font-size: ${input.font.size}px;
     font-weight: ${input.font.weight};
+    line-height: ${input.font.lineHeight}px;
 
     &:focus {
       color: ${input.font.color.focus};
@@ -74,7 +76,6 @@ const Field = styled.input`
       & ~ label {
         ${labelTransition}
 
-        font-weight: ${input.label.font.weight};
         color: ${error
           ? `${colors.feedback.attention[1]}`
           : `${colors.text.primary}`};

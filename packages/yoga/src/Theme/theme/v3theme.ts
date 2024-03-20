@@ -227,5 +227,32 @@ export const v3theme = createTheme(tokens => ({
         }
       },
     },
+    input: {
+      font: {
+        size: tokens.fontSizes.small,
+        weight: tokens.fontWeights.medium,
+        lineHeight: tokens.lineHeights.small,
+      },
+      label: {
+        font: {
+          size: {
+            default: tokens.fontSizes.small,
+            typed: tokens.fontSizes.xsmall,
+          },
+          weight: tokens.fontWeights.medium,
+          lineHeight: {
+            default: tokens.lineHeights.small,
+            typed: tokens.lineHeights.xsmall,
+          },
+        },
+      },
+      helper: {
+        font: {
+          size: tokens.fontSizes.xsmall,
+          weight: tokens.fontWeights.regular,
+          lineHeight: tokens.lineHeights.xsmall,
+        },
+      },
+    },
   },
 }));
