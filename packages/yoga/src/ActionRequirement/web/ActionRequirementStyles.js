@@ -6,6 +6,7 @@ import Button from '../../Button';
 
 export const Title = styled(Text.H4).attrs({
   as: 'p',
+  bold: true,
 })`
   ${({
     theme: {
