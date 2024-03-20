@@ -142,6 +142,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
     </RNSVGSvgView>
   </View>
   <Text
+    bold={true}
     style={
       [
         {
@@ -157,11 +158,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
     Welcome to the world of feeling good!
   </Text>
   <Text
-    bold={false}
     color="deep"
-    fontSize="medium"
-    inverted={false}
-    light={false}
     mt="small"
     style={
       [
@@ -179,11 +176,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
     Lets make it a good day!
   </Text>
   <Text
-    bold={false}
     color="deep"
-    fontSize="medium"
-    inverted={false}
-    light={false}
     mt="small"
     style={
       [
@@ -586,11 +579,7 @@ exports[`<ActionRequirement /> should match snapshot with text display 1`] = `
     Welcome to the world of feeling good!
   </Text>
   <Text
-    bold={false}
     color="deep"
-    fontSize="medium"
-    inverted={false}
-    light={false}
     mt="small"
     style={
       [
