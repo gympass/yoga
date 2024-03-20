@@ -22,6 +22,7 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
 }
 
 .c4:focus {
@@ -50,7 +51,7 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
-  font-weight: 400;
+  line-height: 16px;
   color: #231B22;
 }
 
@@ -127,11 +128,13 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   max-width: 0;
   width: auto;
   height: 0;
-  font-weight: normal;
   visibility: hidden;
   -webkit-transition-property: max-width,padding;
   transition-property: max-width,padding;
+  font-family: Rubik;
   font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -158,8 +161,10 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   user-select: none;
   top: 16px;
   left: 16px;
+  font-family: Rubik;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
   color: #6B6B78;
   -webkit-transition-property: -webkit-transform,font-size;
   -webkit-transition-property: transform,font-size;
@@ -312,6 +317,7 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
 }
 
 .c3:focus {
@@ -340,7 +346,7 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
-  font-weight: 400;
+  line-height: 16px;
   color: #231B22;
 }
 
@@ -418,11 +424,13 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   max-width: 0;
   width: auto;
   height: 0;
-  font-weight: normal;
   visibility: hidden;
   -webkit-transition-property: max-width,padding;
   transition-property: max-width,padding;
+  font-family: Rubik;
   font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -449,8 +457,10 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   user-select: none;
   top: 16px;
   left: 16px;
+  font-family: Rubik;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
   color: #6B6B78;
   -webkit-transition-property: -webkit-transform,font-size;
   -webkit-transition-property: transform,font-size;
@@ -607,6 +617,7 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
 }
 
 .c4:focus {
@@ -635,7 +646,7 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
-  font-weight: 400;
+  line-height: 16px;
   color: #231B22;
 }
 
@@ -712,11 +723,13 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   max-width: 0;
   width: auto;
   height: 0;
-  font-weight: normal;
   visibility: hidden;
   -webkit-transition-property: max-width,padding;
   transition-property: max-width,padding;
+  font-family: Rubik;
   font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -743,8 +756,10 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   user-select: none;
   top: 16px;
   left: 16px;
+  font-family: Rubik;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
   color: #6B6B78;
   -webkit-transition-property: -webkit-transform,font-size;
   -webkit-transition-property: transform,font-size;
@@ -897,6 +912,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
 }
 
 .c3:focus {
@@ -925,7 +941,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
-  font-weight: 400;
+  line-height: 16px;
   color: #231B22;
 }
 
@@ -986,6 +1002,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
+  line-height: 16px;
 }
 
 .c3[type="number"]::-webkit-outer-spin-button,
@@ -1024,11 +1041,13 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   max-width: 0;
   width: auto;
   height: 0;
-  font-weight: normal;
   visibility: hidden;
   -webkit-transition-property: max-width,padding;
   transition-property: max-width,padding;
+  font-family: Rubik;
   font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -1055,8 +1074,10 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   user-select: none;
   top: 16px;
   left: 16px;
+  font-family: Rubik;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
   color: #6B6B78;
   -webkit-transition-property: -webkit-transform,font-size;
   -webkit-transition-property: transform,font-size;
@@ -1213,6 +1234,7 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
 }
 
 .c4:focus {
@@ -1241,7 +1263,7 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
-  font-weight: 400;
+  line-height: 16px;
   color: #231B22;
 }
 
@@ -1302,6 +1324,7 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
+  line-height: 16px;
 }
 
 .c4[type="number"]::-webkit-outer-spin-button,
@@ -1335,7 +1358,7 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   font-family: Rubik;
   font-weight: 400;
   color: currentColor;
-  font-size: 12px;
+  font-family: Rubik;
 }
 
 .c3 {
@@ -1364,11 +1387,13 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   max-width: 0;
   width: auto;
   height: 0;
-  font-weight: normal;
   visibility: hidden;
   -webkit-transition-property: max-width,padding;
   transition-property: max-width,padding;
+  font-family: Rubik;
   font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -1395,8 +1420,10 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   user-select: none;
   top: 16px;
   left: 16px;
+  font-family: Rubik;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
   color: #6B6B78;
   -webkit-transition-property: -webkit-transform,font-size;
   -webkit-transition-property: transform,font-size;

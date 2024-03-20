@@ -22,6 +22,7 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
 }
 
 .c2:focus {
@@ -50,7 +51,7 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
-  font-weight: 400;
+  line-height: 16px;
   color: #231B22;
 }
 
@@ -127,11 +128,13 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   max-width: 0;
   width: auto;
   height: 0;
-  font-weight: normal;
   visibility: hidden;
   -webkit-transition-property: max-width,padding;
   transition-property: max-width,padding;
+  font-family: Rubik;
   font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -158,8 +161,10 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   user-select: none;
   top: 16px;
   left: 16px;
+  font-family: Rubik;
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
   color: #6B6B78;
   -webkit-transition-property: -webkit-transform,font-size;
   -webkit-transition-property: transform,font-size;
