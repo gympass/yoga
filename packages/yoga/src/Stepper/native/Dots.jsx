@@ -1,5 +1,5 @@
-import { arrayOf, bool, number, string } from 'prop-types';
 import React from 'react';
+import { arrayOf, bool, number, string } from 'prop-types';
 import styled, { css } from 'styled-components';
 
 import Text from '../../Text';
@@ -39,7 +39,7 @@ const Dot = styled.View(
   },
 );
 
-const Label = styled(Text.Bold)(
+const Label = styled(Text.Body2)(
   ({
     active,
     secondary,
@@ -58,7 +58,6 @@ const Label = styled(Text.Bold)(
       color: ${active
         ? stepper.label.color[state]
         : stepper.label.color.inactive};
-      font-size: ${stepper.label.font.size}px;
       text-align: center;
     `;
   },
@@ -70,7 +69,11 @@ function Dots({ activeStep, labels, secondary }) {
       {labels.map((label, index) => (
         <DotWrapper key={label}>
           <Dot active={activeDot(index, activeStep)} secondary={secondary} />
-          <Label active={activeDot(index, activeStep)} secondary={secondary}>
+          <Label
+            bold
+            active={activeDot(index, activeStep)}
+            secondary={secondary}
+          >
             {label}
           </Label>
         </DotWrapper>

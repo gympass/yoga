@@ -1,4 +1,4 @@
-const Stepper = ({ colors, spacing, fontSizes, fontWeights, radii }) => ({
+const Stepper = ({ colors, spacing, radii }) => ({
   padding: {
     left: spacing.xxlarge,
     right: spacing.xxlarge,
@@ -19,10 +19,6 @@ const Stepper = ({ colors, spacing, fontSizes, fontWeights, radii }) => ({
     },
   },
   label: {
-    font: {
-      weight: fontWeights.bold,
-      size: fontSizes.xsmall,
-    },
     color: {
       active: colors.primary,
       inactive: colors.elements.selectionAndIcons,
