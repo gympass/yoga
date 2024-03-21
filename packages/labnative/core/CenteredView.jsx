@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { View, Text, Switch } from 'react-native';
-import { ThemeProvider } from '@gympass/yoga';
+import { ThemeProvider, v3theme } from '@gympass/yoga';
 import { ThemeConsumer } from 'styled-components';
 
 const CenteredView = props => {
   const [darkMode, setDarkMode] = useState('#FFF');
+  const [useV3Theme, setUseV3Theme] = useState(false);
 
   return (
-    <ThemeProvider>
+    <ThemeProvider theme={useV3Theme ? v3theme : null}>
       <>
         <View
           style={{
@@ -21,29 +22,55 @@ const CenteredView = props => {
         >
           <ThemeConsumer>
             {theme => (
-              <View
-                style={{
-                  alignItems: 'center',
-                  flexDirection: 'row',
-                }}
-              >
-                <Text
+              <>
+                <View
                   style={{
-                    color: darkMode === '#FFF' ? '#41414A' : '#FFF',
-                    marginRight: 8,
+                    alignItems: 'center',
+                    flexDirection: 'row',
                   }}
                 >
-                  Dark Mode
-                </Text>
+                  <Text
+                    style={{
+                      color: darkMode === '#FFF' ? '#41414A' : '#FFF',
+                      marginRight: 8,
+                    }}
+                  >
+                    Dark Mode
+                  </Text>
 
-                <Switch
-                  onChange={() => {
-                    setDarkMode(darkMode === '#FFF' ? '#41414A' : '#FFF');
+                  <Switch
+                    onChange={() => {
+                      setDarkMode(darkMode === '#FFF' ? '#41414A' : '#FFF');
+                    }}
+                    value={darkMode === '#41414A'}
+                    trackColor={{ true: theme.yoga.colors.primary }}
+                  />
+                </View>
+
+                <View
+                  style={{
+                    alignItems: 'center',
+                    flexDirection: 'row',
                   }}
-                  value={darkMode === '#41414A'}
-                  trackColor={{ true: theme.yoga.colors.primary }}
-                />
-              </View>
+                >
+                  <Text
+                    style={{
+                      color: darkMode === '#FFF' ? '#41414A' : '#FFF',
+                      marginRight: 8,
+                    }}
+                  >
+                    v3theme
+                  </Text>
+
+                  <Switch
+                    onChange={() => {
+                      setUseV3Theme(c => !c);
+                    }}
+                    value={useV3Theme}
+                    trackColor={{ true: theme.yoga.colors.primary }}
+                  />
+                </View>
+              </>
             )}
           </ThemeConsumer>
         </View>

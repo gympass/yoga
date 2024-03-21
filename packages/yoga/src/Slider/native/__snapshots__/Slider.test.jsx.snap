@@ -1917,13 +1917,15 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                 }
               >
                 <Text
+                  bold={true}
                   style={
                     [
                       {
                         "color": "#FFFFFF",
                         "fontFamily": "Rubik",
                         "fontSize": 12,
-                        "fontWeight": "700",
+                        "fontWeight": "500",
+                        "lineHeight": undefined,
                         "textAlign": "center",
                       },
                     ]
@@ -2269,13 +2271,15 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                 }
               >
                 <Text
+                  bold={true}
                   style={
                     [
                       {
                         "color": "#FFFFFF",
                         "fontFamily": "Rubik",
                         "fontSize": 12,
-                        "fontWeight": "700",
+                        "fontWeight": "500",
+                        "lineHeight": undefined,
                         "textAlign": "center",
                       },
                     ]
