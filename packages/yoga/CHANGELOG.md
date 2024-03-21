@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.110.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.109.0...@gympass/yoga@7.110.0) (2024-03-21)
+
+
+### Bug Fixes
+
+* **datepicker:** updates month and year to use the correct text component ([49d5532](https://github.com/Gympass/yoga/commit/49d5532ee4723bef4bed6383bc429862201d6a63))
+
+
+### Features
+
+* **datepicker:** update text to match font-weight ([8105279](https://github.com/Gympass/yoga/commit/8105279204550a6b28083bebaa00f884c7ff9c57))
+* update text to match font-weight ([fdefc3b](https://github.com/Gympass/yoga/commit/fdefc3b1075c4a48aa103570fbbb7819d3dce42d))
+
+
+
+
+
 # [7.109.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.108.5...@gympass/yoga@7.109.0) (2024-03-21)
 
 
