@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.4.8...@gympass/yoga-labnative@2.5.0) (2024-03-21)
+
+
+### Features
+
+* add theme toggle on the labnative doc ([068e481](https://github.com/gympass/yoga/commit/068e481816f582b048b1ec157d82e95288a177b4))
+
+
+
+
+
 ## [2.4.8](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.4.7...@gympass/yoga-labnative@2.4.8) (2024-03-21)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
