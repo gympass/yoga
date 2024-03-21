@@ -27,7 +27,7 @@ const DaysWrapper = styled.div`
   `}
 `;
 
-const Day = styled(Text.SectionTitle)`
+const Day = styled(Text.Overline)`
   ${({
     theme: {
       yoga: { colors },
@@ -106,6 +106,7 @@ const DayField = styled.div`
     p {
         color: ${getDayFieldColor(selected, disabled, colors, aux)};
         z-index: 1;
+        position: absolute;
     }
     width: ${datepicker.width.day}px;
     height: ${datepicker.width.day}px;
@@ -273,7 +274,7 @@ function Calendar({
           inRange={type === 'range' && val <= 7 && inRange(val)}
           aux={{ val, startDate, endDate, year, month }}
         >
-          <Text.Small>{val}</Text.Small>
+          <Text.Body2 bold={isEqual(val)}>{val}</Text.Body2>
         </DayField>
       );
     });
@@ -299,7 +300,7 @@ function Calendar({
             disabled={isDisabled(val)}
             aux={{ val, startDate, endDate, year, month }}
           >
-            <Text.Small>{val}</Text.Small>
+            <Text.Body2 bold={isEqual(val)}>{val}</Text.Body2>
           </DayField>
         );
       });
@@ -325,7 +326,7 @@ function Calendar({
           inRange={type === 'range' && val > 7 && inRange(val)}
           aux={{ val, startDate, endDate, year, month }}
         >
-          <Text.Small>{val}</Text.Small>
+          <Text.Body2 bold={isEqual(val)}>{val}</Text.Body2>
         </DayField>
       );
     });
@@ -379,12 +380,12 @@ function Calendar({
           fill="primary"
           data-testid="previous-month-arrow"
         />
-        <Text style={{ alignSelf: 'center' }}>
+        <Text.Body2 style={{ alignSelf: 'center' }} bold>
           {new Intl.DateTimeFormat('en-US', {
             month: 'long',
             year: 'numeric',
           }).format(new Date(year, month, 1, 0, 0, 0))}
-        </Text>
+        </Text.Body2>
         <Icon
           style={{ cursor: 'pointer' }}
           as={ChevronRight}

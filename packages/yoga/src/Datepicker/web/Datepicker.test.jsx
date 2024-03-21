@@ -2,13 +2,23 @@ import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { format } from 'date-fns';
 
-import { ThemeProvider, Datepicker } from '../..';
+import { ThemeProvider, Datepicker, v3theme } from '../..';
 import { toUTC } from './Datepicker';
 
 describe('<Datepicker />', () => {
   const testDate = new Date(2022, 7, 3, 14, 0, 0);
 
   describe('Snapshots', () => {
+    it('should match snapshot when v3Theme is settled', () => {
+      const { container } = render(
+        <ThemeProvider theme={v3theme}>
+          <Datepicker type="single" />
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
     it('should match with single Datepicker', () => {
       const { container } = render(
         <ThemeProvider>
