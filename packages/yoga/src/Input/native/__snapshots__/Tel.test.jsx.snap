@@ -33,6 +33,8 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
           "color": "#6B6B78",
           "fontFamily": "Rubik",
           "fontSize": 14,
+          "fontWeight": "400",
+          "lineHeight": 20,
           "paddingBottom": 16,
           "paddingLeft": 16,
           "paddingRight": 52,
