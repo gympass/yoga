@@ -1,16 +1,7 @@
 import React from 'react';
-import Box from '../../Box';
+import Text from '../../Text';
 
-const Content = props => (
-  <Box
-    ta="center"
-    color="text.secondary"
-    fw="regular"
-    fs="medium"
-    mb="xlarge"
-    {...props}
-  />
-);
+const Content = props => <Text.Body1 ta="center" mb="xlarge" {...props} />;
 
 Content.displayName = 'Dialog.Content';
 

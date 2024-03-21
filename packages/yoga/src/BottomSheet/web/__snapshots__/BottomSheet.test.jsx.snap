@@ -1,14 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BottomSheet /> should match snapshot 1`] = `
-.c6 {
-  margin-bottom: 32px;
-  color: #6B6B78;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-}
-
 .c8 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -92,6 +84,18 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   font-family: Rubik;
   font-weight: 500;
   margin-bottom: 24px;
+  text-align: center;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+  margin-bottom: 32px;
   text-align: center;
 }
 
@@ -206,12 +210,11 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
           >
             Title
           </header>
-          <div
+          <p
             class="c6 c7"
-            color="text.secondary"
           >
             Subtitle
-          </div>
+          </p>
           <footer
             class="c8 c9"
             d="flex"

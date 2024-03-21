@@ -1,14 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Dialog /> should match snapshot 1`] = `
-.c4 {
-  margin-bottom: 32px;
-  color: #6B6B78;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-}
-
 .c5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -95,6 +87,18 @@ exports[`<Dialog /> should match snapshot 1`] = `
   text-align: center;
 }
 
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
 .c1 {
   padding: 16px  16px  16px  16px;
   border-radius: 8px;
@@ -159,12 +163,11 @@ exports[`<Dialog /> should match snapshot 1`] = `
           >
             Title
           </header>
-          <div
+          <p
             class="c4"
-            color="text.secondary"
           >
             Subtitle
-          </div>
+          </p>
           <footer
             class="c5"
             d="flex"
@@ -185,15 +188,7 @@ exports[`<Dialog /> should match snapshot 1`] = `
 exports[`<Dialog /> should match snapshot with close button 1`] = `
 <body>
   <div />
-  .c8 {
-  margin-bottom: 32px;
-  color: #6B6B78;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.c9 {
+  .c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -388,6 +383,18 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   text-align: center;
 }
 
+.c8 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
 .c1 {
   padding: 16px  16px  16px  16px;
   border-radius: 8px;
@@ -481,12 +488,11 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
           >
             Title
           </header>
-          <div
+          <p
             class="c8"
-            color="text.secondary"
           >
             Subtitle
-          </div>
+          </p>
           <footer
             class="c9"
             d="flex"
