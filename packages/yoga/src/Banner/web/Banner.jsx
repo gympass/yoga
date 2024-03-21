@@ -82,9 +82,9 @@ const Banner = forwardRef((props, ref) => {
             marginRight="xxsmall"
           />
         )}
-        <Text.Small flex={1} marginVertical="xxsmall">
+        <Text.Body2 flex={1} marginVertical="xxsmall">
           {message}
-        </Text.Small>
+        </Text.Body2>
         {primaryButton && !secondaryButton && (
           <BannerActionButton button={primaryButton} marginLeft="xxsmall" />
         )}
