@@ -2,18 +2,9 @@
 
 exports[`<EventCard /> Snapshots should match snapshot of small EventCard active 1`] = `
 <View
-  elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
   style={
     [
-      {
-        "shadowColor": "rgba(152, 152, 166, 0.2)",
-        "shadowOffset": {
-          "height": 2,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 4,
-      },
+      {},
     ]
   }
 >
@@ -95,6 +86,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
     variant=""
   >
     <View
+      active={true}
       bg="primary"
       pv="medium"
       small={true}
@@ -103,6 +95,10 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
           {
             "alignItems": "center",
             "backgroundColor": "#D8385E",
+            "borderColor": "#D8385E",
+            "borderRadius": 16,
+            "borderStyle": "solid",
+            "borderWidth": 1,
             "justifyContent": "center",
             "paddingBottom": 20,
             "paddingTop": 20,
@@ -178,18 +174,9 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
 
 exports[`<EventCard /> Snapshots should match snapshot of small EventCard with day of week and without indicator 1`] = `
 <View
-  elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
   style={
     [
-      {
-        "shadowColor": "rgba(152, 152, 166, 0.2)",
-        "shadowOffset": {
-          "height": 2,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 4,
-      },
+      {},
     ]
   }
 >
@@ -271,6 +258,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
     variant=""
   >
     <View
+      active={false}
       bg="white"
       pv="medium"
       small={true}
@@ -279,6 +267,10 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
           {
             "alignItems": "center",
             "backgroundColor": "#FFFFFF",
+            "borderColor": "#D7D7E0",
+            "borderRadius": 16,
+            "borderStyle": "solid",
+            "borderWidth": 1,
             "justifyContent": "center",
             "paddingBottom": 20,
             "paddingTop": 20,
@@ -356,18 +348,9 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
 
 exports[`<EventCard /> Snapshots should match snapshot of small EventCard with event indicator disabled 1`] = `
 <View
-  elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
   style={
     [
-      {
-        "shadowColor": "rgba(152, 152, 166, 0.2)",
-        "shadowOffset": {
-          "height": 2,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 4,
-      },
+      {},
     ]
   }
 >
@@ -443,6 +426,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
     variant=""
   >
     <View
+      active={false}
       bg="white"
       pv="medium"
       small={true}
@@ -451,6 +435,10 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
           {
             "alignItems": "center",
             "backgroundColor": "#FFFFFF",
+            "borderColor": "#D7D7E0",
+            "borderRadius": 16,
+            "borderStyle": "solid",
+            "borderWidth": 1,
             "justifyContent": "center",
             "paddingBottom": 20,
             "paddingTop": 20,
@@ -526,18 +514,9 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
 
 exports[`<EventCard /> Snapshots should match snapshot of small EventCard with event indicator enabled 1`] = `
 <View
-  elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
   style={
     [
-      {
-        "shadowColor": "rgba(152, 152, 166, 0.2)",
-        "shadowOffset": {
-          "height": 2,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 4,
-      },
+      {},
     ]
   }
 >
@@ -619,6 +598,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
     variant=""
   >
     <View
+      active={false}
       bg="white"
       pv="medium"
       small={true}
@@ -627,6 +607,10 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
           {
             "alignItems": "center",
             "backgroundColor": "#FFFFFF",
+            "borderColor": "#D7D7E0",
+            "borderRadius": 16,
+            "borderStyle": "solid",
+            "borderWidth": 1,
             "justifyContent": "center",
             "paddingBottom": 20,
             "paddingTop": 20,
@@ -702,18 +686,9 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
 
 exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] = `
 <View
-  elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
   style={
     [
-      {
-        "shadowColor": "rgba(152, 152, 166, 0.2)",
-        "shadowOffset": {
-          "height": 2,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 4,
-      },
+      {},
     ]
   }
 >
@@ -801,6 +776,11 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
           {
             "alignItems": "center",
             "backgroundColor": "#D8385E",
+            "borderBottomLeftRadius": 16,
+            "borderColor": "#D8385E",
+            "borderStyle": "solid",
+            "borderTopLeftRadius": 16,
+            "borderWidth": 1,
             "justifyContent": "center",
             "width": 56,
           },
@@ -876,6 +856,11 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
       style={
         [
           {
+            "borderBottomRightRadius": 16,
+            "borderColor": "#D7D7E0",
+            "borderStyle": "solid",
+            "borderTopRightRadius": 16,
+            "borderWidth": 1,
             "flexBasis": 0,
             "flexGrow": 1,
             "flexShrink": 1,

@@ -9,15 +9,16 @@ import Text from '../../../Text';
 import Box from '../../../Box';
 import Button from '../../../Button';
 
-const { spacing, radii, lineHeights } = theme;
+const { spacing, radii, lineHeights, colors, borders } = theme;
 
-const Event = styled(Card)`
+const Event = styled(Card).attrs({ hasShadow: false })`
   flex-direction: row;
   height: 104px;
   border-radius: ${radii.regular}px;
   padding: ${spacing.zero};
   width: 280px;
   margin-right: ${spacing.xxsmall};
+
   ${({ small }) =>
     small
       ? css`
@@ -30,10 +31,26 @@ const DateInfo = styled(Box)`
   justify-content: center;
   align-items: center;
   width: 56px;
+
+  ${({ small, active }) =>
+    small
+      ? css`
+          border: ${borders.small}px solid
+            ${active ? colors.primary : colors.elements.lineAndBorders};
+          border-radius: ${radii.regular}px;
+        `
+      : css`
+          border: ${borders.small}px solid ${colors.primary};
+          border-top-left-radius: ${radii.regular}px;
+          border-bottom-left-radius: ${radii.regular}px;
+        `}
 `;
 
 const EventInfo = styled(Box)`
   flex: 1;
+  border-top-right-radius: ${radii.regular}px;
+  border-bottom-right-radius: ${radii.regular}px;
+  border: ${borders.small}px solid ${colors.elements.lineAndBorders};
 `;
 
 const Top = styled(Box)`
@@ -88,7 +105,7 @@ const SmallCard = ({
   event,
   onPress,
 }) => (
-  <DateInfo small pv="medium" bg={active ? 'primary' : 'white'}>
+  <DateInfo small active={active} pv="medium" bg={active ? 'primary' : 'white'}>
     <Top>
       {onPress ? (
         <Indicator
@@ -143,7 +160,7 @@ const FullCard = withTheme(
             <Text.Tiny>{event.time}</Text.Tiny>
           </EventTime>
           {!!link && (
-            <ButtonLink onPress={onLinkPress} small>
+            <ButtonLink onPress={onLinkPress} small secondary>
               {link}
             </ButtonLink>
           )}

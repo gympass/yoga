@@ -1,28 +1,38 @@
+import { node, oneOf, shape, string, bool } from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
-import { string, shape, oneOf, node } from 'prop-types';
 
 import Text from '../../../Text';
 
 const CardStyled = styled.section`
   ${({
+    hasShadow,
     variant,
     theme: {
       yoga: {
+        spacing,
         colors: { [variant]: color },
         components: { card },
       },
     },
   }) => `
-  padding: 
-    ${card.padding.top}px 
-    ${card.padding.right}px 
-    ${card.padding.bottom}px 
-    ${card.padding.left}px;
-
+  ${
+    hasShadow
+      ? `
+          padding: 
+            ${card.padding.top}px 
+            ${card.padding.right}px
+            ${card.padding.bottom}px 
+            ${card.padding.left}px;
+          box-shadow: ${card.elevation};
+        `
+      : `
+          padding: ${spacing.zero}px;
+          box-shadow: none;
+        `
+  }
   border-radius: ${card.radii}px;
   background-color: ${variant ? color : card.backgroundColor};
-  box-shadow: ${card.elevation};
 `}
 `;
 
@@ -99,11 +109,14 @@ Card.propTypes = {
     ]),
   }),
   children: node,
+  /** applies a shadow to the card (enabled by default) */
+  hasShadow: bool,
 };
 
 Card.defaultProps = {
   ribbon: {},
   children: null,
+  hasShadow: true,
 };
 
 Card.displayName = 'Card';
