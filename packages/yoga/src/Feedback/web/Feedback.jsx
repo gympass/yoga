@@ -71,9 +71,9 @@ function Feedback({ variant, title, description, children, center, ...props }) {
         />
         <TextContainer>
           {titleElement}
-          <Text mt="small" color="deep">
+          <Text.Body1 mt="small" color="deep">
             {description}
-          </Text>
+          </Text.Body1>
         </TextContainer>
         <Actions mt="xxxlarge">
           {primaryButton}
