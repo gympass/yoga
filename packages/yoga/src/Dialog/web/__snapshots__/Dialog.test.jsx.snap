@@ -1,14 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Dialog /> should match snapshot 1`] = `
-.c3 {
-  margin-bottom: 24px;
-  color: #231B22;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-}
-
 .c4 {
   margin-bottom: 32px;
   color: #6B6B78;
@@ -91,6 +83,18 @@ exports[`<Dialog /> should match snapshot 1`] = `
   fill: #FFFFFF;
 }
 
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 32px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
 .c1 {
   padding: 16px  16px  16px  16px;
   border-radius: 8px;
@@ -152,7 +156,6 @@ exports[`<Dialog /> should match snapshot 1`] = `
         >
           <header
             class="c3"
-            color="text.primary"
           >
             Title
           </header>
@@ -182,15 +185,7 @@ exports[`<Dialog /> should match snapshot 1`] = `
 exports[`<Dialog /> should match snapshot with close button 1`] = `
 <body>
   <div />
-  .c7 {
-  margin-bottom: 24px;
-  color: #231B22;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-}
-
-.c8 {
+  .c8 {
   margin-bottom: 32px;
   color: #6B6B78;
   font-size: 16px;
@@ -381,6 +376,18 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   transition: fill 0.2s;
 }
 
+.c7 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 32px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
 .c1 {
   padding: 16px  16px  16px  16px;
   border-radius: 8px;
@@ -471,7 +478,6 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
           </div>
           <header
             class="c7"
-            color="text.primary"
           >
             Title
           </header>
