@@ -22,13 +22,14 @@ const HelperWrapper = styled.View(
   `,
 );
 
-const Info = styled(Text.Regular)(
+const Info = styled(Text.Caption)(
   ({
     disabled,
     focused,
     error,
     theme: {
       yoga: {
+        baseFont,
         colors,
         components: { input },
       },
@@ -36,8 +37,8 @@ const Info = styled(Text.Regular)(
   }) => `
     flex-wrap: wrap;
 
+    font-family: ${baseFont.family};
     color: ${input.helper.color.default};
-    font-size: ${input.helper.font.size}px;
 
     ${disabled ? `color: ${colors.text.disabled};` : ''}
     ${focused ? `color: ${input.helper.color.focus};` : ''}

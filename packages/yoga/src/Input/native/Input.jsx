@@ -64,6 +64,8 @@ const Field = styled.TextInput(
     color: ${input.font.color.default};
     font-family: ${baseFont.family};
     font-size: ${input.font.size}px;
+    font-weight: ${input.font.weight};
+    line-height: ${input.font.lineHeight}px;
 
     ${focus ? `border-color: ${input.border.color.typed};` : ''}
     ${focus || typed ? `color: ${input.font.color.focus};` : ''}
@@ -116,6 +118,9 @@ const Label = styled(Animated.Text)(
     background-color: ${colors.white};
 
     font-family: ${baseFont.family};
+    font-size: ${input.font.size}px;
+    font-weight: ${input.font.weight};
+    line-height: ${input.font.lineHeight}px;
     color: ${input.label.color.default};
 
     ${
