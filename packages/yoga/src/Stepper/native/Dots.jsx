@@ -39,7 +39,7 @@ const Dot = styled.View(
   },
 );
 
-const Label = styled(Text.Body2)(
+const Label = styled(Text.Overline)(
   ({
     active,
     secondary,
@@ -69,11 +69,7 @@ function Dots({ activeStep, labels, secondary }) {
       {labels.map((label, index) => (
         <DotWrapper key={label}>
           <Dot active={activeDot(index, activeStep)} secondary={secondary} />
-          <Label
-            bold
-            active={activeDot(index, activeStep)}
-            secondary={secondary}
-          >
+          <Label active={activeDot(index, activeStep)} secondary={secondary}>
             {label}
           </Label>
         </DotWrapper>

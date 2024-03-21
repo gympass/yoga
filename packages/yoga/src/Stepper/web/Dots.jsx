@@ -20,7 +20,7 @@ const Dot = styled.div`
   `}
 `;
 
-const Label = styled(Text.Body2)`
+const Label = styled(Text.Overline)`
   width: 95px;
 
   transform: translateX(-50%);
@@ -81,9 +81,7 @@ function Dots({ activeStep, labels, secondary }) {
           key={label}
         >
           <Dot />
-          <Label as="span" bold>
-            {label}
-          </Label>
+          <Label as="span">{label}</Label>
         </DotWrapper>
       ))}
     </Wrapper>
