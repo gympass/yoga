@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.109.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.108.5...@gympass/yoga@7.109.0) (2024-03-21)
+
+
+### Features
+
+* update text to match font-weight ([d84b2a8](https://github.com/Gympass/yoga/commit/d84b2a88dc08b016e45e9ade83760c0e6828e333))
+* update text to match font-weight ([95085c2](https://github.com/Gympass/yoga/commit/95085c240db4452394758b4a7dc20c0f6ddc8e52))
+* update text to match font-weight ([61be5fd](https://github.com/Gympass/yoga/commit/61be5fdac3a3b564ff36102b2778b91e25a65e08))
+
+
+
+
+
 ## [7.108.5](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.108.4...@gympass/yoga@7.108.5) (2024-03-21)
 
 
