@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
   `}
 `;
 
-const Info = styled(Text.Body2)`
+const Info = styled(Text.Caption)`
   color: currentColor;
   ${({
     hideMaxLength,

@@ -797,8 +797,8 @@ exports[`<Input.Phone /> Snapshots should match with error 1`] = `
 .c7 {
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 16px;
   color: #231B22;
   font-family: Rubik;
   font-weight: 400;
