@@ -11,7 +11,6 @@ exports[`<ActionRequirement /> should default match snapshot 1`] = `
   font-weight: 400;
   margin-top: 16px;
   color: #6B6B78;
-  font-size: 16px;
 }
 
 .c2 {
@@ -121,7 +120,6 @@ exports[`<ActionRequirement /> should default match snapshot 1`] = `
       <p
         class="c3"
         color="deep"
-        font-size="medium"
       >
         description
       </p>
@@ -144,7 +142,6 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
   font-weight: 400;
   margin-top: 16px;
   color: #6B6B78;
-  font-size: 16px;
 }
 
 .c4 {
@@ -157,7 +154,6 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
   font-weight: 400;
   margin-top: 24px;
   color: #6B6B78;
-  font-size: 16px;
 }
 
 .c5 {
@@ -291,14 +287,12 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
       <p
         class="c3"
         color="deep"
-        font-size="medium"
       >
         description
       </p>
       <p
         class="c4"
         color="deep"
-        font-size="medium"
       >
         <div
           class=""
@@ -355,7 +349,6 @@ exports[`<ActionRequirement /> should match snapshot with text display 1`] = `
   font-weight: 400;
   margin-top: 16px;
   color: #6B6B78;
-  font-size: 16px;
 }
 
 .c4 {
@@ -446,7 +439,6 @@ exports[`<ActionRequirement /> should match snapshot with text display 1`] = `
       <p
         class="c3"
         color="deep"
-        font-size="medium"
       >
         description
       </p>

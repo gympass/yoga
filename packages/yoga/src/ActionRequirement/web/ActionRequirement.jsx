@@ -81,13 +81,13 @@ function ActionRequirement(props) {
         ) : (
           <Title>{title}</Title>
         )}
-        <Text mt="small" color="deep">
+        <Text.Body1 mt="small" color="deep">
           {description}
-        </Text>
+        </Text.Body1>
         {list && (
-          <Text mt="large" color="deep">
+          <Text.Body1 mt="large" color="deep">
             <Box>{list}</Box>
-          </Text>
+          </Text.Body1>
         )}
         {checkable && <Box mt="xxlarge">{checkable}</Box>}
         <Actions mt="xlarge">

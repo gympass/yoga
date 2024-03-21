@@ -3,7 +3,9 @@ import Text from '../../Text/index.native';
 import Box from '../../Box/index.native';
 import Button from '../../Button/index.native';
 
-export const Title = styled(Text.H4)`
+export const Title = styled(Text.H4).attrs({
+  bold: true,
+})`
   ${({
     theme: {
       yoga: { fontSizes },
