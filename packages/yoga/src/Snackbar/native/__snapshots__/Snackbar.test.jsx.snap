@@ -214,11 +214,7 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
           />
         </RNSVGSvgView>
         <Text
-          bold={false}
           flex={1}
-          fontSize="small"
-          inverted={false}
-          light={false}
           marginBottom="xxxsmall"
           marginTop="xxxsmall"
           numberOfLines={2}
@@ -232,7 +228,7 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
                 "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 24,
+                "lineHeight": 20,
                 "marginBottom": 4,
                 "marginTop": 4,
               },
@@ -464,11 +460,7 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
         variant="informative"
       >
         <Text
-          bold={false}
           flex={1}
-          fontSize="small"
-          inverted={false}
-          light={false}
           marginBottom="xxxsmall"
           marginTop="xxxsmall"
           numberOfLines={2}
@@ -482,7 +474,7 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
                 "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 24,
+                "lineHeight": 20,
                 "marginBottom": 4,
                 "marginTop": 4,
               },
@@ -711,11 +703,7 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
           />
         </RNSVGSvgView>
         <Text
-          bold={false}
           flex={1}
-          fontSize="small"
-          inverted={false}
-          light={false}
           marginBottom="xxxsmall"
           marginTop="xxxsmall"
           numberOfLines={2}
@@ -729,7 +717,7 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
                 "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 24,
+                "lineHeight": 20,
                 "marginBottom": 4,
                 "marginTop": 4,
               },
@@ -961,11 +949,7 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
         variant="success"
       >
         <Text
-          bold={false}
           flex={1}
-          fontSize="small"
-          inverted={false}
-          light={false}
           marginBottom="xxxsmall"
           marginTop="xxxsmall"
           numberOfLines={2}
@@ -979,7 +963,7 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
                 "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
-                "lineHeight": 24,
+                "lineHeight": 20,
                 "marginBottom": 4,
                 "marginTop": 4,
               },
