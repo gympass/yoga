@@ -30,7 +30,6 @@ exports[`<Feedback /> should render correctly when not centered vertically 1`] =
   font-weight: 400;
   margin-top: 16px;
   color: #6B6B78;
-  font-size: 16px;
 }
 
 .c1 {
@@ -121,7 +120,6 @@ exports[`<Feedback /> should render correctly when not centered vertically 1`] =
           <p
             class="c5"
             color="deep"
-            font-size="medium"
           >
             Enjoy your membership!
           </p>
