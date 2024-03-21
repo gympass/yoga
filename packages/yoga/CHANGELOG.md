@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.108.5](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.108.4...@gympass/yoga@7.108.5) (2024-03-21)
+
+
+### Bug Fixes
+
+* **plancard:** fix plan card title font weight ([a6d864e](https://github.com/Gympass/yoga/commit/a6d864e9ddc21fdcd2a1bfa035ea74eb0420bad1))
+
+
+
+
+
 ## [7.108.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.108.3...@gympass/yoga@7.108.4) (2024-03-21)
 
 **Note:** Version bump only for package @gympass/yoga
