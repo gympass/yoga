@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.112.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.111.1...@gympass/yoga@7.112.0) (2024-03-22)
+
+
+### Features
+
+* **stepper:** start using text body2 on the dots label ([86ea681](https://github.com/Gympass/yoga/commit/86ea6813c186814653d9d82853c50f2c7c853c4c))
+* **stepper:** start using text overline and update snapshots ([92ddeb1](https://github.com/Gympass/yoga/commit/92ddeb145dab89541e102c16144609aab1bbd565))
+* **stepper:** update secondary colors to use themed secondary color ([b92643b](https://github.com/Gympass/yoga/commit/b92643b8fdd196691ac2e1f3cdf24b8119ef9668))
+
+
+
+
+
 ## [7.111.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.111.0...@gympass/yoga@7.111.1) (2024-03-22)
 
 **Note:** Version bump only for package @gympass/yoga
