@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.111.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.110.3...@gympass/yoga@7.111.0) (2024-03-22)
+
+
+### Features
+
+* update input according v3theme ([2c76467](https://github.com/Gympass/yoga/commit/2c76467e1e763be6d7b3bda8768e02ef590a0cf5))
+* update input and helper native according v3 ([5be1bcf](https://github.com/Gympass/yoga/commit/5be1bcfb50215db10ba8c05727ba7c53b3a5a8fb))
+
+
+
+
+
 ## [7.110.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.110.2...@gympass/yoga@7.110.3) (2024-03-21)
 
 **Note:** Version bump only for package @gympass/yoga
