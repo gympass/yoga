@@ -158,9 +158,9 @@ const Snackbar = React.forwardRef(
             </Box>
           )}
 
-          <Text.Small flex={1} mr="small" numberOfLines={2}>
+          <Text.Body2 flex={1} mr="small" numberOfLines={2}>
             {message}
-          </Text.Small>
+          </Text.Body2>
 
           <ActionsWrapper>
             {onAction && actionLabel && (

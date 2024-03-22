@@ -160,15 +160,14 @@ const Snackbar = forwardRef((props, ref) => {
             marginRight="xxsmall"
           />
         )}
-        <Text
+        <Text.Body2
           flex={1}
-          fontSize="small"
           marginTop="xxxsmall"
           marginBottom="xxxsmall"
           numberOfLines={2}
         >
           {currentProps.message}
-        </Text>
+        </Text.Body2>
         {currentProps.actionLabel && (
           <Box
             as={Button.Text}
