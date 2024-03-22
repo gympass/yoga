@@ -10,12 +10,12 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
 .c8 {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 12px;
+  line-height: 16px;
   color: #231B22;
   font-family: Rubik;
-  font-weight: 700;
+  font-weight: 500;
   width: 95px;
-  font-size: 12px;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -174,12 +174,12 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
 .c8 {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 12px;
+  line-height: 16px;
   color: #231B22;
   font-family: Rubik;
-  font-weight: 700;
+  font-weight: 500;
   width: 95px;
-  font-size: 12px;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -227,13 +227,13 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
   position: absolute;
   left: 50%;
   top: 10px;
-  color: #9898A6;
+  color: #231B22;
 }
 
 .c4 .c5 {
   position: absolute;
   top: -10px;
-  background-color: #9898A6;
+  background-color: #231B22;
 }
 
 .c3 {
@@ -258,7 +258,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
   content: '';
   width: 0%;
   height: 4px;
-  background-color: #9898A6;
+  background-color: #231B22;
 }
 
 .c10 {
@@ -351,12 +351,12 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
 .c8 {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 12px;
+  line-height: 16px;
   color: #231B22;
   font-family: Rubik;
-  font-weight: 700;
+  font-weight: 500;
   width: 95px;
-  font-size: 12px;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -404,13 +404,13 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
   position: absolute;
   left: 50%;
   top: 10px;
-  color: #9898A6;
+  color: #231B22;
 }
 
 .c11 .c5 {
   position: absolute;
   top: -10px;
-  background-color: #9898A6;
+  background-color: #231B22;
 }
 
 .c3 {

@@ -1,9 +1,9 @@
 import React from 'react';
-import { number, arrayOf, string, bool } from 'prop-types';
+import { arrayOf, bool, number, string } from 'prop-types';
 import styled, { css } from 'styled-components';
 
-import activeDot from '../activeDot';
 import Text from '../../Text';
+import activeDot from '../activeDot';
 
 const Dot = styled.div`
   ${({
@@ -20,20 +20,10 @@ const Dot = styled.div`
   `}
 `;
 
-const Label = styled(Text.Bold)`
-  ${({
-    theme: {
-      yoga: {
-        components: { stepper },
-      },
-    },
-  }) => css`
-    width: 95px;
+const Label = styled(Text.Overline)`
+  width: 95px;
 
-    font-size: ${stepper.label.font.size}px;
-
-    transform: translateX(-50%);
-  `}
+  transform: translateX(-50%);
 `;
 
 const DotWrapper = styled.div`
