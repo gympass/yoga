@@ -6,14 +6,6 @@ exports[`<Drawer /> should match snapshot 1`] = `
   color: #231B22;
 }
 
-.c5 {
-  margin-bottom: 32px;
-  color: #6B6B78;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-}
-
 .c7 {
   width: 100%;
   display: -webkit-box;
@@ -82,6 +74,18 @@ exports[`<Drawer /> should match snapshot 1`] = `
 
 .c8:active svg {
   fill: #FFFFFF;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+  margin-bottom: 32px;
+  text-align: center;
 }
 
 .c1 {
@@ -180,12 +184,11 @@ exports[`<Drawer /> should match snapshot 1`] = `
           >
             Title
           </header>
-          <div
+          <p
             class="c5 c6"
-            color="text.secondary"
           >
             Subtitle
-          </div>
+          </p>
           <footer
             class="c7"
             d="flex"

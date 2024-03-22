@@ -1,16 +1,8 @@
 import React from 'react';
-import Box from '../../Box';
+import Text from '../../Text';
 
 const Header = props => (
-  <Box
-    as="header"
-    ta="center"
-    color="text.primary"
-    fw="medium"
-    fs="xlarge"
-    mb="large"
-    {...props}
-  />
+  <Text.H4 bold as="header" ta="center" mb="large" {...props} />
 );
 
 Header.displayName = 'Dialog.Header';

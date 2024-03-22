@@ -1,22 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Dialog /> should match snapshot 1`] = `
-.c3 {
-  margin-bottom: 24px;
-  color: #231B22;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-}
-
-.c4 {
-  margin-bottom: 32px;
-  color: #6B6B78;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-}
-
 .c5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -91,6 +75,30 @@ exports[`<Dialog /> should match snapshot 1`] = `
   fill: #FFFFFF;
 }
 
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 32px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
 .c1 {
   padding: 16px  16px 16px  16px;
   box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
@@ -152,16 +160,14 @@ exports[`<Dialog /> should match snapshot 1`] = `
         >
           <header
             class="c3"
-            color="text.primary"
           >
             Title
           </header>
-          <div
+          <p
             class="c4"
-            color="text.secondary"
           >
             Subtitle
-          </div>
+          </p>
           <footer
             class="c5"
             d="flex"
@@ -182,23 +188,7 @@ exports[`<Dialog /> should match snapshot 1`] = `
 exports[`<Dialog /> should match snapshot with close button 1`] = `
 <body>
   <div />
-  .c7 {
-  margin-bottom: 24px;
-  color: #231B22;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-}
-
-.c8 {
-  margin-bottom: 32px;
-  color: #6B6B78;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.c9 {
+  .c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -381,6 +371,30 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   transition: fill 0.2s;
 }
 
+.c7 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 32px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.c8 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
 .c1 {
   padding: 16px  16px 16px  16px;
   box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
@@ -471,16 +485,14 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
           </div>
           <header
             class="c7"
-            color="text.primary"
           >
             Title
           </header>
-          <div
+          <p
             class="c8"
-            color="text.secondary"
           >
             Subtitle
-          </div>
+          </p>
           <footer
             class="c9"
             d="flex"
