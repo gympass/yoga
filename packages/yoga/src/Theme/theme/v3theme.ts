@@ -237,5 +237,38 @@ export const v3theme = createTheme(tokens => ({
         },
       },
     },
+    dropdown: {
+      input: {
+        font: {
+          size: tokens.fontSizes.small,
+          lineHeight: tokens.lineHeights.small,
+        },
+      },
+      option: {
+        font: {
+          size: tokens.fontSizes.small,
+          lineHeight: tokens.lineHeights.small,
+          weight: tokens.fontWeights.medium,
+        }
+      },
+      backdrop: {
+        content: {
+          title: {
+            font: {
+              weight: tokens.fontWeights.bold,
+              size: tokens.fontSizes.medium,
+             },
+          }
+        }
+      },
+      selected: {
+        option: {
+          font: {
+            weight: tokens.fontWeights.bold,
+            size: tokens.fontSizes.small,
+          },
+        },
+      },
+    }
   },
 }));

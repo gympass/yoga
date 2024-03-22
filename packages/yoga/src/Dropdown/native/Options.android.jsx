@@ -27,7 +27,7 @@ const Option = styled(List.Item)`
   `}
 `;
 
-const OptionText = styled.Text`
+const OptionText = styled(Text.Body2)`
   ${({
     isSelected,
     theme: {
@@ -59,11 +59,7 @@ const Options = ({ options, selectedOption, onSelect }) => (
         >
           <OptionText
             isSelected={selectedOption && selectedOption.value === item.value}
-            as={
-              selectedOption && selectedOption.value === item.value
-                ? Text.Bold
-                : Text.Regular
-            }
+            bold={selectedOption && selectedOption.value === item.value}
           >
             {item.label}
           </OptionText>
