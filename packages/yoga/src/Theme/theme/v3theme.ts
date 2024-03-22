@@ -227,5 +227,15 @@ export const v3theme = createTheme(tokens => ({
         }
       },
     },
+    input: {
+      font: {
+        weight: tokens.fontWeights.medium,
+      },
+      label: {
+        font: {
+          weight: tokens.fontWeights.medium,
+        },
+      },
+    },
   },
 }));

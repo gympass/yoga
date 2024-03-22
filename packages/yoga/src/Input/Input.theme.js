@@ -2,6 +2,7 @@ const Input = ({
   colors,
   fontSizes,
   fontWeights,
+  lineHeights,
   borders,
   radii,
   spacing,
@@ -15,6 +16,7 @@ const Input = ({
     },
     size: fontSizes.small,
     weight: fontWeights.regular,
+    lineHeight: lineHeights.small,
   },
   border: {
     width: borders.small,
@@ -45,6 +47,10 @@ const Input = ({
         typed: fontSizes.xsmall,
       },
       weight: fontWeights.regular,
+      lineHeight: {
+        default: lineHeights.small,
+        typed: lineHeights.xsmall,
+      },
     },
   },
   helper: {
@@ -57,6 +63,8 @@ const Input = ({
     },
     font: {
       size: fontSizes.xsmall,
+      weight: fontWeights.regular,
+      lineHeight: lineHeights.xsmall,
     },
   },
 });

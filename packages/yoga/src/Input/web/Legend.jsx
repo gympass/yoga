@@ -8,18 +8,21 @@ const StyledLegend = styled.legend`
   max-width: 0;
   width: auto;
   height: 0;
-  font-weight: normal;
   visibility: hidden;
   transition-property: max-width, padding;
 
   ${({
     theme: {
       yoga: {
+        baseFont,
         components: { input },
       },
     },
   }) => `
+    font-family: ${baseFont.family};
     font-size: ${input.label.font.size.typed}px;
+    font-weight: ${input.label.font.weight};
+    line-height: ${input.label.font.lineHeight.typed}px;
     letter-spacing: normal;
 
     transition-duration: 100ms;

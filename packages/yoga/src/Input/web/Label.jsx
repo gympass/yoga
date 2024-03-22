@@ -12,6 +12,7 @@ const Label = styled.label`
       yoga: {
         transition,
         colors,
+        baseFont,
         components: { input },
       },
     },
@@ -19,8 +20,10 @@ const Label = styled.label`
     top: ${input.padding.top}px;
     left: ${input.padding.left}px;
 
+    font-family: ${baseFont.family};
     font-size: ${input.label.font.size.default}px;
     font-weight: ${input.label.font.weight};
+    line-height: ${input.label.font.lineHeight.default}px;
     color: ${input.label.color.default};
 
     transition-property: transform, font-size;
