@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.113.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.112.0...@gympass/yoga@7.113.0) (2024-03-22)
+
+
+### Features
+
+* add text to v3theme ([d70135e](https://github.com/Gympass/yoga/commit/d70135e052be6ab79324ae2f8ecc9441ed3c2ea7))
+* fix tokens ([7498f06](https://github.com/Gympass/yoga/commit/7498f06d5cb16ca26e8170267a5df0b4709dbef4))
+
+
+
+
+
 # [7.112.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.111.1...@gympass/yoga@7.112.0) (2024-03-22)
 
 
