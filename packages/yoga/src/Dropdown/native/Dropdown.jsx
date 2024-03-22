@@ -62,7 +62,7 @@ const Selector = styled.View`
   `}
 `;
 
-const Label = styled(Text)`
+const Label = styled(Text.Body2)`
   ${({
     disabled,
     selected,

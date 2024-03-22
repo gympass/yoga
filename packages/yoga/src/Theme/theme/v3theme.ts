@@ -248,7 +248,7 @@ export const v3theme = createTheme(tokens => ({
         font: {
           size: tokens.fontSizes.small,
           lineHeight: tokens.lineHeights.small,
-          weight: tokens.fontWeights.regular,
+          weight: tokens.fontWeights.medium,
         }
       },
       backdrop: {
