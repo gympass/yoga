@@ -9,6 +9,10 @@ First of all, make sure you have all settings up for Yoga to run it locally:
 $ yarn
 ```
 
+In collaborations made by **Gympassers**, we recommend that you create a task on your team's board using the epic `Yoga Contribution`. Use this task for the branch name like: `DS-001`.
+
+In **open-source collaboration** cases, we usually follow the `{feat|fix|doc|ci}/{what-am-i-doing}` for branch names.
+
 This project follows the
 [conventional-commit](https://www.conventionalcommits.org/en/v1.0.0/) pattern
 and, to help you with it, we use
@@ -19,7 +23,15 @@ commit some change, please use:
 $ yarn commit
 ```
 
-We usually follow the `{{feat|fix|doc|ci}}/{{what-am-i-doing}}` for branch names.
+## Bug fixes and issues
+
+If you believe that you have found any inconsistencies in the documentation, unexpected behavior in the components, or a token misused please let us know.
+
+**For Gympassers:**
+Send us a message on `Yoga Community Chat` to see if other users are experiencing the same issue. If it is a priority for your team and you are available, please create a task to collaborate with Yoga.
+
+**For open-source collaboration:**
+Check if there is already an [issue](https://github.com/gympass/yoga/issues) open in our repository. If not, you can create a new one. Our team will analyze and prioritize within our initiatives. If you are interested and available, you can also open a PR following our standards suggesting a solution.
 
 ## New Component
 
