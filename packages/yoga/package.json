@@ -11,9 +11,10 @@
     "build:web": "tsup src src/**/web !src/Fonts !**/*.test.jsx.snap !**/*.test.tsx.snap --outDir dist/cjs --format=cjs",
     "build:esm": "tsup src src/**/web !src/Fonts !**/*.test.jsx.snap !**/*.test.tsx.snap --format=esm --legacy-output",
     "build:native": "tsup src src/**/native !src/Fonts !**/*.test.jsx.snap !**/*.test.tsx.snap --outDir dist/cjs --format=cjs",
-    "prebuild": "rm -rf ./dist",
+    "prebuild": "rm -rf ./dist && yarn generateThemeImports",
     "postbuild": "cp -r ./src/Fonts ./dist/fonts",
-    "prepublishOnly": "node ../../scripts/prepublish.js --rn"
+    "prepublishOnly": "node ../../scripts/prepublish.js --rn",
+    "generateThemeImports": "node ../../scripts/generateThemesImports.js > ./src/Theme/theme/themeImports.js"
   },
   "keywords": [
     "Gympass",
