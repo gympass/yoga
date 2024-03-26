@@ -12,17 +12,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   font-weight: 500;
 }
 
-.c8 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 24px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 400;
-}
-
-.c9 {
+.c10 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -32,7 +22,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   font-weight: 400;
 }
 
-.c11 {
+.c12 {
   margin: 0;
   padding: 0;
   font-size: 12px;
@@ -40,6 +30,17 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   color: #231B22;
   font-family: Rubik;
   font-weight: 400;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .c0 {
@@ -69,7 +70,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   border-bottom-right-radius: 8px;
 }
 
-.c7 .c12,
+.c7 .c8,
 .c7 .c3 {
   display: -webkit-inline-box;
   overflow: hidden;
@@ -79,7 +80,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   text-overflow: -o-ellipsis-lastline;
 }
 
-.c7 .c12 {
+.c7 .c8 {
   height: 20px;
   margin-bottom: 8px;
   font-weight: 500;
@@ -93,7 +94,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   font-weight: 500;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -180,26 +181,27 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
       class="c7"
     >
       <h3
-        class="c8"
+        class="c8 c9"
+        font-size="medium"
         title="Yoga Class"
       >
         Yoga Class
       </h3>
       <p
-        class="c3 c9"
+        class="c3 c10"
         title="Gympass"
       >
         Gympass
       </p>
       <div
-        class="c10"
+        class="c11"
       >
         <svg
           fill="#231B22"
           style="margin-right: 5px;"
         />
         <p
-          class="c11"
+          class="c12"
         >
           19 am
         </p>
