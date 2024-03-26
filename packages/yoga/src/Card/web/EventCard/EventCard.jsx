@@ -34,7 +34,7 @@ const EventInfo = styled.div`
     border-top-right-radius: ${radii}px;
     border-bottom-right-radius: ${radii}px;
 
-    ${TextRenderer}, ${Text.Small} {
+    ${TextRenderer}, ${Text.Body2} {
       display: -webkit-inline-box;
       overflow: hidden;
 
@@ -52,7 +52,7 @@ const EventInfo = styled.div`
       font-size: ${event.info.name.fontSize}px;
     }
 
-    ${Text.Small} {
+    ${Text.Body2} {
       height: ${event.info.place.height}px;
       margin-bottom: ${event.info.place.marginBottom}px;
 
@@ -92,7 +92,7 @@ const DateInfo = styled.div`
   `}
 `;
 
-const DayOfWeek = styled(Text.Small)`
+const DayOfWeek = styled(Text.Body2)`
   ${({
     theme: {
       yoga: {
@@ -108,7 +108,7 @@ const DayOfWeek = styled(Text.Small)`
   `}
 `;
 
-const Month = styled(Text.Small)`
+const Month = styled(Text.Body2)`
   ${({
     theme: {
       yoga: {
@@ -139,17 +139,19 @@ const EventCard = ({
   <Event {...rest}>
     <DateInfo>
       <DayOfWeek inverted>{date.dayOfWeek}</DayOfWeek>
-      <Text.H5 inverted>{date.day}</Text.H5>
+      <Text.H5 bold inverted>
+        {date.day}
+      </Text.H5>
       <Month inverted>{date.month}</Month>
     </DateInfo>
     <EventInfo>
-      <Text as="h3" title={event.name}>
+      <Text.Body1 as="h3" title={event.name}>
         {event.name}
-      </Text>
-      <Text.Small title={event.place}>{event.place}</Text.Small>
+      </Text.Body1>
+      <Text.Body2 title={event.place}>{event.place}</Text.Body2>
       <EventTime>
         <Time fill={icon.fill} style={{ marginRight: 5 }} />
-        <Text.Tiny>{event.time}</Text.Tiny>
+        <Text.Caption>{event.time}</Text.Caption>
       </EventTime>
     </EventInfo>
   </Event>

@@ -134,6 +134,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
         />
       </View>
       <Text
+        bold={true}
         style={
           [
             {
@@ -308,6 +309,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
         </Text>
       </View>
       <Text
+        bold={true}
         style={
           [
             {
@@ -474,6 +476,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
         />
       </View>
       <Text
+        bold={true}
         style={
           [
             {
@@ -646,6 +649,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
         />
       </View>
       <Text
+        bold={true}
         style={
           [
             {
@@ -816,6 +820,7 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
         </Text>
       </View>
       <Text
+        bold={true}
         inverted={true}
         style={
           [
@@ -881,7 +886,7 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 14,
-              "fontWeight": "500",
+              "fontWeight": "400",
               "lineHeight": 20,
               "marginBottom": 4,
             },
