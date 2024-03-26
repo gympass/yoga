@@ -253,6 +253,16 @@ describe('<Button />', () => {
           expect(toJSON()).toMatchSnapshot();
         });
 
+        it('should match snapshot with outline Button', () => {
+          const { toJSON } = render(
+            <ThemeProvider>
+              <Button.Outline secondary />
+            </ThemeProvider>,
+          );
+
+          expect(toJSON()).toMatchSnapshot();
+        });
+
         it('should match snapshot with default Button with Icon', () => {
           const { toJSON } = render(
             <ThemeProvider>
@@ -299,6 +309,16 @@ describe('<Button />', () => {
           const { toJSON } = render(
             <ThemeProvider>
               <Button.Text inverted secondary />
+            </ThemeProvider>,
+          );
+
+          expect(toJSON()).toMatchSnapshot();
+        });
+
+        it('should match snapshot with outline Button', () => {
+          const { toJSON } = render(
+            <ThemeProvider>
+              <Button.Outline inverted secondary />
             </ThemeProvider>,
           );
 
@@ -357,6 +377,16 @@ describe('<Button />', () => {
           expect(toJSON()).toMatchSnapshot();
         });
 
+        it('should match snapshot with outline Button', () => {
+          const { toJSON } = render(
+            <ThemeProvider>
+              <Button.Outline small secondary />
+            </ThemeProvider>,
+          );
+
+          expect(toJSON()).toMatchSnapshot();
+        });
+
         it('should match snapshot with default Button with Icon', () => {
           const { toJSON } = render(
             <ThemeProvider>
@@ -393,6 +423,16 @@ describe('<Button />', () => {
           const { toJSON } = render(
             <ThemeProvider>
               <Button.Text full secondary />
+            </ThemeProvider>,
+          );
+
+          expect(toJSON()).toMatchSnapshot();
+        });
+
+        it('should match snapshot with outline Button', () => {
+          const { toJSON } = render(
+            <ThemeProvider>
+              <Button.Outline full secondary />
             </ThemeProvider>,
           );
 
@@ -465,6 +505,16 @@ describe('<Button />', () => {
           expect(toJSON()).toMatchSnapshot();
         });
 
+        it('should match snapshot with outline Button', () => {
+          const { toJSON } = render(
+            <ThemeProvider>
+              <Button.Outline disabled />
+            </ThemeProvider>,
+          );
+
+          expect(toJSON()).toMatchSnapshot();
+        });
+
         it('should match snapshot with default Button with Icon', () => {
           const { toJSON } = render(
             <ThemeProvider>
@@ -530,6 +580,19 @@ describe('<Button />', () => {
       const { getByRole } = render(
         <ThemeProvider>
           <Button.Icon onPress={onPressMock} icon={Booking} />
+        </ThemeProvider>,
+      );
+
+      fireEvent.press(getByRole('button'));
+
+      expect(onPressMock).toHaveBeenCalled();
+    });
+
+    it('should call onPress function when press on Button.Outline', () => {
+      const onPressMock = jest.fn();
+      const { getByRole } = render(
+        <ThemeProvider>
+          <Button.Outline onPress={onPressMock} />
         </ThemeProvider>,
       );
 
