@@ -87,6 +87,20 @@ const ButtonPage = () => (
         Inverted with Icon
       </Button.Text>
     </Wrapper>
+
+    <Wrapper style={{ height: 550 }}>
+      <DocTitle>Outline Buttons</DocTitle>
+
+      <Button.Outline small>Small</Button.Outline>
+      <Button.Outline>Primary</Button.Outline>
+      <Button.Outline full>Primary</Button.Outline>
+      <Button.Outline secondary>Secondary</Button.Outline>
+      <Button.Outline disabled>Disabled</Button.Outline>
+      <Button.Outline inverted>Inverted</Button.Outline>
+      <Button.Outline inverted disabled>
+        Inverted Disabled
+      </Button.Outline>
+    </Wrapper>
   </ScrollView>
 );
 

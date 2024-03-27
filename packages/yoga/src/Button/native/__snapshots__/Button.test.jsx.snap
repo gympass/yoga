@@ -425,6 +425,96 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 </View>
 `;
 
+exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with outline Button 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    accessibilityRole="button"
+    accessible={true}
+    disabled={true}
+    full={false}
+    inverted={false}
+    pressed={false}
+    secondary={false}
+    small={false}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "#F5F5FA",
+          "borderRadius": 9999,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "height": 48,
+          "justifyContent": "center",
+          "paddingLeft": 24,
+          "paddingRight": 24,
+        },
+      ]
+    }
+  >
+    <Text
+      bold={false}
+      color="#D7D7E0"
+      disabled={true}
+      fontSize="medium"
+      fontWeight={500}
+      inverted={false}
+      light={false}
+      pressed={false}
+      secondary={false}
+      small={false}
+      style={
+        [
+          {
+            "color": "#D7D7E0",
+            "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "500",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#D7D7E0",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "textAlign": "center",
+            "textDecorationColor": "black",
+            "textDecorationLine": "none",
+            "textDecorationStyle": "solid",
+          },
+        ]
+      }
+    >
+      Button
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with text Button 1`] = `
 <View
   accessibilityState={
@@ -3151,6 +3241,97 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
 </View>
 `;
 
+exports[`<Button /> Snapshots secondary buttons With full prop should match snapshot with outline Button 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    accessibilityRole="button"
+    accessible={true}
+    disabled={false}
+    full={true}
+    inverted={false}
+    pressed={false}
+    secondary={true}
+    small={false}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "#231B22",
+          "borderRadius": 9999,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "height": 48,
+          "justifyContent": "center",
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <Text
+      bold={false}
+      color="#231B22"
+      disabled={false}
+      fontSize="medium"
+      fontWeight={500}
+      inverted={false}
+      light={false}
+      pressed={false}
+      secondary={true}
+      small={false}
+      style={
+        [
+          {
+            "color": "#231B22",
+            "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "500",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#231B22",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "textAlign": "center",
+            "textDecorationColor": "black",
+            "textDecorationLine": "none",
+            "textDecorationStyle": "solid",
+          },
+        ]
+      }
+    >
+      Button
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`<Button /> Snapshots secondary buttons With full prop should match snapshot with text Button 1`] = `
 <View
   accessibilityState={
@@ -3748,6 +3929,96 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 </View>
 `;
 
+exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with outline Button 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    accessibilityRole="button"
+    accessible={true}
+    disabled={false}
+    full={false}
+    inverted={true}
+    pressed={false}
+    secondary={true}
+    small={false}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "#FFFFFF",
+          "borderRadius": 9999,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "height": 48,
+          "justifyContent": "center",
+          "paddingLeft": 24,
+          "paddingRight": 24,
+        },
+      ]
+    }
+  >
+    <Text
+      bold={false}
+      color="#FFFFFF"
+      disabled={false}
+      fontSize="medium"
+      fontWeight={500}
+      inverted={false}
+      light={false}
+      pressed={false}
+      secondary={true}
+      small={false}
+      style={
+        [
+          {
+            "color": "#FFFFFF",
+            "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "500",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#FFFFFF",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "textAlign": "center",
+            "textDecorationColor": "black",
+            "textDecorationLine": "none",
+            "textDecorationStyle": "solid",
+          },
+        ]
+      }
+    >
+      Button
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with text Button 1`] = `
 <View
   accessibilityState={
@@ -4332,6 +4603,96 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
             "fontSize": 14,
             "lineHeight": 16,
             "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Button
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`<Button /> Snapshots secondary buttons With small prop should match snapshot with outline Button 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    accessibilityRole="button"
+    accessible={true}
+    disabled={false}
+    full={false}
+    inverted={false}
+    pressed={false}
+    secondary={true}
+    small={true}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "#231B22",
+          "borderRadius": 9999,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "height": 32,
+          "justifyContent": "center",
+          "paddingLeft": 16,
+          "paddingRight": 16,
+        },
+      ]
+    }
+  >
+    <Text
+      bold={false}
+      color="#231B22"
+      disabled={false}
+      fontSize="medium"
+      fontWeight={500}
+      inverted={false}
+      light={false}
+      pressed={false}
+      secondary={true}
+      small={true}
+      style={
+        [
+          {
+            "color": "#231B22",
+            "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "500",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#231B22",
+            "fontSize": 14,
+            "lineHeight": 16,
+            "textAlign": "center",
+            "textDecorationColor": "black",
+            "textDecorationLine": "none",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -4995,6 +5356,96 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
       ]
     }
   />
+</View>
+`;
+
+exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with outline Button 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    accessibilityRole="button"
+    accessible={true}
+    disabled={false}
+    full={false}
+    inverted={false}
+    pressed={false}
+    secondary={true}
+    small={false}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "#231B22",
+          "borderRadius": 9999,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "height": 48,
+          "justifyContent": "center",
+          "paddingLeft": 24,
+          "paddingRight": 24,
+        },
+      ]
+    }
+  >
+    <Text
+      bold={false}
+      color="#231B22"
+      disabled={false}
+      fontSize="medium"
+      fontWeight={500}
+      inverted={false}
+      light={false}
+      pressed={false}
+      secondary={true}
+      small={false}
+      style={
+        [
+          {
+            "color": "#231B22",
+            "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "500",
+            "lineHeight": 24,
+          },
+          {
+            "color": "#231B22",
+            "fontSize": 16,
+            "lineHeight": 24,
+            "textAlign": "center",
+            "textDecorationColor": "black",
+            "textDecorationLine": "none",
+            "textDecorationStyle": "solid",
+          },
+        ]
+      }
+    >
+      Button
+    </Text>
+  </View>
 </View>
 `;
 
