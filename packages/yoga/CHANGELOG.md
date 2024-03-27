@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.113.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.113.1...@gympass/yoga@7.113.2) (2024-03-27)
+
+
+### Reverts
+
+* **card:** event card web changes ([950c867](https://github.com/Gympass/yoga/commit/950c8676df80b142e42d3f1f8ba72cc4af55e771))
+
+
+
+
+
 ## [7.113.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.113.0...@gympass/yoga@7.113.1) (2024-03-22)
 
 **Note:** Version bump only for package @gympass/yoga
