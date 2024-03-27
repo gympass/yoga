@@ -9,7 +9,7 @@ import Text from '../../../Text';
 import Box from '../../../Box';
 import Button from '../../../Button';
 
-const { spacing, radii, lineHeights, colors, borders } = theme;
+const { spacing, radii, colors, borders } = theme;
 
 const Event = styled(Card).attrs({ hasShadow: false })`
   flex-direction: row;
@@ -59,17 +59,16 @@ const Top = styled(Box)`
   height: ${spacing.small}px;
 `;
 
-const Name = styled(Text.Medium)`
+const Name = styled(Text.Body2)`
   margin-bottom: ${spacing.xxxsmall}px;
-  line-height: ${lineHeights.small}px;
 `;
 
-const Place = styled(Text.Tiny)`
+const Place = styled(Text.Caption)`
   width: 180px;
   margin-bottom: ${spacing.xsmall}px;
 `;
 
-const Day = styled(Text.H5)`
+const Day = styled(Text.H5).attrs({ bold: true })`
   margin-top: ${spacing.xxxsmall}px;
   margin-bottom: ${spacing.xxxsmall}px;
 `;
@@ -113,13 +112,13 @@ const SmallCard = ({
           bgColor={getIndicatorColor(active, Boolean(event))}
         />
       ) : (
-        <Text.Tiny variant={active ? 'white' : 'deep'}>{month}</Text.Tiny>
+        <Text.Caption variant={active ? 'white' : 'deep'}>{month}</Text.Caption>
       )}
     </Top>
     <Day variant={active ? 'white' : 'secondary'}>{day}</Day>
-    <Text.Tiny variant={active ? 'white' : 'deep'}>
+    <Text.Caption variant={active ? 'white' : 'deep'}>
       {String(dayOfWeek).toUpperCase()}
-    </Text.Tiny>
+    </Text.Caption>
   </DateInfo>
 );
 
@@ -142,10 +141,10 @@ const FullCard = withTheme(
     <>
       <DateInfo bg="primary">
         <Top>
-          <Text.Tiny inverted>{month}</Text.Tiny>
+          <Text.Caption inverted>{month}</Text.Caption>
         </Top>
         <Day inverted>{day}</Day>
-        <Text.Tiny inverted>{String(dayOfWeek).toUpperCase()}</Text.Tiny>
+        <Text.Caption inverted>{String(dayOfWeek).toUpperCase()}</Text.Caption>
       </DateInfo>
       <EventInfo p="small" pl="xsmall">
         <Name numberOfLines={1} size="small">
@@ -157,7 +156,7 @@ const FullCard = withTheme(
         <Row>
           <EventTime>
             <Time fill={icon.fill} style={{ marginRight: 5 }} />
-            <Text.Tiny>{event.time}</Text.Tiny>
+            <Text.Caption>{event.time}</Text.Caption>
           </EventTime>
           {!!link && (
             <ButtonLink onPress={onLinkPress} small secondary>
