@@ -34,8 +34,18 @@ const Day = styled(Text.Overline)`
     },
   }) => `
     width: 40px;
-    color: ${colors.medium};
+    color: ${colors.elements.selectionAndIcons};
     text-align: center;
+  `}
+`;
+
+const Month = styled(Text.Body2)`
+  ${({
+    theme: {
+      yoga: { colors, v3theme },
+    },
+  }) => `
+    color: ${v3theme ? colors.primary : colors.text.primary};
   `}
 `;
 
@@ -114,7 +124,7 @@ const DayField = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: ${inRange ? colors.clear : colors.white};
+    background: ${inRange ? colors.elements.lineAndBorders : colors.white};
     position: relative;
     cursor: pointer;
     ${
@@ -127,7 +137,7 @@ const DayField = styled.div`
         ? `&:before {
             content: '';
             position: absolute;
-            background: ${colors.vibin};
+            background: ${colors.primary};
             width: ${datepicker.width.day}px;
             height: ${datepicker.width.day}px;
             border-radius: ${radii.circle}px;
@@ -380,12 +390,12 @@ function Calendar({
           fill="primary"
           data-testid="previous-month-arrow"
         />
-        <Text.Body2 style={{ alignSelf: 'center' }} bold>
+        <Month style={{ alignSelf: 'center' }} bold>
           {new Intl.DateTimeFormat('en-US', {
             month: 'long',
             year: 'numeric',
           }).format(new Date(year, month, 1, 0, 0, 0))}
-        </Text.Body2>
+        </Month>
         <Icon
           style={{ cursor: 'pointer' }}
           as={ChevronRight}
