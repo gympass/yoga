@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.114.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.113.2...@gympass/yoga@7.114.0) (2024-03-28)
+
+
+### Features
+
+* add Button.Outlined to the native ([4739dbe](https://github.com/Gympass/yoga/commit/4739dbe3d7d9f2b7786bc0151ac6cb82b66fe3cd))
+
+
+
+
+
 ## [7.113.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.113.1...@gympass/yoga@7.113.2) (2024-03-27)
 
 
