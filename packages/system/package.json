@@ -9,15 +9,17 @@
   ],
   "homepage": "https://gympass.github.io/yoga/",
   "license": "MIT",
-  "main": "src",
+  "main": "./src",
+  "types": "./src",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Gympass/yoga.git"
   },
   "scripts": {
-    "build": "yarn build:cjs && yarn build:esm",
-    "build:cjs": "NODE_ENV=cjs babel ./src --out-dir dist/cjs",
-    "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
+    "build": "yarn build:types && yarn build:cjs && yarn build:esm",
+    "build:types": "tsup src !src/*.test.js !src/*.test.ts --outDir dist/typings --dts-only",
+    "build:cjs": "tsup src !src/*.test.js !src/*.test.ts --outDir dist/cjs --format=cjs",
+    "build:esm": "tsup src !src/*.test.js !src/*.test.ts --format=esm --legacy-output",
     "prebuild": "rm -rf ./dist",
     "prepublishOnly": "node ../../scripts/prepublish.js"
   },
@@ -36,5 +38,14 @@
   "publishConfig": {
     "access": "public",
     "directory": "dist"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts",
+      "src/**/*.ts",
+      "src/**/*.js"
+    ],
+    "splitting": false,
+    "bundle": false
   }
 }
