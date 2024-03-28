@@ -1,6 +1,193 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Datepicker /> Snapshots should match snapshot when v3Theme is settled 1`] = `
+.c7 {
+  margin: 8px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c8 {
+  width: 24px;
+  height: 24px;
+}
+
+.c14 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 500;
+}
+
+.c6 {
+  padding: 12px 12px 16px 12px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0px 12px 0px;
+}
+
+.c11 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 700;
+  width: 40px;
+  color: #A6A298;
+  text-align: center;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1D1D1F;
+  font-family: Inter;
+  font-weight: 700;
+  color: #D8385E;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c13 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c13 p {
+  color: #E1DED7;
+  z-index: 1;
+  position: absolute;
+}
+
+.c15 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c15 p {
+  color: #1D1D1F;
+  z-index: 1;
+  position: absolute;
+}
+
+.c15:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #1D1D1F;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c16 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c16 p {
+  color: #D8385E;
+  z-index: 1;
+  position: absolute;
+}
+
+.c16:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #1D1D1F;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px 0px;
+}
+
+.c12 div:first-child {
+  border-radius: 16px 0 0 16px;
+}
+
+.c12 div:last-child {
+  border-radius: 0 16px 16px 0;
+}
+
 .c0 {
   position: relative;
   display: inline-block;
@@ -75,6 +262,17 @@ exports[`<Datepicker /> Snapshots should match snapshot when v3Theme is settled 
   cursor: pointer;
 }
 
+.c5 {
+  position: absolute;
+  background-color: #FFFFFF;
+  border: 1px solid #E1DED7;
+  z-index: 1;
+  width: 320px;
+  left: 0;
+  border-radius: 16px;
+  margin-top: 8px;
+}
+
 .c4 {
   fill: #1D1D1F;
   margin-right: 8px;
@@ -103,11 +301,691 @@ exports[`<Datepicker /> Snapshots should match snapshot when v3Theme is settled 
         />
       </button>
     </div>
+    <div
+      class="c5"
+      tabindex="-1"
+    >
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+          display="flex"
+        >
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="previous-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+          <p
+            class="c9"
+          >
+            March 2024
+          </p>
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="next-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+        </div>
+        <div
+          class="c10"
+        >
+          <p
+            class="c11"
+          >
+            S
+          </p>
+          <p
+            class="c11"
+          >
+            M
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            W
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            F
+          </p>
+          <p
+            class="c11"
+          >
+            S
+          </p>
+        </div>
+        <div
+          class=""
+        >
+          <div
+            class="c12"
+          >
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                25
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                26
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                27
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                28
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                29
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                3
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                4
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                5
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                6
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                7
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                8
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                9
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                10
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                11
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                12
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                13
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                14
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                15
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                16
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                17
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                18
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                19
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                20
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                21
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                22
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                23
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                24
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                25
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                26
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                27
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                28
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                29
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                30
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                31
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                3
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                4
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                5
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                6
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Datepicker /> Snapshots should match with custom placeholder single Datepicker 1`] = `
+.c7 {
+  margin: 8px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c8 {
+  width: 24px;
+  height: 24px;
+}
+
+.c14 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+}
+
+.c6 {
+  padding: 12px 12px 16px 12px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0px 12px 0px;
+}
+
+.c11 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  width: 40px;
+  color: #9898A6;
+  text-align: center;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  color: #231B22;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c13 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c13 p {
+  color: #D7D7E0;
+  z-index: 1;
+  position: absolute;
+}
+
+.c15 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c15 p {
+  color: #231B22;
+  z-index: 1;
+  position: absolute;
+}
+
+.c15:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c16 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c16 p {
+  color: #D8385E;
+  z-index: 1;
+  position: absolute;
+}
+
+.c16:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px 0px;
+}
+
+.c12 div:first-child {
+  border-radius: 16px 0 0 16px;
+}
+
+.c12 div:last-child {
+  border-radius: 0 16px 16px 0;
+}
+
 .c0 {
   position: relative;
   display: inline-block;
@@ -182,6 +1060,17 @@ exports[`<Datepicker /> Snapshots should match with custom placeholder single Da
   cursor: pointer;
 }
 
+.c5 {
+  position: absolute;
+  background-color: #FFFFFF;
+  border: 1px solid #D7D7E0;
+  z-index: 1;
+  width: 320px;
+  left: 0;
+  border-radius: 16px;
+  margin-top: 8px;
+}
+
 .c4 {
   fill: #231B22;
   margin-right: 8px;
@@ -210,11 +1099,636 @@ exports[`<Datepicker /> Snapshots should match with custom placeholder single Da
         />
       </button>
     </div>
+    <div
+      class="c5"
+      tabindex="-1"
+    >
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+          display="flex"
+        >
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="previous-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+          <p
+            class="c9"
+          >
+            August 2022
+          </p>
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="next-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+        </div>
+        <div
+          class="c10"
+        >
+          <p
+            class="c11"
+          >
+            S
+          </p>
+          <p
+            class="c11"
+          >
+            M
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            W
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            F
+          </p>
+          <p
+            class="c11"
+          >
+            S
+          </p>
+        </div>
+        <div
+          class=""
+        >
+          <div
+            class="c12"
+          >
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                31
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                3
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                4
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                5
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                6
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                7
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                8
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                9
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                10
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                11
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                12
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                13
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                14
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                15
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                16
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                17
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                18
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                19
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                20
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                21
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                22
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                23
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                24
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                25
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                26
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                27
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                28
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                29
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                30
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                31
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                3
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Datepicker /> Snapshots should match with default selected date single Datepicker 1`] = `
+.c7 {
+  margin: 8px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c8 {
+  width: 24px;
+  height: 24px;
+}
+
+.c14 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+}
+
+.c17 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+}
+
+.c6 {
+  padding: 12px 12px 16px 12px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0px 12px 0px;
+}
+
+.c11 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  width: 40px;
+  color: #9898A6;
+  text-align: center;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  color: #231B22;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c13 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c13 p {
+  color: #D7D7E0;
+  z-index: 1;
+  position: absolute;
+}
+
+.c15 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c15 p {
+  color: #231B22;
+  z-index: 1;
+  position: absolute;
+}
+
+.c15:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c16 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c16 p {
+  color: #FFFFFF;
+  z-index: 1;
+  position: absolute;
+}
+
+.c16:before {
+  content: '';
+  position: absolute;
+  background: #D8385E;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c16:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px 0px;
+}
+
+.c12 div:first-child {
+  border-radius: 16px 0 0 16px;
+}
+
+.c12 div:last-child {
+  border-radius: 0 16px 16px 0;
+}
+
 .c0 {
   position: relative;
   display: inline-block;
@@ -294,6 +1808,17 @@ exports[`<Datepicker /> Snapshots should match with default selected date single
   outline: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.c5 {
+  position: absolute;
+  background-color: #FFFFFF;
+  border: 1px solid #D7D7E0;
+  z-index: 1;
+  width: 320px;
+  left: 0;
+  border-radius: 16px;
+  margin-top: 8px;
 }
 
 .c4 {
@@ -324,11 +1849,719 @@ exports[`<Datepicker /> Snapshots should match with default selected date single
         />
       </button>
     </div>
+    <div
+      class="c5"
+      tabindex="-1"
+    >
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+          display="flex"
+        >
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="previous-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+          <p
+            class="c9"
+          >
+            August 2022
+          </p>
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="next-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+        </div>
+        <div
+          class="c10"
+        >
+          <p
+            class="c11"
+          >
+            S
+          </p>
+          <p
+            class="c11"
+          >
+            M
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            W
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            F
+          </p>
+          <p
+            class="c11"
+          >
+            S
+          </p>
+        </div>
+        <div
+          class=""
+        >
+          <div
+            class="c12"
+          >
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                31
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c17"
+              >
+                3
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                4
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                5
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                6
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                7
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                8
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                9
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                10
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                11
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                12
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                13
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                14
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                15
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                16
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                17
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                18
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                19
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                20
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                21
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                22
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                23
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                24
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                25
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                26
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                27
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                28
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                29
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                30
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                31
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c17"
+              >
+                3
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Datepicker /> Snapshots should match with default selected dates range Datepicker 1`] = `
+.c7 {
+  margin: 8px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c8 {
+  width: 24px;
+  height: 24px;
+}
+
+.c14 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+}
+
+.c17 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+}
+
+.c6 {
+  padding: 12px 12px 16px 12px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0px 12px 0px;
+}
+
+.c11 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  width: 40px;
+  color: #9898A6;
+  text-align: center;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  color: #231B22;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c13 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c13 p {
+  color: #D7D7E0;
+  z-index: 1;
+  position: absolute;
+}
+
+.c15 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c15 p {
+  color: #231B22;
+  z-index: 1;
+  position: absolute;
+}
+
+.c15:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c16 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #D7D7E0;
+  position: relative;
+  cursor: pointer;
+  border-radius: 9999px 0px 0px 9999px;
+}
+
+.c16 p {
+  color: #FFFFFF;
+  z-index: 1;
+  position: absolute;
+}
+
+.c16:before {
+  content: '';
+  position: absolute;
+  background: #D8385E;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c16:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c18 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #D7D7E0;
+  position: relative;
+  cursor: pointer;
+}
+
+.c18 p {
+  color: #231B22;
+  z-index: 1;
+  position: absolute;
+}
+
+.c18:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c19 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #D7D7E0;
+  position: relative;
+  cursor: pointer;
+  border-radius: 0px 9999px 9999px 0px;
+}
+
+.c19 p {
+  color: #FFFFFF;
+  z-index: 1;
+  position: absolute;
+}
+
+.c19:before {
+  content: '';
+  position: absolute;
+  background: #D8385E;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c19:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px 0px;
+}
+
+.c12 div:first-child {
+  border-radius: 16px 0 0 16px;
+}
+
+.c12 div:last-child {
+  border-radius: 0 16px 16px 0;
+}
+
 .c0 {
   position: relative;
   display: inline-block;
@@ -408,6 +2641,17 @@ exports[`<Datepicker /> Snapshots should match with default selected dates range
   outline: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.c5 {
+  position: absolute;
+  background-color: #FFFFFF;
+  border: 1px solid #D7D7E0;
+  z-index: 1;
+  width: 320px;
+  left: 0;
+  border-radius: 16px;
+  margin-top: 8px;
 }
 
 .c4 {
@@ -439,11 +2683,617 @@ exports[`<Datepicker /> Snapshots should match with default selected dates range
         />
       </button>
     </div>
+    <div
+      class="c5"
+      tabindex="-1"
+    >
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+          display="flex"
+        >
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="previous-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+          <p
+            class="c9"
+          >
+            August 2022
+          </p>
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="next-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+        </div>
+        <div
+          class="c10"
+        >
+          <p
+            class="c11"
+          >
+            S
+          </p>
+          <p
+            class="c11"
+          >
+            M
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            W
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            F
+          </p>
+          <p
+            class="c11"
+          >
+            S
+          </p>
+        </div>
+        <div
+          class=""
+        >
+          <div
+            class="c12"
+          >
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                31
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c17"
+              >
+                3
+              </p>
+            </div>
+            <div
+              class="c18"
+            >
+              <p
+                class="c14"
+              >
+                4
+              </p>
+            </div>
+            <div
+              class="c18"
+            >
+              <p
+                class="c14"
+              >
+                5
+              </p>
+            </div>
+            <div
+              class="c18"
+            >
+              <p
+                class="c14"
+              >
+                6
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c18"
+            >
+              <p
+                class="c14"
+              >
+                7
+              </p>
+            </div>
+            <div
+              class="c18"
+            >
+              <p
+                class="c14"
+              >
+                8
+              </p>
+            </div>
+            <div
+              class="c18"
+            >
+              <p
+                class="c14"
+              >
+                9
+              </p>
+            </div>
+            <div
+              class="c18"
+            >
+              <p
+                class="c14"
+              >
+                10
+              </p>
+            </div>
+            <div
+              class="c18"
+            >
+              <p
+                class="c14"
+              >
+                11
+              </p>
+            </div>
+            <div
+              class="c18"
+            >
+              <p
+                class="c14"
+              >
+                12
+              </p>
+            </div>
+            <div
+              class="c18"
+            >
+              <p
+                class="c14"
+              >
+                13
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c18"
+            >
+              <p
+                class="c14"
+              >
+                14
+              </p>
+            </div>
+            <div
+              class="c18"
+            >
+              <p
+                class="c14"
+              >
+                15
+              </p>
+            </div>
+            <div
+              class="c18"
+            >
+              <p
+                class="c14"
+              >
+                16
+              </p>
+            </div>
+            <div
+              class="c18"
+            >
+              <p
+                class="c14"
+              >
+                17
+              </p>
+            </div>
+            <div
+              class="c19"
+            >
+              <p
+                class="c17"
+              >
+                18
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                19
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                20
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                21
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                22
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                23
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                24
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                25
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                26
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                27
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                28
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                29
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                30
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                31
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c17"
+              >
+                3
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Datepicker /> Snapshots should match with disabled Datepicker 1`] = `
+.c7 {
+  margin: 8px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c8 {
+  width: 24px;
+  height: 24px;
+}
+
+.c14 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+}
+
+.c6 {
+  padding: 12px 12px 16px 12px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0px 12px 0px;
+}
+
+.c11 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  width: 40px;
+  color: #9898A6;
+  text-align: center;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  color: #231B22;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c13 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c13 p {
+  color: #D7D7E0;
+  z-index: 1;
+  position: absolute;
+}
+
+.c15 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c15 p {
+  color: #231B22;
+  z-index: 1;
+  position: absolute;
+}
+
+.c15:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c16 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c16 p {
+  color: #D8385E;
+  z-index: 1;
+  position: absolute;
+}
+
+.c16:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px 0px;
+}
+
+.c12 div:first-child {
+  border-radius: 16px 0 0 16px;
+}
+
+.c12 div:last-child {
+  border-radius: 0 16px 16px 0;
+}
+
 .c0 {
   position: relative;
   display: inline-block;
@@ -518,6 +3368,17 @@ exports[`<Datepicker /> Snapshots should match with disabled Datepicker 1`] = `
   cursor: pointer;
 }
 
+.c5 {
+  position: absolute;
+  background-color: #FFFFFF;
+  border: 1px solid #D7D7E0;
+  z-index: 1;
+  width: 320px;
+  left: 0;
+  border-radius: 16px;
+  margin-top: 8px;
+}
+
 .c4 {
   fill: #D7D7E0;
   margin-right: 8px;
@@ -549,11 +3410,617 @@ exports[`<Datepicker /> Snapshots should match with disabled Datepicker 1`] = `
         />
       </button>
     </div>
+    <div
+      class="c5"
+      tabindex="-1"
+    >
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+          display="flex"
+        >
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="previous-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+          <p
+            class="c9"
+          >
+            August 2022
+          </p>
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="next-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+        </div>
+        <div
+          class="c10"
+        >
+          <p
+            class="c11"
+          >
+            S
+          </p>
+          <p
+            class="c11"
+          >
+            M
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            W
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            F
+          </p>
+          <p
+            class="c11"
+          >
+            S
+          </p>
+        </div>
+        <div
+          class=""
+        >
+          <div
+            class="c12"
+          >
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                31
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                3
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                4
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                5
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                6
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                7
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                8
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                9
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                10
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                11
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                12
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                13
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                14
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                15
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                16
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                17
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                18
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                19
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                20
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                21
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                22
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                23
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                24
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                25
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                26
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                27
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                28
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                29
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                30
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                31
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                3
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Datepicker /> Snapshots should match with disabled future dates Datepicker 1`] = `
+.c7 {
+  margin: 8px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c8 {
+  width: 24px;
+  height: 24px;
+}
+
+.c14 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+}
+
+.c6 {
+  padding: 12px 12px 16px 12px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0px 12px 0px;
+}
+
+.c11 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  width: 40px;
+  color: #9898A6;
+  text-align: center;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  color: #231B22;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c13 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c13 p {
+  color: #D7D7E0;
+  z-index: 1;
+  position: absolute;
+}
+
+.c15 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c15 p {
+  color: #231B22;
+  z-index: 1;
+  position: absolute;
+}
+
+.c15:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c16 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c16 p {
+  color: #D8385E;
+  z-index: 1;
+  position: absolute;
+}
+
+.c16:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px 0px;
+}
+
+.c12 div:first-child {
+  border-radius: 16px 0 0 16px;
+}
+
+.c12 div:last-child {
+  border-radius: 0 16px 16px 0;
+}
+
 .c0 {
   position: relative;
   display: inline-block;
@@ -628,6 +4095,17 @@ exports[`<Datepicker /> Snapshots should match with disabled future dates Datepi
   cursor: pointer;
 }
 
+.c5 {
+  position: absolute;
+  background-color: #FFFFFF;
+  border: 1px solid #D7D7E0;
+  z-index: 1;
+  width: 320px;
+  left: 0;
+  border-radius: 16px;
+  margin-top: 8px;
+}
+
 .c4 {
   fill: #231B22;
   margin-right: 8px;
@@ -655,12 +4133,646 @@ exports[`<Datepicker /> Snapshots should match with disabled future dates Datepi
           width="20"
         />
       </button>
+    </div>
+    <div
+      class="c5"
+      tabindex="-1"
+    >
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+          display="flex"
+        >
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="previous-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+          <p
+            class="c9"
+          >
+            August 2022
+          </p>
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="next-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+        </div>
+        <div
+          class="c10"
+        >
+          <p
+            class="c11"
+          >
+            S
+          </p>
+          <p
+            class="c11"
+          >
+            M
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            W
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            F
+          </p>
+          <p
+            class="c11"
+          >
+            S
+          </p>
+        </div>
+        <div
+          class=""
+        >
+          <div
+            class="c12"
+          >
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                31
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                3
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                4
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                5
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                6
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                7
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                8
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                9
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                10
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                11
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                12
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                13
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                14
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                15
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                16
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                17
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                18
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                19
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                20
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                21
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                22
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                23
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                24
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                25
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                26
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                27
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                28
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                29
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                30
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                31
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                3
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`<Datepicker /> Snapshots should match with disabled past dates Datepicker 1`] = `
+.c7 {
+  margin: 8px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c8 {
+  width: 24px;
+  height: 24px;
+}
+
+.c14 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+}
+
+.c6 {
+  padding: 12px 12px 16px 12px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0px 12px 0px;
+}
+
+.c11 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  width: 40px;
+  color: #9898A6;
+  text-align: center;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  color: #231B22;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c13 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c13 p {
+  color: #D7D7E0;
+  z-index: 1;
+  position: absolute;
+}
+
+.c16 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c16 p {
+  color: #231B22;
+  z-index: 1;
+  position: absolute;
+}
+
+.c16:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c15 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c15 p {
+  color: #D8385E;
+  z-index: 1;
+  position: absolute;
+}
+
+.c15:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px 0px;
+}
+
+.c12 div:first-child {
+  border-radius: 16px 0 0 16px;
+}
+
+.c12 div:last-child {
+  border-radius: 0 16px 16px 0;
+}
+
 .c0 {
   position: relative;
   display: inline-block;
@@ -735,6 +4847,17 @@ exports[`<Datepicker /> Snapshots should match with disabled past dates Datepick
   cursor: pointer;
 }
 
+.c5 {
+  position: absolute;
+  background-color: #FFFFFF;
+  border: 1px solid #D7D7E0;
+  z-index: 1;
+  width: 320px;
+  left: 0;
+  border-radius: 16px;
+  margin-top: 8px;
+}
+
 .c4 {
   fill: #231B22;
   margin-right: 8px;
@@ -763,11 +4886,619 @@ exports[`<Datepicker /> Snapshots should match with disabled past dates Datepick
         />
       </button>
     </div>
+    <div
+      class="c5"
+      tabindex="-1"
+    >
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+          display="flex"
+        >
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="previous-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+          <p
+            class="c9"
+          >
+            August 2022
+          </p>
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="next-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+        </div>
+        <div
+          class="c10"
+        >
+          <p
+            class="c11"
+          >
+            S
+          </p>
+          <p
+            class="c11"
+          >
+            M
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            W
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            F
+          </p>
+          <p
+            class="c11"
+          >
+            S
+          </p>
+        </div>
+        <div
+          class=""
+        >
+          <div
+            class="c12"
+          >
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                31
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                3
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                4
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                5
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                6
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                7
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                8
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                9
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                10
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                11
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                12
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                13
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                14
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                15
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                16
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                17
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                18
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                19
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                20
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                21
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                22
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                23
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                24
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                25
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                26
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                27
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                28
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                29
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                30
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                31
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                3
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Datepicker /> Snapshots should match with error Datepicker 1`] = `
+.c8 {
+  margin: 8px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c9 {
+  width: 24px;
+  height: 24px;
+}
+
+.c15 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+}
+
+.c7 {
+  padding: 12px 12px 16px 12px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0px 12px 0px;
+}
+
+.c12 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  width: 40px;
+  color: #9898A6;
+  text-align: center;
+}
+
+.c10 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  color: #231B22;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c14 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c14 p {
+  color: #D7D7E0;
+  z-index: 1;
+  position: absolute;
+}
+
+.c16 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c16 p {
+  color: #231B22;
+  z-index: 1;
+  position: absolute;
+}
+
+.c16:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c17 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c17 p {
+  color: #D8385E;
+  z-index: 1;
+  position: absolute;
+}
+
+.c17:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px 0px;
+}
+
+.c13 div:first-child {
+  border-radius: 16px 0 0 16px;
+}
+
+.c13 div:last-child {
+  border-radius: 0 16px 16px 0;
+}
+
 .c0 {
   position: relative;
   display: inline-block;
@@ -842,6 +5573,17 @@ exports[`<Datepicker /> Snapshots should match with error Datepicker 1`] = `
   cursor: pointer;
 }
 
+.c6 {
+  position: absolute;
+  background-color: #FFFFFF;
+  border: 1px solid #D7D7E0;
+  z-index: 1;
+  width: 320px;
+  left: 0;
+  border-radius: 16px;
+  margin-top: 8px;
+}
+
 .c4 {
   fill: #231B22;
   margin-right: 8px;
@@ -889,11 +5631,617 @@ exports[`<Datepicker /> Snapshots should match with error Datepicker 1`] = `
     >
       This is an error
     </p>
+    <div
+      class="c6"
+      tabindex="-1"
+    >
+      <div
+        class="c7"
+      >
+        <div
+          class="c8"
+          display="flex"
+        >
+          <svg
+            aria-hidden="true"
+            class="c9"
+            data-testid="previous-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+          <p
+            class="c10"
+          >
+            August 2022
+          </p>
+          <svg
+            aria-hidden="true"
+            class="c9"
+            data-testid="next-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+        </div>
+        <div
+          class="c11"
+        >
+          <p
+            class="c12"
+          >
+            S
+          </p>
+          <p
+            class="c12"
+          >
+            M
+          </p>
+          <p
+            class="c12"
+          >
+            T
+          </p>
+          <p
+            class="c12"
+          >
+            W
+          </p>
+          <p
+            class="c12"
+          >
+            T
+          </p>
+          <p
+            class="c12"
+          >
+            F
+          </p>
+          <p
+            class="c12"
+          >
+            S
+          </p>
+        </div>
+        <div
+          class=""
+        >
+          <div
+            class="c13"
+          >
+            <div
+              class="c14"
+              disabled=""
+            >
+              <p
+                class="c15"
+              >
+                31
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="c17"
+            >
+              <p
+                class="c15"
+              >
+                3
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                4
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                5
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                6
+              </p>
+            </div>
+          </div>
+          <div
+            class="c13"
+          >
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                7
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                8
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                9
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                10
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                11
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                12
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                13
+              </p>
+            </div>
+          </div>
+          <div
+            class="c13"
+          >
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                14
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                15
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                16
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                17
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                18
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                19
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                20
+              </p>
+            </div>
+          </div>
+          <div
+            class="c13"
+          >
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                21
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                22
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                23
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                24
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                25
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                26
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                27
+              </p>
+            </div>
+          </div>
+          <div
+            class="c13"
+          >
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                28
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                29
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                30
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c15"
+              >
+                31
+              </p>
+            </div>
+            <div
+              class="c14"
+              disabled=""
+            >
+              <p
+                class="c15"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c14"
+              disabled=""
+            >
+              <p
+                class="c15"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="c14"
+              disabled=""
+            >
+              <p
+                class="c15"
+              >
+                3
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Datepicker /> Snapshots should match with range Datepicker 1`] = `
+.c7 {
+  margin: 8px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c8 {
+  width: 24px;
+  height: 24px;
+}
+
+.c14 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+}
+
+.c6 {
+  padding: 12px 12px 16px 12px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0px 12px 0px;
+}
+
+.c11 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  width: 40px;
+  color: #9898A6;
+  text-align: center;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  color: #231B22;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c13 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c13 p {
+  color: #D7D7E0;
+  z-index: 1;
+  position: absolute;
+}
+
+.c15 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c15 p {
+  color: #231B22;
+  z-index: 1;
+  position: absolute;
+}
+
+.c15:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c16 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c16 p {
+  color: #D8385E;
+  z-index: 1;
+  position: absolute;
+}
+
+.c16:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px 0px;
+}
+
+.c12 div:first-child {
+  border-radius: 16px 0 0 16px;
+}
+
+.c12 div:last-child {
+  border-radius: 0 16px 16px 0;
+}
+
 .c0 {
   position: relative;
   display: inline-block;
@@ -966,6 +6314,17 @@ exports[`<Datepicker /> Snapshots should match with range Datepicker 1`] = `
   outline: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.c5 {
+  position: absolute;
+  background-color: #FFFFFF;
+  border: 1px solid #D7D7E0;
+  z-index: 1;
+  width: 320px;
+  left: 0;
+  border-radius: 16px;
+  margin-top: 8px;
 }
 
 .c4 {
@@ -996,11 +6355,691 @@ exports[`<Datepicker /> Snapshots should match with range Datepicker 1`] = `
         />
       </button>
     </div>
+    <div
+      class="c5"
+      tabindex="-1"
+    >
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+          display="flex"
+        >
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="previous-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+          <p
+            class="c9"
+          >
+            March 2024
+          </p>
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="next-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+        </div>
+        <div
+          class="c10"
+        >
+          <p
+            class="c11"
+          >
+            S
+          </p>
+          <p
+            class="c11"
+          >
+            M
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            W
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            F
+          </p>
+          <p
+            class="c11"
+          >
+            S
+          </p>
+        </div>
+        <div
+          class=""
+        >
+          <div
+            class="c12"
+          >
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                25
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                26
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                27
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                28
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                29
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                3
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                4
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                5
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                6
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                7
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                8
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                9
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                10
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                11
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                12
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                13
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                14
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                15
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                16
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                17
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                18
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                19
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                20
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                21
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                22
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                23
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                24
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                25
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                26
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                27
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                28
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                29
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                30
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                31
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                3
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                4
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                5
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                6
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Datepicker /> Snapshots should match with single Datepicker 1`] = `
+.c7 {
+  margin: 8px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c8 {
+  width: 24px;
+  height: 24px;
+}
+
+.c14 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+}
+
+.c6 {
+  padding: 12px 12px 16px 12px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0px 12px 0px;
+}
+
+.c11 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  width: 40px;
+  color: #9898A6;
+  text-align: center;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  color: #231B22;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c13 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c13 p {
+  color: #D7D7E0;
+  z-index: 1;
+  position: absolute;
+}
+
+.c15 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c15 p {
+  color: #231B22;
+  z-index: 1;
+  position: absolute;
+}
+
+.c15:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c16 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c16 p {
+  color: #D8385E;
+  z-index: 1;
+  position: absolute;
+}
+
+.c16:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px 0px;
+}
+
+.c12 div:first-child {
+  border-radius: 16px 0 0 16px;
+}
+
+.c12 div:last-child {
+  border-radius: 0 16px 16px 0;
+}
+
 .c0 {
   position: relative;
   display: inline-block;
@@ -1075,6 +7114,17 @@ exports[`<Datepicker /> Snapshots should match with single Datepicker 1`] = `
   cursor: pointer;
 }
 
+.c5 {
+  position: absolute;
+  background-color: #FFFFFF;
+  border: 1px solid #D7D7E0;
+  z-index: 1;
+  width: 320px;
+  left: 0;
+  border-radius: 16px;
+  margin-top: 8px;
+}
+
 .c4 {
   fill: #231B22;
   margin-right: 8px;
@@ -1102,6 +7152,499 @@ exports[`<Datepicker /> Snapshots should match with single Datepicker 1`] = `
           width="20"
         />
       </button>
+    </div>
+    <div
+      class="c5"
+      tabindex="-1"
+    >
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+          display="flex"
+        >
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="previous-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+          <p
+            class="c9"
+          >
+            March 2024
+          </p>
+          <svg
+            aria-hidden="true"
+            class="c8"
+            data-testid="next-month-arrow"
+            fill="#D8385E"
+            height="24"
+            style="cursor: pointer;"
+            width="24"
+          />
+        </div>
+        <div
+          class="c10"
+        >
+          <p
+            class="c11"
+          >
+            S
+          </p>
+          <p
+            class="c11"
+          >
+            M
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            W
+          </p>
+          <p
+            class="c11"
+          >
+            T
+          </p>
+          <p
+            class="c11"
+          >
+            F
+          </p>
+          <p
+            class="c11"
+          >
+            S
+          </p>
+        </div>
+        <div
+          class=""
+        >
+          <div
+            class="c12"
+          >
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                25
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                26
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                27
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                28
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                29
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                3
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                4
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                5
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                6
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                7
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                8
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                9
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                10
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                11
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                12
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                13
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                14
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                15
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                16
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                17
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                18
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                19
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                20
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                21
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                22
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                23
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                24
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                25
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                26
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                27
+              </p>
+            </div>
+            <div
+              class="c16"
+            >
+              <p
+                class="c14"
+              >
+                28
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                29
+              </p>
+            </div>
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                30
+              </p>
+            </div>
+          </div>
+          <div
+            class="c12"
+          >
+            <div
+              class="c15"
+            >
+              <p
+                class="c14"
+              >
+                31
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                3
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                4
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                5
+              </p>
+            </div>
+            <div
+              class="c13"
+              disabled=""
+            >
+              <p
+                class="c14"
+              >
+                6
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
