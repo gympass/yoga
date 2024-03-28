@@ -46,6 +46,7 @@ const Month = styled(Text.Body2)`
     },
   }) => `
     color: ${v3theme ? colors.primary : colors.text.primary};
+    align-self: center;
   `}
 `;
 
@@ -390,7 +391,7 @@ function Calendar({
           fill="primary"
           data-testid="previous-month-arrow"
         />
-        <Month style={{ alignSelf: 'center' }} bold>
+        <Month bold>
           {new Intl.DateTimeFormat('en-US', {
             month: 'long',
             year: 'numeric',
