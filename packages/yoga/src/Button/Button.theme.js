@@ -83,6 +83,9 @@ const Button = ({
       },
       border: {
         width: borders.small,
+        color: {
+          disabled: colors.elements.backgroundAndDisabled,
+        },
       },
       font: {
         default: {
@@ -95,6 +98,9 @@ const Button = ({
         },
         disabled: {
           color: colors.text.disabled,
+        },
+        inverted: {
+          color: colors.text.primary,
         },
         hover: {
           color: colors.white,
