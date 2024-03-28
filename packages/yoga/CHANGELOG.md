@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.114.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.0...@gympass/yoga@7.114.1) (2024-03-28)
+
+
+### Bug Fixes
+
+* missing semicolon ([3368411](https://github.com/Gympass/yoga/commit/3368411448a0d2349cc92067920dfe587bd5f01d))
+
+
+
+
+
 # [7.114.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.113.2...@gympass/yoga@7.114.0) (2024-03-28)
 
 
