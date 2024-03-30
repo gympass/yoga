@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.20.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.20.0...@gympass/yoga-icons@1.20.1) (2024-03-30)
+
+
+### Bug Fixes
+
+* **shinefilled:** fix fill on ShineFilled icon ([50afe07](https://github.com/Gympass/yoga/commit/50afe0786668cd2854e3a6f0063286dd7bedb332))
+
+
+
+
+
 # [1.20.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.19.0...@gympass/yoga-icons@1.20.0) (2024-03-19)
 
 
