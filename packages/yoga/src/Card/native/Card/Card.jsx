@@ -26,10 +26,12 @@ const CardStyled = styled(Box).attrs(
       yoga: {
         colors: { [variant]: color },
         components: { card },
+        elevations,
       },
     },
+    hasShadow,
   }) => ({
-    elevation: card.elevation,
+    elevation: hasShadow ? card.elevation : elevations.zero,
     pt: card.padding.top,
     pr: card.padding.right,
     pb: card.padding.bottom,
@@ -89,7 +91,7 @@ const Card = React.forwardRef(
 
     return (
       <CardWrapper>
-        <CardStyled ref={ref} {...rest}>
+        <CardStyled ref={ref} {...rest} hasShadow={hasShadow}>
           {Object.keys(ribbon).length > 0 && (
             <Ribbon variant={ribbon.variant}>
               <RibbonText variant={ribbon.variant}>{ribbon.text}</RibbonText>

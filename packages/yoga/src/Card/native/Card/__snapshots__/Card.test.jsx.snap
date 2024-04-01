@@ -21,6 +21,7 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
     bRadius={8}
     bgColor="#FFFFFF"
     elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+    hasShadow={true}
     overflow="hidden"
     pb={16}
     pl={16}
