@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.114.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.2...@gympass/yoga@7.114.3) (2024-04-02)
+
+
+### Bug Fixes
+
+* **card:** remove elevation affecting android only ([b09416b](https://github.com/Gympass/yoga/commit/b09416b75411a85fe35fb485044c5cbd82fc9a47))
+
+
+
+
+
 ## [7.114.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.1...@gympass/yoga@7.114.2) (2024-03-30)
 
 **Note:** Version bump only for package @gympass/yoga
