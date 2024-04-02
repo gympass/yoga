@@ -29,7 +29,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
         "month": "dec",
       }
     }
-    elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+    elevation="0 0 0 rgba(0, 0, 0, 0)"
     event={
       {
         "name": "Yoga Class",
@@ -38,6 +38,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
       }
     }
     focusable={true}
+    hasShadow={false}
     link=""
     onClick={[Function]}
     onResponderGrant={[Function]}
@@ -62,13 +63,13 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
           "paddingLeft": 16,
           "paddingRight": 16,
           "paddingTop": 16,
-          "shadowColor": "rgba(152, 152, 166, 0.2)",
+          "shadowColor": "rgba(0, 0, 0, 0)",
           "shadowOffset": {
-            "height": 2,
+            "height": 0,
             "width": 0,
           },
           "shadowOpacity": 1,
-          "shadowRadius": 4,
+          "shadowRadius": 0,
         },
         {
           "borderRadius": 16,
@@ -202,7 +203,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
         "month": "dec",
       }
     }
-    elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+    elevation="0 0 0 rgba(0, 0, 0, 0)"
     event={
       {
         "name": "Yoga Class",
@@ -211,6 +212,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
       }
     }
     focusable={false}
+    hasShadow={false}
     link=""
     onClick={[Function]}
     onResponderGrant={[Function]}
@@ -235,13 +237,13 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
           "paddingLeft": 16,
           "paddingRight": 16,
           "paddingTop": 16,
-          "shadowColor": "rgba(152, 152, 166, 0.2)",
+          "shadowColor": "rgba(0, 0, 0, 0)",
           "shadowOffset": {
-            "height": 2,
+            "height": 0,
             "width": 0,
           },
           "shadowOpacity": 1,
-          "shadowRadius": 4,
+          "shadowRadius": 0,
         },
         {
           "borderRadius": 16,
@@ -377,9 +379,10 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
         "month": "dec",
       }
     }
-    elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+    elevation="0 0 0 rgba(0, 0, 0, 0)"
     event={false}
     focusable={true}
+    hasShadow={false}
     link=""
     onClick={[Function]}
     onResponderGrant={[Function]}
@@ -404,13 +407,13 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
           "paddingLeft": 16,
           "paddingRight": 16,
           "paddingTop": 16,
-          "shadowColor": "rgba(152, 152, 166, 0.2)",
+          "shadowColor": "rgba(0, 0, 0, 0)",
           "shadowOffset": {
-            "height": 2,
+            "height": 0,
             "width": 0,
           },
           "shadowOpacity": 1,
-          "shadowRadius": 4,
+          "shadowRadius": 0,
         },
         {
           "borderRadius": 16,
@@ -544,7 +547,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
         "month": "dec",
       }
     }
-    elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+    elevation="0 0 0 rgba(0, 0, 0, 0)"
     event={
       {
         "name": "Yoga Class",
@@ -553,6 +556,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
       }
     }
     focusable={true}
+    hasShadow={false}
     link=""
     onClick={[Function]}
     onResponderGrant={[Function]}
@@ -577,13 +581,13 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
           "paddingLeft": 16,
           "paddingRight": 16,
           "paddingTop": 16,
-          "shadowColor": "rgba(152, 152, 166, 0.2)",
+          "shadowColor": "rgba(0, 0, 0, 0)",
           "shadowOffset": {
-            "height": 2,
+            "height": 0,
             "width": 0,
           },
           "shadowOpacity": 1,
-          "shadowRadius": 4,
+          "shadowRadius": 0,
         },
         {
           "borderRadius": 16,
@@ -717,7 +721,7 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
         "month": "dec",
       }
     }
-    elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+    elevation="0 0 0 rgba(0, 0, 0, 0)"
     event={
       {
         "name": "Yoga Class",
@@ -726,6 +730,7 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
       }
     }
     focusable={false}
+    hasShadow={false}
     link=""
     onClick={[Function]}
     onResponderGrant={[Function]}
@@ -750,13 +755,13 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
           "paddingLeft": 16,
           "paddingRight": 16,
           "paddingTop": 16,
-          "shadowColor": "rgba(152, 152, 166, 0.2)",
+          "shadowColor": "rgba(0, 0, 0, 0)",
           "shadowOffset": {
-            "height": 2,
+            "height": 0,
             "width": 0,
           },
           "shadowOpacity": 1,
-          "shadowRadius": 4,
+          "shadowRadius": 0,
         },
         {
           "borderRadius": 16,
