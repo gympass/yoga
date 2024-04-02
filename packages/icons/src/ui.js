@@ -165,6 +165,7 @@ import Twitter from './svg/twitter.svg';
 import Upload from './svg/upload.svg';
 import Upload2 from './svg/upload2.svg';
 import UserAdd from './svg/user_add.svg';
+import Tennis from './svg/tennis.svg';
 import UserFilled from './svg/user_filled.svg';
 import UserFilledStar from './svg/user_filled_star.svg';
 import User from './svg/user.svg';
@@ -334,6 +335,7 @@ export {
   SystemStatus,
   ParkingLot,
   PriceTag,
+  Tennis,
   Time,
   TimeFilled,
   Token,
