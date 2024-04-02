@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.20.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.20.1...@gympass/yoga-icons@1.20.2) (2024-04-02)
+
+
+### Bug Fixes
+
+* **icons:** export `Tennis` icon on UI icons file ([dd9b31c](https://github.com/Gympass/yoga/commit/dd9b31c2a4b9c026c944a7b72b8840db559605bf))
+* **icons:** some icon colors not changing when `fill` prop was provided ([64acb47](https://github.com/Gympass/yoga/commit/64acb478a48c280dbfad63c6bd927a656cee9754))
+
+
+
+
+
 ## [1.20.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.20.0...@gympass/yoga-icons@1.20.1) (2024-03-30)
 
 
