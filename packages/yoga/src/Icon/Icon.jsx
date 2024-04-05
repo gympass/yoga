@@ -25,8 +25,6 @@ const Icon = ({
   ariaLabel,
   ...props
 }) => {
-  const fixedColorIcons = ['Attention', 'Delayed', 'Information', 'Success'];
-
   const componentWithTitle = propsTitle => {
     const titleId = `${ariaLabel}-titleId`;
     let ariaDescribedBy = titleId;
@@ -67,16 +65,13 @@ const Icon = ({
     return newSvg;
   };
 
-  const isColorable = !fixedColorIcons.includes(Component.name);
-
   return (
     <Box
       as={title && ariaLabel ? componentWithTitle : Component}
       width={get(theme.yoga.spacing, width, width)}
       height={get(theme.yoga.spacing, height, height)}
-      {...(fill && isColorable && { fill: get(theme.yoga.colors, fill, fill) })}
-      {...(stroke &&
-        isColorable && { stroke: get(theme.yoga.colors, stroke, stroke) })}
+      {...(fill && { fill: get(theme.yoga.colors, fill, fill) })}
+      {...(stroke && { stroke: get(theme.yoga.colors, stroke, stroke) })}
       {...props}
       aria-hidden={title ? undefined : true}
     />
