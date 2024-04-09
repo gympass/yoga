@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { Text } from '../..';
 
 export const Wrapper = styled.div`
   position: relative;
@@ -90,6 +91,16 @@ export const PopoverContainer = styled.div`
     z-index: ${$zIndex};
 
     ${popoverContainerPositionModifier[position]};
+  `}
+`;
+
+export const PopoverTitle = styled(Text.Small)`
+  ${({
+    theme: {
+      yoga: { fontWeights, v3theme },
+    },
+  }) => css`
+    font-weight: ${v3theme ? fontWeights.bold : fontWeights.medium};
   `}
 `;
 

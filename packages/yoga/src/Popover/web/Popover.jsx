@@ -4,7 +4,12 @@ import { bool, node, number, oneOf, string } from 'prop-types';
 import { Text } from '../..';
 import { useCombinedRefs } from '../../hooks';
 
-import { PopoverContainer, PopoverButton, Wrapper } from './styles';
+import {
+  PopoverContainer,
+  PopoverButton,
+  PopoverTitle,
+  Wrapper,
+} from './styles';
 
 const Popover = React.forwardRef(
   (
@@ -64,9 +69,9 @@ const Popover = React.forwardRef(
             $zIndex={zIndex}
           >
             {!!title && (
-              <Text.Small mb="xxxsmall" fw="medium" color="white">
+              <PopoverTitle mb="xxxsmall" color="white">
                 {title}
-              </Text.Small>
+              </PopoverTitle>
             )}
             <Text.Small m="zero" color="white">
               {description}
