@@ -94,7 +94,7 @@ export const PopoverContainer = styled.div`
   `}
 `;
 
-export const PopoverTitle = styled(Text.Small)`
+export const PopoverTitle = styled(Text.Body2)`
   ${({
     theme: {
       yoga: { fontWeights, v3theme },
