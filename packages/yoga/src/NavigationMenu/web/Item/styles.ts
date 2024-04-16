@@ -43,7 +43,7 @@ export const StyledTag = styled(Tag)`
   `}
 `;
 
-export const StyledText = styled(Text)`
+export const StyledText = styled(Text.Body1)`
   ${({
     theme: {
       yoga: {
