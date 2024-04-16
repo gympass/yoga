@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Popover /> should match snapshot when hover is false 1`] = `
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #FFFFFF;
+}
+
 .c3 {
   margin: 0;
   padding: 0;
@@ -37,19 +49,6 @@ exports[`<Popover /> should match snapshot when hover is false 1`] = `
   -webkit-transform: translate(-50%,100%);
   -ms-transform: translate(-50%,100%);
   transform: translate(-50%,100%);
-}
-
-.c2 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 400;
-  margin-bottom: 4px;
-  color: #FFFFFF;
-  font-weight: 500;
 }
 
 .c4 {
@@ -101,6 +100,18 @@ exports[`<Popover /> should match snapshot when hover is false 1`] = `
 `;
 
 exports[`<Popover /> should match snapshot when hover is true 1`] = `
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #FFFFFF;
+}
+
 .c3 {
   margin: 0;
   padding: 0;
@@ -137,19 +148,6 @@ exports[`<Popover /> should match snapshot when hover is true 1`] = `
   -webkit-transform: translate(-50%,100%);
   -ms-transform: translate(-50%,100%);
   transform: translate(-50%,100%);
-}
-
-.c2 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 400;
-  margin-bottom: 4px;
-  color: #FFFFFF;
-  font-weight: 500;
 }
 
 .c4 {
