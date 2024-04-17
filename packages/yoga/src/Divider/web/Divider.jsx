@@ -13,8 +13,9 @@ const StyledDivider = styled.hr`
       ${vertical ? 'height: auto' : 'width: 100%'};
       border-width: 0px;
       border-left-width: ${vertical ? borders.small : 0}px;
-      border-bottom-width: ${vertical ? 0 : borders.small}px;
+      border-top-width: ${vertical ? 0 : borders.small}px;
       border-color: ${colors.text.disabled};
+      border-style: solid;
     `;
   }}
 `;
