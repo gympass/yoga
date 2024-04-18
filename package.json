@@ -68,7 +68,9 @@
     "prettier": "2.6.2",
     "react-dom": "^18.0.0",
     "tsup": "^7.1.0",
-    "yargs": "^15.1.0"
+    "yargs": "^15.1.0",
+    "esbuild-plugin-svgr": "^2.1.0",
+    "esbuild-plugin-replace": "^1.4.0"
   },
   "workspaces": {
     "packages": [

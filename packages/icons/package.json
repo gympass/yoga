@@ -21,14 +21,14 @@
   },
   "scripts": {
     "prebuild": "rm -rf ./dist",
-    "build": "yarn build:types && yarn build:cjs && yarn build:esm yarn build:web && yarn build:native",
+    "build": "yarn build:types && yarn build:cjs && yarn build:esm && yarn build:web && yarn build:native",
     "build:types": "tsup --outDir dist/typings --dts-only",
     "build:cjs": "tsup --outDir dist/cjs --format=cjs",
     "build:esm": "tsup --format=esm --legacy-output",
-    "build:web": "tsup --outDir dist/cjs --format=cjs --loader='.svg' --legacy-output",
-    "prebuild:native": "yarn build:native:svg",
+    "build:web": "tsup --outDir dist/cjs --format=cjs --loader='.svg=file' --legacy-output",
+    "prebuild:native": "yarn build:native:svg --define.target=native",
     "build:native": "tsup --outDir dist/cjs --format=cjs",
-    "build:native:svg": "tsup --outDir dist/cjs --format=cjs --loader='.svg' --legacy-output",
+    "build:native:svg": "tsup --outDir dist/cjs --format=cjs --loader='.svg=file' --legacy-output",
     "prepublishOnly": "node ../../scripts/prepublish.js"
   },
   "peerDependencies": {
@@ -37,15 +37,5 @@
   },
   "bugs": {
     "url": "https://github.com/Gympass/yoga/issues"
-  },
-  "tsup": {
-    "entry": [
-      "src/index.ts",
-      "src/**/*.ts",
-      "src/index.svg",
-      "src/**/*.svg"
-    ],
-    "splitting": false,
-    "bundle": false
   }
 }

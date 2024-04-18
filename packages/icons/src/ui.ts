@@ -179,7 +179,7 @@ import YogaMat from './svg/yoga-mat.svg';
 import Youtube from './svg/youtube.svg';
 import Zen from './svg/zen.svg';
 
-export {
+export default {
   Accessibility,
   Accessible,
   AddBooking,
