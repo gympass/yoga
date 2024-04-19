@@ -5,18 +5,19 @@ import { replace } from 'esbuild-plugin-replace';
 export default defineConfig( opts => {
   const { target } = opts.define || {};
   const ext = target === 'native' ? '.native.js' : '.js';
-
-  return {
-    name: "tsup",
-    entry: [
+  const entry = target === 'native' ? ["src/**/*.svg"] : [
     "src/index.ts",
     "src/**/*.ts",
     "src/**/*.svg"
-    ],
+    ];
+
+  return {
+    name: "tsup",
+    entry,
     splitting: false,
     bundle: false,
     esbuildPlugins: [
-      svgr({ target }),
+      svgr({ target, typescript: true }),
       replace({
         include: /\.ts$/,
         values: {
@@ -24,10 +25,8 @@ export default defineConfig( opts => {
         },
        }),
     ],
-    esbuildOptions: options => {
-      options.outExtension = {
-        '.js' : ext
-      }
-    },
+    outExtension: () => ({
+      js: ext,
+    }),
    }
 });

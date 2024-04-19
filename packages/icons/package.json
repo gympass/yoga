@@ -25,10 +25,7 @@
     "build:types": "tsup --outDir dist/typings --dts-only",
     "build:cjs": "tsup --outDir dist/cjs --format=cjs",
     "build:esm": "tsup --format=esm --legacy-output",
-    "build:web": "tsup --outDir dist/cjs --format=cjs --loader='.svg=file' --legacy-output",
-    "prebuild:native": "yarn build:native:svg --define.target=native",
-    "build:native": "tsup --outDir dist/cjs --format=cjs",
-    "build:native:svg": "tsup --outDir dist/cjs --format=cjs --loader='.svg=file' --legacy-output",
+    "build:native": "yarn prebuild && tsup --outDir dist/cjs/svg --format=cjs --define.target=native",
     "prepublishOnly": "node ../../scripts/prepublish.js"
   },
   "peerDependencies": {
