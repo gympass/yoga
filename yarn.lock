@@ -5846,7 +5846,7 @@
     camelcase "^6.2.0"
     cosmiconfig "^7.0.1"
 
-"@svgr/core@^8.0.0":
+"@svgr/core@^8.1.0":
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/@svgr/core/-/core-8.1.0.tgz#41146f9b40b1a10beaf5cc4f361a16a3c1885e88"
   integrity sha512-8QqtOQT5ACVlmsvKOJNEaWmRPmcojMOzCz4Hs2BGG/toAp/K38LcsMRyLp349glq5AzJbCEeimEoxaX6v/fLrA==
@@ -5900,7 +5900,7 @@
     "@svgr/hast-util-to-babel-ast" "^6.2.1"
     svg-parser "^2.0.2"
 
-"@svgr/plugin-jsx@^8.0.1":
+"@svgr/plugin-jsx@^8.1.0":
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/@svgr/plugin-jsx/-/plugin-jsx-8.1.0.tgz#96969f04a24b58b174ee4cd974c60475acbd6928"
   integrity sha512-0xiIyBsLlr8quN+WyuxooNW9RJ0Dpr8uOnH/xrCVO8GLUcwHISwj1AG0k+LFzteTkAA0GbX0kj9q6Dk70PTiPA==
@@ -8833,9 +8833,9 @@ caniuse-lite@^1.0.30001517:
   integrity sha512-Vdhm5S11DaFVLlyiKu4hiUTkpZu+y1KA/rZZqVQfOD5YdDT/eQKlkt7NaE0WGOFgX32diqt9MiP9CAiFeRklaA==
 
 caniuse-lite@^1.0.30001587:
-  version "1.0.30001610"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001610.tgz#2f44ed6e21d359e914271ae35b68903632628ccf"
-  integrity sha512-QFutAY4NgaelojVMjY63o6XlZyORPaLfyMnsl3HgnWdJUcX6K0oaJymHjH8PT5Gk7sTm8rvC/c5COUQKXqmOMA==
+  version "1.0.30001612"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001612.tgz#d34248b4ec1f117b70b24ad9ee04c90e0b8a14ae"
+  integrity sha512-lFgnZ07UhaCcsSZgWW0K5j4e69dK1u/ltrL9lTUiFOwNHs12S3UMIEYgBV0Z6C6hRDev7iRnMzzYmKabYdXF9g==
 
 caw@^2.0.0, caw@^2.0.1:
   version "2.0.1"
@@ -11189,9 +11189,9 @@ electron-to-chromium@^1.4.477:
   integrity sha512-shUVy6Eawp33dFBFIoYbIwLHrX0IZ857AlH9ug2o4rvbWmpaCUdBpQ5Zw39HRrfzAFm4APJE9V+E2A/WB0YqJw==
 
 electron-to-chromium@^1.4.668:
-  version "1.4.737"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.737.tgz#3a774a58e04980741f65d440f5fdf57af18b6dde"
-  integrity sha512-QvLTxaLHKdy5YxvixAw/FfHq2eWLUL9KvsPjp0aHK1gI5d3EDuDgITkvj0nFO2c6zUY3ZqVAJQiBYyQP9tQpfw==
+  version "1.4.748"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.748.tgz#aa7d4f2f3eac3a6a863cd1779bd4682b4bb68ed5"
+  integrity sha512-VWqjOlPZn70UZ8FTKUOkUvBLeTQ0xpty66qV0yJcAGY2/CthI4xyW9aEozRVtuwv3Kpf5xTesmJUcPwuJmgP4A==
 
 elegant-spinner@^1.0.1:
   version "1.0.1"
@@ -11525,14 +11525,6 @@ esbuild-plugin-replace@^1.4.0:
   integrity sha512-lP3ZAyzyRa5JXoOd59lJbRKNObtK8pJ/RO7o6vdjwLi71GfbL32NR22ZuS7/cLZkr10/L1lutoLma8E4DLngYg==
   dependencies:
     magic-string "^0.25.7"
-
-esbuild-plugin-svgr@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/esbuild-plugin-svgr/-/esbuild-plugin-svgr-2.1.0.tgz#2257d8bbffd15c7830a0afce7e9163e0a8283bd6"
-  integrity sha512-BKJOlQvXjLipPDPYfX+N6i2tPxSuVOhlg+hEF/nkQwMwFV6IymvuCRO0wLvf9tGyL3mc3yIZ4n9pfxcCx/7v2Q==
-  dependencies:
-    "@svgr/core" "^8.0.0"
-    "@svgr/plugin-jsx" "^8.0.1"
 
 esbuild@^0.18.2:
   version "0.18.12"
@@ -26674,6 +26666,7 @@ worker-rpc@^0.1.0:
     microevent.ts "~0.1.1"
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==

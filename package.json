@@ -40,6 +40,8 @@
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.4",
     "@babel/runtime": "^7.8.4",
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/jest-native": "^4.0.2",
     "@testing-library/react": "^13.4.0",
@@ -50,6 +52,7 @@
     "commitizen": "^4.0.3",
     "core-js": "^2.6.5",
     "cz-conventional-changelog": "^3.0.2",
+    "esbuild-plugin-replace": "^1.4.0",
     "eslint": "^8.13.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "8.5.0",
@@ -70,9 +73,7 @@
     "prettier": "2.6.2",
     "react-dom": "^18.0.0",
     "tsup": "^7.1.0",
-    "yargs": "^15.1.0",
-    "esbuild-plugin-svgr": "^2.1.0",
-    "esbuild-plugin-replace": "^1.4.0"
+    "yargs": "^15.1.0"
   },
   "workspaces": {
     "packages": [
