@@ -17,9 +17,9 @@
   },
   "scripts": {
     "build": "yarn build:types && yarn build:cjs && yarn build:esm",
-    "build:types": "tsup src !src/*.test.js !src/*.test.ts --outDir dist/typings --dts-only",
-    "build:cjs": "tsup src !src/*.test.js !src/*.test.ts --outDir dist/cjs --format=cjs",
-    "build:esm": "tsup src !src/*.test.js !src/*.test.ts --format=esm --legacy-output",
+    "build:types": "tsup --outDir dist/typings --dts-only",
+    "build:cjs": "tsup --outDir dist/cjs --format=cjs",
+    "build:esm": "tsup --format=esm --legacy-output",
     "prebuild": "rm -rf ./dist",
     "prepublishOnly": "node ../../scripts/prepublish.js"
   },
@@ -42,8 +42,8 @@
   "tsup": {
     "entry": [
       "src/index.ts",
-      "src/**/*.ts",
-      "src/**/*.js"
+      "src/**/*.(t|j)s",
+      "!src/**/*.test.(t|j)s"
     ],
     "splitting": false,
     "bundle": false
