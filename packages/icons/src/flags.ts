@@ -186,7 +186,7 @@ import FlagYemen from './svg/flag_yemen.svg';
 import FlagZambia from './svg/flag_zambia.svg';
 import FlagZimbabwe from './svg/flag_zimbabwe.svg';
 
-export default {
+export {
   FlagAfghanistan,
   FlagAlbania,
   FlagAlgeria,

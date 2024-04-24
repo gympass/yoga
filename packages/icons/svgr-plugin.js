@@ -2,7 +2,7 @@ import { transform } from '@svgr/core';
 import { readFileSync } from 'fs';
 
 const plugin = (options = {}) => {
-  const { target, typescript } = options;
+  const { native } = options;
 
   return {
     name: 'svgr',
@@ -18,15 +18,14 @@ const plugin = (options = {}) => {
           svg,
           {
             plugins: ['@svgr/plugin-jsx'],
-            native: target === 'native',
-            typescript,
+            native,
           },
           { filePath: args.path },
         );
 
         return {
           contents,
-          loader: 'tsx',
+          loader: 'jsx',
         };
       });
     },

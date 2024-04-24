@@ -1,32 +1,27 @@
-import { defineConfig } from 'tsup'
-import svgr from './svgr-plugin'
+import { defineConfig } from 'tsup';
 import { replace } from 'esbuild-plugin-replace';
+import svgr from './svgr-plugin';
 
-export default defineConfig( opts => {
-  const { target } = opts.define || {};
-  const ext = target === 'native' ? '.native.js' : '.js';
-  const entry = target === 'native' ? ["src/**/*.svg"] : [
-    "src/index.ts",
-    "src/**/*.ts",
-    "src/**/*.svg"
-    ];
+export default defineConfig(options => {
+  const native = options['--'].includes('native');
 
   return {
-    name: "tsup",
-    entry,
+    entry: ['src/index.ts', 'src/**/*.ts', 'src/**/*.svg'],
     splitting: false,
     bundle: false,
+    treeshake: true,
+    minify: true,
     esbuildPlugins: [
-      svgr({ target, typescript: true }),
+      svgr({ native }),
       replace({
         include: /\.ts$/,
         values: {
-          '.svg': ''
+          '.svg': '',
         },
-       }),
+      }),
     ],
     outExtension: () => ({
-      js: ext,
+      js: native ? '.native.js' : '.js',
     }),
-   }
+  };
 });
