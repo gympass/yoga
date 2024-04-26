@@ -112,8 +112,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   width: 100%;
   border-width: 0px;
   border-left-width: 0px;
-  border-bottom-width: 1px;
+  border-top-width: 1px;
   border-color: #D7D7E0;
+  border-style: solid;
 }
 
 .c5 {
@@ -497,8 +498,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
   width: 100%;
   border-width: 0px;
   border-left-width: 0px;
-  border-bottom-width: 1px;
+  border-top-width: 1px;
   border-color: #D7D7E0;
+  border-style: solid;
 }
 
 .c2 {
@@ -661,8 +663,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   width: 100%;
   border-width: 0px;
   border-left-width: 0px;
-  border-bottom-width: 1px;
+  border-top-width: 1px;
   border-color: #D7D7E0;
+  border-style: solid;
 }
 
 .c2 {
@@ -903,8 +906,9 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   width: 100%;
   border-width: 0px;
   border-left-width: 0px;
-  border-bottom-width: 1px;
+  border-top-width: 1px;
   border-color: #D7D7E0;
+  border-style: solid;
 }
 
 .c5 {
@@ -1283,8 +1287,9 @@ exports[`<PlanCard /> Snapshots should render the discount 1`] = `
   width: 100%;
   border-width: 0px;
   border-left-width: 0px;
-  border-bottom-width: 1px;
+  border-top-width: 1px;
   border-color: #D7D7E0;
+  border-style: solid;
 }
 
 .c4 {
@@ -1430,8 +1435,9 @@ exports[`<PlanCard /> Snapshots should render the extra content 1`] = `
   width: 100%;
   border-width: 0px;
   border-left-width: 0px;
-  border-bottom-width: 1px;
+  border-top-width: 1px;
   border-color: #D7D7E0;
+  border-style: solid;
 }
 
 .c2 {

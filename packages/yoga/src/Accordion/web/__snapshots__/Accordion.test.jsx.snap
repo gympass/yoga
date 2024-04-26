@@ -138,8 +138,9 @@ exports[`<Accordion /> should correctly render the default version 1`] = `
   width: 100%;
   border-width: 0px;
   border-left-width: 0px;
-  border-bottom-width: 1px;
+  border-top-width: 1px;
   border-color: #D7D7E0;
+  border-style: solid;
 }
 
 <div
@@ -332,8 +333,9 @@ exports[`<Accordion /> should correctly render the default version with subtitle
   width: 100%;
   border-width: 0px;
   border-left-width: 0px;
-  border-bottom-width: 1px;
+  border-top-width: 1px;
   border-color: #D7D7E0;
+  border-style: solid;
 }
 
 <div
@@ -533,8 +535,9 @@ exports[`<Accordion /> should correctly render the default version without side 
   width: 100%;
   border-width: 0px;
   border-left-width: 0px;
-  border-bottom-width: 1px;
+  border-top-width: 1px;
   border-color: #D7D7E0;
+  border-style: solid;
 }
 
 <div
@@ -727,8 +730,9 @@ exports[`<Accordion /> should correctly render the small version 1`] = `
   width: 100%;
   border-width: 0px;
   border-left-width: 0px;
-  border-bottom-width: 1px;
+  border-top-width: 1px;
   border-color: #D7D7E0;
+  border-style: solid;
 }
 
 <div
@@ -921,8 +925,9 @@ exports[`<Accordion /> should correctly render the small version with subtitle 1
   width: 100%;
   border-width: 0px;
   border-left-width: 0px;
-  border-bottom-width: 1px;
+  border-top-width: 1px;
   border-color: #D7D7E0;
+  border-style: solid;
 }
 
 <div
@@ -1131,8 +1136,9 @@ exports[`<Accordion /> should correctly render the small version without side pa
   width: 100%;
   border-width: 0px;
   border-left-width: 0px;
-  border-bottom-width: 1px;
+  border-top-width: 1px;
   border-color: #D7D7E0;
+  border-style: solid;
 }
 
 <div
