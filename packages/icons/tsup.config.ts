@@ -1,6 +1,6 @@
 import { defineConfig } from 'tsup';
 import { replace } from 'esbuild-plugin-replace';
-import svgr from './svgr-plugin';
+import svgr from '../../plugins/svgr-plugin';
 
 export default defineConfig(options => {
   const native = options['--'].includes('native');

@@ -1,7 +1,7 @@
 import { transform } from '@svgr/core';
 import { readFileSync } from 'fs';
 
-const plugin = (options = {}) => {
+const svgrPlugin = (options = {}) => {
   const { native } = options;
 
   return {
@@ -32,4 +32,4 @@ const plugin = (options = {}) => {
   };
 };
 
-export default plugin;
+export default svgrPlugin;
