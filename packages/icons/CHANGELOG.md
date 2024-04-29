@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.21.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.20.3...@gympass/yoga-icons@1.21.0) (2024-04-10)
+
+
+### Bug Fixes
+
+* **icons:** removed fill attributes from svg files ([abbdbf3](https://github.com/Gympass/yoga/commit/abbdbf308da8e6aef2de0e1483b06ac0233b444b))
+
+
+### Features
+
+* **icons:** added new icons for amenities ([0b4a289](https://github.com/Gympass/yoga/commit/0b4a289d726e22f397c92ad9e668325eaa3ff155))
+
+
+
+
+
 ## [1.20.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.20.2...@gympass/yoga-icons@1.20.3) (2024-04-08)
 
 **Note:** Version bump only for package @gympass/yoga-icons

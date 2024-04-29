@@ -1,5 +1,8 @@
 import Accessibility from './svg/accessibility.svg';
 import Accessible from './svg/accessible.svg';
+import AccessibleParking from './svg/accessible_parking_space.svg';
+import AccessibleRestroom from './svg/accessible_restroom.svg';
+import AccessibleShower from './svg/accessible_shower.svg';
 import AddBooking from './svg/add_booking.svg';
 import Add from './svg/add.svg';
 import AirConditioning from './svg/air-conditioning.svg';
@@ -12,6 +15,7 @@ import ArrowLeft from './svg/arrow_left.svg';
 import ArrowRight from './svg/arrow_right.svg';
 import ArrowUp from './svg/arrow_up.svg';
 import Attention from './svg/attention.svg';
+import AutismFriendly from './svg/autism_friendly.svg';
 import AutomaticInvite from './svg/automatic_invite.svg';
 import Bank from './svg/bank.svg';
 import BankStatement from './svg/bank_statement.svg';
@@ -20,6 +24,7 @@ import BeautySalon from './svg/beauty-salon.svg';
 import BookingFilled from './svg/booking_filled.svg';
 import Booking from './svg/booking.svg';
 import Boxing from './svg/boxing.svg';
+import BrailleSigns from './svg/braille_signs.svg';
 import BuildingFilled from './svg/building_filled.svg';
 import Building from './svg/building.svg';
 import BulletList from './svg/bullet_list.svg';
@@ -59,6 +64,7 @@ import Draggable from './svg/draggable.svg';
 import Dumbbell from './svg/dumbbell.svg';
 import DumbbellFilled from './svg/dumbbell_filled.svg';
 import Edit from './svg/edit.svg';
+import Elevator from './svg/elevator.svg';
 import Exit from './svg/exit.svg';
 import ExternalLink from './svg/external_link.svg';
 import Facebook from './svg/facebook.svg';
@@ -67,6 +73,7 @@ import FamilyMemberFilled from './svg/family_member_filled.svg';
 import FavoriteFilled from './svg/favorite_filled.svg';
 import Favorite from './svg/favorite.svg';
 import Filter from './svg/filter.svg';
+import GenderNeutral from './svg/gender_neutral.svg';
 import Google from './svg/google.svg';
 import Gympass from './svg/gympass.svg';
 import Headphone from './svg/headphone.svg';
@@ -131,6 +138,7 @@ import Refresh from './svg/refresh.svg';
 import Restaurant from './svg/restaurant.svg';
 import SearchFilled from './svg/search_filled.svg';
 import Search from './svg/search.svg';
+import ServiceDogs from './svg/service_dogs.svg';
 import Settings from './svg/settings.svg';
 import ShareAndroid from './svg/share_android.svg';
 import ShareIos from './svg/share_ios.svg';
@@ -139,6 +147,7 @@ import ShieldSecure from './svg/shield_secure.svg';
 import ShineFilled from './svg/shine_filled.svg';
 import Shower from './svg/shower.svg';
 import ShowerTowels from './svg/shower-towels.svg';
+import SignLanguage from './svg/sign_language.svg';
 import Signal from './svg/signal.svg';
 import SmartphoneFilled from './svg/smartphone_filled.svg';
 import Smartphone from './svg/smartphone.svg';
@@ -147,10 +156,12 @@ import SortAscending from './svg/sort_ascending.svg';
 import SortDescending from './svg/sort_descending.svg';
 import Spa from './svg/spa.svg';
 import SportsEquipment from './svg/sports-equipment-store.svg';
+import StairFreeAccess from './svg/stair_free_access.svg';
 import StarFilled from './svg/star_filled.svg';
 import Star from './svg/star.svg';
 import Success from './svg/success.svg';
 import SystemStatus from './svg/system_status.svg';
+import TactilePaving from './svg/tactile_paving.svg';
 import ParkingLot from './svg/parking-lot.svg';
 import PriceTag from './svg/price_tag.svg';
 import Time from './svg/time.svg';
@@ -174,6 +185,7 @@ import VisibilityOff from './svg/visibility_off.svg';
 import Visibility from './svg/visibility.svg';
 import Wallet from './svg/wallet.svg';
 import Whatsapp from './svg/whatsapp.svg';
+import WheelchairFriendlyDoors from './svg/wheelchair_friendly_doors.svg';
 import WiFi from './svg/wi-fi.svg';
 import YogaMat from './svg/yoga-mat.svg';
 import Youtube from './svg/youtube.svg';
@@ -182,6 +194,9 @@ import Zen from './svg/zen.svg';
 export {
   Accessibility,
   Accessible,
+  AccessibleParking,
+  AccessibleRestroom,
+  AccessibleShower,
   AddBooking,
   Add,
   AirConditioning,
@@ -194,6 +209,7 @@ export {
   ArrowRight,
   ArrowUp,
   Attention,
+  AutismFriendly,
   AutomaticInvite,
   Bank,
   BankStatement,
@@ -202,6 +218,7 @@ export {
   BookingFilled,
   Booking,
   Boxing,
+  BrailleSigns,
   BuildingFilled,
   Building,
   BulletList,
@@ -241,6 +258,7 @@ export {
   Dumbbell,
   DumbbellFilled,
   Edit,
+  Elevator,
   Exit,
   ExternalLink,
   Facebook,
@@ -249,6 +267,7 @@ export {
   FavoriteFilled,
   Favorite,
   Filter,
+  GenderNeutral,
   Google,
   Gympass,
   Headphone,
@@ -313,6 +332,7 @@ export {
   Restaurant,
   SearchFilled,
   Search,
+  ServiceDogs,
   Settings,
   ShareAndroid,
   ShareIos,
@@ -321,6 +341,7 @@ export {
   ShineFilled,
   Shower,
   ShowerTowels,
+  SignLanguage,
   Signal,
   SmartphoneFilled,
   Smartphone,
@@ -329,10 +350,12 @@ export {
   SortDescending,
   Spa,
   SportsEquipment,
+  StairFreeAccess,
   StarFilled,
   Star,
   Success,
   SystemStatus,
+  TactilePaving,
   ParkingLot,
   PriceTag,
   Tennis,
@@ -356,6 +379,7 @@ export {
   Visibility,
   Wallet,
   Whatsapp,
+  WheelchairFriendlyDoors,
   WiFi,
   YogaMat,
   Youtube,

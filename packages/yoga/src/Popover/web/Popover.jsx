@@ -64,13 +64,13 @@ const Popover = React.forwardRef(
             $zIndex={zIndex}
           >
             {!!title && (
-              <Text.Small mb="xxxsmall" fw="medium" color="white">
+              <Text.Body2 bold mb="xxxsmall" color="white">
                 {title}
-              </Text.Small>
+              </Text.Body2>
             )}
-            <Text.Small m="zero" color="white">
+            <Text.Body2 m="zero" color="white">
               {description}
-            </Text.Small>
+            </Text.Body2>
           </PopoverContainer>
         )}
 

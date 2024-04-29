@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { Text, Skeleton } from '@gympass/yoga';
+import { Skeleton } from '@gympass/yoga';
+import Text from '../../../Text';
 import Actions from './Actions';
 import Box from '../../../Box';
 
@@ -38,7 +39,7 @@ const StyledTextContainer = styled.div`
   overflow: hidden;
 `;
 
-const StyledTitle = styled(Text.Small)`
+const StyledTitle = styled(Text.Body2)`
   ${({
     theme: {
       yoga: {

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { ChevronDown } from '@gympass/yoga-icons';
-import { Text } from '@gympass/yoga';
+import Text from '../../../Text';
 import Icon from '../../../Icon';
 
 type MenuStyleProps = {
@@ -70,7 +70,7 @@ const StyledTextContainer = styled.div`
     `}
 `;
 
-const StyledTitle = styled(Text.H4)`
+const StyledTitle = styled(Text.Display4)`
   ${({
     theme: {
       yoga: {
@@ -91,7 +91,7 @@ const StyledTitle = styled(Text.H4)`
     `}
 `;
 
-const StyledSubtitle = styled(Text.Small)`
+const StyledSubtitle = styled(Text.Body2)`
   ${({
     theme: {
       yoga: {
