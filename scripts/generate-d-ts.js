@@ -32,9 +32,11 @@ program
           : `export declare const ${match[1]}: SVGWebComponent; \n`;
       }
     }
-    const dir = options.native ? 'native' : 'web';
+    const dir = options.native
+      ? './dist/typings/native/index.d.ts'
+      : './dist/typings/index.d.ts';
 
-    fs.outputFileSync(`./dist/typings/${dir}/index.d.ts`, content);
+    fs.outputFileSync(dir, content);
   });
 
 program.parse(process.argv);
