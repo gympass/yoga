@@ -226,10 +226,13 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 }
 
 .c19 {
-  text-transform: uppercase;
   background-color: #231B22;
-  color: #FFFFFF;
   border-radius: 9999px;
+}
+
+.c19 p {
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .c16 {
