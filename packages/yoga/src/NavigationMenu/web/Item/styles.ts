@@ -36,10 +36,13 @@ export const StyledTag = styled(Tag)`
       },
     },
   }) => css`
-    text-transform: uppercase;
     background-color: ${backgroundColor.tag};
-    color: ${tag.color.default};
     border-radius: ${border.radius.tag}px;
+
+    p {
+      color: ${tag.color.default};
+      text-transform: uppercase;
+    }
   `}
 `;
 
