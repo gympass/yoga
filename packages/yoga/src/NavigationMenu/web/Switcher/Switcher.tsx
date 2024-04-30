@@ -58,6 +58,21 @@ const StyledTitle = styled(Text.Body2)`
     `}
 `;
 
+const StyledSubtitle = styled(Text.Tiny)`
+  ${({
+    theme: {
+      yoga: {
+        components: {
+          navigationmenu: { font },
+        },
+      },
+    },
+  }) =>
+    css`
+      color: ${font.color.default};
+    `}
+`;
+
 type SwitcherProps = React.ComponentProps<typeof Actions> & {
   avatar: React.ReactElement;
   fill?: string;
@@ -95,7 +110,7 @@ const Switcher = ({
         ) : (
           <>
             {title && <StyledTitle>{title}</StyledTitle>}
-            {subtitle && <Text.Tiny color="deep">{subtitle}</Text.Tiny>}
+            {subtitle && <StyledSubtitle>{subtitle}</StyledSubtitle>}
           </>
         )}
       </StyledTextContainer>

@@ -32,17 +32,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   height: 12px;
 }
 
-.c27 {
-  margin: 0;
-  padding: 0;
-  font-size: 12px;
-  line-height: 16px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 400;
-  color: #6B6B78;
-}
-
 .c2 {
   -webkit-transition: background-color 300ms ease-in-out;
   transition: background-color 300ms ease-in-out;
@@ -185,6 +174,17 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.c27 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+  color: #6B6B78;
 }
 
 .c13 {
@@ -864,7 +864,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
           </p>
           <p
             class="c27"
-            color="deep"
           >
             Admin, Supervisor
           </p>
@@ -1181,17 +1180,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
   height: 20px;
 }
 
-.c7 {
-  margin: 0;
-  padding: 0;
-  font-size: 12px;
-  line-height: 16px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 400;
-  color: #6B6B78;
-}
-
 .c8 {
   -webkit-transition: background-color 300ms ease-in-out;
   transition: background-color 300ms ease-in-out;
@@ -1270,6 +1258,17 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
   overflow: hidden;
 }
 
+.c7 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+  color: #6B6B78;
+}
+
 .c0 {
   position: relative;
   display: -webkit-box;
@@ -1340,7 +1339,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
           </p>
           <p
             class="c7"
-            color="deep"
           >
             Admin, Supervisor
           </p>
