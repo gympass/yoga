@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.22.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.21.0...@gympass/yoga-icons@1.22.0) (2024-05-06)
+
+
+### Features
+
+* add esbuild-plugin-svgr ([d6b89d4](https://github.com/Gympass/yoga/commit/d6b89d4b5031e23189a3d39781b1bad0904973f2))
+* add script to generate d.ts files ([ca3d877](https://github.com/Gympass/yoga/commit/ca3d8773738fc407ee9a1d27ac2a8a03405943fc))
+* add typescript configs ([1d55a29](https://github.com/Gympass/yoga/commit/1d55a292cac5a53420377bca887a24783ea9c71b))
+
+
+
+
+
 # [1.21.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.20.3...@gympass/yoga-icons@1.21.0) (2024-04-10)
 
 
