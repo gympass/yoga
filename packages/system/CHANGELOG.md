@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.11.1...@gympass/yoga-system@0.12.0) (2024-04-30)
+
+
+### Features
+
+* **system:** add typescript environment ([671a944](https://github.com/Gympass/yoga/commit/671a944c6149151ac492511d24f614e8767d39de))
+
+
+
+
+
 ## [0.11.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.11.0...@gympass/yoga-system@0.11.1) (2023-10-02)
 
 **Note:** Version bump only for package @gympass/yoga-system

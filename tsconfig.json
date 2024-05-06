@@ -10,7 +10,8 @@
       "@gympass/yoga-tokens": ["./packages/tokens/src"],
       "@gympass/yoga/*": ["./packages/yoga/src/*"],
       "@gympass/yoga": ["./packages/yoga/src"],
-      "@gympass/illustrations": ["./packages/illustrations/src"]
+      "@gympass/illustrations": ["./packages/illustrations/src"],
+      "@gympass/icons": ["./packages/icons/src"]
     },
     "declaration": true,
     "outDir": "./dist/",

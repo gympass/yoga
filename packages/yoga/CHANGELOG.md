@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.114.10](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.9...@gympass/yoga@7.114.10) (2024-05-06)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+## [7.114.9](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.8...@gympass/yoga@7.114.9) (2024-04-30)
+
+
+### Bug Fixes
+
+* **NavigationMenu:** changed item tag font color ([6afb369](https://github.com/Gympass/yoga/commit/6afb369bf8826e46e821018fa0eee35459f5697d))
+
+
+
+
+
+## [7.114.8](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.7...@gympass/yoga@7.114.8) (2024-04-30)
+
+
+### Bug Fixes
+
+* **divider component:** fix divider css not showing in safari ([008901b](https://github.com/Gympass/yoga/commit/008901b24d18428f5f3f61db370bebecbb5d5c7a))
+
+
+
+
+
 ## [7.114.7](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.6...@gympass/yoga@7.114.7) (2024-04-17)
 
 **Note:** Version bump only for package @gympass/yoga
