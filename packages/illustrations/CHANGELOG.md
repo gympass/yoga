@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-illustrations@0.5.2...@gympass/yoga-illustrations@0.6.0) (2024-05-09)
+
+
+### Features
+
+* add TS to Illustrations package ([6383310](https://github.com/Gympass/yoga/commit/6383310c6485c8fcd810e619ff8c8de75ece740d))
+* fix indentation ([90a2eb1](https://github.com/Gympass/yoga/commit/90a2eb1d4c33dd7d81f6fafdfbe346d21245c9dc))
+
+
+
+
+
 ## [0.5.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-illustrations@0.5.1...@gympass/yoga-illustrations@0.5.2) (2023-10-02)
 
 **Note:** Version bump only for package @gympass/yoga-illustrations
