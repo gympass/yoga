@@ -1,4 +1,4 @@
-export * from './border';
+export * from './border/border';
 export * from './color';
 export * from './elevation';
 export * from './flex';
