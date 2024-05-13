@@ -1,4 +1,4 @@
-import { borders } from './border/border';
+import { borders } from './border';
 import { backgroundColor } from './color';
 import { elevation } from './elevation';
 import { spacing } from './spacing';
