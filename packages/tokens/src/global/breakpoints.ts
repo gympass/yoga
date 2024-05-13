@@ -1,4 +1,4 @@
-type BreakpointType = 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl';
+export type BreakpointType = 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl';
 
 interface Breakpoint {
   width: number;
@@ -9,7 +9,7 @@ export type Breakpoints = {
   [key in BreakpointType]: Breakpoint;
 };
 
-const breakpoints: Breakpoints = {
+export const breakpoints: Breakpoints = {
   xxs: {
     width: 0,
     margin: 20,
@@ -59,5 +59,6 @@ const breakpoints: Breakpoints = {
   },
 } as const;
 
-export default breakpoints;
+export const BREAKPOINTS_KEYS = Object.keys(breakpoints);
 
+export default breakpoints;
