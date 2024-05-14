@@ -1,11 +1,11 @@
-import { toPx } from '../unit';
+import { toPx } from './unit';
 import {
   getBorder,
   getColor,
   getBorderRadius,
   generator,
   compose,
-} from '../theme';
+} from './theme';
 
 const transform = value => {
   if (Number(value) && value !== 0) {
