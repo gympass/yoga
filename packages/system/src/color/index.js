@@ -1,4 +1,4 @@
-import { getColor, generator } from './theme';
+import { getColor, generator } from '../theme';
 
 const backgroundColor = props =>
   generator({
