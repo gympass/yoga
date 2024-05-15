@@ -132,6 +132,10 @@ exports[`<ActionRequirement /> should default match snapshot 1`] = `
 `;
 
 exports[`<ActionRequirement /> should match snapshot with list 1`] = `
+.c4 {
+  margin-top: 24px;
+}
+
 .c3 {
   margin: 0;
   padding: 0;
@@ -141,18 +145,6 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
   font-family: Rubik;
   font-weight: 400;
   margin-top: 16px;
-  color: #6B6B78;
-}
-
-.c4 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 24px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 400;
-  margin-top: 24px;
   color: #6B6B78;
 }
 
@@ -290,36 +282,31 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
       >
         description
       </p>
-      <p
+      <div
         class="c4"
-        color="deep"
       >
-        <div
-          class=""
+        <p
+          class="c5"
+          font-size="medium"
         >
-          <p
-            class="c5"
-            font-size="medium"
-          >
-            <svg />
-             1x/day standard access
-          </p>
-          <p
-            class="c6"
-            font-size="medium"
-          >
-            <svg />
-             4x/month 1-on-1 sessions
-          </p>
-          <p
-            class="c6"
-            font-size="medium"
-          >
-            <svg />
-             2x/month premium classes
-          </p>
-        </div>
-      </p>
+          <svg />
+           1x/day standard access
+        </p>
+        <p
+          class="c6"
+          font-size="medium"
+        >
+          <svg />
+           4x/month 1-on-1 sessions
+        </p>
+        <p
+          class="c6"
+          font-size="medium"
+        >
+          <svg />
+           2x/month premium classes
+        </p>
+      </div>
       <div
         class="c7"
       />
