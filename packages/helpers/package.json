@@ -11,7 +11,8 @@
   "author": "ggdaltoso <ggdaltoso@gmail.com>",
   "homepage": "https://gympass.github.io/yoga/",
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
   "publishConfig": {
     "access": "public",
     "directory": "dist"
@@ -21,14 +22,24 @@
     "url": "git+https://github.com/Gympass/yoga.git"
   },
   "scripts": {
-    "build": "yarn build:cjs && yarn build:esm",
-    "build:cjs": "NODE_ENV=cjs babel ./src --out-dir dist/cjs",
-    "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
+    "build": "yarn build:types && yarn build:cjs && yarn build:esm",
+    "build:cjs": "tsup --outDir dist/cjs --format=cjs",
+    "build:esm": "tsup --format=esm --legacy-output",
+    "build:types": "tsup --outDir dist/typings --dts-only",
     "prebuild": "rm -rf ./dist",
     "prepublishOnly": "node ../../scripts/prepublish.js",
     "test": "NODE_ENV=test jest --config=../../jest/config/helpers.js"
   },
   "bugs": {
     "url": "https://github.com/Gympass/yoga/issues"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts",
+      "src/**/*.(t|j)s",
+      "!src/**/*.test.(t|j)s"
+    ],
+    "splitting": false,
+    "bundle": false
   }
 }
