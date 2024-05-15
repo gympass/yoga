@@ -84,6 +84,3 @@ const colors = {
 } as const;
 
 export default colors;
-
-export type Colors = keyof typeof colors;
-export const COLORS_KEYS = Object.keys(colors);
