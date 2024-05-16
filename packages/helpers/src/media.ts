@@ -1,11 +1,13 @@
-import { BreakpointType, breakpoints } from '../../tokens/src/global/breakpoints';
+import tokens, { BreakpointsKey } from '@gympass/yoga-tokens';
 
 import { css } from 'styled-components';
 
 import hide from './hide';
 import { Matcher, Media, Width } from './types';
 
-const availableBreakpoints = Object.keys(breakpoints) as BreakpointType[];
+const { breakpoints, BREAKPOINTS_KEYS } = tokens;
+
+const availableBreakpoints = BREAKPOINTS_KEYS as BreakpointsKey[];
 
 const media: Media = { not: {} } as Media;
 
@@ -52,9 +54,9 @@ availableBreakpoints.forEach((breakpoint) => {
 media.max = (width: Width) => matcher(width, false, 'max');
 media.not.max = (width: Width) => matcher(width, true, 'max');
 
-media.between = (min: BreakpointType, max: BreakpointType) =>
+media.between = (min: BreakpointsKey, max: BreakpointsKey) =>
   matcher([min, max], false, 'max');
-media.not.between = (min: BreakpointType, max: BreakpointType) =>
+media.not.between = (min: BreakpointsKey, max: BreakpointsKey) =>
   matcher([min, max], true, 'max');
 
 media.hide = hide();
