@@ -1,4 +1,6 @@
-import { breakpoints, Breakpoints } from '../../tokens/src/global/breakpoints';
+import tokens, { BreakpointsType }  from '@gympass/yoga-tokens';
+
+const { breakpoints } = tokens;
 
 import { css } from 'styled-components';
 
@@ -7,7 +9,7 @@ import { Entries, Hide } from './types';
 
 const availableBreakpoints = Object.entries(
   breakpoints
-) as unknown as Entries<Breakpoints>;
+) as unknown as Entries<BreakpointsType>;
 
 const hide = (isNot = false) =>
   availableBreakpoints.reduce((acc, [key, breakpoint], index) => {

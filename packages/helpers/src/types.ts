@@ -1,7 +1,7 @@
-import type { BreakpointType } from '../../tokens/src/global/breakpoints';
+import type { BreakpointsKey} from '@gympass/yoga-tokens';
 
 import { CSSObject, FlattenSimpleInterpolation } from 'styled-components';
-export type Width = BreakpointType | BreakpointType[];
+export type Width = BreakpointsKey | BreakpointsKey[];
 
 export type Media = {
   not: MediaProps;
@@ -14,7 +14,7 @@ export type Matcher = (
 ) => Match;
 
 export type Hide = {
-  [key in BreakpointType | StartBreakPoints]?: FlattenSimpleInterpolation;
+  [key in BreakpointsKey | StartBreakPoints]?: FlattenSimpleInterpolation;
 };
 
 export type Entries<T> = {
@@ -38,12 +38,12 @@ type MediaProps = {
 } & MappedType;
 
 type MappedType = {
-  [key in BreakpointType]: Match;
+  [key in BreakpointsKey]: Match;
 };
 
 type Max = (width: Width) => Match;
 
-export type Between = (min: BreakpointType, max: BreakpointType) => Match;
+export type Between = (min: BreakpointsKey, max: BreakpointsKey) => Match;
 
 type Match = (
   first: TemplateStringsArray | CSSObject,
