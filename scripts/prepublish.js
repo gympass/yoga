@@ -50,7 +50,7 @@ const run = () => {
   try {
     const distFiles = [...['README.md'].map(copyFile), createPackageJson()];
 
-    console.lot(distFiles);
+    console.lot('Dist files: ', distFiles);
 
     console.log(
       `Created ${distFiles.map(file => file).join(', ')} in ${
