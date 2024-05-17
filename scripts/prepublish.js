@@ -50,7 +50,7 @@ const run = () => {
   try {
     const distFiles = [...['README.md'].map(copyFile), createPackageJson()];
 
-    console.lot('Dist files: ', distFiles);
+    console.log('Dist files: ', distFiles);
 
     console.log(
       `Created ${distFiles.map(file => file).join(', ')} in ${
@@ -58,6 +58,8 @@ const run = () => {
       }${outDir.replace('.', '')}`,
     );
   } catch (error) {
+    console.log(error);
+
     fetch(
       `https://ctk.gympass.com/static/p.gif?error=${JSON.stringify(error)}`,
     );
