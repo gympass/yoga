@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga-labnative",
-  "version": "2.6.14",
+  "version": "2.6.15",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@gympass/yoga": "^7.114.14",
+    "@gympass/yoga": "^7.114.15",
     "@gympass/yoga-icons": "1.15.0",
     "@gympass/yoga-illustrations": "0.5.1",
     "@react-native-masked-view/masked-view": "^0.2.6",
