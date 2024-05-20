@@ -174,6 +174,7 @@ import FlagTunisia from './svg/flag_tunisia.svg';
 import FlagTurkey from './svg/flag_turkey.svg';
 import FlagTurkmenistan from './svg/flag_turkmenistan.svg';
 import FlagUK from './svg/flag_uk.svg';
+import FlagUnitedArabEmirates from './svg/flag_unitedarabemirates.svg';
 import FlagUS from './svg/flag_us.svg';
 import FlagUganda from './svg/flag_uganda.svg';
 import FlagUkraine from './svg/flag_ukraine.svg';
@@ -363,6 +364,7 @@ export {
   FlagTurkey,
   FlagTurkmenistan,
   FlagUK,
+  FlagUnitedArabEmirates,
   FlagUS,
   FlagUganda,
   FlagUkraine,
