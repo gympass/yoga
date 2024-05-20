@@ -532,23 +532,34 @@ exports[`<Result /> should match snapshot 1`] = `
         </Text>
       </View>
     </View>
-    <Text
-      bold={true}
-      numberOfLines={1}
+    <View
       style={
         [
           {
-            "color": "#231B22",
-            "fontFamily": "Rubik",
-            "fontSize": 16,
-            "fontWeight": "500",
-            "lineHeight": 24,
+            "alignItems": "center",
+            "flexDirection": "row",
           },
         ]
       }
     >
-      Jane Doe
-    </Text>
+      <Text
+        bold={true}
+        numberOfLines={1}
+        style={
+          [
+            {
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "500",
+              "lineHeight": 24,
+            },
+          ]
+        }
+      >
+        Jane Doe
+      </Text>
+    </View>
     <Text
       color="deep"
       numberOfLines={1}
@@ -1168,23 +1179,34 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
       ]
     }
   >
-    <Text
-      bold={true}
-      numberOfLines={1}
+    <View
       style={
         [
           {
-            "color": "#231B22",
-            "fontFamily": "Rubik",
-            "fontSize": 16,
-            "fontWeight": "500",
-            "lineHeight": 24,
+            "alignItems": "center",
+            "flexDirection": "row",
           },
         ]
       }
     >
-      Gym
-    </Text>
+      <Text
+        bold={true}
+        numberOfLines={1}
+        style={
+          [
+            {
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "500",
+              "lineHeight": 24,
+            },
+          ]
+        }
+      >
+        Gym
+      </Text>
+    </View>
     <View
       alignItems="center"
       flexDirection="row"
@@ -2051,23 +2073,34 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         </Text>
       </View>
     </View>
-    <Text
-      bold={true}
-      numberOfLines={1}
+    <View
       style={
         [
           {
-            "color": "#231B22",
-            "fontFamily": "Rubik",
-            "fontSize": 16,
-            "fontWeight": "500",
-            "lineHeight": 24,
+            "alignItems": "center",
+            "flexDirection": "row",
           },
         ]
       }
     >
-      John Doe
-    </Text>
+      <Text
+        bold={true}
+        numberOfLines={1}
+        style={
+          [
+            {
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "500",
+              "lineHeight": 24,
+            },
+          ]
+        }
+      >
+        John Doe
+      </Text>
+    </View>
     <Text
       color="deep"
       numberOfLines={1}

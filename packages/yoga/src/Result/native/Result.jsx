@@ -1,10 +1,12 @@
 import React, { isValidElement } from 'react';
 import styled from 'styled-components';
 import { arrayOf, string, shape, func, bool, node } from 'prop-types';
+import { WellhubIcon } from '@gympass/yoga-icons';
 
 import Text from '../../Text';
 import Attendances from './Attendances';
 import Box from '../../Box';
+import Icon from '../../Icon';
 
 const StyledBox = styled(Box)`
   width: 100%;
@@ -36,6 +38,25 @@ const Content = styled.View`
   }}
 `;
 
+const TitleAndBadgeContainer = styled(Box)`
+  flex-direction: row;
+  align-items: center;
+`;
+
+const WidgetExclusiveBadge = () => (
+  <Box
+    ml="xxxsmall"
+    bg="neon"
+    justifyContent="center"
+    alignItems="center"
+    borderRadius="circle"
+    w="small"
+    h="small"
+  >
+    <Icon as={WellhubIcon} size={10.67} fill="text.primary" />
+  </Box>
+);
+
 /**
  * The Result component is used when you have a list to show. It is applied to
  * the item individually, and has the option of being applied to different
@@ -49,6 +70,7 @@ const Result = ({
   divided,
   children,
   attendancesColor,
+  exclusivity = false,
 }) => (
   <StyledBox divided={divided} display="flex" flexDirection="row">
     {Avatar && <>{isValidElement(Avatar) ? Avatar : <Avatar />}</>}
@@ -60,9 +82,12 @@ const Result = ({
           color={attendancesColor}
         />
       )}
-      <Text.Body1 numberOfLines={1} bold>
-        {title}
-      </Text.Body1>
+      <TitleAndBadgeContainer>
+        <Text.Body1 numberOfLines={1} bold>
+          {title}
+        </Text.Body1>
+        {exclusivity && <WidgetExclusiveBadge />}
+      </TitleAndBadgeContainer>
       {subTitle && subTitle !== '' && (
         <Text.Body2 numberOfLines={1} color="deep">
           {subTitle}
@@ -95,6 +120,8 @@ Result.propTypes = {
   children: node,
   /** The color of attendences icon and description */
   attendancesColor: string,
+  /** The property that defines a partner as exclusive */
+  exclusivity: bool,
 };
 
 Result.defaultProps = {
@@ -104,6 +131,7 @@ Result.defaultProps = {
   children: undefined,
   attendances: undefined,
   attendancesColor: undefined,
+  exclusivity: false,
 };
 
 export default Result;
