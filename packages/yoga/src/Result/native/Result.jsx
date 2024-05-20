@@ -43,7 +43,7 @@ const TitleAndBadgeContainer = styled(Box)`
   align-items: center;
 `;
 
-const WidgetExclusiveBadge = () => (
+const ExclusiveBadge = () => (
   <Box
     ml="xxxsmall"
     bg="neon"
@@ -86,7 +86,7 @@ const Result = ({
         <Text.Body1 numberOfLines={1} bold>
           {title}
         </Text.Body1>
-        {exclusivity && <WidgetExclusiveBadge />}
+        {exclusivity && <ExclusiveBadge />}
       </TitleAndBadgeContainer>
       {subTitle && subTitle !== '' && (
         <Text.Body2 numberOfLines={1} color="deep">
