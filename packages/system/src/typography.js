@@ -7,7 +7,7 @@ import {
   compose,
 } from './theme';
 
-import { fontWeight } from './fontWeight';
+import { fontWeight } from './font-weigh';
 
 const color = props =>
   generator({
