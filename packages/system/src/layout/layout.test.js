@@ -8,7 +8,7 @@ import {
   bottom,
   left,
   zIndex,
-} from './layout';
+} from '.';
 
 const spacings = [0, 4, 8, 12];
 
