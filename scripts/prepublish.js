@@ -58,7 +58,7 @@ const run = () => {
       }${outDir.replace('.', '')}`,
     );
   } catch (error) {
-    console.log(error);
+    console.log('ERROR: ', error);
 
     fetch(
       `https://ctk.gympass.com/static/p.gif?error=${JSON.stringify(error)}`,
