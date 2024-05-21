@@ -1,61 +1,12 @@
 import React, { isValidElement } from 'react';
-import styled from 'styled-components';
+
 import { arrayOf, string, shape, func, bool, node } from 'prop-types';
-import { WellhubIcon } from '@gympass/yoga-icons';
 
-import Text from '../../Text';
-import Attendances from './Attendances';
-import Box from '../../Box';
-import Icon from '../../Icon';
+import Text from '../../../Text';
+import Attendances from '../Attendances';
 
-const StyledBox = styled(Box)`
-  width: 100%;
-  border-bottom-width: ${({ divided }) => (divided ? 1 : 0)}px;
-  border-bottom-color: ${({
-    theme: {
-      yoga: {
-        colors: {
-          elements: { lineAndBorders },
-        },
-      },
-    },
-  }) => lineAndBorders};
-`;
-
-const Content = styled.View`
-  flex: 1;
-  ${({
-    theme: {
-      yoga: {
-        spacing: { small, large },
-      },
-    },
-  }) => {
-    return `
-      margin-left: ${small}px;
-      margin-bottom: ${large}px;
-    `;
-  }}
-`;
-
-const TitleAndBadgeContainer = styled(Box)`
-  flex-direction: row;
-  align-items: center;
-`;
-
-const ExclusiveBadge = () => (
-  <Box
-    ml="xxxsmall"
-    bg="neon"
-    justifyContent="center"
-    alignItems="center"
-    borderRadius="circle"
-    w="small"
-    h="small"
-  >
-    <Icon as={WellhubIcon} size={10.67} fill="text.primary" />
-  </Box>
-);
+import { Content, StyledBox, TitleAndBadgeContainer } from './styles';
+import ExclusiveBadge from '../ExclusiveBadge';
 
 /**
  * The Result component is used when you have a list to show. It is applied to
