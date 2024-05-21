@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { overflow, overflowX, overflowY, overflows } from './overflow';
+import { overflow, overflowX, overflowY, overflows } from '.';
 
 describe('overflow', () => {
   describe('overflows', () => {
