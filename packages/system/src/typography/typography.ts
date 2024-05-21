@@ -1,13 +1,13 @@
-import { toPx } from './unit';
+import { toPx } from '../unit';
 import {
   getFontSize,
   getColor,
   getLineHeight,
   generator,
   compose,
-} from './theme';
+} from '../theme';
 
-import { fontWeight } from './fontWeight';
+import { fontWeight } from '../fontWeight';
 
 const color = props =>
   generator({
