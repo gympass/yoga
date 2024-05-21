@@ -7,9 +7,9 @@ import Img2d06 from './svg/img2d06.svg';
 import Img2d07 from './svg/img2d07.svg';
 import Img2d08 from './svg/img2d08.svg';
 import Img2d09 from './svg/img2d09.svg';
+import Img2d12 from './svg/img2d12.svg';
 import Img2d10 from './svg/img2d10.svg';
 import Img2d11 from './svg/img2d11.svg';
-import Img2d12 from './svg/img2d12.svg';
 
 export {
   Img2d01,
