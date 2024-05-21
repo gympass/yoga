@@ -1,6 +1,6 @@
-import tokens from '@gympass/yoga-tokens';
+import { spacing } from '@gympass/yoga-tokens';
 
-type SpacingValues = typeof tokens.spacing | string | number;
+type SpacingValues = typeof spacing | string | number;
 
 type Display = {
   display?: string;
