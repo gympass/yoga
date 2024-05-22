@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.12.0...@gympass/yoga-system@0.13.0) (2024-05-22)
+
+
+### Features
+
+* add border folder in import paths ([bbbf6c5](https://github.com/Gympass/yoga/commit/bbbf6c5e43bb11e01325c3ccf6172c408f8d4bfd))
+* add border types ([65bb410](https://github.com/Gympass/yoga/commit/65bb41023bfdec8b869bd9adf0ac422de0d1bb80))
+* create border folder and types ([bdf11b6](https://github.com/Gympass/yoga/commit/bdf11b6f54ddf695fd1aa391e7b95322c453fa7b))
+
+
+
+
+
 # [0.12.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.11.1...@gympass/yoga-system@0.12.0) (2024-04-30)
 
 
