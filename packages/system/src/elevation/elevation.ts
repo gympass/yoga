@@ -5,7 +5,7 @@ const elevation = props =>
     props,
     prop: ['boxShadow', 'bs', 'elevation'],
     cssProperty: 'boxShadow',
-    getter: getElevation
+    getter: getElevation,
   });
 
 export { elevation };
