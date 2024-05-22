@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-helpers@1.0.5...@gympass/yoga-helpers@1.1.0) (2024-05-22)
+
+
+### Features
+
+* **helpers:** add typescript in media and hide files ([bab4964](https://github.com/Gympass/yoga/commit/bab49646af97021cf258046fe7bebdc5c6a26fe6))
+* **helpers:** create types ([ceeeae4](https://github.com/Gympass/yoga/commit/ceeeae43172d52900bafa1b0b8c38bb3d33aebf1))
+
+
+
+
+
 ## [1.0.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-helpers@1.0.4...@gympass/yoga-helpers@1.0.5) (2024-05-15)
 
 **Note:** Version bump only for package @gympass/yoga-helpers
