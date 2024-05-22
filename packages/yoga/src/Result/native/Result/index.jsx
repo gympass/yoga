@@ -4,9 +4,9 @@ import { arrayOf, string, shape, func, bool, node } from 'prop-types';
 
 import Text from '../../../Text';
 import Attendances from '../Attendances';
+import Badge from '../Badge';
 
 import { Content, StyledBox, TitleAndBadgeContainer } from './styles';
-import ExclusiveBadge from '../ExclusiveBadge';
 
 /**
  * The Result component is used when you have a list to show. It is applied to
@@ -21,7 +21,7 @@ const Result = ({
   divided,
   children,
   attendancesColor,
-  exclusivity = false,
+  badgeIcon,
 }) => (
   <StyledBox divided={divided} display="flex" flexDirection="row">
     {Avatar && <>{isValidElement(Avatar) ? Avatar : <Avatar />}</>}
@@ -37,7 +37,19 @@ const Result = ({
         <Text.Body1 numberOfLines={1} bold>
           {title}
         </Text.Body1>
-        {exclusivity && <ExclusiveBadge />}
+        {badgeIcon && (
+          <Badge
+            icon={badgeIcon}
+            fill="text.primary"
+            ml="xxxsmall"
+            bg="neon"
+            justifyContent="center"
+            alignItems="center"
+            borderRadius="circle"
+            w="small"
+            h="small"
+          />
+        )}
       </TitleAndBadgeContainer>
       {subTitle && subTitle !== '' && (
         <Text.Body2 numberOfLines={1} color="deep">
@@ -71,8 +83,8 @@ Result.propTypes = {
   children: node,
   /** The color of attendences icon and description */
   attendancesColor: string,
-  /** The property that defines a partner as exclusive */
-  exclusivity: bool,
+  /** The property that defines a whether a badge should be shown and which icon should be rendered */
+  badgeIcon: node,
 };
 
 Result.defaultProps = {
@@ -82,7 +94,7 @@ Result.defaultProps = {
   children: undefined,
   attendances: undefined,
   attendancesColor: undefined,
-  exclusivity: false,
+  badgeIcon: undefined,
 };
 
 export default Result;
