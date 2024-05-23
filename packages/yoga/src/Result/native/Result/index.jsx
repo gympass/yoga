@@ -1,40 +1,12 @@
 import React, { isValidElement } from 'react';
-import styled from 'styled-components';
+
 import { arrayOf, string, shape, func, bool, node } from 'prop-types';
 
-import Text from '../../Text';
-import Attendances from './Attendances';
-import Box from '../../Box';
+import Text from '../../../Text';
+import Attendances from '../Attendances';
+import Badge from '../Badge';
 
-const StyledBox = styled(Box)`
-  width: 100%;
-  border-bottom-width: ${({ divided }) => (divided ? 1 : 0)}px;
-  border-bottom-color: ${({
-    theme: {
-      yoga: {
-        colors: {
-          elements: { lineAndBorders },
-        },
-      },
-    },
-  }) => lineAndBorders};
-`;
-
-const Content = styled.View`
-  flex: 1;
-  ${({
-    theme: {
-      yoga: {
-        spacing: { small, large },
-      },
-    },
-  }) => {
-    return `
-      margin-left: ${small}px;
-      margin-bottom: ${large}px;
-    `;
-  }}
-`;
+import { Content, StyledBox, TitleAndBadgeContainer } from './styles';
 
 /**
  * The Result component is used when you have a list to show. It is applied to
@@ -49,6 +21,7 @@ const Result = ({
   divided,
   children,
   attendancesColor,
+  badgeIcon,
 }) => (
   <StyledBox divided={divided} display="flex" flexDirection="row">
     {Avatar && <>{isValidElement(Avatar) ? Avatar : <Avatar />}</>}
@@ -60,9 +33,24 @@ const Result = ({
           color={attendancesColor}
         />
       )}
-      <Text.Body1 numberOfLines={1} bold>
-        {title}
-      </Text.Body1>
+      <TitleAndBadgeContainer>
+        <Text.Body1 numberOfLines={1} bold>
+          {title}
+        </Text.Body1>
+        {badgeIcon && (
+          <Badge
+            icon={badgeIcon}
+            fill="text.primary"
+            ml="xxxsmall"
+            bg="neon"
+            justifyContent="center"
+            alignItems="center"
+            borderRadius="circle"
+            w="small"
+            h="small"
+          />
+        )}
+      </TitleAndBadgeContainer>
       {subTitle && subTitle !== '' && (
         <Text.Body2 numberOfLines={1} color="deep">
           {subTitle}
@@ -95,6 +83,8 @@ Result.propTypes = {
   children: node,
   /** The color of attendences icon and description */
   attendancesColor: string,
+  /** The property that defines a whether a badge should be shown and which icon should be rendered */
+  badgeIcon: node,
 };
 
 Result.defaultProps = {
@@ -104,6 +94,7 @@ Result.defaultProps = {
   children: undefined,
   attendances: undefined,
   attendancesColor: undefined,
+  badgeIcon: undefined,
 };
 
 export default Result;

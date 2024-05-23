@@ -186,6 +186,7 @@ import Visibility from './svg/visibility.svg';
 import Wallet from './svg/wallet.svg';
 import Whatsapp from './svg/whatsapp.svg';
 import WheelchairFriendlyDoors from './svg/wheelchair_friendly_doors.svg';
+import WellhubIcon from './svg/icon_wellhub.svg';
 import WiFi from './svg/wi-fi.svg';
 import YogaMat from './svg/yoga-mat.svg';
 import Youtube from './svg/youtube.svg';
@@ -380,6 +381,7 @@ export {
   Wallet,
   Whatsapp,
   WheelchairFriendlyDoors,
+  WellhubIcon,
   WiFi,
   YogaMat,
   Youtube,
