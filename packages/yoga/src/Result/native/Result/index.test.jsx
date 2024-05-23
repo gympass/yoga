@@ -2,10 +2,10 @@ import React from 'react';
 import { render } from '@testing-library/react-native';
 import { BuildingFilled } from '@gympass/yoga-icons';
 
-import { ThemeProvider } from '../..';
-import Result from './Result';
-import Avatar from '../../Avatar';
-import Text from '../../Text';
+import { ThemeProvider } from '../../..';
+import Result from '.';
+import Avatar from '../../../Avatar';
+import Text from '../../../Text';
 
 const attendanceList = [
   {
