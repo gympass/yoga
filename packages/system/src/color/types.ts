@@ -1,6 +1,6 @@
-import tokens from '@gympass/yoga-tokens';
+import { colors } from '@gympass/yoga-tokens';
 
-type ColorsValues = typeof tokens.colors | string;
+type ColorsValues = typeof colors | string;
 
 export type Colors = {
   backgroundColor?: ColorsValues;
