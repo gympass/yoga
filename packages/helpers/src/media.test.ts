@@ -1,5 +1,7 @@
 /* eslint-disable import/no-named-as-default-member */
-import tokens, { BreakpointsKey } from '@gympass/yoga-tokens';
+import tokens from '@gympass/yoga-tokens';
+
+import { BreakpointsKey } from '../../tokens/src/global/breakpoints';
 
 import media, { matcher, not } from './media';
 import { Matcher } from './types';

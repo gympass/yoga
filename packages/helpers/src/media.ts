@@ -1,4 +1,6 @@
-import tokens, { BreakpointsKey } from '@gympass/yoga-tokens';
+import tokens from '@gympass/yoga-tokens';
+
+import { BreakpointsKey } from '../../tokens/src/global/breakpoints';
 
 import { css } from 'styled-components';
 

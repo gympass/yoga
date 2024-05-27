@@ -1,4 +1,4 @@
-import type { BreakpointsKey} from '@gympass/yoga-tokens';
+import { BreakpointsKey } from '../../tokens/src/global/breakpoints';
 
 import { CSSObject, FlattenSimpleInterpolation } from 'styled-components';
 export type Width = BreakpointsKey | BreakpointsKey[];
