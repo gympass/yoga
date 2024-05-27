@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.13.0...@gympass/yoga-system@0.14.0) (2024-05-27)
+
+
+### Features
+
+* add elevation index ([ab07843](https://github.com/Gympass/yoga/commit/ab07843feede51e19807d5dbeaf3b40bfdd7a5d0))
+* add elevation types ([9aa77a5](https://github.com/Gympass/yoga/commit/9aa77a5a4633df102a8614db75735c0a56e7cdd8))
+
+
+
+
+
 # [0.13.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.12.0...@gympass/yoga-system@0.13.0) (2024-05-22)
 
 
