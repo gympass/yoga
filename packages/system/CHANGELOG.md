@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.14.0...@gympass/yoga-system@0.15.0) (2024-05-27)
+
+
+### Features
+
+* add font-weight types ([6a10130](https://github.com/Gympass/yoga/commit/6a101309d026a2e86076676780773bf945b1b466))
+
+
+
+
+
 # [0.14.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.13.0...@gympass/yoga-system@0.14.0) (2024-05-27)
 
 
