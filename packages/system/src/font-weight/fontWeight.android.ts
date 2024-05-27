@@ -1,4 +1,4 @@
-import { getFontWeight, generator } from './theme';
+import { getFontWeight, generator } from '../theme';
 
 export const fontWeight = props =>
   generator({
