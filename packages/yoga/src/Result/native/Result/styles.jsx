@@ -31,8 +31,3 @@ export const Content = styled.View`
     `;
   }}
 `;
-
-export const TitleAndBadgeContainer = styled(Box)`
-  flex-direction: row;
-  align-items: center;
-`;

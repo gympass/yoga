@@ -533,11 +533,15 @@ exports[`<Result /> should match snapshot 1`] = `
       </View>
     </View>
     <View
+      alignItems="center"
+      flexDirection="row"
+      marginRight="zero"
       style={
         [
           {
             "alignItems": "center",
             "flexDirection": "row",
+            "marginRight": 0,
           },
         ]
       }
@@ -1180,11 +1184,15 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
     }
   >
     <View
+      alignItems="center"
+      flexDirection="row"
+      marginRight="zero"
       style={
         [
           {
             "alignItems": "center",
             "flexDirection": "row",
+            "marginRight": 0,
           },
         ]
       }
@@ -2074,11 +2082,15 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       </View>
     </View>
     <View
+      alignItems="center"
+      flexDirection="row"
+      marginRight="zero"
       style={
         [
           {
             "alignItems": "center",
             "flexDirection": "row",
+            "marginRight": 0,
           },
         ]
       }
