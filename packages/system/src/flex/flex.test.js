@@ -15,7 +15,7 @@ import {
   order,
   flexes,
   gap,
-} from '.';
+} from './flex';
 
 const spacings = [0, 4, 8, 12];
 

@@ -1,6 +1,6 @@
-import tokens from '@gympass/yoga-tokens';
+import { spacing } from '@gympass/yoga-tokens';
 
-type GapValues = typeof tokens.spacing | string | number;
+type GapValues = typeof spacing | string | number;
 
 export type Flex = {
   flexDirection?: string;
