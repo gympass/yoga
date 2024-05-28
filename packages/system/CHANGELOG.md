@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.17.0...@gympass/yoga-system@0.18.0) (2024-05-28)
+
+
+### Features
+
+* **system:** add types to overflow ([7b6abde](https://github.com/Gympass/yoga/commit/7b6abde2e53de790f0a5c440acb865539b1ed6b6))
+
+
+
+
+
 # [0.17.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.16.0...@gympass/yoga-system@0.17.0) (2024-05-28)
 
 
