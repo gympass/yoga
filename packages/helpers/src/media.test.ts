@@ -1,10 +1,8 @@
 /* eslint-disable import/no-named-as-default-member */
-import tokens, { BreakpointsKey } from '@gympass/yoga-tokens';
+import { breakpoints, BREAKPOINTS_KEYS, BreakpointsKey } from '@gympass/yoga-tokens';
 
 import media, { matcher, not } from './media';
 import { Matcher } from './types';
-
-const { breakpoints, BREAKPOINTS_KEYS } = tokens;
 
 const formatCss = style =>
   Array.isArray(style)
