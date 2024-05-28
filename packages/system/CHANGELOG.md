@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.16.0...@gympass/yoga-system@0.17.0) (2024-05-28)
+
+
+### Features
+
+* **system:** add types to spacing ([17fe0e0](https://github.com/Gympass/yoga/commit/17fe0e00f557c3728e294ee73659cee604a4f1bf))
+
+
+
+
+
 # [0.16.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.15.0...@gympass/yoga-system@0.16.0) (2024-05-28)
 
 
