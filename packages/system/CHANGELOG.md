@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.18.0...@gympass/yoga-system@0.19.0) (2024-05-28)
+
+
+### Features
+
+* add colors typing ([2ef2a38](https://github.com/Gympass/yoga/commit/2ef2a3823c0803c2600c06e325d18c25f56de53c))
+* use global import from tokens ([051ca15](https://github.com/Gympass/yoga/commit/051ca15ac8a40fda62d66dd2bdd155f30ba1fd89))
+
+
+
+
+
 # [0.18.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.17.0...@gympass/yoga-system@0.18.0) (2024-05-28)
 
 
