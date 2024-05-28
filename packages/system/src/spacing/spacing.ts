@@ -1,5 +1,5 @@
-import { toPx } from './unit';
-import { getSpacing, generator, compose } from './theme';
+import { toPx } from '../unit';
+import { getSpacing, generator, compose } from '../theme';
 
 const margin = props =>
   generator({
