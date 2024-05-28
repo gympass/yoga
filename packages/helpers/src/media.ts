@@ -1,4 +1,4 @@
-import tokens from '@gympass/yoga-tokens';
+import { breakpoints, BREAKPOINTS_KEYS } from '@gympass/yoga-tokens';
 
 import { BreakpointsKey } from '../../tokens/src/global/breakpoints';
 
@@ -6,8 +6,6 @@ import { css } from 'styled-components';
 
 import hide from './hide';
 import { Matcher, Media, Width } from './types';
-
-const { breakpoints, BREAKPOINTS_KEYS } = tokens;
 
 const availableBreakpoints = BREAKPOINTS_KEYS as BreakpointsKey[];
 
