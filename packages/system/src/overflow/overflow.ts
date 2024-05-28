@@ -1,4 +1,4 @@
-import { compose, generator } from './theme';
+import { compose, generator } from '../theme';
 
 const overflow = props =>
   generator({
