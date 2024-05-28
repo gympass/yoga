@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga-helpers",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Gympass helpers",
   "keywords": [
     "styled-components",
@@ -23,8 +23,8 @@
   },
   "scripts": {
     "build": "yarn build:types && yarn build:cjs && yarn build:esm",
-    "build:cjs": "tsup --outDir dist/cjs --format=cjs",
-    "build:esm": "tsup --format=esm --legacy-output",
+    "build:cjs": "tsup src !src/types.ts --outDir dist/cjs --format=cjs",
+    "build:esm": "tsup src !src/types.ts --format=esm --legacy-output",
     "build:types": "tsup --outDir dist/typings --dts-only",
     "prebuild": "rm -rf ./dist",
     "prepublishOnly": "node ../../scripts/prepublish.js",

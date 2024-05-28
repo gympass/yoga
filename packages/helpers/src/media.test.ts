@@ -1,58 +1,59 @@
 /* eslint-disable import/no-named-as-default-member */
-import tokens from '@gympass/yoga-tokens';
+import tokens, { BreakpointsKey } from '@gympass/yoga-tokens';
 
 import media, { matcher, not } from './media';
+import { Matcher } from './types';
 
-const { breakpoints } = tokens;
+const { breakpoints, BREAKPOINTS_KEYS } = tokens;
 
 const formatCss = style =>
   Array.isArray(style)
     ? style.join().replace(/,|\s*/g, '')
     : style.replace(/,|\s*/g, '');
 
-const expectedStyle = (...args) => {
+const expectedStyle: Matcher = (...args) => {
   return formatCss(matcher(...args)`
     padding: 10px;
   `);
 };
 
-const expectedHideStyle = breakpoint =>
+const expectedHideStyle: (breakpoint: string) => void = breakpoint =>
   formatCss(`@media (min-width: ${breakpoints[breakpoint].width}px) {
   display: none !important;
 }`);
 
 describe('media', () => {
-  it.each(Object.keys(breakpoints))('.%s', breakpoint => {
+  it.each(BREAKPOINTS_KEYS)('.%s', breakpoint => {
     const style = media[breakpoint]`
       padding: 10px;
       `;
 
-    expect(formatCss(style)).toBe(expectedStyle(breakpoint));
+    expect(formatCss(style)).toBe(expectedStyle(breakpoint as BreakpointsKey));
   });
 
-  it.each(Object.keys(breakpoints))('.not.%s', breakpoint => {
+  it.each(BREAKPOINTS_KEYS)('.not.%s', breakpoint => {
     const notStyle = media.not[breakpoint]`
         padding: 10px;
       `;
 
-    expect(formatCss(notStyle)).toBe(expectedStyle(breakpoint, true));
+    expect(formatCss(notStyle)).toBe(expectedStyle(breakpoint as BreakpointsKey, true));
   });
 
   describe('max', () => {
-    it.each(Object.keys(breakpoints))(".max('%s')", breakpoint => {
-      const style = media.max(breakpoint)`
+    it.each(BREAKPOINTS_KEYS)(".max('%s')", breakpoint => {
+      const style = media.max(breakpoint as BreakpointsKey)`
         padding: 10px;
         `;
 
-      expect(formatCss(style)).toBe(expectedStyle(breakpoint, false, 'max'));
+      expect(formatCss(style)).toBe(expectedStyle(breakpoint as BreakpointsKey, false, 'max'));
     });
 
     it.each(Object.keys(breakpoints))(".not.max('%s')", breakpoint => {
-      const style = media.not.max(breakpoint)`
+      const style = media.not.max(breakpoint as BreakpointsKey)`
         padding: 10px;
         `;
 
-      expect(formatCss(style)).toBe(expectedStyle(breakpoint, true, 'max'));
+      expect(formatCss(style)).toBe(expectedStyle(breakpoint as BreakpointsKey, true, 'max'));
     });
   });
 
@@ -71,19 +72,19 @@ describe('media', () => {
     ];
 
     it.each(comparisons)(".between('%s', '%s')", (min, max) => {
-      const style = media.between(min, max)`
+      const style = media.between(min as BreakpointsKey, max as BreakpointsKey)`
         padding: 10px;
         `;
 
-      expect(formatCss(style)).toBe(expectedStyle([min, max], false));
+      expect(formatCss(style)).toBe(expectedStyle([min as BreakpointsKey, max as BreakpointsKey], false));
     });
 
     it.each(comparisons)(".not.between('%s', '%s')", (min, max) => {
-      const style = media.not.between(min, max)`
+      const style = media.not.between(min as BreakpointsKey, max as BreakpointsKey)`
         padding: 10px;
         `;
 
-      expect(formatCss(style)).toBe(expectedStyle([min, max], true));
+      expect(formatCss(style)).toBe(expectedStyle([min as BreakpointsKey, max as BreakpointsKey], true));
     });
   });
 });

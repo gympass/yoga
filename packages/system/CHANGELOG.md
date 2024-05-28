@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.14.0...@gympass/yoga-system@0.15.0) (2024-05-27)
+
+
+### Features
+
+* add font-weight types ([6a10130](https://github.com/Gympass/yoga/commit/6a101309d026a2e86076676780773bf945b1b466))
+
+
+
+
+
+# [0.14.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.13.0...@gympass/yoga-system@0.14.0) (2024-05-27)
+
+
+### Features
+
+* add elevation index ([ab07843](https://github.com/Gympass/yoga/commit/ab07843feede51e19807d5dbeaf3b40bfdd7a5d0))
+* add elevation types ([9aa77a5](https://github.com/Gympass/yoga/commit/9aa77a5a4633df102a8614db75735c0a56e7cdd8))
+
+
+
+
+
+# [0.13.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.12.0...@gympass/yoga-system@0.13.0) (2024-05-22)
+
+
+### Features
+
+* add border folder in import paths ([bbbf6c5](https://github.com/Gympass/yoga/commit/bbbf6c5e43bb11e01325c3ccf6172c408f8d4bfd))
+* add border types ([65bb410](https://github.com/Gympass/yoga/commit/65bb41023bfdec8b869bd9adf0ac422de0d1bb80))
+* create border folder and types ([bdf11b6](https://github.com/Gympass/yoga/commit/bdf11b6f54ddf695fd1aa391e7b95322c453fa7b))
+
+
+
+
+
 # [0.12.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.11.1...@gympass/yoga-system@0.12.0) (2024-04-30)
 
 

@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.114.22](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.21...@gympass/yoga@7.114.22) (2024-05-27)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+## [7.114.21](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.20...@gympass/yoga@7.114.21) (2024-05-27)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+## [7.114.20](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.19...@gympass/yoga@7.114.20) (2024-05-23)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+## [7.114.19](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.18...@gympass/yoga@7.114.19) (2024-05-22)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+## [7.114.18](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.17...@gympass/yoga@7.114.18) (2024-05-22)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
 ## [7.114.17](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.16...@gympass/yoga@7.114.17) (2024-05-21)
 
 **Note:** Version bump only for package @gympass/yoga

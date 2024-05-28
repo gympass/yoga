@@ -1,11 +1,17 @@
-import tokens from '@gympass/yoga-tokens';
-import { css } from 'styled-components';
-import { not } from './media';
+import tokens, { BreakpointsType }  from '@gympass/yoga-tokens';
 
 const { breakpoints } = tokens;
-const availableBreakpoints = Object.entries(breakpoints);
 
-const hide = isNot =>
+import { css } from 'styled-components';
+
+import { not } from './media';
+import { Entries, Hide } from './types';
+
+const availableBreakpoints = Object.entries(
+  breakpoints
+) as unknown as Entries<BreakpointsType>;
+
+const hide = (isNot = false) =>
   availableBreakpoints.reduce((acc, [key, breakpoint], index) => {
     if (index === 0) {
       const [, secondBreakpoint] = availableBreakpoints[index + 1];
@@ -37,10 +43,7 @@ const hide = isNot =>
     const [, nextBreakpoint] = availableBreakpoints[index + 1];
 
     acc[key] = css`
-      @media ${not(
-          isNot,
-        )} (min-width: ${breakpoint.width}px) and (max-width: ${nextBreakpoint.width -
-        1}px) {
+      @media ${not(isNot)} (min-width: ${breakpoint.width}px) and (max-width: ${nextBreakpoint.width - 1}px) {
         display: none !important;
       }
     `;
@@ -52,6 +55,6 @@ const hide = isNot =>
     `;
 
     return acc;
-  }, {});
+  }, {} as Hide);
 
 export default hide;

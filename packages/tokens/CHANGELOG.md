@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.5.1...@gympass/yoga-tokens@3.6.0) (2024-05-22)
+
+
+### Bug Fixes
+
+* **tokens:** fix semicolon ([66e2497](https://github.com/Gympass/yoga/commit/66e2497ff635798f40c746c9f11ce81bb481759c))
+
+
+### Features
+
+* add border types ([65bb410](https://github.com/Gympass/yoga/commit/65bb41023bfdec8b869bd9adf0ac422de0d1bb80))
+
+
+
+
+
+## [3.5.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.5.0...@gympass/yoga-tokens@3.5.1) (2024-05-22)
+
+**Note:** Version bump only for package @gympass/yoga-tokens
+
+
+
+
+
 # [3.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.4.1...@gympass/yoga-tokens@3.5.0) (2024-03-19)
 
 
