@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.20.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.19.0...@gympass/yoga-system@0.20.0) (2024-05-28)
+
+
+### Features
+
+* flex typing ([9abad67](https://github.com/Gympass/yoga/commit/9abad67af2efa73e883f658bb0207a4f0858bd61))
+* use global import from tokens ([5fb911c](https://github.com/Gympass/yoga/commit/5fb911cf2f1d01ac2c16292ce87de6b40c6404cc))
+
+
+
+
+
 # [0.19.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.18.0...@gympass/yoga-system@0.19.0) (2024-05-28)
 
 
