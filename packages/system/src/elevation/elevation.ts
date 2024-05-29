@@ -1,4 +1,4 @@
-import { getElevation, generator } from './theme';
+import { getElevation, generator } from '../theme';
 
 const elevation = props =>
   generator({

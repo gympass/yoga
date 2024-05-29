@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { elevation } from './elevation';
+import { elevation } from '.';
 import { elevation as androidElevation } from './elevation.android';
 
 describe('Web and iOS', () => {

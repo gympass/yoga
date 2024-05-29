@@ -1,6 +1,6 @@
-import { compose, generator, getSpacing } from './theme';
+import { compose, generator, getSpacing } from '../theme';
 
-import { toPx } from './unit';
+import { toPx } from '../unit';
 
 const flexDirection = props =>
   generator({

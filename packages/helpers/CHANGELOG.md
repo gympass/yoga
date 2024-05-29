@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-helpers@1.1.0...@gympass/yoga-helpers@1.1.1) (2024-05-28)
+
+
+### Bug Fixes
+
+* **helpers:** adjust path ([961dc41](https://github.com/Gympass/yoga/commit/961dc41c0937d4317e1031516029baa9219d295d))
+
+
+
+
+
 # [1.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-helpers@1.0.5...@gympass/yoga-helpers@1.1.0) (2024-05-22)
 
 

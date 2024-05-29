@@ -1,5 +1,5 @@
-import { toPx } from './unit';
-import { compose, generator, getSpacing } from './theme';
+import { toPx } from '../unit';
+import { compose, generator, getSpacing } from '../theme';
 
 const display = props =>
   generator({

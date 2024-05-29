@@ -3,6 +3,86 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.20.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.19.0...@gympass/yoga-system@0.20.0) (2024-05-28)
+
+
+### Features
+
+* flex typing ([9abad67](https://github.com/Gympass/yoga/commit/9abad67af2efa73e883f658bb0207a4f0858bd61))
+* use global import from tokens ([5fb911c](https://github.com/Gympass/yoga/commit/5fb911cf2f1d01ac2c16292ce87de6b40c6404cc))
+
+
+
+
+
+# [0.19.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.18.0...@gympass/yoga-system@0.19.0) (2024-05-28)
+
+
+### Features
+
+* add colors typing ([2ef2a38](https://github.com/Gympass/yoga/commit/2ef2a3823c0803c2600c06e325d18c25f56de53c))
+* use global import from tokens ([051ca15](https://github.com/Gympass/yoga/commit/051ca15ac8a40fda62d66dd2bdd155f30ba1fd89))
+
+
+
+
+
+# [0.18.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.17.0...@gympass/yoga-system@0.18.0) (2024-05-28)
+
+
+### Features
+
+* **system:** add types to overflow ([7b6abde](https://github.com/Gympass/yoga/commit/7b6abde2e53de790f0a5c440acb865539b1ed6b6))
+
+
+
+
+
+# [0.17.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.16.0...@gympass/yoga-system@0.17.0) (2024-05-28)
+
+
+### Features
+
+* **system:** add types to spacing ([17fe0e0](https://github.com/Gympass/yoga/commit/17fe0e00f557c3728e294ee73659cee604a4f1bf))
+
+
+
+
+
+# [0.16.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.15.0...@gympass/yoga-system@0.16.0) (2024-05-28)
+
+
+### Features
+
+* **system:** add types to layout ([b9b4d28](https://github.com/Gympass/yoga/commit/b9b4d287faad8260fad2043e7ec99e5fe2678a03))
+
+
+
+
+
+# [0.15.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.14.0...@gympass/yoga-system@0.15.0) (2024-05-27)
+
+
+### Features
+
+* add font-weight types ([6a10130](https://github.com/Gympass/yoga/commit/6a101309d026a2e86076676780773bf945b1b466))
+
+
+
+
+
+# [0.14.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.13.0...@gympass/yoga-system@0.14.0) (2024-05-27)
+
+
+### Features
+
+* add elevation index ([ab07843](https://github.com/Gympass/yoga/commit/ab07843feede51e19807d5dbeaf3b40bfdd7a5d0))
+* add elevation types ([9aa77a5](https://github.com/Gympass/yoga/commit/9aa77a5a4633df102a8614db75735c0a56e7cdd8))
+
+
+
+
+
 # [0.13.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.12.0...@gympass/yoga-system@0.13.0) (2024-05-22)
 
 

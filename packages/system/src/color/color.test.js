@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { backgroundColor } from './color';
+import { backgroundColor } from '.';
 
 const colors = {
   vibin: '#D8385E',

@@ -9,7 +9,7 @@ import {
   textTransform,
 } from './typography';
 
-import { fontWeight as fontWeightAndroid } from './fontWeight.android';
+import { fontWeight as fontWeightAndroid } from './font-weight/fontWeight.android';
 
 const fontSizes = [10, 20, 40];
 
