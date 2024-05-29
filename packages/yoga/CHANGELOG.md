@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.114.29](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.28...@gympass/yoga@7.114.29) (2024-05-29)
+
+
+### Bug Fixes
+
+* add extra margin to result title and badge container ([ed1ec21](https://github.com/Gympass/yoga/commit/ed1ec21002d9615bec5877de3fcb364125f3dd98))
+
+
+
+
+
 ## [7.114.28](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.27...@gympass/yoga@7.114.28) (2024-05-28)
 
 **Note:** Version bump only for package @gympass/yoga
