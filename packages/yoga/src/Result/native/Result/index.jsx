@@ -3,10 +3,11 @@ import React, { isValidElement } from 'react';
 import { arrayOf, string, shape, func, bool, node } from 'prop-types';
 
 import Text from '../../../Text';
+import Box from '../../../Box';
 import Attendances from '../Attendances';
 import Badge from '../Badge';
 
-import { Content, StyledBox, TitleAndBadgeContainer } from './styles';
+import { Content, StyledBox } from './styles';
 
 /**
  * The Result component is used when you have a list to show. It is applied to
@@ -33,7 +34,11 @@ const Result = ({
           color={attendancesColor}
         />
       )}
-      <TitleAndBadgeContainer>
+      <Box
+        flexDirection="row"
+        alignItems="center"
+        marginRight={badgeIcon ? 'small' : 'zero'}
+      >
         <Text.Body1 numberOfLines={1} bold>
           {title}
         </Text.Body1>
@@ -50,7 +55,7 @@ const Result = ({
             h="small"
           />
         )}
-      </TitleAndBadgeContainer>
+      </Box>
       {subTitle && subTitle !== '' && (
         <Text.Body2 numberOfLines={1} color="deep">
           {subTitle}
