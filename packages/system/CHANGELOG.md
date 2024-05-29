@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.21.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.20.0...@gympass/yoga-system@0.21.0) (2024-05-29)
+
+
+### Features
+
+* **system:** add types to unit ([c595b8c](https://github.com/Gympass/yoga/commit/c595b8cde9e526ee43a8d17cfe2f164d8d752b2a))
+
+
+
+
+
 # [0.20.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.19.0...@gympass/yoga-system@0.20.0) (2024-05-28)
 
 
