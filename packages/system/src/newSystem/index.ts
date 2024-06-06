@@ -1,6 +1,7 @@
 import { css } from 'styled-components';
-import { toPx } from './unit';
+import { toPx } from '../unit';
 import get from 'lodash.get';
+import translate from './translate';
 
 const allowedSpacing = {
   margin: 'spacing',
@@ -31,7 +32,7 @@ const allowedSpacing = {
 };
 
 const allowedBorder = {
-    border: 'borders',
+  border: 'borders',
   borderTop: 'borders',
   borderRight: 'borders',
   borderBottom: 'borders',
@@ -91,7 +92,7 @@ const allowedCss = {
   overflow: 'plainCss',
 };
 
-const alloweProps = {
+const allowedProps = {
   ...allowedSpacing,
   ...allowedBorder,
   ...allowedColors,
@@ -103,39 +104,29 @@ const alloweProps = {
   ...allowedCss,
 };
 
-function translate(prop) {
-  const props = {
-    mb: 'marginBottom',
-    mt: 'marginTop',
-    ml: 'marginLeft',
-    mr: 'marginRight',
-    pb: 'paddingBottom',
-    pt: 'paddingTop',
-    pl: 'paddingLeft',
-    pr: 'paddingRight',
-    bg: 'backgroundColor',
-    bgColor: 'backgroundColor',
-    // elevation: 'boxShadow',
-    c: 'color',
-    fs: 'fontSize',
-    lh: 'lineHeight',
-    ta: 'textAlign',
-    tt: 'textTransform',
-    d: 'display',
-    of: 'overflow',
-    ox: 'overflowX',
-    oy: 'overflowY',
-    p: 'padding',
-    b: 'border',
-    fw: 'fontWeight',
-    w: 'width'
-  };
+type Prop = keyof typeof allowedProps;
+type Variant =
+  | 'spacing'
+  | 'borders'
+  | 'radii'
+  | 'colors'
+  | 'elevations'
+  | 'lineHeights'
+  | 'fontSizes'
+  | 'fontWeights'
+  | 'plainCss'
+  | undefined;
 
-  return props[prop] || prop;
-}
+const TRANSFORM_TO_PX = ['spacing', 'lineHeights', 'borders'];
+const TRANSFORM_TO_BORDER = [
+  'borderTop',
+  'borderRight',
+  'borderBottom',
+  'borderLeft',
+];
 
-const transformBorder = value => {
-  if (Number(value) && value !== 0) {
+function transformBorder(value: string): string {
+  if (Number(value) && Number(value) !== 0) {
     return `${toPx(value)} solid`;
   }
 
@@ -144,62 +135,50 @@ const transformBorder = value => {
   }
 
   return value;
-};
+}
 
-function transform(variant, key, value) {
-  if (['spacing', 'lineHeights'].indexOf(variant) !== -1) return toPx(value);
-  if (
-    ['borderTop', 'borderRight', 'borderBottom', 'borderLeft'].indexOf(key) !==
-    -1
-  )
-    return transformBorder(value);
-  if (variant === 'borders') return toPx(value);
+function transform(variant, key, value): string {
+  if (TRANSFORM_TO_PX.includes(variant)) return toPx(value);
+  if (TRANSFORM_TO_BORDER.includes(key)) return transformBorder(value);
   return value;
 }
 
-function apply(yoga, variant, key, value) {
-  const valueToTransform = get(yoga[variant], value, value)
-  const valueToApply = transform(
-    variant,
-    key,
-    valueToTransform,
-  );
+function apply(yoga, variant: string, key: Prop, value: string) {
+  const valueToTransform = get(yoga[variant], value, value);
+  const valueToApply = transform(variant, key, valueToTransform);
 
-  return { [key]: valueToApply };
+  return valueToApply;
 }
 
 export function newSystem(props) {
-  // console.log({ props });
   const keys = Object.keys(props);
 
   let innerCss = {};
 
   // eslint-disable-next-line no-restricted-syntax
-  for (const key of keys) {
-    let newCss;
+  for (let x = 0; x < keys.length; x++) {
+    const key = keys[x];
     const translated = translate(key);
 
-    const variant = alloweProps[translated];
+    const variant = allowedProps[translated] as Variant;
 
     if (variant) {
       if (variant === 'plainCss') {
-        innerCss = {
-          ...innerCss,
-          ...{ [translated]: props[key] },
-        };
+        innerCss[translated] = props[key];
         // eslint-disable-next-line no-continue
         continue;
       }
 
-      newCss = apply(props.theme.yoga, variant, translated, props[key]);
-      innerCss = {
-        ...innerCss,
-        ...newCss,
-      };
+      const value = apply(
+        props.theme.yoga,
+        variant,
+        translated as Prop,
+        props[key],
+      );
+
+      innerCss[translated] = value;
     }
   }
-
-//   console.log(innerCss);
 
   if (Object.keys(innerCss).length === 0) return;
 
