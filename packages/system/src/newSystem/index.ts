@@ -137,8 +137,8 @@ function transformBorder(value: string): string {
   return value;
 }
 
-function transform(variant, key, value): string {
-  if (TRANSFORM_TO_PX.includes(variant)) return toPx(value);
+function transform(variant: string, key: string, value: string): string {
+  if (TRANSFORM_TO_PX.includes(variant)) return String(toPx(value));
   if (TRANSFORM_TO_BORDER.includes(key)) return transformBorder(value);
   return value;
 }
@@ -150,7 +150,7 @@ function apply(yoga, variant: string, key: Prop, value: string) {
   return valueToApply;
 }
 
-export function newSystem(props) {
+export function newSystem(props: Record<string, any>) {
   const keys = Object.keys(props);
 
   let innerCss = {};
