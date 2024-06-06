@@ -1,18 +1,16 @@
-type OverflowValues = string;
-
 type Overflow = {
-  overflow?: OverflowValues;
-  of?: OverflowValues;
+  overflow?: string;
+  of?: string;
 };
 
 type OverflowX = {
-  overflowX?: OverflowValues;
-  ox?: OverflowValues;
+  overflowX?: string;
+  ox?: string;
 };
 
 type OverflowY = {
-  overflowY?: OverflowValues;
-  oy?: OverflowValues;
+  overflowY?: string;
+  oy?: string;
 };
 
 export type Overflows = Overflow & OverflowX & OverflowY;

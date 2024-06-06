@@ -6,5 +6,5 @@ export const fontWeight = props =>
     prop: ['fontWeight', 'fw'],
     cssProperty: 'font-weight',
     getter: getFontWeight,
-    transform: value => value && value.toString(),
+    transform: value => value?.toString(),
   });
