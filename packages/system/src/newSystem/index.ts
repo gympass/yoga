@@ -180,5 +180,7 @@ export function newSystem(props) {
     }
   }
 
+  if (Object.keys(innerCss).length === 0) return;
+
   return css({ ...innerCss });
 }
