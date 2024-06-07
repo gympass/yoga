@@ -1,4 +1,4 @@
-import React, { isValidElement } from 'react';
+import React, { isValidElement, useState } from 'react';
 
 import { arrayOf, string, shape, func, bool, node } from 'prop-types';
 
@@ -23,48 +23,73 @@ const Result = ({
   children,
   attendancesColor,
   badgeIcon,
-}) => (
-  <StyledBox divided={divided} display="flex" flexDirection="row">
-    {Avatar && <>{isValidElement(Avatar) ? Avatar : <Avatar />}</>}
-    <Content>
-      {!!attendances?.length && (
-        <Attendances
-          attendances={attendances}
-          rate={rate}
-          color={attendancesColor}
-        />
-      )}
-      <Box
-        flexDirection="row"
-        alignItems="center"
-        marginRight={badgeIcon ? 'small' : 'zero'}
-      >
-        <Text.Body1 numberOfLines={1} bold>
-          {title}
-        </Text.Body1>
-        {badgeIcon && (
-          <Badge
-            icon={badgeIcon}
-            fill="text.primary"
-            ml="xxxsmall"
-            bg="neon"
-            justifyContent="center"
-            alignItems="center"
-            borderRadius="circle"
-            w="small"
-            h="small"
+}) => {
+  const [textWidth, setTextWidth] = useState(0);
+
+  const onTextLayout = event => {
+    const { width } = event.nativeEvent.layout;
+
+    setTextWidth(width);
+  };
+
+  return (
+    <StyledBox divided={divided} display="flex" flexDirection="row">
+      {Avatar && <>{isValidElement(Avatar) ? Avatar : <Avatar />}</>}
+      <Content>
+        {!!attendances?.length && (
+          <Attendances
+            attendances={attendances}
+            rate={rate}
+            color={attendancesColor}
           />
         )}
-      </Box>
-      {subTitle && subTitle !== '' && (
-        <Text.Body2 numberOfLines={1} color="deep">
-          {subTitle}
-        </Text.Body2>
-      )}
-      {children}
-    </Content>
-  </StyledBox>
-);
+        <Box
+          flexDirection="row"
+          alignItems="center"
+          position="relative"
+          bg="yellow"
+        >
+          <Box flex={1}>
+            <Text.Body1
+              onLayout={onTextLayout}
+              numberOfLines={1}
+              bold
+              bg="cyan"
+            >
+              {/* Very very reallyveryveryveryveryeys long text text */}
+              {/* Veryaaaaaaffdfdf verysadddaaefesss reallyveryveryveryveryeysaaaa */}
+              {/* Medium text example */}
+              {/* Shortasasassdasas texttextreallyshortaf right here ellipsis */}
+              Short Text
+              {/* Academi a hahahah acomaaaan omegrandea sasadeverdade */}
+            </Text.Body1>
+          </Box>
+          {true && (
+            <Badge
+              left={textWidth - 24}
+              icon={badgeIcon}
+              fill="text.primary"
+              ml="xxxsmall"
+              bg="neon"
+              justifyContent="center"
+              alignItems="center"
+              borderRadius="circle"
+              w="small"
+              h="small"
+              position="absolute"
+            />
+          )}
+        </Box>
+        {subTitle && subTitle !== '' && (
+          <Text.Body2 numberOfLines={1} color="deep">
+            {subTitle}
+          </Text.Body2>
+        )}
+        {children}
+      </Content>
+    </StyledBox>
+  );
+};
 
 Result.propTypes = {
   /** The component Avatar */
