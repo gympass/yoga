@@ -1,13 +1,12 @@
-import React, { isValidElement, useState } from 'react';
-
+import React, { isValidElement, useCallback, useState } from 'react';
 import { arrayOf, string, shape, func, bool, node } from 'prop-types';
 
 import Text from '../../../Text';
 import Box from '../../../Box';
 import Attendances from '../Attendances';
-import Badge from '../Badge';
 
 import { Content, StyledBox } from './styles';
+import TextWithBadge from './TextWithBadge';
 
 /**
  * The Result component is used when you have a list to show. It is applied to
@@ -24,17 +23,25 @@ const Result = ({
   attendancesColor,
   badgeIcon,
 }) => {
-  const [textWidth, setTextWidth] = useState(0);
+  const [avatarWidth, setAvatarWidth] = useState(0);
 
-  const onTextLayout = event => {
+  const onAvatarLayout = useCallback(event => {
     const { width } = event.nativeEvent.layout;
 
-    setTextWidth(width);
-  };
+    setAvatarWidth(width);
+  }, []);
 
   return (
     <StyledBox divided={divided} display="flex" flexDirection="row">
-      {Avatar && <>{isValidElement(Avatar) ? Avatar : <Avatar />}</>}
+      {Avatar && (
+        <>
+          {isValidElement(Avatar) ? (
+            React.cloneElement(Avatar, { onLayout: onAvatarLayout })
+          ) : (
+            <Avatar onLayout={onAvatarLayout} />
+          )}
+        </>
+      )}
       <Content>
         {!!attendances?.length && (
           <Attendances
@@ -43,43 +50,19 @@ const Result = ({
             color={attendancesColor}
           />
         )}
-        <Box
-          flexDirection="row"
-          alignItems="center"
-          position="relative"
-          bg="yellow"
-        >
-          <Box flex={1}>
-            <Text.Body1
-              onLayout={onTextLayout}
-              numberOfLines={1}
-              bold
-              bg="cyan"
-            >
-              {/* Very very reallyveryveryveryveryeys long text text */}
-              {/* Veryaaaaaaffdfdf verysadddaaefesss reallyveryveryveryveryeysaaaa */}
-              {/* Medium text example */}
-              {/* Shortasasassdasas texttextreallyshortaf right here ellipsis */}
-              Short Text
-              {/* Academi a hahahah acomaaaan omegrandea sasadeverdade */}
+        {badgeIcon ? (
+          <TextWithBadge
+            avatarWidth={avatarWidth}
+            badgeIcon={badgeIcon}
+            title={title}
+          />
+        ) : (
+          <Box>
+            <Text.Body1 bold numberOfLines={1}>
+              {title}
             </Text.Body1>
           </Box>
-          {true && (
-            <Badge
-              left={textWidth - 24}
-              icon={badgeIcon}
-              fill="text.primary"
-              ml="xxxsmall"
-              bg="neon"
-              justifyContent="center"
-              alignItems="center"
-              borderRadius="circle"
-              w="small"
-              h="small"
-              position="absolute"
-            />
-          )}
-        </Box>
+        )}
         {subTitle && subTitle !== '' && (
           <Text.Body2 numberOfLines={1} color="deep">
             {subTitle}
