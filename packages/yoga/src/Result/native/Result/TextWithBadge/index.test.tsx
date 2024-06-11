@@ -3,7 +3,7 @@ import { render } from '@testing-library/react-native';
 import { ThemeProvider } from '../../../../index';
 import TextWithBadge from '.';
 
-import { WellhubIcon } from '../../../../../../icons/src/svg/icon_wellhub.svg';
+import { WellhubIcon } from '@gympass/yoga-icons/src/svg/icon_wellhub.svg';
 
 describe('TextWithBadge', () => {
   it('should match snapshot', () => {
