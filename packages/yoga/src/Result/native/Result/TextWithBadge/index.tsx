@@ -1,18 +1,27 @@
-import React, { useCallback, useState } from 'react';
+import React, { ReactNode, useCallback, useState } from 'react';
 import { useWindowDimensions } from 'react-native';
-import { string, number, node } from 'prop-types';
 
-import Text from '../../../Text';
-import Box from '../../../Box';
-import Badge from '../Badge';
+import Badge from '../../Badge';
+
+import { StyledBoxContainer, StyledText } from './styles';
+
+interface TextWithBadgeProps {
+  avatarWidth: number;
+  badgeIcon: ReactNode;
+  title: string;
+}
 
 const SCREEN_PADDINGS = 20;
 const CONTENT_MARGINS = 20;
 const AVATAR_CONTENT_MARGINS = 16;
 const BADGE_LIMIT = 20;
 
-const TextWithBadge = ({ avatarWidth, badgeIcon, title }) => {
-  const [textSize, setTextSize] = useState(0);
+const TextWithBadge = ({
+  avatarWidth,
+  badgeIcon,
+  title,
+}: TextWithBadgeProps) => {
+  const [textSize, setTextSize] = useState<number>(0);
   const { width: windowWidth } = useWindowDimensions();
 
   const textMaxSize =
@@ -29,25 +38,15 @@ const TextWithBadge = ({ avatarWidth, badgeIcon, title }) => {
   }, []);
 
   return (
-    <Box
-      flexDirection="row"
-      alignItems="center"
-      justifyContent="flex-end"
-      position="relative"
-      width={containerWidth}
-    >
-      <Text.Body1
+    <StyledBoxContainer containerWidth={containerWidth}>
+      <StyledText
         onLayout={onTextLayout}
         bold
-        position="absolute"
-        left={0}
         numberOfLines={1}
-        paddingRight="medium"
-        flex={1}
-        width={textWidth}
+        textWidth={textWidth}
       >
         {title}
-      </Text.Body1>
+      </StyledText>
       <Badge
         icon={badgeIcon}
         fill="text.primary"
@@ -59,16 +58,8 @@ const TextWithBadge = ({ avatarWidth, badgeIcon, title }) => {
         w="small"
         h="small"
       />
-    </Box>
+    </StyledBoxContainer>
   );
 };
-
-TextWithBadge.propTypes = {
-  avatarWidth: number.isRequired,
-  badgeIcon: node.isRequired,
-  title: string.isRequired,
-};
-
-TextWithBadge.defaultProps = {};
 
 export default TextWithBadge;
