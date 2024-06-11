@@ -1,5 +1,5 @@
-import { borders } from './border';
-import { backgroundColor } from './color';
+import { borders } from './border/border';
+import { backgroundColor } from './color/color';
 import { elevation } from './elevation';
 import { spacing } from './spacing';
 import { typography } from './typography';

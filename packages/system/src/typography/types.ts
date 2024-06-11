@@ -4,6 +4,7 @@ type ColorsValues = typeof colors | string;
 type FontSizesValues = typeof fontSizes | string | number;
 type LineHeightsValues = typeof lineHeights | string | number;
 type TextAlignValues = string;
+type TextTransformValues = string;
 
 type Color = {
   color?: ColorsValues;
@@ -25,4 +26,9 @@ type TextAlign = {
   ta?: TextAlignValues;
 };
 
-export type Typography = Color & FontSize & LineHeight & TextAlign;
+type TextTransform = {
+  textTransform?: TextTransformValues;
+  tt?: TextTransformValues;
+};
+
+export type Typography = Color & FontSize & LineHeight & TextAlign & TextTransform;
