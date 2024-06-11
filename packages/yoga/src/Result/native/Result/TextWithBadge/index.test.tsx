@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
+import { WellhubIcon } from '@gympass/yoga-icons/src/svg/icon_wellhub.svg';
+
 import { ThemeProvider } from '../../../../index';
 import TextWithBadge from '.';
-
-import { WellhubIcon } from '@gympass/yoga-icons/src/svg/icon_wellhub.svg';
 
 describe('TextWithBadge', () => {
   it('should match snapshot', () => {
