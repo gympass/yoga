@@ -1,0 +1,244 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextWithBadge should match snapshot 1`] = `
+<View
+  containerWidth={0}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "flex-end",
+        "position": "relative",
+        "width": 0,
+      },
+    ]
+  }
+>
+  <Text
+    bold={true}
+    numberOfLines={1}
+    onLayout={[Function]}
+    style={
+      [
+        {
+          "color": "#231B22",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "fontFamily": "Rubik",
+          "fontSize": 16,
+          "fontWeight": "500",
+          "left": 0,
+          "lineHeight": 24,
+          "paddingRight": 20,
+          "position": "absolute",
+          "width": "",
+        },
+      ]
+    }
+    textWidth={null}
+  >
+    Text with badge
+  </Text>
+  <View
+    alignItems="center"
+    bg="neon"
+    borderRadius="circle"
+    h="small"
+    justifyContent="center"
+    ml="xxxsmall"
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#DCFF79",
+          "borderRadius": 9999,
+          "height": 16,
+          "justifyContent": "center",
+          "marginLeft": 4,
+          "width": 16,
+        },
+      ]
+    }
+    w="small"
+  >
+    <View
+      aria-hidden={true}
+      fill="#231B22"
+      height={10.67}
+      style={
+        [
+          {
+            "height": 10.67,
+            "width": 10.67,
+          },
+        ]
+      }
+      width={10.67}
+    />
+  </View>
+</View>
+`;
+
+exports[`TextWithBadge should match snapshot with long title 1`] = `
+<View
+  containerWidth={0}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "flex-end",
+        "position": "relative",
+        "width": 0,
+      },
+    ]
+  }
+>
+  <Text
+    bold={true}
+    numberOfLines={1}
+    onLayout={[Function]}
+    style={
+      [
+        {
+          "color": "#231B22",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "fontFamily": "Rubik",
+          "fontSize": 16,
+          "fontWeight": "500",
+          "left": 0,
+          "lineHeight": 24,
+          "paddingRight": 20,
+          "position": "absolute",
+          "width": "",
+        },
+      ]
+    }
+    textWidth={null}
+  >
+    This is an example of a very long title that should be truncated
+  </Text>
+  <View
+    alignItems="center"
+    bg="neon"
+    borderRadius="circle"
+    h="small"
+    justifyContent="center"
+    ml="xxxsmall"
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#DCFF79",
+          "borderRadius": 9999,
+          "height": 16,
+          "justifyContent": "center",
+          "marginLeft": 4,
+          "width": 16,
+        },
+      ]
+    }
+    w="small"
+  >
+    <View
+      aria-hidden={true}
+      fill="#231B22"
+      height={10.67}
+      style={
+        [
+          {
+            "height": 10.67,
+            "width": 10.67,
+          },
+        ]
+      }
+      width={10.67}
+    />
+  </View>
+</View>
+`;
+
+exports[`TextWithBadge should match snapshot without badgeIcon 1`] = `
+<View
+  containerWidth={0}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "flex-end",
+        "position": "relative",
+        "width": 0,
+      },
+    ]
+  }
+>
+  <Text
+    bold={true}
+    numberOfLines={1}
+    onLayout={[Function]}
+    style={
+      [
+        {
+          "color": "#231B22",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "fontFamily": "Rubik",
+          "fontSize": 16,
+          "fontWeight": "500",
+          "left": 0,
+          "lineHeight": 24,
+          "paddingRight": 20,
+          "position": "absolute",
+          "width": "",
+        },
+      ]
+    }
+    textWidth={null}
+  >
+    Title without Badge
+  </Text>
+  <View
+    alignItems="center"
+    bg="neon"
+    borderRadius="circle"
+    h="small"
+    justifyContent="center"
+    ml="xxxsmall"
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#DCFF79",
+          "borderRadius": 9999,
+          "height": 16,
+          "justifyContent": "center",
+          "marginLeft": 4,
+          "width": 16,
+        },
+      ]
+    }
+    w="small"
+  >
+    <View
+      aria-hidden={true}
+      fill="#231B22"
+      height={10.67}
+      style={
+        [
+          {
+            "height": 10.67,
+            "width": 10.67,
+          },
+        ]
+      }
+      width={10.67}
+    />
+  </View>
+</View>
+`;
