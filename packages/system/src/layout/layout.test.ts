@@ -13,7 +13,7 @@ import {
 
 const theme = {
   yoga: {
-    spacing: spacing,
+    spacing,
   },
 };
 
