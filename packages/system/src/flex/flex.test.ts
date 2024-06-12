@@ -1,4 +1,5 @@
 import { css } from 'styled-components';
+import { spacing } from '@gympass/yoga-tokens';
 import {
   flex,
   flexBasis,
@@ -17,13 +18,9 @@ import {
   gap,
 } from './flex';
 
-const spacings = [0, 4, 8, 12];
-
-[spacings.zero, spacings.small, spacings.medium, spacings.large] = spacings;
-
 const theme = {
   yoga: {
-    spacing: spacings,
+    spacing: spacing,
   },
 };
 
@@ -186,10 +183,10 @@ describe('flex', () => {
   describe('gap', () => {
     it('Should return values for gap prop', () => {
       const expectedZeroSpacing = css({
-        gap: spacings.zero,
+        gap: spacing.zero,
       });
       const expectedMediumSpacing = css({
-        gap: spacings.medium,
+        gap: spacing.medium,
       });
 
       const zero = gap({ theme, gap: 'zero' });
