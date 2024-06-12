@@ -1,4 +1,5 @@
 import { css } from 'styled-components';
+import { fontSizes, lineHeights, fontWeights, weights } from '@gympass/yoga-Tokens';
 import {
   fontSize,
   fontWeight,
@@ -11,21 +12,15 @@ import {
 
 import { fontWeight as fontWeightAndroid } from '../font-weight/fontWeight.android';
 
-const fontSizes = [10, 20, 40];
-
-[fontSizes.small, fontSizes.medium, fontSizes.large] = fontSizes;
-
-const lineHeights = [12, 16, 20];
-
-[lineHeights.small, lineHeights.medium, lineHeights.large] = lineHeights;
-
-const fontWeights = [300, 500, 900];
-
-[fontWeights.light, fontWeights.medium, fontWeights.bold] = fontWeights;
+const fontWeightsValues = Object.values(weights);
+const weight = [
+  ...fontWeightsValues,
+  ...fontWeightsValues.map(value => `${value}i` as const),
+];
 
 const baseFont = {
   family: 'Rubik',
-  weight: [...fontWeights, ...fontWeights.map(weight => `${weight}i`)],
+  weight,
 };
 
 const colors = {
@@ -145,7 +140,7 @@ describe('Web and iOS', () => {
       it('Should return the value if there is no theme match', () => {
         const expectedNoTheme = css({ lineHeight: '5px' });
 
-        const lh = lineHeight({ theme, lh: 5 });
+        const lh = lineHeight({ theme, lh: '5px' });
 
         expect(lh).toStrictEqual(expectedNoTheme);
       });

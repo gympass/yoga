@@ -40,3 +40,5 @@ export {
 };
 
 export * from './breakpoints';
+export * from './font-weights';
+export * from './elevations.android';
