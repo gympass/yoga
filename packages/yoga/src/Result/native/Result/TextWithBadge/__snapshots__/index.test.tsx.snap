@@ -63,20 +63,83 @@ exports[`TextWithBadge should match snapshot 1`] = `
     }
     w="small"
   >
-    <View
+    <RNSVGSvgView
       aria-hidden={true}
+      bbHeight={10.67}
+      bbWidth={10.67}
       fill="#231B22"
+      focusable={false}
       height={10.67}
       style={
         [
           {
-            "height": 10.67,
-            "width": 10.67,
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          [
+            {
+              "height": 10.67,
+              "width": 10.67,
+            },
+          ],
+          {
+            "opacity": 1,
+          },
+          {
+            "flex": 0,
+            "height": 10,
+            "width": 10,
           },
         ]
       }
       width={10.67}
-    />
+    >
+      <RNSVGGroup
+        fill={
+          [
+            0,
+            4280490786,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={{}}
+        matrix={
+          [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
   </View>
 </View>
 `;
@@ -144,20 +207,83 @@ exports[`TextWithBadge should match snapshot with long title 1`] = `
     }
     w="small"
   >
-    <View
+    <RNSVGSvgView
       aria-hidden={true}
+      bbHeight={10.67}
+      bbWidth={10.67}
       fill="#231B22"
+      focusable={false}
       height={10.67}
       style={
         [
           {
-            "height": 10.67,
-            "width": 10.67,
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          [
+            {
+              "height": 10.67,
+              "width": 10.67,
+            },
+          ],
+          {
+            "opacity": 1,
+          },
+          {
+            "flex": 0,
+            "height": 10,
+            "width": 10,
           },
         ]
       }
       width={10.67}
-    />
+    >
+      <RNSVGGroup
+        fill={
+          [
+            0,
+            4280490786,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={{}}
+        matrix={
+          [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
   </View>
 </View>
 `;

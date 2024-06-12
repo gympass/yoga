@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
-import { WellhubIcon } from '@gympass/yoga-icons/src/svg/icon_wellhub.svg';
+import { WellhubIcon } from '@gympass/yoga-icons';
 
 import { ThemeProvider } from '../../../../index';
 import TextWithBadge from '.';
