@@ -25,11 +25,16 @@ const Result = ({
 }) => {
   const [avatarWidth, setAvatarWidth] = useState(0);
 
-  const onAvatarLayout = useCallback(event => {
-    const { width } = event.nativeEvent.layout;
-
-    setAvatarWidth(width);
-  }, []);
+  const onAvatarLayout = useCallback(
+    ({
+      nativeEvent: {
+        layout: { width },
+      },
+    }) => {
+      setAvatarWidth(width);
+    },
+    [],
+  );
 
   return (
     <StyledBox divided={divided} display="flex" flexDirection="row">

@@ -18,7 +18,7 @@ export const StyledBoxContainer = styled(Box)<{
 `;
 
 export const StyledText = styled(Text.Body1)<{
-  onLayout: (event: any) => void;
+  onLayout: ({ nativeEvent: { layout } }) => void;
   textWidth?: string | null;
   numberOfLines: number;
   bold: boolean;
