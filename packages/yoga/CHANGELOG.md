@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.115.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.31...@gympass/yoga@7.115.0) (2024-06-13)
+
+
+### Bug Fixes
+
+* apply codacy import order suggestion ([d79e76a](https://github.com/Gympass/yoga/commit/d79e76a7debd53cc2d5fdf7fa31a89bf22712ead))
+* fix codacy test import suggestion ([7a76e72](https://github.com/Gympass/yoga/commit/7a76e72db7dcd738fcbf0448e947afbe52200b36))
+* fix unusual dependency import ([8455916](https://github.com/Gympass/yoga/commit/845591691f2a63f36aa7f27e9bcf0ba8be54e440))
+* fix useless onlayout any typing ([a3f1a95](https://github.com/Gympass/yoga/commit/a3f1a9589b68bd7c0251906198492b3d2782cb07))
+* fix useless onlayout any typing on textwithbadge component ([aed4b6d](https://github.com/Gympass/yoga/commit/aed4b6d56109481f7d5db17d12104d1b3653b556))
+
+
+### Features
+
+* add new texwithbadge result component ([487b2f0](https://github.com/Gympass/yoga/commit/487b2f0d860681a0190623ed4757f77e5b7c1ddd))
+* integrate new textwithbadge component on result ([f84b585](https://github.com/Gympass/yoga/commit/f84b58550a0120a27a05f5b14795566304e64bb4))
+* **wip:** result ellipsis onlayout test - remove this commit ([0d8362a](https://github.com/Gympass/yoga/commit/0d8362a03fa750a14991acd46cc7457ea6a5cc15))
+
+
+
+
+
 ## [7.114.31](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.30...@gympass/yoga@7.114.31) (2024-06-04)
 
 **Note:** Version bump only for package @gympass/yoga
