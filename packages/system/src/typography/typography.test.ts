@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { fontSizes, lineHeights, fontWeights, weights } from '@gympass/yoga-Tokens';
+import { fontSizes, lineHeights, fontWeights, weights } from '@gympass/yoga-tokens';
 import {
   fontSize,
   fontWeight,
