@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { spacing as spacingTokens } from '@gympass/yoga-Tokens';
+import { spacing as spacingTokens } from '@gympass/yoga-tokens';
 import {
   margin,
   marginTop,
