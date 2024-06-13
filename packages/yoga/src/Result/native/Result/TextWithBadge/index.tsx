@@ -31,11 +31,16 @@ const TextWithBadge = ({
   const containerWidth = shouldTruncate ? null : textSize;
   const textWidth = shouldTruncate ? '100%' : null;
 
-  const onTextLayout = useCallback(event => {
-    const { width } = event.nativeEvent.layout;
-
-    setTextSize(width);
-  }, []);
+  const onTextLayout = useCallback(
+    ({
+      nativeEvent: {
+        layout: { width },
+      },
+    }) => {
+      setTextSize(width);
+    },
+    [],
+  );
 
   return (
     <StyledBoxContainer containerWidth={containerWidth}>
