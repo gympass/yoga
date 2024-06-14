@@ -37,9 +37,11 @@ const TextWithBadge = ({
         layout: { width },
       },
     }) => {
-      setTextSize(width);
+      if (textSize === 0) {
+        setTextSize(width);
+      }
     },
-    [],
+    [textSize],
   );
 
   return (
