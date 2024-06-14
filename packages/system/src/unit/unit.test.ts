@@ -1,4 +1,4 @@
-import { toPx } from './unit';
+import { toPx } from '.';
 
 describe('Unit', () => {
   describe('toPx', () => {
