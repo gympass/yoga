@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.115.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.115.0...@gympass/yoga@7.115.1) (2024-06-14)
+
+
+### Bug Fixes
+
+* text with bedge re-render fix ([afb1995](https://github.com/Gympass/yoga/commit/afb19954cb23429f2ee556c31f61a230ac33d0b3))
+
+
+
+
+
 # [7.115.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.114.31...@gympass/yoga@7.115.0) (2024-06-13)
 
 
