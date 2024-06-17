@@ -1,4 +1,3 @@
-export default function translate(prop: string): string {
   const props = {
     mb: 'marginBottom',
     mt: 'marginTop',
@@ -32,6 +31,4 @@ export default function translate(prop: string): string {
     mh: 'marginHorizontal',
     bRadius: 'borderRadius',
   };
-
-  return props[prop] || prop;
-}
+export default props;

@@ -1,6 +1,9 @@
-import translate from './defaultTranslate';
+import defaultProps from './defaultProps'
 
-export default {
-  ...translate,
-  elevation: 'elevation',
-};
+export default function translate(prop: string): string {
+  const props = { ...defaultProps, elevation: 'elevation' }
+  return props[prop] || prop;
+}
+
+
+

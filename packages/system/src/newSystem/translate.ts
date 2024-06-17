@@ -1,3 +1,5 @@
-import translate from './defaultTranslate';
+import props from './defaultProps';
 
-export default translate;
+export default function translate(prop: string): string {
+  return props[prop] || prop;
+}
