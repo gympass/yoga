@@ -155,7 +155,6 @@ export function newSystem(props: Record<string, any>) {
 
   let innerCss = {};
 
-  // eslint-disable-next-line no-restricted-syntax
   for (let x = 0; x < keys.length; x++) {
     const key = keys[x];
     const translated = translate(key);
