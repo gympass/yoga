@@ -31,4 +31,3 @@ const props = {
   mh: 'marginHorizontal',
   bRadius: 'borderRadius',
 };
-export default props;
