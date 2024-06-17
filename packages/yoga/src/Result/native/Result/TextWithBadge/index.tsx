@@ -1,5 +1,4 @@
-import React, { ReactNode, useCallback, useState } from 'react';
-import { useWindowDimensions } from 'react-native';
+import React, { ReactNode } from 'react';
 
 import Badge from '../../Badge';
 
@@ -11,47 +10,10 @@ interface TextWithBadgeProps {
   title: string;
 }
 
-const SCREEN_PADDINGS = 20;
-const CONTENT_MARGINS = 20;
-const AVATAR_CONTENT_MARGINS = 16;
-const BADGE_LIMIT = 20;
-
-const TextWithBadge = ({
-  avatarWidth,
-  badgeIcon,
-  title,
-}: TextWithBadgeProps) => {
-  const [textSize, setTextSize] = useState<number>(0);
-  const { width: windowWidth } = useWindowDimensions();
-
-  const textMaxSize =
-    windowWidth -
-    (SCREEN_PADDINGS + CONTENT_MARGINS + AVATAR_CONTENT_MARGINS + avatarWidth);
-  const shouldTruncate = textSize >= textMaxSize - BADGE_LIMIT;
-  const containerWidth = shouldTruncate ? null : textSize;
-  const textWidth = shouldTruncate ? '100%' : null;
-
-  const onTextLayout = useCallback(
-    ({
-      nativeEvent: {
-        layout: { width },
-      },
-    }) => {
-      if (textSize === 0) {
-        setTextSize(width);
-      }
-    },
-    [textSize],
-  );
-
+const TextWithBadge = ({ badgeIcon, title }: TextWithBadgeProps) => {
   return (
-    <StyledBoxContainer containerWidth={containerWidth}>
-      <StyledText
-        onLayout={onTextLayout}
-        bold
-        numberOfLines={1}
-        textWidth={textWidth}
-      >
+    <StyledBoxContainer>
+      <StyledText bold numberOfLines={1}>
         {title}
       </StyledText>
       <Badge

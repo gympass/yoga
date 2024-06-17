@@ -1,4 +1,4 @@
-import React, { isValidElement, useCallback, useState } from 'react';
+import React, { isValidElement } from 'react';
 import { arrayOf, string, shape, func, bool, node } from 'prop-types';
 
 import Text from '../../../Text';
@@ -23,30 +23,9 @@ const Result = ({
   attendancesColor,
   badgeIcon,
 }) => {
-  const [avatarWidth, setAvatarWidth] = useState(0);
-
-  const onAvatarLayout = useCallback(
-    ({
-      nativeEvent: {
-        layout: { width },
-      },
-    }) => {
-      setAvatarWidth(width);
-    },
-    [],
-  );
-
   return (
     <StyledBox divided={divided} display="flex" flexDirection="row">
-      {Avatar && (
-        <>
-          {isValidElement(Avatar) ? (
-            React.cloneElement(Avatar, { onLayout: onAvatarLayout })
-          ) : (
-            <Avatar onLayout={onAvatarLayout} />
-          )}
-        </>
-      )}
+      {Avatar && <>{isValidElement(Avatar) ? Avatar : <Avatar />}</>}
       <Content>
         {!!attendances?.length && (
           <Attendances
@@ -56,11 +35,7 @@ const Result = ({
           />
         )}
         {badgeIcon ? (
-          <TextWithBadge
-            avatarWidth={avatarWidth}
-            badgeIcon={badgeIcon}
-            title={title}
-          />
+          <TextWithBadge badgeIcon={badgeIcon} title={title} />
         ) : (
           <Box>
             <Text.Body1 bold numberOfLines={1}>

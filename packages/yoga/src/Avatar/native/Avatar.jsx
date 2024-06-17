@@ -50,7 +50,6 @@ const Avatar = forwardRef(
       borderRadius,
       width,
       height,
-      onLayout,
       ...props
     },
     ref,
@@ -64,7 +63,6 @@ const Avatar = forwardRef(
         justifyContent="center"
         width={width}
         height={height}
-        onLayout={onLayout}
         overflow="hidden"
         borderRadius={borderRadius}
         {...props}
