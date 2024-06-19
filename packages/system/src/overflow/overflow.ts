@@ -1,20 +1,21 @@
 import { compose, generator } from '../theme';
+import { SystemValues } from '../types';
 
-const overflow = props =>
+const overflow = (props: SystemValues) =>
   generator({
     props,
     prop: ['overflow', 'of'],
     cssProperty: 'overflow',
   });
 
-const overflowX = props =>
+const overflowX = (props: SystemValues) =>
   generator({
     props,
     prop: ['overflowX', 'ox'],
     cssProperty: 'overflow-x',
   });
 
-const overflowY = props =>
+const overflowY = (props: SystemValues) =>
   generator({
     props,
     prop: ['overflowY', 'oy'],

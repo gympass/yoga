@@ -1,13 +1,12 @@
-import React, { isValidElement } from 'react';
-
+import React, { isValidElement, useCallback, useState } from 'react';
 import { arrayOf, string, shape, func, bool, node } from 'prop-types';
 
 import Text from '../../../Text';
 import Box from '../../../Box';
 import Attendances from '../Attendances';
-import Badge from '../Badge';
 
 import { Content, StyledBox } from './styles';
+import TextWithBadge from './TextWithBadge';
 
 /**
  * The Result component is used when you have a list to show. It is applied to
@@ -23,48 +22,62 @@ const Result = ({
   children,
   attendancesColor,
   badgeIcon,
-}) => (
-  <StyledBox divided={divided} display="flex" flexDirection="row">
-    {Avatar && <>{isValidElement(Avatar) ? Avatar : <Avatar />}</>}
-    <Content>
-      {!!attendances?.length && (
-        <Attendances
-          attendances={attendances}
-          rate={rate}
-          color={attendancesColor}
-        />
+}) => {
+  const [avatarWidth, setAvatarWidth] = useState(0);
+
+  const onAvatarLayout = useCallback(
+    ({
+      nativeEvent: {
+        layout: { width },
+      },
+    }) => {
+      setAvatarWidth(width);
+    },
+    [],
+  );
+
+  return (
+    <StyledBox divided={divided} display="flex" flexDirection="row">
+      {Avatar && (
+        <>
+          {isValidElement(Avatar) ? (
+            React.cloneElement(Avatar, { onLayout: onAvatarLayout })
+          ) : (
+            <Avatar onLayout={onAvatarLayout} />
+          )}
+        </>
       )}
-      <Box
-        flexDirection="row"
-        alignItems="center"
-        marginRight={badgeIcon ? 'small' : 'zero'}
-      >
-        <Text.Body1 numberOfLines={1} bold>
-          {title}
-        </Text.Body1>
-        {badgeIcon && (
-          <Badge
-            icon={badgeIcon}
-            fill="text.primary"
-            ml="xxxsmall"
-            bg="neon"
-            justifyContent="center"
-            alignItems="center"
-            borderRadius="circle"
-            w="small"
-            h="small"
+      <Content>
+        {!!attendances?.length && (
+          <Attendances
+            attendances={attendances}
+            rate={rate}
+            color={attendancesColor}
           />
         )}
-      </Box>
-      {subTitle && subTitle !== '' && (
-        <Text.Body2 numberOfLines={1} color="deep">
-          {subTitle}
-        </Text.Body2>
-      )}
-      {children}
-    </Content>
-  </StyledBox>
-);
+        {badgeIcon ? (
+          <TextWithBadge
+            avatarWidth={avatarWidth}
+            badgeIcon={badgeIcon}
+            title={title}
+          />
+        ) : (
+          <Box>
+            <Text.Body1 bold numberOfLines={1}>
+              {title}
+            </Text.Body1>
+          </Box>
+        )}
+        {subTitle && subTitle !== '' && (
+          <Text.Body2 numberOfLines={1} color="deep">
+            {subTitle}
+          </Text.Body2>
+        )}
+        {children}
+      </Content>
+    </StyledBox>
+  );
+};
 
 Result.propTypes = {
   /** The component Avatar */

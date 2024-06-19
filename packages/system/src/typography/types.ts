@@ -24,4 +24,9 @@ type TextAlign = {
   ta?: string;
 };
 
-export type Typography = Color & FontSize & LineHeight & TextAlign;
+type TextTransform = {
+  textTransform?: string;
+  tt?: string;
+};
+
+export type Typography = Color & FontSize & LineHeight & TextAlign & TextTransform;

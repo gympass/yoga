@@ -20,7 +20,7 @@ import {
   borderTopRightRadius,
   borderBottomLeftRadius,
   borderBottomRightRadius,
-} from '.';
+} from './border';
 
 const borders = [0, 1, 2];
 

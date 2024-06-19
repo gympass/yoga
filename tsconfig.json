@@ -8,6 +8,8 @@
       "@gympass/yoga-common": ["./packages/common/src"],
       "@gympass/yoga-tokens/*": ["./packages/tokens/src/*"],
       "@gympass/yoga-tokens": ["./packages/tokens/src"],
+      "@gympass/yoga-system/*": ["./packages/system/src/*"],
+      "@gympass/yoga-system": ["./packages/system/src"],
       "@gympass/yoga/*": ["./packages/yoga/src/*"],
       "@gympass/yoga": ["./packages/yoga/src"],
       "@gympass/illustrations": ["./packages/illustrations/src"],

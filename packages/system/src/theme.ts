@@ -1,7 +1,8 @@
-import { css } from 'styled-components';
+import { CSSObject, css } from 'styled-components';
 import get from 'lodash.get';
+import { DesignTokens, GeneratorProps } from './types';
 
-const getFromTheme = props => spec => {
+const getFromTheme = props => (spec: keyof DesignTokens) => {
   const {
     theme: {
       yoga: { [spec]: matchedSpec },
@@ -26,7 +27,7 @@ const generator = ({
   cssProperty,
   getter = () => ({}),
   transform = value => value,
-}) => {
+}: GeneratorProps) => {
   const themeProp = getter(componentProps);
 
   // If prop is an array, ex: ['border', 'b'], we run the generator for each one
@@ -63,7 +64,7 @@ const generator = ({
     return css(computedCSS);
   }
 
-  return css({ [cssProperty]: transformedValue });
+  return css({ [cssProperty]: transformedValue } as CSSObject | TemplateStringsArray);
 };
 
 const compose =
