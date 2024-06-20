@@ -5,7 +5,6 @@ import Badge from '../../Badge';
 import { StyledBoxContainer, StyledText } from './styles';
 
 interface TextWithBadgeProps {
-  avatarWidth: number;
   badgeIcon: ReactNode;
   title: string;
 }
