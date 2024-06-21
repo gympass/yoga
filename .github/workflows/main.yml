@@ -4,10 +4,10 @@ on: pull_request
 
 jobs:
   linter_and_tests:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
       with:
         node-version: 16
         cache: 'yarn'
