@@ -21,6 +21,7 @@ import {
 const theme = {
   yoga: {
     spacing,
+    colors: {},
   },
 };
 

@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { borders, radii } from '@gympass/yoga-tokens';
+import { borders, radii, colors } from '@gympass/yoga-tokens';
 import {
   border,
   borderTop,
@@ -22,11 +22,6 @@ import {
   borderBottomLeftRadius,
   borderBottomRightRadius,
 } from './border';
-
-const colors = {
-  vibin: '#D8385E',
-  hope: '#1D856C',
-};
 
 const theme = {
   yoga: {

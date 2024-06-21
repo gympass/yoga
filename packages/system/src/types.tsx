@@ -15,12 +15,24 @@ import type {
   Typography
 } from './index';
 
+
+type AdditionalProperties = {
+  [key: string]: {};
+};
+
+type Theme = {
+  [key: string]: {
+    colors: {},
+  } & AdditionalProperties;
+};
+
 export type SystemProps = {
   as?: React.ElementType | React.FC | string;
   spacing?: string;
   stroke?: string;
   fill?: string;
   children?: React.ReactNode;
+  theme?: Theme;
 } & Borders &
   Colors &
   Elevations &

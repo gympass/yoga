@@ -13,7 +13,7 @@ export type Flex = {
   flexBasis?: string;
   flexFlow?: string;
   flexGrow?: string | number;
-  flexShrink?: string;
+  flexShrink?: string | number;
   flexWrap?: string;
   order?: string | number;
   gap?: GapValues;
