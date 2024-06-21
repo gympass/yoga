@@ -21,6 +21,7 @@ describe('Web and iOS', () => {
   const theme = {
     yoga: {
       elevations,
+      colors: {},
     },
   };
 

@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { fontSizes, lineHeights, fontWeights, weights } from '@gympass/yoga-tokens';
+import { colors, fontSizes, lineHeights, fontWeights, weights } from '@gympass/yoga-tokens';
 import {
   fontSize,
   fontWeight,
@@ -23,8 +23,8 @@ const baseFont = {
   weight,
 };
 
-const colors = {
-  vibin: '#D8385E',
+const colorsTheme = {
+  ...colors,
   text: {
     primary: '#000',
   },
@@ -32,7 +32,7 @@ const colors = {
 
 const theme = {
   yoga: {
-    colors,
+    colors: colorsTheme,
     fontSizes,
     lineHeights,
     fontWeights,
@@ -161,7 +161,7 @@ describe('Web and iOS', () => {
       });
 
       it('Should return the color based on its path', () => {
-        const expectedNoTheme = css({ color: colors.text.primary });
+        const expectedNoTheme = css({ color: colorsTheme.text.primary });
 
         const c = color({ theme, color: 'text.primary' });
 
