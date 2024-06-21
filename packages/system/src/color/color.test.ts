@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
-import { backgroundColor } from './color';
 import { colors } from '@gympass/yoga-tokens';
+import { backgroundColor } from './color';
 
 const colorsTheme = {
   ...colors,
