@@ -24,7 +24,6 @@ exports[`<Result /> should match snapshot 1`] = `
     display="flex"
     height={48}
     justifyContent="center"
-    onLayout={[Function]}
     overflow="hidden"
     style={
       [
@@ -1050,7 +1049,6 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
     display="flex"
     height={48}
     justifyContent="center"
-    onLayout={[Function]}
     overflow="hidden"
     style={
       [
@@ -1561,7 +1559,6 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
     display="flex"
     height={48}
     justifyContent="center"
-    onLayout={[Function]}
     overflow="hidden"
     style={
       [
