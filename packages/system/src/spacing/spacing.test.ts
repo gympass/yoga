@@ -29,7 +29,7 @@ const spacingTokens = {
   zero: 0,
   small: 16,
   medium: 20,
-}
+};
 
 const theme = {
   yoga: {
