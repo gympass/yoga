@@ -23,6 +23,7 @@ type AdditionalProperties = {
 type Theme = {
   [key: string]: {
     colors: {},
+    baseFont: {},
   } & AdditionalProperties;
 };
 

@@ -30,6 +30,7 @@ const theme = {
   yoga: {
     spacing: spacingTokens,
     colors: {},
+    baseFont: {},
   },
 };
 

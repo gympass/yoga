@@ -22,6 +22,7 @@ const theme = {
   yoga: {
     spacing,
     colors: {},
+    baseFont: {},
   },
 };
 
