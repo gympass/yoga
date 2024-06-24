@@ -1,5 +1,4 @@
 import { css } from 'styled-components';
-import { spacing } from '@gympass/yoga-tokens';
 import {
   flex,
   flexBasis,
@@ -17,6 +16,11 @@ import {
   flexes,
   gap,
 } from './flex';
+
+const spacing = {
+  zero: 0,
+  medium: 20,
+}
 
 const theme = {
   yoga: {

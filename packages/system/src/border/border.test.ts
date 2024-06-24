@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { borders, radii, colors } from '@gympass/yoga-tokens';
+import { radii, colors } from '@gympass/yoga-tokens';
 import {
   border,
   borderTop,
@@ -22,6 +22,12 @@ import {
   borderBottomLeftRadius,
   borderBottomRightRadius,
 } from './border';
+
+const borders = {
+  zero: 0,
+  small: 1,
+  medium: 2,
+}
 
 const theme = {
   yoga: {

@@ -1,5 +1,4 @@
 import { css } from 'styled-components';
-import { spacing as spacingTokens } from '@gympass/yoga-tokens';
 import {
   margin,
   marginTop,
@@ -25,6 +24,12 @@ import {
   minHeight,
   spacing,
 } from './spacing';
+
+const spacingTokens = {
+  zero: 0,
+  small: 16,
+  medium: 20,
+}
 
 const theme = {
   yoga: {
