@@ -20,7 +20,7 @@ import {
 const spacing = {
   zero: 0,
   medium: 20,
-}
+};
 
 const theme = {
   yoga: {
