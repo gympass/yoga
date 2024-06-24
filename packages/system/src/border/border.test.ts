@@ -27,6 +27,7 @@ const theme = {
   yoga: {
     borders,
     colors,
+    baseFont: {},
     radii,
   },
 };

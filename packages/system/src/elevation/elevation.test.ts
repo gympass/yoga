@@ -22,6 +22,7 @@ describe('Web and iOS', () => {
     yoga: {
       elevations,
       colors: {},
+      baseFont: {},
     },
   };
 

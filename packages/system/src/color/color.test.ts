@@ -12,6 +12,7 @@ const colorsTheme = {
 const theme = {
   yoga: {
     colors: colorsTheme,
+    baseFont: {},
   },
 };
 
