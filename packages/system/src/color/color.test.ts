@@ -1,9 +1,8 @@
 import { css } from 'styled-components';
-import { colors } from '@gympass/yoga-tokens';
 import { backgroundColor } from './color';
 
 const colorsTheme = {
-  ...colors,
+  vibin: '#D8385E',
   feedback: {
     info: '#7068D4',
   },

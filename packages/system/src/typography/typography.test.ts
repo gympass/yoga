@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { colors, fontSizes, lineHeights, fontWeights, weights } from '@gympass/yoga-tokens';
+import { weights } from '@gympass/yoga-tokens';
 import {
   fontSize,
   fontWeight,
@@ -24,11 +24,24 @@ const baseFont = {
 };
 
 const colorsTheme = {
-  ...colors,
+  vibin: '#D8385E',
   text: {
     primary: '#000',
   },
 };
+
+const fontSizes = {
+  medium: 16,
+}
+
+const lineHeights = {
+  medium: 24,
+}
+
+const fontWeights = {
+  medium: 500,
+  bold: 700,
+}
 
 const theme = {
   yoga: {
@@ -45,7 +58,7 @@ describe('Web and iOS', () => {
     describe('typography', () => {
       it('Should return values for typography prop', () => {
         const expectedTypography = css({
-          color: colors.vibin,
+          color: colorsTheme.vibin,
           fontSize: fontSizes.medium,
           fontWeight: fontWeights.bold,
           lineHeight: `${lineHeights.medium}px`,
@@ -148,7 +161,7 @@ describe('Web and iOS', () => {
 
     describe('color', () => {
       it('Should return values for color prop', () => {
-        const expectedColor = css({ color: colors.vibin });
+        const expectedColor = css({ color: colorsTheme.vibin });
 
         const c1 = color({ theme, c: 'vibin' });
         const c2 = color({ theme, color: 'vibin' });

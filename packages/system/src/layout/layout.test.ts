@@ -1,5 +1,4 @@
 import { css } from 'styled-components';
-import { spacing } from '@gympass/yoga-tokens';
 import {
   display,
   positions,
@@ -10,6 +9,11 @@ import {
   left,
   zIndex,
 } from './layout';
+
+const spacing = {
+  zero: 0,
+  medium: 20,
+}
 
 const theme = {
   yoga: {
