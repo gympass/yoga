@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.23.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.23.0...@gympass/yoga-system@0.23.1) (2024-06-25)
+
+
+### Bug Fixes
+
+* linter fixes ([a8ee1ed](https://github.com/Gympass/yoga/commit/a8ee1ed1a4ce742ba1a44a82648a650d43fe6cf4))
+* more lint fixes ([82b31ff](https://github.com/Gympass/yoga/commit/82b31ffb79485af1ba20d062aecdb8c314d987ec))
+
+
+
+
+
 # [0.23.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.22.1...@gympass/yoga-system@0.23.0) (2024-06-20)
 
 
