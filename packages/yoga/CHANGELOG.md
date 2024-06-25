@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.115.5](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.115.4...@gympass/yoga@7.115.5) (2024-06-25)
+
+
+### Bug Fixes
+
+* revert result avatar fragment removal ([37cd23f](https://github.com/Gympass/yoga/commit/37cd23ff822a2cd3d25d0a3cc0f9c9760344fa79))
+
+
+
+
+
 ## [7.115.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.115.3...@gympass/yoga@7.115.4) (2024-06-25)
 
 **Note:** Version bump only for package @gympass/yoga
