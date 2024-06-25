@@ -25,7 +25,7 @@ const Result = ({
 }) => {
   return (
     <StyledBox divided={divided} display="flex" flexDirection="row">
-      {Avatar && isValidElement(Avatar) ? Avatar : <Avatar />}
+      {Avatar && <>{isValidElement(Avatar) ? Avatar : <Avatar />}</>}
       <Content>
         {!!attendances?.length && (
           <Attendances

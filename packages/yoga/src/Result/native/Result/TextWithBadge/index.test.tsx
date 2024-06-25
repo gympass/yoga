@@ -9,11 +9,7 @@ describe('TextWithBadge', () => {
   it('should match snapshot', () => {
     const { toJSON } = render(
       <ThemeProvider>
-        <TextWithBadge
-          avatarWidth={50}
-          badgeIcon={WellhubIcon}
-          title="Text with badge"
-        />
+        <TextWithBadge badgeIcon={WellhubIcon} title="Text with badge" />
       </ThemeProvider>,
     );
 
@@ -24,7 +20,6 @@ describe('TextWithBadge', () => {
     const { toJSON } = render(
       <ThemeProvider>
         <TextWithBadge
-          avatarWidth={50}
           badgeIcon={WellhubIcon}
           title="This is an example of a very long title that should be truncated"
         />
@@ -37,11 +32,7 @@ describe('TextWithBadge', () => {
   it('should match snapshot without badgeIcon', () => {
     const { toJSON } = render(
       <ThemeProvider>
-        <TextWithBadge
-          avatarWidth={50}
-          badgeIcon={null}
-          title="Title without Badge"
-        />
+        <TextWithBadge badgeIcon={null} title="Title without Badge" />
       </ThemeProvider>,
     );
 
