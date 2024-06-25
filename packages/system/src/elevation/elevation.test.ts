@@ -1,20 +1,22 @@
 import { css } from 'styled-components';
 import { elevation } from '.';
 import { elevation as androidElevation } from './elevation.android';
-import { elevationSizes as elevationAndroid } from '@gympass/yoga-tokens';
-
-type ElevationKeys = "zero" | "small";
 describe('Web and iOS', () => {
-  const shadow = umbra =>
+  const elevationSizes = {
+    zero: 0,
+    small: 4,
+  };
+
+  const shadow = (umbra: number) =>
     Number(umbra) && umbra > 0
       ? `0 ${umbra}px ${umbra * 2}px rgb(0, 0, 0, 0.25)`
       : 'none';
 
-      const elevationValues = Object.values(elevationAndroid).map(shadow);
+      const elevationWithShadow = Object.values(elevationSizes).map(shadow);
 
-      const elevations: { [K in ElevationKeys]: string } = {
-        zero: elevationValues[0],
-        small: elevationValues[1],
+      const elevations = {
+        zero: elevationWithShadow[0],
+        small: elevationWithShadow[1],
       };
 
   const theme = {
@@ -64,11 +66,9 @@ describe('Web and iOS', () => {
 });
 
 describe('Android', () => {
-  const elevationsArray = ['0', '1', '2', '3'] as const;
-
-  const elevations: { [K in ElevationKeys]: string } = {
-    zero: elevationsArray[0],
-    small: elevationsArray[1],
+  const elevations = {
+    zero: '0',
+    small: '1',
   };
 
   const theme = {

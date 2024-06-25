@@ -1,5 +1,4 @@
 import { css } from 'styled-components';
-import { weights } from '@gympass/yoga-tokens';
 import {
   fontSize,
   fontWeight,
@@ -12,15 +11,9 @@ import {
 
 import { fontWeight as fontWeightAndroid } from '../font-weight/fontWeight.android';
 
-const fontWeightsValues = Object.values(weights);
-const weight = [
-  ...fontWeightsValues,
-  ...fontWeightsValues.map(value => `${value}i` as const),
-];
-
 const baseFont = {
   family: 'Rubik',
-  weight,
+  weight: [300, 500, 900, '300i', '500i', '900i'],
 };
 
 const colorsTheme = {
@@ -32,16 +25,16 @@ const colorsTheme = {
 
 const fontSizes = {
   medium: 16,
-}
+};
 
 const lineHeights = {
   medium: 24,
-}
+};
 
 const fontWeights = {
   medium: 500,
   bold: 700,
-}
+};
 
 const theme = {
   yoga: {
