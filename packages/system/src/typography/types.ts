@@ -3,8 +3,6 @@ import { colors, fontSizes, lineHeights } from '@gympass/yoga-tokens';
 type ColorsValues = typeof colors | string;
 type FontSizesValues = typeof fontSizes | string | number;
 type LineHeightsValues = typeof lineHeights | string | number;
-type TextAlignValues = string;
-type TextTransformValues = string;
 
 type Color = {
   color?: ColorsValues;
@@ -22,13 +20,13 @@ type LineHeight = {
 };
 
 type TextAlign = {
-  textAlign?: TextAlignValues;
-  ta?: TextAlignValues;
+  textAlign?: string;
+  ta?: string;
 };
 
 type TextTransform = {
-  textTransform?: TextTransformValues;
-  tt?: TextTransformValues;
+  textTransform?: string;
+  tt?: string;
 };
 
 export type Typography = Color & FontSize & LineHeight & TextAlign & TextTransform;
