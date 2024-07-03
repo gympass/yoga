@@ -73,6 +73,7 @@ import FamilyMemberFilled from './svg/family_member_filled.svg';
 import FavoriteFilled from './svg/favorite_filled.svg';
 import Favorite from './svg/favorite.svg';
 import Filter from './svg/filter.svg';
+import FunnelFilter from './svg/funnel_filter.svg';
 import GenderNeutral from './svg/gender_neutral.svg';
 import Google from './svg/google.svg';
 import Gympass from './svg/gympass.svg';
@@ -121,12 +122,14 @@ import PaperPin from './svg/paper_pin.svg';
 import Paperclip from './svg/paperclip.svg';
 import Password from './svg/password.svg';
 import Pause from './svg/pause.svg';
+import PauseFilled from './svg/pause_filled.svg';
 import PhoneFilled from './svg/phone_filled.svg';
 import Phone from './svg/phone.svg';
 import PieChart from './svg/pie_chart.svg';
 import Pilates from './svg/pilates.svg';
 import PinFilled from './svg/pin_filled.svg';
 import Play from './svg/play.svg';
+import PlayArrow from './svg/play_arrow.svg';
 import PlayFilled from './svg/play_filled.svg';
 import PlusCircle from './svg/plus_circle.svg';
 import Pool from './svg/pool.svg';
@@ -268,6 +271,7 @@ export {
   FavoriteFilled,
   Favorite,
   Filter,
+  FunnelFilter,
   GenderNeutral,
   Google,
   Gympass,
@@ -316,12 +320,14 @@ export {
   Paperclip,
   Password,
   Pause,
+  PauseFilled,
   PhoneFilled,
   Phone,
   PieChart,
   Pilates,
   PinFilled,
   Play,
+  PlayArrow,
   PlayFilled,
   PlusCircle,
   Pool,
