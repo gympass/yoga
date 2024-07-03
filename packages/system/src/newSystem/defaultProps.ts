@@ -30,6 +30,7 @@ const props = {
   mv: 'marginVertical',
   mh: 'marginHorizontal',
   bRadius: 'borderRadius',
+  bc: 'borderColor',
 };
 
 export default props;
