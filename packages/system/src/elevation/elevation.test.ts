@@ -22,8 +22,6 @@ describe('Web and iOS', () => {
   const theme = {
     yoga: {
       elevations,
-      colors: {},
-      baseFont: {},
     },
   };
 
@@ -74,6 +72,10 @@ describe('Android', () => {
   const theme = {
     yoga: {
       elevations,
+      colors: {},
+      baseFont: {
+        family: '',
+      },
     },
   };
 

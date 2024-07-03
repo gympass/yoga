@@ -11,9 +11,8 @@ const colorsTheme = {
 const theme = {
   yoga: {
     colors: colorsTheme,
-    baseFont: {},
   },
-};
+}
 
 describe('backgroundColor', () => {
   it('Should return values for color prop', () => {

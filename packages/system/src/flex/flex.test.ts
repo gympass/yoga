@@ -25,8 +25,6 @@ const spacing = {
 const theme = {
   yoga: {
     spacing,
-    colors: {},
-    baseFont: {},
   },
 };
 
