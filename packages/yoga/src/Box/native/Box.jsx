@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { system } from '@gympass/yoga-system';
+import { newSystem } from '@gympass/yoga-system';
 
-const Box = styled.View(system);
+const Box = styled.View(newSystem);
 
 export default Box;

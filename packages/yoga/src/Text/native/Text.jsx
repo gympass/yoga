@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { oneOf, bool } from 'prop-types';
-import { system } from '@gympass/yoga-system';
+import { newSystem } from '@gympass/yoga-system';
 import textStyle from '../textStyle';
 import { deprecated } from '../../shared';
 
 const styledText = type => styled.Text`
   ${textStyle(type)}
-  ${system}
+  ${newSystem}
 `;
 
 const Display1 = styledText('display1');
