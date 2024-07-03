@@ -15,16 +15,12 @@ import type {
   Typography
 } from './index';
 
-
 type AdditionalProperties = {
-  [key: string]: {};
-};
-
-type Theme = {
   [key: string]: {
-    colors: {},
-    baseFont: {},
-  } & AdditionalProperties;
+    [key: string]: {
+      [key: string]: {},
+    },
+  },
 };
 
 export type SystemProps = {
@@ -33,8 +29,9 @@ export type SystemProps = {
   stroke?: string;
   fill?: string;
   children?: React.ReactNode;
-  theme?: Theme;
+  theme?: AdditionalProperties;
 } & Borders &
+
   Colors &
   Elevations &
   Flex &

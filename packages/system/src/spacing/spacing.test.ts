@@ -34,8 +34,6 @@ const spacingTokens = {
 const theme = {
   yoga: {
     spacing: spacingTokens,
-    colors: {},
-    baseFont: {},
   },
 };
 
