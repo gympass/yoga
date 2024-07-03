@@ -32,5 +32,9 @@
     ],
     "splitting": false,
     "bundle": false
+  },
+  "dependencies": {
+    "deepmerge-ts": "^7.0.3",
+    "ts-deepmerge": "^7.0.0"
   }
 }

@@ -1,19 +1,3 @@
-const merge = (target, source) => {
-  const newTarget = { ...target };
+import { deepmerge } from "deepmerge-ts";
 
-  Object.keys(source).forEach(key => {
-    newTarget[key] = source[key];
-
-    if (
-      source[key] !== null &&
-      typeof source[key] === 'object' &&
-      !Array.isArray(source[key])
-    ) {
-      newTarget[key] = merge(target[key] || {}, newTarget[key]);
-    }
-  });
-
-  return newTarget;
-};
-
-export default merge;
+export default deepmerge;

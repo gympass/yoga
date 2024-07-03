@@ -14,14 +14,7 @@ import type {
   Spacing,
   Typography
 } from './index';
-
-type AdditionalProperties = {
-  [key: string]: {
-    [key: string]: {
-      [key: string]: {},
-    },
-  },
-};
+import { Theme } from '@gympass/yoga/Theme';
 
 export type SystemProps = {
   as?: React.ElementType | React.FC | string;
@@ -29,7 +22,7 @@ export type SystemProps = {
   stroke?: string;
   fill?: string;
   children?: React.ReactNode;
-  theme?: AdditionalProperties;
+  theme?: Partial<Theme>;
 } & Borders &
 
   Colors &
