@@ -1,19 +1,19 @@
 import { css } from 'styled-components';
 import { backgroundColor } from './color';
-import { Theme } from '@gympass/yoga/Theme';
+import { GeneratorProps } from '../types';
 
 const colorsTheme = {
   vibin: '#D8385E',
   feedback: {
-    info: '#7068D4',
+    informative: ['#5340C9'],
   },
-};
+}
 
 const theme = {
   yoga: {
-    colors: colorsTheme,
-  } as unknown as Theme,
-}
+    colors: colorsTheme
+  }
+} as GeneratorProps['props']['theme']
 
 describe('backgroundColor', () => {
   it('Should return values for color prop', () => {
@@ -35,7 +35,7 @@ describe('backgroundColor', () => {
   });
 
   it('Should return the value based on its path', () => {
-    const expectedNoTheme = css({ backgroundColor: colorsTheme.feedback.info });
+    const expectedNoTheme = css({ backgroundColor: colorsTheme.feedback.informative[0] });
 
     const bg = backgroundColor({
       theme,
