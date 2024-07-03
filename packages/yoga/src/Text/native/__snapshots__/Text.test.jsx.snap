@@ -1194,10 +1194,8 @@ exports[`<Text /> Snapshots should match snapshot with spacing prop system 1`] =
         "marginLeft": 20,
         "marginRight": 20,
         "marginTop": 20,
-        "paddingBottom": 24,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 24,
+        "paddingHorizontal": 16,
+        "paddingVertical": 24,
       },
     ]
   }

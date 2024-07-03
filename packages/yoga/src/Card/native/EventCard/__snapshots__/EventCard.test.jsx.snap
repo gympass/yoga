@@ -101,8 +101,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
             "borderStyle": "solid",
             "borderWidth": 1,
             "justifyContent": "center",
-            "paddingBottom": 20,
-            "paddingTop": 20,
+            "paddingVertical": 20,
             "width": 56,
           },
         ]
@@ -275,8 +274,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
             "borderStyle": "solid",
             "borderWidth": 1,
             "justifyContent": "center",
-            "paddingBottom": 20,
-            "paddingTop": 20,
+            "paddingVertical": 20,
             "width": 56,
           },
         ]
@@ -445,8 +443,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
             "borderStyle": "solid",
             "borderWidth": 1,
             "justifyContent": "center",
-            "paddingBottom": 20,
-            "paddingTop": 20,
+            "paddingVertical": 20,
             "width": 56,
           },
         ]
@@ -619,8 +616,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
             "borderStyle": "solid",
             "borderWidth": 1,
             "justifyContent": "center",
-            "paddingBottom": 20,
-            "paddingTop": 20,
+            "paddingVertical": 20,
             "width": 56,
           },
         ]
