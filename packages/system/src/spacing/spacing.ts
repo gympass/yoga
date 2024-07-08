@@ -1,8 +1,8 @@
 import { toPx } from '../unit';
 import { getSpacing, generator, compose } from '../theme';
-import { SystemValues } from '../types';
+import { GeneratorProps } from '../types';
 
-const margin = (props: SystemValues) =>
+const margin = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['margin', 'm'],
@@ -11,7 +11,7 @@ const margin = (props: SystemValues) =>
     transform: toPx,
   });
 
-const marginTop = (props: SystemValues) =>
+const marginTop = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['marginTop', 'mt'],
@@ -20,7 +20,7 @@ const marginTop = (props: SystemValues) =>
     transform: toPx,
   });
 
-const marginRight = (props: SystemValues) =>
+const marginRight = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['marginRight', 'mr'],
@@ -29,7 +29,7 @@ const marginRight = (props: SystemValues) =>
     transform: toPx,
   });
 
-const marginBottom = (props: SystemValues) =>
+const marginBottom = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['marginBottom', 'mb'],
@@ -38,7 +38,7 @@ const marginBottom = (props: SystemValues) =>
     transform: toPx,
   });
 
-const marginLeft = (props: SystemValues) =>
+const marginLeft = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['marginLeft', 'ml'],
@@ -47,7 +47,7 @@ const marginLeft = (props: SystemValues) =>
     transform: toPx,
   });
 
-const marginHorizontal = (props: SystemValues) =>
+const marginHorizontal = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['marginHorizontal', 'mx', 'mh'],
@@ -56,7 +56,7 @@ const marginHorizontal = (props: SystemValues) =>
     transform: toPx,
   });
 
-const marginVertical = (props: SystemValues) =>
+const marginVertical = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['marginVertical', 'my', 'mv'],
@@ -65,7 +65,7 @@ const marginVertical = (props: SystemValues) =>
     transform: toPx,
   });
 
-const padding = (props: SystemValues) =>
+const padding = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['padding', 'p'],
@@ -74,7 +74,7 @@ const padding = (props: SystemValues) =>
     transform: toPx,
   });
 
-const paddingTop = (props: SystemValues) =>
+const paddingTop = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['paddingTop', 'pt'],
@@ -83,7 +83,7 @@ const paddingTop = (props: SystemValues) =>
     transform: toPx,
   });
 
-const paddingRight = (props: SystemValues) =>
+const paddingRight = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['paddingRight', 'pr'],
@@ -92,7 +92,7 @@ const paddingRight = (props: SystemValues) =>
     transform: toPx,
   });
 
-const paddingBottom = (props: SystemValues) =>
+const paddingBottom = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['paddingBottom', 'pb'],
@@ -101,7 +101,7 @@ const paddingBottom = (props: SystemValues) =>
     transform: toPx,
   });
 
-const paddingLeft = (props: SystemValues) =>
+const paddingLeft = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['paddingLeft', 'pl'],
@@ -110,7 +110,7 @@ const paddingLeft = (props: SystemValues) =>
     transform: toPx,
   });
 
-const paddingHorizontal = (props: SystemValues) =>
+const paddingHorizontal = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['paddingHorizontal', 'px', 'ph'],
@@ -119,7 +119,7 @@ const paddingHorizontal = (props: SystemValues) =>
     transform: toPx,
   });
 
-const paddingVertical = (props: SystemValues) =>
+const paddingVertical = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['paddingVertical', 'py', 'pv'],
@@ -128,7 +128,7 @@ const paddingVertical = (props: SystemValues) =>
     transform: toPx,
   });
 
-const width = (props: SystemValues) =>
+const width = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['width', 'w'],
@@ -137,7 +137,7 @@ const width = (props: SystemValues) =>
     transform: toPx,
   });
 
-const maxWidth = (props: SystemValues) =>
+const maxWidth = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['maxWidth', 'maxW'],
@@ -146,7 +146,7 @@ const maxWidth = (props: SystemValues) =>
     transform: toPx,
   });
 
-const minWidth = (props: SystemValues) =>
+const minWidth = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['minWidth', 'minW'],
@@ -155,7 +155,7 @@ const minWidth = (props: SystemValues) =>
     transform: toPx,
   });
 
-const height = (props: SystemValues) =>
+const height = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['height', 'h'],
@@ -164,7 +164,7 @@ const height = (props: SystemValues) =>
     transform: toPx,
   });
 
-const maxHeight = (props: SystemValues) =>
+const maxHeight = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['maxHeight', 'maxH'],
@@ -173,7 +173,7 @@ const maxHeight = (props: SystemValues) =>
     transform: toPx,
   });
 
-const minHeight = (props: SystemValues) =>
+const minHeight = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['minHeight', 'minH'],

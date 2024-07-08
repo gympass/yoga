@@ -24,6 +24,7 @@ import {
   minHeight,
   spacing,
 } from './spacing';
+import { Theme } from '@gympass/yoga/Theme';
 
 const spacingTokens = {
   zero: 0,
@@ -34,7 +35,7 @@ const spacingTokens = {
 const theme = {
   yoga: {
     spacing: spacingTokens,
-  },
+  } as Theme,
 };
 
 describe('spacings', () => {

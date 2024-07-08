@@ -10,6 +10,7 @@ import {
 } from './typography';
 
 import { fontWeight as fontWeightAndroid } from '../font-weight/fontWeight.android';
+import { Theme } from '@gympass/yoga/Theme';
 
 const baseFont = {
   family: 'Rubik',
@@ -43,7 +44,7 @@ const theme = {
     lineHeights,
     fontWeights,
     baseFont,
-  },
+  } as Theme,
 };
 
 describe('Web and iOS', () => {

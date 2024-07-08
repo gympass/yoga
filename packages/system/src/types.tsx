@@ -22,9 +22,7 @@ export type SystemProps = {
   stroke?: string;
   fill?: string;
   children?: React.ReactNode;
-  theme?: Partial<Theme>;
 } & Borders &
-
   Colors &
   Elevations &
   Flex &
@@ -43,7 +41,7 @@ export type Generator =
   | FlattenSimpleInterpolation;
 
 export interface GeneratorProps {
-  props: SystemValues;
+  props: SystemProps & { theme?: { yoga: Theme } };
   prop: SystemKeys | SystemKeys[];
   cssProperty: string | string[];
   getter?: ((componentProps: SystemValues) => DesignTokens) | (() => DesignTokens) | (() => object) | (() => SystemProps);

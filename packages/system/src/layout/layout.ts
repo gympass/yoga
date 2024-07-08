@@ -1,22 +1,22 @@
 import { toPx } from '../unit';
 import { compose, generator, getSpacing } from '../theme';
-import { SystemValues } from '../types';
+import { GeneratorProps } from '../types';
 
-const display = (props: SystemValues) =>
+const display = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['display', 'd'],
     cssProperty: 'display',
   });
 
-const position = (props: SystemValues) =>
+const position = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['position'],
     cssProperty: 'position',
   });
 
-const top = (props: SystemValues) =>
+const top = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['top'],
@@ -25,7 +25,7 @@ const top = (props: SystemValues) =>
     transform: toPx,
   });
 
-const right = (props: SystemValues) =>
+const right = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['right'],
@@ -34,7 +34,7 @@ const right = (props: SystemValues) =>
     transform: toPx,
   });
 
-const bottom = (props: SystemValues) =>
+const bottom = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['bottom'],
@@ -43,7 +43,7 @@ const bottom = (props: SystemValues) =>
     transform: toPx,
   });
 
-const left = (props: SystemValues) =>
+const left = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['left'],
@@ -52,7 +52,7 @@ const left = (props: SystemValues) =>
     transform: toPx,
   });
 
-const zIndex = (props: SystemValues) =>
+const zIndex = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['zIndex'],

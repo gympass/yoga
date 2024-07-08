@@ -9,6 +9,7 @@ import {
   left,
   zIndex,
 } from './layout';
+import { Theme } from '@gympass/yoga/Theme';
 
 const spacing = {
   zero: 0,
@@ -18,7 +19,7 @@ const spacing = {
 const theme = {
   yoga: {
     spacing,
-  },
+  } as Theme,
 };
 
 describe('layout', () => {

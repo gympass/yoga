@@ -84,8 +84,8 @@ const theme = (tokens: typeof yogaTokens) => {
 };
 
 const composeTheme = (tokens: typeof yogaTokens, customTheming = {}) => {
-  const baseTheme = theme(tokens); // default -> typeof theme
-  const customTheme = merge(baseTheme, customTheming); // tipagens que criamos em system
+  const baseTheme = theme(tokens);
+  const customTheme = merge(baseTheme, customTheming);
   const componentTheming = getComponentThemes(customTheme);
 
   return merge(componentTheming, customTheme);

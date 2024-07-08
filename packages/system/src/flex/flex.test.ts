@@ -16,6 +16,7 @@ import {
   flexes,
   gap,
 } from './flex';
+import { Theme } from '@gympass/yoga/Theme';
 
 const spacing = {
   zero: 0,
@@ -25,7 +26,7 @@ const spacing = {
 const theme = {
   yoga: {
     spacing,
-  },
+  } as Theme,
 };
 
 describe('flex', () => {

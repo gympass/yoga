@@ -21,6 +21,7 @@ import {
   borderBottomLeftRadius,
   borderBottomRightRadius,
 } from './border';
+import { Theme } from '@gympass/yoga/Theme';
 
 const colors = {
   vibin: '#D8385E',
@@ -43,7 +44,7 @@ const theme = {
     borders,
     colors,
     radii,
-  },
+  } as Theme,
 };
 
 describe('borders', () => {

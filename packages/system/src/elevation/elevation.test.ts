@@ -1,6 +1,7 @@
 import { css } from 'styled-components';
 import { elevation } from '.';
 import { elevation as androidElevation } from './elevation.android';
+import { Theme } from '@gympass/yoga/Theme';
 describe('Web and iOS', () => {
   const elevationSizes = {
     zero: 0,
@@ -22,7 +23,7 @@ describe('Web and iOS', () => {
   const theme = {
     yoga: {
       elevations,
-    },
+    } as Theme,
   };
 
   describe('elevation', () => {
@@ -72,11 +73,7 @@ describe('Android', () => {
   const theme = {
     yoga: {
       elevations,
-      colors: {},
-      baseFont: {
-        family: '',
-      },
-    },
+    } as Theme,
   };
 
   describe('elevation', () => {
