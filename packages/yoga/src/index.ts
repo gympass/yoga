@@ -4,6 +4,7 @@ import ThemeProvider, {
   theme,
   createTheme,
   v3theme,
+  type Theme,
 } from './Theme';
 import Accordion from './Accordion';
 import Button from './Button';
@@ -92,4 +93,5 @@ export {
   Popover,
   Spinner,
   NavigationMenu,
+  Theme,
 };
