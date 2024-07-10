@@ -1,5 +1,9 @@
-const merge = (target, source) => {
-  const newTarget = { ...target };
+type AnyObject = {
+  [key: string]: any;
+};
+
+const merge = <T extends AnyObject, U extends AnyObject>(target: T, source: U): T & U => {
+  const newTarget: AnyObject = { ...target };
 
   Object.keys(source).forEach(key => {
     newTarget[key] = source[key];
@@ -13,7 +17,7 @@ const merge = (target, source) => {
     }
   });
 
-  return newTarget;
+  return newTarget as T & U;
 };
 
 export default merge;
