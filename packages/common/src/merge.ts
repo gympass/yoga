@@ -1,9 +1,7 @@
-type AnyObject = {
-  [key: string]: any;
-};
+type UnknownObject = Record<string, unknown>;
 
-const merge = <T extends AnyObject, U extends AnyObject>(target: T, source: U): T & U => {
-  const newTarget: AnyObject = { ...target };
+const merge = <T extends UnknownObject, U extends UnknownObject>(target: T, source: U): T & U => {
+  const newTarget: UnknownObject = { ...target };
 
   Object.keys(source).forEach(key => {
     newTarget[key] = source[key];
@@ -13,7 +11,7 @@ const merge = <T extends AnyObject, U extends AnyObject>(target: T, source: U): 
       typeof source[key] === 'object' &&
       !Array.isArray(source[key])
     ) {
-      newTarget[key] = merge(target[key] || {}, newTarget[key]);
+      newTarget[key] = merge(target[key] as UnknownObject || {}, newTarget[key] as UnknownObject);
     }
   });
 
