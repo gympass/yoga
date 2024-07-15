@@ -55,6 +55,7 @@ import CreditCard from './svg/credit_card.svg';
 import Cycling from './svg/cycling.svg';
 import Dance from './svg/dance.svg';
 import Delayed from './svg/delayed.svg';
+import Diagram from './svg/diagram.svg';
 import Disconnect from './svg/disconnect.svg';
 import DislikeFilled from './svg/dislike_filled.svg';
 import Dislike from './svg/dislike.svg';
@@ -111,6 +112,7 @@ import Map from './svg/map.svg';
 import MartialArts from './svg/martial-arts.svg';
 import MenuList from './svg/menu_list.svg';
 import MenuMore from './svg/menu_more.svg';
+import Microphone from './svg/microphone.svg';
 import Money from './svg/money.svg';
 import Monitor from './svg/monitor.svg';
 import NetworkOff from './svg/network_off.svg';
@@ -253,6 +255,7 @@ export {
   Cycling,
   Dance,
   Delayed,
+  Diagram,
   Disconnect,
   DislikeFilled,
   Dislike,
@@ -309,6 +312,7 @@ export {
   MartialArts,
   MenuList,
   MenuMore,
+  Microphone,
   Money,
   Monitor,
   NetworkOff,
