@@ -1,16 +1,30 @@
 module.exports = {
   env: {
     jest: true,
+    browser: true,
+    node: true,
+    es2021: true,
   },
-  parser: '@babel/eslint-parser',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
+    ecmaVersion: 12,
+    sourceType: 'module',
     babelOptions: {
       presets: ['@babel/preset-react'],
     },
   },
-  plugins: ['react', 'prettier'],
-  extends: ['airbnb', 'prettier', 'plugin:prettier/recommended'],
+  plugins: ['react', 'prettier', '@typescript-eslint', 'eslint-plugin-node'],
+  extends: [
+    'airbnb',
+    'prettier',
+    'plugin:prettier/recommended',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+  ],
   rules: {
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     'prettier/prettier': 'error',
     'import/no-cycle': 0,
     'import/no-unresolved': 0,
