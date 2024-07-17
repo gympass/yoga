@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.116.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.115.7...@gympass/yoga@7.116.0) (2024-07-17)
+
+
+### Features
+
+* **yoga:** add types to theme ([ce3c76a](https://github.com/Gympass/yoga/commit/ce3c76aa1e3c37bb7aef2dc964ff08cb40667a84))
+
+
+
+
+
 ## [7.115.7](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.115.6...@gympass/yoga@7.115.7) (2024-07-15)
 
 **Note:** Version bump only for package @gympass/yoga

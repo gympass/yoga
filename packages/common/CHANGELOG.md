@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-common@1.3.1...@gympass/yoga-common@1.4.0) (2024-07-17)
+
+
+### Features
+
+* **common:** add types to merge ([3eef598](https://github.com/Gympass/yoga/commit/3eef59864fe1b25521632a133ef9b20af77fe433))
+
+
+
+
+
 ## [1.3.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-common@1.3.0...@gympass/yoga-common@1.3.1) (2024-01-31)
 
 
