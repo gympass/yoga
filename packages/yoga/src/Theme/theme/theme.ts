@@ -1,9 +1,21 @@
 /* eslint-disable prefer-destructuring */
 import { merge } from '@gympass/yoga-common';
+import yogaTokens from '@gympass/yoga-tokens';
 import componentThemes from './componentThemes';
 
-const getComponentThemes = tokens => {
-  const { colors, baseFont, baseFontSize } = tokens;
+type themeTypes = ReturnType<typeof theme>;
+
+export type Theme = ReturnType<typeof composeTheme>;
+
+const getComponentThemes = (theme: themeTypes) => {
+  type ComponentThemesType = typeof componentThemes;
+  type OutputObject = {
+    [K in keyof ComponentThemesType as `${Lowercase<string & K>}`]: ReturnType<
+      ComponentThemesType[K]
+    >;
+  };
+
+  const { colors, baseFont, baseFontSize } = theme;
   const components = Object.entries(componentThemes).reduce(
     (componentsStyles, [names, themed]) => {
       const name = names.toLowerCase();
@@ -11,7 +23,7 @@ const getComponentThemes = tokens => {
       return {
         ...componentsStyles,
         [name]: themed({
-          ...tokens,
+          ...theme,
           colors,
           baseFont,
           baseFontSize,
@@ -19,12 +31,12 @@ const getComponentThemes = tokens => {
       };
     },
     {},
-  );
+  ) as OutputObject;
 
   return { components };
 };
 
-const theme = tokens => {
+const theme = (tokens: typeof yogaTokens) => {
   const baseFont = tokens.fonts.rubik;
   const baseFontSize = tokens.fontSizes.medium;
 
@@ -33,10 +45,22 @@ const theme = tokens => {
     primary: tokens.colors.vibin,
     secondary: tokens.colors.stamina,
     feedback: {
-      success: [tokens.colors.success, tokens.colors.hope],
-      informative: [tokens.colors.neutral, tokens.colors.relax],
-      attention: [tokens.colors.attention, tokens.colors.verve],
-      neutral: [tokens.colors.light, tokens.colors.medium],
+      success: Object.assign([tokens.colors.success, tokens.colors.hope], {
+        light: tokens.colors.success,
+        dark: tokens.colors.hope,
+      }),
+      informative: Object.assign([tokens.colors.neutral, tokens.colors.relax], {
+        light: tokens.colors.neutral,
+        dark: tokens.colors.relax,
+      }),
+      attention: Object.assign([tokens.colors.attention, tokens.colors.verve], {
+        light: tokens.colors.attention,
+        dark: tokens.colors.verve,
+      }),
+      neutral: Object.assign([tokens.colors.light, tokens.colors.medium], {
+        light: tokens.colors.light,
+        dark: tokens.colors.medium,
+      }),
     },
     text: {
       primary: tokens.colors.stamina,
@@ -50,18 +74,6 @@ const theme = tokens => {
     },
   };
 
-  [colors.feedback.success.light, colors.feedback.success.dark] =
-    colors.feedback.success;
-
-  [colors.feedback.informative.light, colors.feedback.informative.dark] =
-    colors.feedback.informative;
-
-  [colors.feedback.attention.light, colors.feedback.attention.dark] =
-    colors.feedback.attention;
-
-  [colors.feedback.neutral.light, colors.feedback.neutral.dark] =
-    colors.feedback.neutral;
-
   return {
     ...tokens,
     colors,
@@ -71,7 +83,7 @@ const theme = tokens => {
   };
 };
 
-const composeTheme = (tokens, customTheming = {}) => {
+const composeTheme = (tokens: typeof yogaTokens, customTheming = {}) => {
   const baseTheme = theme(tokens);
   const customTheme = merge(baseTheme, customTheming);
   const componentTheming = getComponentThemes(customTheme);
