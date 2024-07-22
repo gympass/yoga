@@ -8,9 +8,9 @@ import {
 } from '../theme';
 
 import { fontWeight } from '../font-weight';
-import { SystemValues } from '../types';
+import { GeneratorProps } from '../types';
 
-const color = (props: SystemValues) =>
+const color = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['color', 'c'],
@@ -18,7 +18,7 @@ const color = (props: SystemValues) =>
     getter: getColor,
   });
 
-const fontSize = (props: SystemValues) =>
+const fontSize = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['fontSize', 'fs'],
@@ -27,7 +27,7 @@ const fontSize = (props: SystemValues) =>
     transform: toPx,
   });
 
-const lineHeight = (props: SystemValues) =>
+const lineHeight = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['lineHeight', 'lh'],
@@ -36,14 +36,14 @@ const lineHeight = (props: SystemValues) =>
     transform: toPx,
   });
 
-const textAlign = (props: SystemValues) =>
+const textAlign = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['textAlign', 'ta'],
     cssProperty: 'text-align',
   });
 
-const textTransform = (props: SystemValues) =>
+const textTransform = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['textTransform', 'tt'],

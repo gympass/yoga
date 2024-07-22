@@ -1,7 +1,7 @@
 import { getColor, generator } from '../theme';
-import { SystemValues } from '../types';
+import { GeneratorProps } from '../types';
 
-const backgroundColor = (props: SystemValues) =>
+const backgroundColor = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['backgroundColor', 'bg', 'bgColor'],

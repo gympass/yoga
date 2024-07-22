@@ -1,5 +1,5 @@
 import { toPx } from '../unit';
-import { SystemValues } from '../types';
+import { GeneratorProps } from '../types';
 import {
   getBorder,
   getColor,
@@ -20,7 +20,7 @@ const transform = (value: string | number) => {
   return value;
 };
 
-const border = (props: SystemValues) =>
+const border = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['border', 'b'],
@@ -29,7 +29,7 @@ const border = (props: SystemValues) =>
     transform,
   });
 
-const borderTop = (props: SystemValues) =>
+const borderTop = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderTop', 'bt'],
@@ -38,7 +38,7 @@ const borderTop = (props: SystemValues) =>
     transform,
   });
 
-const borderRight = (props: SystemValues) =>
+const borderRight = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderRight', 'br'],
@@ -47,7 +47,7 @@ const borderRight = (props: SystemValues) =>
     transform,
   });
 
-const borderBottom = (props: SystemValues) =>
+const borderBottom = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderBottom', 'bb'],
@@ -56,7 +56,7 @@ const borderBottom = (props: SystemValues) =>
     transform,
   });
 
-const borderLeft = (props: SystemValues) =>
+const borderLeft = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderLeft', 'bl'],
@@ -65,7 +65,7 @@ const borderLeft = (props: SystemValues) =>
     transform,
   });
 
-const borderColor = (props: SystemValues) =>
+const borderColor = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderColor', 'bc'],
@@ -73,7 +73,7 @@ const borderColor = (props: SystemValues) =>
     getter: getColor,
   });
 
-const borderTopColor = (props: SystemValues) =>
+const borderTopColor = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderTopColor', 'btc'],
@@ -81,7 +81,7 @@ const borderTopColor = (props: SystemValues) =>
     getter: getColor,
   });
 
-const borderRightColor = (props: SystemValues) =>
+const borderRightColor = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderRightColor', 'brc'],
@@ -89,7 +89,7 @@ const borderRightColor = (props: SystemValues) =>
     getter: getColor,
   });
 
-const borderBottomColor = (props: SystemValues) =>
+const borderBottomColor = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderBottomColor', 'bbc'],
@@ -97,7 +97,7 @@ const borderBottomColor = (props: SystemValues) =>
     getter: getColor,
   });
 
-const borderLeftColor = (props: SystemValues) =>
+const borderLeftColor = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderLeftColor', 'blc'],
@@ -105,7 +105,7 @@ const borderLeftColor = (props: SystemValues) =>
     getter: getColor,
   });
 
-const borderWidth = (props: SystemValues) =>
+const borderWidth = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderWidth', 'bw'],
@@ -114,7 +114,7 @@ const borderWidth = (props: SystemValues) =>
     transform: toPx,
   });
 
-const borderTopWidth = (props: SystemValues) =>
+const borderTopWidth = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderTopWidth', 'btw'],
@@ -123,7 +123,7 @@ const borderTopWidth = (props: SystemValues) =>
     transform: toPx,
   });
 
-const borderRightWidth = (props: SystemValues) =>
+const borderRightWidth = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderRightWidth', 'brw'],
@@ -132,7 +132,7 @@ const borderRightWidth = (props: SystemValues) =>
     transform: toPx,
   });
 
-const borderBottomWidth = (props: SystemValues) =>
+const borderBottomWidth = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderBottomWidth', 'bbw'],
@@ -141,7 +141,7 @@ const borderBottomWidth = (props: SystemValues) =>
     transform: toPx,
   });
 
-const borderLeftWidth = (props: SystemValues) =>
+const borderLeftWidth = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderLeftWidth', 'blw'],
@@ -150,7 +150,7 @@ const borderLeftWidth = (props: SystemValues) =>
     transform: toPx,
   });
 
-const borderRadius = (props: SystemValues) =>
+const borderRadius = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderRadius', 'bRadius'],
@@ -159,7 +159,7 @@ const borderRadius = (props: SystemValues) =>
     transform: toPx,
   });
 
-const borderTopLeftRadius = (props: SystemValues) =>
+const borderTopLeftRadius = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderTopLeftRadius', 'btlr'],
@@ -168,7 +168,7 @@ const borderTopLeftRadius = (props: SystemValues) =>
     transform: toPx,
   });
 
-const borderTopRightRadius = (props: SystemValues) =>
+const borderTopRightRadius = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderTopRightRadius', 'btrr'],
@@ -177,7 +177,7 @@ const borderTopRightRadius = (props: SystemValues) =>
     transform: toPx,
   });
 
-const borderBottomLeftRadius = (props: SystemValues) =>
+const borderBottomLeftRadius = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderBottomLeftRadius', 'bblr'],
@@ -186,7 +186,7 @@ const borderBottomLeftRadius = (props: SystemValues) =>
     transform: toPx,
   });
 
-const borderBottomRightRadius = (props: SystemValues) =>
+const borderBottomRightRadius = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['borderBottomRightRadius', 'bbrr'],

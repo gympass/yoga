@@ -1,7 +1,7 @@
 import { getFontWeight, generator } from '../theme';
-import { SystemValues } from '../types';
+import { GeneratorProps } from '../types';
 
-export const fontWeight = (props: SystemValues) =>
+export const fontWeight = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['fontWeight', 'fw'],

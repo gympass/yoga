@@ -1,5 +1,6 @@
 import { css } from 'styled-components';
 import { backgroundColor } from './color';
+import { Theme } from '@gympass/yoga/Theme';
 
 const colorsTheme = {
   vibin: '#D8385E',
@@ -11,8 +12,8 @@ const colorsTheme = {
 const theme = {
   yoga: {
     colors: colorsTheme,
-  },
-}
+  } as unknown as Theme,
+};
 
 describe('backgroundColor', () => {
   it('Should return values for color prop', () => {
