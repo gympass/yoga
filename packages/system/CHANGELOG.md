@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.24.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.23.1...@gympass/yoga-system@0.24.0) (2024-07-23)
+
+
+### Bug Fixes
+
+* **system:** adjust imports path ([0fdb3db](https://github.com/Gympass/yoga/commit/0fdb3db2399903db8e77c31a7406f3d6006ba83c))
+* **system:** some code adjustments ([d887287](https://github.com/Gympass/yoga/commit/d88728706084ab9373da0fd0e8c915a229caa7a4))
+
+
+### Features
+
+* **system:** add basefont in theme type ([69cbda2](https://github.com/Gympass/yoga/commit/69cbda2ee82d2bcfd9259c10f628f35dd51cb488))
+
+
+
+
+
 ## [0.23.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.23.0...@gympass/yoga-system@0.23.1) (2024-06-25)
 
 
