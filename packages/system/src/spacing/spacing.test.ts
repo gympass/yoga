@@ -24,27 +24,30 @@ import {
   minHeight,
   spacing,
 } from './spacing';
+import { Theme } from '@gympass/yoga/Theme';
 
-const spacings = [0, 4, 8, 12];
-
-[spacings.zero, spacings.small, spacings.medium, spacings.large] = spacings;
+const spacingTokens = {
+  zero: 0,
+  small: 16,
+  medium: 20,
+};
 
 const theme = {
   yoga: {
-    spacing: spacings,
-  },
+    spacing: spacingTokens,
+  } as Theme,
 };
 
 describe('spacings', () => {
   describe('spacing', () => {
     it('Should return values for spacing prop', () => {
       const expectedZeroSpacing = css({
-        margin: spacings.zero,
-        padding: spacings.zero,
+        margin: spacingTokens.zero,
+        padding: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        margin: spacings.medium,
-        padding: spacings.medium,
+        margin: spacingTokens.medium,
+        padding: spacingTokens.medium,
       });
 
       const zero1 = spacing({ theme, p: 'zero', m: 'zero' });
@@ -81,10 +84,10 @@ describe('spacings', () => {
   describe('margin', () => {
     it('Should return values for margin prop', () => {
       const expectedZeroSpacing = css({
-        margin: spacings.zero,
+        margin: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        margin: spacings.medium,
+        margin: spacingTokens.medium,
       });
 
       const zero1 = margin({ theme, m: 'zero' });
@@ -120,10 +123,10 @@ describe('spacings', () => {
   describe('marginTop', () => {
     it('Should return values for marginTop prop', () => {
       const expectedZeroSpacing = css({
-        marginTop: spacings.zero,
+        marginTop: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        marginTop: spacings.medium,
+        marginTop: spacingTokens.medium,
       });
 
       const zero1 = marginTop({ theme, mt: 'zero' });
@@ -159,10 +162,10 @@ describe('spacings', () => {
   describe('marginRight', () => {
     it('Should return values for marginRight prop', () => {
       const expectedZeroSpacing = css({
-        marginRight: spacings.zero,
+        marginRight: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        marginRight: spacings.medium,
+        marginRight: spacingTokens.medium,
       });
 
       const zero1 = marginRight({ theme, mr: 'zero' });
@@ -198,10 +201,10 @@ describe('spacings', () => {
   describe('marginBottom', () => {
     it('Should return values for marginBottom prop', () => {
       const expectedZeroSpacing = css({
-        marginBottom: spacings.zero,
+        marginBottom: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        marginBottom: spacings.medium,
+        marginBottom: spacingTokens.medium,
       });
 
       const zero1 = marginBottom({ theme, mb: 'zero' });
@@ -237,10 +240,10 @@ describe('spacings', () => {
   describe('marginLeft', () => {
     it('Should return values for marginLeft prop', () => {
       const expectedZeroSpacing = css({
-        marginLeft: spacings.zero,
+        marginLeft: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        marginLeft: spacings.medium,
+        marginLeft: spacingTokens.medium,
       });
 
       const zero1 = marginLeft({ theme, ml: 'zero' });
@@ -276,12 +279,12 @@ describe('spacings', () => {
   describe('marginHorizontal', () => {
     it('Should return values for marginHorizontal prop', () => {
       const expectedZeroSpacing = css({
-        marginLeft: spacings.zero,
-        marginRight: spacings.zero,
+        marginLeft: spacingTokens.zero,
+        marginRight: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        marginLeft: spacings.medium,
-        marginRight: spacings.medium,
+        marginLeft: spacingTokens.medium,
+        marginRight: spacingTokens.medium,
       });
 
       const zero1 = marginHorizontal({ theme, mx: 'zero' });
@@ -322,12 +325,12 @@ describe('spacings', () => {
   describe('marginVertical', () => {
     it('Should return values for marginVertical prop', () => {
       const expectedZeroSpacing = css({
-        marginTop: spacings.zero,
-        marginBottom: spacings.zero,
+        marginTop: spacingTokens.zero,
+        marginBottom: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        marginTop: spacings.medium,
-        marginBottom: spacings.medium,
+        marginTop: spacingTokens.medium,
+        marginBottom: spacingTokens.medium,
       });
 
       const zero1 = marginVertical({ theme, my: 'zero' });
@@ -368,15 +371,15 @@ describe('spacings', () => {
   describe('margins', () => {
     it('should return all props for margins', () => {
       const expectedMargins = css({
-        marginTop: spacings.small,
-        marginBottom: spacings.small,
-        marginLeft: spacings.medium,
-        marginRight: spacings.medium,
+        marginTop: spacingTokens.small,
+        marginBottom: spacingTokens.small,
+        marginLeft: spacingTokens.medium,
+        marginRight: spacingTokens.medium,
       });
       const m = margins({
-        mt: spacings.small,
-        marginHorizontal: spacings.medium,
-        marginBottom: spacings.small,
+        mt: spacingTokens.small,
+        marginHorizontal: spacingTokens.medium,
+        marginBottom: spacingTokens.small,
         theme,
       });
 
@@ -387,10 +390,10 @@ describe('spacings', () => {
   describe('padding', () => {
     it('Should return values for padding prop', () => {
       const expectedZeroSpacing = css({
-        padding: spacings.zero,
+        padding: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        padding: spacings.medium,
+        padding: spacingTokens.medium,
       });
 
       const zero1 = padding({ theme, p: 'zero' });
@@ -426,10 +429,10 @@ describe('spacings', () => {
   describe('paddingTop', () => {
     it('Should return values for paddingTop prop', () => {
       const expectedZeroSpacing = css({
-        paddingTop: spacings.zero,
+        paddingTop: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        paddingTop: spacings.medium,
+        paddingTop: spacingTokens.medium,
       });
 
       const zero1 = paddingTop({ theme, pt: 'zero' });
@@ -465,10 +468,10 @@ describe('spacings', () => {
   describe('paddingRight', () => {
     it('Should return values for paddingRight prop', () => {
       const expectedZeroSpacing = css({
-        paddingRight: spacings.zero,
+        paddingRight: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        paddingRight: spacings.medium,
+        paddingRight: spacingTokens.medium,
       });
 
       const zero1 = paddingRight({ theme, pr: 'zero' });
@@ -504,10 +507,10 @@ describe('spacings', () => {
   describe('paddingBottom', () => {
     it('Should return values for paddingBottom prop', () => {
       const expectedZeroSpacing = css({
-        paddingBottom: spacings.zero,
+        paddingBottom: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        paddingBottom: spacings.medium,
+        paddingBottom: spacingTokens.medium,
       });
 
       const zero1 = paddingBottom({ theme, pb: 'zero' });
@@ -543,10 +546,10 @@ describe('spacings', () => {
   describe('paddingLeft', () => {
     it('Should return values for paddingLeft prop', () => {
       const expectedZeroSpacing = css({
-        paddingLeft: spacings.zero,
+        paddingLeft: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        paddingLeft: spacings.medium,
+        paddingLeft: spacingTokens.medium,
       });
 
       const zero1 = paddingLeft({ theme, pl: 'zero' });
@@ -582,12 +585,12 @@ describe('spacings', () => {
   describe('paddingHorizontal', () => {
     it('Should return values for paddingHorizontal prop', () => {
       const expectedZeroSpacing = css({
-        paddingLeft: spacings.zero,
-        paddingRight: spacings.zero,
+        paddingLeft: spacingTokens.zero,
+        paddingRight: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        paddingLeft: spacings.medium,
-        paddingRight: spacings.medium,
+        paddingLeft: spacingTokens.medium,
+        paddingRight: spacingTokens.medium,
       });
 
       const zero1 = paddingHorizontal({ theme, px: 'zero' });
@@ -628,12 +631,12 @@ describe('spacings', () => {
   describe('paddingVertical', () => {
     it('Should return values for paddingVertical prop', () => {
       const expectedZeroSpacing = css({
-        paddingTop: spacings.zero,
-        paddingBottom: spacings.zero,
+        paddingTop: spacingTokens.zero,
+        paddingBottom: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        paddingTop: spacings.medium,
-        paddingBottom: spacings.medium,
+        paddingTop: spacingTokens.medium,
+        paddingBottom: spacingTokens.medium,
       });
 
       const zero1 = paddingVertical({ theme, py: 'zero' });
@@ -674,15 +677,15 @@ describe('spacings', () => {
   describe('paddings', () => {
     it('should return all props for paddings', () => {
       const expectedPaddings = css({
-        paddingTop: spacings.small,
-        paddingBottom: spacings.small,
-        paddingLeft: spacings.medium,
-        paddingRight: spacings.medium,
+        paddingTop: spacingTokens.small,
+        paddingBottom: spacingTokens.small,
+        paddingLeft: spacingTokens.medium,
+        paddingRight: spacingTokens.medium,
       });
       const p = paddings({
-        pt: spacings.small,
-        paddingHorizontal: spacings.medium,
-        paddingBottom: spacings.small,
+        pt: spacingTokens.small,
+        paddingHorizontal: spacingTokens.medium,
+        paddingBottom: spacingTokens.small,
         theme,
       });
 
@@ -693,10 +696,10 @@ describe('spacings', () => {
   describe('width', () => {
     it('Should return values for width prop', () => {
       const expectedZeroSpacing = css({
-        width: spacings.zero,
+        width: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        width: spacings.medium,
+        width: spacingTokens.medium,
       });
 
       const zero1 = width({ theme, w: 'zero' });
@@ -732,10 +735,10 @@ describe('spacings', () => {
   describe('maxWidth', () => {
     it('Should return values for maxWidth prop', () => {
       const expectedZeroSpacing = css({
-        maxWidth: spacings.zero,
+        maxWidth: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        maxWidth: spacings.medium,
+        maxWidth: spacingTokens.medium,
       });
 
       const zero1 = maxWidth({ theme, maxW: 'zero' });
@@ -771,10 +774,10 @@ describe('spacings', () => {
   describe('minWidth', () => {
     it('Should return values for minWidth prop', () => {
       const expectedZeroSpacing = css({
-        minWidth: spacings.zero,
+        minWidth: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        minWidth: spacings.medium,
+        minWidth: spacingTokens.medium,
       });
 
       const zero1 = minWidth({ theme, minW: 'zero' });
@@ -810,10 +813,10 @@ describe('spacings', () => {
   describe('height', () => {
     it('Should return values for height prop', () => {
       const expectedZeroSpacing = css({
-        height: spacings.zero,
+        height: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        height: spacings.medium,
+        height: spacingTokens.medium,
       });
 
       const zero1 = height({ theme, h: 'zero' });
@@ -849,10 +852,10 @@ describe('spacings', () => {
   describe('maxHeight', () => {
     it('Should return values for maxHeight prop', () => {
       const expectedZeroSpacing = css({
-        maxHeight: spacings.zero,
+        maxHeight: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        maxHeight: spacings.medium,
+        maxHeight: spacingTokens.medium,
       });
 
       const zero1 = maxHeight({ theme, maxH: 'zero' });
@@ -888,10 +891,10 @@ describe('spacings', () => {
   describe('minHeight', () => {
     it('Should return values for minHeight prop', () => {
       const expectedZeroSpacing = css({
-        minHeight: spacings.zero,
+        minHeight: spacingTokens.zero,
       });
       const expectedMediumSpacing = css({
-        minHeight: spacings.medium,
+        minHeight: spacingTokens.medium,
       });
 
       const zero1 = minHeight({ theme, minH: 'zero' });

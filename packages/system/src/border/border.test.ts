@@ -21,18 +21,22 @@ import {
   borderBottomLeftRadius,
   borderBottomRightRadius,
 } from './border';
-
-const borders = [0, 1, 2];
-
-[borders.zero, borders.small, borders.medium] = borders;
-
-const radii = [0, 4, 8, 9999];
-
-[radii.sharp, radii.semiRounded, radii.rounded, radii.circle] = radii;
+import { Theme } from '@gympass/yoga/Theme';
 
 const colors = {
   vibin: '#D8385E',
   hope: '#1D856C',
+};
+
+const borders = {
+  zero: 0,
+  small: 1,
+  medium: 2,
+};
+
+const radii = {
+  sharp: 0,
+  small: 8,
 };
 
 const theme = {
@@ -40,7 +44,7 @@ const theme = {
     borders,
     colors,
     radii,
-  },
+  } as Theme,
 };
 
 describe('borders', () => {
@@ -570,15 +574,15 @@ describe('radius', () => {
   describe('borderRadius', () => {
     it('Should return values for border prop', () => {
       const expectedSharpStyle = css({ borderRadius: radii.sharp });
-      const expectedRoundedStyle = css({ borderRadius: radii.rounded });
+      const expectedRoundedStyle = css({ borderRadius: radii.small });
 
       const sharp1 = borderRadius({ theme, bRadius: 'sharp' });
       const sharp2 = borderRadius({ theme, borderRadius: 'sharp' });
 
       expect(sharp1).toStrictEqual(sharp2);
 
-      const rounded1 = borderRadius({ theme, bRadius: 'rounded' });
-      const rounded2 = borderRadius({ theme, borderRadius: 'rounded' });
+      const rounded1 = borderRadius({ theme, bRadius: 'small' });
+      const rounded2 = borderRadius({ theme, borderRadius: 'small' });
 
       expect(rounded1).toStrictEqual(rounded2);
 
@@ -603,7 +607,7 @@ describe('radius', () => {
   describe('borderTopLeftRadius', () => {
     it('Should return values for border prop', () => {
       const expectedSharpStyle = css({ borderTopLeftRadius: radii.sharp });
-      const expectedRoundedStyle = css({ borderTopLeftRadius: radii.rounded });
+      const expectedRoundedStyle = css({ borderTopLeftRadius: radii.small });
 
       const sharp1 = borderTopLeftRadius({ theme, btlr: 'sharp' });
       const sharp2 = borderTopLeftRadius({
@@ -613,10 +617,10 @@ describe('radius', () => {
 
       expect(sharp1).toStrictEqual(sharp2);
 
-      const rounded1 = borderTopLeftRadius({ theme, btlr: 'rounded' });
+      const rounded1 = borderTopLeftRadius({ theme, btlr: 'small' });
       const rounded2 = borderTopLeftRadius({
         theme,
-        borderTopLeftRadius: 'rounded',
+        borderTopLeftRadius: 'small',
       });
 
       expect(rounded1).toStrictEqual(rounded2);
@@ -642,7 +646,7 @@ describe('radius', () => {
   describe('borderTopRightRadius', () => {
     it('Should return values for border prop', () => {
       const expectedSharpStyle = css({ borderTopRightRadius: radii.sharp });
-      const expectedRoundedStyle = css({ borderTopRightRadius: radii.rounded });
+      const expectedRoundedStyle = css({ borderTopRightRadius: radii.small });
 
       const sharp1 = borderTopRightRadius({ theme, btrr: 'sharp' });
       const sharp2 = borderTopRightRadius({
@@ -652,10 +656,10 @@ describe('radius', () => {
 
       expect(sharp1).toStrictEqual(sharp2);
 
-      const rounded1 = borderTopRightRadius({ theme, btrr: 'rounded' });
+      const rounded1 = borderTopRightRadius({ theme, btrr: 'small' });
       const rounded2 = borderTopRightRadius({
         theme,
-        borderTopRightRadius: 'rounded',
+        borderTopRightRadius: 'small',
       });
 
       expect(rounded1).toStrictEqual(rounded2);
@@ -682,7 +686,7 @@ describe('radius', () => {
     it('Should return values for border prop', () => {
       const expectedSharpStyle = css({ borderBottomLeftRadius: radii.sharp });
       const expectedRoundedStyle = css({
-        borderBottomLeftRadius: radii.rounded,
+        borderBottomLeftRadius: radii.small,
       });
 
       const sharp1 = borderBottomLeftRadius({ theme, bblr: 'sharp' });
@@ -693,10 +697,10 @@ describe('radius', () => {
 
       expect(sharp1).toStrictEqual(sharp2);
 
-      const rounded1 = borderBottomLeftRadius({ theme, bblr: 'rounded' });
+      const rounded1 = borderBottomLeftRadius({ theme, bblr: 'small' });
       const rounded2 = borderBottomLeftRadius({
         theme,
-        borderBottomLeftRadius: 'rounded',
+        borderBottomLeftRadius: 'small',
       });
 
       expect(rounded1).toStrictEqual(rounded2);
@@ -726,7 +730,7 @@ describe('radius', () => {
     it('Should return values for border prop', () => {
       const expectedSharpStyle = css({ borderBottomRightRadius: radii.sharp });
       const expectedRoundedStyle = css({
-        borderBottomRightRadius: radii.rounded,
+        borderBottomRightRadius: radii.small,
       });
 
       const sharp1 = borderBottomRightRadius({ theme, bbrr: 'sharp' });
@@ -737,10 +741,10 @@ describe('radius', () => {
 
       expect(sharp1).toStrictEqual(sharp2);
 
-      const rounded1 = borderBottomRightRadius({ theme, bbrr: 'rounded' });
+      const rounded1 = borderBottomRightRadius({ theme, bbrr: 'small' });
       const rounded2 = borderBottomRightRadius({
         theme,
-        borderBottomRightRadius: 'rounded',
+        borderBottomRightRadius: 'small',
       });
 
       expect(rounded1).toStrictEqual(rounded2);

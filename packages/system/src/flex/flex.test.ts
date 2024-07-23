@@ -16,15 +16,17 @@ import {
   flexes,
   gap,
 } from './flex';
+import { Theme } from '@gympass/yoga/Theme';
 
-const spacings = [0, 4, 8, 12];
-
-[spacings.zero, spacings.small, spacings.medium, spacings.large] = spacings;
+const spacing = {
+  zero: 0,
+  medium: 20,
+};
 
 const theme = {
   yoga: {
-    spacing: spacings,
-  },
+    spacing,
+  } as Theme,
 };
 
 describe('flex', () => {
@@ -186,10 +188,10 @@ describe('flex', () => {
   describe('gap', () => {
     it('Should return values for gap prop', () => {
       const expectedZeroSpacing = css({
-        gap: spacings.zero,
+        gap: spacing.zero,
       });
       const expectedMediumSpacing = css({
-        gap: spacings.medium,
+        gap: spacing.medium,
       });
 
       const zero = gap({ theme, gap: 'zero' });

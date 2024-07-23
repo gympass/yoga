@@ -10,39 +10,41 @@ import {
 } from './typography';
 
 import { fontWeight as fontWeightAndroid } from '../font-weight/fontWeight.android';
-
-const fontSizes = [10, 20, 40];
-
-[fontSizes.small, fontSizes.medium, fontSizes.large] = fontSizes;
-
-const lineHeights = [12, 16, 20];
-
-[lineHeights.small, lineHeights.medium, lineHeights.large] = lineHeights;
-
-const fontWeights = [300, 500, 900];
-
-[fontWeights.light, fontWeights.medium, fontWeights.bold] = fontWeights;
+import { Theme } from '@gympass/yoga/Theme';
 
 const baseFont = {
   family: 'Rubik',
-  weight: [...fontWeights, ...fontWeights.map(weight => `${weight}i`)],
+  weight: [300, 500, 900, '300i', '500i', '900i'],
 };
 
-const colors = {
+const colorsTheme = {
   vibin: '#D8385E',
   text: {
     primary: '#000',
   },
 };
 
+const fontSizes = {
+  medium: 16,
+};
+
+const lineHeights = {
+  medium: 24,
+};
+
+const fontWeights = {
+  medium: 500,
+  bold: 700,
+};
+
 const theme = {
   yoga: {
-    colors,
+    colors: colorsTheme,
     fontSizes,
     lineHeights,
     fontWeights,
     baseFont,
-  },
+  } as Theme,
 };
 
 describe('Web and iOS', () => {
@@ -50,7 +52,7 @@ describe('Web and iOS', () => {
     describe('typography', () => {
       it('Should return values for typography prop', () => {
         const expectedTypography = css({
-          color: colors.vibin,
+          color: colorsTheme.vibin,
           fontSize: fontSizes.medium,
           fontWeight: fontWeights.bold,
           lineHeight: `${lineHeights.medium}px`,
@@ -145,7 +147,7 @@ describe('Web and iOS', () => {
       it('Should return the value if there is no theme match', () => {
         const expectedNoTheme = css({ lineHeight: '5px' });
 
-        const lh = lineHeight({ theme, lh: 5 });
+        const lh = lineHeight({ theme, lh: '5px' });
 
         expect(lh).toStrictEqual(expectedNoTheme);
       });
@@ -153,7 +155,7 @@ describe('Web and iOS', () => {
 
     describe('color', () => {
       it('Should return values for color prop', () => {
-        const expectedColor = css({ color: colors.vibin });
+        const expectedColor = css({ color: colorsTheme.vibin });
 
         const c1 = color({ theme, c: 'vibin' });
         const c2 = color({ theme, color: 'vibin' });
@@ -166,7 +168,7 @@ describe('Web and iOS', () => {
       });
 
       it('Should return the color based on its path', () => {
-        const expectedNoTheme = css({ color: colors.text.primary });
+        const expectedNoTheme = css({ color: colorsTheme.text.primary });
 
         const c = color({ theme, color: 'text.primary' });
 

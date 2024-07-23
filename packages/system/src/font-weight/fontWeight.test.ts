@@ -1,5 +1,6 @@
 import { css } from 'styled-components';
 import { fontWeight as androidFontWeight } from './fontWeight.android';
+import { Theme } from '@gympass/yoga/Theme';
 
 describe('Android', () => {
   const fontWeights = {
@@ -15,7 +16,7 @@ describe('Android', () => {
   const theme = {
     yoga: {
       baseFont,
-    },
+    } as Theme,
   };
 
   describe('fontWeight', () => {

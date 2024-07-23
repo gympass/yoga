@@ -1,7 +1,7 @@
 import { getElevation, generator } from '../theme';
-import { SystemValues } from '../types';
+import { GeneratorProps } from '../types';
 
-const elevation = (props: SystemValues) =>
+const elevation = (props: GeneratorProps['props']) =>
   generator({
     props,
     prop: ['boxShadow', 'bs', 'elevation'],

@@ -9,15 +9,17 @@ import {
   left,
   zIndex,
 } from './layout';
+import { Theme } from '@gympass/yoga/Theme';
 
-const spacings = [0, 4, 8, 12];
-
-[spacings.zero, spacings.small, spacings.medium, spacings.large] = spacings;
+const spacing = {
+  zero: 0,
+  medium: 20,
+};
 
 const theme = {
   yoga: {
-    spacing: spacings,
-  },
+    spacing,
+  } as Theme,
 };
 
 describe('layout', () => {
@@ -40,7 +42,7 @@ describe('layout', () => {
     it('Should return values for all position props', () => {
       const expectedPosition = css({
         position: 'absolute',
-        top: spacings.medium,
+        top: spacing.medium,
         left: '50%',
       });
 
@@ -67,10 +69,10 @@ describe('layout', () => {
     describe('top', () => {
       it('Should return values for top prop', () => {
         const expectedZeroSpacing = css({
-          top: spacings.zero,
+          top: spacing.zero,
         });
         const expectedMediumSpacing = css({
-          top: spacings.medium,
+          top: spacing.medium,
         });
 
         const zero = top({ theme, top: 'zero' });
@@ -95,10 +97,10 @@ describe('layout', () => {
     describe('right', () => {
       it('Should return values for right prop', () => {
         const expectedZeroSpacing = css({
-          right: spacings.zero,
+          right: spacing.zero,
         });
         const expectedMediumSpacing = css({
-          right: spacings.medium,
+          right: spacing.medium,
         });
 
         const zero = right({ theme, right: 'zero' });
@@ -123,10 +125,10 @@ describe('layout', () => {
     describe('bottom', () => {
       it('Should return values for bottom prop', () => {
         const expectedZeroSpacing = css({
-          bottom: spacings.zero,
+          bottom: spacing.zero,
         });
         const expectedMediumSpacing = css({
-          bottom: spacings.medium,
+          bottom: spacing.medium,
         });
 
         const zero = bottom({ theme, bottom: 'zero' });
@@ -151,10 +153,10 @@ describe('layout', () => {
     describe('left', () => {
       it('Should return values for left prop', () => {
         const expectedZeroSpacing = css({
-          left: spacings.zero,
+          left: spacing.zero,
         });
         const expectedMediumSpacing = css({
-          left: spacings.medium,
+          left: spacing.medium,
         });
 
         const zero = left({ theme, left: 'zero' });

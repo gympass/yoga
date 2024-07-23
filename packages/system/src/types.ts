@@ -1,5 +1,6 @@
 import React from 'react';
 import theme from '@gympass/yoga-tokens';
+import { Theme } from '@gympass/yoga/Theme';
 
 import { CSSObject, FlattenSimpleInterpolation } from 'styled-components';
 
@@ -22,6 +23,7 @@ export type SystemProps = {
   fill?: string;
   children?: React.ReactNode;
 } & Borders &
+
   Colors &
   Elevations &
   Flex &
@@ -40,7 +42,7 @@ export type Generator =
   | FlattenSimpleInterpolation;
 
 export interface GeneratorProps {
-  props: SystemValues;
+  props: SystemProps & { theme?: { yoga: Theme } };
   prop: SystemKeys | SystemKeys[];
   cssProperty: string | string[];
   getter?: ((componentProps: SystemValues) => DesignTokens) | (() => DesignTokens) | (() => object) | (() => SystemProps);

@@ -1,4 +1,6 @@
-const elevationSizes = {
+export type ElevationKeys = 'zero' | 'small' | 'medium' | 'large';
+
+export const elevationSizes = {
   zero: 0,
   small: 4,
   medium: 8,
