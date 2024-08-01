@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.25.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.24.0...@gympass/yoga-system@0.25.0) (2024-08-01)
+
+
+### Features
+
+* add new default props bc ([cac358d](https://github.com/Gympass/yoga/commit/cac358de24b4fcb512d0986fbf394a93c674db95))
+
+
+
+
+
 # [0.24.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.23.1...@gympass/yoga-system@0.24.0) (2024-07-23)
 
 
