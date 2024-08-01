@@ -1,51 +1,87 @@
 <p align="center">
-  <img src="packages/doc/src/images/lotus.png" />
+  <img height="250" src="packages/doc/src/images/yoga-logo-color.png" />
 </p>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-49-orange.svg?style=flat-square)](#contributors)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Github Actions](https://github.com/gympass/yoga/workflows/Yoga%20-%20Gympass%20Design%20System/badge.svg)
 
-Design system at Gympass, our main intent is to support our projects.
-We have open-sourced our project for those who are interested in checkout how we do things and organize our code and documentation here.
+Design system at Wellhub, our main intent is to support our projects. We have open-sourced our project for those who are interested in checkout how we do things and organize our code and documentation here.
 
-### What does it mean?
+**What does it mean?**
 
-> Yoga is a scientific system of practices made to help each one of us achieve our highest potential and experience.
+Yoga is a scientific system of practices made to help each one of us achieve our highest potential and experience.
 
 ## Documentation
 
 Yoga is documented at [http://gympass.github.io/yoga](https://gympass.github.io/yoga).
 
+## Installing
+
+In order to install our design-system just run:
+
+```bash
+$ yarn add @gympass/yoga
+```
+
+## Usage
+
+An important point is that your whole application must be wrapped in our ThemeProvider component:
+
+```bash
+import { ThemeProvider, Button } from '@gympass/yoga';
+
+const App = () => (
+  <ThemeProvider>
+    <Button>Find an activity</Button>
+  </ThemeProvider>
+);
+
+```
+
 ## Architecture
 
-Our codebase is a monorepo and individually versioned libraries.
-Here's an overview of our packages:
+The Yoga Design System codebase is structured as a monorepo, containing individually versioned libraries. Below is an overview of the main packages:
 
-| Package                                      | Version                                                                                                               | Size                                                                                                                                    |
-| -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| [`@gympass/yoga`](/packages/yoga)            | [![npm version](https://badgen.net/npm/v/@gympass/yoga)](https://www.npmjs.com/package/@gympass/yoga)                 | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga)](https://bundlephobia.com/result?p=@gympass/yoga)                 |
-| [`@gympass/yoga-tokens`](/packages/tokens)   | [![npm version](https://badgen.net/npm/v/@gympass/yoga-tokens)](https://www.npmjs.com/package/@gympass/yoga-tokens)   | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-tokens)](https://bundlephobia.com/result?p=@gympass/yoga-tokens)   |
-| [`@gympass/yoga-common`](/packages/common)   | [![npm version](https://badgen.net/npm/v/@gympass/yoga-common)](https://www.npmjs.com/package/@gympass/yoga-common)   | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-common)](https://bundlephobia.com/result?p=@gympass/yoga-common)   |
-| [`@gympass/yoga-icons`](/packages/icons)     | [![npm version](https://badgen.net/npm/v/@gympass/yoga-icons)](https://www.npmjs.com/package/@gympass/yoga-icons)     | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-icons)](https://bundlephobia.com/result?p=@gympass/yoga-icons)     |
-| [`@gympass/yoga-helpers`](/packages/helpers) | [![npm version](https://badgen.net/npm/v/@gympass/yoga-helpers)](https://www.npmjs.com/package/@gympass/yoga-helpers) | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-helpers)](https://bundlephobia.com/result?p=@gympass/yoga-helpers) |
-| [`@gympass/yoga-system`](/packages/system)   | [![npm version](https://badgen.net/npm/v/@gympass/yoga-system)](https://www.npmjs.com/package/@gympass/yoga-system)   | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-system)](https://bundlephobia.com/result?p=@gympass/yoga-system)   |
+| Package                                                  | Version                                                                                                                           | Size                                                                                                                                                | Description                                                    |
+| -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| [`@gympass/yoga`](/packages/yoga)                        | [![npm version](https://badgen.net/npm/v/@gympass/yoga)](https://www.npmjs.com/package/@gympass/yoga)                             | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga)](https://bundlephobia.com/result?p=@gympass/yoga)                             | Main package that brings together and exports all components   |
+| [`@gympass/yoga-tokens`](/packages/tokens)               | [![npm version](https://badgen.net/npm/v/@gympass/yoga-tokens)](https://www.npmjs.com/package/@gympass/yoga-tokens)               | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-tokens)](https://bundlephobia.com/result?p=@gympass/yoga-tokens)               | Contains the design tokens used to maintain visual consistency |
+| [`@gympass/yoga-common`](/packages/common)               | [![npm version](https://badgen.net/npm/v/@gympass/yoga-common)](https://www.npmjs.com/package/@gympass/yoga-common)               | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-common)](https://bundlephobia.com/result?p=@gympass/yoga-common)               | Contains some helper variables used in all packages            |
+| [`@gympass/yoga-icons`](/packages/icons)                 | [![npm version](https://badgen.net/npm/v/@gympass/yoga-icons)](https://www.npmjs.com/package/@gympass/yoga-icons)                 | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-icons)](https://bundlephobia.com/result?p=@gympass/yoga-icons)                 | Library of icons used in components                            |
+| [`@gympass/yoga-illustrations`](/packages/illustrations) | [![npm version](https://badgen.net/npm/v/@gympass/yoga-illustrations)](https://www.npmjs.com/package/@gympass/yoga-illustrations) | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-illustrations)](https://bundlephobia.com/result?p=@gympass/yoga-illustrations) | Library of illustrations used in components                    |
+| [`@gympass/yoga-helpers`](/packages/helpers)             | [![npm version](https://badgen.net/npm/v/@gympass/yoga-helpers)](https://www.npmjs.com/package/@gympass/yoga-helpers)             | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-helpers)](https://bundlephobia.com/result?p=@gympass/yoga-helpers)             | Helper functions to make yoga components easier to use         |
+| [`@gympass/yoga-system`](/packages/system)               | [![npm version](https://badgen.net/npm/v/@gympass/yoga-system)](https://www.npmjs.com/package/@gympass/yoga-system)               | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-system)](https://bundlephobia.com/result?p=@gympass/yoga-system)               | Tools to apply themes and styles based on design tokens        |
 
-## Contributing
+## Support
 
-This repository should _and_ will grow, its contents will be used for many people in our current and future
-projects. As such, we follow some practices to keep a common architecture in our changes.
+- **[React](https://react.dev/):** Build user interfaces out of individual pieces called components written in JavaScript. Yoga supports versions `>=16`.
 
-### [Code of Conduct](https://github.com/stumpsyn/policies/blob/master/citizen_code_of_conduct.md)
+- **[React Native](https://reactnative.dev/):** Brings the React programming paradigm to platforms like Android and iOS. Yoga supports version `0.72.3`.
 
-We adopted the _Citizen Code of Condute_, which is widely used in many projects and communities such the [Rust comunity](https://www.rust-lang.org/policies/code-of-conduct).
-Please read the [full text](https://github.com/stumpsyn/policies/blob/master/citizen_code_of_conduct.md) so that you can understand what actions will and will not be tolerated.
+- **[Picker](https://www.npmjs.com/package/react-native-picker-select):** A Picker component for React Native which emulates the native interfaces for iOS and Android. Yoga supports versions `^2.4.9`.
+
+- **[Styled Componentes](https://styled-components.com/):** This lets you write actual CSS in your JavaScript.Yoga supports versions `^4.4.0`.
+
+## License
+
+Yoga is an open-source collaborative project, in other words, its distribution grants the right to study, use, change and distribute it to anyone (MIT license).
+
+## Report an issue
+
+Check if there is already an [issue](https://github.com/gympass/yoga/issues) open in our repository. If not, you can create a new one. Also, check the [discussion topics](https://github.com/gympass/yoga/discussions). Our team will analyze and prioritize within our initiatives. If you are interested and available, let us know and we will address you ASAP. Wellhub developers should refer to the Internal Guidelines.
+
+## Request a feature
+
+If you believe it is necessary to develop a new feature, for example a new component, please contact our team. You can open a new discussion topic, explaining the need. Our team will analyze and prioritize within our initiatives, taking into account design and engineering principles, such as reusability. If you are interested and available, let us know and we will address you ASAP. Wellhub developers should refer to the Internal Guidelines.
 
 ### [Contributing Guide](CONTRIBUTING.md)
 
-Read our [contributing guide](CONTRIBUTING.md) to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to Yoga.
+This repository should and will grow, its contents will be used for many people in our current and future projects. As such, we follow some practices to keep a common architecture in our changes. Read our [Contributing Guide](CONTRIBUTING.md) to learn about our code of conduct, environments setups and development process.
 
 ## Contributors ✨
 
