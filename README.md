@@ -59,13 +59,31 @@ The Yoga Design System codebase is structured as a monorepo, containing individu
 
 ## Support
 
-- **[React](https://react.dev/):** Build user interfaces out of individual pieces called components written in JavaScript. Yoga supports versions `>=16`.
+**Browser:** We support the 3 latest and stable releases of all major browsers and platforms
 
-- **[React Native](https://reactnative.dev/):** Brings the React programming paradigm to platforms like Android and iOS. Yoga supports version `0.72.3`.
+| Browser          | Version |
+| ---------------- | ------- |
+| Chrome           | >= 125  |
+| Chrome (Android) | >= 125  |
+| Safari (macOS)   | >= 15   |
+| Safari (iOS)     | >= 15   |
+| Edge             | >= 125  |
+| Firefox          | >= 125  |
 
-- **[Picker](https://www.npmjs.com/package/react-native-picker-select):** A Picker component for React Native which emulates the native interfaces for iOS and Android. Yoga supports versions `^2.4.9`.
+**Operational System:** Yoga provides support for iOS 14 and higher and Android 7 and higher.
 
-- **[Styled Componentes](https://styled-components.com/):** This lets you write actual CSS in your JavaScript.Yoga supports versions `^4.4.0`.
+| OS      | Version | Viewport Size                          |
+| ------- | ------- | -------------------------------------- |
+| Android | >= 7    | Android Large: 360 x 800 (Samsung S20) |
+| iOS     | >= 14   | iPhone SE: 320 x 568                   |
+
+**[React](https://react.dev/):** Build user interfaces out of individual pieces called components written in JavaScript. Yoga supports versions `>=16`.
+
+**[React Native](https://reactnative.dev/):** Brings the React programming paradigm to platforms like Android and iOS. Yoga supports version `0.72.3`.
+
+**[Picker](https://www.npmjs.com/package/react-native-picker-select):** A Picker component for React Native which emulates the native interfaces for iOS and Android. Yoga supports versions `^2.4.9`.
+
+**[Styled Componentes](https://styled-components.com/):** This lets you write actual CSS in your JavaScript.Yoga supports versions `^4.4.0`.
 
 ## License
 
@@ -81,7 +99,7 @@ If you believe it is necessary to develop a new feature, for example a new compo
 
 ### [Contributing Guide](CONTRIBUTING.md)
 
-This repository should and will grow, its contents will be used for many people in our current and future projects. As such, we follow some practices to keep a common architecture in our changes. Read our [Contributing Guide](CONTRIBUTING.md) to learn about our code of conduct, environments setups and development process.
+This repository should and will grow, its contents will be used for many people in our current and future projects. As such, we follow some practices to keep a common architecture in our changes. Read our [Contributing Guide](CONTRIBUTING.md) to learn about our code of conduct, environments setups and development process. Wellhub developers should also consult the Internal Guidelines.
 
 ## Contributors ✨
 
