@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.26.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.25.0...@gympass/yoga-icons@1.26.0) (2024-10-23)
+
+
+### Features
+
+* **yoga-icons:** added backspace icon ([c22d723](https://github.com/Gympass/yoga/commit/c22d72304a6e40184aad82e31fc9ffefeb23eb84))
+
+
+
+
+
 # [1.25.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.24.0...@gympass/yoga-icons@1.25.0) (2024-07-15)
 
 
