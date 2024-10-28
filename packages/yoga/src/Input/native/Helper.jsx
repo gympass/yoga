@@ -14,7 +14,7 @@ const HelperWrapper = styled.View(
     },
   }) => `
     width: ${full ? '100%' : `${input.width}px`};
-    max-width: ${input.width}px;
+    max-width: ${full ? '100%' : `${input.width}px`};
     flex-direction: row;
     justify-content: space-between;
 
