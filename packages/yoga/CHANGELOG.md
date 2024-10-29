@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.117.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.117.1...@gympass/yoga@7.117.2) (2024-10-29)
+
+
+### Bug Fixes
+
+* **input:** helper wrapper max width ([d0503ac](https://github.com/Gympass/yoga/commit/d0503ac3c896b62627b6791eec6c1e8554e870f7))
+
+
+
+
+
 ## [7.117.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.117.0...@gympass/yoga@7.117.1) (2024-10-23)
 
 **Note:** Version bump only for package @gympass/yoga
