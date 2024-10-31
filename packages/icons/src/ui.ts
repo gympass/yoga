@@ -175,6 +175,7 @@ import Token from './svg/token.svg';
 import Toiletries from './svg/toiletries.svg';
 import TrainingTowels from './svg/training-towels.svg';
 import Trash from './svg/trash.svg';
+import TrendingNoChange from './svg/trending_no_change.svg';
 import TrendingUp from './svg/trending_up.svg';
 import TriangleAlert from './svg/triangle_alert.svg';
 import Twitter from './svg/twitter.svg';
@@ -377,6 +378,7 @@ export {
   Toiletries,
   TrainingTowels,
   Trash,
+  TrendingNoChange,
   TrendingUp,
   TriangleAlert,
   Twitter,
