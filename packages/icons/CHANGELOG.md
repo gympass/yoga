@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.27.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.26.0...@gympass/yoga-icons@1.27.0) (2024-11-05)
+
+
+### Features
+
+* **yoga-icons:** added TrendingNoChange icon ([7c64b36](https://github.com/Gympass/yoga/commit/7c64b36b5f90202c34b6fdae7bc18d01f624a1c6))
+
+
+
+
+
 # [1.26.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.25.0...@gympass/yoga-icons@1.26.0) (2024-10-23)
 
 
