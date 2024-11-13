@@ -36,7 +36,7 @@ const StyledTable = styled.table`
 
     thead {
       background-color: ${hexToRgb(elements.lineAndBorders, 0.5)};
-      font-family: 'neue-haas-grotesk-display';
+      font-family: 'inter';
 
 
       th {

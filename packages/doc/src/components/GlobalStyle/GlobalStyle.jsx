@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle(
       padding: 0;
 
       color: #666;
-      font-family: 'neue-haas-grotesk-display';
+      font-family: 'inter';
       letter-spacing: 0.5px;
 
       overflow: ${overflow ? 'hidden' : 'auto'};

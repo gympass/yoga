@@ -26,7 +26,7 @@ const StyledTable = styled.table`
     font-family: monospace;
 
     thead {
-      font-family: 'neue-haas-grotesk-display';
+      font-family: 'inter';
 
       th {
         padding: 14px 12px 12px;

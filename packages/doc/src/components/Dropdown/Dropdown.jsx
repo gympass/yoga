@@ -25,7 +25,7 @@ const Selector = styled.div`
 const Input = styled.input`
   background-color: transparent;
   border: none;
-  font-family: 'neue-haas-grotesk-display';
+  font-family: 'inter';
   font-size: 14px;
   padding: 8px 16px 8px;
   text-align: center;
