@@ -88,6 +88,7 @@ const Dialog = React.forwardRef(
       onClose,
       zIndex,
       closeLabel,
+      className,
       ...props
     },
     forwardedRef,
@@ -99,6 +100,7 @@ const Dialog = React.forwardRef(
       role: 'dialog',
       'aria-modal': true,
       onClose,
+      ...props,
     };
 
     const closeDialog = useCallback(
@@ -140,8 +142,8 @@ const Dialog = React.forwardRef(
             lockProps={lockProps}
             returnFocus
             disabled={!isOpen}
+            className={className}
             onActivation={focusOnFirstProgrammaticFocusableElement}
-            {...props}
           >
             {isCloseButtonVisible && (
               <Box d="flex" justifyContent="flex-end" w="100%">
@@ -175,6 +177,7 @@ Dialog.propTypes = {
   /** Function to close the dialog. */
   onClose: func,
   closeLabel: string,
+  className: string,
   zIndex: number,
   children: node.isRequired,
 };
@@ -184,6 +187,7 @@ Dialog.defaultProps = {
   hideCloseButton: false,
   onClose: undefined,
   closeLabel: undefined,
+  className: undefined,
   zIndex: 3,
   dialogId: undefined,
 };

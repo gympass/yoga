@@ -111,4 +111,16 @@ describe('<Dialog />', () => {
     expect(screen.getByText('Title')).toBeInTheDocument();
     expect(screen.getByText('Second Title')).toBeInTheDocument();
   });
+
+  it('should focus on the title when dialog is opened', () => {
+    render(
+      <ThemeProvider>
+        <Dialog isOpen>
+          <Dialog.Header>Add e-mail</Dialog.Header>
+        </Dialog>
+      </ThemeProvider>,
+    );
+
+    expect(document.activeElement).toHaveTextContent('Add e-mail');
+  });
 });
