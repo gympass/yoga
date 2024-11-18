@@ -1,11 +1,13 @@
 import React, { useEffect, useCallback } from 'react';
 import { createPortal } from 'react-dom';
+import FocusLock from 'react-focus-lock';
 import styled, { css } from 'styled-components';
 import { func, bool, node, number, string } from 'prop-types';
 
 import { Close } from '@gympass/yoga-icons';
 import { usePortal, useCombinedRefs } from '../../hooks';
 import { Button, Card, Box } from '../..';
+import { focusOnFirstProgrammaticFocusableElement } from './utils';
 
 export const StyledDialog = styled(Card)`
   ${({
@@ -119,7 +121,16 @@ const Dialog = React.forwardRef(
           ref={dialogRef}
           zIndex={zIndex}
         >
-          <StyledDialog onClose={onClose} {...props}>
+          <FocusLock
+            as={StyledDialog}
+            role="dialog"
+            aria-modal
+            returnFocus
+            disabled={!isOpen}
+            onClose={onClose}
+            onActivation={focusOnFirstProgrammaticFocusableElement}
+            {...props}
+          >
             {isCloseButtonVisible && (
               <Box d="flex" justifyContent="flex-end" w="100%">
                 <CloseButton
@@ -131,7 +142,7 @@ const Dialog = React.forwardRef(
               </Box>
             )}
             {children}
-          </StyledDialog>
+          </FocusLock>
         </Overlay>,
         dialogElement,
       )

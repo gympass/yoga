@@ -155,14 +155,21 @@ exports[`<Dialog /> should match snapshot 1`] = `
       <div
         class="c0"
       >
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
         <section
           class="c1 c2"
+          data-focus-lock-disabled="false"
         >
-          <header
+          <h2
             class="c3"
+            tabindex="-1"
           >
             Title
-          </header>
+          </h2>
           <p
             class="c4"
           >
@@ -179,6 +186,11 @@ exports[`<Dialog /> should match snapshot 1`] = `
             </button>
           </footer>
         </section>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
       </div>
     </div>
   </div>
@@ -403,7 +415,7 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
 }
 
 .c2 {
-  padding: 24px 32px 32px;
+  padding: 40px 32px 32px;
   width: 580px;
   min-height: 160px;
   border-radius: 16px;
@@ -464,8 +476,14 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
       <div
         class="c0"
       >
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
         <section
           class="c1 c2"
+          data-focus-lock-disabled="false"
         >
           <div
             class="c3"
@@ -483,11 +501,12 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
               />
             </button>
           </div>
-          <header
+          <h2
             class="c7"
+            tabindex="-1"
           >
             Title
-          </header>
+          </h2>
           <p
             class="c8"
           >
@@ -504,6 +523,11 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
             </button>
           </footer>
         </section>
+        <div
+          data-focus-guard="true"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+          tabindex="0"
+        />
       </div>
     </div>
   </div>
