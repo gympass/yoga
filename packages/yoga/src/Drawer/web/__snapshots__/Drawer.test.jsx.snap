@@ -180,8 +180,10 @@ exports[`<Drawer /> should match snapshot 1`] = `
           tabindex="0"
         />
         <section
+          aria-modal="true"
           class="c1 c2 c3"
           data-focus-lock-disabled="false"
+          role="dialog"
         >
           <header
             class="c4"

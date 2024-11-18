@@ -208,8 +208,10 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
           tabindex="0"
         />
         <section
+          aria-modal="true"
           class="c1 c2 c3"
           data-focus-lock-disabled="false"
+          role="dialog"
         >
           <h2
             class="c4 c5"
