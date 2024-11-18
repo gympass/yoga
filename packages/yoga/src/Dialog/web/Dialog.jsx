@@ -95,6 +95,11 @@ const Dialog = React.forwardRef(
     const dialogRef = useCombinedRefs(forwardedRef);
     const dialogElement = usePortal(dialogId ?? 'dialog');
     const isCloseButtonVisible = onClose && !hideCloseButton;
+    const lockProps = {
+      role: 'dialog',
+      'aria-modal': true,
+      onClose,
+    };
 
     const closeDialog = useCallback(
       e => {
@@ -132,11 +137,9 @@ const Dialog = React.forwardRef(
         >
           <FocusLock
             as={StyledDialog}
-            role="dialog"
-            aria-modal
+            lockProps={lockProps}
             returnFocus
             disabled={!isOpen}
-            onClose={onClose}
             onActivation={focusOnFirstProgrammaticFocusableElement}
             {...props}
           >
