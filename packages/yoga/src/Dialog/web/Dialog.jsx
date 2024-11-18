@@ -80,7 +80,16 @@ const CloseButton = styled(Button.Icon)`
 
 const Dialog = React.forwardRef(
   (
-    { isOpen, hideCloseButton, children, dialogId, onClose, zIndex, ...props },
+    {
+      isOpen,
+      hideCloseButton,
+      children,
+      dialogId,
+      onClose,
+      zIndex,
+      closeLabel,
+      ...props
+    },
     forwardedRef,
   ) => {
     const dialogRef = useCombinedRefs(forwardedRef);
@@ -134,6 +143,7 @@ const Dialog = React.forwardRef(
             {isCloseButtonVisible && (
               <Box d="flex" justifyContent="flex-end" w="100%">
                 <CloseButton
+                  aria-label={closeLabel}
                   icon={Close}
                   inverted
                   secondary
@@ -161,6 +171,7 @@ Dialog.propTypes = {
   hideCloseButton: bool,
   /** Function to close the dialog. */
   onClose: func,
+  closeLabel: string,
   zIndex: number,
   children: node.isRequired,
 };
@@ -169,6 +180,7 @@ Dialog.defaultProps = {
   isOpen: false,
   hideCloseButton: false,
   onClose: undefined,
+  closeLabel: undefined,
   zIndex: 3,
   dialogId: undefined,
 };

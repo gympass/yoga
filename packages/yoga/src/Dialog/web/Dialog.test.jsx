@@ -72,12 +72,12 @@ describe('<Dialog />', () => {
 
     render(
       <ThemeProvider>
-        <Dialog isOpen onClose={onCloseMock}>
+        <Dialog isOpen onClose={onCloseMock} closeLabel="Close">
           <Dialog.Header>Title</Dialog.Header>
         </Dialog>
       </ThemeProvider>,
     );
-    const button = screen.getByRole('button');
+    const button = screen.getByRole('button', { name: 'Close' });
 
     fireEvent.click(button);
 
