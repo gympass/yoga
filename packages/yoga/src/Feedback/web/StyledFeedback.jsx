@@ -98,7 +98,14 @@ export const Caption = styled(Text.Body1).attrs(() => ({
   as: 'p',
   bold: true,
 }))`
-  color: #6b6b78;
+  ${({
+    theme: {
+      yoga: { colors },
+    },
+  }) =>
+    css`
+      color: ${colors.text.secondary};
+    `}}
 `;
 
 Title.displayName = 'Feedback.Title';
