@@ -12,6 +12,7 @@ import {
   PrimaryButton,
   SecondaryButton,
   TextContainer,
+  Caption,
 } from './StyledFeedback';
 
 const ICON_SIZE = 64;
@@ -38,6 +39,7 @@ function Feedback({ variant, title, description, children, center, ...props }) {
   const iconProps = VARIANT_ICONS[variant];
   let primaryButton;
   let secondaryButton;
+  let captionElement;
   let titleElement = <Title>{title}</Title>;
 
   function defineCompoundComponents() {
@@ -45,6 +47,7 @@ function Feedback({ variant, title, description, children, center, ...props }) {
       if (isChildFromComponent(child, PrimaryButton)) primaryButton = child;
       if (isChildFromComponent(child, SecondaryButton)) secondaryButton = child;
       if (isChildFromComponent(child, Title)) titleElement = child;
+      if (isChildFromComponent(child, Caption)) captionElement = child;
     });
   }
 
@@ -75,6 +78,9 @@ function Feedback({ variant, title, description, children, center, ...props }) {
             {description}
           </Text.Body1>
         </TextContainer>
+
+        {captionElement ? <Box mt="medium">{captionElement}</Box> : null}
+
         <Actions mt="xxxlarge">
           {primaryButton}
           {secondaryButton}

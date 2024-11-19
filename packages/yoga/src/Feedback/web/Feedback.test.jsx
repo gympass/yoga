@@ -9,6 +9,7 @@ function renderWithTheme(ui) {
 
 const title = 'Welcome to Yoga';
 const description = 'Enjoy your membership!';
+const caption = 'Caption Description here.';
 
 describe('<Feedback />', () => {
   it('should render the title and description', () => {
@@ -30,6 +31,16 @@ describe('<Feedback />', () => {
     expect(getByRole('heading', { name: title })).toBeTruthy();
   });
 
+  it('should render caption children', () => {
+    const { getByText } = renderWithTheme(
+      <Feedback variant="success" title={title} description={description}>
+        <Feedback.Caption>{caption}</Feedback.Caption>
+      </Feedback>,
+    );
+
+    expect(getByText(caption)).toBeTruthy();
+  });
+
   it('should render the buttons', () => {
     const { getByRole } = renderWithTheme(
       <Feedback variant="success" title={title} description={description}>
@@ -38,6 +49,20 @@ describe('<Feedback />', () => {
       </Feedback>,
     );
 
+    expect(getByRole('button', { name: 'Ok' })).toBeTruthy();
+    expect(getByRole('button', { name: 'Cancel' })).toBeTruthy();
+  });
+
+  it('should render title, description, buttons and caption', () => {
+    const { getByText, getByRole } = renderWithTheme(
+      <Feedback variant="success" description="Enjoy your membership!">
+        <Feedback.Caption>{caption}</Feedback.Caption>
+        <Feedback.PrimaryButton>Ok</Feedback.PrimaryButton>
+        <Feedback.SecondaryButton>Cancel</Feedback.SecondaryButton>
+      </Feedback>,
+    );
+
+    expect(getByText(caption)).toBeTruthy();
     expect(getByRole('button', { name: 'Ok' })).toBeTruthy();
     expect(getByRole('button', { name: 'Cancel' })).toBeTruthy();
   });
