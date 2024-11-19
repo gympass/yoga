@@ -73,9 +73,9 @@ function ActionRequirement(props) {
   defineCompoundComponents();
   return (
     <StyledActionRequirement {...props}>
-        {illustration && (
+      {illustration && (
           <BoxIllustration aria-hidden="true">{illustration}</BoxIllustration>
-        )}
+      )}
 
 
       <Content>
