@@ -94,6 +94,14 @@ export const SecondaryButton = styled(Button.Text)`
   ${buttonsStyles}
 `;
 
+export const Caption = styled(Text.Body1).attrs(() => ({
+  as: 'p',
+  bold: true,
+}))`
+  color: #6b6b78;
+`;
+
 Title.displayName = 'Feedback.Title';
 PrimaryButton.displayName = 'Feedback.PrimaryButton';
 SecondaryButton.displayName = 'Feedback.SecondaryButton';
+Caption.displayName = 'Feedback.Caption';
