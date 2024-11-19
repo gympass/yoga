@@ -76,8 +76,6 @@ function ActionRequirement(props) {
       {illustration && (
         <BoxIllustration aria-hidden="true">{illustration}</BoxIllustration>
       )}
-
-
       <Content>
         {titleAsTextDisplay ? (
           <Text.Display2 as="h1" aria-label={title}>
