@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.118.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.117.3...@gympass/yoga@7.118.0) (2024-11-19)
+
+
+### Features
+
+* **feedback:** add feedback.caption children ([99e15e7](https://github.com/Gympass/yoga/commit/99e15e78fefc68714fc8ab2e7fdf59fd21af14db))
+
+
+
+
+
 ## [7.117.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.117.2...@gympass/yoga@7.117.3) (2024-11-05)
 
 **Note:** Version bump only for package @gympass/yoga
