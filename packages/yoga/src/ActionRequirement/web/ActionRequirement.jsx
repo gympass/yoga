@@ -73,13 +73,10 @@ function ActionRequirement(props) {
   defineCompoundComponents();
   return (
     <StyledActionRequirement {...props}>
-      {illustration && 
-        (
-          <BoxIllustration aria-hidden="true">
-            {illustration}
-          </BoxIllustration>
-        )
-      }
+        {illustration && (
+          <BoxIllustration aria-hidden="true">{illustration}</BoxIllustration>
+        )}
+
 
       <Content>
         {titleAsTextDisplay ? (
@@ -87,9 +84,7 @@ function ActionRequirement(props) {
             {title}
           </Text.Display2>
         ) : (
-          <Title aria-label={title}>
-            {title}
-          </Title>
+          <Title aria-label={title}>{title}</Title>
         )}
         <Text.Body1 mt="small" color="deep" aria-label={description}>
           {description}
