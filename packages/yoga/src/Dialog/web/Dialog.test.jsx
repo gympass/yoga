@@ -72,12 +72,12 @@ describe('<Dialog />', () => {
 
     render(
       <ThemeProvider>
-        <Dialog isOpen onClose={onCloseMock}>
+        <Dialog isOpen onClose={onCloseMock} closeLabel="Close">
           <Dialog.Header>Title</Dialog.Header>
         </Dialog>
       </ThemeProvider>,
     );
-    const button = screen.getByRole('button');
+    const button = screen.getByRole('button', { name: 'Close' });
 
     fireEvent.click(button);
 
@@ -110,5 +110,17 @@ describe('<Dialog />', () => {
 
     expect(screen.getByText('Title')).toBeInTheDocument();
     expect(screen.getByText('Second Title')).toBeInTheDocument();
+  });
+
+  it('should focus on the title when dialog is opened', () => {
+    render(
+      <ThemeProvider>
+        <Dialog isOpen>
+          <Dialog.Header>Add e-mail</Dialog.Header>
+        </Dialog>
+      </ThemeProvider>,
+    );
+
+    expect(document.activeElement).toHaveTextContent('Add e-mail');
   });
 });

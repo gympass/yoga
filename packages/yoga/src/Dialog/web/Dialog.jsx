@@ -1,11 +1,13 @@
 import React, { useEffect, useCallback } from 'react';
 import { createPortal } from 'react-dom';
+import FocusLock from 'react-focus-lock';
 import styled, { css } from 'styled-components';
 import { func, bool, node, number, string } from 'prop-types';
 
 import { Close } from '@gympass/yoga-icons';
 import { usePortal, useCombinedRefs } from '../../hooks';
 import { Button, Card, Box } from '../..';
+import { focusOnFirstProgrammaticFocusableElement } from './utils';
 
 export const StyledDialog = styled(Card)`
   ${({
@@ -78,12 +80,28 @@ const CloseButton = styled(Button.Icon)`
 
 const Dialog = React.forwardRef(
   (
-    { isOpen, hideCloseButton, children, dialogId, onClose, zIndex, ...props },
+    {
+      isOpen,
+      hideCloseButton,
+      children,
+      dialogId,
+      onClose,
+      zIndex,
+      closeLabel,
+      className,
+      ...props
+    },
     forwardedRef,
   ) => {
     const dialogRef = useCombinedRefs(forwardedRef);
     const dialogElement = usePortal(dialogId ?? 'dialog');
     const isCloseButtonVisible = onClose && !hideCloseButton;
+    const lockProps = {
+      role: 'dialog',
+      'aria-modal': true,
+      onClose,
+      ...props,
+    };
 
     const closeDialog = useCallback(
       e => {
@@ -119,10 +137,18 @@ const Dialog = React.forwardRef(
           ref={dialogRef}
           zIndex={zIndex}
         >
-          <StyledDialog onClose={onClose} {...props}>
+          <FocusLock
+            as={StyledDialog}
+            lockProps={lockProps}
+            returnFocus
+            disabled={!isOpen}
+            className={className}
+            onActivation={focusOnFirstProgrammaticFocusableElement}
+          >
             {isCloseButtonVisible && (
               <Box d="flex" justifyContent="flex-end" w="100%">
                 <CloseButton
+                  aria-label={closeLabel}
                   icon={Close}
                   inverted
                   secondary
@@ -131,7 +157,7 @@ const Dialog = React.forwardRef(
               </Box>
             )}
             {children}
-          </StyledDialog>
+          </FocusLock>
         </Overlay>,
         dialogElement,
       )
@@ -150,6 +176,8 @@ Dialog.propTypes = {
   hideCloseButton: bool,
   /** Function to close the dialog. */
   onClose: func,
+  closeLabel: string,
+  className: string,
   zIndex: number,
   children: node.isRequired,
 };
@@ -158,6 +186,8 @@ Dialog.defaultProps = {
   isOpen: false,
   hideCloseButton: false,
   onClose: undefined,
+  closeLabel: undefined,
+  className: undefined,
   zIndex: 3,
   dialogId: undefined,
 };

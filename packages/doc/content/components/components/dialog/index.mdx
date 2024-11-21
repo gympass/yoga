@@ -15,6 +15,7 @@ Gympass `<Dialog />` is a component which has the purpose of providing prioritar
 - `<Dialog.Footer />`
 
 ### Recommendations of use Buttons
+
 The right positioning of the buttons starting with the primary followed by the secondary
 
 ### Usage
@@ -37,18 +38,15 @@ render(() => {
     <>
       <Button onClick={handleOpen}>Dialog with one action</Button>
 
-      <Dialog
-        isOpen={isOpen}
-      >
-       <Dialog.Header>
-        We couldn't confirm your eligibility
-       </Dialog.Header>
-       <Dialog.Content>
-        Double check your info and company selection. If it still doesn’t work, contact your HR team.
-       </Dialog.Content>
-       <Dialog.Footer>
-        <Button onClick={handleOnClose}>Ok, I understand</Button>
-       </Dialog.Footer>
+      <Dialog isOpen={isOpen}>
+        <Dialog.Header>We couldn't confirm your eligibility</Dialog.Header>
+        <Dialog.Content>
+          Double check your info and company selection. If it still doesn’t
+          work, contact your HR team.
+        </Dialog.Content>
+        <Dialog.Footer>
+          <Button onClick={handleOnClose}>Ok, I understand</Button>
+        </Dialog.Footer>
       </Dialog>
     </>
   );
@@ -71,21 +69,22 @@ render(() => {
 
   return (
     <>
-      <Button onClick={handleOpen} secondary>Dialog with two actions</Button>
+      <Button onClick={handleOpen} secondary>
+        Dialog with two actions
+      </Button>
 
-      <Dialog
-        isOpen={isOpen}
-      >
-       <Dialog.Header>
-        Are you sure you want to downgrade to a Platinum plan?
-       </Dialog.Header>
-       <Dialog.Content>
-        Double check your info and company selection. If it still doesn’t work, contact your HR team.
-       </Dialog.Content>
-       <Dialog.Footer>
-         <Button>Yes, downgrade</Button>
-        <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
-       </Dialog.Footer>
+      <Dialog isOpen={isOpen}>
+        <Dialog.Header>
+          Are you sure you want to downgrade to a Platinum plan?
+        </Dialog.Header>
+        <Dialog.Content>
+          Double check your info and company selection. If it still doesn’t
+          work, contact your HR team.
+        </Dialog.Content>
+        <Dialog.Footer>
+          <Button>Yes, downgrade</Button>
+          <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
+        </Dialog.Footer>
       </Dialog>
     </>
   );
@@ -110,20 +109,18 @@ render(() => {
     <>
       <Button onClick={handleOpen}>Dialog with close button</Button>
 
-      <Dialog
-        isOpen={isOpen}
-        onClose={handleOnClose}
-      >
-       <Dialog.Header>
-        Are you sure you want to downgrade to a Platinum plan?
-       </Dialog.Header>
-       <Dialog.Content>
-         The change will happen at the end of your billing cycle on March, 28. Until then, enjoy your Black plan - you’ve already paid for it.
-       </Dialog.Content>
-       <Dialog.Footer>
+      <Dialog isOpen={isOpen} closeLabel="Close" onClose={handleOnClose}>
+        <Dialog.Header>
+          Are you sure you want to downgrade to a Platinum plan?
+        </Dialog.Header>
+        <Dialog.Content>
+          The change will happen at the end of your billing cycle on March, 28.
+          Until then, enjoy your Black plan - you’ve already paid for it.
+        </Dialog.Content>
+        <Dialog.Footer>
           <Button>Yes, downgrade</Button>
           <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
-       </Dialog.Footer>
+        </Dialog.Footer>
       </Dialog>
     </>
   );
@@ -146,18 +143,18 @@ render(() => {
 
   return (
     <>
-      <Button onClick={handleOpen} secondary>Dialog with only title</Button>
+      <Button onClick={handleOpen} secondary>
+        Dialog with only title
+      </Button>
 
-      <Dialog
-        isOpen={isOpen}
-      >
-       <Dialog.Header>
-        Are you sure you want to downgrade to a Platinum plan?
-       </Dialog.Header>
-       <Dialog.Footer>
+      <Dialog isOpen={isOpen}>
+        <Dialog.Header>
+          Are you sure you want to downgrade to a Platinum plan?
+        </Dialog.Header>
+        <Dialog.Footer>
           <Button>Yes, downgrade</Button>
           <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
-       </Dialog.Footer>
+        </Dialog.Footer>
       </Dialog>
     </>
   );
@@ -183,26 +180,25 @@ render(() => {
   };
 
   useEffect(() => {
-    if(isOpen && dialogRef.current && buttonRef.current) {
+    if (isOpen && dialogRef.current && buttonRef.current) {
       buttonRef.current.focus();
     }
-  },[dialogRef, buttonRef, isOpen]);
+  }, [dialogRef, buttonRef, isOpen]);
 
   return (
     <>
-      <Button onClick={handleOpen} secondary>Dialog with custom ref</Button>
+      <Button onClick={handleOpen} secondary>
+        Dialog with custom ref
+      </Button>
 
-      <Dialog
-        isOpen={isOpen}
-        ref={dialogRef}
-      >
-       <Dialog.Header>
-        I am an example on how a custom ref option can be used
-       </Dialog.Header>
-       <Dialog.Footer>
+      <Dialog isOpen={isOpen} ref={dialogRef}>
+        <Dialog.Header>
+          I am an example on how a custom ref option can be used
+        </Dialog.Header>
+        <Dialog.Footer>
           <Button ref={buttonRef}>I am auto focused</Button>
           <Button.Text onClick={handleOnClose}>Close</Button.Text>
-       </Dialog.Footer>
+        </Dialog.Footer>
       </Dialog>
     </>
   );
@@ -228,27 +224,31 @@ render(() => {
 
   return (
     <>
-      <Button onClick={handleOpen} secondary>Dialog with custom id</Button>
+      <Button onClick={handleOpen} secondary>
+        Dialog with custom id
+      </Button>
 
       <Dialog isOpen={isOpen}>
-       <Dialog.Header>
-         With a custom id I can open an isolated dialog
-       </Dialog.Header>
+        <Dialog.Header>
+          With a custom id I can open an isolated dialog
+        </Dialog.Header>
 
-       <Dialog.Footer>
-          <Button onClick={() => setIsNestedOpen(true)}>Open second dialog</Button>
+        <Dialog.Footer>
+          <Button onClick={() => setIsNestedOpen(true)}>
+            Open second dialog
+          </Button>
           <Button.Text onClick={handleOnClose}>Close</Button.Text>
-       </Dialog.Footer>
+        </Dialog.Footer>
       </Dialog>
 
       <Dialog isOpen={isNestedOpen} dialogId="nested-id">
-       <Dialog.Header>
-        I am a nested dialog
-       </Dialog.Header>
+        <Dialog.Header>I am a nested dialog</Dialog.Header>
 
-       <Dialog.Footer>
-          <Button.Text onClick={() => setIsNestedOpen(false)}>Close</Button.Text>
-       </Dialog.Footer>
+        <Dialog.Footer>
+          <Button.Text onClick={() => setIsNestedOpen(false)}>
+            Close
+          </Button.Text>
+        </Dialog.Footer>
       </Dialog>
     </>
   );
