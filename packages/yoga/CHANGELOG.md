@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.119.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.118.0...@gympass/yoga@7.119.0) (2024-11-21)
+
+
+### Bug Fixes
+
+* **Dialog:** add lock props to FocusLock ([fc2b201](https://github.com/Gympass/yoga/commit/fc2b20106be78f797deea76924fe2dc8bf34277f))
+
+
+### Features
+
+* **Dialog:** add closeLabel prop ([999d8d0](https://github.com/Gympass/yoga/commit/999d8d07c8bfb3e144a1cc2ec2a7624db5696326))
+* **Dialog:** improve accessibility ([f60ab79](https://github.com/Gympass/yoga/commit/f60ab798082be9ecd77fdd39e064de421ea60687))
+
+
+
+
+
 # [7.118.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.117.3...@gympass/yoga@7.118.0) (2024-11-19)
 
 

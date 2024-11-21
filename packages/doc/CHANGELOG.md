@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.52.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.51.49...@gympass/yoga-doc@2.52.0) (2024-11-21)
+
+
+### Features
+
+* **Dialog:** add closeLabel prop ([999d8d0](https://github.com/gympass/yoga/commit/999d8d07c8bfb3e144a1cc2ec2a7624db5696326))
+
+
+
+
+
 ## [2.51.49](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.51.48...@gympass/yoga-doc@2.51.49) (2024-11-19)
 
 **Note:** Version bump only for package @gympass/yoga-doc
