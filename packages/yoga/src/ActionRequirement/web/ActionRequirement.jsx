@@ -74,7 +74,7 @@ function ActionRequirement(props) {
   return (
     <StyledActionRequirement {...props}>
       {illustration && (
-        <BoxIllustration aria-hidden="true">{illustration}</BoxIllustration>
+        <BoxIllustration aria-hidden>{illustration}</BoxIllustration>
       )}
       <Content>
         {titleAsTextDisplay ? (
