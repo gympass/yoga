@@ -78,13 +78,11 @@ function ActionRequirement(props) {
       )}
       <Content>
         {titleAsTextDisplay ? (
-          <Text.Display2 as="h1" aria-label={title}>
-            {title}
-          </Text.Display2>
+          <Text.Display2 as="h1">{title}</Text.Display2>
         ) : (
-          <Title aria-label={title}>{title}</Title>
+          <Title>{title}</Title>
         )}
-        <Text.Body1 mt="small" color="deep" aria-label={description}>
+        <Text.Body1 mt="small" color="deep">
           {description}
         </Text.Body1>
         {list && <Box mt="large">{list}</Box>}
