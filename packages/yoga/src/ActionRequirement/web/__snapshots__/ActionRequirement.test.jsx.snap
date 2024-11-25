@@ -113,13 +113,11 @@ exports[`<ActionRequirement /> should default match snapshot 1`] = `
       class="c1"
     >
       <h1
-        aria-label="title"
         class="c2"
       >
         title
       </h1>
       <p
-        aria-label="description"
         class="c3"
         color="deep"
       >
@@ -274,13 +272,11 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
       class="c1"
     >
       <h1
-        aria-label="title"
         class="c2"
       >
         title
       </h1>
       <p
-        aria-label="description"
         class="c3"
         color="deep"
       >
@@ -423,13 +419,11 @@ exports[`<ActionRequirement /> should match snapshot with text display 1`] = `
       class="c1"
     >
       <h1
-        aria-label="title"
         class="c2"
       >
         title
       </h1>
       <p
-        aria-label="description"
         class="c3"
         color="deep"
       >
