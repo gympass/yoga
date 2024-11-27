@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.120.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.119.0...@gympass/yoga@7.120.0) (2024-11-27)
+
+
+### Features
+
+* **ActionRequirement:** improve accessibility ([b37f671](https://github.com/Gympass/yoga/commit/b37f671c41dc795aa79ded65a3ffba5c557e871a))
+
+
+
+
+
 # [7.119.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.118.0...@gympass/yoga@7.119.0) (2024-11-21)
 
 
