@@ -5,7 +5,7 @@ import Box from '../../Box';
 import Button from '../../Button';
 
 export const Title = styled(Text.H4).attrs({
-  as: 'p',
+  as: 'h1',
   bold: true,
 })`
   ${({
