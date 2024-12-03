@@ -190,6 +190,7 @@ import Video from './svg/video.svg';
 import VisibilityOff from './svg/visibility_off.svg';
 import Visibility from './svg/visibility.svg';
 import Wallet from './svg/wallet.svg';
+import Waze from './svg/waze.svg';
 import Whatsapp from './svg/whatsapp.svg';
 import WheelchairFriendlyDoors from './svg/wheelchair_friendly_doors.svg';
 import WellhubIcon from './svg/icon_wellhub.svg';
@@ -392,6 +393,7 @@ export {
   VisibilityOff,
   Visibility,
   Wallet,
+  Waze,
   Whatsapp,
   WheelchairFriendlyDoors,
   WellhubIcon,
