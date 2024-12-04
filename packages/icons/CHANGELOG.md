@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.28.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.27.0...@gympass/yoga-icons@1.28.0) (2024-12-04)
+
+
+### Features
+
+* **yoga-icons:** added waze icon ([a388f78](https://github.com/Gympass/yoga/commit/a388f788923b7bff0d0f505f0a5bfa59e120d828))
+
+
+
+
+
 # [1.27.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.26.0...@gympass/yoga-icons@1.27.0) (2024-11-05)
 
 
