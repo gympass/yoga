@@ -80,7 +80,14 @@ const IconWrapper = styled.div`
   `}
 `;
 
-const Password = ({ disabled, style, className, full, ...props }) => {
+const Password = ({
+  disabled,
+  style,
+  className,
+  full,
+  iconPasswordAriaLabel,
+  ...props
+}) => {
   const [showPassword, toggleShowPassword] = useState(false);
   const inputRef = useRef(null);
 
@@ -120,6 +127,7 @@ const Password = ({ disabled, style, className, full, ...props }) => {
         onKeyDown={togglePassword}
         disabled={disabled}
         role="button"
+        aria-label={iconPasswordAriaLabel}
       >
         {showPassword ? (
           <Visibility width={20} height={20} />
@@ -135,6 +143,7 @@ Password.propTypes = {
   className: string,
   disabled: bool,
   full: bool,
+  iconPasswordAriaLabel: string,
   style: shape({}),
 };
 
@@ -143,6 +152,7 @@ Password.defaultProps = {
   disabled: false,
   full: false,
   style: undefined,
+  iconPasswordAriaLabel: undefined,
 };
 
 export default Password;
