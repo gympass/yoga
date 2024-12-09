@@ -85,7 +85,8 @@ const Password = ({
   style,
   className,
   full,
-  iconPasswordAriaLabel,
+  showPasswordAriaLabel,
+  hidePasswordAriaLabel,
   ...props
 }) => {
   const [showPassword, toggleShowPassword] = useState(false);
@@ -127,7 +128,9 @@ const Password = ({
         onKeyDown={togglePassword}
         disabled={disabled}
         role="button"
-        aria-label={iconPasswordAriaLabel}
+        aria-label={
+          showPassword ? showPasswordAriaLabel : hidePasswordAriaLabel
+        }
       >
         {showPassword ? (
           <Visibility width={20} height={20} />
@@ -143,7 +146,8 @@ Password.propTypes = {
   className: string,
   disabled: bool,
   full: bool,
-  iconPasswordAriaLabel: string,
+  showPasswordAriaLabel: string,
+  hidePasswordAriaLabel: string,
   style: shape({}),
 };
 
@@ -152,7 +156,8 @@ Password.defaultProps = {
   disabled: false,
   full: false,
   style: undefined,
-  iconPasswordAriaLabel: undefined,
+  showPasswordAriaLabel: undefined,
+  hidePasswordAriaLabel: undefined,
 };
 
 export default Password;
