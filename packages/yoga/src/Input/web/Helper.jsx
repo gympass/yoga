@@ -54,7 +54,7 @@ const Helper = ({
       </Info>
     )}
     {maxLength && !hideMaxLength && (
-      <Info as="span">
+      <Info as="span" aria-hidden>
         {length}/{maxLength}
       </Info>
     )}

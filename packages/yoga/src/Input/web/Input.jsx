@@ -110,6 +110,7 @@ const Input = React.forwardRef(
       hideMaxLength,
       rightIcon,
       a11yId,
+      closeAriaLabel,
       includeAriaAttributes,
       leftElement,
       ...props
@@ -214,7 +215,7 @@ const Input = React.forwardRef(
               role="button"
               hasIconRight={!!rightIcon}
             >
-              <Close aria-label="Clear" />
+              <Close aria-label={closeAriaLabel} />
             </IconWrapper>
           )}
 
@@ -274,6 +275,8 @@ Input.propTypes = {
   a11yId: string,
   /** useful for components that extend the Input component and have their own ARIA attributes implementation (e.g. Dropdown) */
   includeAriaAttributes: bool,
+  /** this prop will be used in the aria-label of the clear input button. */
+  closeAriaLabel: string,
 
   /** element on the left */
   leftElement: node,
@@ -298,6 +301,7 @@ Input.defaultProps = {
   placeholder: undefined,
   rightIcon: undefined,
   a11yId: undefined,
+  closeAriaLabel: 'Clear',
   includeAriaAttributes: true,
   leftElement: undefined,
 };
