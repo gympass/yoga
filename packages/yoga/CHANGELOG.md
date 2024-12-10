@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.121.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.120.1...@gympass/yoga@7.121.0) (2024-12-10)
+
+
+### Features
+
+* adds closeAriaLabel prop ([0eb36ed](https://github.com/Gympass/yoga/commit/0eb36ed2f4f54cc71d6252e920c405bbd7e4e85c))
+* creates hidePassword and showPassword prop ([7971780](https://github.com/Gympass/yoga/commit/797178016f71733eab6499b0dbeb271e52514105))
+* **InputPassword:** adds iconPasswordAriaLabel prop ([b97ea2c](https://github.com/Gympass/yoga/commit/b97ea2c07c79858befb5b1db43e5fcdc75497b3f))
+
+
+
+
+
 ## [7.120.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.120.0...@gympass/yoga@7.120.1) (2024-12-04)
 
 **Note:** Version bump only for package @gympass/yoga
