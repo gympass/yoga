@@ -40,7 +40,7 @@ function Feedback({ variant, title, description, children, center, ...props }) {
   let primaryButton;
   let secondaryButton;
   let captionElement;
-  let titleElement = <Title>{title}</Title>;
+  let titleElement = <Title as="h1">{title}</Title>;
 
   function defineCompoundComponents() {
     React.Children.forEach(children, child => {
@@ -74,7 +74,7 @@ function Feedback({ variant, title, description, children, center, ...props }) {
         />
         <TextContainer>
           {titleElement}
-          <Text.Body1 mt="small" color="deep" as="h1">
+          <Text.Body1 mt="small" color="deep">
             {description}
           </Text.Body1>
         </TextContainer>

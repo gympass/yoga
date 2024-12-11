@@ -117,12 +117,12 @@ exports[`<Feedback /> should render correctly when not centered vertically 1`] =
           >
             Welcome to Yoga
           </h1>
-          <h1
+          <p
             class="c5"
             color="deep"
           >
             Enjoy your membership!
-          </h1>
+          </p>
         </div>
         <div
           class="c6"
