@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.122.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.121.0...@gympass/yoga@7.122.0) (2024-12-11)
+
+
+### Features
+
+* update heading level ([d0a8d0d](https://github.com/Gympass/yoga/commit/d0a8d0d0cfe9b9f1b576902617ac9ec43661ecf0))
+* update level ([fe1ba1d](https://github.com/Gympass/yoga/commit/fe1ba1d9259950dff142eb2ae379a24e79e53803))
+* update snap shot ([38341fd](https://github.com/Gympass/yoga/commit/38341fddf721fd7c63708e23baa87c24c7a70e96))
+
+
+
+
+
 # [7.121.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.120.1...@gympass/yoga@7.121.0) (2024-12-10)
 
 
