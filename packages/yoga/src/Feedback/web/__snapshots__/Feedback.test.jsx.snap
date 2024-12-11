@@ -43,8 +43,8 @@ exports[`<Feedback /> should render correctly when not centered vertically 1`] =
 .c4 {
   margin: 0;
   padding: 0;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 48px;
+  line-height: 56px;
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
@@ -112,11 +112,11 @@ exports[`<Feedback /> should render correctly when not centered vertically 1`] =
         <div
           class="c3"
         >
-          <p
+          <h1
             class="c4"
           >
             Welcome to Yoga
-          </p>
+          </h1>
           <p
             class="c5"
             color="deep"
