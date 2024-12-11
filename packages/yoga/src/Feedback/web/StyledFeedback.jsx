@@ -26,8 +26,7 @@ export const TextContainer = styled.div`
     `}}
 `;
 
-export const Title = styled(Text.H4).attrs(() => ({
-  as: 'p',
+export const Title = styled(Text.H1).attrs(() => ({
   bold: true,
 }))`
   ${({
