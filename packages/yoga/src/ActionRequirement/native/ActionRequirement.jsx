@@ -23,9 +23,9 @@ function ActionRequirement(props) {
     <StyledActionRequirement {...props}>
       {illustration && <Box>{illustration}</Box>}
       {titleAsTextDisplay ? (
-        <Text.Display2>{title}</Text.Display2>
+        <Text.Display2 as="h1">{title}</Text.Display2>
       ) : (
-        <Title>{title}</Title>
+        <Title as="h1">{title}</Title>
       )}
       <Text.Body1 mt="small" color="deep">
         {description}
