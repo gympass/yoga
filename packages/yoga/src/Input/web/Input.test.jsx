@@ -189,7 +189,7 @@ describe('<Input />', () => {
     });
 
     it('should test if clean button is present', () => {
-      const { rerender, debug } = render(
+      const { rerender } = render(
         <ThemeProvider>
           <Input label="Input" ariaLabel="valor aria label" />
         </ThemeProvider>,
@@ -204,20 +204,16 @@ describe('<Input />', () => {
         </ThemeProvider>,
       );
 
-      debug();
-
       expect(screen.queryByRole('button')).not.toBeNull();
     });
 
     it('should have aria-label', () => {
       const value = 'aria label value';
-      const { debug, getByTestId } = render(
+      const { getByTestId } = render(
         <ThemeProvider>
           <Input label="Input" value="foo" ariaLabel={value} />
         </ThemeProvider>,
       );
-
-      debug();
 
       const inputElement = getByTestId('input');
 
@@ -227,13 +223,11 @@ describe('<Input />', () => {
     });
     it('should have label value', () => {
       const value = 'label value';
-      const { debug, getByTestId } = render(
+      const { getByTestId } = render(
         <ThemeProvider>
           <Input label={value} value="foo" />
         </ThemeProvider>,
       );
-
-      debug();
 
       const inputElement = getByTestId('input');
 
