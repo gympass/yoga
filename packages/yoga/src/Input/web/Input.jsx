@@ -101,6 +101,7 @@ const Input = React.forwardRef(
       full,
       helper,
       label,
+      ariaLabel,
       maxLength,
       readOnly,
       style,
@@ -135,6 +136,8 @@ const Input = React.forwardRef(
     const labelA11yId = includeAriaAttributes && a11yId && `${a11yId}-label`;
     let a11yFieldProps;
 
+    const labelAria = ariaLabel || label;
+
     if (includeAriaAttributes) {
       a11yFieldProps = a11yId
         ? {
@@ -142,7 +145,7 @@ const Input = React.forwardRef(
             ...(label && { 'aria-labelledby': labelA11yId }),
           }
         : {
-            ...(label && { 'aria-label': label }),
+            ...(labelAria && { 'aria-label': labelAria }),
           };
       a11yFieldProps['aria-invalid'] = !!error;
     } else {
@@ -186,6 +189,7 @@ const Input = React.forwardRef(
                 maxLength,
               }}
               ref={inputRef}
+              data-testid="input"
               value={value}
               onChange={onChange}
               {...a11yFieldProps}
@@ -259,6 +263,7 @@ Input.propTypes = {
   /** a helper text to be displayed below field */
   helper: string,
   label: string,
+  ariaLabel: string,
   /** maximum length (number of characters) of value */
   maxLength: number,
   readOnly: bool,
@@ -290,7 +295,8 @@ Input.defaultProps = {
   error: undefined,
   full: false,
   helper: undefined,
-  label: 'Label',
+  label: undefined,
+  ariaLabel: undefined,
   maxLength: undefined,
   readOnly: false,
   style: undefined,
