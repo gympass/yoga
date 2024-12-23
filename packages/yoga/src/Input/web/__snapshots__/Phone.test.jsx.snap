@@ -531,32 +531,6 @@ exports[`<Input.Phone /> Snapshots should match with disabled input 1`] = `
   border-color: #231B22;
 }
 
-.c6 {
-  position: relative;
-  padding: 0;
-  max-width: 0;
-  width: auto;
-  height: 0;
-  visibility: hidden;
-  -webkit-transition-property: max-width,padding;
-  transition-property: max-width,padding;
-  font-family: Rubik;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  -webkit-transition-duration: 100ms;
-  transition-duration: 100ms;
-}
-
-.c7 {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
 .c5 {
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -599,7 +573,7 @@ exports[`<Input.Phone /> Snapshots should match with disabled input 1`] = `
   display: inline-block;
 }
 
-.c8 {
+.c6 {
   position: absolute;
   top: 0;
   right: 0;
@@ -612,12 +586,12 @@ exports[`<Input.Phone /> Snapshots should match with disabled input 1`] = `
   pointer-events: none;
 }
 
-.c8:hover svg,
-.c8:focus svg {
+.c6:hover svg,
+.c6:focus svg {
   fill: #231B22;
 }
 
-.c8 svg {
+.c6 svg {
   height: 52px;
   width: 20px;
   fill: #6B6B78;
@@ -635,37 +609,24 @@ exports[`<Input.Phone /> Snapshots should match with disabled input 1`] = `
       <fieldset
         class="c2"
         disabled=""
-        label="Label"
         value=""
       >
         <input
           aria-invalid="false"
-          aria-label="Label"
           class="c3 c4"
+          data-testid="input"
           disabled=""
-          label="Label"
           type="password"
           value=""
         />
         <label
           class="c5"
           disabled=""
-        >
-          Label
-        </label>
-        <legend
-          class="c6"
-        >
-          <span
-            class="c7"
-          >
-            Label
-          </span>
-        </legend>
+        />
       </fieldset>
     </div>
     <div
-      class="c8"
+      class="c6"
       disabled=""
       role="button"
     >
@@ -781,7 +742,7 @@ exports[`<Input.Phone /> Snapshots should match with error 1`] = `
   box-shadow: none;
 }
 
-.c6 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -794,7 +755,7 @@ exports[`<Input.Phone /> Snapshots should match with error 1`] = `
   color: #CA4808;
 }
 
-.c7 {
+.c5 {
   margin: 0;
   padding: 0;
   font-size: 12px;
@@ -823,32 +784,6 @@ exports[`<Input.Phone /> Snapshots should match with error 1`] = `
 .c1:hover:not(:disabled),
 .c1:focus-within:not(:disabled) {
   border-color: #CA4808;
-}
-
-.c4 {
-  position: relative;
-  padding: 0;
-  max-width: 0;
-  width: auto;
-  height: 0;
-  visibility: hidden;
-  -webkit-transition-property: max-width,padding;
-  transition-property: max-width,padding;
-  font-family: Rubik;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  -webkit-transition-duration: 100ms;
-  transition-duration: 100ms;
-}
-
-.c5 {
-  padding-left: 4px;
-  padding-right: 4px;
 }
 
 .c3 {
@@ -889,37 +824,24 @@ exports[`<Input.Phone /> Snapshots should match with error 1`] = `
   >
     <fieldset
       class="c1"
-      label="Label"
       value=""
     >
       <input
         aria-invalid="true"
-        aria-label="Label"
         class="c2"
-        label="Label"
+        data-testid="input"
         value=""
       />
       <label
         class="c3"
-      >
-        Label
-      </label>
-      <legend
-        class="c4"
-      >
-        <span
-          class="c5"
-        >
-          Label
-        </span>
-      </legend>
+      />
     </fieldset>
     <div
-      class="c6"
+      class="c4"
     >
       <span
         aria-live="polite"
-        class="c7"
+        class="c5"
       >
         Error message
       </span>
@@ -1156,6 +1078,7 @@ exports[`<Input.Phone /> Snapshots should match with full width 1`] = `
           aria-invalid="false"
           aria-label="Label"
           class="c3 c4"
+          data-testid="input"
           label="Label"
           type="password"
           value=""

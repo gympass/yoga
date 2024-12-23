@@ -122,32 +122,6 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
   border-color: #231B22;
 }
 
-.c4 {
-  position: relative;
-  padding: 0;
-  max-width: 0;
-  width: auto;
-  height: 0;
-  visibility: hidden;
-  -webkit-transition-property: max-width,padding;
-  transition-property: max-width,padding;
-  font-family: Rubik;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  -webkit-transition-duration: 100ms;
-  transition-duration: 100ms;
-}
-
-.c5 {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
 .c3 {
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -186,31 +160,18 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
   >
     <fieldset
       class="c1"
-      label="Label"
       value=""
     >
       <input
         aria-invalid="false"
-        aria-label="Label"
         class="c2"
-        label="Label"
+        data-testid="input"
         type="tel"
         value=""
       />
       <label
         class="c3"
-      >
-        Label
-      </label>
-      <legend
-        class="c4"
-      >
-        <span
-          class="c5"
-        >
-          Label
-        </span>
-      </legend>
+      />
     </fieldset>
   </div>
 </div>
