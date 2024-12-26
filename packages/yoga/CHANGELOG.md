@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.123.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.122.0...@gympass/yoga@7.123.0) (2024-12-26)
+
+
+### Features
+
+* create aria label new field ([8e540a9](https://github.com/Gympass/yoga/commit/8e540a946f59bc24da0099c0a087e53e387c5671))
+* remove debug ([1e32e83](https://github.com/Gympass/yoga/commit/1e32e8362fb4862c6bb00f5929763de15446c02a))
+* update snapshots ([57fb2bc](https://github.com/Gympass/yoga/commit/57fb2bc403c6aa3084e58eded2cf6d4a13ffeb52))
+
+
+
+
+
 # [7.122.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.121.0...@gympass/yoga@7.122.0) (2024-12-11)
 
 
