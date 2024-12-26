@@ -191,7 +191,7 @@ describe('<Input />', () => {
     it('should test if clean button is present', () => {
       const { rerender } = render(
         <ThemeProvider>
-          <Input label="Input" />
+          <Input label="Input" ariaLabel="valor aria label" />
         </ThemeProvider>,
       );
 
@@ -205,6 +205,35 @@ describe('<Input />', () => {
       );
 
       expect(screen.queryByRole('button')).not.toBeNull();
+    });
+
+    it('should have aria-label', () => {
+      const value = 'aria label value';
+      const { getByTestId } = render(
+        <ThemeProvider>
+          <Input label="Input" value="foo" ariaLabel={value} />
+        </ThemeProvider>,
+      );
+
+      const inputElement = getByTestId('input');
+
+      expect(inputElement).toBeInTheDocument();
+
+      expect(inputElement).toHaveAttribute('aria-label', value);
+    });
+    it('should have label value', () => {
+      const value = 'label value';
+      const { getByTestId } = render(
+        <ThemeProvider>
+          <Input label={value} value="foo" />
+        </ThemeProvider>,
+      );
+
+      const inputElement = getByTestId('input');
+
+      expect(inputElement).toBeInTheDocument();
+
+      expect(inputElement).toHaveAttribute('aria-label', value);
     });
   });
 });
