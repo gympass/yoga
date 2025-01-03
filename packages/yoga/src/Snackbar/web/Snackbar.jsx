@@ -26,6 +26,12 @@ const IconButtonWrapper = styled.div`
   display: flex;
   align-items: center;
 
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  outline: inherit;
+
   cursor: pointer;
 
   &:hover {
@@ -146,7 +152,6 @@ const Snackbar = React.forwardRef(
           aria-label={variant}
           variant={variant}
           ref={ref}
-          tabIndex={0}
           {...props}
         >
           {!hideIcon && (
@@ -183,6 +188,7 @@ const Snackbar = React.forwardRef(
                 role="button"
                 onClick={onClose}
                 aria-label={ariaLabelClose}
+                as="button"
               >
                 <Icon as={Close} fill="secondary" size="medium" />
               </IconButtonWrapper>
