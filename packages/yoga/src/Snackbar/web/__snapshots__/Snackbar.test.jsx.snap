@@ -118,9 +118,12 @@ exports[`<Snackbar /> should match snapshot 1`] = `
     aria-label="success"
     class="c0"
     role="alert"
+    tabindex="0"
   >
     <div
+      aria-hidden="true"
       class="c1"
+      data-testid="img"
       display="flex"
       role="img"
     >

@@ -115,6 +115,7 @@ const Snackbar = React.forwardRef(
       onAction,
       onClose,
       hideCloseButton,
+      ariaLabelClose,
       theme: {
         yoga: {
           components: { snackbar },
@@ -145,10 +146,18 @@ const Snackbar = React.forwardRef(
           aria-label={variant}
           variant={variant}
           ref={ref}
+          tabIndex={0}
           {...props}
         >
           {!hideIcon && (
-            <Box display="flex" alignItems="center" mr="small" role="img">
+            <Box
+              display="flex"
+              alignItems="center"
+              mr="small"
+              role="img"
+              data-testid="img"
+              aria-hidden
+            >
               <Icon
                 as={snackbar.variant.icon[variant]}
                 fill="secondary"
@@ -170,7 +179,11 @@ const Snackbar = React.forwardRef(
             )}
 
             {!hideCloseButton && onClose && (
-              <IconButtonWrapper role="button" onClick={onClose}>
+              <IconButtonWrapper
+                role="button"
+                onClick={onClose}
+                aria-label={ariaLabelClose}
+              >
                 <Icon as={Close} fill="secondary" size="medium" />
               </IconButtonWrapper>
             )}
@@ -200,6 +213,8 @@ Snackbar.propTypes = {
   variant: oneOf(['success', 'failure', 'info']),
   /** Hides the close button. */
   hideCloseButton: bool,
+  /** Label for a custom action. */
+  ariaLabelClose: string,
 };
 
 Snackbar.defaultProps = {
@@ -210,6 +225,7 @@ Snackbar.defaultProps = {
   onAction: undefined,
   variant: 'success',
   hideCloseButton: false,
+  ariaLabelClose: undefined,
 };
 
 export default memo(withTheme(Snackbar));
