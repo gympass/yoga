@@ -50,6 +50,11 @@ exports[`<Snackbar /> should match snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  outline: inherit;
   cursor: pointer;
 }
 
@@ -120,7 +125,9 @@ exports[`<Snackbar /> should match snapshot 1`] = `
     role="alert"
   >
     <div
+      aria-hidden="true"
       class="c1"
+      data-testid="img"
       display="flex"
       role="img"
     >
@@ -140,7 +147,7 @@ exports[`<Snackbar /> should match snapshot 1`] = `
     <aside
       class="c4"
     >
-      <div
+      <button
         class="c5"
         role="button"
       >
@@ -151,7 +158,7 @@ exports[`<Snackbar /> should match snapshot 1`] = `
           height="20"
           width="20"
         />
-      </div>
+      </button>
     </aside>
   </div>
 </div>

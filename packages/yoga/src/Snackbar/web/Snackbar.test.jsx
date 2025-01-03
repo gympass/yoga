@@ -24,7 +24,7 @@ describe('<Snackbar />', () => {
     );
 
     screen.getByRole('alert');
-    screen.getByRole('img');
+    screen.getByTestId('img');
     screen.getByLabelText('success');
     screen.getByText('Make wellbeing universal');
   });
