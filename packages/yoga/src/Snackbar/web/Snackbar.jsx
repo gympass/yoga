@@ -213,7 +213,7 @@ Snackbar.propTypes = {
   variant: oneOf(['success', 'failure', 'info']),
   /** Hides the close button. */
   hideCloseButton: bool,
-  /** Label for a custom action. */
+  /** Custom aria label for close button. */
   ariaLabelClose: string,
 };
 
