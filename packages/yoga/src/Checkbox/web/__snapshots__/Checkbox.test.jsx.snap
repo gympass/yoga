@@ -228,6 +228,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with a given value 1`] = `
     >
       <label
         class="c2 c3"
+        id="checkbox-label"
       >
         <span
           class="c4 c5"
@@ -236,7 +237,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with a given value 1`] = `
           class="c6"
         />
         <input
-          aria-label="Checkbox"
+          aria-labelledby="checkbox-label"
           class="c7"
           type="checkbox"
           value="test_value"
@@ -422,6 +423,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
     >
       <label
         class="c2 c3"
+        id="checkbox-label"
       >
         <span
           class="c4 c5"
@@ -435,7 +437,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
           />
         </div>
         <input
-          aria-label="Checkbox"
+          aria-labelledby="checkbox-label"
           checked=""
           class="c7"
           type="checkbox"
@@ -579,6 +581,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
     >
       <label
         class="c2 c3"
+        id="checkbox-label"
       >
         <span
           class="c4 c5"
@@ -587,7 +590,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
           class="c6"
         />
         <input
-          aria-label="Checkbox"
+          aria-labelledby="checkbox-label"
           class="c7"
           type="checkbox"
         />
@@ -797,6 +800,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
     >
       <label
         class="c2 c3"
+        id="checkbox-label"
       >
         <span
           class="c4 c5"
@@ -811,7 +815,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
           />
         </div>
         <input
-          aria-label="Checkbox"
+          aria-labelledby="checkbox-label"
           checked=""
           class="c7"
           disabled=""
@@ -981,6 +985,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
     >
       <label
         class="c2 c3"
+        id="checkbox-label"
       >
         <span
           class="c4 c5"
@@ -990,7 +995,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
           disabled=""
         />
         <input
-          aria-label="Checkbox"
+          aria-labelledby="checkbox-label"
           class="c7"
           disabled=""
           type="checkbox"
@@ -1197,6 +1202,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
     >
       <label
         class="c2 c3"
+        id="checkbox-label"
       >
         <span
           class="c4 c5"
@@ -1210,7 +1216,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
           />
         </div>
         <input
-          aria-label="Checkbox"
+          aria-labelledby="checkbox-label"
           checked=""
           class="c7"
           type="checkbox"
@@ -1459,6 +1465,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and indetermina
     >
       <label
         class="c2 c3"
+        id="checkbox-label"
       >
         <span
           class="c4 c5"
@@ -1472,7 +1479,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and indetermina
           />
         </div>
         <input
-          aria-label="Checkbox"
+          aria-labelledby="checkbox-label"
           class="c7"
           type="checkbox"
         />
@@ -1678,6 +1685,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
     >
       <label
         class="c2 c3"
+        id="checkbox-label"
       >
         <span
           class="c4 c5"
@@ -1686,7 +1694,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
           class="c6"
         />
         <input
-          aria-label="Checkbox"
+          aria-labelledby="checkbox-label"
           class="c7"
           type="checkbox"
         />
@@ -1924,6 +1932,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with indeterminate 1`] = `
     >
       <label
         class="c2 c3"
+        id="checkbox-label"
       >
         <span
           class="c4 c5"
@@ -1937,7 +1946,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with indeterminate 1`] = `
           />
         </div>
         <input
-          aria-label="Checkbox"
+          aria-labelledby="checkbox-label"
           class="c7"
           type="checkbox"
         />
@@ -2169,6 +2178,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with indeterminate and dis
     >
       <label
         class="c2 c3"
+        id="checkbox-label"
       >
         <span
           class="c4 c5"
@@ -2183,7 +2193,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with indeterminate and dis
           />
         </div>
         <input
-          aria-label="Checkbox"
+          aria-labelledby="checkbox-label"
           class="c7"
           disabled=""
           type="checkbox"
@@ -2401,6 +2411,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
     >
       <label
         class="c2 c3"
+        id="checkbox-label"
       >
         <span
           class="c4 c5"
@@ -2409,7 +2420,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
           class="c6"
         />
         <input
-          aria-label="Checkbox"
+          aria-labelledby="checkbox-label"
           class="c7"
           type="checkbox"
         />
@@ -2636,6 +2647,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
     >
       <label
         class="c2 c3"
+        id="checkbox-label"
       >
         <span
           class="c4 c5"
@@ -2649,7 +2661,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
           />
         </div>
         <input
-          aria-label="Checkbox"
+          aria-labelledby="checkbox-label"
           checked=""
           class="c7"
           type="checkbox"
@@ -2902,6 +2914,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
     >
       <label
         class="c2 c3"
+        id="checkbox-label"
       >
         <span
           class="c4 c5"
@@ -2916,7 +2929,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
           />
         </div>
         <input
-          aria-label="Checkbox"
+          aria-labelledby="checkbox-label"
           checked=""
           class="c7"
           disabled=""
@@ -3166,6 +3179,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and indeterm
     >
       <label
         class="c2 c3"
+        id="checkbox-label"
       >
         <span
           class="c4 c5"
@@ -3179,7 +3193,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and indeterm
           />
         </div>
         <input
-          aria-label="Checkbox"
+          aria-labelledby="checkbox-label"
           class="c7"
           type="checkbox"
         />
@@ -3312,6 +3326,7 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
     >
       <label
         class="c2 c3"
+        id="checkbox-label"
       >
         <span
           class="c4 c5"
@@ -3320,7 +3335,7 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
           class="c6"
         />
         <input
-          aria-label="Checkbox"
+          aria-labelledby="checkbox-label"
           class="c7"
           type="checkbox"
         />
