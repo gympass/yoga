@@ -241,6 +241,7 @@ const Checkbox = ({
   className,
   inverted,
   indeterminate,
+  ariaLabel,
   theme: {
     yoga: {
       components: { checkbox },
@@ -264,6 +265,7 @@ const Checkbox = ({
       className={className}
       disabled={disabled}
       {...restWithoutEvents}
+      tabIndex="0"
     >
       <CheckboxStyled
         checked={checked}
@@ -298,6 +300,7 @@ const Checkbox = ({
             {...restWithoutEvents}
             onChange={onChange}
             onClick={onClick}
+            aria-label={ariaLabel || 'Checkbox'}
           />
           {label}
         </Label>
@@ -325,6 +328,7 @@ Checkbox.propTypes = {
   /** set a style to the checkbox container */
   style: shape({}),
   className: string,
+  ariaLabel: string,
 };
 
 Checkbox.defaultProps = {
@@ -338,6 +342,7 @@ Checkbox.defaultProps = {
   error: undefined,
   style: undefined,
   className: undefined,
+  ariaLabel: undefined,
 };
 
 Checkbox.displayName = 'Checkbox';
