@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.124.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.123.0...@gympass/yoga@7.124.0) (2025-01-07)
+
+
+### Bug Fixes
+
+* comment ([e68c973](https://github.com/Gympass/yoga/commit/e68c97370fb4e4be058e79727301631eead3218e))
+* role of icon and removed tabindex ([3dd7495](https://github.com/Gympass/yoga/commit/3dd74953f1d100d5800a95770e397fe61ace59a4))
+
+
+### Features
+
+* add accessibility to snackbar ([e4986e1](https://github.com/Gympass/yoga/commit/e4986e13ce6dc000f28e38a3814d7ceba704360d))
+
+
+
+
+
 # [7.123.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.122.0...@gympass/yoga@7.123.0) (2024-12-26)
 
 
