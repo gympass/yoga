@@ -302,7 +302,7 @@ const Checkbox = ({
             onChange={onChange}
             onClick={onClick}
             aria-labelledby={ariaLabel ? undefined : checkboxLabelId}
-            aria-label={ariaLabel || undefined}
+            aria-label={ariaLabel}
           />
           {label}
         </Label>
