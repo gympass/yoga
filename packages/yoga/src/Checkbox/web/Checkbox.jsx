@@ -265,7 +265,6 @@ const Checkbox = ({
       className={className}
       disabled={disabled}
       {...restWithoutEvents}
-      tabIndex="0"
     >
       <CheckboxStyled
         checked={checked}
@@ -292,6 +291,8 @@ const Checkbox = ({
             )}
           </CheckMark>
           <HiddenInput
+            tabIndex="0"
+            role="checkbox"
             type="checkbox"
             ref={inputRef}
             checked={checked}
