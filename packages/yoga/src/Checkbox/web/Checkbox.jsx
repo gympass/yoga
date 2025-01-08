@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useId } from 'react';
 import { bool, string, shape, oneOfType, node } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
@@ -250,6 +250,8 @@ const Checkbox = ({
   ...rest
 }) => {
   const inputRef = useRef(null);
+  const id = useId();
+  const checkboxLabelId = `checkbox-label-${id}`;
 
   const { onChange, onClick, ...restWithoutEvents } = rest;
 
@@ -272,7 +274,7 @@ const Checkbox = ({
         inverted={inverted}
         disabled={disabled}
       >
-        <Label id="checkbox-label">
+        <Label id={checkboxLabelId}>
           <Shadow />
           <CheckMark
             {...{
@@ -301,7 +303,7 @@ const Checkbox = ({
             {...restWithoutEvents}
             onChange={onChange}
             onClick={onClick}
-            aria-labelledby={ariaLabel ? undefined : 'checkbox-label'}
+            aria-labelledby={ariaLabel ? undefined : checkboxLabelId}
             aria-label={ariaLabel || undefined}
           />
           {label}
