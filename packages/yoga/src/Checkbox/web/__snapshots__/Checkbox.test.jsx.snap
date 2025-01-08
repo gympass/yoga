@@ -238,8 +238,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with a given value 1`] = `
         <input
           aria-labelledby="checkbox-label-:re:"
           class="c7"
-          role="checkbox"
-          tabindex="0"
           type="checkbox"
           value="test_value"
         />
@@ -440,8 +438,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
           aria-labelledby="checkbox-label-:r3:"
           checked=""
           class="c7"
-          role="checkbox"
-          tabindex="0"
           type="checkbox"
         />
         Checkbox Component
@@ -593,8 +589,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
         <input
           aria-labelledby="checkbox-label-:r1:"
           class="c7"
-          role="checkbox"
-          tabindex="0"
           type="checkbox"
         />
         Checkbox Component
@@ -821,8 +815,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
           checked=""
           class="c7"
           disabled=""
-          role="checkbox"
-          tabindex="0"
           type="checkbox"
         />
         Checkbox Component
@@ -1001,8 +993,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
           aria-labelledby="checkbox-label-:r2:"
           class="c7"
           disabled=""
-          role="checkbox"
-          tabindex="0"
           type="checkbox"
         />
         Checkbox Component
@@ -1223,8 +1213,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
           aria-labelledby="checkbox-label-:r6:"
           checked=""
           class="c7"
-          role="checkbox"
-          tabindex="0"
           type="checkbox"
         />
         Checkbox Component
@@ -1486,8 +1474,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and indetermina
         <input
           aria-labelledby="checkbox-label-:rc:"
           class="c7"
-          role="checkbox"
-          tabindex="0"
           type="checkbox"
         />
         Checkbox Component
@@ -1702,8 +1688,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
         <input
           aria-labelledby="checkbox-label-:r5:"
           class="c7"
-          role="checkbox"
-          tabindex="0"
           type="checkbox"
         />
         Checkbox Component
@@ -1955,8 +1939,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with indeterminate 1`] = `
         <input
           aria-labelledby="checkbox-label-:ra:"
           class="c7"
-          role="checkbox"
-          tabindex="0"
           type="checkbox"
         />
       </label>
@@ -2204,8 +2186,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with indeterminate and dis
           aria-labelledby="checkbox-label-:rb:"
           class="c7"
           disabled=""
-          role="checkbox"
-          tabindex="0"
           type="checkbox"
         />
       </label>
@@ -2431,8 +2411,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
         <input
           aria-labelledby="checkbox-label-:r7:"
           class="c7"
-          role="checkbox"
-          tabindex="0"
           type="checkbox"
         />
         Checkbox Component
@@ -2674,8 +2652,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
           aria-labelledby="checkbox-label-:r8:"
           checked=""
           class="c7"
-          role="checkbox"
-          tabindex="0"
           type="checkbox"
         />
         Checkbox Component
@@ -2944,8 +2920,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
           checked=""
           class="c7"
           disabled=""
-          role="checkbox"
-          tabindex="0"
           type="checkbox"
         />
         Checkbox Component
@@ -3207,8 +3181,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and indeterm
         <input
           aria-labelledby="checkbox-label-:rd:"
           class="c7"
-          role="checkbox"
-          tabindex="0"
           type="checkbox"
         />
         Checkbox Component
@@ -3350,8 +3322,6 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
         <input
           aria-labelledby="checkbox-label-:r0:"
           class="c7"
-          role="checkbox"
-          tabindex="0"
           type="checkbox"
         />
       </label>

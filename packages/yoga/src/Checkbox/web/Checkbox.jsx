@@ -293,8 +293,6 @@ const Checkbox = ({
             )}
           </CheckMark>
           <HiddenInput
-            tabIndex="0"
-            role="checkbox"
             type="checkbox"
             ref={inputRef}
             checked={checked}
