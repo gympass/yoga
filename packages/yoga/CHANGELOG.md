@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.125.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.124.0...@gympass/yoga@7.125.0) (2025-01-09)
+
+
+### Features
+
+* **a11y:** improve checkbox accessibility with conditional ARIA attributes ([8d61ad4](https://github.com/Gympass/yoga/commit/8d61ad428724b52503cfcc9196105b6f5019661f))
+* **checkbox:** adds arialLabel and tabIndex ([f2b5b10](https://github.com/Gympass/yoga/commit/f2b5b1084d80032faf39afb12982d24058e2f9a7))
+
+
+
+
+
 # [7.124.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.123.0...@gympass/yoga@7.124.0) (2025-01-07)
 
 
