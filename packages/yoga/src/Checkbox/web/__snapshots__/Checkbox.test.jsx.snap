@@ -233,7 +233,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with a given value 1`] = `
           class="c4 c5"
         />
         <div
+          aria-checked="false"
           class="c6"
+          data-testid="checkbox-checkMark"
+          role="checkbox"
         />
         <input
           aria-labelledby="checkbox-label-:re:"
@@ -427,7 +430,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
           class="c4 c5"
         />
         <div
+          aria-checked="true"
           class="c6"
+          data-testid="checkbox-checkMark"
+          role="checkbox"
         >
           <svg
             height="24"
@@ -584,7 +590,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
           class="c4 c5"
         />
         <div
+          aria-checked="false"
           class="c6"
+          data-testid="checkbox-checkMark"
+          role="checkbox"
         />
         <input
           aria-labelledby="checkbox-label-:r1:"
@@ -802,8 +811,12 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
           class="c4 c5"
         />
         <div
+          aria-checked="true"
+          aria-disabled="true"
           class="c6"
+          data-testid="checkbox-checkMark"
           disabled=""
+          role="checkbox"
         >
           <svg
             height="24"
@@ -986,8 +999,12 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
           class="c4 c5"
         />
         <div
+          aria-checked="false"
+          aria-disabled="true"
           class="c6"
+          data-testid="checkbox-checkMark"
           disabled=""
+          role="checkbox"
         />
         <input
           aria-labelledby="checkbox-label-:r2:"
@@ -1202,7 +1219,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
           class="c4 c5"
         />
         <div
+          aria-checked="true"
           class="c6"
+          data-testid="checkbox-checkMark"
+          role="checkbox"
         >
           <svg
             height="24"
@@ -1464,7 +1484,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and indetermina
           class="c4 c5"
         />
         <div
+          aria-checked="false"
           class="c6"
+          data-testid="checkbox-checkMark"
+          role="checkbox"
         >
           <svg
             height="24"
@@ -1683,7 +1706,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
           class="c4 c5"
         />
         <div
+          aria-checked="false"
           class="c6"
+          data-testid="checkbox-checkMark"
+          role="checkbox"
         />
         <input
           aria-labelledby="checkbox-label-:r5:"
@@ -1929,7 +1955,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with indeterminate 1`] = `
           class="c4 c5"
         />
         <div
+          aria-checked="false"
           class="c6"
+          data-testid="checkbox-checkMark"
+          role="checkbox"
         >
           <svg
             height="24"
@@ -2174,8 +2203,12 @@ exports[`<Checkbox /> Snapshots should match snapshot with indeterminate and dis
           class="c4 c5"
         />
         <div
+          aria-checked="false"
+          aria-disabled="true"
           class="c6"
+          data-testid="checkbox-checkMark"
           disabled=""
+          role="checkbox"
         >
           <svg
             height="24"
@@ -2406,7 +2439,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
           class="c4 c5"
         />
         <div
+          aria-checked="false"
           class="c6"
+          data-testid="checkbox-checkMark"
+          role="checkbox"
         />
         <input
           aria-labelledby="checkbox-label-:r7:"
@@ -2641,7 +2677,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
           class="c4 c5"
         />
         <div
+          aria-checked="true"
           class="c6"
+          data-testid="checkbox-checkMark"
+          role="checkbox"
         >
           <svg
             height="24"
@@ -2907,8 +2946,12 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
           class="c4 c5"
         />
         <div
+          aria-checked="true"
+          aria-disabled="true"
           class="c6"
+          data-testid="checkbox-checkMark"
           disabled=""
+          role="checkbox"
         >
           <svg
             height="24"
@@ -3171,7 +3214,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and indeterm
           class="c4 c5"
         />
         <div
+          aria-checked="false"
           class="c6"
+          data-testid="checkbox-checkMark"
+          role="checkbox"
         >
           <svg
             height="24"
@@ -3317,7 +3363,10 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
           class="c4 c5"
         />
         <div
+          aria-checked="false"
           class="c6"
+          data-testid="checkbox-checkMark"
+          role="checkbox"
         />
         <input
           aria-labelledby="checkbox-label-:r0:"
