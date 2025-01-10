@@ -282,6 +282,8 @@ const Checkbox = ({
         <Label id={checkboxLabelId}>
           <Shadow />
           <CheckMark
+            aria-labelledby={ariaLabel ? undefined : checkboxLabelId}
+            aria-label={ariaLabel}
             {...{
               disabled,
               checked,
@@ -306,8 +308,6 @@ const Checkbox = ({
             {...restWithoutEvents}
             onChange={onChange}
             onClick={onClick}
-            aria-labelledby={ariaLabel ? undefined : checkboxLabelId}
-            aria-label={ariaLabel}
           />
           {label}
         </Label>
