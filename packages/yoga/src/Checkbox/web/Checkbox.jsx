@@ -16,7 +16,12 @@ const CheckboxWrapper = styled.div`
   ${({ disabled }) => (disabled ? `cursor: not-allowed` : '')}
 `;
 
-const CheckMark = styled.div`
+const CheckMark = styled.div.attrs(({ checked, disabled }) => ({
+  role: 'checkbox',
+  'aria-checked': checked,
+  'aria-disabled': disabled || undefined,
+  'data-testid': 'checkbox-checkMark',
+}))`
   position: relative;
 
   border-style: solid;
