@@ -308,6 +308,7 @@ const Checkbox = ({
             {...restWithoutEvents}
             onChange={onChange}
             onClick={onClick}
+            aria-hidden
           />
           {label}
         </Label>
