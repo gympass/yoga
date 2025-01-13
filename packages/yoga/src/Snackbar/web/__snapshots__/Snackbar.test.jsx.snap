@@ -122,6 +122,7 @@ exports[`<Snackbar /> should match snapshot 1`] = `
   <div
     aria-label="success"
     class="c0"
+    data-testid="snackbar"
     role="alert"
   >
     <div
