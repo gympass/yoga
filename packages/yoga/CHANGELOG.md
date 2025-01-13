@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.126.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.125.0...@gympass/yoga@7.126.0) (2025-01-13)
+
+
+### Features
+
+* update checkbox ([0f5ce10](https://github.com/Gympass/yoga/commit/0f5ce1068c964c046c4a6b2afdb1952ebbc3512d))
+* update checkbox accessibility ([7905b7f](https://github.com/Gympass/yoga/commit/7905b7f8c2b21509e260fefe640c7796cba865c7))
+* update label ([c663873](https://github.com/Gympass/yoga/commit/c6638737631f4331854c66ed6323729347c1ac10))
+* update snapshot ([0c375c7](https://github.com/Gympass/yoga/commit/0c375c7a9eb8ad66173402f92e5710bd0e06d87c))
+* update unit test ([579d624](https://github.com/Gympass/yoga/commit/579d62453b02e5bc6e4f530ed616f159b7c4b611))
+
+
+
+
+
 # [7.125.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.124.0...@gympass/yoga@7.125.0) (2025-01-09)
 
 
