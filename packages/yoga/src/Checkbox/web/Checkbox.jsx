@@ -16,7 +16,12 @@ const CheckboxWrapper = styled.div`
   ${({ disabled }) => (disabled ? `cursor: not-allowed` : '')}
 `;
 
-const CheckMark = styled.div`
+const CheckMark = styled.div.attrs(({ checked, disabled }) => ({
+  role: 'checkbox',
+  'aria-checked': checked,
+  'aria-disabled': disabled || undefined,
+  'data-testid': 'checkbox-checkMark',
+}))`
   position: relative;
 
   border-style: solid;
@@ -277,6 +282,8 @@ const Checkbox = ({
         <Label id={checkboxLabelId}>
           <Shadow />
           <CheckMark
+            aria-labelledby={ariaLabel ? undefined : checkboxLabelId}
+            aria-label={ariaLabel}
             {...{
               disabled,
               checked,
@@ -301,8 +308,7 @@ const Checkbox = ({
             {...restWithoutEvents}
             onChange={onChange}
             onClick={onClick}
-            aria-labelledby={ariaLabel ? undefined : checkboxLabelId}
-            aria-label={ariaLabel}
+            aria-hidden
           />
           {label}
         </Label>

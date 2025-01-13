@@ -176,13 +176,13 @@ describe('<Checkbox />', () => {
   describe('Events', () => {
     it('should call onChange function when press on Checkbox', () => {
       const onChangeMock = jest.fn();
-      const { getByRole } = render(
+      const { getByTestId } = render(
         <ThemeProvider>
           <Checkbox {...data} onChange={onChangeMock} />
         </ThemeProvider>,
       );
 
-      fireEvent.click(getByRole('checkbox', { hidden: true }));
+      fireEvent.click(getByTestId('checkbox-checkMark'));
       expect(onChangeMock).toHaveBeenCalled();
     });
   });
