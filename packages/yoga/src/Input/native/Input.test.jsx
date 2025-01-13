@@ -8,7 +8,7 @@ describe('<Input />', () => {
     it('should match with default input', () => {
       const { toJSON } = render(
         <ThemeProvider>
-          <Input />
+          <Input dataTestId="input" />
         </ThemeProvider>,
       );
 
@@ -28,7 +28,7 @@ describe('<Input />', () => {
     it('should match when input is focused', () => {
       const { toJSON, getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" testID="input" />
+          <Input label="Input" dataTestId="input" />
         </ThemeProvider>,
       );
 
@@ -93,7 +93,11 @@ describe('<Input />', () => {
       const onChangeTextMock = jest.fn();
       const { getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" testID="input" onChangeText={onChangeTextMock} />
+          <Input
+            label="Input"
+            dataTestId="input"
+            onChangeText={onChangeTextMock}
+          />
         </ThemeProvider>,
       );
 
@@ -108,7 +112,7 @@ describe('<Input />', () => {
         <ThemeProvider>
           <Input
             label="Input"
-            testID="input"
+            dataTestId="input"
             onChangeText={onChangeTextMock}
             disabled
           />
@@ -124,7 +128,7 @@ describe('<Input />', () => {
       const onFocusMock = jest.fn();
       const { getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" testID="input" onFocus={onFocusMock} />
+          <Input label="Input" dataTestId="input" onFocus={onFocusMock} />
         </ThemeProvider>,
       );
 
@@ -138,7 +142,7 @@ describe('<Input />', () => {
 
       const { getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" testID="input" onBlur={onBlurMock} />
+          <Input label="Input" dataTestId="input" onBlur={onBlurMock} />
         </ThemeProvider>,
       );
 
@@ -153,7 +157,7 @@ describe('<Input />', () => {
     it('should update maxLength counter when add character', () => {
       const { getByText, rerender } = render(
         <ThemeProvider>
-          <Input label="Input" testID="input" maxLength={10} />
+          <Input label="Input" dataTestId="input" maxLength={10} />
         </ThemeProvider>,
       );
 
