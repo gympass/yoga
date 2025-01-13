@@ -104,6 +104,16 @@ describe('<Input />', () => {
 
       expect(container).toMatchSnapshot();
     });
+
+    it('should render with custom dataTestId', () => {
+      render(
+        <ThemeProvider>
+          <Input label="Input" dataTestId="custom-input" />
+        </ThemeProvider>,
+      );
+
+      expect(screen.getByTestId('custom-input')).toBeInTheDocument();
+    });
   });
 
   describe('Events', () => {

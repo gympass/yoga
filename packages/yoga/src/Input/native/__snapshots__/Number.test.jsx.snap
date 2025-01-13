@@ -45,6 +45,7 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
         },
       ]
     }
+    testID="input"
     typed={false}
     value=""
   />

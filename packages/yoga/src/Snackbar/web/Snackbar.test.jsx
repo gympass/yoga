@@ -16,6 +16,21 @@ describe('<Snackbar />', () => {
     expect(container).toMatchSnapshot();
   });
 
+  it('should render with custom dataTestId', () => {
+    render(
+      <ThemeProvider>
+        <Snackbar
+          open
+          message="Make wellbeing universal"
+          onClose={jest.fn()}
+          dataTestId="custom-snackbar"
+        />
+      </ThemeProvider>,
+    );
+
+    expect(screen.getByTestId('custom-snackbar')).toBeInTheDocument();
+  });
+
   it('should render a minimal snackbar', () => {
     render(
       <ThemeProvider>
