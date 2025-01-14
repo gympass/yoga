@@ -174,16 +174,22 @@ describe('<Checkbox />', () => {
   });
 
   describe('Events', () => {
-    it('should call onChange function when press on Checkbox', () => {
+    it('should call onChange and onClick functions when interacting with Checkbox', () => {
       const onChangeMock = jest.fn();
-      const { getByTestId } = render(
+      const onClickMock = jest.fn();
+
+      const { container } = render(
         <ThemeProvider>
-          <Checkbox {...data} onChange={onChangeMock} />
+          <Checkbox {...data} onChange={onChangeMock} onClick={onClickMock} />
         </ThemeProvider>,
       );
 
-      fireEvent.click(getByTestId('checkbox-checkMark'));
+      const hiddenInput = container.querySelector('input[type="checkbox"]');
+
+      fireEvent.click(hiddenInput);
+
       expect(onChangeMock).toHaveBeenCalled();
+      expect(onClickMock).toHaveBeenCalled();
     });
   });
 });
