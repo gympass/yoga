@@ -4,7 +4,7 @@ import styled, { withTheme } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 import { Check, Rectangle } from '@gympass/yoga-icons';
 
-import { HiddenInput } from '../../shared';
+import { VisuallyHidden } from '../../shared';
 
 const CheckboxWrapper = styled.div`
   display: inline-block;
@@ -266,6 +266,13 @@ const Checkbox = ({
     }
   });
 
+  const handleKeyDown = event => {
+    if (event.key === ' ' || event.key === 'Enter') {
+      event.preventDefault();
+      onClick(event);
+    }
+  };
+
   return (
     <CheckboxWrapper
       style={style}
@@ -282,6 +289,8 @@ const Checkbox = ({
         <Label id={checkboxLabelId}>
           <Shadow />
           <CheckMark
+            tabIndex={0}
+            onKeyDown={handleKeyDown}
             aria-labelledby={ariaLabel ? undefined : checkboxLabelId}
             aria-label={ariaLabel}
             {...{
@@ -299,17 +308,18 @@ const Checkbox = ({
               <Rectangle width={checkbox.size} height={checkbox.size} />
             )}
           </CheckMark>
-          <HiddenInput
-            type="checkbox"
-            ref={inputRef}
-            checked={checked}
-            disabled={disabled}
-            {...(value ? { value } : {})}
-            {...restWithoutEvents}
-            onChange={onChange}
-            onClick={onClick}
-            aria-hidden
-          />
+          <VisuallyHidden>
+            <input
+              type="checkbox"
+              ref={inputRef}
+              checked={checked}
+              disabled={disabled}
+              {...(value ? { value } : {})}
+              {...restWithoutEvents}
+              onChange={onChange}
+              onClick={onClick}
+            />
+          </VisuallyHidden>
           {label}
         </Label>
       </CheckboxStyled>
