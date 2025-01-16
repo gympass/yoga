@@ -185,7 +185,6 @@ const Input = React.forwardRef(
           components: { input },
         },
       },
-      dataTestId,
       ...props
     },
     ref,
@@ -267,7 +266,6 @@ const Input = React.forwardRef(
             setFocused(false);
             onBlur(e);
           }}
-          testID={dataTestId}
           ref={inputRef}
         />
         {Boolean(label) && (
@@ -338,7 +336,6 @@ Input.propTypes = {
   onClean: func,
   onFocus: func,
   hideMaxLength: bool,
-  dataTestId: string,
 };
 
 Input.defaultProps = {
@@ -357,7 +354,6 @@ Input.defaultProps = {
   onClean: () => {},
   onFocus: () => {},
   hideMaxLength: false,
-  dataTestId: 'input',
 };
 
 export default withTheme(Input);
