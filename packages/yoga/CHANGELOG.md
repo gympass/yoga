@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.127.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.126.0...@gympass/yoga@7.127.0) (2025-01-16)
+
+
+### Features
+
+* add country canada as phone input option ([e4f4605](https://github.com/Gympass/yoga/commit/e4f46059aead83069ce7c0385857a7c5a8943880))
+
+
+
+
+
 # [7.126.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.125.0...@gympass/yoga@7.126.0) (2025-01-13)
 
 
