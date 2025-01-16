@@ -44,7 +44,7 @@ exports[`<Input /> Snapshots should match when input is focused 1`] = `
         },
       ]
     }
-    testID="input"
+    testID="input-test"
     typed={false}
     value=""
   />
@@ -134,7 +134,6 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
         },
       ]
     }
-    testID="input"
     typed={false}
     value=""
   />
@@ -185,7 +184,6 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
         },
       ]
     }
-    testID="input"
     typed={false}
     value=""
   />
@@ -237,7 +235,6 @@ exports[`<Input /> Snapshots should match with error 1`] = `
         },
       ]
     }
-    testID="input"
     typed={false}
     value=""
   />
@@ -323,7 +320,6 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
         },
       ]
     }
-    testID="input"
     typed={false}
     value=""
   />
@@ -412,7 +408,6 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
         },
       ]
     }
-    testID="input"
     typed={false}
     value=""
   />
@@ -518,7 +513,6 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
         },
       ]
     }
-    testID="input"
     typed={false}
     value=""
   />
@@ -603,7 +597,6 @@ exports[`<Input /> Snapshots should match with label 1`] = `
         },
       ]
     }
-    testID="input"
     typed={false}
     value=""
   />

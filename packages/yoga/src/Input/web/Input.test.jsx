@@ -108,7 +108,7 @@ describe('<Input />', () => {
     it('should render with custom dataTestId', () => {
       render(
         <ThemeProvider>
-          <Input label="Input" dataTestId="custom-input" />
+          <Input label="Input" data-testid="custom-input" />
         </ThemeProvider>,
       );
 
@@ -122,11 +122,15 @@ describe('<Input />', () => {
 
       render(
         <ThemeProvider>
-          <Input label="Input" onChange={onChangeMock} data-testid="input" />
+          <Input
+            label="Input"
+            onChange={onChangeMock}
+            data-testid="input-test"
+          />
         </ThemeProvider>,
       );
 
-      fireEvent.change(screen.getByTestId('input'), {
+      fireEvent.change(screen.getByTestId('input-test'), {
         target: { value: 'foo' },
       });
 
@@ -152,12 +156,12 @@ describe('<Input />', () => {
 
       render(
         <ThemeProvider>
-          <Input label="Input" data-testid="input" onBlur={onBlurMock} />
+          <Input label="Input" data-testid="input-test" onBlur={onBlurMock} />
         </ThemeProvider>,
       );
 
-      fireEvent.focus(screen.getByTestId('input'));
-      fireEvent.blur(screen.getByTestId('input'));
+      fireEvent.focus(screen.getByTestId('input-test'));
+      fireEvent.blur(screen.getByTestId('input-test'));
 
       expect(onBlurMock).toHaveBeenCalled();
     });
@@ -221,11 +225,16 @@ describe('<Input />', () => {
       const value = 'aria label value';
       const { getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" value="foo" ariaLabel={value} />
+          <Input
+            label="Input"
+            value="foo"
+            ariaLabel={value}
+            data-testid="input-test"
+          />
         </ThemeProvider>,
       );
 
-      const inputElement = getByTestId('input');
+      const inputElement = getByTestId('input-test');
 
       expect(inputElement).toBeInTheDocument();
 
@@ -235,11 +244,11 @@ describe('<Input />', () => {
       const value = 'label value';
       const { getByTestId } = render(
         <ThemeProvider>
-          <Input label={value} value="foo" />
+          <Input label={value} value="foo" data-testid="input-test" />
         </ThemeProvider>,
       );
 
-      const inputElement = getByTestId('input');
+      const inputElement = getByTestId('input-test');
 
       expect(inputElement).toBeInTheDocument();
 

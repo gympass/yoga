@@ -114,7 +114,6 @@ const Input = React.forwardRef(
       closeAriaLabel,
       includeAriaAttributes,
       leftElement,
-      dataTestId,
       ...props
     },
     ref,
@@ -190,7 +189,6 @@ const Input = React.forwardRef(
                 maxLength,
               }}
               ref={inputRef}
-              data-testid={dataTestId}
               value={value}
               onChange={onChange}
               {...a11yFieldProps}
@@ -286,8 +284,6 @@ Input.propTypes = {
 
   /** element on the left */
   leftElement: node,
-
-  dataTestId: string,
 };
 
 Input.defaultProps = {
@@ -313,7 +309,6 @@ Input.defaultProps = {
   closeAriaLabel: 'Clear',
   includeAriaAttributes: true,
   leftElement: undefined,
-  dataTestId: 'input',
 };
 
 export default Input;
