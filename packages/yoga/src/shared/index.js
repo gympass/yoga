@@ -1,4 +1,5 @@
 import HiddenInput from './HiddenInput';
+import VisuallyHidden from './VisualyHidden';
 import {
   limitChildren,
   typeOf,
@@ -7,4 +8,12 @@ import {
   deprecated,
 } from './propTypes';
 
-export { HiddenInput, limitChildren, typeOf, charLength, max, deprecated };
+export {
+  HiddenInput,
+  VisuallyHidden,
+  limitChildren,
+  typeOf,
+  charLength,
+  max,
+  deprecated,
+};
