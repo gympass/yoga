@@ -46,7 +46,6 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
         },
       ]
     }
-    testID="input"
     textContentType="telephoneNumber"
     typed={false}
     value=""

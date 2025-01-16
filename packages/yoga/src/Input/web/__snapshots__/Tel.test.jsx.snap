@@ -165,7 +165,6 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
       <input
         aria-invalid="false"
         class="c2"
-        data-testid="input"
         type="tel"
         value=""
       />

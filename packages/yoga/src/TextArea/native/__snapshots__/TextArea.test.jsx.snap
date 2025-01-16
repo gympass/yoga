@@ -46,7 +46,6 @@ exports[`<TextArea /> should match snapshot 1`] = `
         },
       ]
     }
-    testID="input"
     textAlignVertical="top"
     typed={false}
     value=""

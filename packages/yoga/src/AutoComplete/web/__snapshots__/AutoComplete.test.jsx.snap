@@ -201,7 +201,6 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
           aria-labelledby="downshift-1-label"
           autocomplete="off"
           class="c3"
-          data-testid="input"
           id="downshift-1-input"
           value=""
         />
@@ -426,7 +425,6 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
           aria-labelledby="downshift-0-label"
           autocomplete="off"
           class="c3"
-          data-testid="input"
           id="downshift-0-input"
           value=""
         />
@@ -762,7 +760,6 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
           aria-labelledby="downshift-3-label"
           autocomplete="off"
           class="c3"
-          data-testid="input"
           id="downshift-3-input"
           value="s"
         />
@@ -1143,7 +1140,6 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
           aria-labelledby="downshift-2-label"
           autocomplete="off"
           class="c3"
-          data-testid="input"
           id="downshift-2-input"
           value="s"
         />
