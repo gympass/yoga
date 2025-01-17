@@ -618,7 +618,6 @@ exports[`<Input.Phone /> Snapshots should match with disabled input 1`] = `
         <input
           aria-invalid="false"
           class="c3 c4"
-          data-testid="input"
           disabled=""
           type="password"
           value=""
@@ -833,7 +832,6 @@ exports[`<Input.Phone /> Snapshots should match with error 1`] = `
       <input
         aria-invalid="true"
         class="c2"
-        data-testid="input"
         value=""
       />
       <label
@@ -1082,7 +1080,6 @@ exports[`<Input.Phone /> Snapshots should match with full width 1`] = `
           aria-invalid="false"
           aria-label="Label"
           class="c3 c4"
-          data-testid="input"
           label="Label"
           type="password"
           value=""

@@ -44,7 +44,7 @@ exports[`<Input /> Snapshots should match when input is focused 1`] = `
         },
       ]
     }
-    testID="input"
+    testID="input-test"
     typed={false}
     value=""
   />

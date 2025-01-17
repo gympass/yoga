@@ -189,7 +189,6 @@ const Input = React.forwardRef(
                 maxLength,
               }}
               ref={inputRef}
-              data-testid="input"
               value={value}
               onChange={onChange}
               {...a11yFieldProps}

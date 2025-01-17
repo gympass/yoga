@@ -41,6 +41,14 @@ describe('<Snackbar />', () => {
     expect(toJSON()).toMatchSnapshot();
   });
 
+  it('should render with custom dataTestId', () => {
+    const { getByTestId } = render(<Component dataTestId="custom-snackbar" />);
+
+    fireEvent.press(getByTestId('custom-snackbar'));
+
+    expect(getByTestId('custom-snackbar')).toBeTruthy();
+  });
+
   it('should match snapshot when have an icon and action', () => {
     const overrideProps = {
       icon: CheckedFull,

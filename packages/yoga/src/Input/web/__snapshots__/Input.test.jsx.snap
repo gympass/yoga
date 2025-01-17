@@ -193,7 +193,6 @@ exports[`<Input /> Snapshots should match with a11yId 1`] = `
         aria-invalid="false"
         aria-labelledby="id-label"
         class="c2"
-        data-testid="input"
         label="Label"
         value=""
       />
@@ -436,7 +435,6 @@ exports[`<Input /> Snapshots should match with a11yId and error 1`] = `
         aria-invalid="true"
         aria-labelledby="id-label"
         class="c2"
-        data-testid="input"
         label="Label"
         value=""
       />
@@ -636,7 +634,6 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
       <input
         aria-invalid="false"
         class="c2"
-        data-testid="input"
         value=""
       />
       <label
@@ -815,7 +812,6 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
       <input
         aria-invalid="false"
         class="c2"
-        data-testid="input"
         disabled=""
         value=""
       />
@@ -1018,7 +1014,6 @@ exports[`<Input /> Snapshots should match with error 1`] = `
       <input
         aria-invalid="true"
         class="c2"
-        data-testid="input"
         value=""
       />
       <label
@@ -1232,7 +1227,6 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
         aria-invalid="false"
         aria-label="Label"
         class="c2"
-        data-testid="input"
         label="Label"
         value=""
       />
@@ -1445,7 +1439,6 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
       <input
         aria-invalid="false"
         class="c2"
-        data-testid="input"
         maxlength="20"
         value=""
       />
@@ -1665,7 +1658,6 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
       <input
         aria-invalid="false"
         class="c2"
-        data-testid="input"
         maxlength="20"
         value=""
       />
@@ -1878,7 +1870,6 @@ exports[`<Input /> Snapshots should match with includeAriaAttributes set to fals
     >
       <input
         class="c2"
-        data-testid="input"
         label="Label"
         value=""
       />
@@ -2094,7 +2085,6 @@ exports[`<Input /> Snapshots should match with label 1`] = `
         aria-invalid="false"
         aria-label="Input"
         class="c2"
-        data-testid="input"
         label="Input"
         value=""
       />

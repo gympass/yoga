@@ -28,11 +28,11 @@ describe('<Input />', () => {
     it('should match when input is focused', () => {
       const { toJSON, getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" testID="input" />
+          <Input label="Input" testID="input-test" />
         </ThemeProvider>,
       );
 
-      fireEvent(getByTestId('input'), 'focus');
+      fireEvent(getByTestId('input-test'), 'focus');
 
       expect(toJSON()).toMatchSnapshot();
     });
@@ -93,11 +93,15 @@ describe('<Input />', () => {
       const onChangeTextMock = jest.fn();
       const { getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" testID="input" onChangeText={onChangeTextMock} />
+          <Input
+            label="Input"
+            testID="input-test"
+            onChangeText={onChangeTextMock}
+          />
         </ThemeProvider>,
       );
 
-      fireEvent.changeText(getByTestId('input'), 'foo');
+      fireEvent.changeText(getByTestId('input-test'), 'foo');
 
       expect(onChangeTextMock).toHaveBeenCalled();
     });
@@ -108,14 +112,14 @@ describe('<Input />', () => {
         <ThemeProvider>
           <Input
             label="Input"
-            testID="input"
+            testID="input-test"
             onChangeText={onChangeTextMock}
             disabled
           />
         </ThemeProvider>,
       );
 
-      fireEvent(getByTestId('input'), 'focus');
+      fireEvent(getByTestId('input-test'), 'focus');
 
       expect(onChangeTextMock).not.toHaveBeenCalled();
     });
@@ -124,11 +128,11 @@ describe('<Input />', () => {
       const onFocusMock = jest.fn();
       const { getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" testID="input" onFocus={onFocusMock} />
+          <Input label="Input" testID="input-test" onFocus={onFocusMock} />
         </ThemeProvider>,
       );
 
-      fireEvent(getByTestId('input'), 'focus');
+      fireEvent(getByTestId('input-test'), 'focus');
 
       expect(onFocusMock).toHaveBeenCalled();
     });
@@ -138,12 +142,12 @@ describe('<Input />', () => {
 
       const { getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" testID="input" onBlur={onBlurMock} />
+          <Input label="Input" testID="input-test" onBlur={onBlurMock} />
         </ThemeProvider>,
       );
 
-      fireEvent(getByTestId('input'), 'focus');
-      fireEvent(getByTestId('input'), 'blur');
+      fireEvent(getByTestId('input-test'), 'focus');
+      fireEvent(getByTestId('input-test'), 'blur');
 
       expect(onBlurMock).toHaveBeenCalled();
     });
@@ -153,7 +157,7 @@ describe('<Input />', () => {
     it('should update maxLength counter when add character', () => {
       const { getByText, rerender } = render(
         <ThemeProvider>
-          <Input label="Input" testID="input" maxLength={10} />
+          <Input label="Input" maxLength={10} />
         </ThemeProvider>,
       );
 
