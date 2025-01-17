@@ -64,7 +64,6 @@ const Snackbar = forwardRef((props, ref) => {
     onSnackbarClose,
     duration,
     bottomOffset,
-    dataTestId,
     ...rest
   } = props;
   const wrapperRef = useRef();
@@ -150,7 +149,6 @@ const Snackbar = forwardRef((props, ref) => {
       <SnackbarContainer
         variant={currentProps.variant}
         bottomOffset={bottomOffset}
-        testID={dataTestId}
         {...rest}
         {...panResponder.panHandlers}
       >
@@ -203,8 +201,6 @@ Snackbar.propTypes = {
   duration: oneOf(['fast', 'default', 'slow', 'indefinite']),
   /** Add extra margin to Snackbar. Can be useful for SafeAreaView or button cases. */
   bottomOffset: number,
-  /* A unique identifier for the Snackbar component, used for testing purposes with tools like Jest and Testing Library.  */
-  dataTestId: string,
 };
 
 Snackbar.defaultProps = {
@@ -216,7 +212,6 @@ Snackbar.defaultProps = {
   onSnackbarClose: undefined,
   duration: 'default',
   bottomOffset: 0,
-  dataTestId: 'snackbar',
 };
 
 export default Snackbar;
