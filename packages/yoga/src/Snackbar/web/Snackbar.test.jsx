@@ -45,6 +45,9 @@ describe('<Snackbar />', () => {
 
     screen.getByRole('alert');
     screen.getByTestId('custom-snackbar');
+    expect(
+      screen.getByTestId('custom-snackbar').querySelector('[role="img"]'),
+    ).toBeTruthy();
     screen.getByLabelText('success');
     screen.getByText('Make wellbeing universal');
   });
