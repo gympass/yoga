@@ -5,6 +5,10 @@ import { render, fireEvent } from '@testing-library/react';
 import Checkbox from '..';
 import ThemeProvider from '../../Theme';
 
+jest.mock('../../hooks/useId', () => ({
+  useId: () => 'jest-id',
+}));
+
 const data = {
   label: 'Checkbox Component',
   helper: 'Helper Text',

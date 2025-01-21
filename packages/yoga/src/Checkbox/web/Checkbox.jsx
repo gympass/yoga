@@ -4,6 +4,7 @@ import styled, { withTheme } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 import { Check, Rectangle } from '@gympass/yoga-icons';
 
+import { useId } from '../../hooks';
 import { HiddenInput } from '../../shared';
 
 const CheckboxWrapper = styled.div`
@@ -255,7 +256,7 @@ const Checkbox = ({
   ...rest
 }) => {
   const inputRef = useRef(null);
-  const id = useRef(Math.random().toString(36).substr(2, 9)).current;
+  const id = useId();
   const checkboxLabelId = `checkbox-label-${id}`;
 
   const { onChange, onClick, ...restWithoutEvents } = rest;
