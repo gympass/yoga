@@ -255,7 +255,7 @@ const Checkbox = ({
   ...rest
 }) => {
   const inputRef = useRef(null);
-  const id = Math.random().toString(36).substr(2, 9);
+  const id = useRef(Math.random().toString(36).substr(2, 9)).current;
   const checkboxLabelId = `checkbox-label-${id}`;
 
   const { onChange, onClick, ...restWithoutEvents } = rest;
