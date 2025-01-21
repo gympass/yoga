@@ -17,7 +17,7 @@ jobs:
     - name: Run linter
       run: yarn lint:all
     - name: Run tests
-      run: yarn test:coverage
+      run: yarn test:coverage -u
     - name: Run SonarCloud
       uses: sonarsource/sonarcloud-github-action@master
       env:
