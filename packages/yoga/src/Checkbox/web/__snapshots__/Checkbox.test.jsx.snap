@@ -227,14 +227,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with a given value 1`] = `
     >
       <label
         class="c2 c3"
-        id="checkbox-label-:re:"
+        id="checkbox-label-jest-id"
       >
         <span
           class="c4 c5"
         />
         <div
           aria-checked="false"
-          aria-labelledby="checkbox-label-:re:"
+          aria-labelledby="checkbox-label-jest-id"
           class="c6"
           data-testid="checkbox-checkMark"
           role="checkbox"
@@ -425,14 +425,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
     >
       <label
         class="c2 c3"
-        id="checkbox-label-:r3:"
+        id="checkbox-label-jest-id"
       >
         <span
           class="c4 c5"
         />
         <div
           aria-checked="true"
-          aria-labelledby="checkbox-label-:r3:"
+          aria-labelledby="checkbox-label-jest-id"
           class="c6"
           data-testid="checkbox-checkMark"
           role="checkbox"
@@ -586,14 +586,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
     >
       <label
         class="c2 c3"
-        id="checkbox-label-:r1:"
+        id="checkbox-label-jest-id"
       >
         <span
           class="c4 c5"
         />
         <div
           aria-checked="false"
-          aria-labelledby="checkbox-label-:r1:"
+          aria-labelledby="checkbox-label-jest-id"
           class="c6"
           data-testid="checkbox-checkMark"
           role="checkbox"
@@ -808,7 +808,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
     >
       <label
         class="c2 c3"
-        id="checkbox-label-:r4:"
+        id="checkbox-label-jest-id"
       >
         <span
           class="c4 c5"
@@ -816,7 +816,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
         <div
           aria-checked="true"
           aria-disabled="true"
-          aria-labelledby="checkbox-label-:r4:"
+          aria-labelledby="checkbox-label-jest-id"
           class="c6"
           data-testid="checkbox-checkMark"
           disabled=""
@@ -997,7 +997,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
     >
       <label
         class="c2 c3"
-        id="checkbox-label-:r2:"
+        id="checkbox-label-jest-id"
       >
         <span
           class="c4 c5"
@@ -1005,7 +1005,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
         <div
           aria-checked="false"
           aria-disabled="true"
-          aria-labelledby="checkbox-label-:r2:"
+          aria-labelledby="checkbox-label-jest-id"
           class="c6"
           data-testid="checkbox-checkMark"
           disabled=""
@@ -1218,14 +1218,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
     >
       <label
         class="c2 c3"
-        id="checkbox-label-:r6:"
+        id="checkbox-label-jest-id"
       >
         <span
           class="c4 c5"
         />
         <div
           aria-checked="true"
-          aria-labelledby="checkbox-label-:r6:"
+          aria-labelledby="checkbox-label-jest-id"
           class="c6"
           data-testid="checkbox-checkMark"
           role="checkbox"
@@ -1484,14 +1484,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and indetermina
     >
       <label
         class="c2 c3"
-        id="checkbox-label-:rc:"
+        id="checkbox-label-jest-id"
       >
         <span
           class="c4 c5"
         />
         <div
           aria-checked="false"
-          aria-labelledby="checkbox-label-:rc:"
+          aria-labelledby="checkbox-label-jest-id"
           class="c6"
           data-testid="checkbox-checkMark"
           role="checkbox"
@@ -1707,14 +1707,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
     >
       <label
         class="c2 c3"
-        id="checkbox-label-:r5:"
+        id="checkbox-label-jest-id"
       >
         <span
           class="c4 c5"
         />
         <div
           aria-checked="false"
-          aria-labelledby="checkbox-label-:r5:"
+          aria-labelledby="checkbox-label-jest-id"
           class="c6"
           data-testid="checkbox-checkMark"
           role="checkbox"
@@ -1957,14 +1957,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with indeterminate 1`] = `
     >
       <label
         class="c2 c3"
-        id="checkbox-label-:ra:"
+        id="checkbox-label-jest-id"
       >
         <span
           class="c4 c5"
         />
         <div
           aria-checked="false"
-          aria-labelledby="checkbox-label-:ra:"
+          aria-labelledby="checkbox-label-jest-id"
           class="c6"
           data-testid="checkbox-checkMark"
           role="checkbox"
@@ -2206,7 +2206,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with indeterminate and dis
     >
       <label
         class="c2 c3"
-        id="checkbox-label-:rb:"
+        id="checkbox-label-jest-id"
       >
         <span
           class="c4 c5"
@@ -2214,7 +2214,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with indeterminate and dis
         <div
           aria-checked="false"
           aria-disabled="true"
-          aria-labelledby="checkbox-label-:rb:"
+          aria-labelledby="checkbox-label-jest-id"
           class="c6"
           data-testid="checkbox-checkMark"
           disabled=""
@@ -2443,14 +2443,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
     >
       <label
         class="c2 c3"
-        id="checkbox-label-:r7:"
+        id="checkbox-label-jest-id"
       >
         <span
           class="c4 c5"
         />
         <div
           aria-checked="false"
-          aria-labelledby="checkbox-label-:r7:"
+          aria-labelledby="checkbox-label-jest-id"
           class="c6"
           data-testid="checkbox-checkMark"
           role="checkbox"
@@ -2682,14 +2682,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
     >
       <label
         class="c2 c3"
-        id="checkbox-label-:r8:"
+        id="checkbox-label-jest-id"
       >
         <span
           class="c4 c5"
         />
         <div
           aria-checked="true"
-          aria-labelledby="checkbox-label-:r8:"
+          aria-labelledby="checkbox-label-jest-id"
           class="c6"
           data-testid="checkbox-checkMark"
           role="checkbox"
@@ -2952,7 +2952,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
     >
       <label
         class="c2 c3"
-        id="checkbox-label-:r9:"
+        id="checkbox-label-jest-id"
       >
         <span
           class="c4 c5"
@@ -2960,7 +2960,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
         <div
           aria-checked="true"
           aria-disabled="true"
-          aria-labelledby="checkbox-label-:r9:"
+          aria-labelledby="checkbox-label-jest-id"
           class="c6"
           data-testid="checkbox-checkMark"
           disabled=""
@@ -3221,14 +3221,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and indeterm
     >
       <label
         class="c2 c3"
-        id="checkbox-label-:rd:"
+        id="checkbox-label-jest-id"
       >
         <span
           class="c4 c5"
         />
         <div
           aria-checked="false"
-          aria-labelledby="checkbox-label-:rd:"
+          aria-labelledby="checkbox-label-jest-id"
           class="c6"
           data-testid="checkbox-checkMark"
           role="checkbox"
@@ -3371,14 +3371,14 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
     >
       <label
         class="c2 c3"
-        id="checkbox-label-:r0:"
+        id="checkbox-label-jest-id"
       >
         <span
           class="c4 c5"
         />
         <div
           aria-checked="false"
-          aria-labelledby="checkbox-label-:r0:"
+          aria-labelledby="checkbox-label-jest-id"
           class="c6"
           data-testid="checkbox-checkMark"
           role="checkbox"

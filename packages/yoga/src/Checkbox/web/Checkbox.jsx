@@ -1,9 +1,10 @@
-import React, { useEffect, useRef, useId } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { bool, string, shape, oneOfType, node } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 import { Check, Rectangle } from '@gympass/yoga-icons';
 
+import { useId } from '../../hooks';
 import { HiddenInput } from '../../shared';
 
 const CheckboxWrapper = styled.div`
