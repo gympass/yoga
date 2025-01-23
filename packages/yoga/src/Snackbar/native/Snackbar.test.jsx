@@ -42,7 +42,7 @@ describe('<Snackbar />', () => {
   });
 
   it('should render with custom dataTestId', () => {
-    const { getByTestId } = render(<Component dataTestId="custom-snackbar" />);
+    const { getByTestId } = render(<Component testID="custom-snackbar" />);
 
     fireEvent.press(getByTestId('custom-snackbar'));
 

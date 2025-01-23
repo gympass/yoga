@@ -122,7 +122,6 @@ const Snackbar = React.forwardRef(
       onClose,
       hideCloseButton,
       ariaLabelClose,
-      dataTestId,
       theme: {
         yoga: {
           components: { snackbar },
@@ -153,7 +152,6 @@ const Snackbar = React.forwardRef(
           aria-label={variant}
           variant={variant}
           ref={ref}
-          data-testid={dataTestId}
           {...props}
         >
           {!hideIcon && (
@@ -162,7 +160,6 @@ const Snackbar = React.forwardRef(
               alignItems="center"
               mr="small"
               role="img"
-              data-testid="img"
               aria-hidden
             >
               <Icon
@@ -223,8 +220,6 @@ Snackbar.propTypes = {
   hideCloseButton: bool,
   /** Custom aria label for close button. */
   ariaLabelClose: string,
-  /* A unique identifier for the Snackbar component, used for testing purposes with tools like Jest and Testing Library.  */
-  dataTestId: string,
 };
 
 Snackbar.defaultProps = {
@@ -236,7 +231,6 @@ Snackbar.defaultProps = {
   variant: 'success',
   hideCloseButton: false,
   ariaLabelClose: undefined,
-  dataTestId: 'snackbar',
 };
 
 export default memo(withTheme(Snackbar));

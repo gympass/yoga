@@ -23,7 +23,7 @@ describe('<Snackbar />', () => {
           open
           message="Make wellbeing universal"
           onClose={jest.fn()}
-          dataTestId="custom-snackbar"
+          data-testid="custom-snackbar"
         />
       </ThemeProvider>,
     );
@@ -34,12 +34,20 @@ describe('<Snackbar />', () => {
   it('should render a minimal snackbar', () => {
     render(
       <ThemeProvider>
-        <Snackbar open message="Make wellbeing universal" onClose={jest.fn()} />
+        <Snackbar
+          open
+          message="Make wellbeing universal"
+          onClose={jest.fn()}
+          data-testid="custom-snackbar"
+        />
       </ThemeProvider>,
     );
 
     screen.getByRole('alert');
-    screen.getByTestId('img');
+    screen.getByTestId('custom-snackbar');
+    expect(
+      screen.getByTestId('custom-snackbar').querySelector('[role="img"]'),
+    ).toBeTruthy();
     screen.getByLabelText('success');
     screen.getByText('Make wellbeing universal');
   });
