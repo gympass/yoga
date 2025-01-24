@@ -28,19 +28,22 @@ const RatingWrapper = styled.div`
 /** Use the Rating component to view other people's opinions and experiences. */
 const Rating = ({
   value,
-  max,
-  readOnly,
-  onRate,
-  onMouseOver,
-  onMouseMove,
-  onMouseLeave,
+  max = 5,
+  readOnly = true,
+  onRate = () => {},
+  onMouseOver = () => {},
+  onMouseMove = () => {},
+  onMouseLeave = () => {},
   theme: {
     yoga: {
       colors,
       components: { rating },
     },
   },
-  icon: { type: Icon = StarFilled, size: iconSize = rating.icon.size },
+  icon: { type: Icon = StarFilled, size: iconSize = rating.icon.size } = {
+    type: StarFilled,
+    size: 12,
+  },
   ...rest
 }) => {
   const wrapperRef = useRef(null);
@@ -151,20 +154,6 @@ Rating.propTypes = {
   onMouseOver: func,
   onMouseMove: func,
   onMouseLeave: func,
-};
-
-Rating.defaultProps = {
-  value: undefined,
-  icon: {
-    type: StarFilled,
-    size: 12,
-  },
-  max: 5,
-  readOnly: true,
-  onRate: rating => {}, // eslint-disable-line no-unused-vars
-  onMouseOver: () => {},
-  onMouseMove: () => {},
-  onMouseLeave: () => {},
 };
 
 export default withTheme(Rating);

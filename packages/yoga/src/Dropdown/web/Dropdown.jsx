@@ -28,7 +28,7 @@ const Wrapper = styled.div`
     position: relative;
     display: inline-block;
     vertical-align: top;
-    
+
     width: ${full ? '100%' : `${dropdown.width}px`};
   `}
 `;
@@ -270,7 +270,16 @@ const ArrowIcon = styled(({ isOpen, selected, ...props }) => (
 /** Gympass Dropdown is a multiple choice type of menu. */
 const Dropdown = React.forwardRef(
   (
-    { error, label, disabled, full, options, onChange, isMaxHeight, ...rest },
+    {
+      error,
+      label = '',
+      disabled = false,
+      full = false,
+      options,
+      onChange = () => {},
+      isMaxHeight = true,
+      ...rest
+    },
     ref,
   ) => {
     const inputRef = ref || React.useRef(null);
@@ -380,15 +389,6 @@ Dropdown.propTypes = {
   ).isRequired,
   onChange: func,
   isMaxHeight: bool,
-};
-
-Dropdown.defaultProps = {
-  label: '',
-  error: undefined,
-  full: false,
-  disabled: false,
-  onChange: () => {},
-  isMaxHeight: true,
 };
 
 export default Dropdown;

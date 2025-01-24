@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   transform: translateX(-50%);
 
   ${({
-    hasRibbon,
+    hasRibbon = false,
     theme: {
       yoga: {
         components: { slider },
@@ -31,10 +31,6 @@ const Wrapper = styled.div`
 
 Wrapper.propTypes = {
   hasRibbon: bool,
-};
-
-Wrapper.defaultProps = {
-  hasRibbon: false,
 };
 
 const Tip = styled.div`
@@ -139,7 +135,7 @@ const Description = styled(Text.Body2)`
   `}
 `;
 
-const Tooltip = ({ data, ...props }) =>
+const Tooltip = ({ data = {}, ...props }) =>
   Object.keys(data).length ? (
     <Wrapper hasRibbon={Boolean(data.ribbon)} {...props}>
       {data.ribbon && <Ribbon as="span">{data.ribbon}</Ribbon>}
@@ -161,10 +157,6 @@ Tooltip.propTypes = {
     title: string,
     description: string,
   }),
-};
-
-Tooltip.defaultProps = {
-  data: {},
 };
 
 export default Tooltip;

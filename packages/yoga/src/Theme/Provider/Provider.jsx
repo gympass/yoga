@@ -54,16 +54,12 @@ const getTheme = ({ locale, theme }) => {
 };
 
 /** This component provides a theme to all React components underneath itself via the context API. */
-const Provider = ({ locale, theme, ...rest }) => (
+const Provider = ({ locale = 'pt-BR', theme, ...rest }) => (
   <ThemeProvider theme={{ yoga: getTheme({ locale, theme }) }} {...rest} />
 );
 
 Provider.propTypes = {
   locale: PropTypes.string,
-};
-
-Provider.defaultProps = {
-  locale: 'pt-BR',
 };
 
 export default Provider;

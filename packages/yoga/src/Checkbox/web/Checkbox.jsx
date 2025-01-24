@@ -240,13 +240,13 @@ const Checkbox = ({
   value,
   label,
   helper,
-  disabled,
-  checked,
+  disabled = false,
+  checked = false,
   error,
   style,
   className,
-  inverted,
-  indeterminate,
+  inverted = false,
+  indeterminate = false,
   ariaLabel,
   theme: {
     yoga: {
@@ -338,20 +338,6 @@ Checkbox.propTypes = {
   style: shape({}),
   className: string,
   ariaLabel: string,
-};
-
-Checkbox.defaultProps = {
-  label: undefined,
-  value: undefined,
-  helper: undefined,
-  checked: false,
-  disabled: false,
-  inverted: false,
-  indeterminate: false,
-  error: undefined,
-  style: undefined,
-  className: undefined,
-  ariaLabel: undefined,
 };
 
 Checkbox.displayName = 'Checkbox';

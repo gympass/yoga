@@ -35,7 +35,14 @@ function isChildFromComponent(child, component) {
   return child.type.displayName === component.displayName;
 }
 
-function Feedback({ variant, title, description, children, center, ...props }) {
+function Feedback({
+  variant,
+  title,
+  description,
+  children,
+  center = true,
+  ...props
+}) {
   const iconProps = VARIANT_ICONS[variant];
   let primaryButton;
   let secondaryButton;
@@ -97,12 +104,6 @@ Feedback.propTypes = {
   children: oneOfType([arrayOf(node), node]),
   /** Center the component vertically */
   center: bool,
-};
-
-Feedback.defaultProps = {
-  title: undefined,
-  children: undefined,
-  center: true,
 };
 
 export default Feedback;

@@ -68,9 +68,9 @@ const Wrapper = styled.button`
         p {
           color: ${colors.white};
         }
-        
+
         background-color: ${colors.secondary};
-        
+
 
         border-color: transparent;
 
@@ -119,10 +119,10 @@ const Chips = React.forwardRef(
   (
     {
       children,
-      selected,
+      selected = false,
       counter,
-      icons,
-      disabled,
+      icons = [],
+      disabled = false,
       onToggle,
       onClick = onToggle,
       theme: {
@@ -191,16 +191,6 @@ Chips.propTypes = {
   /** click event */
   onToggle: func,
   onClick: func,
-};
-
-Chips.defaultProps = {
-  children: undefined,
-  selected: false,
-  disabled: false,
-  counter: undefined,
-  icons: [],
-  onToggle: undefined,
-  onClick: undefined,
 };
 
 export default withTheme(Chips);

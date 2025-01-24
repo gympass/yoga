@@ -29,15 +29,15 @@ const Informative = styled(StyledTag)`
 const TagInformative = ({
   children,
   icon,
-  variant,
+  variant = 'neutral',
   theme: {
     yoga: {
       colors: { text },
       components: { tag },
     },
   },
-  small,
-  ellipsis,
+  small = false,
+  ellipsis = false,
   ...rest
 }) => (
   <Informative variant={variant} small={small} {...rest}>
@@ -64,13 +64,6 @@ TagInformative.propTypes = {
   small: bool,
   /** After set a max-width can put ellipses for large texts */
   ellipsis: bool,
-};
-
-TagInformative.defaultProps = {
-  icon: undefined,
-  small: false,
-  variant: 'neutral',
-  ellipsis: false,
 };
 
 TagInformative.displayName = 'Tag.Informative';

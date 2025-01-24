@@ -40,8 +40,4 @@ Clipboard.propTypes = {
   copyText: string,
 };
 
-Clipboard.defaultProps = {
-  copyText: undefined,
-};
-
 export default Clipboard;

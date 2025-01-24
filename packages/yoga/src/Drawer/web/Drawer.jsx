@@ -30,17 +30,13 @@ const StyledDrawer = styled(Dialog)`
   }
 `;
 
-const Drawer = React.forwardRef((props, forwardedRef) => (
-  <StyledDrawer {...props} ref={forwardedRef} />
+const Drawer = React.forwardRef(({ zIndex = 3, ...rest }, forwardedRef) => (
+  <StyledDrawer {...rest} zIndex={zIndex} ref={forwardedRef} />
 ));
 
 Drawer.propTypes = {
   children: node.isRequired,
   zIndex: number,
-};
-
-Drawer.defaultProps = {
-  zIndex: 3,
 };
 
 export default Drawer;

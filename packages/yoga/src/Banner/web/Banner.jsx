@@ -137,11 +137,4 @@ Banner.propTypes = {
   },
 };
 
-Banner.defaultProps = {
-  icon: undefined,
-  variant: 'informative',
-  primaryButton: undefined,
-  secondaryButton: undefined,
-};
-
 export default Banner;

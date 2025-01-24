@@ -64,22 +64,22 @@ const StyledSnackbar = styled.div`
       align-items: center;
       justify-content: space-between;
       box-sizing: border-box;
-  
+
       position: fixed;
       bottom: ${snackbar.position.mobile.bottom}px;
       right: ${snackbar.position.mobile.right}px;
       left: ${snackbar.position.mobile.left}px;
-  
+
       min-width: ${snackbar.minWidth.mobile}px;
       max-width: ${snackbar.maxWidth.default}px;
-  
+
       min-height: ${snackbar.height.min}px;
       max-height: ${snackbar.height.max}px;
-  
+
       padding: ${snackbar.padding.default}px;
-      
+
       border-radius: ${snackbar.border.radius}px;
-  
+
       box-shadow: ${snackbar.shadow.default};
 
       background-color: ${snackbar.variant.color[variant]};
@@ -112,17 +112,17 @@ const AnimatedSnackbar = styled(StyledSnackbar)`
 const Snackbar = React.forwardRef(
   (
     {
-      open,
+      open = false,
       duration,
-      variant,
-      hideIcon,
+      variant = 'success',
+      hideIcon = false,
       message,
       actionLabel,
       onAction,
       onClose,
-      hideCloseButton,
+      hideCloseButton = false,
       ariaLabelClose,
-      dataTestId,
+      dataTestId = 'snackbar',
       theme: {
         yoga: {
           components: { snackbar },
@@ -225,18 +225,6 @@ Snackbar.propTypes = {
   ariaLabelClose: string,
   /* A unique identifier for the Snackbar component, used for testing purposes with tools like Jest and Testing Library.  */
   dataTestId: string,
-};
-
-Snackbar.defaultProps = {
-  open: false,
-  duration: undefined,
-  actionLabel: undefined,
-  hideIcon: false,
-  onAction: undefined,
-  variant: 'success',
-  hideCloseButton: false,
-  ariaLabelClose: undefined,
-  dataTestId: 'snackbar',
 };
 
 export default memo(withTheme(Snackbar));

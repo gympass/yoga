@@ -33,7 +33,13 @@ const Circle = styled(RCHandle)`
   `}
 `;
 
-const Marker = ({ values, dragging, index, tooltip, ...props }) => {
+const Marker = ({
+  values = [0],
+  dragging = false,
+  index = 0,
+  tooltip,
+  ...props
+}) => {
   const renderTooltip = () => {
     if (!dragging) {
       return false;
@@ -68,13 +74,6 @@ Marker.propTypes = {
       step: number,
     }),
   ),
-};
-
-Marker.defaultProps = {
-  values: [0],
-  dragging: false,
-  index: 0,
-  tooltip: undefined,
 };
 
 export default Marker;

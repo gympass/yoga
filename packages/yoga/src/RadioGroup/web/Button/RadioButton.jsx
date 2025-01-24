@@ -68,10 +68,10 @@ const ButtonWrapper = styled.div`
     border-color: ${radiogroup.button.border.color};
     border-top-width: ${radiogroup.button.border.width}px;
     border-bottom-width: ${radiogroup.button.border.width}px;
-    
+
     border-left: none;
     border-right: none;
-    
+
     &:first-child {
       border-right-width: 0;
       border-left-width: ${radiogroup.button.border.width}px;
@@ -81,7 +81,7 @@ const ButtonWrapper = styled.div`
       border-top-left-radius: ${radiogroup.button.border.radius}px;
       border-bottom-left-radius: ${radiogroup.button.border.radius}px;
     }
-  
+
     &:last-child {
       border-left-width: 0;
 
@@ -98,7 +98,7 @@ const ButtonWrapper = styled.div`
 /** Radio group allows user to select one option from a set of options. Use
 value on group to set the selected option. */
 const RadioGroupButton = React.forwardRef(
-  ({ children, value, ...rest }, ref) => {
+  ({ children, value = '', ...rest }, ref) => {
     const { name, onChange, small, selectedValue, ...context } =
       useContext(RadioGroupContext);
 
@@ -130,10 +130,6 @@ RadioGroupButton.displayName = 'RadioGroup.Button';
 RadioGroupButton.propTypes = {
   children: oneOfType([string, number]).isRequired,
   value: oneOfType([string, number]),
-};
-
-RadioGroupButton.defaultProps = {
-  value: '',
 };
 
 export default RadioGroupButton;

@@ -71,7 +71,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-function Dots({ activeStep, labels, secondary }) {
+function Dots({ activeStep = 0, labels = [], secondary = false }) {
   return (
     <Wrapper>
       {labels.map((label, index) => (
@@ -92,12 +92,6 @@ Dots.propTypes = {
   activeStep: number,
   labels: arrayOf(string),
   secondary: bool,
-};
-
-Dots.defaultProps = {
-  activeStep: 0,
-  labels: [],
-  secondary: false,
 };
 
 export default Dots;

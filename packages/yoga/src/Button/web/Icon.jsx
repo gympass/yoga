@@ -38,9 +38,11 @@ const ButtonIcon = forwardRef(
           components: { button },
         },
       },
-      small,
+      small = false,
       disabled,
-      isLoading,
+      isLoading = false,
+      secondary = false,
+      inverted = false,
       ...props
     },
     ref,
@@ -48,6 +50,8 @@ const ButtonIcon = forwardRef(
     return (
       <IconStyled
         {...props}
+        secondary={secondary}
+        inverted={inverted}
         ref={ref}
         small={small}
         disabled={disabled || isLoading}
@@ -75,15 +79,6 @@ ButtonIcon.propTypes = {
   inverted: bool,
   icon: oneOfType([node, func]),
   isLoading: bool,
-};
-
-ButtonIcon.defaultProps = {
-  small: false,
-  disabled: undefined,
-  secondary: false,
-  inverted: false,
-  icon: undefined,
-  isLoading: false,
 };
 
 ButtonIcon.displayName = 'Button.Icon';

@@ -69,7 +69,13 @@ export const StyledText = styled(Text.Overline)`
 `;
 
 /** Tags should be keywords to categorize or organize an item. */
-const Tag = ({ children, variant, small, ellipsis, ...rest }) => (
+const Tag = ({
+  children,
+  variant = '',
+  small = false,
+  ellipsis = false,
+  ...rest
+}) => (
   <StyledTag variant={variant} small={small} {...rest}>
     <StyledText numberOfLines={ellipsis ? 1 : undefined}>{children}</StyledText>
   </StyledTag>
@@ -83,12 +89,6 @@ Tag.propTypes = {
   small: bool,
   /** After set a max-width can put ellipses for large texts */
   ellipsis: bool,
-};
-
-Tag.defaultProps = {
-  variant: '',
-  small: false,
-  ellipsis: false,
 };
 
 export default Tag;

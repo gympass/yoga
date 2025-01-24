@@ -111,7 +111,7 @@ const DiscountWrapper = styled(Box).attrs({
   }}
 `;
 
-function PlanCard({ children, discount, variant, ...rest }) {
+function PlanCard({ children, discount, variant = 'deepPurple', ...rest }) {
   const hasDiscount = !!discount;
 
   return (
@@ -133,12 +133,6 @@ PlanCard.propTypes = {
   children: node,
   discount: string,
   variant: string,
-};
-
-PlanCard.defaultProps = {
-  children: undefined,
-  discount: undefined,
-  variant: 'deepPurple',
 };
 
 PlanCard.displayName = 'PlanCard';

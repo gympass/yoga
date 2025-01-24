@@ -25,16 +25,17 @@ const phoneBaseSettings = {
 const Phone = React.forwardRef(
   (
     {
-      defaultCountry,
-      disabled,
-      readOnly,
+      defaultCountry = 'br',
+      disabled = false,
+      readOnly = false,
       error,
-      full,
+      full = false,
       helper,
-      label,
-      placeholder,
-      value,
-      onChange,
+      label = '',
+      placeholder = '+55 (11) 999999999',
+      value = '',
+      onChange = () => {},
+      cleanable = true,
       ...rest
     },
     forwardedRef,
@@ -57,6 +58,7 @@ const Phone = React.forwardRef(
           full,
           helper,
           value,
+          cleanable,
           ...rest,
         }}
         ref={inputRef}
@@ -111,21 +113,6 @@ Phone.propTypes = {
   onChange: func,
   /** placeholder to show when the input is cleared */
   placeholder: string,
-};
-
-Phone.defaultProps = {
-  className: undefined,
-  cleanable: true,
-  defaultCountry: 'br',
-  disabled: false,
-  error: undefined,
-  full: false,
-  helper: undefined,
-  label: '',
-  readOnly: false,
-  value: '',
-  onChange: () => {},
-  placeholder: '+55 (11) 999999999',
 };
 
 export default Phone;

@@ -14,7 +14,7 @@ import Box from '../Box';
 
 const Icon = ({
   as: Component,
-  size,
+  size = 12,
   width = size,
   height = size,
   fill,
@@ -137,17 +137,6 @@ Icon.propTypes = {
   /** Size for vertical and horizontal of the SVG.
    * Use it as one of theme.spacing tokens (xxsmall, small, medium...) */
   size: oneOfType([oneOf(commonSizes), string, number]),
-};
-
-Icon.defaultProps = {
-  fill: undefined,
-  stroke: undefined,
-  title: undefined,
-  description: undefined,
-  ariaLabel: undefined,
-  width: undefined,
-  height: undefined,
-  size: 12,
 };
 
 export default withTheme(Icon);
