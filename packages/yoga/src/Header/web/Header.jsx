@@ -26,7 +26,7 @@ const StyledHeader = styled(Box)`
   `}
 `;
 
-const Header = ({ link, logo, children, ...props }) => {
+const Header = ({ link = null, logo = null, children = null, ...props }) => {
   return (
     <StyledHeader
       as="header"
@@ -56,12 +56,6 @@ Header.propTypes = {
   children: node,
   /** Use logo to change headers image */
   logo: elementType,
-};
-
-Header.defaultProps = {
-  link: null,
-  children: null,
-  logo: null,
 };
 
 export default Header;

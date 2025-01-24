@@ -57,7 +57,7 @@ function ActionRequirement(props) {
     checkable,
     illustration,
     list,
-    titleAsTextDisplay,
+    titleAsTextDisplay = false,
   } = props;
 
   let primaryButton;
@@ -104,14 +104,6 @@ ActionRequirement.propTypes = {
   illustration: oneOfType([arrayOf(node), node]),
   list: oneOfType([arrayOf(node), node]),
   titleAsTextDisplay: bool,
-};
-
-ActionRequirement.defaultProps = {
-  children: undefined,
-  checkable: undefined,
-  illustration: undefined,
-  list: undefined,
-  titleAsTextDisplay: false,
 };
 
 export default ActionRequirement;

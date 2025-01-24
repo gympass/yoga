@@ -77,8 +77,8 @@ const MenuItem = forwardRef(
     {
       icon: Icon,
       href,
-      active,
-      disabled,
+      active = false,
+      disabled = false,
       iconColor,
       iconSize,
       children,
@@ -124,15 +124,6 @@ MenuItem.propTypes = {
   active: bool,
   iconColor: string,
   iconSize: string,
-};
-
-MenuItem.defaultProps = {
-  icon: undefined,
-  href: undefined,
-  disabled: false,
-  active: false,
-  iconColor: undefined,
-  iconSize: undefined,
 };
 
 MenuItem.displayName = 'Menu.Item';

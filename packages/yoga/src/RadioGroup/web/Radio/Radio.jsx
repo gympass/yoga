@@ -25,7 +25,7 @@ const Radio = styled.span`
       width: ${radio.size}px;
       height: ${radio.size}px;
 
-      border-width: ${radio.size * 0.1}px; 
+      border-width: ${radio.size * 0.1}px;
       border-style: solid;
       border-color: ${radio.backgroundColor};
       border-radius: ${radio.border.radius}px;
@@ -89,28 +89,28 @@ const Wrapper = styled.div`
     ${
       checked
         ? `
-    
+
       &:hover {
         ${Radio} {
           background-color: ${stateColors.hover};
-          box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px 
+          box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px
             ${stateColors.hover};
         }
       }
-    
+
       &:focus-within {
         ${Radio} {
           z-index: 1;
           background-color: ${stateColors.focusWithin};
-          box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px 
+          box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px
             ${stateColors.focusWithin};
         }
       }
-    
+
       &:active {
         ${Radio} {
           background-color: ${stateColors.active};
-          box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px 
+          box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px
             ${stateColors.active};
         }
       }
@@ -125,12 +125,12 @@ const Wrapper = styled.div`
 
           width: ${radiogroup.radio.size * 0.5}px;
           height: ${radiogroup.radio.size * 0.5}px;
-          
+
           border-radius: 100%;
           background-color: ${radiogroup.checked.backgroundColor};
-          
+
           transform: translate(-50%, -50%);
-          
+
           content: '';
         }
       }
@@ -172,8 +172,9 @@ const Wrapper = styled.div`
 
 /** The Radio is a type of selection control that allows the user to select a
  * single option from a list. */
+
 const RadioGroupRadio = React.forwardRef(
-  ({ value, disabled, style, className, ...rest }, ref) => {
+  ({ value = '', disabled = false, style = {}, className, ...rest }, ref) => {
     const { name, onChange, selectedValue, ...context } =
       useContext(RadioGroupContext);
 
@@ -215,13 +216,6 @@ RadioGroupRadio.propTypes = {
   disabled: bool,
   style: shape({}),
   value: oneOfType([string, number]),
-};
-
-RadioGroupRadio.defaultProps = {
-  className: undefined,
-  disabled: false,
-  style: {},
-  value: '',
 };
 
 export default RadioGroupRadio;

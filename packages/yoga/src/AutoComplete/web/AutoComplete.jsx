@@ -153,16 +153,16 @@ const AutoComplete = React.forwardRef(
     {
       className,
       style,
-      full,
-      options,
-      onChange,
-      onClean,
-      onSelect,
+      full = false,
+      options = [],
+      onChange = () => {},
+      onClean = () => {},
+      onSelect = () => {},
       value,
       error,
-      openSuggestionsAriaLabel,
-      closeSuggestionsAriaLabel,
-      shouldFilterOptions,
+      openSuggestionsAriaLabel = 'Open suggestions',
+      closeSuggestionsAriaLabel = 'Close suggestions',
+      shouldFilterOptions = true,
       ...props
     },
     ref,
@@ -331,21 +331,6 @@ AutoComplete.propTypes = {
   closeSuggestionsAriaLabel: string,
   /** flag to enable options filtering */
   shouldFilterOptions: bool,
-};
-
-AutoComplete.defaultProps = {
-  className: undefined,
-  full: false,
-  options: [],
-  style: undefined,
-  onSelect: () => {},
-  onChange: () => {},
-  onClean: () => {},
-  value: undefined,
-  error: undefined,
-  openSuggestionsAriaLabel: 'Open suggestions',
-  closeSuggestionsAriaLabel: 'Close suggestions',
-  shouldFilterOptions: true,
 };
 
 export default AutoComplete;

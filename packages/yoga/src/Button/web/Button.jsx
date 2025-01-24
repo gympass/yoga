@@ -15,15 +15,15 @@ const SpinnerContainer = styled.div`
 const Button = forwardRef(
   (
     {
-      children,
-      onClick,
-      full,
-      disabled,
-      inverted,
-      small,
-      secondary,
+      children = 'Button',
+      onClick = () => {},
+      full = false,
+      disabled = undefined,
+      inverted = false,
+      small = false,
+      secondary = false,
       icon: Icon,
-      isLoading,
+      isLoading = false,
       ...props
     },
     ref,
@@ -75,20 +75,6 @@ Button.propTypes = {
   /** an Icon from yoga-icons package */
   icon: oneOfType([node, func]),
   href: string,
-};
-
-Button.defaultProps = {
-  ariaLabel: undefined,
-  children: 'Button',
-  disabled: undefined,
-  full: false,
-  inverted: false,
-  isLoading: false,
-  onClick: () => {},
-  small: false,
-  secondary: false,
-  icon: undefined,
-  href: undefined,
 };
 
 Button.displayName = 'Button';

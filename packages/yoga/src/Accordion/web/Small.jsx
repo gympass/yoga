@@ -8,6 +8,4 @@ function AccordionSmall(props) {
 
 AccordionSmall.propTypes = Accordion.propTypes;
 
-AccordionSmall.defaultProps = Accordion.defaultProps;
-
 export default AccordionSmall;
