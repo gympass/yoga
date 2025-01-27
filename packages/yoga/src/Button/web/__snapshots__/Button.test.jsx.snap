@@ -558,7 +558,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 
 <div>
   <button
-    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -687,7 +686,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 
 <div>
   <button
-    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -9668,7 +9666,6 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 
 <div>
   <button
-    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -9797,7 +9794,6 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 
 <div>
   <button
-    aria-disabled="true"
     class="c0"
     disabled=""
   >
