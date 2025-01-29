@@ -126,25 +126,27 @@ const SwitchThumb = styled.span`
 const noop = () => {};
 
 /** Switches allow users to turn an individual option on or off. They are usually used to activate or deactivate a specific setting. */
-const CheckboxSwitch = ({
+function CheckboxSwitch({
   checked = false,
   disabled = false,
   onChange = noop,
   ...rest
-}) => (
-  <SwitchTrack checked={checked} disabled={disabled} {...rest}>
-    <SwitchInput
-      type="checkbox"
-      role="switch"
-      disabled={disabled}
-      aria-hidden
-      aria-checked={checked}
-      aria-readonly={disabled}
-      onChange={onChange}
-    />
-    <SwitchThumb role="button" checked={checked} disabled={disabled} />
-  </SwitchTrack>
-);
+}) {
+  return (
+    <SwitchTrack checked={checked} disabled={disabled} {...rest}>
+      <SwitchInput
+        type="checkbox"
+        role="switch"
+        disabled={disabled}
+        aria-hidden
+        aria-checked={checked}
+        aria-readonly={disabled}
+        onChange={onChange}
+      />
+      <SwitchThumb role="button" checked={checked} disabled={disabled} />
+    </SwitchTrack>
+  );
+}
 
 CheckboxSwitch.propTypes = {
   checked: bool,

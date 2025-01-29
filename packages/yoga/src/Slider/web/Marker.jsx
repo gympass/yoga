@@ -35,13 +35,13 @@ const Circle = styled(RCHandle)`
 
 const defaultValues = [0];
 
-const Marker = ({
+function Marker({
   values = defaultValues,
   dragging = false,
   index = 0,
   tooltip,
   ...props
-}) => {
+}) {
   const renderTooltip = () => {
     if (!dragging) {
       return false;
@@ -61,7 +61,7 @@ const Marker = ({
       {dragging && <Tooltip data={renderTooltip()} />}
     </Circle>
   );
-};
+}
 
 Marker.propTypes = {
   values: arrayOf(number),

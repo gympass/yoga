@@ -137,8 +137,8 @@ const Description = styled(Text.Body2)`
 
 const emptyObj = {};
 
-const Tooltip = ({ data = emptyObj, ...props }) =>
-  Object.keys(data).length ? (
+function Tooltip({ data = emptyObj, ...props }) {
+  return Object.keys(data).length ? (
     <Wrapper hasRibbon={Boolean(data.ribbon)} {...props}>
       {data.ribbon && <Ribbon as="span">{data.ribbon}</Ribbon>}
       {(data.title || data.description) && (
@@ -152,6 +152,7 @@ const Tooltip = ({ data = emptyObj, ...props }) =>
       <Arrow />
     </Wrapper>
   ) : null;
+}
 
 Tooltip.propTypes = {
   data: shape({
