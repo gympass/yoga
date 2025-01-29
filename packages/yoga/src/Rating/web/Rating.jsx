@@ -25,25 +25,32 @@ const RatingWrapper = styled.div`
   `}
 `;
 
+const noop = () => {};
+
+const defaultIcon = {
+  type: StarFilled,
+  size: 12,
+};
+
 /** Use the Rating component to view other people's opinions and experiences. */
 const Rating = ({
   value,
   max = 5,
   readOnly = true,
-  onRate = () => {},
-  onMouseOver = () => {},
-  onMouseMove = () => {},
-  onMouseLeave = () => {},
+  onRate = noop,
+  onMouseOver = noop,
+  onMouseMove = noop,
+  onMouseLeave = noop,
   theme: {
     yoga: {
       colors,
       components: { rating },
     },
   },
-  icon: { type: Icon = StarFilled, size: iconSize = rating.icon.size } = {
-    type: StarFilled,
-    size: 12,
-  },
+  icon: {
+    type: Icon = StarFilled,
+    size: iconSize = rating.icon.size,
+  } = defaultIcon,
   ...rest
 }) => {
   const wrapperRef = useRef(null);

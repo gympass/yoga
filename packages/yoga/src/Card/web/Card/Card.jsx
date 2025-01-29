@@ -69,8 +69,10 @@ const Ribbon = styled(Text.Tiny)`
   `}
 `;
 
+const emptyObj = {};
+
 const Card = React.forwardRef(
-  ({ ribbon = {}, children = null, hasShadow = true, ...rest }, ref) => (
+  ({ ribbon = emptyObj, children = null, hasShadow = true, ...rest }, ref) => (
     <CardStyled ref={ref} hasShadow={hasShadow} {...rest}>
       {Object.keys(ribbon).length > 0 && (
         <Ribbon variant={ribbon.variant} as="span">

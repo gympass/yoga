@@ -131,21 +131,17 @@ Wrapper.propTypes = {
   isNumber: bool,
 };
 
+const defaultLabel = {
+  value: undefined,
+  placement: 'left',
+};
+
 /** The Progress is a component used to indicate a progress of an indicator
  * of quantity. The use of labels numeric or alphabetic can increase the user
  * understanding. */
 const Progress = React.forwardRef(
   (
-    {
-      label = {
-        value: undefined,
-        placement: 'left',
-      },
-      max = 1,
-      value,
-      variant = 'verve',
-      ...props
-    },
+    { label = defaultLabel, max = 1, value, variant = 'verve', ...props },
     ref,
   ) => {
     const isNumber = !/[a-zA-Z]/g.test(label.value);

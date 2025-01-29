@@ -31,14 +31,17 @@ const StyledRange = styled(RCRange)`
   }
 `;
 
+const emptyArr = [];
+const defaultValues = [0];
+
 /** Sliders allow users to make selections from a range of values. Sliders
 reflect a range of values along a bar, from which users may select a single
 value. They are ideal for adjusting settings such as volume, brightness, or
 applying image filters. */
 const Slider = ({
   snapped = false,
-  tooltip = [],
-  values = [0],
+  tooltip = emptyArr,
+  values = defaultValues,
   max = 10,
   maxLabel,
   min = 0,

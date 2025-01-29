@@ -28,6 +28,8 @@ const StyledField = styled(Field)`
   height: 100%;
 `;
 
+const noop = () => {};
+
 /**
  * TextArea is a type of text field which has a larger initiation size to
  * encourage a bigger user input. This component has a fixed height and the text
@@ -46,7 +48,7 @@ const TextArea = React.forwardRef(
       className,
       style,
       value = '',
-      onChange = () => {},
+      onChange = noop,
       readOnly = false,
       ...props
     },

@@ -89,12 +89,14 @@ const Button = styled.button`
   ${truncateStyle}
 `;
 
+const emptyObj = {};
+
 const ListItem = withTheme(props => {
   const {
     text,
     truncate = true,
     icon: Icon,
-    buttonProps = {},
+    buttonProps = emptyObj,
     theme: yogaTheme,
     children,
     onClick,

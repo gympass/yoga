@@ -115,13 +115,15 @@ const Wrapper = styled.button`
   }}
 `;
 
+const emptyArr = [];
+
 const Chips = React.forwardRef(
   (
     {
       children,
       selected = false,
       counter,
-      icons = [],
+      icons = emptyArr,
       disabled = false,
       onToggle,
       onClick = onToggle,

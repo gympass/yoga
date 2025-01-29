@@ -267,6 +267,8 @@ const ArrowIcon = styled(({ isOpen, selected, ...props }) => (
   `}
 `;
 
+const noop = () => {};
+
 /** Gympass Dropdown is a multiple choice type of menu. */
 const Dropdown = React.forwardRef(
   (
@@ -276,7 +278,7 @@ const Dropdown = React.forwardRef(
       disabled = false,
       full = false,
       options,
-      onChange = () => {},
+      onChange = noop,
       isMaxHeight = true,
       ...rest
     },

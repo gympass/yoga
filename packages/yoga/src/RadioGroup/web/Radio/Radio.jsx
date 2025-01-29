@@ -170,11 +170,15 @@ const Wrapper = styled.div`
   }}
 `;
 
+const emptyObj = {};
+
 /** The Radio is a type of selection control that allows the user to select a
  * single option from a list. */
-
 const RadioGroupRadio = React.forwardRef(
-  ({ value = '', disabled = false, style = {}, className, ...rest }, ref) => {
+  (
+    { value = '', disabled = false, style = emptyObj, className, ...rest },
+    ref,
+  ) => {
     const { name, onChange, selectedValue, ...context } =
       useContext(RadioGroupContext);
 

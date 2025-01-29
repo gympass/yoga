@@ -71,7 +71,9 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-function Dots({ activeStep = 0, labels = [], secondary = false }) {
+const emptyArr = [];
+
+function Dots({ activeStep = 0, labels = emptyArr, secondary = false }) {
   return (
     <Wrapper>
       {labels.map((label, index) => (

@@ -22,6 +22,8 @@ const phoneBaseSettings = {
   ],
 };
 
+const noop = () => {};
+
 const Phone = React.forwardRef(
   (
     {
@@ -34,7 +36,7 @@ const Phone = React.forwardRef(
       label = '',
       placeholder = '+55 (11) 999999999',
       value = '',
-      onChange = () => {},
+      onChange = noop,
       cleanable = true,
       ...rest
     },

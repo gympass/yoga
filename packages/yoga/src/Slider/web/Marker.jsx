@@ -33,8 +33,10 @@ const Circle = styled(RCHandle)`
   `}
 `;
 
+const defaultValues = [0];
+
 const Marker = ({
-  values = [0],
+  values = defaultValues,
   dragging = false,
   index = 0,
   tooltip,

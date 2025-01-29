@@ -147,6 +147,9 @@ const Match = styled.mark`
   `}
 `;
 
+const noop = () => {};
+const emptyArr = [];
+
 /** The autocomplete is a normal input field enhanced by a panel of suggested options. */
 const AutoComplete = React.forwardRef(
   (
@@ -154,10 +157,10 @@ const AutoComplete = React.forwardRef(
       className,
       style,
       full = false,
-      options = [],
-      onChange = () => {},
-      onClean = () => {},
-      onSelect = () => {},
+      options = emptyArr,
+      onChange = noop,
+      onClean = noop,
+      onSelect = noop,
       value,
       error,
       openSuggestionsAriaLabel = 'Open suggestions',

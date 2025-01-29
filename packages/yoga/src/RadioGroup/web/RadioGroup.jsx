@@ -16,14 +16,17 @@ const Group = styled.div.attrs({
   `}
 `;
 
+const noop = () => {};
+const emptyObj = {};
+
 const RadioGroup = ({
   name = '',
-  onChange = () => {},
+  onChange = noop,
   selectedValue = '',
   small = false,
   full = false,
   children = null,
-  style = {},
+  style = emptyObj,
   ...rest
 }) => (
   <RadioGroupContext.Provider

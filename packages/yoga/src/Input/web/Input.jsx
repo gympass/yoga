@@ -91,6 +91,8 @@ const LeftElementWrapper = styled.div`
   `}
 `;
 
+const noop = () => {};
+
 const Input = React.forwardRef(
   (
     {
@@ -106,8 +108,8 @@ const Input = React.forwardRef(
       readOnly = false,
       style,
       value = '',
-      onChange = () => {},
-      onClean = () => {},
+      onChange = noop,
+      onClean = noop,
       hideMaxLength = false,
       rightIcon,
       a11yId,
