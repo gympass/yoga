@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
-import { string, node, bool } from 'prop-types';
+import { string, node, bool, shape } from 'prop-types';
 import { ChevronDown } from '@gympass/yoga-icons';
 import { Text, Divider } from '../..';
 import Content from './Content';
@@ -206,6 +206,7 @@ const Accordion = ({
   expanded,
   small,
   hasHorizontalPadding,
+  headerProps,
   ...props
 }) => {
   const [open, setOpen] = useState(expanded);
@@ -220,9 +221,13 @@ const Accordion = ({
         disabled={disabled}
         onClick={() => {
           setOpen(o => !o);
+          if (typeof headerProps.onClick === 'function') {
+            headerProps.onClick();
+          }
         }}
         small={small}
         hasHorizontalPadding={hasHorizontalPadding}
+        {...headerProps}
       >
         {hasSummary ? (
           summary
@@ -270,6 +275,9 @@ Accordion.propTypes = {
   expanded: bool,
   small: bool,
   hasHorizontalPadding: bool,
+  /** if provided displays a button below the item text. It accepts all button
+   * element props */
+  headerProps: shape({}),
 };
 
 Accordion.defaultProps = {
@@ -279,6 +287,7 @@ Accordion.defaultProps = {
   expanded: false,
   small: false,
   hasHorizontalPadding: true,
+  headerProps: {},
 };
 
 export default Accordion;
