@@ -51,7 +51,6 @@ const ButtonIcon = forwardRef(
         ref={ref}
         small={small}
         disabled={disabled || isLoading}
-        aria-disabled={disabled}
         isLoading={isLoading}
       >
         {isLoading ? (
