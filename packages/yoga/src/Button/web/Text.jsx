@@ -113,7 +113,7 @@ const ButtonText = forwardRef(({ ...rest }, ref) => {
     Object.entries(rest).filter(([key]) => key !== 'isLoading'),
   );
 
-  const { secondary, inverted } = props;
+  const { secondary = false, inverted = false } = props;
 
   return (
     <StyledButton
@@ -128,11 +128,6 @@ const ButtonText = forwardRef(({ ...rest }, ref) => {
 ButtonText.propTypes = {
   inverted: bool,
   secondary: bool,
-};
-
-ButtonText.defaultProps = {
-  inverted: false,
-  secondary: false,
 };
 
 ButtonText.displayName = 'Button.Text';

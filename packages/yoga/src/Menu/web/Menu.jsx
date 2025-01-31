@@ -2,7 +2,7 @@ import React from 'react';
 import { Root as MenuRoot } from '@radix-ui/react-dropdown-menu';
 import { bool, node } from 'prop-types';
 
-const Menu = ({ children, onMouseHover }) => {
+const Menu = ({ children, onMouseHover = true }) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   function handleOpenMenu() {
@@ -30,10 +30,6 @@ Menu.propTypes = {
   children: node.isRequired,
   /** when mouse hover menu open as default is true */
   onMouseHover: bool,
-};
-
-Menu.defaultProps = {
-  onMouseHover: true,
 };
 
 Menu.displayName = 'Menu';

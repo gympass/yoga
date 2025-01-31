@@ -80,8 +80,8 @@ const Wrapper = styled.div`
   width: 100%;
 
   ${({
-    isNumber,
-    align,
+    isNumber = false,
+    align = 'left',
     theme: {
       yoga: { spacing },
     },
@@ -131,16 +131,19 @@ Wrapper.propTypes = {
   isNumber: bool,
 };
 
-Wrapper.defaultProps = {
-  align: 'left',
-  isNumber: false,
+const defaultLabel = {
+  value: undefined,
+  placement: 'left',
 };
 
 /** The Progress is a component used to indicate a progress of an indicator
  * of quantity. The use of labels numeric or alphabetic can increase the user
  * understanding. */
 const Progress = React.forwardRef(
-  ({ label, max, value, variant, ...props }, ref) => {
+  (
+    { label = defaultLabel, max = 1, value, variant = 'verve', ...props },
+    ref,
+  ) => {
     const isNumber = !/[a-zA-Z]/g.test(label.value);
 
     return (
@@ -193,16 +196,6 @@ Progress.propTypes = {
     'clear',
     'white',
   ]),
-};
-
-Progress.defaultProps = {
-  label: {
-    value: undefined,
-    placement: 'left',
-  },
-  max: 1,
-  value: undefined,
-  variant: 'verve',
 };
 
 export default Progress;

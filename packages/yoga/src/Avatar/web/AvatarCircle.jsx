@@ -16,8 +16,6 @@ const AvatarCircle = forwardRef(({ src, alt = '', ...props }, ref) => (
 
 AvatarCircle.propTypes = Avatar.propTypes;
 
-AvatarCircle.defaultProps = Avatar.defaultProps;
-
 AvatarCircle.displayName = 'Avatar.Circle';
 
 export default AvatarCircle;

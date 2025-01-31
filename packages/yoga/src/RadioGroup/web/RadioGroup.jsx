@@ -16,14 +16,17 @@ const Group = styled.div.attrs({
   `}
 `;
 
+const noop = () => {};
+const emptyObj = {};
+
 const RadioGroup = ({
-  name,
-  onChange,
-  selectedValue,
-  small,
-  full,
-  children,
-  style,
+  name = '',
+  onChange = noop,
+  selectedValue = '',
+  small = false,
+  full = false,
+  children = null,
+  style = emptyObj,
   ...rest
 }) => (
   <RadioGroupContext.Provider
@@ -49,16 +52,6 @@ RadioGroup.propTypes = {
   full: bool,
   children: node,
   style: shape({}),
-};
-
-RadioGroup.defaultProps = {
-  name: '',
-  onChange: () => {},
-  selectedValue: '',
-  small: false,
-  full: false,
-  children: null,
-  style: {},
 };
 
 export default RadioGroup;

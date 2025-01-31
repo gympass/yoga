@@ -32,7 +32,17 @@ const StyledMenuList = styled(MenuListRoot)`
 `;
 
 const MenuList = forwardRef(
-  ({ children, align, alignOffset, side, sideOffset, zIndex }, ref) => {
+  (
+    {
+      children,
+      align = 'start',
+      alignOffset = 0,
+      side = 'bottom',
+      sideOffset = 4,
+      zIndex = 'auto',
+    },
+    ref,
+  ) => {
     return (
       <Portal>
         <StyledMenuList
@@ -70,14 +80,6 @@ MenuList.propTypes = {
 
   /** Add z-index value to Menu.List. Set to 'auto' by default */
   zIndex: string || number,
-};
-
-MenuList.defaultProps = {
-  align: 'start',
-  alignOffset: 0,
-  side: 'bottom',
-  sideOffset: 4,
-  zIndex: 'auto',
 };
 
 MenuList.displayName = 'Menu.List';

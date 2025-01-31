@@ -5,8 +5,27 @@ import { media } from '@gympass/yoga-helpers';
 
 const { breakpoints } = tokens;
 
+const defaultProps = {
+  xxs: undefined,
+  xs: undefined,
+  sm: undefined,
+  md: undefined,
+  lg: undefined,
+  xl: undefined,
+  xxl: undefined,
+  xxxl: undefined,
+  'xxs-start': undefined,
+  'xs-start': undefined,
+  'sm-start': undefined,
+  'md-start': undefined,
+  'lg-start': undefined,
+  'xl-start': undefined,
+  'xxl-start': undefined,
+  'xxxl-start': undefined,
+};
+
 const Hide = styled.div`
-  ${props =>
+  ${(props = defaultProps) =>
     Object.keys(props)
       .filter(prop => props[prop] && Object.keys(breakpoints).includes(prop))
       .map(breakpoint => media.hide[breakpoint])}

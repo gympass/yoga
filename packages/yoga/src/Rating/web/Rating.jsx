@@ -25,22 +25,32 @@ const RatingWrapper = styled.div`
   `}
 `;
 
+const noop = () => {};
+
+const defaultIcon = {
+  type: StarFilled,
+  size: 12,
+};
+
 /** Use the Rating component to view other people's opinions and experiences. */
 const Rating = ({
   value,
-  max,
-  readOnly,
-  onRate,
-  onMouseOver,
-  onMouseMove,
-  onMouseLeave,
+  max = 5,
+  readOnly = true,
+  onRate = noop,
+  onMouseOver = noop,
+  onMouseMove = noop,
+  onMouseLeave = noop,
   theme: {
     yoga: {
       colors,
       components: { rating },
     },
   },
-  icon: { type: Icon = StarFilled, size: iconSize = rating.icon.size },
+  icon: {
+    type: Icon = StarFilled,
+    size: iconSize = rating.icon.size,
+  } = defaultIcon,
   ...rest
 }) => {
   const wrapperRef = useRef(null);
@@ -151,20 +161,6 @@ Rating.propTypes = {
   onMouseOver: func,
   onMouseMove: func,
   onMouseLeave: func,
-};
-
-Rating.defaultProps = {
-  value: undefined,
-  icon: {
-    type: StarFilled,
-    size: 12,
-  },
-  max: 5,
-  readOnly: true,
-  onRate: rating => {}, // eslint-disable-line no-unused-vars
-  onMouseOver: () => {},
-  onMouseMove: () => {},
-  onMouseLeave: () => {},
 };
 
 export default withTheme(Rating);

@@ -35,9 +35,4 @@ Line.propTypes = {
   totalSteps: number,
 };
 
-Line.defaultProps = {
-  activeStep: 0,
-  totalSteps: 0,
-};
-
 export default Line;

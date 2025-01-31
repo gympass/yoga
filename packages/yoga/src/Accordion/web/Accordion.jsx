@@ -202,10 +202,10 @@ const Accordion = ({
   title,
   subtitle,
   children,
-  disabled,
-  expanded,
-  small,
-  hasHorizontalPadding,
+  disabled = false,
+  expanded = false,
+  small = false,
+  hasHorizontalPadding = true,
   ...props
 }) => {
   const [open, setOpen] = useState(expanded);
@@ -270,15 +270,6 @@ Accordion.propTypes = {
   expanded: bool,
   small: bool,
   hasHorizontalPadding: bool,
-};
-
-Accordion.defaultProps = {
-  title: undefined,
-  subtitle: undefined,
-  disabled: false,
-  expanded: false,
-  small: false,
-  hasHorizontalPadding: true,
 };
 
 export default Accordion;

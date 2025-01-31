@@ -11,19 +11,21 @@ const SpinnerContainer = styled.div`
   transform: translate(-50%, -50%);
 `;
 
+const noop = () => {};
+
 /** Buttons make common actions more obvious and help users more easily perform them. Buttons use labels and sometimes icons to communicate the action that will occur when the user touches them. */
 const Button = forwardRef(
   (
     {
-      children,
-      onClick,
-      full,
-      disabled,
-      inverted,
-      small,
-      secondary,
+      children = 'Button',
+      onClick = noop,
+      full = false,
+      disabled = undefined,
+      inverted = false,
+      small = false,
+      secondary = false,
       icon: Icon,
-      isLoading,
+      isLoading = false,
       ...props
     },
     ref,
@@ -75,20 +77,6 @@ Button.propTypes = {
   /** an Icon from yoga-icons package */
   icon: oneOfType([node, func]),
   href: string,
-};
-
-Button.defaultProps = {
-  ariaLabel: undefined,
-  children: 'Button',
-  disabled: undefined,
-  full: false,
-  inverted: false,
-  isLoading: false,
-  onClick: () => {},
-  small: false,
-  secondary: false,
-  icon: undefined,
-  href: undefined,
 };
 
 Button.displayName = 'Button';

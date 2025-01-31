@@ -53,8 +53,8 @@ const StyledSkeleton = styled.div`
   `}
 `;
 
-function Skeleton(props) {
-  return <StyledSkeleton {...props} />;
+function Skeleton({ animation = 'pulse', color = 'primary', ...rest }) {
+  return <StyledSkeleton {...rest} animation={animation} color={color} />;
 }
 
 Skeleton.propTypes = {
@@ -108,12 +108,6 @@ Skeleton.propTypes = {
    * Determine if the animation will 'pulse' or false;
    */
   animation: oneOf(['pulse', false]),
-};
-
-Skeleton.defaultProps = {
-  variant: undefined,
-  animation: 'pulse',
-  color: 'primary',
 };
 
 export default Skeleton;

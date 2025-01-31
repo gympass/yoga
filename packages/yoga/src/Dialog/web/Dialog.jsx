@@ -81,12 +81,12 @@ const CloseButton = styled(Button.Icon)`
 const Dialog = React.forwardRef(
   (
     {
-      isOpen,
-      hideCloseButton,
+      isOpen = false,
+      hideCloseButton = false,
       children,
       dialogId,
       onClose,
-      zIndex,
+      zIndex = 3,
       closeLabel,
       className,
       ...props
@@ -180,16 +180,6 @@ Dialog.propTypes = {
   className: string,
   zIndex: number,
   children: node.isRequired,
-};
-
-Dialog.defaultProps = {
-  isOpen: false,
-  hideCloseButton: false,
-  onClose: undefined,
-  closeLabel: undefined,
-  className: undefined,
-  zIndex: 3,
-  dialogId: undefined,
 };
 
 Dialog.displayName = 'Dialog';

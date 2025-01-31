@@ -42,18 +42,16 @@ const StyledList = styled.ul`
 /** Lists are a continuous group of text or images. They are composed of items
 containing primary and supplemental actions, which are represented by icons and
 text. */
-const List = React.forwardRef(({ horizontal, divided, ...rest }, ref) => (
-  <StyledList horizontal={horizontal} divided={divided} ref={ref} {...rest} />
-));
+
+const List = React.forwardRef(
+  ({ horizontal = false, divided = true, ...rest }, ref) => (
+    <StyledList horizontal={horizontal} divided={divided} ref={ref} {...rest} />
+  ),
+);
 
 List.propTypes = {
   horizontal: PropTypes.bool,
   divided: PropTypes.bool,
-};
-
-List.defaultProps = {
-  horizontal: false,
-  divided: true,
 };
 
 List.displayName = 'List';

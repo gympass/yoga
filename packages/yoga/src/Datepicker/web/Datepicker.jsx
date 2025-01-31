@@ -165,23 +165,24 @@ const ErrorWrapper = styled(Text.Small)`
 export const toUTC = date => {
   return new Date(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate());
 };
+
 function Datepicker({
-  fullWidth,
+  fullWidth = false,
   type,
   placeholder,
   startDate,
   endDate,
   onSelectSingle,
-  disabled,
+  disabled = false,
   onSelectRange,
   customOnSelectRange,
-  disablePastDates,
-  disableFutureDates,
+  disablePastDates = false,
+  disableFutureDates = false,
   disablePastFrom,
   disableFutureFrom,
   error,
   onOpen,
-  displayEndDateOnly,
+  displayEndDateOnly = false,
   ...props
 }) {
   const [open, setOpen] = useState();
@@ -349,24 +350,6 @@ Datepicker.propTypes = {
   error: string,
   onOpen: func,
   displayEndDateOnly: bool,
-};
-
-Datepicker.defaultProps = {
-  fullWidth: false,
-  placeholder: undefined,
-  startDate: undefined,
-  endDate: undefined,
-  disabled: false,
-  onSelectSingle: undefined,
-  onSelectRange: undefined,
-  customOnSelectRange: undefined,
-  disablePastDates: false,
-  disableFutureDates: false,
-  disablePastFrom: undefined,
-  disableFutureFrom: undefined,
-  error: undefined,
-  onOpen: undefined,
-  displayEndDateOnly: false,
 };
 
 export default Datepicker;

@@ -89,12 +89,14 @@ const Button = styled.button`
   ${truncateStyle}
 `;
 
+const emptyObj = {};
+
 const ListItem = withTheme(props => {
   const {
     text,
-    truncate,
+    truncate = true,
     icon: Icon,
-    buttonProps,
+    buttonProps = emptyObj,
     theme: yogaTheme,
     children,
     onClick,
@@ -144,14 +146,6 @@ ListItem.propTypes = {
   onClick: func,
   children: node,
   truncate: bool,
-};
-
-ListItem.defaultProps = {
-  truncate: true,
-  icon: undefined,
-  buttonProps: {},
-  onClick: undefined,
-  children: undefined,
 };
 
 export { List, ListItem };
