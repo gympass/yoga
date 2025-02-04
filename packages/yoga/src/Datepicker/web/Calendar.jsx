@@ -183,10 +183,10 @@ function Calendar({
   type,
   startDate,
   endDate,
-  onSelectSingle,
-  onSelectRange,
-  disablePastDates,
-  disableFutureDates,
+  onSelectSingle = null,
+  onSelectRange = null,
+  disablePastDates = false,
+  disableFutureDates = false,
   disablePastFrom,
   disableFutureFrom,
 }) {
@@ -431,17 +431,6 @@ Calendar.propTypes = {
   disableFutureDates: bool,
   disablePastFrom: instanceOf(Date),
   disableFutureFrom: instanceOf(Date),
-};
-
-Calendar.defaultProps = {
-  startDate: undefined,
-  endDate: undefined,
-  onSelectSingle: null,
-  onSelectRange: null,
-  disablePastDates: false,
-  disableFutureDates: false,
-  disablePastFrom: undefined,
-  disableFutureFrom: undefined,
 };
 
 export default Calendar;

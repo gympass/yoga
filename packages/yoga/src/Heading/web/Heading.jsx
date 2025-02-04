@@ -6,7 +6,7 @@ import Title from './Title';
 import BackButton from './BackButton';
 import RightButton from './RightButton';
 
-const Heading = ({ children, noPadding, ...props }) => {
+const Heading = ({ children, noPadding = false, ...props }) => {
   let backButton = null;
   let title = null;
   const rightButtons = [];
@@ -44,12 +44,6 @@ Heading.propTypes = {
   ]),
   noPadding: bool,
   bg: PropTypes.string,
-};
-
-Heading.defaultProps = {
-  children: undefined,
-  noPadding: false,
-  bg: undefined,
 };
 
 export default Heading;

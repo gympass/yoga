@@ -147,22 +147,25 @@ const Match = styled.mark`
   `}
 `;
 
+const noop = () => {};
+const emptyArr = [];
+
 /** The autocomplete is a normal input field enhanced by a panel of suggested options. */
 const AutoComplete = React.forwardRef(
   (
     {
       className,
       style,
-      full,
-      options,
-      onChange,
-      onClean,
-      onSelect,
+      full = false,
+      options = emptyArr,
+      onChange = noop,
+      onClean = noop,
+      onSelect = noop,
       value,
       error,
-      openSuggestionsAriaLabel,
-      closeSuggestionsAriaLabel,
-      shouldFilterOptions,
+      openSuggestionsAriaLabel = 'Open suggestions',
+      closeSuggestionsAriaLabel = 'Close suggestions',
+      shouldFilterOptions = true,
       ...props
     },
     ref,
@@ -331,21 +334,6 @@ AutoComplete.propTypes = {
   closeSuggestionsAriaLabel: string,
   /** flag to enable options filtering */
   shouldFilterOptions: bool,
-};
-
-AutoComplete.defaultProps = {
-  className: undefined,
-  full: false,
-  options: [],
-  style: undefined,
-  onSelect: () => {},
-  onChange: () => {},
-  onClean: () => {},
-  value: undefined,
-  error: undefined,
-  openSuggestionsAriaLabel: 'Open suggestions',
-  closeSuggestionsAriaLabel: 'Close suggestions',
-  shouldFilterOptions: true,
 };
 
 export default AutoComplete;

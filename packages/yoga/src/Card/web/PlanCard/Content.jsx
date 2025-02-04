@@ -77,15 +77,15 @@ const EnhancePrice = styled(Text.Medium)`
 
 const PlanCardContent = ({
   title,
-  badgeColor,
-  subtitle,
-  description,
-  currency,
-  suffix,
-  price,
-  period,
-  extra,
-  children,
+  badgeColor = null,
+  subtitle = null,
+  description = null,
+  currency = null,
+  suffix = null,
+  price = null,
+  period = null,
+  extra = null,
+  children = null,
   ...rest
 }) => (
   <Wrapper {...rest}>
@@ -126,18 +126,6 @@ PlanCardContent.propTypes = {
   children: node,
   /** color of the badge attached to the title  */
   badgeColor: string,
-};
-
-PlanCardContent.defaultProps = {
-  children: null,
-  description: null,
-  subtitle: null,
-  currency: null,
-  suffix: null,
-  price: null,
-  period: null,
-  extra: null,
-  badgeColor: null,
 };
 
 PlanCardContent.displayName = 'PlanCard.Content';

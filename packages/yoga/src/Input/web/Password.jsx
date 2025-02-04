@@ -81,10 +81,10 @@ const IconWrapper = styled.div`
 `;
 
 const Password = ({
-  disabled,
+  disabled = false,
   style,
   className,
-  full,
+  full = false,
   showPasswordAriaLabel,
   hidePasswordAriaLabel,
   ...props
@@ -149,15 +149,6 @@ Password.propTypes = {
   showPasswordAriaLabel: string,
   hidePasswordAriaLabel: string,
   style: shape({}),
-};
-
-Password.defaultProps = {
-  className: undefined,
-  disabled: false,
-  full: false,
-  style: undefined,
-  showPasswordAriaLabel: undefined,
-  hidePasswordAriaLabel: undefined,
 };
 
 export default Password;

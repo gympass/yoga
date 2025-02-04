@@ -19,10 +19,10 @@ const CardStyled = styled.section`
   ${
     hasShadow
       ? `
-          padding: 
-            ${card.padding.top}px 
+          padding:
+            ${card.padding.top}px
             ${card.padding.right}px
-            ${card.padding.bottom}px 
+            ${card.padding.bottom}px
             ${card.padding.left}px;
           box-shadow: ${card.elevation};
         `
@@ -54,12 +54,12 @@ const Ribbon = styled(Text.Tiny)`
   margin-left: -${card.padding.left}px;
   margin-bottom: ${card.padding.bottom}px;
 
-  padding: 
+  padding:
     ${spacing.xxxsmall}px
     ${spacing.xsmall}px
     ${spacing.xxxsmall}px
     ${spacing.small}px;
-  
+
   border-top-right-radius: ${card.ribbon.radius}px;
   border-bottom-right-radius: ${card.ribbon.radius}px;
 
@@ -69,16 +69,20 @@ const Ribbon = styled(Text.Tiny)`
   `}
 `;
 
-const Card = React.forwardRef(({ ribbon, children, ...rest }, ref) => (
-  <CardStyled ref={ref} {...rest}>
-    {Object.keys(ribbon).length > 0 && (
-      <Ribbon variant={ribbon.variant} as="span">
-        {ribbon.text}
-      </Ribbon>
-    )}
-    {children}
-  </CardStyled>
-));
+const emptyObj = {};
+
+const Card = React.forwardRef(
+  ({ ribbon = emptyObj, children = null, hasShadow = true, ...rest }, ref) => (
+    <CardStyled ref={ref} hasShadow={hasShadow} {...rest}>
+      {Object.keys(ribbon).length > 0 && (
+        <Ribbon variant={ribbon.variant} as="span">
+          {ribbon.text}
+        </Ribbon>
+      )}
+      {children}
+    </CardStyled>
+  ),
+);
 
 Card.propTypes = {
   /** text: the content inside the Card Ribbon.
@@ -111,12 +115,6 @@ Card.propTypes = {
   children: node,
   /** applies a shadow to the card (enabled by default) */
   hasShadow: bool,
-};
-
-Card.defaultProps = {
-  ribbon: {},
-  children: null,
-  hasShadow: true,
 };
 
 Card.displayName = 'Card';

@@ -91,28 +91,30 @@ const LeftElementWrapper = styled.div`
   `}
 `;
 
+const noop = () => {};
+
 const Input = React.forwardRef(
   (
     {
-      cleanable,
+      cleanable = true,
       children,
-      disabled,
+      disabled = false,
       error,
-      full,
+      full = false,
       helper,
       label,
       ariaLabel,
       maxLength,
-      readOnly,
+      readOnly = false,
       style,
-      value,
-      onChange,
-      onClean,
-      hideMaxLength,
+      value = '',
+      onChange = noop,
+      onClean = noop,
+      hideMaxLength = false,
       rightIcon,
       a11yId,
-      closeAriaLabel,
-      includeAriaAttributes,
+      closeAriaLabel = 'Clear',
+      includeAriaAttributes = true,
       leftElement,
       ...props
     },
@@ -284,31 +286,6 @@ Input.propTypes = {
 
   /** element on the left */
   leftElement: node,
-};
-
-Input.defaultProps = {
-  className: undefined,
-  children: undefined,
-  cleanable: true,
-  disabled: false,
-  error: undefined,
-  full: false,
-  helper: undefined,
-  label: undefined,
-  ariaLabel: undefined,
-  maxLength: undefined,
-  readOnly: false,
-  style: undefined,
-  value: '',
-  onChange: () => {},
-  onClean: () => {},
-  hideMaxLength: false,
-  placeholder: undefined,
-  rightIcon: undefined,
-  a11yId: undefined,
-  closeAriaLabel: 'Clear',
-  includeAriaAttributes: true,
-  leftElement: undefined,
 };
 
 export default Input;

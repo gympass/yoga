@@ -71,14 +71,4 @@ Helper.propTypes = {
   a11yId: string,
 };
 
-Helper.defaultProps = {
-  disabled: undefined,
-  error: undefined,
-  helper: undefined,
-  maxLength: undefined,
-  length: undefined,
-  hideMaxLength: undefined,
-  a11yId: undefined,
-};
-
 export default Helper;

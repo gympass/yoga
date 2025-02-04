@@ -18,6 +18,7 @@ module.exports = {
     'import/extensions': 0,
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': [2, { ignore: ['theme'] }],
+    'react/require-default-props': 'off',
     'import/no-extraneous-dependencies': 0,
     'no-plusplus': 0,
     'no-restricted-globals': 0,

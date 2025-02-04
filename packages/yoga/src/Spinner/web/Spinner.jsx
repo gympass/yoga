@@ -50,29 +50,31 @@ const StyledSpinner = styled.span`
   `}
 `;
 
-const Spinner = React.forwardRef(({ size, color, theme }, ref) => {
-  return (
-    <StyledSpinner
-      color={get(theme.yoga.colors, color, color)}
-      size={get(theme.yoga.spacing, size, size)}
-      ref={ref}
-      aria-label="loading-icon"
-    >
-      <span className="spinner">
-        <svg className="circular" viewBox="22 22 44 44">
-          <circle
-            className="path"
-            fill="none"
-            strokeWidth="3.6"
-            cx="44"
-            cy="44"
-            r="20.2"
-          />
-        </svg>
-      </span>
-    </StyledSpinner>
-  );
-});
+const Spinner = React.forwardRef(
+  ({ size = 'medium', color = 'primary', theme }, ref) => {
+    return (
+      <StyledSpinner
+        color={get(theme.yoga.colors, color, color)}
+        size={get(theme.yoga.spacing, size, size)}
+        ref={ref}
+        aria-label="loading-icon"
+      >
+        <span className="spinner">
+          <svg className="circular" viewBox="22 22 44 44">
+            <circle
+              className="path"
+              fill="none"
+              strokeWidth="3.6"
+              cx="44"
+              cy="44"
+              r="20.2"
+            />
+          </svg>
+        </span>
+      </StyledSpinner>
+    );
+  },
+);
 
 const commonSizes = [
   'xxxsmall',
@@ -91,11 +93,6 @@ const commonSizes = [
 Spinner.propTypes = {
   size: oneOfType([oneOf(commonSizes), string, number]),
   color: string,
-};
-
-Spinner.defaultProps = {
-  size: 'medium',
-  color: 'primary',
 };
 
 export default withTheme(Spinner);

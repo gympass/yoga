@@ -87,7 +87,7 @@ const Link = styled(Button)`
   }}
 `;
 
-const ButtonLink = forwardRef(({ ...rest }, ref) => {
+const ButtonLink = forwardRef(({ secondary = false, ...rest }, ref) => {
   const props = Object.fromEntries(
     Object.entries(rest).filter(([key]) => key !== 'isLoading'),
   );
@@ -95,7 +95,13 @@ const ButtonLink = forwardRef(({ ...rest }, ref) => {
   const { disabled } = props;
 
   return (
-    <Link {...props} disabled={disabled} aria-disabled={disabled} ref={ref} />
+    <Link
+      {...props}
+      secondary={secondary}
+      disabled={disabled}
+      aria-disabled={disabled}
+      ref={ref}
+    />
   );
 });
 
@@ -105,13 +111,6 @@ ButtonLink.propTypes = {
   href: string,
   /** an Icon from yoga-icons package */
   icon: oneOfType([node, func]),
-};
-
-ButtonLink.defaultProps = {
-  disabled: undefined,
-  secondary: false,
-  href: undefined,
-  icon: undefined,
 };
 
 ButtonLink.displayName = 'Button.Link';

@@ -12,12 +12,12 @@ const Popover = React.forwardRef(
       children,
       title,
       description,
-      position,
-      width,
-      height,
-      zIndex,
+      position = 'bottom-center',
+      width = 265,
+      height = 200,
+      zIndex = 1,
       a11yId,
-      hover,
+      hover = false,
       ...props
     },
     forwardedRef,
@@ -112,16 +112,6 @@ Popover.propTypes = {
   height: number,
   zIndex: number,
   hover: bool,
-};
-
-Popover.defaultProps = {
-  a11yId: undefined,
-  title: undefined,
-  position: 'bottom-center',
-  width: 265,
-  height: 200,
-  zIndex: 1,
-  hover: false,
 };
 
 export default Popover;

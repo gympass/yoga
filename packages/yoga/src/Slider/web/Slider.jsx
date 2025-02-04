@@ -31,17 +31,20 @@ const StyledRange = styled(RCRange)`
   }
 `;
 
+const emptyArr = [];
+const defaultValues = [0];
+
 /** Sliders allow users to make selections from a range of values. Sliders
 reflect a range of values along a bar, from which users may select a single
 value. They are ideal for adjusting settings such as volume, brightness, or
 applying image filters. */
 const Slider = ({
-  snapped,
-  tooltip,
-  values,
-  max,
+  snapped = false,
+  tooltip = emptyArr,
+  values = defaultValues,
+  max = 10,
   maxLabel,
-  min,
+  min = 0,
   minLabel,
   theme: {
     yoga: {
@@ -221,16 +224,6 @@ Slider.propTypes = {
   ),
   /** an array that accepts one or two numbers, this determines how many markers will be displayed */
   values: arrayOf(number),
-};
-
-Slider.defaultProps = {
-  max: 10,
-  maxLabel: undefined,
-  min: 0,
-  minLabel: undefined,
-  snapped: false,
-  tooltip: [],
-  values: [0],
 };
 
 Slider.displayName = 'Slider';
