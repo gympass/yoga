@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent, waitFor, screen } from '@testing-library/react';
+import { render, fireEvent, waitFor } from '@testing-library/react';
 
 import { ThemeProvider, Input } from '../..';
 
@@ -80,15 +80,13 @@ describe('<Input.Phone />', () => {
     it(`Should only format countries numbers when props is given`, () => {
       const USPhone = numbersFormats[1];
 
-      render(
+      const { queryByDisplayValue } = render(
         <ThemeProvider>
           <Input.Phone countries={['br', 'pt']} value={USPhone.base} />
         </ThemeProvider>,
       );
 
-      expect(
-        screen.queryByDisplayValue(USPhone.expected),
-      ).not.toBeInTheDocument();
+      expect(queryByDisplayValue(USPhone.expected)).not.toBeInTheDocument();
     });
 
     it('should prefix the phone number with newly selected country dial code', async () => {
