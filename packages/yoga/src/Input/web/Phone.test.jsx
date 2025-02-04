@@ -77,7 +77,7 @@ describe('<Input.Phone />', () => {
       });
     });
 
-    it(`Should only format countries numbers when props is given`, () => {
+    it(`Should only format and show countries numbers when props is given`, () => {
       const USPhone = numbersFormats[1];
 
       const { queryByDisplayValue } = render(
