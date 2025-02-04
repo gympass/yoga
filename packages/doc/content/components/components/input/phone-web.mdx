@@ -1,12 +1,10 @@
-### Usage
-
 ```javascript state
 render(() => {
   const [value, setValue] = useState('');
 
   return (
     <Input.Phone
-      defaultCountry='br'
+      defaultCountry="br"
       label="Mobile number"
       value={value}
       onChange={(value = '') => {
@@ -18,7 +16,3 @@ render(() => {
   );
 });
 ```
-
-### Props
-
-<PropsTable component="Input" platform="web" />

@@ -10,4 +10,32 @@ import PhoneWeb from './phone-web.mdx';
 
 Input.Phone let users enter and edit telephone numbers contextualized to their country.
 
+### Default
+
 <PhoneWeb />
+
+### With countries props for filtering countries
+
+```javascript state
+render(() => {
+  const [value, setValue] = useState('');
+  const countries = ['br', 'pt'];
+  return (
+    <Input.Phone
+      defaultCountry="br"
+      label="Mobile number"
+      value={value}
+      countries={countries}
+      onChange={(value = '') => {
+        const newValue = value.length > 0 ? `+${value}` : '';
+        setValue(newValue);
+      }}
+      helper={'This is an helper text'}
+    />
+  );
+});
+```
+
+### Props
+
+<PropsTable component="Input" platform="web" />
