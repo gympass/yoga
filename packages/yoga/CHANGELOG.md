@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.127.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.127.2...@gympass/yoga@7.127.3) (2025-02-04)
+
+
+### Bug Fixes
+
+* make buttonIcon aria-disabled consistent with button disabled prop ([c333954](https://github.com/Gympass/yoga/commit/c333954052b3b7e799145e96064cfc92453b6724))
+
+
+
+
+
 ## [7.127.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.127.1...@gympass/yoga@7.127.2) (2025-01-21)
 
 **Note:** Version bump only for package @gympass/yoga
