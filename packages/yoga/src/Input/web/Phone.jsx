@@ -36,6 +36,7 @@ const Phone = React.forwardRef(
       label = '',
       placeholder = '+55 (11) 999999999',
       value = '',
+      countries = phoneBaseSettings.onlyCountries,
       onChange = noop,
       cleanable = true,
       ...rest
@@ -50,6 +51,10 @@ const Phone = React.forwardRef(
         currentCountry.current = countryCode;
       }
     }, []);
+
+    const availableCountries = {
+      onlyCountries: countries,
+    };
 
     return (
       <Input
@@ -69,7 +74,7 @@ const Phone = React.forwardRef(
       >
         <S.Container error={error} disabled={disabled} full={full}>
           <BasePhoneInput
-            {...phoneBaseSettings}
+            {...availableCountries}
             ref={phoneRef => {
               inputRef.current = phoneRef?.numberInputRef;
             }}
@@ -115,6 +120,8 @@ Phone.propTypes = {
   onChange: func,
   /** placeholder to show when the input is cleared */
   placeholder: string,
+  /** countries for mask field and dropdown, make sure to use ISO 3166-1 alpha-2 lowercase */
+  countries: PropTypes.arrayOf(string),
 };
 
 export default Phone;
