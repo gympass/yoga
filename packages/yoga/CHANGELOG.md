@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.127.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.127.3...@gympass/yoga@7.127.4) (2025-02-04)
+
+
+### Bug Fixes
+
+* add back missed default param on banner component ([1fcc3b3](https://github.com/Gympass/yoga/commit/1fcc3b30feaa137cd49963633be397c45e1730bc))
+
+
+
+
+
 ## [7.127.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.127.2...@gympass/yoga@7.127.3) (2025-02-04)
 
 
