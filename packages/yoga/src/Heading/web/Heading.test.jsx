@@ -76,7 +76,7 @@ describe('<Heading />', () => {
   });
 
   it('should have aria-label', () => {
-    const { getAllByLabelText } = render(
+    const { getByLabelText } = render(
       <ThemeProvider>
         <Heading noPadding>
           <Title>Gympass</Title>
@@ -90,7 +90,7 @@ describe('<Heading />', () => {
       </ThemeProvider>,
     );
 
-    expect(getAllByLabelText('labelAriaText')).toHaveLength(1);
+    expect(getByLabelText('labelAriaText')).toBeTruthy();
   });
 
   it('should override the background color', () => {
