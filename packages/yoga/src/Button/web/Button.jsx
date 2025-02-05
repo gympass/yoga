@@ -26,6 +26,7 @@ const Button = forwardRef(
       secondary = false,
       icon: Icon,
       isLoading = false,
+      'aria-label': ariaLabel,
       ...props
     },
     ref,
@@ -49,6 +50,7 @@ const Button = forwardRef(
         small={small}
         secondary={secondary}
         isLoading={isLoading}
+        aria-label={ariaLabel}
         {...finalProps}
       >
         {Icon && <Icon role="img" />}
@@ -77,6 +79,7 @@ Button.propTypes = {
   /** an Icon from yoga-icons package */
   icon: oneOfType([node, func]),
   href: string,
+  'aria-label': string,
 };
 
 Button.displayName = 'Button';
