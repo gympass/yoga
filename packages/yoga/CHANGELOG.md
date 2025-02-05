@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.128.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.127.4...@gympass/yoga@7.128.0) (2025-02-05)
+
+
+### Features
+
+* **component:** add countries props ([f1c26de](https://github.com/Gympass/yoga/commit/f1c26de76cedf68c255b64a4156d1c3413a73ac9))
+
+
+
+
+
 ## [7.127.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.127.3...@gympass/yoga@7.127.4) (2025-02-04)
 
 
