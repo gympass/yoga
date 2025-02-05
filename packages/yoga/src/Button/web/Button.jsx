@@ -67,7 +67,6 @@ const Button = forwardRef(
 );
 
 Button.propTypes = {
-  ariaLabel: string,
   children: node,
   disabled: bool,
   full: bool,
