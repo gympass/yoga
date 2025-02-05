@@ -77,6 +77,31 @@ describe('<Input.Phone />', () => {
       });
     });
 
+    it(`Should only format and show countries numbers when props is given`, () => {
+      const USPhone = numbersFormats[1];
+
+      const { queryByDisplayValue } = render(
+        <ThemeProvider>
+          <Input.Phone countries={['br', 'pt']} value={USPhone.base} />
+        </ThemeProvider>,
+      );
+
+      expect(queryByDisplayValue(USPhone.expected)).not.toBeInTheDocument();
+    });
+
+    it(`Should return all countries validation if countries equals to empty array`, () => {
+      const USPhone = numbersFormats[1];
+
+      const { getAllByRole } = render(
+        <ThemeProvider>
+          <Input.Phone countries={[]} value={USPhone.base} />
+        </ThemeProvider>,
+      );
+
+      fireEvent.click(getAllByRole('button')[0]);
+      expect(getAllByRole('option').length).toBe(12);
+    });
+
     it('should prefix the phone number with newly selected country dial code', async () => {
       const { getByRole, getByText, getByDisplayValue } = render(
         <ThemeProvider>
