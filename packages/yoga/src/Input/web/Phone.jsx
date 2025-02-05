@@ -53,7 +53,8 @@ const Phone = React.forwardRef(
     }, []);
 
     const availableCountries = {
-      onlyCountries: countries,
+      onlyCountries:
+        countries?.length > 0 ? countries : phoneBaseSettings.onlyCountries,
     };
 
     return (
