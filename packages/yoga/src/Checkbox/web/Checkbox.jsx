@@ -248,6 +248,7 @@ const Checkbox = ({
   inverted = false,
   indeterminate = false,
   ariaLabel,
+  idTest,
   theme: {
     yoga: {
       components: { checkbox },
@@ -256,7 +257,7 @@ const Checkbox = ({
   ...rest
 }) => {
   const inputRef = useRef(null);
-  const id = useId();
+  const id = idTest || useId();
   const checkboxLabelId = `checkbox-label-${id}`;
 
   const { onChange, onClick, ...restWithoutEvents } = rest;
@@ -338,6 +339,7 @@ Checkbox.propTypes = {
   style: shape({}),
   className: string,
   ariaLabel: string,
+  idTest: string,
 };
 
 Checkbox.displayName = 'Checkbox';
