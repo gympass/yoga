@@ -75,6 +75,24 @@ describe('<Heading />', () => {
     expect(container).toMatchSnapshot();
   });
 
+  it('should have aria-label', () => {
+    const { getByLabelText } = render(
+      <ThemeProvider>
+        <Heading noPadding>
+          <Title>Gympass</Title>
+          <BackButton onClick={onClick} />
+          <RightButton
+            icon={Upload2}
+            onClick={onClick}
+            aria-label="labelAriaText"
+          />
+        </Heading>
+      </ThemeProvider>,
+    );
+
+    expect(getByLabelText('labelAriaText')).toBeTruthy();
+  });
+
   it('should override the background color', () => {
     const { container } = render(
       <ThemeProvider>

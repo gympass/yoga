@@ -58,8 +58,14 @@ const ButtonIcon = styled(Button)`
   }};
 `;
 
-const RightButton = ({ onClick, icon, ...props }) => (
-  <ButtonIcon onClick={onClick} secondary padding="xxxsmall" {...props}>
+const RightButton = ({ onClick, icon, 'aria-label': ariaLabel, ...props }) => (
+  <ButtonIcon
+    onClick={onClick}
+    secondary
+    padding="xxxsmall"
+    aria-label={ariaLabel}
+    {...props}
+  >
     <Box
       flex={1}
       display="flex"
@@ -77,6 +83,7 @@ const RightButton = ({ onClick, icon, ...props }) => (
 RightButton.propTypes = {
   onClick: PropTypes.func.isRequired,
   icon: PropTypes.elementType.isRequired,
+  'aria-label': PropTypes.string,
 };
 
 RightButton.displayName = 'Heading.RightButton';
