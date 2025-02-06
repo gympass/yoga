@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.129.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.128.0...@gympass/yoga@7.129.0) (2025-02-06)
+
+
+### Features
+
+* add ariaLabel to header button ([28b9a3c](https://github.com/Gympass/yoga/commit/28b9a3c9a1bd0b33c2d89e6bc25db647ef42e537))
+* remove props ([40c1469](https://github.com/Gympass/yoga/commit/40c1469920b47711eaf47085fa5174c6ff8f3f13))
+* update unit test ([698082b](https://github.com/Gympass/yoga/commit/698082b3075120f6261a806344e3a36288e18669))
+* update validation test ([2d61b86](https://github.com/Gympass/yoga/commit/2d61b8658e8da8073cd32b308e489b5ff04b9757))
+
+
+
+
+
 # [7.128.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.127.4...@gympass/yoga@7.128.0) (2025-02-05)
 
 
