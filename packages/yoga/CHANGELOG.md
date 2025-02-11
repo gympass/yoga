@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.129.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.129.0...@gympass/yoga@7.129.1) (2025-02-11)
+
+
+### Bug Fixes
+
+* **package:** moves yoga-icons dep to peer dependencies ([57ae6be](https://github.com/Gympass/yoga/commit/57ae6be40600ff90339cb51341de984ec7d27e77))
+* **package:** turns icons package required peer dependency ([033dcf8](https://github.com/Gympass/yoga/commit/033dcf889a9d81ff615be857c557f01fe9d85205))
+
+
+
+
+
 # [7.129.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.128.0...@gympass/yoga@7.129.0) (2025-02-06)
 
 
