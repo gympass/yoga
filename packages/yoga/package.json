@@ -38,7 +38,6 @@
   "dependencies": {
     "@gympass/yoga-common": "^1.4.1",
     "@gympass/yoga-helpers": "^1.1.1",
-    "@gympass/yoga-icons": "^1.28.0",
     "@gympass/yoga-illustrations": "^0.7.1",
     "@gympass/yoga-system": "^0.25.0",
     "@gympass/yoga-tokens": "^3.6.4",
@@ -56,6 +55,7 @@
     "react-phone-input-2": "^2.15.1"
   },
   "devDependencies": {
+    "@gympass/yoga-icons": "^1.28.0",
     "@react-native-community/eslint-config": "^3.0.1",
     "@types/styled-components": "^5.1.34",
     "babel-plugin-inline-react-svg": "^1.1.1",
@@ -63,6 +63,7 @@
     "styled-components": "^4.4.0"
   },
   "peerDependencies": {
+    "@gympass/yoga-icons": "^1.28.0",
     "@react-native-picker/picker": "^2.4.9",
     "react": ">=16",
     "react-native": "0.72.3",
