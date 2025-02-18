@@ -48,11 +48,10 @@ render(() => {
       label="Mobile number"
       value={value}
       onBlur={() => {
-        console.log('onblur');
+        console.log('custom onblur event');
       }}
       countries={countries}
       onChange={(value = '') => {
-        console.log('onchage');
         const newValue = value.length > 0 ? `+${value}` : '';
         setValue(newValue);
       }}
