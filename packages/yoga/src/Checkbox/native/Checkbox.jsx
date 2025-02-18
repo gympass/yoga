@@ -3,7 +3,7 @@ import { bool, func, string, oneOf, shape } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { TouchableWithoutFeedback, View } from 'react-native';
 import { hexToRgb } from '@gympass/yoga-common';
-import { Done } from '@gympass/yoga-icons';
+import { Check } from '@gympass/yoga-icons';
 
 const CheckboxWrapper = styled.View`
   flex-direction: row;
@@ -180,7 +180,7 @@ const Checkbox = ({
               }}
             />
             {checked && (
-              <Done
+              <Check
                 fill={checkbox.checked.icon.color}
                 style={{ position: 'absolute' }}
               />

@@ -2,7 +2,7 @@ import React from 'react';
 import { bool, string, objectOf, any, oneOf } from 'prop-types';
 import styled from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
-import { Done } from '@gympass/yoga-icons';
+import { Check } from '@gympass/yoga-icons';
 
 import { HiddenInput } from '../../shared';
 
@@ -207,7 +207,7 @@ const Checkbox = ({
             variant,
           }}
         >
-          {checked && <Done />}
+          {checked && <Check />}
         </CheckMark>
         <HiddenInput
           type="checkbox"

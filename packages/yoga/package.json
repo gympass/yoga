@@ -47,11 +47,11 @@
   "devDependencies": {
     "@testing-library/react": "^9.1.4",
     "@testing-library/react-native": "^4.1.0",
-    "@gympass/yoga-icons": "^0.9.0",
+    "@gympass/yoga-icons": "^1.28.0",
     "styled-components": "^4.4.0"
   },
   "peerDependencies": {
-    "@gympass/yoga-icons": "^0.9.0 || ^1.28.0",
+    "@gympass/yoga-icons": "^1.28.0",
     "styled-components": "^4.4.0"
   }
 }
