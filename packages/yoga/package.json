@@ -41,7 +41,8 @@
     "prop-types": "^15.7.2",
     "proxy-polyfill": "^0.3.1",
     "rc-slider": "^8.7.1",
-    "react-google-font-loader": "^1.1.0"
+    "react-google-font-loader": "^1.1.0",
+    "deprecated-react-native-prop-types": "^2.3.0"
   },
   "devDependencies": {
     "@testing-library/react": "^9.1.4",
