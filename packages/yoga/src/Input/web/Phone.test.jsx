@@ -102,6 +102,22 @@ describe('<Input.Phone />', () => {
       expect(getAllByRole('option').length).toBe(12);
     });
 
+    it(`Should call onblur event`, () => {
+      const USPhone = numbersFormats[1];
+      const onBlur = jest.fn();
+      const { getAllByRole } = render(
+        <ThemeProvider>
+          <Input.Phone onBlur={onBlur} countries={[]} value={USPhone.base} />
+        </ThemeProvider>,
+      );
+
+      const inputPhone = getAllByRole('textbox')[0];
+
+      fireEvent.blur(inputPhone);
+
+      expect(onBlur).toHaveBeenCalled();
+    });
+
     it('should prefix the phone number with newly selected country dial code', async () => {
       const { getByRole, getByText, getByDisplayValue } = render(
         <ThemeProvider>

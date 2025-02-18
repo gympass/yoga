@@ -59,6 +59,7 @@ const Phone = React.forwardRef(
 
     return (
       <Input
+        {...rest}
         {...{
           disabled,
           readOnly,
@@ -67,7 +68,6 @@ const Phone = React.forwardRef(
           helper,
           value,
           cleanable,
-          ...rest,
         }}
         ref={inputRef}
         label=""
@@ -89,6 +89,7 @@ const Phone = React.forwardRef(
               onChange(phoneNumber, options);
               onChangeCountry(options.countryCode);
             }}
+            {...rest}
             value={value}
           />
         </S.Container>
