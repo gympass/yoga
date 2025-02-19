@@ -67,7 +67,6 @@ const Phone = React.forwardRef(
           helper,
           value,
           cleanable,
-          ...rest,
         }}
         ref={inputRef}
         label=""
@@ -76,10 +75,11 @@ const Phone = React.forwardRef(
         <S.Container error={error} disabled={disabled} full={full}>
           <BasePhoneInput
             {...availableCountries}
+            {...rest}
             ref={phoneRef => {
               inputRef.current = phoneRef?.numberInputRef;
             }}
-            inputProps={{ readOnly }}
+            inputProps={{ ...rest.inputProps, readOnly }}
             disabled={disabled}
             disableDropdown={readOnly}
             country={defaultCountry}
