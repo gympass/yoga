@@ -75,6 +75,7 @@ const Phone = React.forwardRef(
         <S.Container error={error} disabled={disabled} full={full}>
           <BasePhoneInput
             {...availableCountries}
+            {...rest}
             ref={phoneRef => {
               inputRef.current = phoneRef?.numberInputRef;
             }}
@@ -89,7 +90,6 @@ const Phone = React.forwardRef(
               onChangeCountry(options.countryCode);
             }}
             value={value}
-            {...rest}
           />
         </S.Container>
       </Input>
