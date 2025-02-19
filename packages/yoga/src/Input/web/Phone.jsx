@@ -79,7 +79,7 @@ const Phone = React.forwardRef(
             ref={phoneRef => {
               inputRef.current = phoneRef?.numberInputRef;
             }}
-            inputProps={{ readOnly }}
+            inputProps={{ ...rest.inputProps, readOnly }}
             disabled={disabled}
             disableDropdown={readOnly}
             country={defaultCountry}
