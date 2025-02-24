@@ -58,4 +58,19 @@ describe('<ActionRequirement />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should match snapshot with title level 2', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <ActionRequirement
+          title="title"
+          description="description"
+          titleAsTextDisplay
+          titleLevel="h2"
+        />
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });
