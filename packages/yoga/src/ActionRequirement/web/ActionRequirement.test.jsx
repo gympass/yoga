@@ -66,7 +66,7 @@ describe('<ActionRequirement />', () => {
           title="title"
           description="description"
           titleAsTextDisplay
-          titleLevel="h2"
+          as="h2"
         />
       </ThemeProvider>,
     );

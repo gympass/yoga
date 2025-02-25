@@ -58,7 +58,7 @@ function ActionRequirement(props) {
     illustration,
     list,
     titleAsTextDisplay = false,
-    titleLevel = 'h1',
+    as = 'h1',
   } = props;
 
   let primaryButton;
@@ -79,9 +79,9 @@ function ActionRequirement(props) {
       )}
       <Content>
         {titleAsTextDisplay ? (
-          <Text.Display2 as={titleLevel}>{title}</Text.Display2>
+          <Text.Display2 as={as}>{title}</Text.Display2>
         ) : (
-          <Title as={titleLevel}>{title}</Title>
+          <Title as={as}>{title}</Title>
         )}
         <Text.Body1 mt="small" color="deep">
           {description}
@@ -105,7 +105,7 @@ ActionRequirement.propTypes = {
   illustration: oneOfType([arrayOf(node), node]),
   list: oneOfType([arrayOf(node), node]),
   titleAsTextDisplay: bool,
-  titleLevel: string,
+  as: string,
 };
 
 export default ActionRequirement;

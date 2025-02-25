@@ -533,7 +533,7 @@ exports[`<ActionRequirement /> should match snapshot with title level 2 1`] = `
 }
 
 <div>
-  <div
+  <h2
     class="c0"
     title="title"
   >
@@ -555,6 +555,6 @@ exports[`<ActionRequirement /> should match snapshot with title level 2 1`] = `
         class="c4"
       />
     </div>
-  </div>
+  </h2>
 </div>
 `;
