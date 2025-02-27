@@ -112,11 +112,136 @@ exports[`<ActionRequirement /> should default match snapshot 1`] = `
     <div
       class="c1"
     >
-      <h1
+      <h4
+        aria-level="1"
         class="c2"
       >
         title
-      </h1>
+      </h4>
+      <p
+        class="c3"
+        color="deep"
+      >
+        description
+      </p>
+      <div
+        class="c4"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ActionRequirement /> should match snapshot with aria-level 2 1`] = `
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  line-height: 40px;
+  color: #231B22;
+  font-family: NaN Holo Condensed,Rubik;
+  font-weight: 700;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+  margin-top: 16px;
+  color: #6B6B78;
+}
+
+.c4 {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (min-width:769px) {
+  .c4 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 32px;
+  }
+}
+
+@media (min-width:0px) {
+  .c0 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width:0px) {
+  .c1 {
+    width: auto;
+    margin-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    width: 520px;
+    margin-right: 120px;
+  }
+}
+
+<div>
+  <div
+    aria-level="2"
+    class="c0"
+    title="title"
+  >
+    <div
+      class="c1"
+    >
+      <p
+        aria-level="1"
+        class="c2"
+      >
+        title
+      </p>
       <p
         class="c3"
         color="deep"
@@ -271,11 +396,12 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
     <div
       class="c1"
     >
-      <h1
+      <h4
+        aria-level="1"
         class="c2"
       >
         title
-      </h1>
+      </h4>
       <p
         class="c3"
         color="deep"
@@ -418,11 +544,12 @@ exports[`<ActionRequirement /> should match snapshot with text display 1`] = `
     <div
       class="c1"
     >
-      <h1
+      <p
+        aria-level="1"
         class="c2"
       >
         title
-      </h1>
+      </p>
       <p
         class="c3"
         color="deep"
@@ -434,127 +561,5 @@ exports[`<ActionRequirement /> should match snapshot with text display 1`] = `
       />
     </div>
   </div>
-</div>
-`;
-
-exports[`<ActionRequirement /> should match snapshot with title level 2 1`] = `
-.c2 {
-  margin: 0;
-  padding: 0;
-  font-size: 40px;
-  line-height: 40px;
-  color: #231B22;
-  font-family: NaN Holo Condensed,Rubik;
-  font-weight: 700;
-}
-
-.c3 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 24px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 400;
-  margin-top: 16px;
-  color: #6B6B78;
-}
-
-.c4 {
-  margin-top: 32px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-@media (min-width:769px) {
-  .c4 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    margin-top: 32px;
-  }
-}
-
-@media (min-width:0px) {
-  .c0 {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    -webkit-flex-direction: row-reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-  }
-}
-
-@media (min-width:0px) {
-  .c1 {
-    width: auto;
-    margin-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c1 {
-    width: 520px;
-    margin-right: 120px;
-  }
-}
-
-<div>
-  <h2
-    class="c0"
-    title="title"
-  >
-    <div
-      class="c1"
-    >
-      <h2
-        class="c2"
-      >
-        title
-      </h2>
-      <p
-        class="c3"
-        color="deep"
-      >
-        description
-      </p>
-      <div
-        class="c4"
-      />
-    </div>
-  </h2>
 </div>
 `;

@@ -59,14 +59,14 @@ describe('<ActionRequirement />', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should match snapshot with title level 2', () => {
+  it('should match snapshot with aria-level 2', () => {
     const { container } = render(
       <ThemeProvider>
         <ActionRequirement
           title="title"
           description="description"
           titleAsTextDisplay
-          as="h2"
+          aria-level={2}
         />
       </ThemeProvider>,
     );

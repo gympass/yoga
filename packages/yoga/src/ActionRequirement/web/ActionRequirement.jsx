@@ -1,5 +1,5 @@
 import React from 'react';
-import { arrayOf, bool, node, oneOfType, string } from 'prop-types';
+import { arrayOf, bool, node, oneOfType, string, number } from 'prop-types';
 import styled from 'styled-components';
 import { media } from '@gympass/yoga-helpers';
 import {
@@ -58,7 +58,7 @@ function ActionRequirement(props) {
     illustration,
     list,
     titleAsTextDisplay = false,
-    as = 'h1',
+    ariaLevel = 1,
   } = props;
 
   let primaryButton;
@@ -79,9 +79,9 @@ function ActionRequirement(props) {
       )}
       <Content>
         {titleAsTextDisplay ? (
-          <Text.Display2 as={as}>{title}</Text.Display2>
+          <Text.Display2 aria-level={ariaLevel}>{title}</Text.Display2>
         ) : (
-          <Title as={as}>{title}</Title>
+          <Title aria-level={ariaLevel}>{title}</Title>
         )}
         <Text.Body1 mt="small" color="deep">
           {description}
@@ -105,7 +105,7 @@ ActionRequirement.propTypes = {
   illustration: oneOfType([arrayOf(node), node]),
   list: oneOfType([arrayOf(node), node]),
   titleAsTextDisplay: bool,
-  as: string,
+  ariaLevel: number,
 };
 
 export default ActionRequirement;
