@@ -66,7 +66,7 @@ describe('<ActionRequirement />', () => {
           title="title"
           description="description"
           titleAsTextDisplay
-          aria-level={2}
+          ariaLevelTitle={2}
         />
       </ThemeProvider>,
     );

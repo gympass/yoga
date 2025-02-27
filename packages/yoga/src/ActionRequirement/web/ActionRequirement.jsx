@@ -58,7 +58,7 @@ function ActionRequirement(props) {
     illustration,
     list,
     titleAsTextDisplay = false,
-    ariaLevel = 1,
+    ariaLevelTitle = 1,
   } = props;
 
   let primaryButton;
@@ -79,9 +79,11 @@ function ActionRequirement(props) {
       )}
       <Content>
         {titleAsTextDisplay ? (
-          <Text.Display2 aria-level={ariaLevel}>{title}</Text.Display2>
+          <Text.Display2 as="h1" aria-level={ariaLevelTitle}>
+            {title}
+          </Text.Display2>
         ) : (
-          <Title aria-level={ariaLevel}>{title}</Title>
+          <Title aria-level={ariaLevelTitle}>{title}</Title>
         )}
         <Text.Body1 mt="small" color="deep">
           {description}
@@ -105,7 +107,7 @@ ActionRequirement.propTypes = {
   illustration: oneOfType([arrayOf(node), node]),
   list: oneOfType([arrayOf(node), node]),
   titleAsTextDisplay: bool,
-  ariaLevel: number,
+  ariaLevelTitle: number,
 };
 
 export default ActionRequirement;
