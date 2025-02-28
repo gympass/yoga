@@ -58,4 +58,19 @@ describe('<ActionRequirement />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should match snapshot with aria-level 2', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <ActionRequirement
+          title="title"
+          description="description"
+          titleAsTextDisplay
+          ariaLevelTitle={2}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });
