@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.129.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.129.2...@gympass/yoga@7.129.3) (2025-02-28)
+
+
+### Bug Fixes
+
+* add prop titleLevel to ActionRequirement component to work as usage ([2818eb3](https://github.com/Gympass/yoga/commit/2818eb329045e4a9a28be0d59289f559c285f38d))
+* add test case ([d1e690b](https://github.com/Gympass/yoga/commit/d1e690b43bde702768f36158e3cc64ccb39048cd))
+* add test case snapshot ([016e207](https://github.com/Gympass/yoga/commit/016e2078b4b9e73c5759dc0aa9955e6cbd561e52))
+* change name to as prop ([98b20e8](https://github.com/Gympass/yoga/commit/98b20e8b045363863659e28ec28892b433622260))
+
+
+
+
+
 ## [7.129.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.129.1...@gympass/yoga@7.129.2) (2025-02-19)
 
 **Note:** Version bump only for package @gympass/yoga
