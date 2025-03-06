@@ -20,7 +20,11 @@ import AutomaticInvite from './svg/automatic_invite.svg';
 import Bank from './svg/bank.svg';
 import BankStatement from './svg/bank_statement.svg';
 import BarChart from './svg/bar_chart.svg';
+import BeautyCenter from './svg/beauty-center.svg';
 import BeautySalon from './svg/beauty-salon.svg';
+import Bike from './svg/bike.svg';
+import BioimpedanceScale from './svg/bioimpedance-scale.svg';
+import BodyMassage from './svg/body-massage.svg';
 import BookingFilled from './svg/booking_filled.svg';
 import Booking from './svg/booking.svg';
 import Boxing from './svg/boxing.svg';
@@ -51,6 +55,8 @@ import Compass from './svg/compass.svg';
 import Copy from './svg/copy.svg';
 import CornerUpLeft from './svg/corner_up_left.svg';
 import CornerUpRight from './svg/corner_up_right.svg';
+import Court from './svg/court.svg';
+import CoworkingSpace from './svg/coworking-space.svg';
 import CreditCard from './svg/credit_card.svg';
 import Cycling from './svg/cycling.svg';
 import Dance from './svg/dance.svg';
@@ -62,6 +68,7 @@ import Dislike from './svg/dislike.svg';
 import Doc from './svg/doc.svg';
 import Download from './svg/download.svg';
 import Draggable from './svg/draggable.svg';
+import DrinkingFountain from './svg/drinking-fountain.svg';
 import Dumbbell from './svg/dumbbell.svg';
 import DumbbellFilled from './svg/dumbbell_filled.svg';
 import Edit from './svg/edit.svg';
@@ -74,9 +81,12 @@ import FamilyMemberFilled from './svg/family_member_filled.svg';
 import FavoriteFilled from './svg/favorite_filled.svg';
 import Favorite from './svg/favorite.svg';
 import Filter from './svg/filter.svg';
+import FreeWeight from './svg/free-weight.svg';
+import FunctionalTraining from './svg/functional-training.svg'
 import FunnelFilter from './svg/funnel_filter.svg';
 import GenderNeutral from './svg/gender_neutral.svg';
 import Google from './svg/google.svg';
+import GrippySocks from './svg/grippy-socks.svg';
 import Gympass from './svg/gympass.svg';
 import Headphone from './svg/headphone.svg';
 import Heartbeat from './svg/heartbeat.svg';
@@ -110,6 +120,7 @@ import ManualInvite from './svg/manual_invite.svg';
 import MapPin from './svg/map_pin.svg';
 import Map from './svg/map.svg';
 import MartialArts from './svg/martial-arts.svg';
+import MassageChair from './svg/massage-chair.svg';
 import MenuList from './svg/menu_list.svg';
 import MenuMore from './svg/menu_more.svg';
 import Microphone from './svg/microphone.svg';
@@ -138,6 +149,7 @@ import Pool from './svg/pool.svg';
 import Printer from './svg/printer.svg';
 import QRCodeReader from './svg/qr_code_reader.svg';
 import QRCode from './svg/qr_code.svg';
+import Racquet from './svg/racquet.svg';
 import Rectangle from './svg/rectangle.svg';
 import Refresh from './svg/refresh.svg';
 import Restaurant from './svg/restaurant.svg';
@@ -164,7 +176,9 @@ import SportsEquipment from './svg/sports-equipment-store.svg';
 import StairFreeAccess from './svg/stair_free_access.svg';
 import StarFilled from './svg/star_filled.svg';
 import Star from './svg/star.svg';
+import Stretching from './svg/stretching.svg';
 import Success from './svg/success.svg';
+import SupportTrainer from './svg/support-trainer.svg';
 import SystemStatus from './svg/system_status.svg';
 import TactilePaving from './svg/tactile_paving.svg';
 import ParkingLot from './svg/parking-lot.svg';
@@ -191,6 +205,7 @@ import VisibilityOff from './svg/visibility_off.svg';
 import Visibility from './svg/visibility.svg';
 import Wallet from './svg/wallet.svg';
 import Waze from './svg/waze.svg';
+import WeightMachine from './svg/weight-machine.svg';
 import Whatsapp from './svg/whatsapp.svg';
 import WheelchairFriendlyDoors from './svg/wheelchair_friendly_doors.svg';
 import WellhubIcon from './svg/icon_wellhub.svg';
@@ -223,7 +238,11 @@ export {
   Bank,
   BankStatement,
   BarChart,
+  BeautyCenter,
   BeautySalon,
+  Bike,
+  BioimpedanceScale,
+  BodyMassage,
   BookingFilled,
   Booking,
   Boxing,
@@ -254,6 +273,8 @@ export {
   Copy,
   CornerUpLeft,
   CornerUpRight,
+  Court,
+  CoworkingSpace,
   CreditCard,
   Cycling,
   Dance,
@@ -265,6 +286,7 @@ export {
   Doc,
   Download,
   Draggable,
+  DrinkingFountain,
   Dumbbell,
   DumbbellFilled,
   Edit,
@@ -277,9 +299,12 @@ export {
   FavoriteFilled,
   Favorite,
   Filter,
+  FreeWeight,
+  FunctionalTraining,
   FunnelFilter,
   GenderNeutral,
   Google,
+  GrippySocks,
   Gympass,
   Headphone,
   Heartbeat,
@@ -313,6 +338,7 @@ export {
   MapPin,
   Map,
   MartialArts,
+  MassageChair,
   MenuList,
   MenuMore,
   Microphone,
@@ -341,6 +367,7 @@ export {
   Printer,
   QRCodeReader,
   QRCode,
+  Racquet,
   Rectangle,
   Refresh,
   Restaurant,
@@ -367,7 +394,9 @@ export {
   StairFreeAccess,
   StarFilled,
   Star,
+  Stretching,
   Success,
+  SupportTrainer,
   SystemStatus,
   TactilePaving,
   ParkingLot,
@@ -394,6 +423,7 @@ export {
   Visibility,
   Wallet,
   Waze,
+  WeightMachine,
   Whatsapp,
   WheelchairFriendlyDoors,
   WellhubIcon,
