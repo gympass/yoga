@@ -20,6 +20,7 @@ import AutomaticInvite from './svg/automatic_invite.svg';
 import Bank from './svg/bank.svg';
 import BankStatement from './svg/bank_statement.svg';
 import BarChart from './svg/bar_chart.svg';
+import Bath from './svg/bath.svg';
 import BeautyCenter from './svg/beauty-center.svg';
 import BeautySalon from './svg/beauty-salon.svg';
 import Bike from './svg/bike.svg';
@@ -82,7 +83,7 @@ import FavoriteFilled from './svg/favorite_filled.svg';
 import Favorite from './svg/favorite.svg';
 import Filter from './svg/filter.svg';
 import FreeWeight from './svg/free-weight.svg';
-import FunctionalTraining from './svg/functional-training.svg'
+import FunctionalTraining from './svg/functional-training.svg';
 import FunnelFilter from './svg/funnel_filter.svg';
 import GenderNeutral from './svg/gender_neutral.svg';
 import Google from './svg/google.svg';
@@ -97,6 +98,7 @@ import History from './svg/history.svg';
 import Hit from './svg/hit.svg';
 import HomeFilled from './svg/home_filled.svg';
 import Home from './svg/home.svg';
+import HotTub from './svg/hot-tub.svg';
 import Image from './svg/image.svg';
 import Info from './svg/info.svg';
 import Information from './svg/information.svg';
@@ -141,6 +143,7 @@ import Phone from './svg/phone.svg';
 import PieChart from './svg/pie_chart.svg';
 import Pilates from './svg/pilates.svg';
 import PinFilled from './svg/pin_filled.svg';
+import Physiotherapy from './svg/physiotherapy.svg';
 import Play from './svg/play.svg';
 import PlayArrow from './svg/play_arrow.svg';
 import PlayFilled from './svg/play_filled.svg';
@@ -153,6 +156,7 @@ import Racquet from './svg/racquet.svg';
 import Rectangle from './svg/rectangle.svg';
 import Refresh from './svg/refresh.svg';
 import Restaurant from './svg/restaurant.svg';
+import Sauna from './svg/sauna.svg';
 import SearchFilled from './svg/search_filled.svg';
 import Search from './svg/search.svg';
 import ServiceDogs from './svg/service_dogs.svg';
@@ -238,6 +242,7 @@ export {
   Bank,
   BankStatement,
   BarChart,
+  Bath,
   BeautyCenter,
   BeautySalon,
   Bike,
@@ -315,6 +320,7 @@ export {
   Hit,
   HomeFilled,
   Home,
+  HotTub,
   Image,
   Info,
   Information,
@@ -359,6 +365,7 @@ export {
   PieChart,
   Pilates,
   PinFilled,
+  Physiotherapy,
   Play,
   PlayArrow,
   PlayFilled,
@@ -401,6 +408,7 @@ export {
   TactilePaving,
   ParkingLot,
   PriceTag,
+  Sauna,
   Tennis,
   Time,
   TimeFilled,
