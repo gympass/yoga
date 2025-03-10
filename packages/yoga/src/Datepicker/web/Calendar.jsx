@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { ChevronLeft, ChevronRight } from '@gympass/yoga-icons';
-import { oneOf, func, instanceOf, bool } from 'prop-types';
+import { oneOf, func, instanceOf, bool, string } from 'prop-types';
 import _ from 'lodash';
 import { Icon, Text, Box } from '../..';
 
@@ -189,6 +189,7 @@ function Calendar({
   disableFutureDates = false,
   disablePastFrom,
   disableFutureFrom,
+  locale,
 }) {
   const [month, setMonth] = useState(new Date().getUTCMonth());
   const [year, setYear] = useState(new Date().getUTCFullYear());
@@ -392,7 +393,7 @@ function Calendar({
           data-testid="previous-month-arrow"
         />
         <Month bold>
-          {new Intl.DateTimeFormat('en-US', {
+          {new Intl.DateTimeFormat(locale, {
             month: 'long',
             year: 'numeric',
           }).format(new Date(year, month, 1, 0, 0, 0))}
@@ -431,6 +432,7 @@ Calendar.propTypes = {
   disableFutureDates: bool,
   disablePastFrom: instanceOf(Date),
   disableFutureFrom: instanceOf(Date),
+  locale: string,
 };
 
 export default Calendar;
