@@ -189,7 +189,7 @@ function Calendar({
   disableFutureDates = false,
   disablePastFrom,
   disableFutureFrom,
-  locale,
+  locale = 'pt-br',
 }) {
   const [month, setMonth] = useState(new Date().getUTCMonth());
   const [year, setYear] = useState(new Date().getUTCFullYear());
@@ -361,8 +361,8 @@ function Calendar({
   };
 
   const weekDays = Array.from({ length: 7 }, (__, i) =>
-    new Intl.DateTimeFormat(getLocale(), { weekday: 'long' })
-      .format(new Date(2024, 0, i + 1))
+    new Intl.DateTimeFormat(getLocale(), { weekday: 'short', timeZone: 'UTC' })
+      .format(new Date(Date.UTC(2024, 0, 7 + i)))
       .charAt(0),
   );
 
