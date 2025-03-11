@@ -189,7 +189,7 @@ function Calendar({
   disableFutureDates = false,
   disablePastFrom,
   disableFutureFrom,
-  locale = 'pt-br',
+  locale,
 }) {
   const [month, setMonth] = useState(new Date().getUTCMonth());
   const [year, setYear] = useState(new Date().getUTCFullYear());
