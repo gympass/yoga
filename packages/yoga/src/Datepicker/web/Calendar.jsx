@@ -354,6 +354,18 @@ function Calendar({
     );
   };
 
+  const getLocale = () => {
+    return Intl.DateTimeFormat.supportedLocalesOf(locale).length > 0
+      ? locale
+      : 'en-US';
+  };
+
+  const weekDays = Array.from({ length: 7 }, (__, i) =>
+    new Intl.DateTimeFormat(getLocale(), { weekday: 'long' })
+      .format(new Date(2024, 0, i + 1))
+      .charAt(0),
+  );
+
   const prior = () => {
     let local = month - 1;
 
@@ -393,7 +405,7 @@ function Calendar({
           data-testid="previous-month-arrow"
         />
         <Month bold>
-          {new Intl.DateTimeFormat(locale, {
+          {new Intl.DateTimeFormat(getLocale(), {
             month: 'long',
             year: 'numeric',
           }).format(new Date(year, month, 1, 0, 0, 0))}
@@ -409,13 +421,9 @@ function Calendar({
         />
       </Box>
       <DaysWrapper>
-        <Day>S</Day>
-        <Day>M</Day>
-        <Day>T</Day>
-        <Day>W</Day>
-        <Day>T</Day>
-        <Day>F</Day>
-        <Day>S</Day>
+        {weekDays.map(weekDay => (
+          <Day>{weekDay.toLocaleUpperCase()}</Day>
+        ))}
       </DaysWrapper>
       <Box>{getDays()}</Box>
     </CalendarWrapper>
