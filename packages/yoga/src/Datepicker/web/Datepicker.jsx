@@ -326,6 +326,7 @@ function Datepicker({
             disableFutureDates={disableFutureDates}
             disablePastFrom={disablePastFrom}
             disableFutureFrom={disableFutureFrom}
+            locale={navigator.language}
           />
         </Panel>
       )}
