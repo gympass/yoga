@@ -4,7 +4,6 @@ import { format } from 'date-fns';
 
 import { ThemeProvider, Datepicker, v3theme } from '../..';
 import { toUTC } from './Datepicker';
-import Calendar from './Calendar';
 
 describe('<Datepicker />', () => {
   const testDate = new Date(2022, 7, 3, 14, 0, 0);
@@ -335,21 +334,9 @@ describe('<Datepicker />', () => {
     });
 
     it('should display calendar in English when locale is not supported', () => {
-      Object.defineProperty(global, 'navigator', {
-        value: { language: 'xx-XX' },
-        writable: true,
-      });
-
-      // Mock the supportedLocalesOf to return empty array (no supported locales)
-      global.Intl.DateTimeFormat = class extends originalDateTimeFormat {
-        static supportedLocalesOf() {
-          return [];
-        }
-      };
-
       render(
         <ThemeProvider>
-          <Datepicker type="single" />
+          <Datepicker type="single" locale="xx-XX" />
         </ThemeProvider>,
       );
 
@@ -360,57 +347,16 @@ describe('<Datepicker />', () => {
       const currentMonth = new Intl.DateTimeFormat('en-US', {
         month: 'long',
       }).format(currentDate);
+
       expect(
         screen.getByText(new RegExp(currentMonth, 'i')),
       ).toBeInTheDocument();
     });
 
     it('should display calendar in Portuguese when browser locale is pt-BR', () => {
-      Object.defineProperty(global, 'navigator', {
-        value: { language: 'pt-BR' },
-        writable: true,
-      });
-
-      const mockIntl = class extends originalDateTimeFormat {
-        static supportedLocalesOf(locales) {
-          return locales.includes('pt-BR') ? ['pt-BR'] : [];
-        }
-
-        format(date) {
-          if (this.resolvedOptions().weekday === 'short') {
-            const weekdays = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'];
-            return weekdays[date.getUTCDay()];
-          }
-          if (this.resolvedOptions().month === 'long') {
-            const months = [
-              'janeiro',
-              'fevereiro',
-              'março',
-              'abril',
-              'maio',
-              'junho',
-              'julho',
-              'agosto',
-              'setembro',
-              'outubro',
-              'novembro',
-              'dezembro',
-            ];
-            return `${months[date.getMonth()]} ${date.getFullYear()}`;
-          }
-          return super.format(date);
-        }
-
-        resolvedOptions() {
-          return { ...super.resolvedOptions(), locale: 'pt-BR' };
-        }
-      };
-
-      global.Intl.DateTimeFormat = mockIntl;
-
       render(
         <ThemeProvider>
-          <Datepicker type="single" />
+          <Datepicker type="single" locale="pt-BR" />
         </ThemeProvider>,
       );
 
@@ -432,31 +378,13 @@ describe('<Datepicker />', () => {
         'dezembro',
       ];
       const currentMonth = months[currentDate.getMonth()];
+
       expect(
         screen.getByText(new RegExp(currentMonth, 'i')),
       ).toBeInTheDocument();
     });
 
-    it('should pass the browser locale to the Calendar component', () => {
-      const fs = require('fs');
-      const datepickerCode = fs.readFileSync(
-        require.resolve('./Datepicker.jsx'),
-        'utf8',
-      );
-      expect(datepickerCode).toContain('locale={navigator.language}');
-    });
-
     it('should display only the first letter of each weekday in uppercase', () => {
-      global.Intl.DateTimeFormat = class extends originalDateTimeFormat {
-        format(date) {
-          if (this.resolvedOptions().weekday === 'short') {
-            const weekdays = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
-            return weekdays[date.getUTCDay()];
-          }
-          return super.format(date);
-        }
-      };
-
       render(
         <ThemeProvider>
           <Datepicker type="single" />
@@ -466,6 +394,7 @@ describe('<Datepicker />', () => {
       fireEvent.click(screen.getByRole('button'));
 
       const weekdayLetters = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+
       weekdayLetters.forEach(letter => {
         expect(screen.getAllByText(letter).length).toBeGreaterThan(0);
       });

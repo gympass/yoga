@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { Booking, BookingFilled } from '@gympass/yoga-icons';
 import styled, { css } from 'styled-components';
 import { bool, oneOf, func, instanceOf, string } from 'prop-types';
-import { format } from 'date-fns';
 import { Text } from '../..';
 import { theme } from '../../Theme';
 import Calendar from './Calendar';
@@ -183,6 +182,7 @@ function Datepicker({
   error,
   onOpen,
   displayEndDateOnly = false,
+  locale,
   ...props
 }) {
   const [open, setOpen] = useState();
@@ -271,20 +271,27 @@ function Datepicker({
       );
     }
 
-    const dateFormat = 'MMM d, yyyy';
+    const formattedDate = date => {
+      let month = new Intl.DateTimeFormat(locale, {
+        month: 'short',
+        timeZone: 'UTC',
+      }).format(date);
+
+      month = month[0].charAt(0).toUpperCase() + month.slice(1, 3);
+      const day = date.getUTCDate();
+      const year = date.getUTCFullYear();
+
+      return `${month} ${day}, ${year}`;
+    };
 
     if (displayEndDateOnly)
-      return (
-        <Input disabled={disabled}>
-          {end && format(toUTC(end), dateFormat)}
-        </Input>
-      );
+      return <Input disabled={disabled}>{end && formattedDate(end)}</Input>;
 
     return (
       start && (
         <Input disabled={disabled}>
-          {format(toUTC(start), dateFormat)}
-          {end && ` - ${format(toUTC(end), dateFormat)}`}
+          {formattedDate(start)}
+          {end && ` - ${formattedDate(end)}`}
         </Input>
       )
     );
@@ -326,7 +333,7 @@ function Datepicker({
             disableFutureDates={disableFutureDates}
             disablePastFrom={disablePastFrom}
             disableFutureFrom={disableFutureFrom}
-            locale={navigator.language}
+            locale={locale}
           />
         </Panel>
       )}
@@ -351,6 +358,7 @@ Datepicker.propTypes = {
   error: string,
   onOpen: func,
   displayEndDateOnly: bool,
+  locale: string,
 };
 
 export default Datepicker;
