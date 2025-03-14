@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { ChevronLeft, ChevronRight } from '@gympass/yoga-icons';
-import { oneOf, func, instanceOf, bool } from 'prop-types';
+import { oneOf, func, instanceOf, bool, string } from 'prop-types';
 import _ from 'lodash';
 import { Icon, Text, Box } from '../..';
 
@@ -47,6 +47,9 @@ const Month = styled(Text.Body2)`
   }) => `
     color: ${v3theme ? colors.primary : colors.text.primary};
     align-self: center;
+    &:first-letter {
+      text-transform: capitalize;
+    };
   `}
 `;
 
@@ -189,6 +192,7 @@ function Calendar({
   disableFutureDates = false,
   disablePastFrom,
   disableFutureFrom,
+  locale,
 }) {
   const [month, setMonth] = useState(new Date().getUTCMonth());
   const [year, setYear] = useState(new Date().getUTCFullYear());
@@ -353,6 +357,19 @@ function Calendar({
     );
   };
 
+  const getLocale = () => {
+    return Intl.DateTimeFormat.supportedLocalesOf(locale).length > 0
+      ? locale
+      : 'en-US';
+  };
+
+  const weekDays = Array.from({ length: 7 }, (__, i) =>
+    new Intl.DateTimeFormat(getLocale(), {
+      weekday: 'short',
+      timeZone: 'UTC',
+    }).format(new Date(Date.UTC(2024, 0, 7 + i))),
+  );
+
   const prior = () => {
     let local = month - 1;
 
@@ -392,7 +409,7 @@ function Calendar({
           data-testid="previous-month-arrow"
         />
         <Month bold>
-          {new Intl.DateTimeFormat('en-US', {
+          {new Intl.DateTimeFormat(getLocale(), {
             month: 'long',
             year: 'numeric',
           }).format(new Date(year, month, 1, 0, 0, 0))}
@@ -408,13 +425,9 @@ function Calendar({
         />
       </Box>
       <DaysWrapper>
-        <Day>S</Day>
-        <Day>M</Day>
-        <Day>T</Day>
-        <Day>W</Day>
-        <Day>T</Day>
-        <Day>F</Day>
-        <Day>S</Day>
+        {weekDays.map(weekDay => (
+          <Day key={`${weekDay}`}>{weekDay.toLocaleUpperCase().charAt(0)}</Day>
+        ))}
       </DaysWrapper>
       <Box>{getDays()}</Box>
     </CalendarWrapper>
@@ -431,6 +444,7 @@ Calendar.propTypes = {
   disableFutureDates: bool,
   disablePastFrom: instanceOf(Date),
   disableFutureFrom: instanceOf(Date),
+  locale: string,
 };
 
 export default Calendar;

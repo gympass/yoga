@@ -14,7 +14,7 @@ The `<Datepicker />` component is a date picker that allows the user to select a
 
 ### Usage
 
-### Single date Datepicker
+### Single date Datepicker with locale
 
 ```javascript state
 render(() => {
@@ -25,6 +25,7 @@ render(() => {
       type="single"
       startDate={selectedDate}
       onSelectSingle={setSelectedDate}
+      locale={navigator.language}
     />
   );
 });

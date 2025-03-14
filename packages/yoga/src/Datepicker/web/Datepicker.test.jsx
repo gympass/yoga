@@ -8,6 +8,12 @@ import { toUTC } from './Datepicker';
 describe('<Datepicker />', () => {
   const testDate = new Date(2022, 7, 3, 14, 0, 0);
 
+  let originalDateTimeFormat;
+
+  beforeAll(() => {
+    originalDateTimeFormat = Intl.DateTimeFormat;
+  });
+
   describe('Snapshots', () => {
     it('should match snapshot when v3Theme is settled', () => {
       const { container } = render(
@@ -308,6 +314,93 @@ describe('<Datepicker />', () => {
         </ThemeProvider>,
       );
       expect(screen.getByText('This is an error')).toBeVisible();
+    });
+  });
+
+  describe('Internationalization', () => {
+    let originalNavigator;
+
+    beforeEach(() => {
+      originalNavigator = global.navigator;
+    });
+
+    afterEach(() => {
+      global.Intl.DateTimeFormat = originalDateTimeFormat;
+
+      Object.defineProperty(global, 'navigator', {
+        value: originalNavigator,
+        writable: true,
+      });
+    });
+
+    it('should display calendar in English when locale is not supported', () => {
+      render(
+        <ThemeProvider>
+          <Datepicker type="single" locale="xx-XX" />
+        </ThemeProvider>,
+      );
+
+      fireEvent.click(screen.getByRole('button'));
+
+      // Check if month is displayed in English
+      const currentDate = new Date();
+      const currentMonth = new Intl.DateTimeFormat('en-US', {
+        month: 'long',
+      }).format(currentDate);
+
+      expect(
+        screen.getByText(new RegExp(currentMonth, 'i')),
+      ).toBeInTheDocument();
+    });
+
+    it('should display calendar in Portuguese when browser locale is pt-BR', () => {
+      render(
+        <ThemeProvider>
+          <Datepicker type="single" locale="pt-BR" />
+        </ThemeProvider>,
+      );
+
+      fireEvent.click(screen.getByRole('button'));
+
+      const currentDate = new Date();
+      const months = [
+        'janeiro',
+        'fevereiro',
+        'março',
+        'abril',
+        'maio',
+        'junho',
+        'julho',
+        'agosto',
+        'setembro',
+        'outubro',
+        'novembro',
+        'dezembro',
+      ];
+      const currentMonth = months[currentDate.getMonth()];
+
+      expect(
+        screen.getByText(new RegExp(currentMonth, 'i')),
+      ).toBeInTheDocument();
+    });
+
+    it('should display only the first letter of each weekday in uppercase', () => {
+      render(
+        <ThemeProvider>
+          <Datepicker type="single" />
+        </ThemeProvider>,
+      );
+
+      fireEvent.click(screen.getByRole('button'));
+
+      const weekdayLetters = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+
+      weekdayLetters.forEach(letter => {
+        expect(screen.getAllByText(letter).length).toBeGreaterThan(0);
+      });
+
+      expect(screen.queryByText('sun')).not.toBeInTheDocument();
+      expect(screen.queryByText('mon')).not.toBeInTheDocument();
     });
   });
 });
