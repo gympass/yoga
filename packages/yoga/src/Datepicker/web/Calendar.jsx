@@ -48,8 +48,8 @@ const Month = styled(Text.Body2)`
     color: ${v3theme ? colors.primary : colors.text.primary};
     align-self: center;
     &:first-letter {
-    text-transform: capitalize;
-}
+      text-transform: capitalize;
+    };
   `}
 `;
 
