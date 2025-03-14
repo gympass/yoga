@@ -277,7 +277,7 @@ function Datepicker({
         timeZone: 'UTC',
       }).format(date);
 
-      month = month[0].charAt(0).toUpperCase() + month.slice(1, 3);
+      month = month.charAt(0).toUpperCase() + month.slice(1, 3);
       const day = date.getUTCDate();
       const year = date.getUTCFullYear();
 
