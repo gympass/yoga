@@ -116,6 +116,7 @@ const Input = React.forwardRef(
       closeAriaLabel = 'Clear',
       includeAriaAttributes = true,
       leftElement,
+      clearButtonLabel = 'Clear',
       ...props
     },
     ref,
@@ -219,6 +220,8 @@ const Input = React.forwardRef(
               height={20}
               role="button"
               hasIconRight={!!rightIcon}
+              aria-label={clearButtonLabel}
+              data-testid="clearButtonLabel"
             >
               <Close aria-label={closeAriaLabel} />
             </IconWrapper>
@@ -286,6 +289,8 @@ Input.propTypes = {
 
   /** element on the left */
   leftElement: node,
+  /** aria label for close button */
+  clearButtonLabel: string,
 };
 
 export default Input;

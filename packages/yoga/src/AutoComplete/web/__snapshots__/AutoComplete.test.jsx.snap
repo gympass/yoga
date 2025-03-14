@@ -767,7 +767,9 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
           class="c4"
         />
         <div
+          aria-label="Clear"
           class="c5"
+          data-testid="clearButtonLabel"
           height="20"
           role="button"
           tabindex="0"
@@ -1147,7 +1149,9 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
           class="c4"
         />
         <div
+          aria-label="Clear"
           class="c5"
+          data-testid="clearButtonLabel"
           height="20"
           role="button"
           tabindex="0"
