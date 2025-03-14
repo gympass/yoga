@@ -364,9 +364,10 @@ function Calendar({
   };
 
   const weekDays = Array.from({ length: 7 }, (__, i) =>
-    new Intl.DateTimeFormat(getLocale(), { weekday: 'short', timeZone: 'UTC' })
-      .format(new Date(Date.UTC(2024, 0, 7 + i)))
-      .charAt(0),
+    new Intl.DateTimeFormat(getLocale(), {
+      weekday: 'short',
+      timeZone: 'UTC',
+    }).format(new Date(Date.UTC(2024, 0, 7 + i))),
   );
 
   const prior = () => {
@@ -425,7 +426,7 @@ function Calendar({
       </Box>
       <DaysWrapper>
         {weekDays.map(weekDay => (
-          <Day>{weekDay.toLocaleUpperCase()}</Day>
+          <Day key={`${weekDay}`}>{weekDay.toLocaleUpperCase().charAt(0)}</Day>
         ))}
       </DaysWrapper>
       <Box>{getDays()}</Box>
