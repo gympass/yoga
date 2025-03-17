@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.29.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.28.0...@gympass/yoga-icons@1.29.0) (2025-03-17)
+
+
+### Features
+
+* **yoga-icons:** added first batch of amenities icons ([8d9a7fe](https://github.com/Gympass/yoga/commit/8d9a7feff23ca366bc36c0294e2581b46e13f9c5))
+* **yoga-icons:** added second batch of amenities icons ([cd0f5e9](https://github.com/Gympass/yoga/commit/cd0f5e9e7d54370a0cf6be8c4692645beab1239e))
+
+
+
+
+
 # [1.28.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.27.0...@gympass/yoga-icons@1.28.0) (2024-12-04)
 
 

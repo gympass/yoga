@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.53.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.52.18...@gympass/yoga-doc@2.53.0) (2025-03-17)
+
+
+### Features
+
+* adds translated selected month and some fixes ([f03d5c9](https://github.com/gympass/yoga/commit/f03d5c9fa8ea705bb6e0429b93a6d16e5d1ebe29))
+
+
+
+
+
 ## [2.52.18](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.52.17...@gympass/yoga-doc@2.52.18) (2025-02-28)
 
 **Note:** Version bump only for package @gympass/yoga-doc

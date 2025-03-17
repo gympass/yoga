@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.130.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.129.3...@gympass/yoga@7.130.0) (2025-03-17)
+
+
+### Bug Fixes
+
+* add missing keys ([2bf89c5](https://github.com/Gympass/yoga/commit/2bf89c55496dada4055ab3251d83ae54f99eb155))
+* fix indentation ([6ca5613](https://github.com/Gympass/yoga/commit/6ca5613914e373e086bd7c9507f8ec478f4e7c9f))
+* fix start/end week days ([242c65b](https://github.com/Gympass/yoga/commit/242c65b69769e082ddc276a0bdfa86daec992089))
+* includes translation for days of the week and locale validation ([fe5b198](https://github.com/Gympass/yoga/commit/fe5b198a07d9c744d85adbdacd45f269c6416dd8))
+* remove default value as 'pt-br' ([c364db2](https://github.com/Gympass/yoga/commit/c364db219ff73adddd1aacd1bf3d0e99b242431a))
+
+
+### Features
+
+* adds translated selected month and some fixes ([f03d5c9](https://github.com/Gympass/yoga/commit/f03d5c9fa8ea705bb6e0429b93a6d16e5d1ebe29))
+* capitalize month string ([9c79078](https://github.com/Gympass/yoga/commit/9c790787916f0c9c188990e92c981ed64edb6ede))
+
+
+
+
+
 ## [7.129.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.129.2...@gympass/yoga@7.129.3) (2025-02-28)
 
 
