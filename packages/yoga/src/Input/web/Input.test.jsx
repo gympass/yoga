@@ -259,11 +259,11 @@ describe('<Input />', () => {
       const value = 'test label clear';
       const { getByTestId } = render(
         <ThemeProvider>
-          <Input label="abc123" value="foo" clearButtonLabel={value} />
+          <Input label="abc123" value="foo" clearButtonAriaLabel={value} />
         </ThemeProvider>,
       );
 
-      const inputElement = getByTestId('clearButtonLabel');
+      const inputElement = getByTestId('clearButtonAriaLabel');
 
       expect(inputElement).toBeInTheDocument();
 
