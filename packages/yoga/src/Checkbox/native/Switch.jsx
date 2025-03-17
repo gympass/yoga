@@ -86,9 +86,9 @@ const SwitchThumb = styled(Box).attrs(
 )``;
 
 const CheckboxSwitch = ({
-  checked,
-  pressed,
-  disabled,
+  checked = false,
+  pressed = false,
+  disabled = false,
   theme: {
     yoga: {
       components: { checkboxswitch },
@@ -181,12 +181,6 @@ CheckboxSwitch.propTypes = {
   checked: bool,
   disabled: bool,
   pressed: bool,
-};
-
-CheckboxSwitch.defaultProps = {
-  checked: false,
-  disabled: false,
-  pressed: false,
 };
 
 CheckboxSwitch.displayName = 'Checkbox.Switch';

@@ -36,7 +36,12 @@ const StyledSkeleton = styled.View`
   `}
 `;
 
-function Skeleton({ animation = 'pulse', ...props }) {
+function Skeleton({
+  animation = 'pulse',
+  variant = undefined,
+  color = 'primary',
+  ...rest
+}) {
   const [opacity] = useState(new Animated.Value(0.4));
 
   useEffect(() => {
@@ -63,7 +68,7 @@ function Skeleton({ animation = 'pulse', ...props }) {
 
   return (
     <Animated.View style={{ opacity }}>
-      <StyledSkeleton {...props} />
+      <StyledSkeleton variant={variant} color={color} {...rest} />
     </Animated.View>
   );
 }
@@ -118,12 +123,6 @@ Skeleton.propTypes = {
    * Determine if the animation will 'pulse' or false;
    */
   animation: oneOf(['pulse', false]),
-};
-
-Skeleton.defaultProps = {
-  variant: undefined,
-  animation: 'pulse',
-  color: 'primary',
 };
 
 export default Skeleton;

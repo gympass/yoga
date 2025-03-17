@@ -46,7 +46,7 @@ const OptionText = styled(Text.Body2)`
   `}
 `;
 
-const Options = ({ options, selectedOption, onSelect }) => (
+const Options = ({ options, selectedOption = null, onSelect = () => {} }) => (
   <List
     style={{ height: 60 * 3.6 }}
     data={options.map(item => item)}
@@ -78,11 +78,6 @@ Options.propTypes = {
   options: arrayOf(shape(optionShape)).isRequired,
   selectedOption: shape(optionShape),
   onSelect: func,
-};
-
-Options.defaultProps = {
-  selectedOption: null,
-  onSelect: () => {},
 };
 
 export default Options;

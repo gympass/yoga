@@ -86,12 +86,15 @@ const RibbonText = styled(Text.Tiny)`
 `;
 
 const Card = React.forwardRef(
-  ({ ribbon, children, hasShadow, ...rest }, ref) => {
+  (
+    { ribbon = {}, children = null, variant = '', hasShadow = true, ...rest },
+    ref,
+  ) => {
     const CardWrapper = hasShadow ? CardShadow : Box;
 
     return (
       <CardWrapper>
-        <CardStyled ref={ref} {...rest} hasShadow={hasShadow}>
+        <CardStyled ref={ref} {...rest} variant={variant} hasShadow={hasShadow}>
           {Object.keys(ribbon).length > 0 && (
             <Ribbon variant={ribbon.variant}>
               <RibbonText variant={ribbon.variant}>{ribbon.text}</RibbonText>
@@ -158,13 +161,6 @@ Card.propTypes = {
   ]),
   /** applies a shadow to the card (enabled by default) */
   hasShadow: bool,
-};
-
-Card.defaultProps = {
-  ribbon: {},
-  children: null,
-  variant: '',
-  hasShadow: true,
 };
 
 Card.displayName = 'Card';

@@ -75,7 +75,7 @@ const Example = styled.span`
   `};
 `;
 
-const Tokens = ({ data, example, columns }) => (
+const Tokens = ({ data, example = undefined, columns = undefined }) => (
   <StyledTable>
     <thead>
       <tr>
@@ -147,11 +147,6 @@ Tokens.propTypes = {
     hasBackground: bool,
   }),
   columns: arrayOf(string),
-};
-
-Tokens.defaultProps = {
-  example: undefined,
-  columns: undefined,
 };
 
 export default withToken(Tokens);

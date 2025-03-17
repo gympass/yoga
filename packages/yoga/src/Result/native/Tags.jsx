@@ -22,7 +22,7 @@ const Wrapper = styled.ScrollView`
   `}
 `;
 
-const ResultTags = ({ items, disableScroll }) => (
+const ResultTags = ({ items, disableScroll = false }) => (
   <Wrapper
     horizontal
     scrollEnabled={!disableScroll}
@@ -41,10 +41,6 @@ ResultTags.propTypes = {
   /** Props to generate each Tag. See Tag for details */
   items: arrayOf(shape({})).isRequired,
   disableScroll: bool,
-};
-
-ResultTags.defaultProps = {
-  disableScroll: false,
 };
 
 export default ResultTags;

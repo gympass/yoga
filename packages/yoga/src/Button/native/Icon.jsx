@@ -64,17 +64,17 @@ const ButtonContainer = styled.View`
 const ButtonIcon = forwardRef(
   (
     {
-      icon,
+      icon = undefined,
       theme: {
         yoga: {
           components: { button },
         },
       },
-      small,
-      pressed,
-      disabled,
-      inverted,
-      secondary,
+      small = false,
+      pressed = false,
+      disabled = false,
+      inverted = false,
+      secondary = false,
       ...props
     },
     ref,
@@ -122,15 +122,6 @@ ButtonIcon.propTypes = {
   inverted: bool,
   secondary: bool,
   icon: oneOfType([node, func]),
-};
-
-ButtonIcon.defaultProps = {
-  small: false,
-  disabled: false,
-  pressed: false,
-  inverted: false,
-  secondary: false,
-  icon: undefined,
 };
 
 ButtonIcon.displayName = 'Button.Icon';

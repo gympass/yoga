@@ -66,7 +66,7 @@ const Text = styled.Text(
 /** Radio group allows user to select one option from a set of options. Use
 value on group to set the selected option. */
 const RadioGroupButton = React.forwardRef(
-  ({ value, children, ...rest }, ref) => {
+  ({ value = '', children, ...rest }, ref) => {
     const { onChange, small, selectedValue, ...context } =
       useContext(RadioGroupContext);
 
@@ -93,10 +93,6 @@ RadioGroupButton.displayName = 'RadioGroup.Button';
 RadioGroupButton.propTypes = {
   value: oneOfType([string, number]),
   children: node.isRequired,
-};
-
-RadioGroupButton.defaultProps = {
-  value: '',
 };
 
 export default RadioGroupButton;

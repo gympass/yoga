@@ -30,7 +30,7 @@ const Circle = styled(Box).attrs(
 
 const CirclePressed = styled(Circle)(
   ({
-    pressed,
+    pressed = false,
     theme: {
       yoga: {
         components: { slider },
@@ -57,11 +57,7 @@ CirclePressed.propTypes = {
   pressed: bool,
 };
 
-CirclePressed.defaultProps = {
-  pressed: false,
-};
-
-const Marker = ({ pressed, tooltip }) => (
+const Marker = ({ pressed = false, tooltip = undefined }) => (
   <>
     {pressed && tooltip && (
       <Tooltip
@@ -84,11 +80,6 @@ Marker.propTypes = {
     visible: bool,
     step: number,
   }),
-};
-
-Marker.defaultProps = {
-  pressed: false,
-  tooltip: undefined,
 };
 
 export default Marker;

@@ -95,70 +95,67 @@ const Option = styled.li`
   `}
 `;
 
-const Dropdown = ({ width, options, onChange, selectedItem }) => (
-  <>
-    <Downshift
-      selectedItem={selectedItem}
-      onChange={onChange}
-      itemToString={item => {
-        return item ? item.label : '';
-      }}
-    >
-      {({
-        getInputProps,
-        getItemProps,
-        getRootProps,
-        getMenuProps,
-        getToggleButtonProps,
-        isOpen,
-        highlightedIndex,
-      }) => (
-        <Wrapper width={width} {...getRootProps()}>
-          <Selector>
-            <Input readOnly placeholder="Theme" {...getInputProps()} />
-            <Button {...getToggleButtonProps()}>
-              <ArrowDropdown />
-            </Button>
-          </Selector>
-
-          {isOpen ? (
-            <OptionsList {...getMenuProps()}>
-              {options.map((item, index) => (
-                <Option
-                  {...getItemProps({
-                    key: item.value,
-                    index,
-                    item,
-                    isActive: highlightedIndex === index,
-                    isSelected: selectedItem === item,
-                  })}
-                >
-                  {item.label}
-                </Option>
-              ))}
-            </OptionsList>
-          ) : null}
-        </Wrapper>
-      )}
-    </Downshift>
-  </>
-);
-
 const propShape = shape({
   value: string,
   label: string,
 });
 
+const Dropdown = ({
+  width = undefined,
+  options,
+  onChange = () => {},
+  selectedItem = propShape,
+}) => (
+  <Downshift
+    selectedItem={selectedItem}
+    onChange={onChange}
+    itemToString={item => {
+      return item ? item.label : '';
+    }}
+  >
+    {({
+      getInputProps,
+      getItemProps,
+      getRootProps,
+      getMenuProps,
+      getToggleButtonProps,
+      isOpen,
+      highlightedIndex,
+    }) => (
+      <Wrapper width={width} {...getRootProps()}>
+        <Selector>
+          <Input readOnly placeholder="Theme" {...getInputProps()} />
+          <Button {...getToggleButtonProps()}>
+            <ArrowDropdown />
+          </Button>
+        </Selector>
+
+        {isOpen ? (
+          <OptionsList {...getMenuProps()}>
+            {options.map((item, index) => (
+              <Option
+                {...getItemProps({
+                  key: item.value,
+                  index,
+                  item,
+                  isActive: highlightedIndex === index,
+                  isSelected: selectedItem === item,
+                })}
+              >
+                {item.label}
+              </Option>
+            ))}
+          </OptionsList>
+        ) : null}
+      </Wrapper>
+    )}
+  </Downshift>
+);
+
 Dropdown.propTypes = {
   width: number,
   options: arrayOf(propShape).isRequired,
   onChange: func,
-  selectedItem: propShape,
-};
-
-Dropdown.defaultProps = {
-  width: undefined,
-  onChange: () => {},
   selectedItem: propShape,
 };
 

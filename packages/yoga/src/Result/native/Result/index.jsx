@@ -14,14 +14,14 @@ import TextWithBadge from './TextWithBadge';
  * formats based on the applied context. */
 const Result = ({
   avatar: Avatar,
-  attendances,
-  rate,
+  attendances = undefined,
+  rate = undefined,
   title,
-  subTitle,
-  divided,
-  children,
-  attendancesColor,
-  badgeIcon,
+  subTitle = undefined,
+  divided = false,
+  children = undefined,
+  attendancesColor = undefined,
+  badgeIcon = undefined,
 }) => {
   return (
     <StyledBox divided={divided} display="flex" flexDirection="row">
@@ -78,16 +78,6 @@ Result.propTypes = {
   attendancesColor: string,
   /** The property that defines a whether a badge should be shown and which icon should be rendered */
   badgeIcon: node,
-};
-
-Result.defaultProps = {
-  rate: undefined,
-  divided: false,
-  subTitle: undefined,
-  children: undefined,
-  attendances: undefined,
-  attendancesColor: undefined,
-  badgeIcon: undefined,
 };
 
 export default Result;

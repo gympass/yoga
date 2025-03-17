@@ -119,7 +119,7 @@ const Shadow = styled.View(
 /** The Radio is a type of selection control that allows the user to select a
  * single option from a list.  */
 const RadioGroupRadio = React.forwardRef(
-  ({ value, disabled, ...rest }, ref) => {
+  ({ value = '', disabled = false, ...rest }, ref) => {
     const { onChange, small, selectedValue, ...context } =
       useContext(RadioGroupContext);
 
@@ -162,11 +162,6 @@ RadioGroupRadio.displayName = 'RadioGroup.Radio';
 RadioGroupRadio.propTypes = {
   disabled: bool,
   value: oneOfType([string, number]),
-};
-
-RadioGroupRadio.defaultProps = {
-  disabled: false,
-  value: '',
 };
 
 export default RadioGroupRadio;

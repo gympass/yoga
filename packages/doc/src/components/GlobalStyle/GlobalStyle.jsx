@@ -2,7 +2,7 @@ import { bool } from 'prop-types';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle(
-  ({ overflow }) => `
+  ({ overflow = false }) => `
     #gatsby-focus-wrapper, #___gatsby {
       height: 100%;
     }
@@ -61,10 +61,6 @@ const GlobalStyle = createGlobalStyle(
 
 GlobalStyle.propTypes = {
   overflow: bool,
-};
-
-GlobalStyle.defaultProps = {
-  overflow: false,
 };
 
 export default GlobalStyle;

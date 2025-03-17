@@ -30,11 +30,11 @@ const PickerActions = styled.View`
 
 const Options = ({
   options,
-  selectedOption,
+  selectedOption = null,
   cancelActionLabel,
   confirmActionLabel,
-  onSelect,
-  onClose,
+  onSelect = () => {},
+  onClose = () => {},
   theme: {
     yoga: { baseFont },
   },
@@ -79,12 +79,6 @@ Options.propTypes = {
   confirmActionLabel: string.isRequired,
   onSelect: func,
   onClose: func,
-};
-
-Options.defaultProps = {
-  selectedOption: null,
-  onSelect: () => {},
-  onClose: () => {},
 };
 
 export default withTheme(Options);

@@ -48,16 +48,16 @@ const StyledTextInformative = styled(StyledText)`
 /** Tags should be keywords to categorize or organize an item. */
 const TagInformative = ({
   children,
-  icon,
-  ellipsis,
+  icon = undefined,
+  ellipsis = false,
   theme: {
     yoga: {
       colors: { text },
       components: { tag },
     },
   },
-  small,
-  variant,
+  small = false,
+  variant = 'neutral',
   ...rest
 }) => (
   <Informative variant={variant} small={small} {...rest}>
@@ -85,13 +85,6 @@ TagInformative.propTypes = {
   /** Can send small to use this variant */
   small: bool,
   ellipsis: bool,
-};
-
-TagInformative.defaultProps = {
-  variant: 'neutral',
-  icon: undefined,
-  small: false,
-  ellipsis: false,
 };
 
 TagInformative.displayName = 'Tag.Informative';

@@ -8,19 +8,18 @@ import Text from '../../Text';
 
 const StyledActionRequirement = styled.View``;
 
-function ActionRequirement(props) {
-  const {
-    title,
-    description,
-    children,
-    checkable,
-    illustration,
-    list,
-    titleAsTextDisplay,
-  } = props;
-
+function ActionRequirement({
+  title,
+  description,
+  children = undefined,
+  checkable = undefined,
+  illustration = undefined,
+  list = undefined,
+  titleAsTextDisplay = false,
+  ...rest
+}) {
   return (
-    <StyledActionRequirement {...props}>
+    <StyledActionRequirement {...rest}>
       {illustration && <Box>{illustration}</Box>}
       {titleAsTextDisplay ? (
         <Text.Display2>{title}</Text.Display2>
@@ -49,14 +48,6 @@ ActionRequirement.propTypes = {
   illustration: oneOfType([arrayOf(node), node]),
   list: oneOfType([arrayOf(node), node]),
   titleAsTextDisplay: bool,
-};
-
-ActionRequirement.defaultProps = {
-  children: undefined,
-  checkable: undefined,
-  illustration: undefined,
-  list: undefined,
-  titleAsTextDisplay: false,
 };
 
 export default ActionRequirement;

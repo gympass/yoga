@@ -4,9 +4,9 @@ import { element, func } from 'prop-types';
 
 const withTouchable = Component => {
   const WithTouchable = ({
-    onPressIn,
-    onPressOut,
-    onChange,
+    onPressIn = () => {},
+    onPressOut = () => {},
+    onChange = undefined,
     onPress = onChange,
     ...rest
   }) => {
@@ -37,13 +37,6 @@ const withTouchable = Component => {
     onPressOut: func,
     onChange: func,
     onPress: func,
-  };
-
-  WithTouchable.defaultProps = {
-    onPressIn: () => {},
-    onPressOut: () => {},
-    onChange: undefined,
-    onPress: undefined,
   };
 
   return WithTouchable;

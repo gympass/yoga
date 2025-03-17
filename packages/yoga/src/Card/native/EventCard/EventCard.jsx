@@ -100,9 +100,9 @@ const ButtonLink = styled(Button.Link)`
 
 const SmallCard = ({
   date: { month, day, dayOfWeek },
-  active,
-  event,
-  onPress,
+  active = false,
+  event = undefined,
+  onPress = undefined,
 }) => (
   <DateInfo small active={active} pv="medium" bg={active ? 'primary' : 'white'}>
     <Top>
@@ -169,17 +169,30 @@ const FullCard = withTheme(
   ),
 );
 
-const EventCard = ({ onPress, small, ...rest }) => (
-  <TouchableWithoutFeedback onPress={onPress}>
-    <Event small={small} {...rest}>
-      {small ? (
-        <SmallCard onPress={onPress} {...rest} />
-      ) : (
-        <FullCard {...rest} />
-      )}
-    </Event>
-  </TouchableWithoutFeedback>
-);
+const EventCard = props => {
+  const defaultValues = {
+    small: false,
+    active: false,
+    event: undefined,
+    link: '',
+    onLinkPress: undefined,
+    onPress: undefined,
+  };
+
+  const { onPress, small, ...rest } = { ...defaultValues, ...props };
+
+  return (
+    <TouchableWithoutFeedback onPress={onPress}>
+      <Event small={small} {...rest}>
+        {small ? (
+          <SmallCard onPress={onPress} {...rest} />
+        ) : (
+          <FullCard {...rest} />
+        )}
+      </Event>
+    </TouchableWithoutFeedback>
+  );
+};
 
 EventCard.propTypes = {
   /** event information: { name (string), place (string), time (string) } */
@@ -204,15 +217,6 @@ EventCard.propTypes = {
   onPress: func,
 };
 
-EventCard.defaultProps = {
-  small: false,
-  active: false,
-  event: undefined,
-  link: '',
-  onLinkPress: undefined,
-  onPress: undefined,
-};
-
 SmallCard.propTypes = {
   date: shape({
     day: string,
@@ -229,12 +233,6 @@ SmallCard.propTypes = {
     bool,
   ]),
   onPress: func,
-};
-
-SmallCard.defaultProps = {
-  active: false,
-  event: undefined,
-  onPress: undefined,
 };
 
 FullCard.propTypes = EventCard.propTypes;

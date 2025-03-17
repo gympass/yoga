@@ -69,7 +69,13 @@ export const StyledText = styled(({ variant, ...rest }) => (
 `;
 
 /** Use Tag component when you want to categorize your content */
-const Tag = ({ children, variant, small, ellipsis, ...rest }) => (
+const Tag = ({
+  children,
+  variant = '',
+  small = false,
+  ellipsis = false,
+  ...rest
+}) => (
   <StyledTag variant={variant} small={small} {...rest}>
     <StyledText numberOfLines={ellipsis ? 1 : undefined}>{children}</StyledText>
   </StyledTag>
@@ -82,12 +88,6 @@ Tag.propTypes = {
   small: bool,
   children: node.isRequired,
   ellipsis: bool,
-};
-
-Tag.defaultProps = {
-  variant: '',
-  small: false,
-  ellipsis: false,
 };
 
 export default Tag;

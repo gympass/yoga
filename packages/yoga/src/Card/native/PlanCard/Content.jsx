@@ -50,13 +50,13 @@ const EnhancePrice = styled.View`
 
 const PlanCardContent = ({
   title,
-  subtitle,
-  description,
-  currency,
-  suffix,
   price,
   period,
-  children,
+  subtitle = null,
+  description = null,
+  currency = null,
+  suffix = null,
+  children = null,
   ...rest
 }) => (
   <Content {...rest}>
@@ -91,14 +91,6 @@ PlanCardContent.propTypes = {
   description: string,
   subtitle: string,
   children: node,
-};
-
-PlanCardContent.defaultProps = {
-  children: null,
-  description: null,
-  subtitle: null,
-  currency: null,
-  suffix: null,
 };
 
 PlanCardContent.displayName = 'PlanCard.Content';

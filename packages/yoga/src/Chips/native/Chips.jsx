@@ -77,12 +77,12 @@ const StyledChips = styled(Text)`
 const Chips = React.forwardRef(
   (
     {
-      children,
-      selected,
-      counter,
-      icons,
-      disabled,
-      onToggle,
+      children = undefined,
+      selected = false,
+      counter = undefined,
+      icons = [],
+      disabled = false,
+      onToggle = undefined,
       onPress = onToggle,
       theme: {
         yoga: { spacing, colors },
@@ -160,16 +160,6 @@ Chips.propTypes = {
   /** onPress event */
   onToggle: func,
   onPress: func,
-};
-
-Chips.defaultProps = {
-  children: undefined,
-  selected: false,
-  disabled: false,
-  counter: undefined,
-  icons: [],
-  onToggle: undefined,
-  onPress: undefined,
 };
 
 export default withTheme(Chips);

@@ -21,17 +21,20 @@ const RatingWrapper = styled.View`
 
 /** Use the Rating component to view other people's opinions and experiences. */
 const Rating = ({
-  value,
-  max,
-  readOnly,
-  onRate,
+  value = undefined,
+  max = 5,
+  readOnly = true,
+  onRate = {},
   theme: {
     yoga: {
       colors,
       components: { rating },
     },
   },
-  icon: { type: Icon = StarFilled, size: iconSize = 24 },
+  icon: { type: Icon = StarFilled, size: iconSize = 24 } = {
+    type: StarFilled,
+    size: 24,
+  },
   ...rest
 }) => {
   const [panResponder, setPanResponder] = useState({});
@@ -153,17 +156,6 @@ Rating.propTypes = {
   readOnly: bool,
   /** Event to be fired on click */
   onRate: func,
-};
-
-Rating.defaultProps = {
-  value: undefined,
-  icon: {
-    type: StarFilled,
-    size: 24,
-  },
-  max: 5,
-  readOnly: true,
-  onRate: rating => {}, // eslint-disable-line no-unused-vars
 };
 
 export default withTheme(Rating);

@@ -87,15 +87,17 @@ const ButtonContainerOutline = styled(ButtonContainer)`
     return getStyles({ outline, pressed, secondary });
   }}}
 `;
+
 const ButtonOutline = forwardRef(
   (
     {
-      children,
-      disabled,
-      pressed,
-      small,
-      secondary,
-      inverted,
+      children = 'Button',
+      full = false,
+      disabled = false,
+      small = false,
+      pressed = false,
+      inverted = false,
+      secondary = false,
       theme: {
         yoga: {
           colors,
@@ -127,6 +129,7 @@ const ButtonOutline = forwardRef(
     return (
       <ButtonContainerOutline
         {...rest}
+        full={full}
         disabled={disabled}
         pressed={pressed}
         small={small}
@@ -158,16 +161,6 @@ ButtonOutline.propTypes = {
   pressed: bool,
   inverted: bool,
   secondary: bool,
-};
-
-ButtonOutline.defaultProps = {
-  children: 'Button',
-  full: false,
-  disabled: false,
-  small: false,
-  pressed: false,
-  inverted: false,
-  secondary: false,
 };
 
 export default withTouchable(withTheme(ButtonOutline));

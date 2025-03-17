@@ -49,14 +49,14 @@ const Info = styled(Text.Caption)(
 const Helper = React.forwardRef(
   (
     {
-      full,
-      error,
-      helper,
-      disabled,
-      focused,
-      maxLength,
-      length,
-      hideMaxLength,
+      full = false,
+      error = undefined,
+      helper = undefined,
+      disabled = undefined,
+      focused = false,
+      maxLength = undefined,
+      length = undefined,
+      hideMaxLength = false,
     },
     ref,
   ) => (
@@ -84,17 +84,6 @@ Helper.propTypes = {
   maxLength: number,
   length: number,
   hideMaxLength: bool,
-};
-
-Helper.defaultProps = {
-  disabled: undefined,
-  error: undefined,
-  focused: false,
-  full: false,
-  helper: undefined,
-  maxLength: undefined,
-  length: undefined,
-  hideMaxLength: false,
 };
 
 export default Helper;

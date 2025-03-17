@@ -50,9 +50,9 @@ const ListItem = ({
       },
     },
   },
-  small,
-  divided,
-  onPress,
+  small = false,
+  divided = true,
+  onPress = undefined,
   ...rest
 }) => {
   const Component = <StyledView small={small} divided={divided} {...rest} />;
@@ -75,12 +75,6 @@ ListItem.propTypes = {
   small: PropTypes.bool,
   divided: PropTypes.bool,
   onPress: PropTypes.func,
-};
-
-ListItem.defaultProps = {
-  small: false,
-  divided: true,
-  onPress: undefined,
 };
 
 ListItem.displayName = 'List.Item';

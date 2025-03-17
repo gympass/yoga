@@ -30,7 +30,13 @@ const GrayLine = styled.View(
   `,
 );
 
-const RadioGroup = ({ onChange, selectedValue, small, children, ...rest }) => {
+const RadioGroup = ({
+  onChange = () => {},
+  selectedValue = '',
+  small = false,
+  children,
+  ...rest
+}) => {
   const [groupSize, setGroupSize] = useState(0);
 
   const isButton = React.Children.map(children, child => child.type).every(
@@ -71,12 +77,6 @@ RadioGroup.propTypes = {
   selectedValue: oneOfType([string, number]),
   small: bool,
   children: node.isRequired,
-};
-
-RadioGroup.defaultProps = {
-  onChange: () => {},
-  selectedValue: '',
-  small: false,
 };
 
 export default RadioGroup;

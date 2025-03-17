@@ -29,7 +29,16 @@ const addProperties = (properties, to, prefix = '') => {
   return filled;
 };
 
-const SnackEmbed = ({ id, ...props }) => {
+const SnackEmbed = ({
+  id = 'yoga-component-snack',
+  description = 'A yoga component native code sample',
+  name = 'yoga-component',
+  platform = 'ios',
+  preview = true,
+  theme = 'light',
+}) => {
+  const props = { id, description, name, platform, preview, theme };
+
   const { imports, code, dependencies, state } = useContext(CodeBlockContext);
 
   const sanitizedCode = encodeURI(code);
@@ -82,15 +91,6 @@ SnackEmbed.propTypes = {
   platform: string,
   preview: bool,
   theme: string,
-};
-
-SnackEmbed.defaultProps = {
-  description: 'A yoga component native code sample',
-  id: 'yoga-component-snack',
-  name: 'yoga-component',
-  platform: 'ios',
-  preview: true,
-  theme: 'light',
 };
 
 export default SnackEmbed;

@@ -12,14 +12,14 @@ reflect a range of values along a bar, from which users may select a single
 value. They are ideal for adjusting settings such as volume, brightness, or
 applying image filters. */
 const Slider = ({
-  max,
-  maxLabel,
-  min,
-  minLabel,
-  snapped,
-  values,
-  tooltip,
-  sliderLength,
+  max = 10,
+  maxLabel = undefined,
+  min = 0,
+  minLabel = undefined,
+  snapped = false,
+  values = [0],
+  tooltip = [],
+  sliderLength = 280,
   theme: {
     yoga: {
       components: { slider },
@@ -127,17 +127,6 @@ Slider.propTypes = {
   ),
   /** an array that accepts one or two numbers, this determines how many markers will be displayed */
   values: arrayOf(number),
-};
-
-Slider.defaultProps = {
-  max: 10,
-  maxLabel: undefined,
-  min: 0,
-  minLabel: undefined,
-  sliderLength: 280,
-  snapped: false,
-  tooltip: [],
-  values: [0],
 };
 
 Slider.displayName = 'Slider';

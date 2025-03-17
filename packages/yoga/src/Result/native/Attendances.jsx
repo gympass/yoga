@@ -17,7 +17,7 @@ const ItemSeparator = styled(Box).attrs({
   height: 'zero',
 })``;
 
-const Attendances = ({ attendances, rate, color }) => (
+const Attendances = ({ attendances, rate = undefined, color = 'deep' }) => (
   <Box
     display="flex"
     width="100%"
@@ -49,11 +49,6 @@ Attendances.propTypes = {
   ).isRequired,
   rate: string,
   color: string,
-};
-
-Attendances.defaultProps = {
-  rate: undefined,
-  color: 'deep',
 };
 
 export default Attendances;
