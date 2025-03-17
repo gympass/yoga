@@ -254,5 +254,20 @@ describe('<Input />', () => {
 
       expect(inputElement).toHaveAttribute('aria-label', value);
     });
+
+    it('should have close aria label', () => {
+      const value = 'test label clear';
+      const { getByTestId } = render(
+        <ThemeProvider>
+          <Input label="abc123" value="foo" clearButtonAriaLabel={value} />
+        </ThemeProvider>,
+      );
+
+      const inputElement = getByTestId('clearButtonAriaLabel');
+
+      expect(inputElement).toBeInTheDocument();
+
+      expect(inputElement).toHaveAttribute('aria-label', value);
+    });
   });
 });
