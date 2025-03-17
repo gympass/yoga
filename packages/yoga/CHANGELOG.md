@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.131.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.130.0...@gympass/yoga@7.131.0) (2025-03-17)
+
+
+### Features
+
+* adjust clear button label ([e64ab43](https://github.com/Gympass/yoga/commit/e64ab430076cf4a3eca10b7ca238d783d498487d))
+* update variable name ([158d7e4](https://github.com/Gympass/yoga/commit/158d7e46e90a39e3e77ba681f5f408fe576575b5))
+
+
+
+
+
 # [7.130.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.129.3...@gympass/yoga@7.130.0) (2025-03-17)
 
 
