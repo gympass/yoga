@@ -100,57 +100,59 @@ const propShape = shape({
   label: string,
 });
 
-const Dropdown = ({
-  width = undefined,
+function Dropdown({
+  width,
   options,
   onChange = () => {},
   selectedItem = propShape,
-}) => (
-  <Downshift
-    selectedItem={selectedItem}
-    onChange={onChange}
-    itemToString={item => {
-      return item ? item.label : '';
-    }}
-  >
-    {({
-      getInputProps,
-      getItemProps,
-      getRootProps,
-      getMenuProps,
-      getToggleButtonProps,
-      isOpen,
-      highlightedIndex,
-    }) => (
-      <Wrapper width={width} {...getRootProps()}>
-        <Selector>
-          <Input readOnly placeholder="Theme" {...getInputProps()} />
-          <Button {...getToggleButtonProps()}>
-            <ArrowDropdown />
-          </Button>
-        </Selector>
+}) {
+  return (
+    <Downshift
+      selectedItem={selectedItem}
+      onChange={onChange}
+      itemToString={item => {
+        return item ? item.label : '';
+      }}
+    >
+      {({
+        getInputProps,
+        getItemProps,
+        getRootProps,
+        getMenuProps,
+        getToggleButtonProps,
+        isOpen,
+        highlightedIndex,
+      }) => (
+        <Wrapper width={width} {...getRootProps()}>
+          <Selector>
+            <Input readOnly placeholder="Theme" {...getInputProps()} />
+            <Button {...getToggleButtonProps()}>
+              <ArrowDropdown />
+            </Button>
+          </Selector>
 
-        {isOpen ? (
-          <OptionsList {...getMenuProps()}>
-            {options.map((item, index) => (
-              <Option
-                {...getItemProps({
-                  key: item.value,
-                  index,
-                  item,
-                  isActive: highlightedIndex === index,
-                  isSelected: selectedItem === item,
-                })}
-              >
-                {item.label}
-              </Option>
-            ))}
-          </OptionsList>
-        ) : null}
-      </Wrapper>
-    )}
-  </Downshift>
-);
+          {isOpen ? (
+            <OptionsList {...getMenuProps()}>
+              {options.map((item, index) => (
+                <Option
+                  {...getItemProps({
+                    key: item.value,
+                    index,
+                    item,
+                    isActive: highlightedIndex === index,
+                    isSelected: selectedItem === item,
+                  })}
+                >
+                  {item.label}
+                </Option>
+              ))}
+            </OptionsList>
+          ) : null}
+        </Wrapper>
+      )}
+    </Downshift>
+  );
+}
 
 Dropdown.propTypes = {
   width: number,
