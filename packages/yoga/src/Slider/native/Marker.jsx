@@ -57,19 +57,21 @@ CirclePressed.propTypes = {
   pressed: bool,
 };
 
-const Marker = ({ pressed = false, tooltip = undefined }) => (
-  <>
-    {pressed && tooltip && (
-      <Tooltip
-        description={tooltip.description}
-        title={tooltip.title}
-        ribbon={tooltip.ribbon}
-      />
-    )}
-    <CirclePressed as={View} pressed={pressed} />
-    <Circle accessible accessibilityRole="adjustable" />
-  </>
-);
+function Marker({ pressed = false, tooltip }) {
+  return (
+    <>
+      {pressed && tooltip && (
+        <Tooltip
+          description={tooltip.description}
+          title={tooltip.title}
+          ribbon={tooltip.ribbon}
+        />
+      )}
+      <CirclePressed as={View} pressed={pressed} />
+      <Circle accessible accessibilityRole="adjustable" />
+    </>
+  );
+}
 
 Marker.propTypes = {
   pressed: bool,
