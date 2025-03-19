@@ -39,7 +39,7 @@ const StyledText = styled(Text.Body2)`
 
 const ResultDetails = ({
   items,
-  limit = undefined,
+  limit,
   limitLabel = '',
   dots = false,
   renderItem = Text.Body2,
