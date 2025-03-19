@@ -26,12 +26,7 @@ const LineWrapper = styled.View(
 
 /** Stepper is responsible for the logic that drives a stepped workflow, it
 provides a wizard-like workflow by dividing content into logical steps. */
-function Stepper({
-  children = undefined,
-  activeStep = 0,
-  secondary = false,
-  ...rest
-}) {
+function Stepper({ children, activeStep = 0, secondary = false, ...rest }) {
   return (
     <Wrapper {...rest}>
       <LineWrapper>
