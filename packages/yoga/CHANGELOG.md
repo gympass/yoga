@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.131.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.131.0...@gympass/yoga@7.131.1) (2025-03-20)
+
+
+### Bug Fixes
+
+* **actionreq:** updates snapshots ([5647559](https://github.com/Gympass/yoga/commit/5647559135482002a9cb41f71b3c780e13b10f8d))
+* **details:** fixes sonar issue ([8bdd364](https://github.com/Gympass/yoga/commit/8bdd364433c7d8bd9cdf881e6eec30533fc7ca83))
+* **marker:** updates to use function declaration ([8dce4ce](https://github.com/Gympass/yoga/commit/8dce4ce6c6e89484d52abd85a37f48af9a139740))
+* **stepper:** fixes sonar issues ([1d07149](https://github.com/Gympass/yoga/commit/1d0714929cebb8984db8718c887c8dfb7e013e6f))
+* typo/comment ([476710d](https://github.com/Gympass/yoga/commit/476710d9229630db33672affdef588ade2f6a66c))
+* updates native files to remove deprecated defaultProps ([c7bc63b](https://github.com/Gympass/yoga/commit/c7bc63b5c57eb50194cbf2e5caac67520603237f))
+
+
+
+
+
 # [7.131.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.130.0...@gympass/yoga@7.131.0) (2025-03-17)
 
 

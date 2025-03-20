@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.53.2](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.53.1...@gympass/yoga-doc@2.53.2) (2025-03-20)
+
+
+### Bug Fixes
+
+* **dropdown:** updates to use function declaration ([4d42742](https://github.com/gympass/yoga/commit/4d42742b7a454cc11a778ac0936dbf838c6f6761))
+* updates native files to remove deprecated defaultProps ([c7bc63b](https://github.com/gympass/yoga/commit/c7bc63b5c57eb50194cbf2e5caac67520603237f))
+
+
+
+
+
 ## [2.53.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.53.0...@gympass/yoga-doc@2.53.1) (2025-03-17)
 
 **Note:** Version bump only for package @gympass/yoga-doc
