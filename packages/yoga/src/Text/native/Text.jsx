@@ -106,7 +106,25 @@ Black.displayName = 'Text.Black';
 
 const TextRenderer = styledText('p');
 
-const Text = props => <TextRenderer {...props} />;
+const Text = ({
+  inverted = false,
+  variant = undefined,
+  size = undefined,
+  fontSize = 'medium',
+  light = false,
+  bold = false,
+  ...rest
+}) => (
+  <TextRenderer
+    inverted={inverted}
+    variant={variant}
+    size={size}
+    fontSize={fontSize}
+    light={light}
+    bold={bold}
+    {...rest}
+  />
+);
 
 Text.displayName = 'Text';
 
@@ -178,15 +196,6 @@ Text.propTypes = {
   light: bool,
   bold: bool,
   fontSize: fontSizes,
-};
-
-Text.defaultProps = {
-  inverted: false,
-  variant: undefined,
-  size: undefined,
-  fontSize: 'medium',
-  light: false,
-  bold: false,
 };
 
 export {

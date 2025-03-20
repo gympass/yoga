@@ -70,10 +70,10 @@ const Title = styled(Text.Bold)`
 `;
 
 const Backdrop = ({
-  visible,
-  title,
+  visible = false,
+  title = null,
   children,
-  onClose,
+  onClose = () => {},
   theme: {
     yoga: {
       transition,
@@ -124,12 +124,6 @@ Backdrop.propTypes = {
   title: string,
   children: node.isRequired,
   onClose: func,
-};
-
-Backdrop.defaultProps = {
-  visible: false,
-  title: null,
-  onClose: () => {},
 };
 
 export default withTheme(Backdrop);

@@ -44,16 +44,15 @@ const Link = styled(Label)`
   }}
 `;
 
-const ButtonLink = forwardRef((props, ref) => <Link {...props} ref={ref} />);
+const ButtonLink = forwardRef(
+  ({ disabled = false, secondary = false, ...props }, ref) => (
+    <Link disabled={disabled} secondary={secondary} {...props} ref={ref} />
+  ),
+);
 
 ButtonLink.propTypes = {
   disabled: bool,
   secondary: bool,
-};
-
-ButtonLink.defaultProps = {
-  disabled: false,
-  secondary: false,
 };
 
 ButtonLink.displayName = 'Button.Link';

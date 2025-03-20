@@ -95,8 +95,18 @@ const Option = styled.li`
   `}
 `;
 
-const Dropdown = ({ width, options, onChange, selectedItem }) => (
-  <>
+const propShape = shape({
+  value: string,
+  label: string,
+});
+
+function Dropdown({
+  width,
+  options,
+  onChange = () => {},
+  selectedItem = propShape,
+}) {
+  return (
     <Downshift
       selectedItem={selectedItem}
       onChange={onChange}
@@ -141,24 +151,13 @@ const Dropdown = ({ width, options, onChange, selectedItem }) => (
         </Wrapper>
       )}
     </Downshift>
-  </>
-);
-
-const propShape = shape({
-  value: string,
-  label: string,
-});
+  );
+}
 
 Dropdown.propTypes = {
   width: number,
   options: arrayOf(propShape).isRequired,
   onChange: func,
-  selectedItem: propShape,
-};
-
-Dropdown.defaultProps = {
-  width: undefined,
-  onChange: () => {},
   selectedItem: propShape,
 };
 

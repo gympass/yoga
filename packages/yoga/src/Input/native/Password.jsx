@@ -39,11 +39,11 @@ const IconWrapper = styled.View(
 const Password = React.forwardRef(
   (
     {
-      disabled,
-      style,
-      full,
-      onBlur,
-      onFocus,
+      disabled = false,
+      style = undefined,
+      full = false,
+      onBlur = () => {},
+      onFocus = () => {},
       theme: {
         yoga: {
           colors,
@@ -122,14 +122,6 @@ Password.propTypes = {
   style: shape({}),
   onBlur: func,
   onFocus: func,
-};
-
-Password.defaultProps = {
-  disabled: false,
-  full: false,
-  style: undefined,
-  onBlur: () => {},
-  onFocus: () => {},
 };
 
 export default withTheme(Password);

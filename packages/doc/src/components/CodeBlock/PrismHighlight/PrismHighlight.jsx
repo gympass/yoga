@@ -40,7 +40,7 @@ const Pre = styled.pre`
   `}
 `;
 
-const PrismHighlight = ({ code, liveEditor }) => {
+const PrismHighlight = ({ code = undefined, liveEditor = false }) => {
   const highlightCode = code || useContext(CodeBlockContext).code;
 
   return (
@@ -75,11 +75,6 @@ const PrismHighlight = ({ code, liveEditor }) => {
 PrismHighlight.propTypes = {
   liveEditor: bool,
   code: string,
-};
-
-PrismHighlight.defaultProps = {
-  liveEditor: false,
-  code: undefined,
 };
 
 export default PrismHighlight;

@@ -56,15 +56,15 @@ const SnackbarContainer = styled.View`
  */
 const Snackbar = forwardRef((props, ref) => {
   const {
-    icon,
-    message,
-    actionLabel,
-    onAction,
-    variant,
-    onSnackbarClose,
-    duration,
-    bottomOffset,
-    dataTestId,
+    icon = undefined,
+    message = '',
+    actionLabel = undefined,
+    onAction = undefined,
+    variant = 'success',
+    onSnackbarClose = undefined,
+    duration = 'default',
+    bottomOffset = 0,
+    dataTestId = 'snackbar',
     ...rest
   } = props;
   const wrapperRef = useRef();
@@ -205,18 +205,6 @@ Snackbar.propTypes = {
   bottomOffset: number,
   /* A unique identifier for the Snackbar component, used for testing purposes with tools like Jest and Testing Library.  */
   dataTestId: string,
-};
-
-Snackbar.defaultProps = {
-  variant: 'success',
-  icon: undefined,
-  message: '',
-  actionLabel: undefined,
-  onAction: undefined,
-  onSnackbarClose: undefined,
-  duration: 'default',
-  bottomOffset: 0,
-  dataTestId: 'snackbar',
 };
 
 export default Snackbar;

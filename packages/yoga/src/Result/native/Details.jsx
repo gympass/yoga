@@ -40,12 +40,14 @@ const StyledText = styled(Text.Body2)`
 const ResultDetails = ({
   items,
   limit,
-  limitLabel,
-  dots,
-  renderItem: Item,
+  limitLabel = '',
+  dots = false,
+  renderItem = Text.Body2,
 }) => {
   const refinedList = limit !== 0 ? items.slice(0, limit) : items;
   const numberOfItemsLeft = items.length - limit;
+
+  const Item = renderItem;
 
   return (
     <Box flexDirection="row" alignItems="center" mt="xxxsmall">
@@ -66,7 +68,6 @@ const ResultDetails = ({
                   </>
                 )}
                 <Item variant={variant} {...props} />
-
                 {!isLastItem &&
                   (dots ? (
                     <>
@@ -77,7 +78,6 @@ const ResultDetails = ({
                   ) : (
                     <Separator />
                   ))}
-
                 {showNumbersOfItemsLeft && (
                   <>
                     <Separator />
@@ -112,13 +112,6 @@ ResultDetails.propTypes = {
   dots: bool,
   /** The component to render as the item of the list. */
   renderItem: oneOfType([node, func, shape({ render: func.isRequired })]),
-};
-
-ResultDetails.defaultProps = {
-  limit: undefined,
-  limitLabel: '',
-  dots: false,
-  renderItem: Text.Body2,
 };
 
 export default ResultDetails;

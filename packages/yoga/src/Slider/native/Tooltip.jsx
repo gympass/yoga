@@ -133,7 +133,12 @@ Ribbon.propTypes = {
   children: node.isRequired,
 };
 
-const Tooltip = ({ title, description, ribbon, ...props }) => (
+const Tooltip = ({
+  title = undefined,
+  description = undefined,
+  ribbon = undefined,
+  ...props
+}) => (
   <Wrapper>
     <Arrow />
     {ribbon && <Ribbon>{ribbon}</Ribbon>}
@@ -150,12 +155,6 @@ Tooltip.propTypes = {
   title: string,
   description: string,
   ribbon: string,
-};
-
-Tooltip.defaultProps = {
-  title: undefined,
-  description: undefined,
-  ribbon: undefined,
 };
 
 export default Tooltip;

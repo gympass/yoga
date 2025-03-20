@@ -43,10 +43,10 @@ const ItemText = styled(Text.Small)`
 const ListItem = withTheme(
   ({
     text,
-    variant,
+    variant = undefined,
     theme: yogaTheme,
-    icon,
-    buttonProps: { children, ...buttonProps },
+    icon = undefined,
+    buttonProps: { children, ...buttonProps } = {},
   }) => {
     const itemColor = get(yogaTheme.yoga.colors, variant);
 
@@ -99,12 +99,6 @@ ListItem.propTypes = {
    * the item text will be rendered on this color.
    */
   variant: string,
-};
-
-ListItem.defaultProps = {
-  icon: undefined,
-  buttonProps: {},
-  variant: undefined,
 };
 
 export { List, ListItem };

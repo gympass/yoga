@@ -163,21 +163,21 @@ const CloseIcon = styled.View(
 const Input = React.forwardRef(
   (
     {
-      cleanable,
-      disabled,
-      error,
-      full,
-      helper,
-      label,
-      maxLength,
-      readOnly,
-      style,
-      textContentType,
-      value,
-      onBlur,
-      onClean,
-      onFocus,
-      hideMaxLength,
+      cleanable = true,
+      disabled = false,
+      error = undefined,
+      full = false,
+      helper = undefined,
+      label = '',
+      maxLength = undefined,
+      readOnly = false,
+      style = {},
+      textContentType = undefined,
+      value = '',
+      onBlur = () => {},
+      onClean = () => {},
+      onFocus = () => {},
+      hideMaxLength = false,
       theme: {
         yoga: {
           colors,
@@ -336,24 +336,6 @@ Input.propTypes = {
   onClean: func,
   onFocus: func,
   hideMaxLength: bool,
-};
-
-Input.defaultProps = {
-  cleanable: true,
-  disabled: false,
-  error: undefined,
-  full: false,
-  helper: undefined,
-  label: '',
-  maxLength: undefined,
-  readOnly: false,
-  style: {},
-  textContentType: undefined,
-  value: '',
-  onBlur: () => {},
-  onClean: () => {},
-  onFocus: () => {},
-  hideMaxLength: false,
 };
 
 export default withTheme(Input);

@@ -56,9 +56,10 @@ const Grid = styled.div`
   `};
 `;
 
-const HeaderLink = styled(Link).attrs({
+const HeaderLink = styled(Link).attrs(({ partiallyActive = true }) => ({
   activeClassName: 'active',
-})(
+  partiallyActive,
+}))(
   ({
     theme: {
       yoga: {
@@ -181,10 +182,6 @@ const Layout = ({
 
 HeaderLink.propTypes = {
   partiallyActive: bool,
-};
-
-HeaderLink.defaultProps = {
-  partiallyActive: true,
 };
 
 Layout.propTypes = {

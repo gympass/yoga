@@ -85,14 +85,14 @@ const getSelectedOption = options =>
 const Dropdown = React.forwardRef(
   (
     {
-      error,
-      label,
-      disabled,
-      full,
+      error = undefined,
+      label = '',
+      disabled = false,
+      full = false,
       options,
-      cancelActionLabel,
-      confirmActionLabel,
-      onChange,
+      cancelActionLabel = 'Cancel',
+      confirmActionLabel = 'Confirm',
+      onChange = () => {},
       theme: {
         yoga: {
           components: { dropdown },
@@ -176,16 +176,6 @@ Dropdown.propTypes = {
   /** Confirm label that will be shown in iOS option chooser */
   confirmActionLabel: string,
   onChange: func,
-};
-
-Dropdown.defaultProps = {
-  label: '',
-  error: undefined,
-  full: false,
-  cancelActionLabel: 'Cancel',
-  confirmActionLabel: 'Confirm',
-  disabled: false,
-  onChange: () => {},
 };
 
 export default withTheme(Dropdown);

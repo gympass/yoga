@@ -89,7 +89,12 @@ const Description = styled.p(
   `,
 );
 
-const Box = ({ number: boxNumber, title, description, href }) => (
+const Box = ({
+  number: boxNumber = 0,
+  title = undefined,
+  description = undefined,
+  href = undefined,
+}) => (
   <Item to={href}>
     <Number>{boxNumber}</Number>
     <Content>
@@ -104,13 +109,6 @@ Box.propTypes = {
   title: string,
   description: string,
   href: string,
-};
-
-Box.defaultProps = {
-  number: 0,
-  title: undefined,
-  description: undefined,
-  href: undefined,
 };
 
 export default Box;

@@ -224,7 +224,7 @@ ListItem.propTypes = {
   open: bool.isRequired,
 };
 
-const List = ({ tree, level, toggleMenu, prefix }) => {
+const List = ({ tree, level = 0, toggleMenu, prefix }) => {
   const sortingFunction = Object.keys(tree).some(child => tree[child]?.order)
     ? SORTING.orderAscending
     : SORTING.alphabeticAscending;
@@ -257,10 +257,6 @@ List.propTypes = {
   level: number,
   toggleMenu: func.isRequired,
   prefix: bool.isRequired,
-};
-
-List.defaultProps = {
-  level: 0,
 };
 
 const Navigation = ({ items, toggleMenu, opened, prefix }) => {

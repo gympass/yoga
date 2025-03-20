@@ -2,70 +2,11 @@
 
 exports[`<ActionRequirement /> should match snapshot 1`] = `
 <View
-  checkable={
-    <Styled(View)
-      alignItems="center"
-      display="flex"
-      flexDirection="row"
-    >
-      <WithTheme(Checkbox) />
-      <Text
-        bold={false}
-        fontSize="medium"
-        inverted={false}
-        light={false}
-      >
-        I have read and agree to the Terms of Use and Privacy Policy.
-      </Text>
-    </Styled(View)>
-  }
-  description="Lets make it a good day!"
-  illustration={
-    <Unknown
-      height={375}
-      width={375}
-    />
-  }
-  list={
-    <React.Fragment>
-      <Text
-        bold={false}
-        fontSize="medium"
-        inverted={false}
-        light={false}
-      >
-        <Unknown />
-         1x/day standard access
-      </Text>
-      <Text
-        bold={false}
-        fontSize="medium"
-        inverted={false}
-        light={false}
-        mt="small"
-      >
-        <Unknown />
-         4x/month 1-on-1 sessions
-      </Text>
-      <Text
-        bold={false}
-        fontSize="medium"
-        inverted={false}
-        light={false}
-        mt="small"
-      >
-        <Unknown />
-         2x/month premium classes
-      </Text>
-    </React.Fragment>
-  }
   style={
     [
       {},
     ]
   }
-  title="Welcome to the world of feeling good!"
-  titleAsTextDisplay={false}
 >
   <View
     style={
@@ -554,14 +495,11 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
 
 exports[`<ActionRequirement /> should match snapshot with text display 1`] = `
 <View
-  description="Lets make it a good day!"
   style={
     [
       {},
     ]
   }
-  title="Welcome to the world of feeling good!"
-  titleAsTextDisplay={true}
 >
   <Text
     style={

@@ -25,7 +25,7 @@ const Wrapper = styled(Animated.View)(
 );
 
 const SnackbarAnimationWrapper = forwardRef(
-  ({ onSnackbarClose, children, duration }, ref) => {
+  ({ onSnackbarClose = undefined, children, duration }, ref) => {
     const { height: windowHeight } = useWindowDimensions();
 
     const [childrenHeight, setChildrenHeight] = useState();
@@ -123,10 +123,6 @@ SnackbarAnimationWrapper.propTypes = {
   onSnackbarClose: func,
   children: node.isRequired,
   duration: oneOf(['fast', 'default', 'slow', 'indefinite']).isRequired,
-};
-
-SnackbarAnimationWrapper.defaultProps = {
-  onSnackbarClose: undefined,
 };
 
 export default SnackbarAnimationWrapper;

@@ -71,7 +71,7 @@ const StyledTable = styled.table`
   `};
 `;
 
-export const Table = ({ properties }) => (
+export const Table = ({ properties = [] }) => (
   <TableWrapper>
     <StyledTable>
       <thead>
@@ -120,10 +120,6 @@ Table.propTypes = {
       defaultValue: shape({ value: string }),
     }),
   ),
-};
-
-Table.defaultProps = {
-  properties: [],
 };
 
 const PropsTable = ({ component, platform = '' }) => {

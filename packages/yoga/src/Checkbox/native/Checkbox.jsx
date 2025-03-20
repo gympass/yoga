@@ -158,15 +158,15 @@ const CheckArea = styled.View(
  * items on a task. This component can also allow the user to turn an option on
  * or off.  */
 const Checkbox = ({
-  label,
-  helper,
-  disabled,
-  checked,
-  error,
-  style,
-  onPressIn,
-  onPressOut,
-  inverted,
+  label = undefined,
+  helper = undefined,
+  disabled = false,
+  checked = false,
+  error = undefined,
+  style = {},
+  onPressIn = () => {},
+  onPressOut = () => {},
+  inverted = false,
   theme: {
     yoga: {
       components: { checkbox },
@@ -238,18 +238,6 @@ Checkbox.propTypes = {
   style: shape({}),
   onPressIn: func,
   onPressOut: func,
-};
-
-Checkbox.defaultProps = {
-  label: undefined,
-  helper: undefined,
-  checked: false,
-  disabled: false,
-  inverted: false,
-  error: undefined,
-  style: {},
-  onPressIn: () => {},
-  onPressOut: () => {},
 };
 
 Checkbox.displayName = 'Checkbox';

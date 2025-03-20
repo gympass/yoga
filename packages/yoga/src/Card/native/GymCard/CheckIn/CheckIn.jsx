@@ -39,7 +39,7 @@ const Title = styled(Text)`
 const CheckIn = ({
   name,
   address,
-  avatar,
+  avatar = undefined,
   distance,
   rating,
   theme: {
@@ -75,10 +75,6 @@ CheckIn.propTypes = {
   avatar: ImagePropTypes.source,
   distance: string.isRequired,
   rating: number.isRequired,
-};
-
-CheckIn.defaultProps = {
-  avatar: undefined,
 };
 
 CheckIn.displayName = 'GymCard.CheckIn';

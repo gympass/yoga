@@ -3,7 +3,7 @@ import { bool } from 'prop-types';
 
 const Step = styled.View(
   ({
-    active,
+    active = false,
     theme: {
       yoga: {
         components: { slider },
@@ -23,10 +23,6 @@ const Step = styled.View(
 
 Step.propTypes = {
   active: bool,
-};
-
-Step.defaultProps = {
-  active: false,
 };
 
 export default Step;

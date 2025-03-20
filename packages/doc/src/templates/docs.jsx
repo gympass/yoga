@@ -70,9 +70,4 @@ MDXRuntimeTest.propTypes = {
   edges: string,
 };
 
-MDXRuntimeTest.defaultProps = {
-  data: undefined,
-  edges: undefined,
-};
-
 export default MDXRuntimeTest;

@@ -21,7 +21,13 @@ const BorderImage = styled(Box).attrs(({ theme: { yoga } }) => {
   position: absolute;
 `;
 
-const Content = ({ icon, src, fill, content, stroke }) => {
+const Content = ({
+  icon = BuildingFilled,
+  src = undefined,
+  fill = 'white',
+  content,
+  stroke,
+}) => {
   if (src) {
     return <Box as={Image} width="100%" height="100%" source={src} />;
   }
@@ -43,13 +49,13 @@ const Avatar = forwardRef(
   (
     {
       icon = BuildingFilled,
-      src,
+      src = undefined,
       children,
-      fill,
+      fill = 'white',
       stroke,
-      borderRadius,
-      width,
-      height,
+      borderRadius = 'small',
+      width = 48,
+      height = 48,
       ...props
     },
     ref,
@@ -87,12 +93,6 @@ Content.propTypes = {
   ...Box.propTypes,
 };
 
-Content.defaultProps = {
-  src: undefined,
-  fill: 'white',
-  icon: BuildingFilled,
-};
-
 Avatar.propTypes = {
   src: ImagePropTypes.source,
   icon: func,
@@ -101,15 +101,6 @@ Avatar.propTypes = {
   height: number,
   borderRadius: string,
   ...Box.propTypes,
-};
-
-Avatar.defaultProps = {
-  src: undefined,
-  fill: 'white',
-  width: 48,
-  height: 48,
-  borderRadius: 'small',
-  ...Box.defaultProps,
 };
 
 Avatar.displayName = 'Avatar';

@@ -9,7 +9,7 @@ const LabelView = styled.View`
 
 const LabelText = styled.Text(
   ({
-    placement,
+    placement = 'left',
     theme: {
       yoga: { baseFont },
     },
@@ -26,10 +26,6 @@ const LabelText = styled.Text(
 
 LabelText.propTypes = {
   placement: oneOf(['left', 'right']),
-};
-
-LabelText.defaultProps = {
-  placement: 'left',
 };
 
 export { LabelView, LabelText };

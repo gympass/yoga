@@ -88,7 +88,11 @@ const Actions = styled.div`
   }
 `;
 
-const Header = ({ children, showMenu, toggleMenu }) => (
+const Header = ({
+  children = undefined,
+  showMenu = false,
+  toggleMenu = () => {},
+}) => (
   <Wrapper>
     <LogoWrapper>
       <Link to="/">
@@ -117,12 +121,6 @@ Header.propTypes = {
   children: node,
   showMenu: bool,
   toggleMenu: func,
-};
-
-Header.defaultProps = {
-  children: undefined,
-  showMenu: false,
-  toggleMenu: () => {},
 };
 
 export default Header;

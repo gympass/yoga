@@ -75,7 +75,12 @@ const peerDependencies = Object.keys({
   'react-is': '*',
 }).map(pkg => ({ path: pkg }));
 
-const CodeBlock = ({ children: sampleCode, center, state, type }) => {
+const CodeBlock = ({
+  children: sampleCode,
+  center = true,
+  state = false,
+  type = 'reactLive',
+}) => {
   const code = sampleCode.trim();
 
   const imports = type === 'highlight' ? [] : buildImportString(code, packages);
@@ -110,12 +115,6 @@ CodeBlock.propTypes = {
   children: node.isRequired,
   center: bool,
   state: bool,
-};
-
-CodeBlock.defaultProps = {
-  type: 'reactLive',
-  center: true,
-  state: false,
 };
 
 export default CodeBlock;

@@ -44,7 +44,11 @@ const Border = styled.View`
   }) => color};
 `;
 
-const PlanCard = ({ children, variant, ...rest }) => (
+const PlanCard = ({
+  children = undefined,
+  variant = 'deepPurple',
+  ...rest
+}) => (
   <Box>
     <Plan {...rest}>
       <Border variant={variant} />
@@ -77,11 +81,6 @@ PlanCard.propTypes = {
     'clear',
     'white',
   ]),
-};
-
-PlanCard.defaultProps = {
-  children: undefined,
-  variant: 'deepPurple',
 };
 
 PlanCard.displayName = 'PlanCard';

@@ -14,9 +14,42 @@ const StyledInput = styled(Input)`
  * lines are increased when the input reaches the limit of lines established for
  * the field. This action creates a vertical scroll inside the component.
  */
-const TextArea = props => (
-  <StyledInput {...props} textAlignVertical="top" multiline cleanable={false} />
-);
+const TextArea = ({
+  disabled = false,
+  error = undefined,
+  full = false,
+  helper = undefined,
+  label = '',
+  maxLength = undefined,
+  readOnly = false,
+  value = '',
+  onBlur = () => {},
+  onChangeText = () => {},
+  onFocus = () => {},
+}) => {
+  const props = {
+    disabled,
+    error,
+    full,
+    helper,
+    label,
+    maxLength,
+    readOnly,
+    value,
+    onBlur,
+    onChangeText,
+    onFocus,
+  };
+
+  return (
+    <StyledInput
+      {...props}
+      textAlignVertical="top"
+      multiline
+      cleanable={false}
+    />
+  );
+};
 
 TextArea.propTypes = {
   disabled: bool,
@@ -33,20 +66,6 @@ TextArea.propTypes = {
   onBlur: func,
   onChangeText: func,
   onFocus: func,
-};
-
-TextArea.defaultProps = {
-  disabled: false,
-  error: undefined,
-  full: false,
-  helper: undefined,
-  label: '',
-  maxLength: undefined,
-  readOnly: false,
-  value: '',
-  onBlur: () => {},
-  onChangeText: () => {},
-  onFocus: () => {},
 };
 
 export default TextArea;

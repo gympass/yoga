@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   flex-direction: row;
 `;
 
-const ThemeConfig = ({ theme, setTheme }) => {
+const ThemeConfig = ({ theme = 'EndUser', setTheme }) => {
   const spacesInPascalCase = word => {
     const spacedWord = word
       .match(/($[a-z])|[A-Z][^A-Z]+/g)
@@ -40,10 +40,6 @@ const ThemeConfig = ({ theme, setTheme }) => {
 ThemeConfig.propTypes = {
   theme: string,
   setTheme: func.isRequired,
-};
-
-ThemeConfig.defaultProps = {
-  theme: 'EndUser',
 };
 
 export default ThemeConfig;

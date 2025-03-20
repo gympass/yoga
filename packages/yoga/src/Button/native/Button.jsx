@@ -100,74 +100,82 @@ export const ButtonContainer = styled.View`
 /** Buttons make common actions more obvious and help users more easily perform
 them. Buttons use labels and sometimes icons to communicate the action that will
 occur when the user touches them. */
-const Button = forwardRef(
-  (
-    {
-      children,
-      full,
-      disabled,
-      small,
-      pressed,
-      inverted,
-      secondary,
-      icon: Icon,
-      theme: {
-        yoga: {
-          components: { button },
-        },
+const Button = forwardRef((props, ref) => {
+  const defaultValues = {
+    children: 'Button',
+    full: false,
+    disabled: false,
+    small: false,
+    pressed: false,
+    inverted: false,
+    secondary: false,
+    icon: undefined,
+  };
+
+  const {
+    children,
+    full,
+    disabled,
+    small,
+    pressed,
+    inverted,
+    secondary,
+    icon: Icon,
+    theme: {
+      yoga: {
+        components: { button },
       },
-      ...rest
     },
-    ref,
-  ) => {
-    const state = secondary ? 'secondary' : 'primary';
-    let textColor = button.types.contained.font.default.color;
+    ...rest
+  } = { ...defaultValues, ...props };
 
-    if (disabled) {
-      textColor = button.types.contained.font.disabled.color;
-    } else if (inverted) {
-      textColor = button.types.contained.backgroundColor[state].default;
-      if (pressed) {
-        textColor = button.types.contained.backgroundColor[state].pressed;
-      }
-    } else if (pressed) {
-      textColor = button.types.contained.font.pressed.color;
+  const state = secondary ? 'secondary' : 'primary';
+  let textColor = button.types.contained.font.default.color;
+
+  if (disabled) {
+    textColor = button.types.contained.font.disabled.color;
+  } else if (inverted) {
+    textColor = button.types.contained.backgroundColor[state].default;
+    if (pressed) {
+      textColor = button.types.contained.backgroundColor[state].pressed;
     }
+  } else if (pressed) {
+    textColor = button.types.contained.font.pressed.color;
+  }
 
-    return (
-      <ButtonContainer
-        {...rest}
-        full={full}
-        pressed={pressed}
+  return (
+    <ButtonContainer
+      {...rest}
+      full={full}
+      pressed={pressed}
+      disabled={disabled}
+      small={small}
+      inverted={inverted}
+      secondary={secondary}
+      ref={ref}
+    >
+      {Icon && (
+        <Icon
+          width={small ? button.icon.size.small : button.icon.size.default}
+          height={small ? button.icon.size.small : button.icon.size.default}
+          fill={textColor}
+          style={{
+            marginRight: button.icon.margin.right,
+          }}
+        />
+      )}
+      <Label
         disabled={disabled}
-        small={small}
+        pressed={pressed}
         inverted={inverted}
-        secondary={secondary}
-        ref={ref}
+        small={small}
+        color={textColor}
       >
-        {Icon && (
-          <Icon
-            width={small ? button.icon.size.small : button.icon.size.default}
-            height={small ? button.icon.size.small : button.icon.size.default}
-            fill={textColor}
-            style={{
-              marginRight: button.icon.margin.right,
-            }}
-          />
-        )}
-        <Label
-          disabled={disabled}
-          pressed={pressed}
-          inverted={inverted}
-          small={small}
-          color={textColor}
-        >
-          {children}
-        </Label>
-      </ButtonContainer>
-    );
-  },
-);
+        {children}
+      </Label>
+    </ButtonContainer>
+  );
+});
 
 Button.propTypes = {
   children: node,
@@ -179,17 +187,6 @@ Button.propTypes = {
   secondary: bool,
   /** an Icon from yoga-icons package */
   icon: oneOfType([bool, func]),
-};
-
-Button.defaultProps = {
-  children: 'Button',
-  full: false,
-  disabled: false,
-  small: false,
-  pressed: false,
-  inverted: false,
-  secondary: false,
-  icon: undefined,
 };
 
 const ButtonWithTouchable = withTouchable(withTheme(Button));
