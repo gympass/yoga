@@ -5,7 +5,7 @@ import {
   fontWeights,
   spacing,
 } from '@gympass/yoga-tokens/src/global';
-import { Text, Button, ThemeProvider } from '../..';
+import { Text, Button, ThemeProvider, v3theme } from '../..';
 
 import Accordion from '.';
 
@@ -29,6 +29,31 @@ describe('<Accordion />', () => {
       expect(screen.getByText('Default')).toHaveStyle({
         fontSize: `${fontSizes.medium}px`,
         fontWeight: fontWeights.medium,
+      });
+
+      expect(screen.getByRole('button')).toHaveStyle({
+        padding: `${spacing.large}px ${spacing.medium}px`,
+      });
+
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('the default version with v3Theme', () => {
+      const { container } = render(
+        <ThemeProvider theme={v3theme}>
+          <Accordion title="Default">
+            <Accordion.Content>
+              <Text>Content</Text>
+            </Accordion.Content>
+          </Accordion>
+        </ThemeProvider>,
+      );
+
+      expect(screen.getByText('Default')).toBeInTheDocument();
+
+      expect(screen.getByText('Default')).toHaveStyle({
+        fontSize: `${fontSizes.medium}px`,
+        fontWeight: fontWeights.bold,
       });
 
       expect(screen.getByRole('button')).toHaveStyle({
