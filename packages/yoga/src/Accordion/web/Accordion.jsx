@@ -229,14 +229,13 @@ const Accordion = ({
         ) : (
           <Title subtitle={subtitle}>
             {small ? (
-              <Text.Small color={disabled ? 'deep' : undefined}>
+              <Text.Small color={disabled ? 'text.disabled' : 'text.primary'}>
                 {title}
               </Text.Small>
             ) : (
               <Text.Body1
                 bold
-                color={disabled ? 'deep' : undefined}
-                lineHeight="medium"
+                color={disabled ? 'text.disabled' : 'text.primary'}
               >
                 {title}
               </Text.Body1>
