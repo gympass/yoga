@@ -26,30 +26,26 @@ const TextArea = ({
   onBlur = () => {},
   onChangeText = () => {},
   onFocus = () => {},
-}) => {
-  const props = {
-    disabled,
-    error,
-    full,
-    helper,
-    label,
-    maxLength,
-    readOnly,
-    value,
-    onBlur,
-    onChangeText,
-    onFocus,
-  };
-
-  return (
-    <StyledInput
-      {...props}
-      textAlignVertical="top"
-      multiline
-      cleanable={false}
-    />
-  );
-};
+  ...rest
+}) => (
+  <StyledInput
+    disabled={disabled}
+    error={error}
+    full={full}
+    helper={helper}
+    label={label}
+    maxLength={maxLength}
+    readOnly={readOnly}
+    value={value}
+    onBlur={onBlur}
+    onChangeText={onChangeText}
+    onFocus={onFocus}
+    textAlignVertical="top"
+    multiline
+    cleanable={false}
+    {...rest}
+  />
+);
 
 TextArea.propTypes = {
   disabled: bool,
