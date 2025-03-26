@@ -169,30 +169,45 @@ const FullCard = withTheme(
   ),
 );
 
-const EventCard = props => {
-  const defaultValues = {
-    small: false,
-    active: false,
-    event: undefined,
-    link: '',
-    onLinkPress: undefined,
-    onPress: undefined,
-  };
-
-  const { onPress, small, ...rest } = { ...defaultValues, ...props };
-
-  return (
-    <TouchableWithoutFeedback onPress={onPress}>
-      <Event small={small} {...rest}>
-        {small ? (
-          <SmallCard onPress={onPress} {...rest} />
-        ) : (
-          <FullCard {...rest} />
-        )}
-      </Event>
-    </TouchableWithoutFeedback>
-  );
-};
+const EventCard = ({
+  onPress,
+  small = false,
+  active = false,
+  event,
+  link = '',
+  onLinkPress,
+  ...rest
+}) => (
+  <TouchableWithoutFeedback onPress={onPress}>
+    <Event
+      small={small}
+      active={active}
+      link={link}
+      event={event}
+      onLinkPress={onLinkPress}
+      {...rest}
+    >
+      {small ? (
+        <SmallCard
+          onPress={onPress}
+          active={active}
+          link={link}
+          onLinkPress={onLinkPress}
+          event={event}
+          {...rest}
+        />
+      ) : (
+        <FullCard
+          active={active}
+          link={link}
+          onLinkPress={onLinkPress}
+          event={event}
+          {...rest}
+        />
+      )}
+    </Event>
+  </TouchableWithoutFeedback>
+);
 
 EventCard.propTypes = {
   /** event information: { name (string), place (string), time (string) } */
