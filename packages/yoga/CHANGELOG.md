@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.131.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.131.2...@gympass/yoga@7.131.3) (2025-03-26)
+
+
+### Bug Fixes
+
+* **eventcard:** updates to fix snapshot issues on client apps ([c0ff68f](https://github.com/Gympass/yoga/commit/c0ff68ff55aec2cddedb519eba6c2b5213b9a47b))
+* **textarea:** updates to propagate props rest ([9da1995](https://github.com/Gympass/yoga/commit/9da199587bd1a48e0ecfb9950121df1dde99f8c8))
+
+
+
+
+
 ## [7.131.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.131.1...@gympass/yoga@7.131.2) (2025-03-24)
 
 **Note:** Version bump only for package @gympass/yoga
