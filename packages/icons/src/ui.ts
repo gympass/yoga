@@ -59,6 +59,7 @@ import CornerUpRight from './svg/corner_up_right.svg';
 import Court from './svg/court.svg';
 import CoworkingSpace from './svg/coworking-space.svg';
 import CreditCard from './svg/credit_card.svg';
+import Crown from './svg/crown.svg';
 import Cycling from './svg/cycling.svg';
 import Dance from './svg/dance.svg';
 import Delayed from './svg/delayed.svg';
@@ -281,6 +282,7 @@ export {
   Court,
   CoworkingSpace,
   CreditCard,
+  Crown,
   Cycling,
   Dance,
   Delayed,
