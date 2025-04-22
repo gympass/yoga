@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.30.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.29.0...@gympass/yoga-icons@1.30.0) (2025-04-22)
+
+
+### Bug Fixes
+
+* **PAC-1052:** remove fill none ([e82115c](https://github.com/Gympass/yoga/commit/e82115c10b813fb8a063fef0b5c65e51d69ff21d))
+* **PAC-1053:** convert amenities svg strokes to fills ([11f6f11](https://github.com/Gympass/yoga/commit/11f6f11ccf046dd3166066bee865a3f39a438356))
+
+
+### Features
+
+* **icons:** update bioimpedance-scale default svg.fill ([478fc6a](https://github.com/Gympass/yoga/commit/478fc6a1a433a4f3df7e64170d03684b172e4793))
+* **PAC-1052:** add crown icon ([95a40d2](https://github.com/Gympass/yoga/commit/95a40d27ee803e378c4fc986581549dc957379ed))
+
+
+
+
+
 # [1.29.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.28.0...@gympass/yoga-icons@1.29.0) (2025-03-17)
 
 
