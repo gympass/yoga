@@ -48,14 +48,16 @@ const Field = styled.TextInput(
     },
   }) => `
     width: ${full ? '100%' : `${input.width}px`};
+    height: ${input.height}px;
+    min-height: ${input.height}px;
 
-    padding-top: ${input.padding.top}px;
+    padding-top: ${input.padding.top - 2}px;
     padding-right: ${
       cleanable || textContentType === 'password'
         ? ICON_SIZE + input.padding.right * 2
         : input.padding.right
     }px;
-    padding-bottom: ${input.padding.bottom}px;
+    padding-bottom: ${input.padding.bottom - 2}px;
     padding-left: ${input.padding.left}px;
 
     border-radius: ${input.border.radius}px;
@@ -148,12 +150,18 @@ const Label = styled(Animated.Text)(
 const CloseIcon = styled.View(
   ({
     theme: {
-      yoga: { spacing },
+      yoga: {
+        spacing,
+        components: { input },
+      },
     },
   }) => `
     position: absolute;
     top: 0px;
     right: 0px;
+    height: ${input.height}px;
+    justify-content: center;
+    align-items: center;
 
     padding-right: ${spacing.small}px;
     padding-left: ${spacing.small}px;
