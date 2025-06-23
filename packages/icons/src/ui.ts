@@ -449,6 +449,6 @@ export {
   WiFi,
   YogaMat,
   Youtube,
-  Zen
+  Zen,
 };
 
