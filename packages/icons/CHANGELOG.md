@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.31.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.30.0...@gympass/yoga-icons@1.31.0) (2025-06-23)
+
+
+### Bug Fixes
+
+* resolve codacy warning ([32cde2e](https://github.com/Gympass/yoga/commit/32cde2e8f3e76f513d9aee32509c5d65ebc9e857))
+
+
+### Features
+
+* [PAC-1166] Add new icons for firt check-in ([e7ebb80](https://github.com/Gympass/yoga/commit/e7ebb8099e1c76f26153863492ddd2e693d1a8b8))
+
+
+
+
+
 # [1.30.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.29.0...@gympass/yoga-icons@1.30.0) (2025-04-22)
 
 
