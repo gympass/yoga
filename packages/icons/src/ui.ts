@@ -177,7 +177,7 @@ import ShowerTowels from './svg/shower-towels.svg';
 import Shower from './svg/shower.svg';
 import SignLanguage from './svg/sign_language.svg';
 import Signal from './svg/signal.svg';
-import SibngleWomanFlag from './svg/single_woman_flag.svg';
+import SingleWomanFlag from './svg/single_woman_flag.svg';
 import Smartphone from './svg/smartphone.svg';
 import SmartphoneFilled from './svg/smartphone_filled.svg';
 import SnackBar from './svg/snack-bar.svg';
@@ -401,7 +401,7 @@ export {
   ShineFilled,
   Shower,
   ShowerTowels,
-  SibngleWomanFlag,
+  SingleWomanFlag,
   Signal,
   SignLanguage,
   Smartphone,
