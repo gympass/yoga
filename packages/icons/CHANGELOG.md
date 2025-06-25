@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.31.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.31.0...@gympass/yoga-icons@1.31.1) (2025-06-25)
+
+
+### Bug Fixes
+
+* adjust SingleWomanFlag icon name ([6afedb0](https://github.com/Gympass/yoga/commit/6afedb08054f6acd4ca69d78b0112237300ef9a2))
+
+
+
+
+
 # [1.31.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.30.0...@gympass/yoga-icons@1.31.0) (2025-06-23)
 
 
