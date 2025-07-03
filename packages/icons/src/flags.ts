@@ -5,6 +5,7 @@ import FlagAngola from './svg/flag_angola.svg';
 import FlagAntiguaAndBarbuda from './svg/flag_antiguaandbarbuda.svg';
 import FlagArgentina from './svg/flag_argentina.svg';
 import FlagArmenia from './svg/flag_armenia.svg';
+import FlagAruba from './svg/flag_aruba.svg';
 import FlagAustralia from './svg/flag_australia.svg';
 import FlagAustria from './svg/flag_austria.svg';
 import FlagAzerbaijan from './svg/flag_azerbaijan.svg';
@@ -40,6 +41,7 @@ import FlagCostaRica from './svg/flag_costarica.svg';
 import FlagCotedIvoire from './svg/flag_cotedivoire.svg';
 import FlagCroatia from './svg/flag_croatia.svg';
 import FlagCuba from './svg/flag_cuba.svg';
+import FlagCuracao from './svg/flag_curacao.svg';
 import FlagCyprus from './svg/flag_cyprus.svg';
 import FlagCzechRepublic from './svg/flag_czechrepublic.svg';
 import FlagDRCongo from './svg/flag_democraticrepublicofthecongo.svg';
@@ -138,6 +140,7 @@ import FlagRCongo from './svg/flag_republicofthecongo.svg';
 import FlagRomania from './svg/flag_romania.svg';
 import FlagRussia from './svg/flag_russia.svg';
 import FlagRwanda from './svg/flag_rwanda.svg';
+import FlagStBarthelemy from './svg/flag_saintbarthelemy.svg';
 import FlagStLucia from './svg/flag_saintlucia.svg';
 import FlagStVincentGrenadines from './svg/flag_saintvincentandthegrenadines.svg';
 import FlagSamoa from './svg/flag_samoa.svg';
@@ -195,6 +198,7 @@ export {
   FlagAntiguaAndBarbuda,
   FlagArgentina,
   FlagArmenia,
+  FlagAruba,
   FlagAustralia,
   FlagAustria,
   FlagAzerbaijan,
@@ -230,6 +234,7 @@ export {
   FlagCotedIvoire,
   FlagCroatia,
   FlagCuba,
+  FlagCuracao,
   FlagCyprus,
   FlagCzechRepublic,
   FlagDenmark,
@@ -328,6 +333,7 @@ export {
   FlagRomania,
   FlagRussia,
   FlagRwanda,
+  FlagStBarthelemy,
   FlagStLucia,
   FlagStVincentGrenadines,
   FlagSamoa,
