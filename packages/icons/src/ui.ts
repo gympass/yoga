@@ -69,6 +69,7 @@ import Disconnect from './svg/disconnect.svg';
 import Dislike from './svg/dislike.svg';
 import DislikeFilled from './svg/dislike_filled.svg';
 import Doc from './svg/doc.svg';
+import DoubleFootwearSneakers from './svg/double_footwear_sneakers.svg';
 import Download from './svg/download.svg';
 import Draggable from './svg/draggable.svg';
 import DrinkingFountain from './svg/drinking-fountain.svg';
@@ -191,6 +192,8 @@ import StarFilled from './svg/star_filled.svg';
 import Stretching from './svg/stretching.svg';
 import Success from './svg/success.svg';
 import SupportTrainer from './svg/support-trainer.svg';
+import SwimmingCap from './svg/swimming_cap.svg';
+import SwimmingGoggles from './svg/swimming_goggles.svg';
 import SystemStatus from './svg/system_status.svg';
 import TactilePaving from './svg/tactile_paving.svg';
 import Tennis from './svg/tennis.svg';
@@ -296,6 +299,7 @@ export {
   Dislike,
   DislikeFilled,
   Doc,
+  DoubleFootwearSneakers,
   Download,
   Draggable,
   DrinkingFountain,
@@ -417,6 +421,8 @@ export {
   Stretching,
   Success,
   SupportTrainer,
+  SwimmingCap,
+  SwimmingGoggles,
   SystemStatus,
   TactilePaving,
   Tennis,
