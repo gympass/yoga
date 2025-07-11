@@ -47,6 +47,7 @@ import FlagCzechRepublic from './svg/flag_czechrepublic.svg';
 import FlagDRCongo from './svg/flag_democraticrepublicofthecongo.svg';
 import FlagDenmark from './svg/flag_denmark.svg';
 import FlagDjibouti from './svg/flag_djibouti.svg';
+import FlagDominica from './svg/flag_dominica.svg';
 import FlagDominicanRepublic from './svg/flag_dominicanrepublic.svg';
 import FlagEcuador from './svg/flag_ecuador.svg';
 import FlagEgypt from './svg/flag_egypt.svg';
@@ -141,6 +142,7 @@ import FlagRomania from './svg/flag_romania.svg';
 import FlagRussia from './svg/flag_russia.svg';
 import FlagRwanda from './svg/flag_rwanda.svg';
 import FlagStBarthelemy from './svg/flag_saintbarthelemy.svg';
+import FlagStKittsAndNevis from './svg/flag_saintkittsandnevis.svg';
 import FlagStLucia from './svg/flag_saintlucia.svg';
 import FlagStVincentGrenadines from './svg/flag_saintvincentandthegrenadines.svg';
 import FlagSamoa from './svg/flag_samoa.svg';
@@ -240,6 +242,7 @@ export {
   FlagDenmark,
   FlagDRCongo,
   FlagDjibouti,
+  FlagDominica,
   FlagDominicanRepublic,
   FlagEcuador,
   FlagEgypt,
@@ -334,6 +337,7 @@ export {
   FlagRussia,
   FlagRwanda,
   FlagStBarthelemy,
+  FlagStKittsAndNevis,
   FlagStLucia,
   FlagStVincentGrenadines,
   FlagSamoa,
