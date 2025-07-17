@@ -87,6 +87,7 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
     style={
       {
         "bottom": 0,
+        "elevation": 12,
         "position": "absolute",
         "transform": [
           {
@@ -413,6 +414,7 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
     style={
       {
         "bottom": 0,
+        "elevation": 12,
         "position": "absolute",
         "transform": [
           {
@@ -578,6 +580,7 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
     style={
       {
         "bottom": 0,
+        "elevation": 12,
         "position": "absolute",
         "transform": [
           {
@@ -904,6 +907,7 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
     style={
       {
         "bottom": 0,
+        "elevation": 12,
         "position": "absolute",
         "transform": [
           {

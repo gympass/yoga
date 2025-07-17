@@ -99,7 +99,9 @@ const SnackbarAnimationWrapper = forwardRef(
     useEffect(() => () => clearTimeout(timeoutRef.current), []);
 
     return (
-      <Wrapper style={{ zIndex: 10, transform: [{ translateY }] }}>
+      <Wrapper
+        style={{ zIndex: 10, transform: [{ translateY }], elevation: 12 }}
+      >
         <View
           testID="wrapper"
           ref={childrenRef}
