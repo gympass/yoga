@@ -7,7 +7,7 @@ import React, {
 } from 'react';
 import { Animated, useWindowDimensions, View } from 'react-native';
 import { func, node, oneOf } from 'prop-types';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 
 const durationDictionary = {
   fast: 4000,
@@ -25,7 +25,7 @@ const Wrapper = styled(Animated.View)(
 );
 
 const SnackbarAnimationWrapper = forwardRef(
-  ({ onSnackbarClose = undefined, children, duration }, ref) => {
+  ({ onSnackbarClose = undefined, children, duration, theme }, ref) => {
     const { height: windowHeight } = useWindowDimensions();
 
     const [childrenHeight, setChildrenHeight] = useState();
@@ -100,7 +100,11 @@ const SnackbarAnimationWrapper = forwardRef(
 
     return (
       <Wrapper
-        style={{ zIndex: 10, transform: [{ translateY }], elevation: 12 }}
+        style={{
+          zIndex: 10,
+          transform: [{ translateY }],
+          elevation: theme.yoga.spacing.xsmall,
+        }}
       >
         <View
           testID="wrapper"
@@ -127,4 +131,4 @@ SnackbarAnimationWrapper.propTypes = {
   duration: oneOf(['fast', 'default', 'slow', 'indefinite']).isRequired,
 };
 
-export default SnackbarAnimationWrapper;
+export default withTheme(SnackbarAnimationWrapper);
