@@ -164,6 +164,7 @@ import Racquet from './svg/racquet.svg';
 import Rectangle from './svg/rectangle.svg';
 import Refresh from './svg/refresh.svg';
 import Restaurant from './svg/restaurant.svg';
+import RocketLaunch from './svg/rocket_launch.svg';
 import Sauna from './svg/sauna.svg';
 import Search from './svg/search.svg';
 import SearchFilled from './svg/search_filled.svg';
@@ -393,6 +394,7 @@ export {
   Rectangle,
   Refresh,
   Restaurant,
+  RocketLaunch,
   Sauna,
   Search,
   SearchFilled,
