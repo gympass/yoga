@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.35.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.34.0...@gympass/yoga-icons@1.35.0) (2025-07-30)
+
+
+### Features
+
+* add rocket launch icon ([3993763](https://github.com/Gympass/yoga/commit/3993763f97e539bf80becbd37700d1c884d765a1))
+
+
+
+
+
 # [1.34.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.33.0...@gympass/yoga-icons@1.34.0) (2025-07-11)
 
 
