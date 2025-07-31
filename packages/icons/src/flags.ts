@@ -17,6 +17,7 @@ import FlagBelarus from './svg/flag_belarus.svg';
 import FlagBelgium from './svg/flag_belgium.svg';
 import FlagBelize from './svg/flag_belize.svg';
 import FlagBenin from './svg/flag_benin.svg';
+import FlagBermuda from './svg/flag_bermuda.svg';
 import FlagBhutan from './svg/flag_bhutan.svg';
 import FlagBoliva from './svg/flag_boliva.svg';
 import FlagBosnia from './svg/flag_bosnia.svg';
@@ -212,6 +213,7 @@ export {
   FlagBelgium,
   FlagBelize,
   FlagBenin,
+  FlagBermuda,
   FlagBhutan,
   FlagBoliva,
   FlagBosnia,
