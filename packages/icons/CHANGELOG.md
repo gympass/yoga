@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.36.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.35.0...@gympass/yoga-icons@1.36.0) (2025-08-01)
+
+
+### Features
+
+* add bermuda flag ([3536c84](https://github.com/Gympass/yoga/commit/3536c84bc692ae310ce9635491e75f3f5a6ee662))
+
+
+
+
+
 # [1.35.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.34.0...@gympass/yoga-icons@1.35.0) (2025-07-30)
 
 
