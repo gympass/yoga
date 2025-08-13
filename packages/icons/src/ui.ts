@@ -85,6 +85,7 @@ import FamilyMemberFilled from './svg/family_member_filled.svg';
 import Favorite from './svg/favorite.svg';
 import FavoriteFilled from './svg/favorite_filled.svg';
 import Filter from './svg/filter.svg';
+import Flag from './svg/flag.svg';
 import FootwearSneakers from './svg/footwear_sneakers.svg';
 import FreeWeight from './svg/free-weight.svg';
 import FunctionalTraining from './svg/functional-training.svg';
@@ -316,6 +317,7 @@ export {
   Favorite,
   FavoriteFilled,
   Filter,
+  Flag,
   FootwearSneakers,
   FreeWeight,
   FunctionalTraining,
