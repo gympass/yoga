@@ -1,7 +1,7 @@
 /* eslint react/no-array-index-key: 0 */
 import React, { useState, useCallback, useRef, useEffect } from 'react';
 import Downshift from 'downshift';
-import { arrayOf, string, func, bool, shape, number } from 'prop-types';
+import { arrayOf, string, func, bool, shape } from 'prop-types';
 import styled, { css } from 'styled-components';
 import { ChevronDown, ChevronUp } from '@gympass/yoga-icons';
 
@@ -165,7 +165,7 @@ const AutoComplete = React.forwardRef(
       error,
       openSuggestionsAriaLabel = 'Open suggestions',
       closeSuggestionsAriaLabel = 'Close suggestions',
-      defaultHighlightedIndex = null,
+      highlightFirst = false,
       shouldFilterOptions = true,
       ...props
     },
@@ -197,7 +197,7 @@ const AutoComplete = React.forwardRef(
     return (
       <Downshift
         selectedItem={userValue}
-        defaultHighlightedIndex={defaultHighlightedIndex}
+        defaultHighlightedIndex={highlightFirst ? 0 : null}
         onStateChange={changes => {
           const { selectedItem, inputValue } = changes;
 
@@ -336,8 +336,8 @@ AutoComplete.propTypes = {
   closeSuggestionsAriaLabel: string,
   /** flag to enable options filtering */
   shouldFilterOptions: bool,
-  /** the value to set the highlightedIndex to anytime downshift is reset */
-  defaultHighlightedIndex: number || null,
+  /** first highlighted option for whenever Autocomplete is restarted */
+  highlightFirst: bool,
 };
 
 export default AutoComplete;

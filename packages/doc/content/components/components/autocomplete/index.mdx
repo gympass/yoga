@@ -45,7 +45,7 @@ render(() => {
 });
 ```
 
-#### With first option with highlighted index
+#### With first option highlighted
 
 ```javascript state
 render(() => {
@@ -54,7 +54,7 @@ render(() => {
   return (
     <AutoComplete
       value={value}
-      defaultHighlightedIndex={0}
+      highlightFirst
       onChange={value => setValue(value)}
       onSelect={selected => console.log(selected)}
       onClean={cleaned => console.log('cleaned', cleaned)}
