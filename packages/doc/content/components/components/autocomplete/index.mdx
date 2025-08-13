@@ -17,6 +17,8 @@ It inherit all the [Input](/components/input/default) props.
 
 ## Usage
 
+#### Default
+
 ```javascript state
 render(() => {
   const [value, setValue] = useState('');
@@ -24,6 +26,35 @@ render(() => {
   return (
     <AutoComplete
       value={value}
+      onChange={value => setValue(value)}
+      onSelect={selected => console.log(selected)}
+      onClean={cleaned => console.log('cleaned', cleaned)}
+      options={[
+        'Madrid',
+        'Milan',
+        'São Paulo',
+        'New York',
+        'Paris',
+        'Buenos Aires',
+        'Amsterdam',
+        'Los Angeles',
+        'Hollywood',
+      ]}
+    />
+  );
+});
+```
+
+#### With first option with highlighted index
+
+```javascript state
+render(() => {
+  const [value, setValue] = useState('');
+
+  return (
+    <AutoComplete
+      value={value}
+      defaultHighlightedIndex={0}
       onChange={value => setValue(value)}
       onSelect={selected => console.log(selected)}
       onClean={cleaned => console.log('cleaned', cleaned)}
