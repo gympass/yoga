@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.37.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.36.0...@gympass/yoga-icons@1.37.0) (2025-08-13)
+
+
+### Features
+
+* added flag icon ([772024f](https://github.com/Gympass/yoga/commit/772024f8fb0dfc6e97dc6e286f5ae72bb3694658))
+
+
+
+
+
 # [1.36.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.35.0...@gympass/yoga-icons@1.36.0) (2025-08-01)
 
 
