@@ -165,6 +165,7 @@ const AutoComplete = React.forwardRef(
       error,
       openSuggestionsAriaLabel = 'Open suggestions',
       closeSuggestionsAriaLabel = 'Close suggestions',
+      highlightFirst = false,
       shouldFilterOptions = true,
       ...props
     },
@@ -196,6 +197,7 @@ const AutoComplete = React.forwardRef(
     return (
       <Downshift
         selectedItem={userValue}
+        defaultHighlightedIndex={highlightFirst ? 0 : null}
         onStateChange={changes => {
           const { selectedItem, inputValue } = changes;
 
@@ -334,6 +336,8 @@ AutoComplete.propTypes = {
   closeSuggestionsAriaLabel: string,
   /** flag to enable options filtering */
   shouldFilterOptions: bool,
+  /** first highlighted option for whenever Autocomplete is restarted */
+  highlightFirst: bool,
 };
 
 export default AutoComplete;
