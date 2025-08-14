@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.132.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.131.13...@gympass/yoga@7.132.0) (2025-08-14)
+
+
+### Features
+
+* enhance AutoComplete component with defaultHighlightedIndex prop and update documentation examples ([13042a9](https://github.com/Gympass/yoga/commit/13042a9f8185a1285da2267eddd5e853ff243969))
+* update AutoComplete component to use highlightFirst prop instead of defaultHighlightedIndex ([601a302](https://github.com/Gympass/yoga/commit/601a302a7cd978cbd164f24a8ef15a90a47537be))
+
+
+
+
+
 ## [7.131.13](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.131.12...@gympass/yoga@7.131.13) (2025-08-13)
 
 **Note:** Version bump only for package @gympass/yoga
