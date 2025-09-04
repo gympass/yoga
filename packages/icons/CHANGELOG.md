@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.37.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.37.0...@gympass/yoga-icons@1.37.1) (2025-09-04)
+
+
+### Bug Fixes
+
+* **PAC-1320:** add viewBox to solve icon being cut ([58f483e](https://github.com/Gympass/yoga/commit/58f483eb4dc9efa5f76a028b4eb070b0a841e027))
+
+
+
+
+
 # [1.37.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.36.0...@gympass/yoga-icons@1.37.0) (2025-08-13)
 
 
