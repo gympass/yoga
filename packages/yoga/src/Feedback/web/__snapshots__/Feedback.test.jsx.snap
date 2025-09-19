@@ -7,6 +7,18 @@ exports[`<Feedback /> should render correctly when not centered vertically 1`] =
   height: 64px;
 }
 
+.c5 {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .c0 {
   background-color: #FFFFFF;
   width: 100%;
@@ -20,7 +32,7 @@ exports[`<Feedback /> should render correctly when not centered vertically 1`] =
   align-items: flex-end;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -50,7 +62,7 @@ exports[`<Feedback /> should render correctly when not centered vertically 1`] =
   font-weight: 500;
 }
 
-.c6 {
+.c7 {
   margin-top: 56px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -82,7 +94,7 @@ exports[`<Feedback /> should render correctly when not centered vertically 1`] =
 }
 
 @media (min-width:769px) {
-  .c6 {
+  .c7 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -117,15 +129,20 @@ exports[`<Feedback /> should render correctly when not centered vertically 1`] =
           >
             Welcome to Yoga
           </h1>
-          <p
+          <div
             class="c5"
-            color="deep"
+            display="flex"
           >
-            Enjoy your membership!
-          </p>
+            <p
+              class="c6"
+              color="deep"
+            >
+              Enjoy your membership!
+            </p>
+          </div>
         </div>
         <div
-          class="c6"
+          class="c7"
         />
       </div>
     </div>

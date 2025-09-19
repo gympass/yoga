@@ -145,6 +145,27 @@ This screen can be used to give feedback to the user of success, information, or
 </Box>
 ```
 
+### Multiple paragraphs in description
+
+Use an array of strings to render multiple paragraphs (each string becomes a separate Body1 block).
+
+```javascript
+<Box h={611} w="100%">
+  <Feedback
+    variant="success"
+    title="Welcome to Yoga, Feedback."
+    description={[
+      'Enjoy your membership! Access thousands of gyms, studios and wellness app.',
+      'Track your wellbeing journey and discover new activities every week.',
+      'Need help? Reach out to our support anytime.'
+    ]}
+  >
+    <Feedback.PrimaryButton>Ok</Feedback.PrimaryButton>
+    <Feedback.SecondaryButton>Cancel</Feedback.SecondaryButton>
+  </Feedback>
+</Box>
+```
+
 ## Props
 
 <PropsTable component="Feedback" platform="web" />
