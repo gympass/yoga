@@ -63,6 +63,7 @@ import CreditCard from './svg/credit_card.svg';
 import Crown from './svg/crown.svg';
 import Cycling from './svg/cycling.svg';
 import Dance from './svg/dance.svg';
+import DatabaseSettings from './svg/database_settings.svg';
 import Delayed from './svg/delayed.svg';
 import Diagram from './svg/diagram.svg';
 import Disconnect from './svg/disconnect.svg';
@@ -295,6 +296,7 @@ export {
   Crown,
   Cycling,
   Dance,
+  DatabaseSettings,
   Delayed,
   Diagram,
   Disconnect,
