@@ -43,7 +43,11 @@ function Feedback({
   center = true,
   ...props
 }) {
+  const descriptionArray = Array.isArray(description)
+    ? description
+    : [description];
   const iconProps = VARIANT_ICONS[variant];
+
   let primaryButton;
   let secondaryButton;
   let captionElement;
@@ -82,20 +86,11 @@ function Feedback({
         <TextContainer>
           {titleElement}
           <Box display="flex" flexDirection="column" gap="large" mt="small">
-            {Array.isArray(description) ? (
-              description.map(paragraph => (
-                <Text.Body1
-                  key={paragraph?.toString().slice(0, 10)}
-                  color="deep"
-                >
-                  {paragraph}
-                </Text.Body1>
-              ))
-            ) : (
-              <Text.Body1 mt="small" color="deep">
-                {description}
+            {descriptionArray.map(paragraph => (
+              <Text.Body1 key={paragraph?.toString().slice(0, 10)} color="deep">
+                {paragraph}
               </Text.Body1>
-            )}
+            ))}
           </Box>
         </TextContainer>
 
