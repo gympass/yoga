@@ -40,7 +40,6 @@ exports[`<Feedback /> should render correctly when not centered vertically 1`] =
   color: #231B22;
   font-family: Rubik;
   font-weight: 400;
-  margin-top: 16px;
   color: #6B6B78;
 }
 
