@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.38.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.37.1...@gympass/yoga-icons@1.38.0) (2025-10-07)
+
+
+### Features
+
+* (DS-1272): Databse settings icon ([24e4d2b](https://github.com/Gympass/yoga/commit/24e4d2b9eb67ca089f0b0f55045ba5269a27da58))
+
+
+
+
+
 ## [1.37.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.37.0...@gympass/yoga-icons@1.37.1) (2025-09-04)
 
 
