@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.55.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.54.2...@gympass/yoga-doc@2.55.0) (2025-10-14)
+
+
+### Features
+
+* **feedback:** add multiple paragraphs in description ([df78b99](https://github.com/gympass/yoga/commit/df78b993382d2ae5caf5259dc31e0f3ddef618d0))
+
+
+
+
+
 ## [2.54.2](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.54.1...@gympass/yoga-doc@2.54.2) (2025-10-07)
 
 **Note:** Version bump only for package @gympass/yoga-doc
