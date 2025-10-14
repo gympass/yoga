@@ -115,4 +115,24 @@ describe('<Feedback />', () => {
 
     expect(getByTestId('feedback-icon-delayed')).toMatchSnapshot();
   });
+
+  it('should render multiple paragraphs when description is an array', () => {
+    const multiDescription = [
+      'First paragraph of the feedback description.',
+      'Second paragraph providing extra context.',
+      'Third paragraph with final details.',
+    ];
+
+    const { getByText } = renderWithTheme(
+      <Feedback
+        variant="success"
+        title={title}
+        description={multiDescription}
+      />,
+    );
+
+    multiDescription.forEach(text => {
+      expect(getByText(text)).toBeTruthy();
+    });
+  });
 });

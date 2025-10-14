@@ -43,7 +43,11 @@ function Feedback({
   center = true,
   ...props
 }) {
+  const descriptionArray = Array.isArray(description)
+    ? description
+    : [description];
   const iconProps = VARIANT_ICONS[variant];
+
   let primaryButton;
   let secondaryButton;
   let captionElement;
@@ -81,9 +85,13 @@ function Feedback({
         />
         <TextContainer>
           {titleElement}
-          <Text.Body1 mt="small" color="deep">
-            {description}
-          </Text.Body1>
+          <Box display="flex" flexDirection="column" gap="large" mt="small">
+            {descriptionArray.map(paragraph => (
+              <Text.Body1 key={paragraph?.toString().slice(0, 10)} color="deep">
+                {paragraph}
+              </Text.Body1>
+            ))}
+          </Box>
         </TextContainer>
 
         {captionElement ? <Box mt="medium">{captionElement}</Box> : null}
@@ -100,7 +108,7 @@ function Feedback({
 Feedback.propTypes = {
   variant: oneOf(Object.keys(VARIANT_ICONS)).isRequired,
   title: string,
-  description: string.isRequired,
+  description: oneOfType([string, arrayOf(string)]).isRequired,
   children: oneOfType([arrayOf(node), node]),
   /** Center the component vertically */
   center: bool,
