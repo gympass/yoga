@@ -1,6 +1,7 @@
 import FlagAfghanistan from './svg/flag_afghanistan.svg';
 import FlagAlbania from './svg/flag_albania.svg';
 import FlagAlgeria from './svg/flag_algeria.svg';
+import FlagAndorra from './svg/flag_andorra.svg';
 import FlagAngola from './svg/flag_angola.svg';
 import FlagAntiguaAndBarbuda from './svg/flag_antiguaandbarbuda.svg';
 import FlagArgentina from './svg/flag_argentina.svg';
@@ -197,6 +198,7 @@ export {
   FlagAfghanistan,
   FlagAlbania,
   FlagAlgeria,
+  FlagAndorra,
   FlagAngola,
   FlagAntiguaAndBarbuda,
   FlagArgentina,
