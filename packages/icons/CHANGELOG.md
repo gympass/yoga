@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.39.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.38.0...@gympass/yoga-icons@1.39.0) (2025-10-24)
+
+
+### Features
+
+* add andorra flag ([2d7c876](https://github.com/Gympass/yoga/commit/2d7c8765498cb9a1ecbc966d7bfbe375f11e73b0))
+* andorra flag fix size ([a9424a2](https://github.com/Gympass/yoga/commit/a9424a21c941f23810222fd58657e2d1546f982b))
+
+
+
+
+
 # [1.38.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.37.1...@gympass/yoga-icons@1.38.0) (2025-10-07)
 
 
