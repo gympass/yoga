@@ -1,12 +1,9 @@
 export function parseDescription(input) {
   return (Array.isArray(input) ? input : [input]).flatMap(item => {
-    if (item == null) return [];
-    if (typeof item === 'string') {
-      const trimmed = item.trim();
+    if (item == null || typeof item !== 'string') return [];
+    const trimmed = item.trim();
 
-      return trimmed ? [trimmed] : [];
-    }
-    return [item];
+    return trimmed ? [trimmed] : [];
   });
 }
 

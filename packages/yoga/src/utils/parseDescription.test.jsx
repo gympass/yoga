@@ -12,12 +12,11 @@ describe('parseDescription utility', () => {
     expect(parseDescription(input)).toEqual(['valid', 'also valid']);
   });
 
-  it('should preserve non-string nodes', () => {
+  it('should ignore non-string items (nodes, numbers, booleans)', () => {
     const node = <span>Node Content</span>;
-    const input = [node, ' text '];
+    const input = [node, 42, true, ' keep ', '   ', false, null];
     const result = parseDescription(input);
 
-    expect(result[0]).toBe(node);
-    expect(result[1]).toBe('text');
+    expect(result).toEqual(['keep']);
   });
 });
