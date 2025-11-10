@@ -14,6 +14,7 @@ import {
   TextContainer,
   Caption,
 } from './StyledFeedback';
+import parseDescription from '../../utils/parseDescription';
 
 const ICON_SIZE = 64;
 const VARIANT_ICONS = {
@@ -43,9 +44,7 @@ function Feedback({
   center = true,
   ...props
 }) {
-  const descriptionArray = Array.isArray(description)
-    ? description
-    : [description];
+  const descriptionArray = parseDescription(description);
   const iconProps = VARIANT_ICONS[variant];
 
   let primaryButton;
