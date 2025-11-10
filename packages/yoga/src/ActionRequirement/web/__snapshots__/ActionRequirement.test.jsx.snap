@@ -2,6 +2,18 @@
 
 exports[`<ActionRequirement /> should default match snapshot 1`] = `
 .c3 {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.c4 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -9,7 +21,6 @@ exports[`<ActionRequirement /> should default match snapshot 1`] = `
   color: #231B22;
   font-family: Rubik;
   font-weight: 400;
-  margin-top: 16px;
   color: #6B6B78;
 }
 
@@ -24,7 +35,7 @@ exports[`<ActionRequirement /> should default match snapshot 1`] = `
   margin-bottom: 6px;
 }
 
-.c4 {
+.c5 {
   margin-top: 32px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -66,7 +77,7 @@ exports[`<ActionRequirement /> should default match snapshot 1`] = `
 }
 
 @media (min-width:769px) {
-  .c4 {
+  .c5 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -118,14 +129,19 @@ exports[`<ActionRequirement /> should default match snapshot 1`] = `
       >
         title
       </h1>
-      <p
-        class="c3"
-        color="deep"
-      >
-        description
-      </p>
       <div
-        class="c4"
+        class="c3"
+        display="flex"
+      >
+        <p
+          class="c4"
+          color="deep"
+        >
+          description
+        </p>
+      </div>
+      <div
+        class="c5"
       />
     </div>
   </div>
@@ -133,6 +149,18 @@ exports[`<ActionRequirement /> should default match snapshot 1`] = `
 `;
 
 exports[`<ActionRequirement /> should match snapshot with aria-level 2 1`] = `
+.c3 {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .c2 {
   margin: 0;
   padding: 0;
@@ -143,7 +171,7 @@ exports[`<ActionRequirement /> should match snapshot with aria-level 2 1`] = `
   font-weight: 700;
 }
 
-.c3 {
+.c4 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -151,11 +179,10 @@ exports[`<ActionRequirement /> should match snapshot with aria-level 2 1`] = `
   color: #231B22;
   font-family: Rubik;
   font-weight: 400;
-  margin-top: 16px;
   color: #6B6B78;
 }
 
-.c4 {
+.c5 {
   margin-top: 32px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -189,7 +216,7 @@ exports[`<ActionRequirement /> should match snapshot with aria-level 2 1`] = `
 }
 
 @media (min-width:769px) {
-  .c4 {
+  .c5 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -241,14 +268,19 @@ exports[`<ActionRequirement /> should match snapshot with aria-level 2 1`] = `
       >
         title
       </h1>
-      <p
-        class="c3"
-        color="deep"
-      >
-        description
-      </p>
       <div
-        class="c4"
+        class="c3"
+        display="flex"
+      >
+        <p
+          class="c4"
+          color="deep"
+        >
+          description
+        </p>
+      </div>
+      <div
+        class="c5"
       />
     </div>
   </div>
@@ -256,23 +288,34 @@ exports[`<ActionRequirement /> should match snapshot with aria-level 2 1`] = `
 `;
 
 exports[`<ActionRequirement /> should match snapshot with list 1`] = `
-.c4 {
-  margin-top: 24px;
-}
-
 .c3 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 24px;
-  color: #231B22;
-  font-family: Rubik;
-  font-weight: 400;
   margin-top: 16px;
-  color: #6B6B78;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .c5 {
+  margin-top: 24px;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
+  color: #6B6B78;
+}
+
+.c6 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -283,7 +326,7 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
   font-size: 16px;
 }
 
-.c6 {
+.c7 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -306,7 +349,7 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
   margin-bottom: 6px;
 }
 
-.c7 {
+.c8 {
   margin-top: 32px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -348,7 +391,7 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
 }
 
 @media (min-width:769px) {
-  .c7 {
+  .c8 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -401,31 +444,36 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
       >
         title
       </h1>
-      <p
-        class="c3"
-        color="deep"
-      >
-        description
-      </p>
       <div
-        class="c4"
+        class="c3"
+        display="flex"
       >
         <p
-          class="c5"
+          class="c4"
+          color="deep"
+        >
+          description
+        </p>
+      </div>
+      <div
+        class="c5"
+      >
+        <p
+          class="c6"
           font-size="medium"
         >
           <svg />
            1x/day standard access
         </p>
         <p
-          class="c6"
+          class="c7"
           font-size="medium"
         >
           <svg />
            4x/month 1-on-1 sessions
         </p>
         <p
-          class="c6"
+          class="c7"
           font-size="medium"
         >
           <svg />
@@ -433,7 +481,7 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
         </p>
       </div>
       <div
-        class="c7"
+        class="c8"
       />
     </div>
   </div>
@@ -441,6 +489,18 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
 `;
 
 exports[`<ActionRequirement /> should match snapshot with text display 1`] = `
+.c3 {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .c2 {
   margin: 0;
   padding: 0;
@@ -451,7 +511,7 @@ exports[`<ActionRequirement /> should match snapshot with text display 1`] = `
   font-weight: 700;
 }
 
-.c3 {
+.c4 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -459,11 +519,10 @@ exports[`<ActionRequirement /> should match snapshot with text display 1`] = `
   color: #231B22;
   font-family: Rubik;
   font-weight: 400;
-  margin-top: 16px;
   color: #6B6B78;
 }
 
-.c4 {
+.c5 {
   margin-top: 32px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -497,7 +556,7 @@ exports[`<ActionRequirement /> should match snapshot with text display 1`] = `
 }
 
 @media (min-width:769px) {
-  .c4 {
+  .c5 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -549,14 +608,19 @@ exports[`<ActionRequirement /> should match snapshot with text display 1`] = `
       >
         title
       </h1>
-      <p
-        class="c3"
-        color="deep"
-      >
-        description
-      </p>
       <div
-        class="c4"
+        class="c3"
+        display="flex"
+      >
+        <p
+          class="c4"
+          color="deep"
+        >
+          description
+        </p>
+      </div>
+      <div
+        class="c5"
       />
     </div>
   </div>

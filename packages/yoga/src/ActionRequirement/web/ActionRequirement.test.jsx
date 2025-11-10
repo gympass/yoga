@@ -73,4 +73,22 @@ describe('<ActionRequirement />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should render multiple paragraphs when description is an array', () => {
+    const descriptions = [
+      'First requirement paragraph.',
+      'Second requirement giving more context.',
+      'Final requirement details here.',
+    ];
+
+    const { getByText } = render(
+      <ThemeProvider>
+        <ActionRequirement title="title" description={descriptions} />
+      </ThemeProvider>,
+    );
+
+    descriptions.forEach(d => {
+      expect(getByText(d)).toBeTruthy();
+    });
+  });
 });
