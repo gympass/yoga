@@ -9,6 +9,7 @@ import {
   SecondaryButton,
 } from './ActionRequirementStyles';
 import Text from '../../Text';
+import parseDescription from '../../utils/parseDescription';
 import Box from '../../Box';
 
 const StyledActionRequirement = styled.div`
@@ -64,6 +65,8 @@ function ActionRequirement(props) {
   let primaryButton;
   let secondaryButton;
 
+  const descriptionArray = parseDescription(description);
+
   function defineCompoundComponents() {
     React.Children.forEach(children, child => {
       if (isChildFromComponent(child, PrimaryButton)) primaryButton = child;
@@ -85,9 +88,13 @@ function ActionRequirement(props) {
         ) : (
           <Title aria-level={ariaLevelTitle}>{title}</Title>
         )}
-        <Text.Body1 mt="small" color="deep">
-          {description}
-        </Text.Body1>
+        <Box display="flex" flexDirection="column" gap="large" mt="small">
+          {descriptionArray.map(paragraph => (
+            <Text.Body1 key={paragraph?.toString().slice(0, 10)} color="deep">
+              {paragraph}
+            </Text.Body1>
+          ))}
+        </Box>
         {list && <Box mt="large">{list}</Box>}
         {checkable && <Box mt="xxlarge">{checkable}</Box>}
         <Actions mt="xlarge">
@@ -102,7 +109,7 @@ function ActionRequirement(props) {
 ActionRequirement.propTypes = {
   title: oneOfType([arrayOf(node), node]).isRequired,
   children: oneOfType([arrayOf(node), node]),
-  description: string.isRequired,
+  description: oneOfType([string, arrayOf(string)]).isRequired,
   checkable: oneOfType([arrayOf(node), node]),
   illustration: oneOfType([arrayOf(node), node]),
   list: oneOfType([arrayOf(node), node]),
