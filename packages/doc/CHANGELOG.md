@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.56.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.55.1...@gympass/yoga-doc@2.56.0) (2025-11-18)
+
+
+### Features
+
+* **action-requirement:** add multidescriptions ([29ed9c2](https://github.com/gympass/yoga/commit/29ed9c2fa067b1293fed0e90df5a2e8b8e4a80a8))
+
+
+
+
+
 ## [2.55.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.55.0...@gympass/yoga-doc@2.55.1) (2025-10-24)
 
 **Note:** Version bump only for package @gympass/yoga-doc

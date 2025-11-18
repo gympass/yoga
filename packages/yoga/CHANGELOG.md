@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.134.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.133.1...@gympass/yoga@7.134.0) (2025-11-18)
+
+
+### Features
+
+* **action-requirement:** add multidescriptions ([29ed9c2](https://github.com/Gympass/yoga/commit/29ed9c2fa067b1293fed0e90df5a2e8b8e4a80a8))
+* create parseDescription to handle array descriptions ([ab71def](https://github.com/Gympass/yoga/commit/ab71def208580755a9c08bbae3dead764eb5a1d2))
+
+
+
+
+
 ## [7.133.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.133.0...@gympass/yoga@7.133.1) (2025-10-24)
 
 **Note:** Version bump only for package @gympass/yoga
