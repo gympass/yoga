@@ -70,6 +70,8 @@ import FlagGhana from './svg/flag_ghana.svg';
 import FlagGibraltar from './svg/flag_gibraltar.svg';
 import FlagGreece from './svg/flag_greece.svg';
 import FlagGrenada from './svg/flag_grenada.svg';
+import FlagGuadeloupe from './svg/flag_guadeloupe.svg';
+import FlagGuam from './svg/flag_guam.svg';
 import FlagGuatemala from './svg/flag_guatemala.svg';
 import FlagGuinea from './svg/flag_guinea.svg';
 import FlagGuineaBissau from './svg/flag_guineabissau.svg';
@@ -108,6 +110,7 @@ import FlagMalawi from './svg/flag_malawi.svg';
 import FlagMaldives from './svg/flag_maldives.svg';
 import FlagMali from './svg/flag_mali.svg';
 import FlagMalta from './svg/flag_malta.svg';
+import FlagMartinique from './svg/flag_martinique.svg';
 import FlagMauritania from './svg/flag_mauritania.svg';
 import FlagMauritius from './svg/flag_mauritius.svg';
 import FlagMexico from './svg/flag_mexico.svg';
@@ -180,11 +183,13 @@ import FlagTrinidadAndTobago from './svg/flag_trinidadandtobago.svg';
 import FlagTunisia from './svg/flag_tunisia.svg';
 import FlagTurkey from './svg/flag_turkey.svg';
 import FlagTurkmenistan from './svg/flag_turkmenistan.svg';
+import FlagTurksAndCaicosIslands from './svg/flag_turks_and_caicos_islands.svg';
 import FlagUK from './svg/flag_uk.svg';
 import FlagUnitedArabEmirates from './svg/flag_unitedarabemirates.svg';
 import FlagUS from './svg/flag_us.svg';
 import FlagUganda from './svg/flag_uganda.svg';
 import FlagUkraine from './svg/flag_ukraine.svg';
+import FlagUSVirginIslands from './svg/flag_united_states_virgin_islands.svg';
 import FlagUruguay from './svg/flag_uruguay.svg';
 import FlagUzbekistan from './svg/flag_uzbekistan.svg';
 import FlagVanuatu from './svg/flag_vanuatu.svg';
@@ -267,6 +272,8 @@ export {
   FlagGibraltar,
   FlagGreece,
   FlagGrenada,
+  FlagGuadeloupe,
+  FlagGuam,
   FlagGuatemala,
   FlagGuinea,
   FlagGuineaBissau,
@@ -305,6 +312,7 @@ export {
   FlagMaldives,
   FlagMali,
   FlagMalta,
+  FlagMartinique,
   FlagMauritania,
   FlagMauritius,
   FlagMexico,
@@ -377,11 +385,13 @@ export {
   FlagTunisia,
   FlagTurkey,
   FlagTurkmenistan,
+  FlagTurksAndCaicosIslands,
   FlagUK,
   FlagUnitedArabEmirates,
   FlagUS,
   FlagUganda,
   FlagUkraine,
+  FlagUSVirginIslands,
   FlagUruguay,
   FlagUzbekistan,
   FlagVanuatu,
