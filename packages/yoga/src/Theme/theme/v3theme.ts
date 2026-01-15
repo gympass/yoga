@@ -46,7 +46,7 @@ export const v3theme = createTheme(tokens => ({
     text: {
       primary: tokens.colors.staminaNew,
       secondary: tokens.colors.deepNew,
-      disabled: tokens.colors.lightNew,
+      disabled: tokens.colors.steady,
     },
 
     elements: {
