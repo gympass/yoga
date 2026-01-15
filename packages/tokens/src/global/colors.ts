@@ -43,7 +43,7 @@ const lightest = '#EFEDE7';
 const clear = '#F5F5FA';
 const clearNew = '#FAF9F5';
 const white = '#FFFFFF';
-const steady = '#8f8f8f'
+const steady = '#8F8F8F'
 
 const colors = {
   vibin,
