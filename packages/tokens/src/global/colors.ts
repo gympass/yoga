@@ -42,8 +42,8 @@ const lightNew = '#E1DED7';
 const lightest = '#EFEDE7';
 const clear = '#F5F5FA';
 const clearNew = '#FAF9F5';
+const steady = '#8F8F8F';
 const white = '#FFFFFF';
-const steady = '#8F8F8F'
 
 const colors = {
   vibin,
@@ -82,7 +82,7 @@ const colors = {
   lightNew,
   lightest,
   clearNew,
-  steady
+  steady,
 } as const;
 
 export default colors;
