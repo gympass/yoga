@@ -93,6 +93,7 @@ import FunctionalTraining from './svg/functional-training.svg';
 import FunnelFilter from './svg/funnel_filter.svg';
 import GenderNeutral from './svg/gender_neutral.svg';
 import Google from './svg/google.svg';
+import GoogleMap from './svg/google_map.svg';
 import GrippySocks from './svg/grippy-socks.svg';
 import Gympass from './svg/gympass.svg';
 import Headphone from './svg/headphone.svg';
@@ -326,6 +327,7 @@ export {
   FunnelFilter,
   GenderNeutral,
   Google,
+  GoogleMap,
   GrippySocks,
   Gympass,
   Headphone,
@@ -411,9 +413,9 @@ export {
   ShineFilled,
   Shower,
   ShowerTowels,
-  SingleWomanFlag,
   Signal,
   SignLanguage,
+  SingleWomanFlag,
   Smartphone,
   SmartphoneFilled,
   SnackBar,
