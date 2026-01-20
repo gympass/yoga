@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.7.0...@gympass/yoga-tokens@3.8.0) (2026-01-20)
+
+
+### Features
+
+* update color ([84c2803](https://github.com/Gympass/yoga/commit/84c280390d6dd071a619f92fb13e4e285fcbf109))
+
+
+
+
+
 # [3.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.6.4...@gympass/yoga-tokens@3.7.0) (2026-01-16)
 
 
