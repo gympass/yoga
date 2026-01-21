@@ -7,6 +7,10 @@ on:
       - alpha
       - beta
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   packages:
     runs-on: ubuntu-latest
