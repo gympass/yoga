@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.41.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.40.0...@gympass/yoga-icons@1.41.0) (2026-01-21)
+
+
+### Features
+
+* [PAC-1619] add GoogleMap icon ([9b7b1ee](https://github.com/Gympass/yoga/commit/9b7b1ee88709f153b72bdc308e16f6eda8b72e31))
+
+
+
+
+
 # [1.40.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.39.0...@gympass/yoga-icons@1.40.0) (2025-12-08)
 
 
