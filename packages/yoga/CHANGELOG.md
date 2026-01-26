@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.135.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.135.2...@gympass/yoga@7.135.3) (2026-01-26)
+
+
+### Bug Fixes
+
+* **yoga,icons,tokens:** bump versions ([a6a8bb6](https://github.com/Gympass/yoga/commit/a6a8bb6a916b72b13e5236b71e47751cb49cdbf0))
+
+
+
+
+
 ## [7.135.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.135.1...@gympass/yoga@7.135.2) (2026-01-21)
 
 **Note:** Version bump only for package @gympass/yoga

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.8.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.8.0...@gympass/yoga-tokens@3.8.1) (2026-01-26)
+
+
+### Bug Fixes
+
+* **yoga,icons,tokens:** bump versions ([a6a8bb6](https://github.com/Gympass/yoga/commit/a6a8bb6a916b72b13e5236b71e47751cb49cdbf0))
+
+
+
+
+
 # [3.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.7.0...@gympass/yoga-tokens@3.8.0) (2026-01-20)
 
 
