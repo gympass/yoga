@@ -7,6 +7,10 @@ on:
       - alpha
       - beta
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   packages:
     runs-on: ubuntu-latest
@@ -24,7 +28,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
       - uses: actions/setup-node@v1
         with:
-          node-version: 16
+          node-version: 24
           registry-url: https://registry.npmjs.org/
       - name: Install dependencies
         run: yarn --pure-lockfile --non-interactive
@@ -34,8 +38,6 @@ jobs:
       - name: Publish
         run: |
             export GH_TOKEN="${{ github.token }}"
-            export NPM_TOKEN="${{ secrets.YOGA_NPM_TOKEN }}"
-            echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
             chmod +x ./scripts/publish
             ./scripts/publish
 
@@ -54,7 +56,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
       - uses: actions/setup-node@v1
         with:
-          node-version: 16
+          node-version: 24
           registry-url: https://registry.npmjs.org/
       - name: Install dependencies
         run: yarn

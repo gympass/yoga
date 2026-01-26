@@ -54,8 +54,8 @@
   },
   "scripts": {
     "prebuild": "gatsby clean",
-    "build": "gatsby build --prefix-paths",
-    "dev": "gatsby develop -o",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider gatsby build --prefix-paths",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider gatsby develop -o",
     "serve": "gatsby serve",
     "deploy": "gh-pages -d public"
   },

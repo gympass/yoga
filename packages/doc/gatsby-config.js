@@ -2,6 +2,14 @@
 const config = require('./config');
 
 const plugins = [
+  {
+    resolve: 'gatsby-plugin-typescript',
+    options: {
+      isTSX: true,
+      jsxPragma: 'jsx',
+      allExtensions: true,
+    },
+  },
   'gatsby-transformer-react-docgen',
   {
     resolve: 'gatsby-plugin-react-svg',
@@ -58,6 +66,7 @@ const plugins = [
     options: {
       name: 'yoga',
       path: `../yoga`,
+      ignore: [`**/*.d.ts`],
     },
   },
   {
