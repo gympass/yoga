@@ -9,7 +9,7 @@ on:
 
 permissions:
   id-token: write
-  contents: read
+  contents: write
 
 jobs:
   packages:
@@ -37,9 +37,9 @@ jobs:
           yarn build:packages
       - name: Publish
         run: |
-            export GH_TOKEN="${{ github.token }}"
-            chmod +x ./scripts/publish
-            ./scripts/publish
+          export GH_TOKEN="${{ github.token }}"
+          chmod +x ./scripts/publish
+          ./scripts/publish
 
   doc:
     runs-on: ubuntu-latest
