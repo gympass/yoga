@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.2](https://github.com/gympass/yoga/compare/@gympass/yoga-common@1.4.1...@gympass/yoga-common@1.4.2) (2026-01-27)
+
+
+### Bug Fixes
+
+* update GitHub URLs to use lowercase 'gympass' ([214bff5](https://github.com/gympass/yoga/commit/214bff52dbe3d56b1b1d3be510843732141c1646))
+
+
+
+
+
 ## [1.4.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-common@1.4.0...@gympass/yoga-common@1.4.1) (2024-07-25)
 
 **Note:** Version bump only for package @gympass/yoga-common
