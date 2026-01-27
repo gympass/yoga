@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gympass/yoga.git"
+    "url": "git+https://github.com/gympass/yoga.git"
   },
   "scripts": {
     "build": "yarn build:types && yarn build:cjs && yarn build:esm",
@@ -31,7 +31,7 @@
     "test": "NODE_ENV=test jest --config=../../jest/config/helpers.js"
   },
   "bugs": {
-    "url": "https://github.com/Gympass/yoga/issues"
+    "url": "https://github.com/gympass/yoga/issues"
   },
   "tsup": {
     "entry": [
