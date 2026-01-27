@@ -7,7 +7,7 @@ set -e
 
 if [[ $BRANCH == "master" ]];
 then
-  yarn lerna publish --yes --no-verify-access --loglevel silly --ignoreChanges @gympass/yoga-doc
+  yarn lerna publish --yes --no-verify-access --loglevel silly --ignore-changes @gympass/yoga-doc
 elif [[ $BRANCH == "alpha" || $BRANCH == "beta" ]];
 then
   yarn lerna publish --conventional-prerelease --yes --preid $BRANCH --dist-tag $BRANCH
