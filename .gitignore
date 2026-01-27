@@ -72,3 +72,7 @@ dist
 build
 
 .DS_Store
+# Nx
+.nx
+/.nx/cache
+/.nx/workspace-data
