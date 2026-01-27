@@ -7,7 +7,7 @@
     "illustrations",
     "react"
   ],
-  "homepage": "https://github.com/Gympass/yoga/tree/master/packages/illustrations",
+  "homepage": "https://github.com/gympass/yoga/tree/master/packages/illustrations",
   "license": "MIT",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gympass/yoga.git"
+    "url": "git+https://github.com/gympass/yoga.git"
   },
   "scripts": {
     "prebuild": "rm -rf ./dist && yarn tsc -p ./tsconfig.json",
@@ -35,6 +35,6 @@
     "react-native-svg": ">=9.13.3"
   },
   "bugs": {
-    "url": "https://github.com/Gympass/yoga/issues"
+    "url": "https://github.com/gympass/yoga/issues"
   }
 }

@@ -22,7 +22,7 @@
     "react",
     "design-system"
   ],
-  "homepage": "https://github.com/Gympass/yoga#readme",
+  "homepage": "https://github.com/gympass/yoga#readme",
   "license": "MIT",
   "publishConfig": {
     "access": "public",
@@ -30,10 +30,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gympass/yoga.git"
+    "url": "git+https://github.com/gympass/yoga.git"
   },
   "bugs": {
-    "url": "https://github.com/Gympass/yoga/issues"
+    "url": "https://github.com/gympass/yoga/issues"
   },
   "dependencies": {
     "@gympass/yoga-common": "^1.4.1",

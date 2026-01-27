@@ -2,7 +2,7 @@
   "name": "@gympass/yoga-common",
   "version": "1.4.1",
   "description": "Shared resources between packages",
-  "homepage": "https://github.com/Gympass/yoga",
+  "homepage": "https://github.com/gympass/yoga",
   "license": "MIT",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -20,10 +20,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gympass/yoga.git"
+    "url": "git+https://github.com/gympass/yoga.git"
   },
   "bugs": {
-    "url": "https://github.com/Gympass/yoga/issues"
+    "url": "https://github.com/gympass/yoga/issues"
   },
   "tsup": {
     "entry": [

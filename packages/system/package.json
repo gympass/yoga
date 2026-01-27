@@ -13,7 +13,7 @@
   "types": "./src",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gympass/yoga.git"
+    "url": "git+https://github.com/gympass/yoga.git"
   },
   "scripts": {
     "build": "yarn build:types && yarn build:cjs && yarn build:esm",
@@ -24,7 +24,7 @@
     "prepublishOnly": "node ../../scripts/prepublish.js"
   },
   "bugs": {
-    "url": "https://github.com/Gympass/yoga/issues"
+    "url": "https://github.com/gympass/yoga/issues"
   },
   "dependencies": {
     "lodash.get": "^4.4.2"
