@@ -37,7 +37,7 @@ exports[`<Divider /> should create a divider component 1`] = `
       [
         {
           "borderBottomWidth": 1,
-          "borderColor": "#D7D7E0",
+          "borderColor": "#8F8F8F",
           "width": "auto",
         },
       ]
@@ -98,7 +98,7 @@ exports[`<Divider /> should create vertical divider component 1`] = `
     style={
       [
         {
-          "borderColor": "#D7D7E0",
+          "borderColor": "#8F8F8F",
           "borderLeftWidth": 1,
           "height": "auto",
         },

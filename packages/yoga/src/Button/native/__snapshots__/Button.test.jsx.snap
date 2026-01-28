@@ -50,7 +50,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   >
     <Text
       bold={false}
-      color="#D7D7E0"
+      color="#8F8F8F"
       disabled={true}
       fontSize="medium"
       fontWeight={500}
@@ -61,14 +61,14 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       style={
         [
           {
-            "color": "#D7D7E0",
+            "color": "#8F8F8F",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
             "lineHeight": 24,
           },
           {
-            "color": "#D7D7E0",
+            "color": "#8F8F8F",
             "fontSize": 16,
             "lineHeight": 24,
             "textAlign": "center",
@@ -133,7 +133,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     <RNSVGSvgView
       bbHeight={24}
       bbWidth={24}
-      fill="#D7D7E0"
+      fill="#8F8F8F"
       focusable={false}
       height={24}
       style={
@@ -161,7 +161,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
         fill={
           [
             0,
-            4292335584,
+            4287598479,
           ]
         }
         fillOpacity={1}
@@ -205,7 +205,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     </RNSVGSvgView>
     <Text
       bold={false}
-      color="#D7D7E0"
+      color="#8F8F8F"
       disabled={true}
       fontSize="medium"
       fontWeight={500}
@@ -216,14 +216,14 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       style={
         [
           {
-            "color": "#D7D7E0",
+            "color": "#8F8F8F",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
             "lineHeight": 24,
           },
           {
-            "color": "#D7D7E0",
+            "color": "#8F8F8F",
             "fontSize": 16,
             "lineHeight": 24,
             "textAlign": "center",
@@ -289,7 +289,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       aria-hidden={true}
       bbHeight={24}
       bbWidth={24}
-      fill="#D7D7E0"
+      fill="#8F8F8F"
       focusable={false}
       height={24}
       style={
@@ -320,7 +320,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
         fill={
           [
             0,
-            4292335584,
+            4287598479,
           ]
         }
         fillOpacity={1}
@@ -411,11 +411,11 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
           "lineHeight": 24,
         },
         {
-          "color": "#D7D7E0",
+          "color": "#8F8F8F",
           "fontSize": 16,
           "lineHeight": 24,
           "textAlign": "center",
-          "textDecorationColor": "#D7D7E0",
+          "textDecorationColor": "#8F8F8F",
           "textDecorationLine": "underline",
           "textDecorationStyle": "solid",
         },
@@ -479,7 +479,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   >
     <Text
       bold={false}
-      color="#D7D7E0"
+      color="#8F8F8F"
       disabled={true}
       fontSize="medium"
       fontWeight={500}
@@ -491,14 +491,14 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       style={
         [
           {
-            "color": "#D7D7E0",
+            "color": "#8F8F8F",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
             "lineHeight": 24,
           },
           {
-            "color": "#D7D7E0",
+            "color": "#8F8F8F",
             "fontSize": 16,
             "lineHeight": 24,
             "textAlign": "center",
@@ -561,7 +561,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   >
     <Text
       bold={false}
-      color="#D7D7E0"
+      color="#8F8F8F"
       disabled={true}
       fontSize="medium"
       fontWeight={500}
@@ -571,18 +571,18 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       style={
         [
           {
-            "color": "#D7D7E0",
+            "color": "#8F8F8F",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
             "lineHeight": 24,
           },
           {
-            "color": "#D7D7E0",
+            "color": "#8F8F8F",
             "fontSize": 16,
             "lineHeight": 24,
             "textAlign": "center",
-            "textDecorationColor": "#D7D7E0",
+            "textDecorationColor": "#8F8F8F",
             "textDecorationLine": "underline",
             "textDecorationStyle": "solid",
           },
@@ -640,7 +640,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     <RNSVGSvgView
       bbHeight={24}
       bbWidth={24}
-      fill="#D7D7E0"
+      fill="#8F8F8F"
       focusable={false}
       height={24}
       style={
@@ -668,7 +668,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
         fill={
           [
             0,
-            4292335584,
+            4287598479,
           ]
         }
         fillOpacity={1}
@@ -712,7 +712,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     </RNSVGSvgView>
     <Text
       bold={false}
-      color="#D7D7E0"
+      color="#8F8F8F"
       disabled={true}
       fontSize="medium"
       fontWeight={500}
@@ -722,18 +722,18 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       style={
         [
           {
-            "color": "#D7D7E0",
+            "color": "#8F8F8F",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
             "lineHeight": 24,
           },
           {
-            "color": "#D7D7E0",
+            "color": "#8F8F8F",
             "fontSize": 16,
             "lineHeight": 24,
             "textAlign": "center",
-            "textDecorationColor": "#D7D7E0",
+            "textDecorationColor": "#8F8F8F",
             "textDecorationLine": "underline",
             "textDecorationStyle": "solid",
           },

@@ -172,7 +172,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
           "borderRadius": 8,
           "borderStyle": "solid",
           "borderWidth": 1,
-          "color": "#D7D7E0",
+          "color": "#8F8F8F",
           "fontFamily": "Rubik",
           "fontSize": 14,
           "fontWeight": "400",
