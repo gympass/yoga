@@ -270,6 +270,6 @@ export const v3theme = createTheme(tokens => ({
           },
         },
       },
-    },,
+    },
   },
 }));
