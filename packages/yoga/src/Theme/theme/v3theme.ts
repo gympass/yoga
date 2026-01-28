@@ -18,6 +18,7 @@ export const v3theme = createTheme(tokens => ({
     success: tokens.colors.successNew,
     neutral: tokens.colors.neutralNew,
     deepPurple: tokens.colors.deepPurpleNew,
+    steady: tokens.colors.steady,
 
     feedback: {
       success: Object.assign(
@@ -224,7 +225,7 @@ export const v3theme = createTheme(tokens => ({
         height: {
           default: tokens.lineHeights.medium,
           small: tokens.lineHeights.xsmall,
-        }
+        },
       },
     },
     input: {
@@ -249,7 +250,7 @@ export const v3theme = createTheme(tokens => ({
           size: tokens.fontSizes.small,
           lineHeight: tokens.lineHeights.small,
           weight: tokens.fontWeights.medium,
-        }
+        },
       },
       backdrop: {
         content: {
@@ -257,9 +258,9 @@ export const v3theme = createTheme(tokens => ({
             font: {
               weight: tokens.fontWeights.bold,
               size: tokens.fontSizes.medium,
-             },
-          }
-        }
+            },
+          },
+        },
       },
       selected: {
         option: {
@@ -269,6 +270,6 @@ export const v3theme = createTheme(tokens => ({
           },
         },
       },
-    }
+    },,
   },
 }));
