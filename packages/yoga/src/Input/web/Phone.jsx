@@ -19,6 +19,7 @@ const phoneBaseSettings = {
     'pt',
     'us',
     'ca',
+    'ro',
   ],
 };
 

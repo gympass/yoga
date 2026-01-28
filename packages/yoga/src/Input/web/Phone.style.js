@@ -49,6 +49,10 @@ const flagsPositioning = css`
   .ca {
     background-position: -60px -40px;
   }
+
+  .ro {
+    background-position: 0px -60px;
+  }
 `;
 
 const hiddenScrollBar = css`
