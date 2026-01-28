@@ -73,8 +73,8 @@ exports[`<Dropdown /> should match snapshot 1`] = `
 
 .c4:disabled {
   cursor: not-allowed;
-  color: #D7D7E0;
-  -webkit-text-fill-color: #D7D7E0;
+  color: #8F8F8F;
+  -webkit-text-fill-color: #8F8F8F;
   opacity: 1;
 }
 
@@ -368,8 +368,8 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
 
 .c3:disabled {
   cursor: not-allowed;
-  color: #D7D7E0;
-  -webkit-text-fill-color: #D7D7E0;
+  color: #8F8F8F;
+  -webkit-text-fill-color: #8F8F8F;
   opacity: 1;
 }
 
@@ -469,7 +469,7 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
-  color: #D7D7E0;
+  color: #8F8F8F;
 }
 
 .c1 {
@@ -668,8 +668,8 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
 
 .c4:disabled {
   cursor: not-allowed;
-  color: #D7D7E0;
-  -webkit-text-fill-color: #D7D7E0;
+  color: #8F8F8F;
+  -webkit-text-fill-color: #8F8F8F;
   opacity: 1;
 }
 
@@ -963,8 +963,8 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
 
 .c3:disabled {
   cursor: not-allowed;
-  color: #D7D7E0;
-  -webkit-text-fill-color: #D7D7E0;
+  color: #8F8F8F;
+  -webkit-text-fill-color: #8F8F8F;
   opacity: 1;
 }
 
@@ -1086,7 +1086,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
-  color: #D7D7E0;
+  color: #8F8F8F;
 }
 
 .c1 {
@@ -1285,8 +1285,8 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
 
 .c4:disabled {
   cursor: not-allowed;
-  color: #D7D7E0;
-  -webkit-text-fill-color: #D7D7E0;
+  color: #8F8F8F;
+  -webkit-text-fill-color: #8F8F8F;
   opacity: 1;
 }
 
