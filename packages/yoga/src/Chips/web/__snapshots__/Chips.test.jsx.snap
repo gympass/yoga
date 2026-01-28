@@ -43,11 +43,11 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
 }
 
 .c0[disabled] p {
-  color: #D7D7E0;
+  color: #8F8F8F;
 }
 
 .c0[disabled] svg {
-  fill: #D7D7E0;
+  fill: #8F8F8F;
 }
 
 .c0 svg {
@@ -172,11 +172,11 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
 }
 
 .c0[disabled] p {
-  color: #D7D7E0;
+  color: #8F8F8F;
 }
 
 .c0[disabled] svg {
-  fill: #D7D7E0;
+  fill: #8F8F8F;
 }
 
 .c0 svg {
@@ -237,11 +237,11 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
 }
 
 .c2[disabled] p {
-  color: #D7D7E0;
+  color: #8F8F8F;
 }
 
 .c2[disabled] svg {
-  fill: #D7D7E0;
+  fill: #8F8F8F;
 }
 
 .c2 svg {
@@ -389,11 +389,11 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
 }
 
 .c0[disabled] p {
-  color: #D7D7E0;
+  color: #8F8F8F;
 }
 
 .c0[disabled] svg {
-  fill: #D7D7E0;
+  fill: #8F8F8F;
 }
 
 .c0 svg {
@@ -454,11 +454,11 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
 }
 
 .c2[disabled] p {
-  color: #D7D7E0;
+  color: #8F8F8F;
 }
 
 .c2[disabled] svg {
-  fill: #D7D7E0;
+  fill: #8F8F8F;
 }
 
 .c2 svg {
@@ -617,11 +617,11 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
 }
 
 .c0[disabled] p {
-  color: #D7D7E0;
+  color: #8F8F8F;
 }
 
 .c0[disabled] svg {
-  fill: #D7D7E0;
+  fill: #8F8F8F;
 }
 
 .c0 svg {
@@ -710,11 +710,11 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
 }
 
 .c0[disabled] p {
-  color: #D7D7E0;
+  color: #8F8F8F;
 }
 
 .c0[disabled] svg {
-  fill: #D7D7E0;
+  fill: #8F8F8F;
 }
 
 .c0 svg {
@@ -775,11 +775,11 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
 }
 
 .c2[disabled] p {
-  color: #D7D7E0;
+  color: #8F8F8F;
 }
 
 .c2[disabled] svg {
-  fill: #D7D7E0;
+  fill: #8F8F8F;
 }
 
 .c2 svg {
@@ -878,11 +878,11 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
 }
 
 .c0[disabled] p {
-  color: #D7D7E0;
+  color: #8F8F8F;
 }
 
 .c0[disabled] svg {
-  fill: #D7D7E0;
+  fill: #8F8F8F;
 }
 
 .c0 svg {
@@ -968,11 +968,11 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
 }
 
 .c0[disabled] p {
-  color: #D7D7E0;
+  color: #8F8F8F;
 }
 
 .c0[disabled] svg {
-  fill: #D7D7E0;
+  fill: #8F8F8F;
 }
 
 .c0 svg {
@@ -1059,11 +1059,11 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
 }
 
 .c0[disabled] p {
-  color: #D7D7E0;
+  color: #8F8F8F;
 }
 
 .c0[disabled] svg {
-  fill: #D7D7E0;
+  fill: #8F8F8F;
 }
 
 .c0 svg {

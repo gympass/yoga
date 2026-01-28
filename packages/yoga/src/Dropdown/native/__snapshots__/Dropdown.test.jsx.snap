@@ -188,7 +188,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
       style={
         [
           {
-            "color": "#D7D7E0",
+            "color": "#8F8F8F",
             "fontFamily": "Rubik",
             "fontSize": 14,
             "fontWeight": "400",

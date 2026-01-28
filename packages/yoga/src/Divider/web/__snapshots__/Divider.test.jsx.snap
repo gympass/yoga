@@ -29,7 +29,7 @@ exports[`<Divider /> should create a divider component 1`] = `
   border-width: 0px;
   border-left-width: 0px;
   border-top-width: 1px;
-  border-color: #D7D7E0;
+  border-color: #8F8F8F;
   border-style: solid;
 }
 
@@ -84,7 +84,7 @@ exports[`<Divider /> should create a vertical divider component 1`] = `
   border-width: 0px;
   border-left-width: 1px;
   border-top-width: 0px;
-  border-color: #D7D7E0;
+  border-color: #8F8F8F;
   border-style: solid;
 }
 

@@ -212,7 +212,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           [
             {
               "borderBottomWidth": 1,
-              "borderColor": "#D7D7E0",
+              "borderColor": "#8F8F8F",
               "width": "auto",
             },
           ]
@@ -801,7 +801,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
           [
             {
               "borderBottomWidth": 1,
-              "borderColor": "#D7D7E0",
+              "borderColor": "#8F8F8F",
               "width": "auto",
             },
           ]
@@ -966,7 +966,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
           [
             {
               "borderBottomWidth": 1,
-              "borderColor": "#D7D7E0",
+              "borderColor": "#8F8F8F",
               "width": "auto",
             },
           ]

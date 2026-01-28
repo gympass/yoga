@@ -1411,7 +1411,7 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
           "lineHeight": 16,
         },
         {
-          "color": "#D7D7E0",
+          "color": "#8F8F8F",
           "flexShrink": 1,
         },
       ]

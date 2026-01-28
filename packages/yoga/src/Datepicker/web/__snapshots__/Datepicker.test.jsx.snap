@@ -488,7 +488,7 @@ exports[`<Datepicker /> Snapshots should match with disabled Datepicker 1`] = `
   color: #231B22;
   font-family: Rubik;
   font-weight: 400;
-  color: #D7D7E0;
+  color: #8F8F8F;
 }
 
 .c3 {
@@ -519,7 +519,7 @@ exports[`<Datepicker /> Snapshots should match with disabled Datepicker 1`] = `
 }
 
 .c4 {
-  fill: #D7D7E0;
+  fill: #8F8F8F;
   margin-right: 8px;
 }
 
