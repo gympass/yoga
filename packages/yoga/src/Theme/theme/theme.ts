@@ -65,7 +65,7 @@ const theme = (tokens: typeof yogaTokens) => {
     text: {
       primary: tokens.colors.stamina,
       secondary: tokens.colors.deep,
-      disabled: tokens.colors.light,
+      disabled: tokens.colors.steady,
     },
     elements: {
       selectionAndIcons: tokens.colors.medium,
