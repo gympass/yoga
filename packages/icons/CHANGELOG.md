@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.42.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.41.5...@gympass/yoga-icons@1.42.0) (2026-01-30)
+
+
+### Features
+
+* map Base icon ([54f984b](https://github.com/gympass/yoga/commit/54f984b4c52d390afbcbc050ade07747263f168f))
+
+
+
+
+
 ## [1.41.5](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.41.4...@gympass/yoga-icons@1.41.5) (2026-01-27)
 
 
