@@ -128,6 +128,7 @@ import MailRead from './svg/mail_read.svg';
 import MailUnread from './svg/mail_unread.svg';
 import ManualInvite from './svg/manual_invite.svg';
 import Map from './svg/map.svg';
+import MapBase from './svg/map_base.svg';
 import MapPin from './svg/map_pin.svg';
 import MartialArts from './svg/martial-arts.svg';
 import MassageChair from './svg/massage-chair.svg';
@@ -361,6 +362,7 @@ export {
   MailUnread,
   ManualInvite,
   Map,
+  MapBase,
   MapPin,
   MartialArts,
   MassageChair,
