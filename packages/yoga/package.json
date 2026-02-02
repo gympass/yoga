@@ -8,9 +8,9 @@
   "scripts": {
     "build": "yarn build:types && yarn build:web && yarn build:esm && yarn build:native",
     "build:types": "tsup --outDir dist/typings --dts-only",
-    "build:web": "tsup src src/**/web !src/Fonts !**/*.test.jsx.snap !**/*.test.tsx.snap --outDir dist/cjs --format=cjs",
-    "build:esm": "tsup src src/**/web !src/Fonts !**/*.test.jsx.snap !**/*.test.tsx.snap --format=esm --legacy-output",
-    "build:native": "tsup src src/**/native !src/Fonts !**/*.test.jsx.snap !**/*.test.tsx.snap --outDir dist/cjs --format=cjs",
+    "build:web": "tsup src src/**/web !src/**/*.md !src/Fonts !**/*.test.jsx.snap !**/*.test.tsx.snap --outDir dist/cjs --format=cjs",
+    "build:esm": "tsup src src/**/web !src/**/*.md !src/Fonts !**/*.test.jsx.snap !**/*.test.tsx.snap --format=esm --legacy-output",
+    "build:native": "tsup src src/**/native !src/**/*.md !src/Fonts !**/*.test.jsx.snap !**/*.test.tsx.snap --outDir dist/cjs --format=cjs",
     "prebuild": "rm -rf ./dist",
     "postbuild": "cp -r ./src/Fonts ./dist/fonts",
     "prepublishOnly": "node ../../scripts/prepublish.js --rn"
