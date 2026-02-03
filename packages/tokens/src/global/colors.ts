@@ -28,6 +28,7 @@ const successNew = '#E3EFC3';
 const neutral = '#E0DFFF';
 const neutralNew = '#F0E0FF';
 const attention = '#FCD6C3';
+const inactive = '#AE0000';
 
 // Gray scale ↓
 
@@ -83,6 +84,7 @@ const colors = {
   lightest,
   clearNew,
   steady,
+  inactive,
 } as const;
 
 export default colors;
