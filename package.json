@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "tsc": "tsc",
     "commit": "git-cz",
     "clean": "lerna clean -y && rm -rf .nx packages/*/dist && yarn --cwd packages/doc gatsby clean",
     "test": "NODE_ENV=test jest --config=./jest/config/config.js",
@@ -74,6 +75,7 @@
     "prettier": "2.6.2",
     "react-dom": "^18.0.0",
     "tsup": "^7.1.0",
+    "typescript": "^4.9.5",
     "yargs": "^15.1.0"
   },
   "workspaces": {

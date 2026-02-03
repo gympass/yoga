@@ -120,14 +120,14 @@ type NavigationMenuProps = {
   children: React.ReactNode;
   openOnMobile?: boolean;
   responsive?: boolean;
-  zIndex: number;
+  zIndex?: number;
 };
 
-const NavigationMenu = ({
+const NavigationMenu: any = ({
   children,
   openOnMobile = false,
   responsive = true,
-  zIndex,
+  zIndex = 1,
   ...htmlAttributes
 }: NavigationMenuProps) => (
   <StyledNavigationMenu
