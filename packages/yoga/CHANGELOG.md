@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.138.0](https://github.com/gympass/yoga/compare/@gympass/yoga@7.137.2...@gympass/yoga@7.138.0) (2026-02-04)
+
+
+### Features
+
+* update radio button ([2918ec5](https://github.com/gympass/yoga/commit/2918ec5170070344ad195ecc059cde04f18a3fdb))
+
+
+
+
+
 ## [7.137.2](https://github.com/gympass/yoga/compare/@gympass/yoga@7.137.1...@gympass/yoga@7.137.2) (2026-02-02)
 
 **Note:** Version bump only for package @gympass/yoga
