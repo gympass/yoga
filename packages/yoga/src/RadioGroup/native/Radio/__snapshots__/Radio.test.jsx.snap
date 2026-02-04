@@ -152,7 +152,7 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
       {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
-        "borderColor": "#F5F5FA",
+        "borderColor": "#8F8F8F",
         "borderRadius": 9999,
         "borderStyle": "solid",
         "borderWidth": 2,

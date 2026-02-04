@@ -37,7 +37,7 @@ const RadioGroup = ({
     backgroundColor: colors.elements.backgroundAndDisabled,
   },
   disabled: {
-    backgroundColor: colors.elements.backgroundAndDisabled,
+    backgroundColor: colors.steady,
   },
   checked: {
     backgroundColor: colors.primary,
