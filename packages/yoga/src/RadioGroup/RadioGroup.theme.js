@@ -24,7 +24,7 @@ const RadioGroup = ({
   },
   radio: {
     size: 20,
-    backgroundColor: colors.elements.selectionAndIcons,
+    backgroundColor: colors.vibin,
     border: {
       radius: radii.circle,
     },
