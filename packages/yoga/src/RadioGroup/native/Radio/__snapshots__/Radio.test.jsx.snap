@@ -28,7 +28,7 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
       {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
-        "borderColor": "#9898A6",
+        "borderColor": "#D8385E",
         "borderRadius": 9999,
         "borderStyle": "solid",
         "borderWidth": 2,
@@ -69,7 +69,7 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
       {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
-        "borderColor": "#9898A6",
+        "borderColor": "#D8385E",
         "borderRadius": 9999,
         "borderStyle": "solid",
         "borderWidth": 2,
@@ -110,7 +110,7 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
       {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
-        "borderColor": "#9898A6",
+        "borderColor": "#D8385E",
         "borderRadius": 9999,
         "borderStyle": "solid",
         "borderWidth": 2,
