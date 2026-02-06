@@ -338,7 +338,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
         style={
           [
             {
-              "backgroundColor": "#8F8F8F",
+              "backgroundColor": "#FFFFFF",
               "borderColor": "#D7D7E0",
               "borderRadius": 4,
               "borderStyle": "solid",
@@ -1203,7 +1203,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
         style={
           [
             {
-              "backgroundColor": "#8F8F8F",
+              "backgroundColor": "#FFFFFF",
               "borderColor": "#D7D7E0",
               "borderRadius": 4,
               "borderStyle": "solid",
