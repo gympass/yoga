@@ -37,12 +37,12 @@ const CheckMark = styled.div.attrs(({ checked, disabled }) => ({
     indeterminate,
     theme: {
       yoga: {
-        colors: { primary, feedback, elements, white },
+        colors: { primary, feedback, white },
         components: { checkbox },
       },
     },
   }) => {
-    let borderColor = elements.selectionAndIcons;
+    let borderColor = checkbox.border.color;
     let bgColor = 'transparent';
     let checkColor = checkbox.checked.icon.color;
 
@@ -57,7 +57,7 @@ const CheckMark = styled.div.attrs(({ checked, disabled }) => ({
 
       if (checked || indeterminate) {
         bgColor = checkbox.disabled.backgroundColor;
-        borderColor = elements.lineAndBorders;
+        borderColor = checkbox.disabled.border.color;
       }
     } else if (checked || indeterminate) {
       borderColor = primary;
@@ -106,15 +106,24 @@ const Label = styled.label`
   cursor: pointer;
 
   ${({
+    disabled,
     theme: {
       yoga: {
         components: { checkbox },
       },
     },
-  }) => `
-    font-size: ${checkbox.label.font.size}px;
-    color: ${checkbox.label.font.color};
-  `}
+  }) => {
+    let { color } = checkbox.label.font;
+
+    if (disabled && checkbox.disabled.label) {
+      color = checkbox.disabled.label.font.color;
+    }
+
+    return `
+      font-size: ${checkbox.label.font.size}px;
+      color: ${color};
+    `;
+  }}
 `;
 
 const Shadow = styled.span`
@@ -280,7 +289,7 @@ const Checkbox = ({
         inverted={inverted}
         disabled={disabled}
       >
-        <Label id={checkboxLabelId}>
+        <Label id={checkboxLabelId} disabled={disabled}>
           <Shadow />
           <CheckMark
             aria-labelledby={ariaLabel ? undefined : checkboxLabelId}

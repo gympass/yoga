@@ -6,6 +6,7 @@ const Checkbox = ({ spacing, colors, borders, radii, fontSizes }) => ({
   border: {
     width: borders.medium,
     radius: radii.xsmall,
+    color: colors.mediumNew,
   },
   label: {
     padding: {
@@ -36,9 +37,14 @@ const Checkbox = ({ spacing, colors, borders, radii, fontSizes }) => ({
     },
   },
   disabled: {
-    backgroundColor: colors.steady,
+    backgroundColor: colors.white,
     border: {
       color: colors.steady,
+    },
+    label: {
+      font: {
+        color: colors.steady,
+      },
     },
   },
 });
