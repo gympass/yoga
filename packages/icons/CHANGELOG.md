@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.42.1](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.42.0...@gympass/yoga-icons@1.42.1) (2026-02-06)
+
+
+### Bug Fixes
+
+* fix: remove 'fill' attr from icon ([008250f](https://github.com/gympass/yoga/commit/008250fde9340971acede42f7073af2c35f92c92))
+
+
+
+
+
 # [1.42.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.41.5...@gympass/yoga-icons@1.42.0) (2026-01-30)
 
 
