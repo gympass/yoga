@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.139.0](https://github.com/gympass/yoga/compare/@gympass/yoga@7.138.0...@gympass/yoga@7.139.0) (2026-02-06)
+
+
+### Features
+
+* update color ([64063f2](https://github.com/gympass/yoga/commit/64063f2452a83aabd9fe4ab59d1dd6c9da8f4c06))
+* update snapshots ([c88a6c6](https://github.com/gympass/yoga/commit/c88a6c69c90436b3bc6b9b39cf44ebf28d8f4508))
+
+
+
+
+
 # [7.138.0](https://github.com/gympass/yoga/compare/@gympass/yoga@7.137.2...@gympass/yoga@7.138.0) (2026-02-04)
 
 
