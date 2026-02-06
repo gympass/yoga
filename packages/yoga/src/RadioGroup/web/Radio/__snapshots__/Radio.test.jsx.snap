@@ -9,7 +9,7 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
   height: 20px;
   border-width: 2px;
   border-style: solid;
-  border-color: #9898A6;
+  border-color: #D8385E;
   border-radius: 9999px;
 }
 
