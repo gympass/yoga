@@ -36,9 +36,9 @@ const Checkbox = ({ spacing, colors, borders, radii, fontSizes }) => ({
     },
   },
   disabled: {
-    backgroundColor: colors.elements.lineAndBorders,
+    backgroundColor: colors.steady,
     border: {
-      color: colors.elements.lineAndBorders,
+      color: colors.steady,
     },
   },
 });
