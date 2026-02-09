@@ -71,7 +71,7 @@ const IconWrapper = styled.div`
       cursor: not-allowed;
       pointer-events: none;
       svg {
-        fill: ${colors.text.disabled};
+        fill: ${colors.steady};
       }
     `
       : ''}

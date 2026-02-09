@@ -72,7 +72,7 @@ const IconWrapper = styled.div`
       ${
         disabled
           ? `
-            fill: ${colors.elements.backgroundAndDisabled};
+            fill: ${colors.steady};
             pointer-events: none;`
           : ''
       }
