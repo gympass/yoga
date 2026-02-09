@@ -64,12 +64,12 @@ const CheckBackground = styled.View(
     error,
     theme: {
       yoga: {
-        colors: { primary, feedback, elements, white },
+        colors: { primary, feedback, white },
         components: { checkbox },
       },
     },
   }) => {
-    let borderColor = primary;
+    let borderColor = checkbox.border.color;
     let bgColor = 'transparent';
 
     if (error) {
@@ -83,7 +83,6 @@ const CheckBackground = styled.View(
 
       if (checked) {
         bgColor = checkbox.disabled.backgroundColor;
-        borderColor = elements.lineAndBorders;
       }
     } else if (checked) {
       borderColor = primary;

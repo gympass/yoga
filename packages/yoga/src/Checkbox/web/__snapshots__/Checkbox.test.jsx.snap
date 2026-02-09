@@ -32,7 +32,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with a given value 1`] = `
   background-color: transparent;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #9898A6;
+  border-color: #A6A298;
 }
 
 .c6 svg {
@@ -496,7 +496,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
   background-color: transparent;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #9898A6;
+  border-color: #A6A298;
 }
 
 .c6 svg {
@@ -649,10 +649,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   width: 24px;
   height: 24px;
   margin-right: 8px;
-  background-color: #D7D7E0;
+  background-color: #FFFFFF;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #D7D7E0;
+  border-color: #8F8F8F;
 }
 
 .c6 svg {
@@ -679,7 +679,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   align-items: center;
   cursor: pointer;
   font-size: 16px;
-  color: #231B22;
+  color: #8F8F8F;
 }
 
 .c5 {
@@ -808,6 +808,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
     >
       <label
         class="c2 c3"
+        disabled=""
         id="checkbox-label-jest-id"
       >
         <span
@@ -883,7 +884,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   background-color: transparent;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #D7D7E0;
+  border-color: #8F8F8F;
 }
 
 .c6 svg {
@@ -910,7 +911,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   align-items: center;
   cursor: pointer;
   font-size: 16px;
-  color: #231B22;
+  color: #8F8F8F;
 }
 
 .c5 {
@@ -997,6 +998,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
     >
       <label
         class="c2 c3"
+        disabled=""
         id="checkbox-label-jest-id"
       >
         <span
@@ -2015,10 +2017,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with indeterminate and dis
   width: 24px;
   height: 24px;
   margin-right: 8px;
-  background-color: #D7D7E0;
+  background-color: #FFFFFF;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #D7D7E0;
+  border-color: #8F8F8F;
 }
 
 .c6 svg {
@@ -2045,7 +2047,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with indeterminate and dis
   align-items: center;
   cursor: pointer;
   font-size: 16px;
-  color: #231B22;
+  color: #8F8F8F;
 }
 
 .c5 {
@@ -2206,6 +2208,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with indeterminate and dis
     >
       <label
         class="c2 c3"
+        disabled=""
         id="checkbox-label-jest-id"
       >
         <span
@@ -2751,10 +2754,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
   width: 24px;
   height: 24px;
   margin-right: 8px;
-  background-color: #D7D7E0;
+  background-color: #FFFFFF;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #D7D7E0;
+  border-color: #8F8F8F;
 }
 
 .c6 svg {
@@ -2781,7 +2784,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
   align-items: center;
   cursor: pointer;
   font-size: 16px;
-  color: #231B22;
+  color: #8F8F8F;
 }
 
 .c5 {
@@ -2952,6 +2955,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
     >
       <label
         class="c2 c3"
+        disabled=""
         id="checkbox-label-jest-id"
       >
         <span
@@ -3291,7 +3295,7 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
   background-color: transparent;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #9898A6;
+  border-color: #A6A298;
 }
 
 .c6 svg {

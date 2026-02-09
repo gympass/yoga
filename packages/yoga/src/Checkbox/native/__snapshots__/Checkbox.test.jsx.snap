@@ -232,7 +232,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
           [
             {
               "backgroundColor": "transparent",
-              "borderColor": "#D8385E",
+              "borderColor": "#A6A298",
               "borderRadius": 4,
               "borderStyle": "solid",
               "borderWidth": 2,
@@ -338,8 +338,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
         style={
           [
             {
-              "backgroundColor": "#D7D7E0",
-              "borderColor": "#D7D7E0",
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#8F8F8F",
               "borderRadius": 4,
               "borderStyle": "solid",
               "borderWidth": 2,
@@ -519,7 +519,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
           [
             {
               "backgroundColor": "transparent",
-              "borderColor": "#D7D7E0",
+              "borderColor": "#8F8F8F",
               "borderRadius": 4,
               "borderStyle": "solid",
               "borderWidth": 2,
@@ -1203,8 +1203,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
         style={
           [
             {
-              "backgroundColor": "#D7D7E0",
-              "borderColor": "#D7D7E0",
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#8F8F8F",
               "borderRadius": 4,
               "borderStyle": "solid",
               "borderWidth": 2,
@@ -1384,7 +1384,7 @@ exports[`<Checkbox /> Snapshots should match snapshot without label 1`] = `
           [
             {
               "backgroundColor": "transparent",
-              "borderColor": "#D8385E",
+              "borderColor": "#A6A298",
               "borderRadius": 4,
               "borderStyle": "solid",
               "borderWidth": 2,
@@ -1452,7 +1452,7 @@ exports[`<Checkbox /> Snapshots should match snapshot without label 2`] = `
           [
             {
               "backgroundColor": "transparent",
-              "borderColor": "#D8385E",
+              "borderColor": "#A6A298",
               "borderRadius": 4,
               "borderStyle": "solid",
               "borderWidth": 2,

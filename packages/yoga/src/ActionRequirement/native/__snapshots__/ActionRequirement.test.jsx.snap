@@ -454,7 +454,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
                 [
                   {
                     "backgroundColor": "transparent",
-                    "borderColor": "#D8385E",
+                    "borderColor": "#A6A298",
                     "borderRadius": 4,
                     "borderStyle": "solid",
                     "borderWidth": 2,
