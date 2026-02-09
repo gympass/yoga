@@ -77,7 +77,7 @@ const Field = styled.TextInput(
       disabled
         ? `
           border-color: ${colors.steady};
-          color: ${colors.text.disabled};
+          color: ${colors.steady};
         `
         : ''
     }
@@ -143,7 +143,7 @@ const Label = styled(Animated.Text)(
     }
 
     ${error ? `color: ${colors.feedback.attention[1]};` : ''}
-    ${disabled ? `color: ${colors.text.disabled};` : ''}
+    ${disabled ? `color: ${colors.steady};` : ''}
   `,
 );
 
@@ -208,7 +208,7 @@ const Input = React.forwardRef(
 
     const iconColor = () => {
       if (disabled) {
-        return colors.elements.backgroundAndDisabled;
+        return colors.steady;
       }
 
       if (focused) {
