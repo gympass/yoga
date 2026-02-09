@@ -76,7 +76,7 @@ const Field = styled.TextInput(
     ${
       disabled
         ? `
-          border-color: ${colors.elements.lineAndBorders};
+          border-color: ${colors.steady};
           color: ${colors.text.disabled};
         `
         : ''
