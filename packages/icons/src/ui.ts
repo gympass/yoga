@@ -231,6 +231,7 @@ import WiFi from './svg/wi-fi.svg';
 import YogaMat from './svg/yoga-mat.svg';
 import Youtube from './svg/youtube.svg';
 import Zen from './svg/zen.svg';
+import OffPeak from './svg/off-peak.svg';
 
 export {
   Accessibility,
@@ -466,4 +467,5 @@ export {
   YogaMat,
   Youtube,
   Zen,
+  OffPeak,
 };
