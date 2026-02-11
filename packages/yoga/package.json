@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga",
-  "version": "7.140.0",
+  "version": "7.141.0",
   "description": "Gympass component library",
   "main": "./src",
   "types": "./src",
@@ -55,7 +55,7 @@
     "react-phone-input-2": "^2.15.1"
   },
   "devDependencies": {
-    "@gympass/yoga-icons": "^1.42.1",
+    "@gympass/yoga-icons": "^1.43.0",
     "@react-native-community/eslint-config": "^3.0.1",
     "@types/styled-components": "^5.1.34",
     "babel-plugin-inline-react-svg": "^1.1.1",
