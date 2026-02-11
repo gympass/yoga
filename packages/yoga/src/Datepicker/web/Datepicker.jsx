@@ -143,7 +143,7 @@ const CalendarIcon = styled(({ _disabled, inputFilled, ...props }) =>
       yoga: { colors, spacing },
     },
   }) => `
-    fill: ${disabled ? colors.steady : colors.text.primary};
+    fill: ${disabled ? colors.text.disabled : colors.text.primary};
     margin-right: ${spacing.xxsmall}px;
   `}
 `;

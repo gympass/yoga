@@ -58,7 +58,7 @@ const getDayFieldColor = (selected, disabled, colors, aux) => {
     return colors.white;
   }
   if (disabled) {
-    return colors.steady;
+    return colors.text.disabled;
   }
   const currentDate = new Date();
   const { val, year, month } = aux;
