@@ -53,7 +53,7 @@ export const v3theme = createTheme(tokens => ({
     elements: {
       selectionAndIcons: tokens.colors.mediumNew,
       lineAndBorders: tokens.colors.lightNew,
-      backgroundAndDisabled: tokens.colors.clearNew,
+      backgroundAndDisabled: tokens.colors.steady,
     },
   },
 
