@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
     margin-top: ${input.helper.margin.top}px;
 
     color: ${error ? colors.feedback.attention[1] : input.helper.color.default};
-    ${disabled ? `color: ${colors.text.disabled};` : ''}
+    ${disabled ? `color: ${colors.steady};` : ''}
   `}
 `;
 

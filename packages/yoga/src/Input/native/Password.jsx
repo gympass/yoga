@@ -59,7 +59,7 @@ const Password = React.forwardRef(
 
     const iconColor = () => {
       if (disabled) {
-        return colors.elements.backgroundAndDisabled;
+        return colors.steady;
       }
 
       if (focused) {

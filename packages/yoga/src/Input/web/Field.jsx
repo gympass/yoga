@@ -88,8 +88,8 @@ const Field = styled.input`
 
     &:disabled {
       cursor: not-allowed;
-      color: ${colors.text.disabled};
-      -webkit-text-fill-color: ${colors.text.disabled};
+      color: ${colors.steady};
+      -webkit-text-fill-color: ${colors.steady};
       opacity: 1;
     }
 

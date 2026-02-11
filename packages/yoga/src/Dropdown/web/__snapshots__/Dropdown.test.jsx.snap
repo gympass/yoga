@@ -410,7 +410,7 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #D7D7E0;
-  border-color: #D7D7E0;
+  border-color: #8F8F8F;
 }
 
 .c2:hover:not(:disabled),
@@ -1027,7 +1027,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   border-style: solid;
   border-color: #D7D7E0;
   border-color: #231B22;
-  border-color: #D7D7E0;
+  border-color: #8F8F8F;
 }
 
 .c2:hover:not(:disabled),

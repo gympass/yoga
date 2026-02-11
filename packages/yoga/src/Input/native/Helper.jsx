@@ -40,7 +40,7 @@ const Info = styled(Text.Caption)(
     font-family: ${baseFont.family};
     color: ${input.helper.color.default};
 
-    ${disabled ? `color: ${colors.text.disabled};` : ''}
+    ${disabled ? `color: ${colors.steady};` : ''}
     ${focused ? `color: ${input.helper.color.focus};` : ''}
     ${error ? `color: ${colors.feedback.attention.dark};` : ''}
   `,

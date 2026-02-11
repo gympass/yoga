@@ -30,7 +30,7 @@ const Label = styled.label`
     transition-duration: ${transition.duration[1]}ms;
     transition-timing-function: cubic-bezier(${transition.timing[0].join()});
 
-    ${disabled ? `color: ${colors.text.disabled};` : ''}
+    ${disabled ? `color: ${colors.steady};` : ''}
   `}
 `;
 

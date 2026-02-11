@@ -71,7 +71,7 @@ const labelStateColors = ({
     yoga: { colors },
   },
 }) => css`
-  ${disabled ? `color: ${colors.text.disabled};` : ''}
+  ${disabled ? `color: ${colors.steady};` : ''}
   ${error ? `color: ${colors.feedback.attention[1]};` : ''}
 `;
 
@@ -135,7 +135,7 @@ export const Container = styled.div`
         width: 100%;
         outline: none;
         grid-area: input;
-        color: ${disabled ? colors.text.disabled : input.font.color.focus};
+        color: ${disabled ? colors.steady : input.font.color.focus};
         font-family: ${baseFont.family}, sans-serif;
         font-size: ${input.font.size}px;
         padding-left: ${spacing.xsmall}px;
