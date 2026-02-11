@@ -441,7 +441,7 @@ exports[`<Accordion /> should correctly render the default version with v3Theme 
 }
 
 .c1:focus-visible {
-  background: #FAF9F5;
+  background: #8F8F8F;
 }
 
 .c2 {
