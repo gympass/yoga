@@ -261,7 +261,7 @@ const ArrowIcon = styled(({ isOpen, selected, ...props }) => (
     },
   }) => `
     fill: ${dropdown.arrow.fill};
-    ${disabled ? `fill: ${dropdown.disabled.arrow.fill};` : ''};
+    ${disabled ? `fill: ${dropdown.disabled.arrow.disabled};` : ''};
     ${selected && !disabled ? `fill: ${dropdown.selected.arrow.fill};` : ''};
     transform: rotate(${isOpen ? '180deg' : '0'});
   `}
