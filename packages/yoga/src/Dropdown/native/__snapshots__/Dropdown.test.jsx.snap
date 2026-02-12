@@ -167,7 +167,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
-          "borderColor": "#F5F5FA",
+          "borderColor": "#8F8F8F",
           "borderRadius": 8,
           "borderStyle": "solid",
           "borderWidth": 1,
