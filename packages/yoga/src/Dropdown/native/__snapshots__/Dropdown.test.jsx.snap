@@ -202,7 +202,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
     <RNSVGSvgView
       bbHeight={20}
       bbWidth={20}
-      fill="#D7D7E0"
+      fill="#8F8F8F"
       focusable={false}
       height={20}
       style={
@@ -228,7 +228,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
         fill={
           [
             0,
-            4292335584,
+            4287598479,
           ]
         }
         fillOpacity={1}
@@ -490,7 +490,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
     <RNSVGSvgView
       bbHeight={20}
       bbWidth={20}
-      fill="#D7D7E0"
+      fill="#8F8F8F"
       focusable={false}
       height={20}
       style={
@@ -516,7 +516,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
         fill={
           [
             0,
-            4292335584,
+            4287598479,
           ]
         }
         fillOpacity={1}
