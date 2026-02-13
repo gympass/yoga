@@ -140,16 +140,17 @@ const Dropdown = ({
   disabled: {
     selector: {
       border: {
-        color: colors.elements.backgroundAndDisabled,
+        color: colors.steady,
       },
     },
     input: {
       font: {
-        color: colors.text.disabled,
+        color: colors.steady,
       },
     },
     arrow: {
-      fill: colors.elements.lineAndBorders,
+      fill: colors.steady,
+      disabled: colors.steady,
     },
   },
   selected: {
