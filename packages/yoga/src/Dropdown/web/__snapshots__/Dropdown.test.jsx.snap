@@ -519,7 +519,7 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
 
 .c9 {
   fill: #6B6B78;
-  fill: undefined;
+  fill: #8F8F8F;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   transform: rotate(0);
@@ -1136,7 +1136,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
 
 .c9 {
   fill: #6B6B78;
-  fill: undefined;
+  fill: #8F8F8F;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   transform: rotate(0);

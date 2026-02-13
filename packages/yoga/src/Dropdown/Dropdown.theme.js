@@ -26,7 +26,6 @@ const Dropdown = ({
   },
   arrow: {
     fill: colors.text.secondary,
-    disabled: colors.steady,
   },
   input: {
     font: {
@@ -151,6 +150,7 @@ const Dropdown = ({
     },
     arrow: {
       fill: colors.steady,
+      disabled: colors.steady,
     },
   },
   selected: {
