@@ -19,7 +19,7 @@ const CheckboxSwitch = ({
       backgroundColor: colors.primary,
     },
     disabled: {
-      backgroundColor: colors.elements.backgroundAndDisabled,
+      backgroundColor: colors.steady,
     },
   },
   thumb: {
