@@ -223,7 +223,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   transition-property: background-color;
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
-  background-color: #F5F5FA;
+  background-color: #8F8F8F;
   cursor: not-allowed;
 }
 
@@ -334,7 +334,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   transition-property: background-color;
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
-  background-color: #F5F5FA;
+  background-color: #8F8F8F;
   cursor: not-allowed;
 }
 

@@ -182,7 +182,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
     disabled={true}
     style={
       {
-        "backgroundColor": "#F5F5FA",
+        "backgroundColor": "#8F8F8F",
         "borderRadius": 9999,
         "display": "flex",
         "height": 24,
@@ -257,7 +257,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
     disabled={true}
     style={
       {
-        "backgroundColor": "#F5F5FA",
+        "backgroundColor": "#8F8F8F",
         "borderRadius": 9999,
         "display": "flex",
         "height": 24,
