@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.43.1](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.43.0...@gympass/yoga-icons@1.43.1) (2026-03-11)
+
+
+### Bug Fixes
+
+* **arrow_up:** remove fill="none" ([9546797](https://github.com/gympass/yoga/commit/9546797f8b43b83a97342865319d756e9e7a1047))
+
+
+
+
+
 # [1.43.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.42.1...@gympass/yoga-icons@1.43.0) (2026-02-11)
 
 
