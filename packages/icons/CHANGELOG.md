@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.44.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.43.1...@gympass/yoga-icons@1.44.0) (2026-03-25)
+
+
+### Features
+
+* adjust color ([6d70bad](https://github.com/gympass/yoga/commit/6d70bad981bab5bb759d714c73c8908d4583a12d))
+* adjust view box ([e3ae55d](https://github.com/gympass/yoga/commit/e3ae55da447776106c97dff89d86f848a17f26f0))
+* center icon ([943af31](https://github.com/gympass/yoga/commit/943af3138744cb026ba5d6c19e373485e4b347c0))
+* center icon ([7bf96e3](https://github.com/gympass/yoga/commit/7bf96e3f0251a42f91858d8d6b7363cb1b8a29a0))
+* recreate icon oof-peak ([a0474f8](https://github.com/gympass/yoga/commit/a0474f8816eb46679a1827a263a4d25b3cac5299))
+* update icon ([a81e8b8](https://github.com/gympass/yoga/commit/a81e8b881aef4422c3ddd85036d35f9580b40fba))
+* update icon ([3ee04ae](https://github.com/gympass/yoga/commit/3ee04ae326b89f051b71a166b5eed63a2273b118))
+* update icon ([4c99487](https://github.com/gympass/yoga/commit/4c99487f5173e96da0d69e9afd5c778f99b4cc47))
+* update icon ([101aef2](https://github.com/gympass/yoga/commit/101aef272ee9c5152582534b06f200ff9fc731b8))
+* update icon ([e944eea](https://github.com/gympass/yoga/commit/e944eea40073987bff9b2aa0c44ad12dd773344e))
+* update icon ([dda80d7](https://github.com/gympass/yoga/commit/dda80d7d5b604a96c953c228c5aebe50d7f4da27))
+* update icon ([8fe1d94](https://github.com/gympass/yoga/commit/8fe1d946a7437a33aae3f66183d34b28140e3993))
+* update off peak component ([4a38305](https://github.com/gympass/yoga/commit/4a383050066b2a5890dbb1ac157ac56a699b475a))
+* update space icon ([acd0b7f](https://github.com/gympass/yoga/commit/acd0b7f0fa582146644fe68d9865a46fe80b5a26))
+
+
+
+
+
 ## [1.43.1](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.43.0...@gympass/yoga-icons@1.43.1) (2026-03-11)
 
 
