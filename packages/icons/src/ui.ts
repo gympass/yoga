@@ -137,6 +137,8 @@ import MenuMore from './svg/menu_more.svg';
 import Microphone from './svg/microphone.svg';
 import Money from './svg/money.svg';
 import Monitor from './svg/monitor.svg';
+import Navigate from './svg/navigate.svg';
+import NavigateFilled from './svg/navigate_filled.svg';
 import NetworkOff from './svg/network_off.svg';
 import NetworkOn from './svg/network_on.svg';
 import NotificationFilled from './svg/notification_filled.svg';
@@ -372,6 +374,8 @@ export {
   Microphone,
   Money,
   Monitor,
+  Navigate,
+  NavigateFilled,
   NetworkOff,
   NetworkOn,
   NotificationFilled,
