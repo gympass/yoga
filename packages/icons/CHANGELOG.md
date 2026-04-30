@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.45.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.44.0...@gympass/yoga-icons@1.45.0) (2026-04-30)
+
+
+### Features
+
+* **icons:** add navigate and navigate_filled icons ([833bb3e](https://github.com/gympass/yoga/commit/833bb3ee7601ea348eb00d3dd8416835e0d3ff53))
+* improve navigate ([6334fe5](https://github.com/gympass/yoga/commit/6334fe543be1410118a30cce07512fb07a1b7c94))
+* update icons ([e65357e](https://github.com/gympass/yoga/commit/e65357e01b7703db22947020b3fc6e96bde01f0f))
+
+
+
+
+
 # [1.44.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.43.1...@gympass/yoga-icons@1.44.0) (2026-03-25)
 
 
