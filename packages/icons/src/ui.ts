@@ -34,6 +34,7 @@ import BrailleSigns from './svg/braille_signs.svg';
 import Building from './svg/building.svg';
 import BuildingFilled from './svg/building_filled.svg';
 import BulletList from './svg/bullet_list.svg';
+import Calendar from './svg/calendar.svg';
 import Camera from './svg/camera.svg';
 import Cart from './svg/cart.svg';
 import Chat from './svg/chat.svg';
@@ -272,6 +273,7 @@ export {
   Building,
   BuildingFilled,
   BulletList,
+  Calendar,
   Camera,
   Cart,
   Chat,
