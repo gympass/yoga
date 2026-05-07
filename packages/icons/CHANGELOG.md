@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.46.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.45.0...@gympass/yoga-icons@1.46.0) (2026-05-07)
+
+
+### Features
+
+* new icon: calendar ([d8ec742](https://github.com/gympass/yoga/commit/d8ec742cf22ce929f03f8ebd30e15eef0ab34cf2))
+
+
+
+
+
 # [1.45.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.44.0...@gympass/yoga-icons@1.45.0) (2026-04-30)
 
 
