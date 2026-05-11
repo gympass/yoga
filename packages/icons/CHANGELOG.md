@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.47.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.46.0...@gympass/yoga-icons@1.47.0) (2026-05-11)
+
+
+### Features
+
+* new icons: "Steps" and "Stretch" ([b4b22b1](https://github.com/gympass/yoga/commit/b4b22b1540190cd138e17f8b08b48662489565ec))
+
+
+
+
+
 # [1.46.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.45.0...@gympass/yoga-icons@1.46.0) (2026-05-07)
 
 
