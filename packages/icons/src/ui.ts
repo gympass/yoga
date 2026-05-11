@@ -197,6 +197,8 @@ import SportsEquipment from './svg/sports-equipment-store.svg';
 import StairFreeAccess from './svg/stair_free_access.svg';
 import Star from './svg/star.svg';
 import StarFilled from './svg/star_filled.svg';
+import Steps from './svg/steps.svg';
+import Stretch from './svg/stretch.svg';
 import Stretching from './svg/stretching.svg';
 import Success from './svg/success.svg';
 import SupportTrainer from './svg/support-trainer.svg';
@@ -434,6 +436,8 @@ export {
   SportsEquipment,
   StairFreeAccess,
   Star,
+  Steps,
+  Stretch,
   StarFilled,
   Stretching,
   Success,
