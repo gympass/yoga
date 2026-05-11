@@ -53,6 +53,22 @@ const flagsPositioning = css`
   .ro {
     background-position: 0px -60px;
   }
+
+  .fr {
+    background-position: -20px -60px;
+  }
+
+  .nl {
+    background-position: -40px -60px;
+  }
+
+  .be {
+    background-position: -60px -60px;
+  }
+
+  .lu {
+    background-position: -80px -60px;
+  }
 `;
 
 const hiddenScrollBar = css`
