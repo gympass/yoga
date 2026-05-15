@@ -20,6 +20,10 @@ const phoneBaseSettings = {
     'us',
     'ca',
     'ro',
+    'fr',
+    'nl',
+    'be',
+    'lu',
   ],
 };
 
