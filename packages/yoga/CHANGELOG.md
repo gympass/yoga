@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.144.0](https://github.com/gympass/yoga/compare/@gympass/yoga@7.143.5...@gympass/yoga@7.144.0) (2026-05-15)
+
+
+### Features
+
+* **Input.Phone:** add new countries ([60dc42c](https://github.com/gympass/yoga/commit/60dc42c63c4d14c762f0b307fca53548117e1610))
+
+
+
+
+
 ## [7.143.5](https://github.com/gympass/yoga/compare/@gympass/yoga@7.143.4...@gympass/yoga@7.143.5) (2026-05-11)
 
 **Note:** Version bump only for package @gympass/yoga
