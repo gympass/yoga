@@ -40,7 +40,7 @@ import Calendar from './svg/calendar.svg';
 import Camera from './svg/camera.svg';
 import Cart from './svg/cart.svg';
 import Chat from './svg/chat.svg';
-import ChatSettings2 from './svg/chat_settings.svg';
+import ChatSettings from './svg/chat_settings.svg';
 import Check from './svg/check.svg';
 import CheckFilled from './svg/check_filled.svg';
 import CheckedFull from './svg/checked_full.svg';
@@ -284,7 +284,7 @@ export {
   Camera,
   Cart,
   Chat,
-  ChatSettings2,
+  ChatSettings,
   Check,
   CheckedFull,
   CheckedHalf,
