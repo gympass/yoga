@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.48.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.47.0...@gympass/yoga-icons@1.48.0) (2026-07-06)
+
+
+### Bug Fixes
+
+* **icons:** rename ChatSettings2 to ChatSettings for consistency ([bdf77f8](https://github.com/gympass/yoga/commit/bdf77f8cfd74995b3fb86104de4c25e3523f09e3))
+
+
+### Features
+
+* **icons:** add AiSparkle and ChatSettings icons, remove deprecated Wellhub icons ([a0f94c6](https://github.com/gympass/yoga/commit/a0f94c6b254fba71f7d123c5d2a5d5e8ca07816d))
+* **icons:** add new SVG icons for ChatSettings2, WellhubAiSparkleFilled, and WellhubAiSparkleOutline ([13a61d8](https://github.com/gympass/yoga/commit/13a61d8128fc8962757e71b8cb31e0c669a278bc))
+
+
+
+
+
 # [1.47.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.46.0...@gympass/yoga-icons@1.47.0) (2026-05-11)
 
 
