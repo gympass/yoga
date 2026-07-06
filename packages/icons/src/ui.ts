@@ -5,6 +5,8 @@ import AccessibleRestroom from './svg/accessible_restroom.svg';
 import AccessibleShower from './svg/accessible_shower.svg';
 import Add from './svg/add.svg';
 import AddBooking from './svg/add_booking.svg';
+import AiSparkle from './svg/ai_sparkle.svg';
+import AiSparkleFilled from './svg/ai_sparkle_filled.svg';
 import AirConditioning from './svg/air-conditioning.svg';
 import AlertCircle from './svg/alert_circle.svg';
 import AlertTriangle from './svg/alert_triangle.svg';
@@ -38,7 +40,7 @@ import Calendar from './svg/calendar.svg';
 import Camera from './svg/camera.svg';
 import Cart from './svg/cart.svg';
 import Chat from './svg/chat.svg';
-import ChatSettings2 from './svg/chat-settings-2.svg';
+import ChatSettings2 from './svg/chat_settings.svg';
 import Check from './svg/check.svg';
 import CheckFilled from './svg/check_filled.svg';
 import CheckedFull from './svg/checked_full.svg';
@@ -231,8 +233,6 @@ import Wallet from './svg/wallet.svg';
 import WaterBottle from './svg/water_bottle.svg';
 import Waze from './svg/waze.svg';
 import WeightMachine from './svg/weight-machine.svg';
-import WellhubAiSparkleFilled from './svg/wellhub-ai-sparkle-filled.svg';
-import WellhubAiSparkleOutline from './svg/wellhub-ai-sparkle-outline.svg';
 import Whatsapp from './svg/whatsapp.svg';
 import WheelchairFriendlyDoors from './svg/wheelchair_friendly_doors.svg';
 import WiFi from './svg/wi-fi.svg';
@@ -249,6 +249,8 @@ export {
   AccessibleShower,
   Add,
   AddBooking,
+  AiSparkle,
+  AiSparkleFilled,
   AirConditioning,
   AlertCircle,
   AlertTriangle,
@@ -474,8 +476,6 @@ export {
   WaterBottle,
   Waze,
   WeightMachine,
-  WellhubAiSparkleFilled,
-  WellhubAiSparkleOutline,
   WellhubIcon,
   Whatsapp,
   WheelchairFriendlyDoors,
