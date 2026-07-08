@@ -41,6 +41,7 @@ import Camera from './svg/camera.svg';
 import Cart from './svg/cart.svg';
 import Chat from './svg/chat.svg';
 import ChatSettings from './svg/chat_settings.svg';
+import ChatSettings2 from './svg/chat-settings-2.svg';
 import Check from './svg/check.svg';
 import CheckFilled from './svg/check_filled.svg';
 import CheckedFull from './svg/checked_full.svg';
@@ -233,6 +234,8 @@ import Wallet from './svg/wallet.svg';
 import WaterBottle from './svg/water_bottle.svg';
 import Waze from './svg/waze.svg';
 import WeightMachine from './svg/weight-machine.svg';
+import WellhubAiSparkleFilled from './svg/wellhub-ai-sparkle-filled.svg';
+import WellhubAiSparkleOutline from './svg/wellhub-ai-sparkle-outline.svg';
 import Whatsapp from './svg/whatsapp.svg';
 import WheelchairFriendlyDoors from './svg/wheelchair_friendly_doors.svg';
 import WiFi from './svg/wi-fi.svg';
@@ -285,6 +288,7 @@ export {
   Cart,
   Chat,
   ChatSettings,
+  ChatSettings2,
   Check,
   CheckedFull,
   CheckedHalf,
@@ -477,6 +481,8 @@ export {
   Waze,
   WeightMachine,
   WellhubIcon,
+  WellhubAiSparkleFilled,
+  WellhubAiSparkleOutline,
   Whatsapp,
   WheelchairFriendlyDoors,
   WiFi,
