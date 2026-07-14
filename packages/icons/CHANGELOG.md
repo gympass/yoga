@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.49.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.48.0...@gympass/yoga-icons@1.49.0) (2026-07-14)
+
+
+### Features
+
+* **icons:** [CIB-4135] add RechargeBatteryLeaf icon for battery save mode ([5e7ca80](https://github.com/gympass/yoga/commit/5e7ca80352807ba664a365f88da03a3837621b3e))
+
+
+
+
+
 # [1.48.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.47.0...@gympass/yoga-icons@1.48.0) (2026-07-06)
 
 
