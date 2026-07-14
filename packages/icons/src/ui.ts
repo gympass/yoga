@@ -174,6 +174,7 @@ import Racquet from './svg/racquet.svg';
 import RechargeBatteryLeaf from './svg/recharge_battery_leaf.svg';
 import Rectangle from './svg/rectangle.svg';
 import Refresh from './svg/refresh.svg';
+import RenewableEnergyBatteryLeaf from './svg/renewable_energy_battery_leaf.svg';
 import Restaurant from './svg/restaurant.svg';
 import RocketLaunch from './svg/rocket_launch.svg';
 import Sauna from './svg/sauna.svg';
@@ -418,6 +419,7 @@ export {
   RechargeBatteryLeaf,
   Rectangle,
   Refresh,
+  RenewableEnergyBatteryLeaf,
   Restaurant,
   RocketLaunch,
   Sauna,
