@@ -171,6 +171,7 @@ import Printer from './svg/printer.svg';
 import QRCode from './svg/qr_code.svg';
 import QRCodeReader from './svg/qr_code_reader.svg';
 import Racquet from './svg/racquet.svg';
+import RechargeBatteryLeaf from './svg/recharge_battery_leaf.svg';
 import Rectangle from './svg/rectangle.svg';
 import Refresh from './svg/refresh.svg';
 import Restaurant from './svg/restaurant.svg';
@@ -414,6 +415,7 @@ export {
   QRCode,
   QRCodeReader,
   Racquet,
+  RechargeBatteryLeaf,
   Rectangle,
   Refresh,
   Restaurant,
