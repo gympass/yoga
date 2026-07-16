@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.50.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.49.0...@gympass/yoga-icons@1.50.0) (2026-07-16)
+
+
+### Bug Fixes
+
+* **icons:** RenewableEnergyBatteryLeaf stroke/fill attrs ([4f70762](https://github.com/gympass/yoga/commit/4f707623e93cda3a781ef67d9342bface8644877))
+
+
+### Features
+
+* **icons:** add RenewableEnergyBatteryLeaf icon ([f06424a](https://github.com/gympass/yoga/commit/f06424a66af41e4adc9f16e644380cf95c1a8f09))
+
+
+
+
+
 # [1.49.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.48.0...@gympass/yoga-icons@1.49.0) (2026-07-14)
 
 
