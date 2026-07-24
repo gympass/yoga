@@ -33,6 +33,7 @@ import FlagCaboVerde from './svg/flag_caboverde.svg';
 import FlagCambodia from './svg/flag_cambodia.svg';
 import FlagCameroon from './svg/flag_cameroon.svg';
 import FlagCanada from './svg/flag_canada.svg';
+import FlagCaymanIslands from './svg/flag_caymanislands.svg';
 import FlagCAfricanRepublic from './svg/flag_centralafricanrepublic.svg';
 import FlagChad from './svg/flag_chad.svg';
 import FlagChile from './svg/flag_chile.svg';
@@ -158,6 +159,7 @@ import FlagSerbia from './svg/flag_serbia.svg';
 import FlagSeychelles from './svg/flag_seychelles.svg';
 import FlagSierraLeone from './svg/flag_sierraleone.svg';
 import FlagSingapore from './svg/flag_singapore.svg';
+import FlagSintMaarten from './svg/flag_sintmaarten.svg';
 import FlagSlovakia from './svg/flag_slovakia.svg';
 import FlagSlovenia from './svg/flag_slovenia.svg';
 import FlagSolomonIslands from './svg/flag_solomonisland.svg';
@@ -235,6 +237,7 @@ export {
   FlagCambodia,
   FlagCameroon,
   FlagCanada,
+  FlagCaymanIslands,
   FlagCAfricanRepublic,
   FlagChad,
   FlagChile,
@@ -360,6 +363,7 @@ export {
   FlagSeychelles,
   FlagSierraLeone,
   FlagSingapore,
+  FlagSintMaarten,
   FlagSlovakia,
   FlagSlovenia,
   FlagSolomonIslands,
