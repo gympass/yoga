@@ -171,5 +171,60 @@ describe('<AutoComplete />', () => {
       expect(onChangeMock).toHaveBeenCalledWith('New York');
       expect(onCleanMock).not.toHaveBeenCalled();
     });
+
+    it('should call onSelectMock when the typed value exactly matches an option', () => {
+      const onSelectMock = jest.fn();
+      const onChangeMock = jest.fn();
+
+      const { getByRole } = render(
+        <ThemeProvider>
+          <AutoComplete
+            value=""
+            options={['New York']}
+            onSelect={onSelectMock}
+            onChange={onChangeMock}
+          />
+        </ThemeProvider>,
+      );
+
+      const input = getByRole('textbox');
+
+      fireEvent.focus(input);
+      fireEvent.change(input, { target: { value: 'New York' } });
+      fireEvent.click(getByRole('option'));
+
+      expect(onSelectMock).toHaveBeenCalledWith('New York');
+      expect(onChangeMock).toHaveBeenCalledWith('New York');
+    });
+
+    it('should allow selecting an option again after cleaning a previous selection', () => {
+      const onSelectMock = jest.fn();
+
+      const { getByDisplayValue, getByRole } = render(
+        <ThemeProvider>
+          <AutoComplete
+            value="New"
+            options={['New York']}
+            onSelect={onSelectMock}
+          />
+        </ThemeProvider>,
+      );
+
+      fireEvent.focus(getByDisplayValue('New'));
+      fireEvent.click(getByRole('option'));
+
+      expect(onSelectMock).toHaveBeenCalledTimes(1);
+
+      fireEvent.click(getByRole('button', { name: /clear/i }));
+
+      fireEvent.change(getByDisplayValue(''), {
+        target: { value: 'New York' },
+      });
+      fireEvent.focus(getByDisplayValue('New York'));
+      fireEvent.click(getByRole('option'));
+
+      expect(onSelectMock).toHaveBeenCalledTimes(2);
+      expect(onSelectMock).toHaveBeenNthCalledWith(2, 'New York');
+    });
   });
 });

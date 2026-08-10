@@ -201,15 +201,17 @@ const AutoComplete = React.forwardRef(
         onStateChange={changes => {
           const { selectedItem, inputValue } = changes;
 
-          if (selectedItem) {
+          if (Object.prototype.hasOwnProperty.call(changes, 'selectedItem')) {
             setUserValue(selectedItem);
+          }
+
+          if (selectedItem) {
             onSelect(selectedItem);
             onChange(selectedItem);
             handleCloseSuggestions();
           } else if (
             Object.prototype.hasOwnProperty.call(changes, 'inputValue')
           ) {
-            setUserValue(inputValue);
             onChange(inputValue);
           }
         }}
