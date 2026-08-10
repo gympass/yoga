@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.144.5](https://github.com/gympass/yoga/compare/@gympass/yoga@7.144.4...@gympass/yoga@7.144.5) (2026-08-10)
+
+
+### Bug Fixes
+
+* **autocomplete:** allow the user to type the exact option ([b4f4645](https://github.com/gympass/yoga/commit/b4f46457d7df7c1930814dcddb0b5858f6fd4cac))
+
+
+
+
+
 ## [7.144.4](https://github.com/gympass/yoga/compare/@gympass/yoga@7.144.3...@gympass/yoga@7.144.4) (2026-07-27)
 
 **Note:** Version bump only for package @gympass/yoga
