@@ -151,6 +151,7 @@ import Nutritionist from './svg/nutritionist.svg';
 import PaddleBoard from './svg/paddle_board.svg';
 import PaperPin from './svg/paper_pin.svg';
 import Paperclip from './svg/paperclip.svg';
+import Path from './svg/path.svg';
 import ParkingLot from './svg/parking-lot.svg';
 import Password from './svg/password.svg';
 import Pause from './svg/pause.svg';
@@ -168,7 +169,6 @@ import PlusCircle from './svg/plus_circle.svg';
 import Pool from './svg/pool.svg';
 import PriceTag from './svg/price_tag.svg';
 import Printer from './svg/printer.svg';
-import Path from './svg/path.svg';
 import QRCode from './svg/qr_code.svg';
 import QRCodeReader from './svg/qr_code_reader.svg';
 import Racquet from './svg/racquet.svg';
@@ -397,6 +397,7 @@ export {
   PaddleBoard,
   Paperclip,
   PaperPin,
+  Path,
   ParkingLot,
   Password,
   Pause,
@@ -414,7 +415,6 @@ export {
   Pool,
   PriceTag,
   Printer,
-  Path,
   QRCode,
   QRCodeReader,
   Racquet,
