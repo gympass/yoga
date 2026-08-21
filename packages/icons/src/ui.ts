@@ -168,6 +168,7 @@ import PlusCircle from './svg/plus_circle.svg';
 import Pool from './svg/pool.svg';
 import PriceTag from './svg/price_tag.svg';
 import Printer from './svg/printer.svg';
+import Path from './svg/path.svg';
 import QRCode from './svg/qr_code.svg';
 import QRCodeReader from './svg/qr_code_reader.svg';
 import Racquet from './svg/racquet.svg';
@@ -413,6 +414,7 @@ export {
   Pool,
   PriceTag,
   Printer,
+  Path,
   QRCode,
   QRCodeReader,
   Racquet,
