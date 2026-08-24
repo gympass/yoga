@@ -190,6 +190,7 @@ import ShineFilled from './svg/shine_filled.svg';
 import ShowerTowels from './svg/shower-towels.svg';
 import Shower from './svg/shower.svg';
 import SignLanguage from './svg/sign_language.svg';
+import SignalFull from './svg/signal_full.svg';
 import Signal from './svg/signal.svg';
 import SingleWomanFlag from './svg/single_woman_flag.svg';
 import Smartphone from './svg/smartphone.svg';
@@ -436,6 +437,7 @@ export {
   ShowerTowels,
   Signal,
   SignLanguage,
+  SignalFull,
   SingleWomanFlag,
   Smartphone,
   SmartphoneFilled,
