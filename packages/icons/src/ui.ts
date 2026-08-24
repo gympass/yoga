@@ -151,7 +151,6 @@ import Nutritionist from './svg/nutritionist.svg';
 import PaddleBoard from './svg/paddle_board.svg';
 import PaperPin from './svg/paper_pin.svg';
 import Paperclip from './svg/paperclip.svg';
-import Path from './svg/path.svg';
 import ParkingLot from './svg/parking-lot.svg';
 import Password from './svg/password.svg';
 import Pause from './svg/pause.svg';
@@ -191,6 +190,7 @@ import ShineFilled from './svg/shine_filled.svg';
 import ShowerTowels from './svg/shower-towels.svg';
 import Shower from './svg/shower.svg';
 import SignLanguage from './svg/sign_language.svg';
+import SignalFull from './svg/signal_full.svg';
 import Signal from './svg/signal.svg';
 import SingleWomanFlag from './svg/single_woman_flag.svg';
 import Smartphone from './svg/smartphone.svg';
@@ -397,7 +397,6 @@ export {
   PaddleBoard,
   Paperclip,
   PaperPin,
-  Path,
   ParkingLot,
   Password,
   Pause,
@@ -438,6 +437,7 @@ export {
   ShowerTowels,
   Signal,
   SignLanguage,
+  SignalFull,
   SingleWomanFlag,
   Smartphone,
   SmartphoneFilled,
