@@ -213,6 +213,7 @@ import SwimmingGoggles from './svg/swimming_goggles.svg';
 import SystemStatus from './svg/system_status.svg';
 import TactilePaving from './svg/tactile_paving.svg';
 import Tennis from './svg/tennis.svg';
+import Ticket from './svg/ticket.svg';
 import Time from './svg/time.svg';
 import TimeFilled from './svg/time_filled.svg';
 import Toiletries from './svg/toiletries.svg';
@@ -459,6 +460,7 @@ export {
   SystemStatus,
   TactilePaving,
   Tennis,
+  Ticket,
   Time,
   TimeFilled,
   Toiletries,
