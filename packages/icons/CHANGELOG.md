@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.53.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.52.0...@gympass/yoga-icons@1.53.0) (2026-09-01)
+
+
+### Features
+
+* **icons:** [CIB-4815] add Ticket icon ([fbb27d9](https://github.com/gympass/yoga/commit/fbb27d93a2556bba76e7da3013805a7925110810))
+
+
+
+
+
 # [1.52.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.51.0...@gympass/yoga-icons@1.52.0) (2026-08-24)
 
 
