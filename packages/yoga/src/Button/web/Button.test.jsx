@@ -1473,6 +1473,20 @@ describe('<Button />', () => {
 
           expect(button).toBeDisabled();
         });
+
+        it('Button should have aria-disabled when loading, even if disabled prop is not set', () => {
+          render(
+            <ThemeProvider>
+              <Button isLoading aria-label="button">
+                Button
+              </Button>
+            </ThemeProvider>,
+          );
+
+          const button = screen.getByRole('button', { name: 'button' });
+
+          expect(button).toHaveAttribute('aria-disabled', 'true');
+        });
       });
 
       describe('Outline Button', () => {
