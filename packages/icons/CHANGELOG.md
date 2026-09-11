@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.53.1](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.53.0...@gympass/yoga-icons@1.53.1) (2026-09-11)
+
+
+### Performance Improvements
+
+* **icons:** declare the package side-effect free so barrel imports tree-shake ([2bb33b7](https://github.com/gympass/yoga/commit/2bb33b7af48ec57cbae448bb9566ed65c7ff8eaf))
+
+
+
+
+
 # [1.53.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.52.0...@gympass/yoga-icons@1.53.0) (2026-09-01)
 
 
