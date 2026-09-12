@@ -190,4 +190,20 @@ describe('<Checkbox />', () => {
       expect(onChangeMock).toHaveBeenCalled();
     });
   });
+
+  describe('Rest props', () => {
+    it('should forward extra props only to the input, not to the wrapper', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Checkbox {...data} id="terms" data-testid="terms-checkbox" />
+        </ThemeProvider>,
+      );
+
+      expect(container.querySelectorAll('#terms')).toHaveLength(1);
+      expect(container.querySelector('#terms').tagName).toBe('INPUT');
+      expect(
+        container.querySelectorAll('[data-testid="terms-checkbox"]'),
+      ).toHaveLength(1);
+    });
+  });
 });
