@@ -226,5 +226,23 @@ describe('<AutoComplete />', () => {
       expect(onSelectMock).toHaveBeenCalledTimes(2);
       expect(onSelectMock).toHaveBeenNthCalledWith(2, 'New York');
     });
+
+    it('should update the displayed value when the value prop changes externally', () => {
+      const { getByDisplayValue, rerender } = render(
+        <ThemeProvider>
+          <AutoComplete value="New" options={['New York']} />
+        </ThemeProvider>,
+      );
+
+      expect(getByDisplayValue('New')).toBeTruthy();
+
+      rerender(
+        <ThemeProvider>
+          <AutoComplete value="Rio" options={['Rio de Janeiro']} />
+        </ThemeProvider>,
+      );
+
+      expect(getByDisplayValue('Rio')).toBeTruthy();
+    });
   });
 });
