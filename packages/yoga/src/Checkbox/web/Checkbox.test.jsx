@@ -190,4 +190,57 @@ describe('<Checkbox />', () => {
       expect(onChangeMock).toHaveBeenCalled();
     });
   });
+
+  describe('Indeterminate', () => {
+    it('should only touch the native indeterminate property when the indeterminate prop changes', () => {
+      const descriptor = Object.getOwnPropertyDescriptor(
+        window.HTMLInputElement.prototype,
+        'indeterminate',
+      );
+      const setSpy = jest.fn(function set(value) {
+        descriptor.set.call(this, value);
+      });
+
+      Object.defineProperty(
+        window.HTMLInputElement.prototype,
+        'indeterminate',
+        {
+          ...descriptor,
+          set: setSpy,
+        },
+      );
+
+      try {
+        const { rerender } = render(
+          <ThemeProvider>
+            <Checkbox {...data} indeterminate />
+          </ThemeProvider>,
+        );
+
+        expect(setSpy).toHaveBeenCalledTimes(1);
+
+        rerender(
+          <ThemeProvider>
+            <Checkbox {...data} indeterminate label="Updated label" />
+          </ThemeProvider>,
+        );
+
+        expect(setSpy).toHaveBeenCalledTimes(1);
+
+        rerender(
+          <ThemeProvider>
+            <Checkbox {...data} indeterminate={false} label="Updated label" />
+          </ThemeProvider>,
+        );
+
+        expect(setSpy).toHaveBeenCalledTimes(2);
+      } finally {
+        Object.defineProperty(
+          window.HTMLInputElement.prototype,
+          'indeterminate',
+          descriptor,
+        );
+      }
+    });
+  });
 });
