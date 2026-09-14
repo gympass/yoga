@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.53.2](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.53.1...@gympass/yoga-icons@1.53.2) (2026-09-14)
+
+
+### Bug Fixes
+
+* **icons:** [DS-1707] fix broken SignalFull icon ([d065e7c](https://github.com/gympass/yoga/commit/d065e7c8db103d05934c7d5738e4bbed06bf9b6d))
+* **icons:** [DS-1707] swap SignalFull for the Streamline-Ultimate variant ([ed4b8d5](https://github.com/gympass/yoga/commit/ed4b8d508d25491d50ddbb2abaa888eae90b2449))
+
+
+
+
+
 ## [1.53.1](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.53.0...@gympass/yoga-icons@1.53.1) (2026-09-11)
 
 
