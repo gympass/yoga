@@ -84,6 +84,21 @@ describe('<AutoComplete />', () => {
       expect(container.querySelector('ul').childNodes.length).toBe(3);
     });
 
+    it('should sort options ignoring the case of the typed value', () => {
+      const { container, getByDisplayValue } = render(
+        <ThemeProvider>
+          <AutoComplete value="Y" options={['New York', 'Yolo']} />
+        </ThemeProvider>,
+      );
+
+      fireEvent.focus(getByDisplayValue('Y'));
+
+      const items = container.querySelectorAll('li');
+
+      expect(items[0].textContent).toBe('Yolo');
+      expect(items[1].textContent).toBe('New York');
+    });
+
     it('should close options list when clean button is clicked', () => {
       const { container, getByDisplayValue, getByRole } = render(
         <ThemeProvider>

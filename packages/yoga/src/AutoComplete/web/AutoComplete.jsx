@@ -232,12 +232,14 @@ const AutoComplete = React.forwardRef(
             'gi',
           );
 
+          const lowerCaseInputValue = (inputValue || '').toLowerCase();
+
           const suggestionList = shouldFilterOptions
             ? options
                 .filter(option => option.match(reg))
                 .sort((first, second) =>
-                  first.toLowerCase().indexOf(inputValue) <
-                  second.toLowerCase().indexOf(inputValue)
+                  first.toLowerCase().indexOf(lowerCaseInputValue) <
+                  second.toLowerCase().indexOf(lowerCaseInputValue)
                     ? -1
                     : 1,
                 )
