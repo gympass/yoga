@@ -186,6 +186,10 @@ const AutoComplete = React.forwardRef(
     }, []);
 
     useEffect(() => {
+      setUserValue(value);
+    }, [value]);
+
+    useEffect(() => {
       const handleKeyUp = ({ key }) => {
         return key === 'Escape' && handleCloseSuggestions();
       };
