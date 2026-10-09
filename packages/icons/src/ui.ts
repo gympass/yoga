@@ -53,6 +53,7 @@ import ChevronRight from './svg/chevron_right.svg';
 import ChevronUp from './svg/chevron_up.svg';
 import ChildrenArea from './svg/children-area.svg';
 import Close from './svg/close.svg';
+import CloseCircle from './svg/close-circle.svg';
 import CloseFilled from './svg/close_filled.svg';
 import Code from './svg/code.svg';
 import CoffeeShop from './svg/coffee-shop.svg';
@@ -301,6 +302,7 @@ export {
   ChevronUp,
   ChildrenArea,
   Close,
+  CloseCircle,
   CloseFilled,
   Code,
   CoffeeShop,
