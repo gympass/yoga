@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.54.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.53.2...@gympass/yoga-icons@1.54.0) (2026-10-09)
+
+
+### Bug Fixes
+
+* **svg:** simplify close-circle icon structure and update stroke color ([eab6189](https://github.com/gympass/yoga/commit/eab6189fad65405bbb176e9b2c620c172e4a25a7))
+
+
+### Features
+
+* add new icon ([90d9539](https://github.com/gympass/yoga/commit/90d9539b77e80eb2185732c3d43b1d83861c984e))
+
+
+
+
+
 ## [1.53.2](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.53.1...@gympass/yoga-icons@1.53.2) (2026-09-14)
 
 
