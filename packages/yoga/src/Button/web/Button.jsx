@@ -43,7 +43,7 @@ const Button = forwardRef(
       <StyledButton
         ref={ref}
         disabled={disabled || isLoading}
-        aria-disabled={disabled}
+        aria-disabled={disabled || isLoading || undefined}
         full={full}
         inverted={inverted}
         onClick={onClick}

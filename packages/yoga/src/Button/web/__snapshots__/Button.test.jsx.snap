@@ -1998,6 +1998,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 
 <div>
   <button
+    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -2222,6 +2223,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 
 <div>
   <button
+    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -2540,6 +2542,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 
 <div>
   <button
+    aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
@@ -2858,6 +2861,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 
 <div>
   <button
+    aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
@@ -3353,6 +3357,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 
 <div>
   <button
+    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -3577,6 +3582,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 
 <div>
   <button
+    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -4133,6 +4139,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 
 <div>
   <button
+    aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
@@ -4451,6 +4458,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 
 <div>
   <button
+    aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
@@ -4986,6 +4994,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 <div>
   <button
+    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -5250,6 +5259,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 <div>
   <button
+    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -5958,6 +5968,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 <div>
   <button
+    aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
@@ -6388,6 +6399,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 <div>
   <button
+    aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
@@ -6795,6 +6807,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 <div>
   <button
+    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -7019,6 +7032,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 <div>
   <button
+    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -7567,6 +7581,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 <div>
   <button
+    aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
@@ -7834,6 +7849,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 <div>
   <button
+    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -8476,6 +8492,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Def
 
 <div>
   <a
+    aria-disabled="true"
     class="c0"
     disabled=""
     href="http://www.gympass.com"
@@ -8934,6 +8951,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
 
 <div>
   <a
+    aria-disabled="true"
     class="c0 c1"
     disabled=""
     href="http://www.gympass.com"
@@ -11106,6 +11124,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 
 <div>
   <button
+    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -11330,6 +11349,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 
 <div>
   <button
+    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -11648,6 +11668,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 
 <div>
   <button
+    aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
@@ -11966,6 +11987,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 
 <div>
   <button
+    aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
@@ -12501,6 +12523,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 <div>
   <button
+    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -12765,6 +12788,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 <div>
   <button
+    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -13473,6 +13497,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 <div>
   <button
+    aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
@@ -13903,6 +13928,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 <div>
   <button
+    aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
@@ -14682,6 +14708,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 
 <div>
   <button
+    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -14906,6 +14933,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 
 <div>
   <button
+    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -15462,6 +15490,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 
 <div>
   <button
+    aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
@@ -15780,6 +15809,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 
 <div>
   <button
+    aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
@@ -16275,6 +16305,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 <div>
   <button
+    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -16499,6 +16530,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 <div>
   <button
+    aria-disabled="true"
     class="c0"
     disabled=""
   >
@@ -17332,6 +17364,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 <div>
   <button
+    aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
@@ -17650,6 +17683,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 <div>
   <button
+    aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
