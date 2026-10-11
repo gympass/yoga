@@ -125,7 +125,7 @@ const Title = styled.div`
         },
       }) => {
         return `
-      color: ${text.secundary};
+      color: ${text.secondary};
     `;
       }}
     `}
