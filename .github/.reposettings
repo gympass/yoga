@@ -1,0 +1,32 @@
+# vim: syntax=ruby
+
+description "Yoga design-system: a scientific system of practices made to help each one of us achieve our highest potential and experience."
+default_branch "master"
+topics "react", "design-system", "gympass", "hacktoberfest"
+area "code"
+product_domain "design-system"
+squad "design-system"
+
+pull_requests do
+   allowed_merge_methods "merge", "rebase", "squash"
+   suggest_branch_update true
+   delete_merged_branches!
+end
+
+protection_rules do
+   bypassers "@andregs", "@flaviafmoraes"
+   require_pull_request_before_merge!
+   require_review_from_code_owners!
+   require_conversation_resolution!
+   dismiss_stale_reviews!
+   block_force_pushes!
+   checks "linter_and_tests"
+
+   branch("master") do
+   end
+end
+
+codeowners do
+   # content generated from file '.github/CODEOWNERS'
+   rule "*", "@gympass/design-system"
+end
