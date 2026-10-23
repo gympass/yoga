@@ -13,7 +13,9 @@ jobs:
         cache: 'yarn'
         cache-dependency-path: yarn.lock
     - name: Install dependencies
-      run: yarn
+      run: yarn --ignore-scripts
+    - name: Rebuild sharp (needed by the Gatsby doc build)
+      run: npm rebuild sharp
     - name: Run linter
       run: yarn lint:all
     - name: Run tests
