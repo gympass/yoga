@@ -38,11 +38,11 @@ $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bas
 
 ### [Node.js®](https://nodejs.org/en)
 
-Node.js® is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts. Attention: Make sure you are using node version 16.
+Node.js® is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts. Attention: use the exact version pinned in [`.nvmrc`](.nvmrc), which includes the fix for CVE-2026-111497.
 
 ```bash
-$ nvm install 16
-$ nvm use 16
+$ nvm install
+$ nvm use
 $ node -v
 ```
 
