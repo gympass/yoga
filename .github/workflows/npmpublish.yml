@@ -7,13 +7,12 @@ on:
       - alpha
       - beta
 
-permissions:
-  id-token: write
-  contents: write
-
 jobs:
   packages:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
     steps:
       - uses: actions/checkout@v7
         with:
@@ -44,6 +43,9 @@ jobs:
   doc:
     runs-on: ubuntu-latest
     needs: [packages]
+    permissions:
+      id-token: write
+      contents: write
     steps:
       - uses: actions/checkout@v1
       - name: Configure CI Git User
