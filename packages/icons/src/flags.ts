@@ -152,6 +152,7 @@ import FlagStKittsAndNevis from './svg/flag_saintkittsandnevis.svg';
 import FlagStLucia from './svg/flag_saintlucia.svg';
 import FlagStVincentGrenadines from './svg/flag_saintvincentandthegrenadines.svg';
 import FlagSamoa from './svg/flag_samoa.svg';
+import FlagSanMarino from './svg/flag_sanmarino.svg';
 import FlagSTomePrincipe from './svg/flag_saotomeandprincipe.svg';
 import FlagSaudiArabia from './svg/flag_saudiarabia.svg';
 import FlagSenegal from './svg/flag_senegal.svg';
@@ -356,6 +357,7 @@ export {
   FlagStLucia,
   FlagStVincentGrenadines,
   FlagSamoa,
+  FlagSanMarino,
   FlagSTomePrincipe,
   FlagSaudiArabia,
   FlagSenegal,
