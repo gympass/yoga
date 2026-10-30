@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.55.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.54.0...@gympass/yoga-icons@1.55.0) (2026-10-30)
+
+
+### Features
+
+* **icons:** export San Marino flag ([f66d762](https://github.com/gympass/yoga/commit/f66d762f8ab3fcf13335a1c1f12cf7e21a021a15))
+
+
+
+
+
 # [1.54.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.53.2...@gympass/yoga-icons@1.54.0) (2026-10-09)
 
 

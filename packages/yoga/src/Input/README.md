@@ -6,6 +6,7 @@
 - The flagsSprite image MUST maintain a square shape (3x3, 4x4, 5x5, etc.) — it may temporarily become a rectangle (e.g., 4x5) after adding a flag, but always prefer returning to a square when adding rows/columns
 - All generated images MUST have transparent backgrounds
 - NEVER override an existing flag file
+- ALWAYS look at the converted flag (enlarged) before using it. A wrong conversion still produces a valid 20x20 PNG, so checking the size is not enough (see Step 2)
 
 ---
 
@@ -19,13 +20,24 @@
 
 ### Step 2: Convert the flag SVG to PNG
 
-2.1. Run the following command (replace `COUNTRY` with the actual country name):
+2.1. Rasterize the SVG with `rsvg-convert` (part of librsvg, `brew install librsvg` on macOS) and then downscale it with `magick` (replace `COUNTRY` with the actual country name):
 
 ```bash
-magick -background none -density 300 packages/icons/src/svg/flag_COUNTRY.svg -resize 20x20 flag_COUNTRY.png
+rsvg-convert -w 240 -h 240 -f png -o flag_COUNTRY_big.png packages/icons/src/svg/flag_COUNTRY.svg
+magick flag_COUNTRY_big.png -resize 20x20 -depth 8 flag_COUNTRY.png
 ```
 
-2.2. Verify the output file `flag_COUNTRY.png` exists and is 20x20 pixels
+> **Do NOT** convert the SVG with `magick ... flag_COUNTRY.svg` directly. The flag SVGs use `mask` and `clip-path` to draw the round flag. Unless ImageMagick was built with librsvg (which is not the case for the Homebrew build, for example), it falls back to its built-in SVG renderer, which ignores them. The result is a valid 20x20 PNG with the wrong picture (solid color corners, a ring instead of the flag), and no error is shown. Installing librsvg alone does not fix it, because `magick` does not call `rsvg-convert` for `.svg` files.
+
+2.2. Verify the output file `flag_COUNTRY.png` exists, is 20x20 pixels and 8-bit (`magick identify flag_COUNTRY.png`)
+
+2.3. Look at the flag, enlarged, on a visible background. It must be the right round flag, with transparent corners:
+
+```bash
+magick flag_COUNTRY.png -filter point -resize 1000% -background '#d0d0d0' -flatten flag_COUNTRY_preview.png
+```
+
+If you are working with an AI agent, this is the moment to stop and ask a human to look at the preview.
 
 ### Step 3: Extract the current flagsSprite from code
 
@@ -34,8 +46,10 @@ magick -background none -density 300 packages/icons/src/svg/flag_COUNTRY.svg -re
 3.3. Convert base64 to PNG:
 
 ```bash
-echo "data:image/png;base64,COPIED_BASE64" | magick input:- flagsSprite.png
+echo "COPIED_BASE64" | base64 -d | magick png:- flagsSprite.png
 ```
+
+> The `data:image/png;base64,` prefix must NOT be included here. (`magick input:-` is not a valid ImageMagick format, and `inline:-` is blocked by ImageMagick's default security policy.)
 
 ### Step 4: Analyze the flagsSprite image
 
@@ -46,7 +60,7 @@ echo "data:image/png;base64,COPIED_BASE64" | magick input:- flagsSprite.png
 - Number of columns: `width / 20`
 - Whether there are blank spaces available
 
-4.2. **Decision tree:**
+  4.2. **Decision tree:**
 
 ```
 IF blank spaces exist:
@@ -108,12 +122,12 @@ magick flagsSprite.png PNG:- | base64
 
 - Replace the `flagsSprite` constant value with the new base64 string
 
-6.3. **Edit `packages/yoga/src/Input/web/Phone.style.js`:**
+  6.3. **Edit `packages/yoga/src/Input/web/Phone.style.js`:**
 
 - Add a new entry to `flagsPositioning` for the new country
 - The position values correspond to the X, Y pixel offset of the flag in the sprite
 
-6.4. **Edit `packages/yoga/src/Input/web/Phone.jsx`:**
+  6.4. **Edit `packages/yoga/src/Input/web/Phone.jsx`:**
 
 - Add the new country to the `phoneBaseSettings` constant
 - Include: country code, dial code, flag position reference, and any other required fields
