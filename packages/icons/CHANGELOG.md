@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.56.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.55.0...@gympass/yoga-icons@1.56.0) (2026-10-30)
+
+
+### Features
+
+* **icons:** add HeartShakingHandsBenefits ([6feed42](https://github.com/gympass/yoga/commit/6feed42c493c4540e954e1d8a0f91b186cfe6087))
+
+
+
+
+
 # [1.55.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.54.0...@gympass/yoga-icons@1.55.0) (2026-10-30)
 
 
