@@ -6,6 +6,12 @@ on:
       - master
       - alpha
       - beta
+  workflow_dispatch:
+
+# Never publish twice at the same time, and never cancel a publish that is running.
+concurrency:
+  group: npmpublish-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   packages:
@@ -16,6 +22,9 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
+          # The branch tip, not the triggering commit: a manual run or a re-run must publish what is
+          # pending now, built from the current sources.
+          ref: ${{ github.ref }}
           fetch-depth: 0
           persist-credentials: false
       - name: Configure CI Git User
