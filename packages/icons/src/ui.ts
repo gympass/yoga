@@ -103,6 +103,7 @@ import GrippySocks from './svg/grippy-socks.svg';
 import Gympass from './svg/gympass.svg';
 import Headphone from './svg/headphone.svg';
 import Heartbeat from './svg/heartbeat.svg';
+import HeartShakingHands from './svg/heart_shaking_hands.svg';
 import Heater from './svg/heater.svg';
 import Help from './svg/help.svg';
 import HelpCircle from './svg/help_circle.svg';
@@ -352,6 +353,7 @@ export {
   Gympass,
   Headphone,
   Heartbeat,
+  HeartShakingHands,
   Heater,
   Help,
   HelpCircle,
