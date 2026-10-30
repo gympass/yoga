@@ -69,6 +69,14 @@ const flagsPositioning = css`
   .lu {
     background-position: -80px -60px;
   }
+
+  .at {
+    background-position: -80px 0px;
+  }
+
+  .ch {
+    background-position: -80px -20px;
+  }
 `;
 
 const hiddenScrollBar = css`
