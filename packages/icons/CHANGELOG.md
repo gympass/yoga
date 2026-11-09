@@ -3,6 +3,67 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.56.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.55.0...@gympass/yoga-icons@1.56.0) (2026-10-30)
+
+
+### Features
+
+* **icons:** add HeartShakingHandsBenefits ([6feed42](https://github.com/gympass/yoga/commit/6feed42c493c4540e954e1d8a0f91b186cfe6087))
+
+
+
+
+
+# [1.55.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.54.0...@gympass/yoga-icons@1.55.0) (2026-10-30)
+
+
+### Features
+
+* **icons:** export San Marino flag ([f66d762](https://github.com/gympass/yoga/commit/f66d762f8ab3fcf13335a1c1f12cf7e21a021a15))
+
+
+
+
+
+# [1.54.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.53.2...@gympass/yoga-icons@1.54.0) (2026-10-09)
+
+
+### Bug Fixes
+
+* **svg:** simplify close-circle icon structure and update stroke color ([eab6189](https://github.com/gympass/yoga/commit/eab6189fad65405bbb176e9b2c620c172e4a25a7))
+
+
+### Features
+
+* add new icon ([90d9539](https://github.com/gympass/yoga/commit/90d9539b77e80eb2185732c3d43b1d83861c984e))
+
+
+
+
+
+## [1.53.2](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.53.1...@gympass/yoga-icons@1.53.2) (2026-09-14)
+
+
+### Bug Fixes
+
+* **icons:** [DS-1707] fix broken SignalFull icon ([d065e7c](https://github.com/gympass/yoga/commit/d065e7c8db103d05934c7d5738e4bbed06bf9b6d))
+* **icons:** [DS-1707] swap SignalFull for the Streamline-Ultimate variant ([ed4b8d5](https://github.com/gympass/yoga/commit/ed4b8d508d25491d50ddbb2abaa888eae90b2449))
+
+
+
+
+
+## [1.53.1](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.53.0...@gympass/yoga-icons@1.53.1) (2026-09-11)
+
+
+### Performance Improvements
+
+* **icons:** declare the package side-effect free so barrel imports tree-shake ([2bb33b7](https://github.com/gympass/yoga/commit/2bb33b7af48ec57cbae448bb9566ed65c7ff8eaf))
+
+
+
+
+
 # [1.53.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.52.0...@gympass/yoga-icons@1.53.0) (2026-09-01)
 
 

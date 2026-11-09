@@ -24,6 +24,8 @@ const phoneBaseSettings = {
     'nl',
     'be',
     'lu',
+    'at',
+    'ch',
   ],
 };
 

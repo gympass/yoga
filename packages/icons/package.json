@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga-icons",
-  "version": "1.53.0",
+  "version": "1.56.0",
   "description": "Yoga icon package",
   "keywords": [
     "yoga",
@@ -11,6 +11,7 @@
   "license": "MIT",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "sideEffects": false,
   "publishConfig": {
     "access": "public",
     "directory": "dist"

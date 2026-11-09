@@ -1,23 +1,31 @@
 '@gympass/yoga':
-  - packages/yoga/**/*
+  - changed-files:
+      - any-glob-to-any-file: packages/yoga/**/*
 
 '@gympass/yoga-doc':
-  - packages/doc/**/*
+  - changed-files:
+      - any-glob-to-any-file: packages/doc/**/*
 
 '@gympass/yoga-icons':
-  - packages/icons/**/*
+  - changed-files:
+      - any-glob-to-any-file: packages/icons/**/*
 
 '@gympass/yoga-illustrations':
-  - packages/illustrations/**/*
+  - changed-files:
+      - any-glob-to-any-file: packages/illustrations/**/*
 
 '@gympass/yoga-tokens':
-  - packages/tokens/**/*
+  - changed-files:
+      - any-glob-to-any-file: packages/tokens/**/*
 
 '@gympass/yoga-common':
-  - packages/common/**/*
+  - changed-files:
+      - any-glob-to-any-file: packages/common/**/*
 
 '@gympass/yoga-system':
-  - packages/system/**/*
+  - changed-files:
+      - any-glob-to-any-file: packages/system/**/*
 
 '@gympass/yoga-labnative':
-  - packages/labnative/**/*
+  - changed-files:
+      - any-glob-to-any-file: packages/labnative/**/*

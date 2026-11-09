@@ -6,20 +6,22 @@ jobs:
   linter_and_tests:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
+    - uses: actions/checkout@v7
+    - uses: actions/setup-node@v7
       with:
-        node-version: 24
+        node-version-file: .nvmrc
         cache: 'yarn'
         cache-dependency-path: yarn.lock
     - name: Install dependencies
-      run: yarn
+      run: yarn --ignore-scripts
+    - name: Rebuild sharp (needed by the Gatsby doc build)
+      run: npm rebuild sharp
     - name: Run linter
       run: yarn lint:all
     - name: Run tests
       run: yarn test:coverage
     - name: Run SonarCloud
-      uses: SonarSource/sonarqube-scan-action@v5.3.1
+      uses: SonarSource/sonarqube-scan-action@d209202bc7d53ff1cc128f7f907dac145c9d6ae9 # v8.3.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.145.1](https://github.com/gympass/yoga/compare/@gympass/yoga@7.145.0...@gympass/yoga@7.145.1) (2026-10-30)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+# [7.145.0](https://github.com/gympass/yoga/compare/@gympass/yoga@7.144.10...@gympass/yoga@7.145.0) (2026-10-30)
+
+
+### Features
+
+* **Input.Phone:** add Austria and Switzerland ([aaf650e](https://github.com/gympass/yoga/commit/aaf650e0383d421395d4a9f4f9758b5beca6ffa7)), closes [gympass/code-design-system#281](https://github.com/gympass/code-design-system/issues/281)
+
+
+
+
+
+## [7.144.10](https://github.com/gympass/yoga/compare/@gympass/yoga@7.144.9...@gympass/yoga@7.144.10) (2026-10-09)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+## [7.144.9](https://github.com/gympass/yoga/compare/@gympass/yoga@7.144.8...@gympass/yoga@7.144.9) (2026-09-14)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+## [7.144.8](https://github.com/gympass/yoga/compare/@gympass/yoga@7.144.7...@gympass/yoga@7.144.8) (2026-09-11)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
 ## [7.144.7](https://github.com/gympass/yoga/compare/@gympass/yoga@7.144.6...@gympass/yoga@7.144.7) (2026-09-01)
 
 **Note:** Version bump only for package @gympass/yoga

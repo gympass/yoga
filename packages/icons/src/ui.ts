@@ -53,6 +53,7 @@ import ChevronRight from './svg/chevron_right.svg';
 import ChevronUp from './svg/chevron_up.svg';
 import ChildrenArea from './svg/children-area.svg';
 import Close from './svg/close.svg';
+import CloseCircle from './svg/close-circle.svg';
 import CloseFilled from './svg/close_filled.svg';
 import Code from './svg/code.svg';
 import CoffeeShop from './svg/coffee-shop.svg';
@@ -102,6 +103,7 @@ import GrippySocks from './svg/grippy-socks.svg';
 import Gympass from './svg/gympass.svg';
 import Headphone from './svg/headphone.svg';
 import Heartbeat from './svg/heartbeat.svg';
+import HeartShakingHands from './svg/heart_shaking_hands.svg';
 import Heater from './svg/heater.svg';
 import Help from './svg/help.svg';
 import HelpCircle from './svg/help_circle.svg';
@@ -301,6 +303,7 @@ export {
   ChevronUp,
   ChildrenArea,
   Close,
+  CloseCircle,
   CloseFilled,
   Code,
   CoffeeShop,
@@ -350,6 +353,7 @@ export {
   Gympass,
   Headphone,
   Heartbeat,
+  HeartShakingHands,
   Heater,
   Help,
   HelpCircle,

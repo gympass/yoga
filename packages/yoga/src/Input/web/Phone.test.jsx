@@ -99,7 +99,7 @@ describe('<Input.Phone />', () => {
       );
 
       fireEvent.click(getAllByRole('button')[0]);
-      expect(getAllByRole('option').length).toBe(17);
+      expect(getAllByRole('option').length).toBe(19);
     });
 
     it(`Should call onblur event`, () => {
