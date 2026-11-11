@@ -84,6 +84,7 @@ import Dumbbell from './svg/dumbbell.svg';
 import DumbbellFilled from './svg/dumbbell_filled.svg';
 import Edit from './svg/edit.svg';
 import Elevator from './svg/elevator.svg';
+import ErrorIcon from './svg/error-icon.svg';
 import Exit from './svg/exit.svg';
 import ExternalLink from './svg/external_link.svg';
 import Facebook from './svg/facebook.svg';
@@ -335,6 +336,7 @@ export {
   DumbbellFilled,
   Edit,
   Elevator,
+  ErrorIcon,
   Exit,
   ExternalLink,
   Facebook,
