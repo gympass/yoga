@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.57.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.56.0...@gympass/yoga-icons@1.57.0) (2026-11-11)
+
+
+### Features
+
+* add attention icon SVG and update imports ([1859dd4](https://github.com/gympass/yoga/commit/1859dd4764bd85a9dd70ccafc596f5d92441789d))
+* add error icon SVG and update imports ([4451c5a](https://github.com/gympass/yoga/commit/4451c5ab3fbf3b46306b59f03ab6913e3306ee2d))
+
+
+
+
+
 # [1.56.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.55.0...@gympass/yoga-icons@1.56.0) (2026-10-30)
 
 
