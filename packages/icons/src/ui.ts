@@ -17,6 +17,7 @@ import ArrowLeft from './svg/arrow_left.svg';
 import ArrowRight from './svg/arrow_right.svg';
 import ArrowUp from './svg/arrow_up.svg';
 import Attention from './svg/attention.svg';
+import AttentionIcon from './svg/attention-icon.svg';
 import AutismFriendly from './svg/autism_friendly.svg';
 import AutomaticInvite from './svg/automatic_invite.svg';
 import Backspace from './svg/backspace.svg';
@@ -267,6 +268,7 @@ export {
   ArrowRight,
   ArrowUp,
   Attention,
+  AttentionIcon,
   AutismFriendly,
   AutomaticInvite,
   Backspace,
