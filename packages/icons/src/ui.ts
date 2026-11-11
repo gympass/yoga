@@ -17,6 +17,7 @@ import ArrowLeft from './svg/arrow_left.svg';
 import ArrowRight from './svg/arrow_right.svg';
 import ArrowUp from './svg/arrow_up.svg';
 import Attention from './svg/attention.svg';
+import AttentionIcon from './svg/attention-icon.svg';
 import AutismFriendly from './svg/autism_friendly.svg';
 import AutomaticInvite from './svg/automatic_invite.svg';
 import Backspace from './svg/backspace.svg';
@@ -83,6 +84,7 @@ import Dumbbell from './svg/dumbbell.svg';
 import DumbbellFilled from './svg/dumbbell_filled.svg';
 import Edit from './svg/edit.svg';
 import Elevator from './svg/elevator.svg';
+import ErrorIcon from './svg/error-icon.svg';
 import Exit from './svg/exit.svg';
 import ExternalLink from './svg/external_link.svg';
 import Facebook from './svg/facebook.svg';
@@ -267,6 +269,7 @@ export {
   ArrowRight,
   ArrowUp,
   Attention,
+  AttentionIcon,
   AutismFriendly,
   AutomaticInvite,
   Backspace,
@@ -333,6 +336,7 @@ export {
   DumbbellFilled,
   Edit,
   Elevator,
+  ErrorIcon,
   Exit,
   ExternalLink,
   Facebook,
