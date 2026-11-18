@@ -106,6 +106,7 @@ import Gympass from './svg/gympass.svg';
 import Headphone from './svg/headphone.svg';
 import Heartbeat from './svg/heartbeat.svg';
 import HeartShakingHands from './svg/heart_shaking_hands.svg';
+import HeartShakingHandsFilled from './svg/heart_shaking_hands_filled.svg';
 import Heater from './svg/heater.svg';
 import Help from './svg/help.svg';
 import HelpCircle from './svg/help_circle.svg';
@@ -358,6 +359,7 @@ export {
   Headphone,
   Heartbeat,
   HeartShakingHands,
+  HeartShakingHandsFilled,
   Heater,
   Help,
   HelpCircle,
