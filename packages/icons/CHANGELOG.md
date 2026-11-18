@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.58.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.57.1...@gympass/yoga-icons@1.58.0) (2026-11-18)
+
+
+### Features
+
+* **icons:** add heart_shaking_hands_filled icon ([cf472b2](https://github.com/gympass/yoga/commit/cf472b2d01a6200cc644d0b4b63e89c6ff2ae5dd))
+
+
+
+
+
 ## [1.57.1](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.57.0...@gympass/yoga-icons@1.57.1) (2026-11-13)
 
 
