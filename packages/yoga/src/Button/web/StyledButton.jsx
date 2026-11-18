@@ -85,7 +85,7 @@ const StyledButton = styled.button`
         disabled
           ? `
 
-        background-color ${button.types.contained.backgroundColor.disabled};
+        background-color: ${button.types.contained.backgroundColor.disabled};
         color: ${button.types.contained.font.disabled.color};
         pointer-events: none;
 
