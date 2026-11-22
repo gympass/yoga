@@ -12,6 +12,20 @@ import get from 'lodash.get';
 
 import Box from '../Box';
 
+// Box resolves width/height against the same `spacing` scale again. That
+// object maps both token names (xxxsmall, small...) and numeric indexes
+// (0, 1, 2...) to pixel values, so a resolved number that happens to also be
+// a valid index (e.g. xxxsmall -> 4) would get looked up a second time and
+// silently swapped for a different size. Suffixing with "px" only when that
+// collision is possible keeps every other size byte-for-byte the same.
+const resolveSize = (spacing, value) => {
+  const resolved = get(spacing, value, value);
+  const collidesWithIndex =
+    typeof resolved === 'number' && get(spacing, resolved) !== undefined;
+
+  return collidesWithIndex ? `${resolved}px` : resolved;
+};
+
 const Icon = ({
   as: Component,
   size = 12,
@@ -68,8 +82,8 @@ const Icon = ({
   return (
     <Box
       as={title && ariaLabel ? componentWithTitle : Component}
-      width={get(theme.yoga.spacing, width, width)}
-      height={get(theme.yoga.spacing, height, height)}
+      width={resolveSize(theme.yoga.spacing, width)}
+      height={resolveSize(theme.yoga.spacing, height)}
       {...(fill && { fill: get(theme.yoga.colors, fill, fill) })}
       {...(stroke && { stroke: get(theme.yoga.colors, stroke, stroke) })}
       {...props}
