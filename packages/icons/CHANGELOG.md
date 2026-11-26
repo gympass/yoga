@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.58.1](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.58.0...@gympass/yoga-icons@1.58.1) (2026-11-26)
+
+
+### Bug Fixes
+
+* **icons:** [code-design-system[#329](https://github.com/gympass/yoga/issues/329)] replace HeartShakingHands icon with updated version ([#983](https://github.com/gympass/yoga/issues/983)) ([b899542](https://github.com/gympass/yoga/commit/b899542d3d5f65409fa78b99cbc5197e4d8a4282))
+
+
+
+
+
 # [1.58.0](https://github.com/gympass/yoga/compare/@gympass/yoga-icons@1.57.1...@gympass/yoga-icons@1.58.0) (2026-11-18)
 
 
